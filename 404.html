@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - HowToMgr</title>
+    <meta name="description" content="The installation guide you're looking for could not be found.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-brand">
+                <h1 class="site-title">
+                    <span class="site-icon" aria-hidden="true">📚</span>
+                    HowToMgr
+                </h1>
+                <p class="site-tagline">Learn. Install. Deploy.</p>
+            </div>
+            
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="nav-link">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="error-page">
+            <div class="error-content">
+                <div class="error-icon" aria-hidden="true">🔍</div>
+                <h1 class="error-title">404 - Guide Not Found</h1>
+                
+                <p class="error-message">
+                    The installation guide you're looking for doesn't exist or may have been moved.
+                </p>
+                
+                <div class="error-suggestions">
+                    <h2>What you can do:</h2>
+                    <ul>
+                        <li>Check the URL for typos</li>
+                        <li>Use the search function to find the guide you need</li>
+                        <li>Browse all available installation guides</li>
+                        <li>Visit our GitHub organization for the latest repositories</li>
+                    </ul>
+                </div>
+                
+                <div class="error-actions">
+                    <a href="/" class="btn btn-primary">
+                        🏠 Back to Home
+                    </a>
+                    
+                    <a href="/#guides" class="btn btn-outline">
+                        📚 Browse All Guides
+                    </a>
+                    
+                    <a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="btn btn-ghost">
+                        🔗 GitHub Organization
+                    </a>
+                </div>
+                
+                <div class="popular-guides">
+                    <h2>Popular Guides:</h2>
+                    <div class="guide-links">
+                        <a href="https://github.com/howtomgr/nginx" target="_blank" rel="noopener" class="guide-link">NGINX</a>
+                        <a href="https://github.com/howtomgr/docker" target="_blank" rel="noopener" class="guide-link">Docker</a>
+                        <a href="https://github.com/howtomgr/kubernetes" target="_blank" rel="noopener" class="guide-link">Kubernetes</a>
+                        <a href="https://github.com/howtomgr/prometheus" target="_blank" rel="noopener" class="guide-link">Prometheus</a>
+                        <a href="https://github.com/howtomgr/grafana" target="_blank" rel="noopener" class="guide-link">Grafana</a>
+                        <a href="https://github.com/howtomgr/vault" target="_blank" rel="noopener" class="guide-link">Vault</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/" class="footer-link">Home</a>
+                <a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="footer-link">
+                    <span aria-hidden="true">🏢</span> Organization
+                </a>
+                <a href="https://github.com/howtomgr/howtomgr.github.io" target="_blank" rel="noopener" class="footer-link">
+                    <span aria-hidden="true">📂</span> Source Code
+                </a>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-info">
+                <p>&copy; 2024 HowToMgr Organization. Open source installation guides.</p>
+                <p>Built with ❤️ using modern web technologies and GitHub Pages.</p>
+            </div>
+            
+            <div class="footer-disclaimer">
+                <small>All guides are provided as-is. Please review and test before production use.</small>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .error-page {
+            padding: 4rem 0;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .error-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .error-suggestions {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .error-suggestions h2 {
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .error-suggestions ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .error-suggestions li {
+            padding: 0.5rem 0;
+            color: var(--text-primary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .error-suggestions li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .popular-guides {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+        }
+
+        .popular-guides h2 {
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .guide-links {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .guide-link {
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: var(--transition-fast);
+            text-decoration: none;
+        }
+
+        .guide-link:hover {
+            background: var(--accent-secondary);
+            transform: translateY(-1px);
+            color: var(--bg-primary);
+        }
+
+        @media (max-width: 768px) {
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .guide-links {
+                gap: 0.25rem;
+            }
+            
+            .guide-link {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+            }
+        }
+    </style>
+
+    <script>
+        // Initialize theme
+        const savedTheme = localStorage.getItem('howtomgr-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+</html>

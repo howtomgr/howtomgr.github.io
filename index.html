@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Installation guides and how-to tutorials for popular software and services. Complete with security hardening and cross-platform support.">
+    <meta name="keywords" content="installation guides, how-to tutorials, linux, docker, kubernetes, security, devops">
+    <meta name="author" content="HowToMgr">
+    
+    <title>HowToMgr - Installation Guides and How-To Tutorials</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://howtomgr.github.io/">
+    <meta property="og:title" content="HowToMgr - Installation Guides and How-To Tutorials">
+    <meta property="og:description" content="Comprehensive installation guides for popular software and services with security hardening and cross-platform support.">
+    <meta property="og:image" content="https://howtomgr.github.io/assets/social-preview.png">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://howtomgr.github.io/">
+    <meta property="twitter:title" content="HowToMgr - Installation Guides and How-To Tutorials">
+    <meta property="twitter:description" content="Comprehensive installation guides for popular software and services.">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="preload" href="scripts/app.js" as="script">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Schema.org markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "HowToMgr",
+      "description": "Installation guides and how-to tutorials",
+      "url": "https://howtomgr.github.io",
+      "author": {
+        "@type": "Organization",
+        "name": "HowToMgr",
+        "url": "https://github.com/howtomgr"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://howtomgr.github.io/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-container">
+            <div class="header-brand">
+                <h1 class="site-title">
+                    <span class="site-icon" aria-hidden="true">📚</span>
+                    HowToMgr
+                </h1>
+                <p class="site-tagline">Learn. Install. Deploy.</p>
+            </div>
+            
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#guides" class="nav-link">Guides</a></li>
+                    <li><a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="nav-link">GitHub</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-container">
+                    <label for="search-input" class="sr-only">Search installation guides</label>
+                    <input 
+                        type="search" 
+                        id="search-input" 
+                        class="search-input"
+                        placeholder="Search guides..." 
+                        aria-describedby="search-help"
+                    >
+                    <span id="search-help" class="sr-only">Search through installation guides and tutorials</span>
+                </div>
+                
+                <button 
+                    id="theme-toggle" 
+                    class="theme-toggle"
+                    aria-label="Toggle between dark and light themes"
+                    aria-pressed="false"
+                    title="Switch theme"
+                >
+                    <span class="theme-icon theme-icon-dark" aria-hidden="true">🌙</span>
+                    <span class="theme-icon theme-icon-light" aria-hidden="true">☀️</span>
+                    <span class="sr-only">Current theme: <span id="current-theme">dark</span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title">Installation guides and how-to tutorials</h1>
+                <p class="hero-description">
+                    Comprehensive, cross-platform installation guides for popular software and services. 
+                    Complete with security hardening, performance optimization, and best practices.
+                </p>
+                <div class="hero-stats" id="hero-stats">
+                    <div class="stat">
+                        <strong id="repo-count" class="stat-number">47</strong>
+                        <span class="stat-label">Installation Guides</span>
+                    </div>
+                    <div class="stat">
+                        <strong id="total-stars" class="stat-number">0</strong>
+                        <span class="stat-label">GitHub Stars</span>
+                    </div>
+                    <div class="stat">
+                        <strong class="stat-number">Cross-Platform</strong>
+                        <span class="stat-label">Linux Distributions</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guides Section -->
+        <section id="guides" class="guides-section" aria-labelledby="guides-title">
+            <div class="section-header">
+                <h2 id="guides-title" class="section-title">Installation Guides</h2>
+                
+                <div class="controls">
+                    <div class="filter-controls">
+                        <label for="category-filter" class="sr-only">Filter by category</label>
+                        <select id="category-filter" class="filter-select" aria-label="Filter guides by category">
+                            <option value="">All Categories</option>
+                            <option value="infrastructure">Infrastructure</option>
+                            <option value="database">Databases</option>
+                            <option value="security">Security</option>
+                            <option value="monitoring">Monitoring</option>
+                            <option value="container">Containers</option>
+                            <option value="web-server">Web Servers</option>
+                            <option value="application">Applications</option>
+                            <option value="media">Media Servers</option>
+                        </select>
+                        
+                        <label for="sort-select" class="sr-only">Sort guides</label>
+                        <select id="sort-select" class="sort-select" aria-label="Sort guides">
+                            <option value="updated">Recently Updated</option>
+                            <option value="name">Name (A-Z)</option>
+                            <option value="stars">Most Stars</option>
+                            <option value="created">Recently Created</option>
+                        </select>
+                    </div>
+                    
+                    <div class="view-controls">
+                        <button id="grid-view" class="view-toggle active" aria-label="Grid view" aria-pressed="true">
+                            <span aria-hidden="true">⊞</span>
+                        </button>
+                        <button id="list-view" class="view-toggle" aria-label="List view" aria-pressed="false">
+                            <span aria-hidden="true">☰</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Loading State -->
+            <div id="loading-state" class="loading-state">
+                <div class="spinner" aria-label="Loading guides"></div>
+                <p>Loading installation guides from GitHub...</p>
+            </div>
+            
+            <!-- Repository Grid -->
+            <div id="repository-grid" class="repository-grid" aria-live="polite" style="display: none;">
+                <!-- Repositories will be dynamically loaded here -->
+            </div>
+            
+            <!-- Pagination -->
+            <nav class="pagination" aria-label="Guide pagination" id="pagination-nav" style="display: none;">
+                <button id="prev-page" class="pagination-btn" aria-label="Previous page" disabled>
+                    <span aria-hidden="true">←</span> Previous
+                </button>
+                
+                <div class="pagination-pages" id="pagination-pages">
+                    <!-- Page numbers will be inserted here -->
+                </div>
+                
+                <button id="next-page" class="pagination-btn" aria-label="Next page" disabled>
+                    Next <span aria-hidden="true">→</span>
+                </button>
+                
+                <div class="pagination-info">
+                    Page <span id="current-page">1</span> of <span id="total-pages">1</span>
+                    (<span id="showing-count">0</span> of <span id="total-count">0</span> guides)
+                </div>
+            </nav>
+            
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <div class="empty-content">
+                    <h3>No guides found</h3>
+                    <p>Try adjusting your search or filter criteria.</p>
+                    <button id="clear-filters" class="btn btn-primary">Clear Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" aria-labelledby="features-title">
+            <h2 id="features-title" class="section-title">Why HowToMgr?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🐧</div>
+                    <h3 class="feature-title">Cross-Platform Support</h3>
+                    <p class="feature-description">
+                        Complete installation instructions for Ubuntu, Debian, RHEL, CentOS, Fedora, Arch Linux, and more.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🔒</div>
+                    <h3 class="feature-title">Security Hardening</h3>
+                    <p class="feature-description">
+                        2024 security best practices, SSL/TLS configuration, and enterprise-grade hardening included.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">⚡</div>
+                    <h3 class="feature-title">Production Ready</h3>
+                    <p class="feature-description">
+                        Performance optimization, monitoring setup, backup strategies, and troubleshooting guides.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🔄</div>
+                    <h3 class="feature-title">Always Updated</h3>
+                    <p class="feature-description">
+                        Guides are automatically synced from GitHub repositories and regularly maintained.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🏢</div>
+                    <h3 class="feature-title">Enterprise Grade</h3>
+                    <p class="feature-description">
+                        High availability setups, clustering, monitoring, and enterprise integrations.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">♿</div>
+                    <h3 class="feature-title">Accessible Design</h3>
+                    <p class="feature-description">
+                        WCAG 2.1 AA compliant with full keyboard navigation and screen reader support.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#guides" class="footer-link">Installation Guides</a>
+                <a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="footer-link">
+                    <span aria-hidden="true">🏢</span> Organization
+                </a>
+                <a href="https://github.com/howtomgr/howtomgr.github.io" target="_blank" rel="noopener" class="footer-link">
+                    <span aria-hidden="true">📂</span> Source Code
+                </a>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-info">
+                <p>&copy; 2024 HowToMgr Organization. Open source installation guides.</p>
+                <p>Built with ❤️ using modern web technologies and GitHub Pages.</p>
+            </div>
+            
+            <div class="footer-disclaimer">
+                <small>All guides are provided as-is. Please review and test before production use.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/github-api.js"></script>
+    <script src="scripts/app.js"></script>
+    
+    <!-- Initialize theme before page loads -->
+    <script>
+        // Set theme before page renders to prevent flash
+        (function() {
+            const savedTheme = localStorage.getItem('howtomgr-theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</body>
+</html>

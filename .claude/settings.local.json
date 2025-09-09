@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Read(//root/Projects/github/howtomgr/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
