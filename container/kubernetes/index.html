@@ -1,0 +1,670 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/><meta name="theme-color" content="#bd93f9"/><link rel="icon" href="/favicon.ico"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/><title class="jsx-745d6189719dfe72">Kubernetes Installation Guide - HowToMgr</title><meta name="description" content="Repo for kubernetes" class="jsx-745d6189719dfe72"/><meta name="keywords" content="installation guides, tutorials, linux, docker, kubernetes, mobile-first, responsive" class="jsx-745d6189719dfe72"/><meta property="og:title" content="Kubernetes Installation Guide - HowToMgr" class="jsx-745d6189719dfe72"/><meta property="og:description" content="Repo for kubernetes" class="jsx-745d6189719dfe72"/><meta property="og:type" content="website" class="jsx-745d6189719dfe72"/><meta property="og:url" content="https://howtomgr.github.io" class="jsx-745d6189719dfe72"/><meta property="og:image" content="https://howtomgr.github.io/social-preview.png" class="jsx-745d6189719dfe72"/><meta property="twitter:card" content="summary_large_image" class="jsx-745d6189719dfe72"/><meta property="twitter:title" content="Kubernetes Installation Guide - HowToMgr" class="jsx-745d6189719dfe72"/><meta property="twitter:description" content="Repo for kubernetes" class="jsx-745d6189719dfe72"/><meta name="next-head-count" content="17"/><link rel="dns-prefetch" href="//api.github.com"/><link rel="dns-prefetch" href="//github.com"/><link rel="preload" href="/favicon.ico" as="image"/><meta name="application-name" content="HowToMgr"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="default"/><meta name="apple-mobile-web-app-title" content="HowToMgr"/><meta name="format-detection" content="telephone=no"/><meta name="mobile-web-app-capable" content="yes"/><noscript><style>
+            .requires-js { display: none !important; }
+            .no-js-message { display: block !important; }
+          </style></noscript><link rel="preload" href="/_next/static/css/eec6c1c201affe77.css" as="style"/><link rel="stylesheet" href="/_next/static/css/eec6c1c201affe77.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/_next/static/chunks/webpack-ee7e63bc15b31913.js" defer=""></script><script src="/_next/static/chunks/framework-2b1f7a23d657eae4.js" defer=""></script><script src="/_next/static/chunks/main-6ec3f7584970eebe.js" defer=""></script><script src="/_next/static/chunks/pages/_app-d149ee305b4f74bb.js" defer=""></script><script src="/_next/static/chunks/675-4a724ee9ded8dc5b.js" defer=""></script><script src="/_next/static/chunks/pages/%5Bcategory%5D/%5Bguide%5D-1ac9c2ceb48b9f4e.js" defer=""></script><script src="/_next/static/gwB4j0n9ndF37HVylNSlu/_buildManifest.js" defer=""></script><script src="/_next/static/gwB4j0n9ndF37HVylNSlu/_ssgManifest.js" defer=""></script><style id="__jsx-8a7f0cdcf94f52ce">.breadcrumb.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:var(--space-2);margin-bottom:var(--space-6);font-size:var(--font-sm);color:var(--text-secondary);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);text-decoration:none;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce:hover{text-decoration:underline}.separator.jsx-8a7f0cdcf94f52ce{color:var(--text-muted);-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.current.jsx-8a7f0cdcf94f52ce{color:var(--text-primary);font-weight:500;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}.guide-header.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface)}.guide-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-3xl);margin-bottom:var(--space-4);line-height:1.2;word-break:break-word}.guide-description.jsx-8a7f0cdcf94f52ce{color:var(--text-secondary);font-size:var(--font-lg);margin-bottom:var(--space-5);line-height:1.5}.guide-badges.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);margin-bottom:var(--space-5);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-content.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface);overflow-x:hidden}.related-section.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-8)}.section-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-2xl);text-align:center;margin-bottom:var(--space-6)}.guide-navigation.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:var(--space-8)}.loading-container.jsx-8a7f0cdcf94f52ce,.error-container.jsx-8a7f0cdcf94f52ce{text-align:center;padding:var(--space-8)}.error-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:var(--space-6);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}@media(max-width:767px){.guide-header.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-title.jsx-8a7f0cdcf94f52ce{font-size:var(--font-2xl)}.guide-description.jsx-8a7f0cdcf94f52ce{font-size:var(--font-base)}.guide-content.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-badges.jsx-8a7f0cdcf94f52ce{gap:var(--space-2)}.guide-actions.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.guide-navigation.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.breadcrumb.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-4)}}</style><style id="__jsx-745d6189719dfe72">.app-container.jsx-745d6189719dfe72{min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-top:56px}.main-content.jsx-745d6189719dfe72{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;padding:var(--space-6)0}.mobile-footer.jsx-745d6189719dfe72{background:var(--bg-secondary);border-top:1px solid var(--bg-surface);padding:var(--space-6)0;margin-top:auto}.footer-content.jsx-745d6189719dfe72{text-align:center}.footer-links.jsx-745d6189719dfe72{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:var(--space-6);margin-bottom:var(--space-4);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72{color:var(--accent-primary);text-decoration:none;font-size:var(--font-sm)}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72:hover{color:var(--accent-secondary)}.footer-separator.jsx-745d6189719dfe72{height:1px;background:var(--bg-surface);margin:var(--space-4)auto;width:200px}.footer-text.jsx-745d6189719dfe72,.footer-tech.jsx-745d6189719dfe72{color:var(--text-secondary);font-size:var(--font-sm);margin-bottom:var(--space-2)}.footer-disclaimer.jsx-745d6189719dfe72{color:var(--text-muted);font-size:var(--font-xs)}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-dark.jsx-745d6189719dfe72{display:none}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-light.jsx-745d6189719dfe72{display:inline!important}@media(max-width:767px){.main-content.jsx-745d6189719dfe72{padding:var(--space-4)0}.footer-links.jsx-745d6189719dfe72{gap:var(--space-4)}}</style></head><body><noscript><div class="no-js-message" style="padding:1rem;background:#ff5555;color:#f8f8f2;text-align:center;font-size:0.9rem">This site requires JavaScript to function properly. Please enable JavaScript in your browser.</div></noscript><div id="__next"><div class="jsx-745d6189719dfe72 app-container"><a href="#main-content" class="jsx-745d6189719dfe72 skip-link">Skip to main content</a><nav class="jsx-745d6189719dfe72 mobile-nav"><div class="jsx-745d6189719dfe72 mobile-nav-content"><a class="mobile-brand" href="/"><span role="img" aria-label="Books" class="jsx-745d6189719dfe72">📚</span>HowToMgr</a><button aria-label="Toggle theme" title="Switch theme" class="jsx-745d6189719dfe72 mobile-theme-toggle touch-target"><span class="jsx-745d6189719dfe72 theme-icon-dark">🌙</span><span style="display:none" class="jsx-745d6189719dfe72 theme-icon-light">☀️</span></button></div></nav><main id="main-content" tabindex="-1" class="jsx-745d6189719dfe72 main-content"><div class="jsx-745d6189719dfe72 container"><nav aria-label="Breadcrumb" class="jsx-8a7f0cdcf94f52ce breadcrumb"><a href="/">Home</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><a href="/container/">Containers</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><span class="jsx-8a7f0cdcf94f52ce current">Kubernetes</span></nav><header class="jsx-8a7f0cdcf94f52ce guide-header"><div class="jsx-8a7f0cdcf94f52ce guide-meta-top"><h1 class="jsx-8a7f0cdcf94f52ce guide-title">Kubernetes</h1><p class="jsx-8a7f0cdcf94f52ce guide-description">Repo for kubernetes</p><div class="jsx-8a7f0cdcf94f52ce guide-badges"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-primary">Containers</span><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">8 min</span></div><div class="jsx-8a7f0cdcf94f52ce guide-actions"><a href="https://github.com/howtomgr/kubernetes" target="_blank" rel="noopener" class="jsx-8a7f0cdcf94f52ce btn btn-secondary">View on GitHub</a></div></div></header><article class="jsx-8a7f0cdcf94f52ce guide-content"><div class="jsx-8a7f0cdcf94f52ce readme-content"><h1 id="kubernetes-installation-guide" class="mobile-header">Kubernetes Installation Guide</h1>
+<p class="mobile-paragraph">Container orchestration platform for automating deployment, scaling, and management of containerized applications.</p>
+<h2 id="prerequisites" class="mobile-header">Prerequisites</h2>
+<li class="mobile-list-item">Linux system with 2GB+ RAM per node</li>
+<li class="mobile-list-item">2 CPUs minimum per node  </li>
+<li class="mobile-list-item">Network connectivity between nodes</li>
+<li class="mobile-list-item">Container runtime (Docker/containerd)</li>
+<li class="mobile-list-item">Disabled swap on all nodes</li>
+<h2 id="installation-methods" class="mobile-header">Installation Methods</h2>
+<h3 id="kubeadm-recommended" class="mobile-header">kubeadm (Recommended)</h3>
+<p class="mobile-paragraph">#### Master Node Setup</p>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Disable swap
+sudo swapoff -a
+sudo sed -i &#039;/ swap / s/^\(.*\)$/#\1/g&#039; /etc/fstab
+
+# Install container runtime (containerd)
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl gnupg lsb-release
+
+# Add Docker&#039;s official GPG key
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+# Add Docker repository
+echo &quot;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+
+# Install containerd
+sudo apt-get update
+sudo apt-get install -y containerd.io
+
+# Configure containerd
+sudo mkdir -p /etc/containerd
+containerd config default | sudo tee /etc/containerd/config.toml
+sudo sed -i &#039;s/SystemdCgroup = false/SystemdCgroup = true/&#039; /etc/containerd/config.toml
+sudo systemctl restart containerd
+sudo systemctl enable containerd
+
+# Install kubeadm, kubelet, kubectl
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl
+
+curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg
+
+echo &quot;deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main&quot; | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl
+sudo apt-mark hold kubelet kubeadm kubectl
+
+# Configure system settings
+cat &lt;&lt;EOF | sudo tee /etc/modules-load.d/k8s.conf
+overlay
+br_netfilter
+EOF
+
+sudo modprobe overlay
+sudo modprobe br_netfilter
+
+cat &lt;&lt;EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-iptables  = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward                 = 1
+EOF
+
+sudo sysctl --system
+
+# Initialize cluster
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+
+# Configure kubectl for current user
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+# Install CNI plugin (Flannel)
+kubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml</code></pre>
+      </div>
+    </div>
+<p class="mobile-paragraph">#### Worker Node Setup</p>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Follow the same steps as master node up to kubeadm init
+# Then join the cluster using the token from master node
+
+# Get join command from master node
+kubeadm token create --print-join-command
+
+# On worker nodes, run the join command (example):
+sudo kubeadm join 192.168.1.100:6443 --token abc123.def456ghi789 --discovery-token-ca-cert-hash sha256:1234567890abcdef...</code></pre>
+      </div>
+    </div>
+<h3 id="k3s-lightweight-alternative" class="mobile-header">k3s (Lightweight Alternative)</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install k3s on master node
+curl -sfL https://get.k3s.io | sh -
+
+# Get node token
+sudo cat /var/lib/rancher/k3s/server/node-token
+
+# Install on worker nodes
+curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
+
+# Configure kubectl
+mkdir -p ~/.kube
+sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+sudo chown $(id -u):$(id -g) ~/.kube/config
+export KUBECONFIG=~/.kube/config</code></pre>
+      </div>
+    </div>
+<h3 id="minikube-development" class="mobile-header">Minikube (Development)</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+# Start minikube cluster
+minikube start --driver=docker --cpus=2 --memory=4g
+
+# Enable addons
+minikube addons enable dashboard
+minikube addons enable ingress
+minikube addons enable metrics-server
+
+# Get cluster info
+kubectl cluster-info</code></pre>
+      </div>
+    </div>
+<h2 id="configuration" class="mobile-header">Configuration</h2>
+<h3 id="cluster-administration" class="mobile-header">Cluster Administration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check cluster status
+kubectl cluster-info
+kubectl get nodes
+kubectl get pods --all-namespaces
+
+# View cluster configuration
+kubectl config view
+kubectl config get-contexts
+
+# Create namespace
+kubectl create namespace production
+
+# Set default namespace
+kubectl config set-context --current --namespace=production
+
+# Apply resource quotas
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-quota
+  namespace: production
+spec:
+  hard:
+    requests.cpu: &quot;4&quot;
+    requests.memory: 8Gi
+    limits.cpu: &quot;8&quot;
+    limits.memory: 16Gi
+    persistentvolumeclaims: &quot;10&quot;
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="network-policies" class="mobile-header">Network Policies</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create network policy for isolation
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: deny-all
+  namespace: production
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-same-namespace
+  namespace: production
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: production
+  egress:
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          name: production
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="rbac-configuration" class="mobile-header">RBAC Configuration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create service account
+kubectl create serviceaccount developer-sa -n production
+
+# Create role
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: production
+  name: developer-role
+rules:
+- apiGroups: [&quot;&quot;]
+  resources: [&quot;pods&quot;, &quot;services&quot;, &quot;configmaps&quot;, &quot;secrets&quot;]
+  verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;create&quot;, &quot;update&quot;, &quot;patch&quot;, &quot;delete&quot;]
+- apiGroups: [&quot;apps&quot;]
+  resources: [&quot;deployments&quot;, &quot;replicasets&quot;]
+  verbs: [&quot;get&quot;, &quot;list&quot;, &quot;watch&quot;, &quot;create&quot;, &quot;update&quot;, &quot;patch&quot;, &quot;delete&quot;]
+EOF
+
+# Create role binding
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: developer-binding
+  namespace: production
+subjects:
+- kind: ServiceAccount
+  name: developer-sa
+  namespace: production
+roleRef:
+  kind: Role
+  name: developer-role
+  apiGroup: rbac.authorization.k8s.io
+EOF</code></pre>
+      </div>
+    </div>
+<h2 id="application-deployment" class="mobile-header">Application Deployment</h2>
+<h3 id="basic-application-deployment" class="mobile-header">Basic Application Deployment</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create deployment
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: production
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.20
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 200m
+            memory: 256Mi
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: production
+spec:
+  selector:
+    app: nginx
+  ports:
+  - port: 80
+    targetPort: 80
+  type: ClusterIP
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="ingress-configuration" class="mobile-header">Ingress Configuration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install NGINX Ingress Controller
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.1/deploy/static/provider/cloud/deploy.yaml
+
+# Create ingress resource
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+  namespace: production
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: &quot;true&quot;
+    cert-manager.io/cluster-issuer: &quot;letsencrypt-prod&quot;
+spec:
+  tls:
+  - hosts:
+    - example.com
+    secretName: example-com-tls
+  rules:
+  - host: example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx-service
+            port:
+              number: 80
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="persistent-storage" class="mobile-header">Persistent Storage</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create storage class
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: fast-ssd
+provisioner: kubernetes.io/gce-pd
+parameters:
+  type: pd-ssd
+  zones: us-central1-a,us-central1-b
+allowVolumeExpansion: true
+volumeBindingMode: WaitForFirstConsumer
+EOF
+
+# Create persistent volume claim
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: app-data
+  namespace: production
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: fast-ssd
+  resources:
+    requests:
+      storage: 10Gi
+EOF
+
+# Use in deployment
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-with-storage
+  namespace: production
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: myapp:latest
+        volumeMounts:
+        - name: data-volume
+          mountPath: /data
+      volumes:
+      - name: data-volume
+        persistentVolumeClaim:
+          claimName: app-data
+EOF</code></pre>
+      </div>
+    </div>
+<h2 id="monitoring-and-logging" class="mobile-header">Monitoring and Logging</h2>
+<h3 id="install-metrics-server" class="mobile-header">Install Metrics Server</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install metrics server
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+# For development clusters, may need to add --kubelet-insecure-tls
+kubectl patch deployment metrics-server -n kube-system --type=&#039;json&#039; -p=&#039;[{&quot;op&quot;: &quot;add&quot;, &quot;path&quot;: &quot;/spec/template/spec/containers/0/args/-&quot;, &quot;value&quot;: &quot;--kubelet-insecure-tls&quot;}]&#039;</code></pre>
+      </div>
+    </div>
+<h3 id="install-kubernetes-dashboard" class="mobile-header">Install Kubernetes Dashboard</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install dashboard
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+
+# Create service account for dashboard
+cat &lt;&lt;EOF | kubectl apply -f -
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: admin-user
+  namespace: kubernetes-dashboard
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: admin-user
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: admin-user
+  namespace: kubernetes-dashboard
+EOF
+
+# Get token for dashboard access
+kubectl -n kubernetes-dashboard create token admin-user
+
+# Access dashboard
+kubectl proxy
+# Then visit: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/</code></pre>
+      </div>
+    </div>
+<h2 id="backup-and-disaster-recovery" class="mobile-header">Backup and Disaster Recovery</h2>
+<h3 id="etcd-backup" class="mobile-header">etcd Backup</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install etcdctl
+ETCD_VER=v3.5.9
+curl -L https://github.com/etcd-io/etcd/releases/download/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz -o etcd-${ETCD_VER}-linux-amd64.tar.gz
+tar xzf etcd-${ETCD_VER}-linux-amd64.tar.gz
+sudo mv etcd-${ETCD_VER}-linux-amd64/etcdctl /usr/local/bin/
+
+# Create backup script
+sudo tee /usr/local/bin/etcd-backup.sh &gt; /dev/null &lt;&lt;&#039;EOF&#039;
+#!/bin/bash
+BACKUP_DIR=&quot;/backup/etcd&quot;
+DATE=$(date +%Y%m%d_%H%M%S)
+
+mkdir -p ${BACKUP_DIR}
+
+# Create etcd snapshot
+etcdctl snapshot save ${BACKUP_DIR}/etcd-backup-${DATE}.db \
+  --endpoints=https://127.0.0.1:2379 \
+  --cacert=/etc/kubernetes/pki/etcd/ca.crt \
+  --cert=/etc/kubernetes/pki/etcd/server.crt \
+  --key=/etc/kubernetes/pki/etcd/server.key
+
+# Verify snapshot
+etcdctl snapshot status ${BACKUP_DIR}/etcd-backup-${DATE}.db -w table
+
+# Keep only last 7 backups
+find ${BACKUP_DIR} -name &quot;etcd-backup-*.db&quot; -type f -mtime +7 -delete
+
+echo &quot;Backup completed: etcd-backup-${DATE}.db&quot;
+EOF
+
+sudo chmod +x /usr/local/bin/etcd-backup.sh
+
+# Schedule daily backup
+echo &quot;0 2 * * * root /usr/local/bin/etcd-backup.sh&quot; | sudo tee -a /etc/crontab</code></pre>
+      </div>
+    </div>
+<h2 id="verification" class="mobile-header">Verification</h2>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check cluster health
+kubectl get nodes -o wide
+kubectl get pods --all-namespaces
+kubectl top nodes
+kubectl top pods --all-namespaces
+
+# Check system pods
+kubectl get pods -n kube-system
+
+# Check cluster info
+kubectl cluster-info dump
+
+# Test DNS resolution
+kubectl run test-dns --image=busybox --rm -it --restart=Never -- nslookup kubernetes.default
+
+# Test pod-to-pod communication
+kubectl run test-pod1 --image=nginx --port=80
+kubectl expose pod test-pod1 --port=80
+kubectl run test-pod2 --image=busybox --rm -it --restart=Never -- wget -qO- test-pod1
+
+# Check resource usage
+kubectl describe node
+kubectl describe pod &lt;pod-name&gt;
+
+# View logs
+kubectl logs -n kube-system -l component=kube-apiserver
+kubectl logs -n kube-system -l component=etcd</code></pre>
+      </div>
+    </div>
+<h2 id="troubleshooting" class="mobile-header">Troubleshooting</h2>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check node status
+kubectl describe node &lt;node-name&gt;
+kubectl get events --sort-by=.metadata.creationTimestamp
+
+# Debug pods
+kubectl describe pod &lt;pod-name&gt;
+kubectl logs &lt;pod-name&gt; -c &lt;container-name&gt;
+kubectl exec -it &lt;pod-name&gt; -- /bin/bash
+
+# Check cluster components
+sudo journalctl -u kubelet -f
+sudo journalctl -u containerd -f
+
+# Debug networking
+kubectl run debug-pod --image=nicolaka/netshoot --rm -it --restart=Never
+
+# Check certificates
+kubeadm certs check-expiration
+openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text -noout
+
+# Reset cluster (if needed)
+sudo kubeadm reset
+sudo rm -rf /etc/cni/net.d
+sudo rm -rf $HOME/.kube/config</code></pre>
+      </div>
+    </div>
+<h2 id="additional-resources" class="mobile-header">Additional Resources</h2>
+<li class="mobile-list-item"><a href="https://kubernetes.io/docs/" target="_blank" rel="noopener" class="mobile-link">Official Documentation</a></li>
+<li class="mobile-list-item"><a href="https://kubernetes.io/docs/reference/kubectl/" target="_blank" rel="noopener" class="mobile-link">kubectl Reference</a></li>
+<li class="mobile-list-item"><a href="https://kubernetes.io/docs/concepts/configuration/overview/" target="_blank" rel="noopener" class="mobile-link">Kubernetes Best Practices</a></li>
+<li class="mobile-list-item"><a href="https://kubernetes.io/docs/tasks/debug-application-cluster/" target="_blank" rel="noopener" class="mobile-link">Troubleshooting Guide</a></li>
+<li class="mobile-list-item"><a href="https://kubernetes.io/docs/concepts/security/" target="_blank" rel="noopener" class="mobile-link">Security Best Practices</a></li>
+<p class="mobile-paragraph">---</p>
+<p class="mobile-paragraph"><strong>Note:</strong> This guide is part of the <a href="https://howtomgr.github.io" target="_blank" rel="noopener" class="mobile-link">HowToMgr</a> collection.</p></div></article><section class="jsx-8a7f0cdcf94f52ce related-section"><h2 class="jsx-8a7f0cdcf94f52ce section-title">Related <!-- -->Containers<!-- --> Guides</h2><div class="jsx-8a7f0cdcf94f52ce mobile-grid"><a class="mobile-card" href="/container/docker/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Docker</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for docker</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">2 min</span></div></a><a class="mobile-card" href="/container/k3s/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">K3s</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for k3s</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a><a class="mobile-card" href="/container/minikube/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Minikube</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for minikube</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a></div></section><nav class="jsx-8a7f0cdcf94f52ce guide-navigation"><a class="btn btn-secondary" href="/container/">← All <!-- -->Containers</a><a class="btn btn-secondary" href="/">All Categories</a></nav></div></main><footer class="jsx-745d6189719dfe72 mobile-footer"><div class="jsx-745d6189719dfe72 container"><div class="jsx-745d6189719dfe72 footer-content"><div class="jsx-745d6189719dfe72 footer-links"><a href="/">Home</a><a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">GitHub</a><a href="https://github.com/howtomgr/howtomgr.github.io" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">Source</a></div><div class="jsx-745d6189719dfe72 footer-separator"></div><p class="jsx-745d6189719dfe72 footer-text">© <!-- -->2025<!-- --> HowToMgr Organization. Open source installation guides.</p><p class="jsx-745d6189719dfe72 footer-tech">Built with ❤️ using Next.js + GitHub Pages</p><p class="jsx-745d6189719dfe72 footer-disclaimer"><small class="jsx-745d6189719dfe72">All guides are provided as-is. Please review and test before production use.</small></p></div></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"guide":{"name":"kubernetes","displayName":"Kubernetes","slug":"kubernetes","description":"Repo for kubernetes","category":"container","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/kubernetes","updatedAt":"2025-09-08T03:10:22Z","createdAt":"2025-09-08T03:10:10Z","readmeRaw":"# Kubernetes Installation Guide\n\nContainer orchestration platform for automating deployment, scaling, and management of containerized applications.\n\n## Prerequisites\n\n- Linux system with 2GB+ RAM per node\n- 2 CPUs minimum per node  \n- Network connectivity between nodes\n- Container runtime (Docker/containerd)\n- Disabled swap on all nodes\n\n## Installation Methods\n\n### kubeadm (Recommended)\n\n#### Master Node Setup\n```bash\n# Disable swap\nsudo swapoff -a\nsudo sed -i '/ swap / s/^\\(.*\\)$/#\\1/g' /etc/fstab\n\n# Install container runtime (containerd)\nsudo apt-get update\nsudo apt-get install -y ca-certificates curl gnupg lsb-release\n\n# Add Docker's official GPG key\nsudo mkdir -p /etc/apt/keyrings\ncurl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg\n\n# Add Docker repository\necho \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list \u003e /dev/null\n\n# Install containerd\nsudo apt-get update\nsudo apt-get install -y containerd.io\n\n# Configure containerd\nsudo mkdir -p /etc/containerd\ncontainerd config default | sudo tee /etc/containerd/config.toml\nsudo sed -i 's/SystemdCgroup = false/SystemdCgroup = true/' /etc/containerd/config.toml\nsudo systemctl restart containerd\nsudo systemctl enable containerd\n\n# Install kubeadm, kubelet, kubectl\nsudo apt-get update\nsudo apt-get install -y apt-transport-https ca-certificates curl\n\ncurl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg\n\necho \"deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main\" | sudo tee /etc/apt/sources.list.d/kubernetes.list\n\nsudo apt-get update\nsudo apt-get install -y kubelet kubeadm kubectl\nsudo apt-mark hold kubelet kubeadm kubectl\n\n# Configure system settings\ncat \u003c\u003cEOF | sudo tee /etc/modules-load.d/k8s.conf\noverlay\nbr_netfilter\nEOF\n\nsudo modprobe overlay\nsudo modprobe br_netfilter\n\ncat \u003c\u003cEOF | sudo tee /etc/sysctl.d/k8s.conf\nnet.bridge.bridge-nf-call-iptables  = 1\nnet.bridge.bridge-nf-call-ip6tables = 1\nnet.ipv4.ip_forward                 = 1\nEOF\n\nsudo sysctl --system\n\n# Initialize cluster\nsudo kubeadm init --pod-network-cidr=10.244.0.0/16\n\n# Configure kubectl for current user\nmkdir -p $HOME/.kube\nsudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\nsudo chown $(id -u):$(id -g) $HOME/.kube/config\n\n# Install CNI plugin (Flannel)\nkubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml\n```\n\n#### Worker Node Setup\n```bash\n# Follow the same steps as master node up to kubeadm init\n# Then join the cluster using the token from master node\n\n# Get join command from master node\nkubeadm token create --print-join-command\n\n# On worker nodes, run the join command (example):\nsudo kubeadm join 192.168.1.100:6443 --token abc123.def456ghi789 --discovery-token-ca-cert-hash sha256:1234567890abcdef...\n```\n\n### k3s (Lightweight Alternative)\n```bash\n# Install k3s on master node\ncurl -sfL https://get.k3s.io | sh -\n\n# Get node token\nsudo cat /var/lib/rancher/k3s/server/node-token\n\n# Install on worker nodes\ncurl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -\n\n# Configure kubectl\nmkdir -p ~/.kube\nsudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config\nsudo chown $(id -u):$(id -g) ~/.kube/config\nexport KUBECONFIG=~/.kube/config\n```\n\n### Minikube (Development)\n```bash\n# Install minikube\ncurl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64\nsudo install minikube-linux-amd64 /usr/local/bin/minikube\n\n# Start minikube cluster\nminikube start --driver=docker --cpus=2 --memory=4g\n\n# Enable addons\nminikube addons enable dashboard\nminikube addons enable ingress\nminikube addons enable metrics-server\n\n# Get cluster info\nkubectl cluster-info\n```\n\n## Configuration\n\n### Cluster Administration\n```bash\n# Check cluster status\nkubectl cluster-info\nkubectl get nodes\nkubectl get pods --all-namespaces\n\n# View cluster configuration\nkubectl config view\nkubectl config get-contexts\n\n# Create namespace\nkubectl create namespace production\n\n# Set default namespace\nkubectl config set-context --current --namespace=production\n\n# Apply resource quotas\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: v1\nkind: ResourceQuota\nmetadata:\n  name: compute-quota\n  namespace: production\nspec:\n  hard:\n    requests.cpu: \"4\"\n    requests.memory: 8Gi\n    limits.cpu: \"8\"\n    limits.memory: 16Gi\n    persistentvolumeclaims: \"10\"\nEOF\n```\n\n### Network Policies\n```bash\n# Create network policy for isolation\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: networking.k8s.io/v1\nkind: NetworkPolicy\nmetadata:\n  name: deny-all\n  namespace: production\nspec:\n  podSelector: {}\n  policyTypes:\n  - Ingress\n  - Egress\n---\napiVersion: networking.k8s.io/v1\nkind: NetworkPolicy\nmetadata:\n  name: allow-same-namespace\n  namespace: production\nspec:\n  podSelector: {}\n  policyTypes:\n  - Ingress\n  - Egress\n  ingress:\n  - from:\n    - namespaceSelector:\n        matchLabels:\n          name: production\n  egress:\n  - to:\n    - namespaceSelector:\n        matchLabels:\n          name: production\nEOF\n```\n\n### RBAC Configuration\n```bash\n# Create service account\nkubectl create serviceaccount developer-sa -n production\n\n# Create role\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: rbac.authorization.k8s.io/v1\nkind: Role\nmetadata:\n  namespace: production\n  name: developer-role\nrules:\n- apiGroups: [\"\"]\n  resources: [\"pods\", \"services\", \"configmaps\", \"secrets\"]\n  verbs: [\"get\", \"list\", \"watch\", \"create\", \"update\", \"patch\", \"delete\"]\n- apiGroups: [\"apps\"]\n  resources: [\"deployments\", \"replicasets\"]\n  verbs: [\"get\", \"list\", \"watch\", \"create\", \"update\", \"patch\", \"delete\"]\nEOF\n\n# Create role binding\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: rbac.authorization.k8s.io/v1\nkind: RoleBinding\nmetadata:\n  name: developer-binding\n  namespace: production\nsubjects:\n- kind: ServiceAccount\n  name: developer-sa\n  namespace: production\nroleRef:\n  kind: Role\n  name: developer-role\n  apiGroup: rbac.authorization.k8s.io\nEOF\n```\n\n## Application Deployment\n\n### Basic Application Deployment\n```bash\n# Create deployment\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\n  namespace: production\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: nginx\n  template:\n    metadata:\n      labels:\n        app: nginx\n    spec:\n      containers:\n      - name: nginx\n        image: nginx:1.20\n        ports:\n        - containerPort: 80\n        resources:\n          requests:\n            cpu: 100m\n            memory: 128Mi\n          limits:\n            cpu: 200m\n            memory: 256Mi\n        livenessProbe:\n          httpGet:\n            path: /\n            port: 80\n          initialDelaySeconds: 30\n          periodSeconds: 10\n        readinessProbe:\n          httpGet:\n            path: /\n            port: 80\n          initialDelaySeconds: 5\n          periodSeconds: 5\n---\napiVersion: v1\nkind: Service\nmetadata:\n  name: nginx-service\n  namespace: production\nspec:\n  selector:\n    app: nginx\n  ports:\n  - port: 80\n    targetPort: 80\n  type: ClusterIP\nEOF\n```\n\n### Ingress Configuration\n```bash\n# Install NGINX Ingress Controller\nkubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.1/deploy/static/provider/cloud/deploy.yaml\n\n# Create ingress resource\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n  name: nginx-ingress\n  namespace: production\n  annotations:\n    nginx.ingress.kubernetes.io/rewrite-target: /\n    nginx.ingress.kubernetes.io/ssl-redirect: \"true\"\n    cert-manager.io/cluster-issuer: \"letsencrypt-prod\"\nspec:\n  tls:\n  - hosts:\n    - example.com\n    secretName: example-com-tls\n  rules:\n  - host: example.com\n    http:\n      paths:\n      - path: /\n        pathType: Prefix\n        backend:\n          service:\n            name: nginx-service\n            port:\n              number: 80\nEOF\n```\n\n### Persistent Storage\n```bash\n# Create storage class\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: storage.k8s.io/v1\nkind: StorageClass\nmetadata:\n  name: fast-ssd\nprovisioner: kubernetes.io/gce-pd\nparameters:\n  type: pd-ssd\n  zones: us-central1-a,us-central1-b\nallowVolumeExpansion: true\nvolumeBindingMode: WaitForFirstConsumer\nEOF\n\n# Create persistent volume claim\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: v1\nkind: PersistentVolumeClaim\nmetadata:\n  name: app-data\n  namespace: production\nspec:\n  accessModes:\n  - ReadWriteOnce\n  storageClassName: fast-ssd\n  resources:\n    requests:\n      storage: 10Gi\nEOF\n\n# Use in deployment\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: app-with-storage\n  namespace: production\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      app: myapp\n  template:\n    metadata:\n      labels:\n        app: myapp\n    spec:\n      containers:\n      - name: myapp\n        image: myapp:latest\n        volumeMounts:\n        - name: data-volume\n          mountPath: /data\n      volumes:\n      - name: data-volume\n        persistentVolumeClaim:\n          claimName: app-data\nEOF\n```\n\n## Monitoring and Logging\n\n### Install Metrics Server\n```bash\n# Install metrics server\nkubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml\n\n# For development clusters, may need to add --kubelet-insecure-tls\nkubectl patch deployment metrics-server -n kube-system --type='json' -p='[{\"op\": \"add\", \"path\": \"/spec/template/spec/containers/0/args/-\", \"value\": \"--kubelet-insecure-tls\"}]'\n```\n\n### Install Kubernetes Dashboard\n```bash\n# Install dashboard\nkubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml\n\n# Create service account for dashboard\ncat \u003c\u003cEOF | kubectl apply -f -\napiVersion: v1\nkind: ServiceAccount\nmetadata:\n  name: admin-user\n  namespace: kubernetes-dashboard\n---\napiVersion: rbac.authorization.k8s.io/v1\nkind: ClusterRoleBinding\nmetadata:\n  name: admin-user\nroleRef:\n  apiGroup: rbac.authorization.k8s.io\n  kind: ClusterRole\n  name: cluster-admin\nsubjects:\n- kind: ServiceAccount\n  name: admin-user\n  namespace: kubernetes-dashboard\nEOF\n\n# Get token for dashboard access\nkubectl -n kubernetes-dashboard create token admin-user\n\n# Access dashboard\nkubectl proxy\n# Then visit: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/\n```\n\n## Backup and Disaster Recovery\n\n### etcd Backup\n```bash\n# Install etcdctl\nETCD_VER=v3.5.9\ncurl -L https://github.com/etcd-io/etcd/releases/download/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz -o etcd-${ETCD_VER}-linux-amd64.tar.gz\ntar xzf etcd-${ETCD_VER}-linux-amd64.tar.gz\nsudo mv etcd-${ETCD_VER}-linux-amd64/etcdctl /usr/local/bin/\n\n# Create backup script\nsudo tee /usr/local/bin/etcd-backup.sh \u003e /dev/null \u003c\u003c'EOF'\n#!/bin/bash\nBACKUP_DIR=\"/backup/etcd\"\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p ${BACKUP_DIR}\n\n# Create etcd snapshot\netcdctl snapshot save ${BACKUP_DIR}/etcd-backup-${DATE}.db \\\n  --endpoints=https://127.0.0.1:2379 \\\n  --cacert=/etc/kubernetes/pki/etcd/ca.crt \\\n  --cert=/etc/kubernetes/pki/etcd/server.crt \\\n  --key=/etc/kubernetes/pki/etcd/server.key\n\n# Verify snapshot\netcdctl snapshot status ${BACKUP_DIR}/etcd-backup-${DATE}.db -w table\n\n# Keep only last 7 backups\nfind ${BACKUP_DIR} -name \"etcd-backup-*.db\" -type f -mtime +7 -delete\n\necho \"Backup completed: etcd-backup-${DATE}.db\"\nEOF\n\nsudo chmod +x /usr/local/bin/etcd-backup.sh\n\n# Schedule daily backup\necho \"0 2 * * * root /usr/local/bin/etcd-backup.sh\" | sudo tee -a /etc/crontab\n```\n\n## Verification\n\n```bash\n# Check cluster health\nkubectl get nodes -o wide\nkubectl get pods --all-namespaces\nkubectl top nodes\nkubectl top pods --all-namespaces\n\n# Check system pods\nkubectl get pods -n kube-system\n\n# Check cluster info\nkubectl cluster-info dump\n\n# Test DNS resolution\nkubectl run test-dns --image=busybox --rm -it --restart=Never -- nslookup kubernetes.default\n\n# Test pod-to-pod communication\nkubectl run test-pod1 --image=nginx --port=80\nkubectl expose pod test-pod1 --port=80\nkubectl run test-pod2 --image=busybox --rm -it --restart=Never -- wget -qO- test-pod1\n\n# Check resource usage\nkubectl describe node\nkubectl describe pod \u003cpod-name\u003e\n\n# View logs\nkubectl logs -n kube-system -l component=kube-apiserver\nkubectl logs -n kube-system -l component=etcd\n```\n\n## Troubleshooting\n\n```bash\n# Check node status\nkubectl describe node \u003cnode-name\u003e\nkubectl get events --sort-by=.metadata.creationTimestamp\n\n# Debug pods\nkubectl describe pod \u003cpod-name\u003e\nkubectl logs \u003cpod-name\u003e -c \u003ccontainer-name\u003e\nkubectl exec -it \u003cpod-name\u003e -- /bin/bash\n\n# Check cluster components\nsudo journalctl -u kubelet -f\nsudo journalctl -u containerd -f\n\n# Debug networking\nkubectl run debug-pod --image=nicolaka/netshoot --rm -it --restart=Never\n\n# Check certificates\nkubeadm certs check-expiration\nopenssl x509 -in /etc/kubernetes/pki/apiserver.crt -text -noout\n\n# Reset cluster (if needed)\nsudo kubeadm reset\nsudo rm -rf /etc/cni/net.d\nsudo rm -rf $HOME/.kube/config\n```\n\n## Additional Resources\n\n- [Official Documentation](https://kubernetes.io/docs/)\n- [kubectl Reference](https://kubernetes.io/docs/reference/kubectl/)\n- [Kubernetes Best Practices](https://kubernetes.io/docs/concepts/configuration/overview/)\n- [Troubleshooting Guide](https://kubernetes.io/docs/tasks/debug-application-cluster/)\n- [Security Best Practices](https://kubernetes.io/docs/concepts/security/)\n\n---\n\n**Note:** This guide is part of the [HowToMgr](https://howtomgr.github.io) collection.","readmeHtml":"\u003ch1 id=\"kubernetes-installation-guide\" class=\"mobile-header\"\u003eKubernetes Installation Guide\u003c/h1\u003e\n\u003cp class=\"mobile-paragraph\"\u003eContainer orchestration platform for automating deployment, scaling, and management of containerized applications.\u003c/p\u003e\n\u003ch2 id=\"prerequisites\" class=\"mobile-header\"\u003ePrerequisites\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003eLinux system with 2GB+ RAM per node\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e2 CPUs minimum per node  \u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eNetwork connectivity between nodes\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eContainer runtime (Docker/containerd)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eDisabled swap on all nodes\u003c/li\u003e\n\u003ch2 id=\"installation-methods\" class=\"mobile-header\"\u003eInstallation Methods\u003c/h2\u003e\n\u003ch3 id=\"kubeadm-recommended\" class=\"mobile-header\"\u003ekubeadm (Recommended)\u003c/h3\u003e\n\u003cp class=\"mobile-paragraph\"\u003e#### Master Node Setup\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Disable swap\nsudo swapoff -a\nsudo sed -i \u0026#039;/ swap / s/^\\(.*\\)$/#\\1/g\u0026#039; /etc/fstab\n\n# Install container runtime (containerd)\nsudo apt-get update\nsudo apt-get install -y ca-certificates curl gnupg lsb-release\n\n# Add Docker\u0026#039;s official GPG key\nsudo mkdir -p /etc/apt/keyrings\ncurl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg\n\n# Add Docker repository\necho \u0026quot;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\u0026quot; | sudo tee /etc/apt/sources.list.d/docker.list \u0026gt; /dev/null\n\n# Install containerd\nsudo apt-get update\nsudo apt-get install -y containerd.io\n\n# Configure containerd\nsudo mkdir -p /etc/containerd\ncontainerd config default | sudo tee /etc/containerd/config.toml\nsudo sed -i \u0026#039;s/SystemdCgroup = false/SystemdCgroup = true/\u0026#039; /etc/containerd/config.toml\nsudo systemctl restart containerd\nsudo systemctl enable containerd\n\n# Install kubeadm, kubelet, kubectl\nsudo apt-get update\nsudo apt-get install -y apt-transport-https ca-certificates curl\n\ncurl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg\n\necho \u0026quot;deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main\u0026quot; | sudo tee /etc/apt/sources.list.d/kubernetes.list\n\nsudo apt-get update\nsudo apt-get install -y kubelet kubeadm kubectl\nsudo apt-mark hold kubelet kubeadm kubectl\n\n# Configure system settings\ncat \u0026lt;\u0026lt;EOF | sudo tee /etc/modules-load.d/k8s.conf\noverlay\nbr_netfilter\nEOF\n\nsudo modprobe overlay\nsudo modprobe br_netfilter\n\ncat \u0026lt;\u0026lt;EOF | sudo tee /etc/sysctl.d/k8s.conf\nnet.bridge.bridge-nf-call-iptables  = 1\nnet.bridge.bridge-nf-call-ip6tables = 1\nnet.ipv4.ip_forward                 = 1\nEOF\n\nsudo sysctl --system\n\n# Initialize cluster\nsudo kubeadm init --pod-network-cidr=10.244.0.0/16\n\n# Configure kubectl for current user\nmkdir -p $HOME/.kube\nsudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\nsudo chown $(id -u):$(id -g) $HOME/.kube/config\n\n# Install CNI plugin (Flannel)\nkubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003cp class=\"mobile-paragraph\"\u003e#### Worker Node Setup\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Follow the same steps as master node up to kubeadm init\n# Then join the cluster using the token from master node\n\n# Get join command from master node\nkubeadm token create --print-join-command\n\n# On worker nodes, run the join command (example):\nsudo kubeadm join 192.168.1.100:6443 --token abc123.def456ghi789 --discovery-token-ca-cert-hash sha256:1234567890abcdef...\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"k3s-lightweight-alternative\" class=\"mobile-header\"\u003ek3s (Lightweight Alternative)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install k3s on master node\ncurl -sfL https://get.k3s.io | sh -\n\n# Get node token\nsudo cat /var/lib/rancher/k3s/server/node-token\n\n# Install on worker nodes\ncurl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -\n\n# Configure kubectl\nmkdir -p ~/.kube\nsudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config\nsudo chown $(id -u):$(id -g) ~/.kube/config\nexport KUBECONFIG=~/.kube/config\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"minikube-development\" class=\"mobile-header\"\u003eMinikube (Development)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install minikube\ncurl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64\nsudo install minikube-linux-amd64 /usr/local/bin/minikube\n\n# Start minikube cluster\nminikube start --driver=docker --cpus=2 --memory=4g\n\n# Enable addons\nminikube addons enable dashboard\nminikube addons enable ingress\nminikube addons enable metrics-server\n\n# Get cluster info\nkubectl cluster-info\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"configuration\" class=\"mobile-header\"\u003eConfiguration\u003c/h2\u003e\n\u003ch3 id=\"cluster-administration\" class=\"mobile-header\"\u003eCluster Administration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check cluster status\nkubectl cluster-info\nkubectl get nodes\nkubectl get pods --all-namespaces\n\n# View cluster configuration\nkubectl config view\nkubectl config get-contexts\n\n# Create namespace\nkubectl create namespace production\n\n# Set default namespace\nkubectl config set-context --current --namespace=production\n\n# Apply resource quotas\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: v1\nkind: ResourceQuota\nmetadata:\n  name: compute-quota\n  namespace: production\nspec:\n  hard:\n    requests.cpu: \u0026quot;4\u0026quot;\n    requests.memory: 8Gi\n    limits.cpu: \u0026quot;8\u0026quot;\n    limits.memory: 16Gi\n    persistentvolumeclaims: \u0026quot;10\u0026quot;\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"network-policies\" class=\"mobile-header\"\u003eNetwork Policies\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create network policy for isolation\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: networking.k8s.io/v1\nkind: NetworkPolicy\nmetadata:\n  name: deny-all\n  namespace: production\nspec:\n  podSelector: {}\n  policyTypes:\n  - Ingress\n  - Egress\n---\napiVersion: networking.k8s.io/v1\nkind: NetworkPolicy\nmetadata:\n  name: allow-same-namespace\n  namespace: production\nspec:\n  podSelector: {}\n  policyTypes:\n  - Ingress\n  - Egress\n  ingress:\n  - from:\n    - namespaceSelector:\n        matchLabels:\n          name: production\n  egress:\n  - to:\n    - namespaceSelector:\n        matchLabels:\n          name: production\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"rbac-configuration\" class=\"mobile-header\"\u003eRBAC Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create service account\nkubectl create serviceaccount developer-sa -n production\n\n# Create role\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: rbac.authorization.k8s.io/v1\nkind: Role\nmetadata:\n  namespace: production\n  name: developer-role\nrules:\n- apiGroups: [\u0026quot;\u0026quot;]\n  resources: [\u0026quot;pods\u0026quot;, \u0026quot;services\u0026quot;, \u0026quot;configmaps\u0026quot;, \u0026quot;secrets\u0026quot;]\n  verbs: [\u0026quot;get\u0026quot;, \u0026quot;list\u0026quot;, \u0026quot;watch\u0026quot;, \u0026quot;create\u0026quot;, \u0026quot;update\u0026quot;, \u0026quot;patch\u0026quot;, \u0026quot;delete\u0026quot;]\n- apiGroups: [\u0026quot;apps\u0026quot;]\n  resources: [\u0026quot;deployments\u0026quot;, \u0026quot;replicasets\u0026quot;]\n  verbs: [\u0026quot;get\u0026quot;, \u0026quot;list\u0026quot;, \u0026quot;watch\u0026quot;, \u0026quot;create\u0026quot;, \u0026quot;update\u0026quot;, \u0026quot;patch\u0026quot;, \u0026quot;delete\u0026quot;]\nEOF\n\n# Create role binding\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: rbac.authorization.k8s.io/v1\nkind: RoleBinding\nmetadata:\n  name: developer-binding\n  namespace: production\nsubjects:\n- kind: ServiceAccount\n  name: developer-sa\n  namespace: production\nroleRef:\n  kind: Role\n  name: developer-role\n  apiGroup: rbac.authorization.k8s.io\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"application-deployment\" class=\"mobile-header\"\u003eApplication Deployment\u003c/h2\u003e\n\u003ch3 id=\"basic-application-deployment\" class=\"mobile-header\"\u003eBasic Application Deployment\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create deployment\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\n  namespace: production\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: nginx\n  template:\n    metadata:\n      labels:\n        app: nginx\n    spec:\n      containers:\n      - name: nginx\n        image: nginx:1.20\n        ports:\n        - containerPort: 80\n        resources:\n          requests:\n            cpu: 100m\n            memory: 128Mi\n          limits:\n            cpu: 200m\n            memory: 256Mi\n        livenessProbe:\n          httpGet:\n            path: /\n            port: 80\n          initialDelaySeconds: 30\n          periodSeconds: 10\n        readinessProbe:\n          httpGet:\n            path: /\n            port: 80\n          initialDelaySeconds: 5\n          periodSeconds: 5\n---\napiVersion: v1\nkind: Service\nmetadata:\n  name: nginx-service\n  namespace: production\nspec:\n  selector:\n    app: nginx\n  ports:\n  - port: 80\n    targetPort: 80\n  type: ClusterIP\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"ingress-configuration\" class=\"mobile-header\"\u003eIngress Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install NGINX Ingress Controller\nkubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.1/deploy/static/provider/cloud/deploy.yaml\n\n# Create ingress resource\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n  name: nginx-ingress\n  namespace: production\n  annotations:\n    nginx.ingress.kubernetes.io/rewrite-target: /\n    nginx.ingress.kubernetes.io/ssl-redirect: \u0026quot;true\u0026quot;\n    cert-manager.io/cluster-issuer: \u0026quot;letsencrypt-prod\u0026quot;\nspec:\n  tls:\n  - hosts:\n    - example.com\n    secretName: example-com-tls\n  rules:\n  - host: example.com\n    http:\n      paths:\n      - path: /\n        pathType: Prefix\n        backend:\n          service:\n            name: nginx-service\n            port:\n              number: 80\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"persistent-storage\" class=\"mobile-header\"\u003ePersistent Storage\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create storage class\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: storage.k8s.io/v1\nkind: StorageClass\nmetadata:\n  name: fast-ssd\nprovisioner: kubernetes.io/gce-pd\nparameters:\n  type: pd-ssd\n  zones: us-central1-a,us-central1-b\nallowVolumeExpansion: true\nvolumeBindingMode: WaitForFirstConsumer\nEOF\n\n# Create persistent volume claim\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: v1\nkind: PersistentVolumeClaim\nmetadata:\n  name: app-data\n  namespace: production\nspec:\n  accessModes:\n  - ReadWriteOnce\n  storageClassName: fast-ssd\n  resources:\n    requests:\n      storage: 10Gi\nEOF\n\n# Use in deployment\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: app-with-storage\n  namespace: production\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      app: myapp\n  template:\n    metadata:\n      labels:\n        app: myapp\n    spec:\n      containers:\n      - name: myapp\n        image: myapp:latest\n        volumeMounts:\n        - name: data-volume\n          mountPath: /data\n      volumes:\n      - name: data-volume\n        persistentVolumeClaim:\n          claimName: app-data\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"monitoring-and-logging\" class=\"mobile-header\"\u003eMonitoring and Logging\u003c/h2\u003e\n\u003ch3 id=\"install-metrics-server\" class=\"mobile-header\"\u003eInstall Metrics Server\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install metrics server\nkubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml\n\n# For development clusters, may need to add --kubelet-insecure-tls\nkubectl patch deployment metrics-server -n kube-system --type=\u0026#039;json\u0026#039; -p=\u0026#039;[{\u0026quot;op\u0026quot;: \u0026quot;add\u0026quot;, \u0026quot;path\u0026quot;: \u0026quot;/spec/template/spec/containers/0/args/-\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;--kubelet-insecure-tls\u0026quot;}]\u0026#039;\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"install-kubernetes-dashboard\" class=\"mobile-header\"\u003eInstall Kubernetes Dashboard\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install dashboard\nkubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml\n\n# Create service account for dashboard\ncat \u0026lt;\u0026lt;EOF | kubectl apply -f -\napiVersion: v1\nkind: ServiceAccount\nmetadata:\n  name: admin-user\n  namespace: kubernetes-dashboard\n---\napiVersion: rbac.authorization.k8s.io/v1\nkind: ClusterRoleBinding\nmetadata:\n  name: admin-user\nroleRef:\n  apiGroup: rbac.authorization.k8s.io\n  kind: ClusterRole\n  name: cluster-admin\nsubjects:\n- kind: ServiceAccount\n  name: admin-user\n  namespace: kubernetes-dashboard\nEOF\n\n# Get token for dashboard access\nkubectl -n kubernetes-dashboard create token admin-user\n\n# Access dashboard\nkubectl proxy\n# Then visit: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"backup-and-disaster-recovery\" class=\"mobile-header\"\u003eBackup and Disaster Recovery\u003c/h2\u003e\n\u003ch3 id=\"etcd-backup\" class=\"mobile-header\"\u003eetcd Backup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install etcdctl\nETCD_VER=v3.5.9\ncurl -L https://github.com/etcd-io/etcd/releases/download/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz -o etcd-${ETCD_VER}-linux-amd64.tar.gz\ntar xzf etcd-${ETCD_VER}-linux-amd64.tar.gz\nsudo mv etcd-${ETCD_VER}-linux-amd64/etcdctl /usr/local/bin/\n\n# Create backup script\nsudo tee /usr/local/bin/etcd-backup.sh \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n#!/bin/bash\nBACKUP_DIR=\u0026quot;/backup/etcd\u0026quot;\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p ${BACKUP_DIR}\n\n# Create etcd snapshot\netcdctl snapshot save ${BACKUP_DIR}/etcd-backup-${DATE}.db \\\n  --endpoints=https://127.0.0.1:2379 \\\n  --cacert=/etc/kubernetes/pki/etcd/ca.crt \\\n  --cert=/etc/kubernetes/pki/etcd/server.crt \\\n  --key=/etc/kubernetes/pki/etcd/server.key\n\n# Verify snapshot\netcdctl snapshot status ${BACKUP_DIR}/etcd-backup-${DATE}.db -w table\n\n# Keep only last 7 backups\nfind ${BACKUP_DIR} -name \u0026quot;etcd-backup-*.db\u0026quot; -type f -mtime +7 -delete\n\necho \u0026quot;Backup completed: etcd-backup-${DATE}.db\u0026quot;\nEOF\n\nsudo chmod +x /usr/local/bin/etcd-backup.sh\n\n# Schedule daily backup\necho \u0026quot;0 2 * * * root /usr/local/bin/etcd-backup.sh\u0026quot; | sudo tee -a /etc/crontab\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"verification\" class=\"mobile-header\"\u003eVerification\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check cluster health\nkubectl get nodes -o wide\nkubectl get pods --all-namespaces\nkubectl top nodes\nkubectl top pods --all-namespaces\n\n# Check system pods\nkubectl get pods -n kube-system\n\n# Check cluster info\nkubectl cluster-info dump\n\n# Test DNS resolution\nkubectl run test-dns --image=busybox --rm -it --restart=Never -- nslookup kubernetes.default\n\n# Test pod-to-pod communication\nkubectl run test-pod1 --image=nginx --port=80\nkubectl expose pod test-pod1 --port=80\nkubectl run test-pod2 --image=busybox --rm -it --restart=Never -- wget -qO- test-pod1\n\n# Check resource usage\nkubectl describe node\nkubectl describe pod \u0026lt;pod-name\u0026gt;\n\n# View logs\nkubectl logs -n kube-system -l component=kube-apiserver\nkubectl logs -n kube-system -l component=etcd\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"troubleshooting\" class=\"mobile-header\"\u003eTroubleshooting\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check node status\nkubectl describe node \u0026lt;node-name\u0026gt;\nkubectl get events --sort-by=.metadata.creationTimestamp\n\n# Debug pods\nkubectl describe pod \u0026lt;pod-name\u0026gt;\nkubectl logs \u0026lt;pod-name\u0026gt; -c \u0026lt;container-name\u0026gt;\nkubectl exec -it \u0026lt;pod-name\u0026gt; -- /bin/bash\n\n# Check cluster components\nsudo journalctl -u kubelet -f\nsudo journalctl -u containerd -f\n\n# Debug networking\nkubectl run debug-pod --image=nicolaka/netshoot --rm -it --restart=Never\n\n# Check certificates\nkubeadm certs check-expiration\nopenssl x509 -in /etc/kubernetes/pki/apiserver.crt -text -noout\n\n# Reset cluster (if needed)\nsudo kubeadm reset\nsudo rm -rf /etc/cni/net.d\nsudo rm -rf $HOME/.kube/config\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"additional-resources\" class=\"mobile-header\"\u003eAdditional Resources\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://kubernetes.io/docs/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eOfficial Documentation\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://kubernetes.io/docs/reference/kubectl/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003ekubectl Reference\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://kubernetes.io/docs/concepts/configuration/overview/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eKubernetes Best Practices\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://kubernetes.io/docs/tasks/debug-application-cluster/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eTroubleshooting Guide\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://kubernetes.io/docs/concepts/security/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eSecurity Best Practices\u003c/a\u003e\u003c/li\u003e\n\u003cp class=\"mobile-paragraph\"\u003e---\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This guide is part of the \u003ca href=\"https://howtomgr.github.io\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eHowToMgr\u003c/a\u003e collection.\u003c/p\u003e","readTime":"8 min","wordCount":1445,"lastBuilt":"2025-09-14T00:58:28.874Z"},"category":{"key":"container","name":"Containers","description":"Container platforms and orchestration","icon":"📦","color":"#bd93f9","keywords":["docker","kubernetes","k3s","portainer","rancher","minikube"]},"relatedGuides":[{"name":"docker","displayName":"Docker","slug":"docker","description":"Repo for docker","category":"container","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/docker","updatedAt":"2025-09-08T03:06:36Z","createdAt":"2023-08-28T03:47:37Z","readmeRaw":"# Docker Installation Guide\n\nContainerization platform for developing, shipping, and running applications in isolated environments.\n\n## Prerequisites\n\n- Linux system with kernel 3.10+\n- 64-bit architecture\n- Root or sudo access\n\n## Installation\n\n### Quick Installation Script\n```bash\n# Install Docker using official script\ncurl -fsSL https://get.docker.com -o get-docker.sh\nsudo sh get-docker.sh\n\n# Add current user to docker group\nsudo usermod -aG docker $USER\nnewgrp docker\n\n# Enable Docker service\nsudo systemctl enable --now docker\n```\n\n### Manual Installation (RHEL/CentOS)\n```bash\n# Install prerequisites\nsudo yum install -y yum-utils device-mapper-persistent-data lvm2\n\n# Add Docker repository\nsudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo\n\n# Install Docker\nsudo yum install -y docker-ce docker-ce-cli containerd.io\n\n# Start Docker\nsudo systemctl enable --now docker\n```\n\n## Configuration\n\n### Docker Compose Installation\n```bash\n# Download Docker Compose\nsudo curl -L \"https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose\n\n# Make executable\nsudo chmod +x /usr/local/bin/docker-compose\n\n# Create symlink (optional)\nsudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose\n```\n\n### Docker Machine (Optional)\n```bash\n# Download Docker Machine\nbase=https://github.com/docker/machine/releases/download/v0.16.2\ncurl -L $base/docker-machine-$(uname -s)-$(uname -m) \u003e/tmp/docker-machine\nsudo mv /tmp/docker-machine /usr/local/bin/docker-machine\nsudo chmod +x /usr/local/bin/docker-machine\n\n# Install bash completion\nbase=https://raw.githubusercontent.com/docker/machine/v0.16.2\nfor i in docker-machine-prompt.bash docker-machine-wrapper.bash docker-machine.bash; do\n  sudo wget \"$base/contrib/completion/bash/${i}\" -P /etc/bash_completion.d\ndone\n```\n\n## Portainer Installation (Optional)\n```bash\n# Create volume and run Portainer\ndocker volume create portainer_data\ndocker run -d -p 8000:8000 -p 9443:9443 \\\n    --name portainer --restart=always \\\n    -v /var/run/docker.sock:/var/run/docker.sock \\\n    -v portainer_data:/data \\\n    portainer/portainer-ce:latest\n```\n\n## Verification\n\n```bash\n# Check Docker version\ndocker --version\ndocker-compose --version\n\n# Test Docker installation\ndocker run hello-world\n\n# Check Docker service status\nsudo systemctl status docker\n\n# List Docker images and containers\ndocker images\ndocker ps -a\n```\n\n## Usage\n\nBasic Docker commands:\n\n1. **Pull an image**: `docker pull nginx`\n2. **Run a container**: `docker run -d -p 80:80 nginx`\n3. **List containers**: `docker ps`\n4. **Stop container**: `docker stop container_id`\n5. **Remove container**: `docker rm container_id`\n\n## Additional Resources\n\n- [Official Documentation](https://docs.docker.com/)\n- [Docker Hub](https://hub.docker.com/)\n- [Docker Compose Documentation](https://docs.docker.com/compose/)\n- [Portainer Documentation](https://documentation.portainer.io/)\n\n---\n\n**Note:** This guide is part of the [HowToMgr](https://howtomgr.github.io) collection.","readmeHtml":"\u003ch1 id=\"docker-installation-guide\" class=\"mobile-header\"\u003eDocker Installation Guide\u003c/h1\u003e\n\u003cp class=\"mobile-paragraph\"\u003eContainerization platform for developing, shipping, and running applications in isolated environments.\u003c/p\u003e\n\u003ch2 id=\"prerequisites\" class=\"mobile-header\"\u003ePrerequisites\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003eLinux system with kernel 3.10+\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e64-bit architecture\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eRoot or sudo access\u003c/li\u003e\n\u003ch2 id=\"installation\" class=\"mobile-header\"\u003eInstallation\u003c/h2\u003e\n\u003ch3 id=\"quick-installation-script\" class=\"mobile-header\"\u003eQuick Installation Script\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install Docker using official script\ncurl -fsSL https://get.docker.com -o get-docker.sh\nsudo sh get-docker.sh\n\n# Add current user to docker group\nsudo usermod -aG docker $USER\nnewgrp docker\n\n# Enable Docker service\nsudo systemctl enable --now docker\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"manual-installation-rhelcentos\" class=\"mobile-header\"\u003eManual Installation (RHEL/CentOS)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install prerequisites\nsudo yum install -y yum-utils device-mapper-persistent-data lvm2\n\n# Add Docker repository\nsudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo\n\n# Install Docker\nsudo yum install -y docker-ce docker-ce-cli containerd.io\n\n# Start Docker\nsudo systemctl enable --now docker\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"configuration\" class=\"mobile-header\"\u003eConfiguration\u003c/h2\u003e\n\u003ch3 id=\"docker-compose-installation\" class=\"mobile-header\"\u003eDocker Compose Installation\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Download Docker Compose\nsudo curl -L \u0026quot;https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)\u0026quot; -o /usr/local/bin/docker-compose\n\n# Make executable\nsudo chmod +x /usr/local/bin/docker-compose\n\n# Create symlink (optional)\nsudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"docker-machine-optional\" class=\"mobile-header\"\u003eDocker Machine (Optional)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Download Docker Machine\nbase=https://github.com/docker/machine/releases/download/v0.16.2\ncurl -L $base/docker-machine-$(uname -s)-$(uname -m) \u0026gt;/tmp/docker-machine\nsudo mv /tmp/docker-machine /usr/local/bin/docker-machine\nsudo chmod +x /usr/local/bin/docker-machine\n\n# Install bash completion\nbase=https://raw.githubusercontent.com/docker/machine/v0.16.2\nfor i in docker-machine-prompt.bash docker-machine-wrapper.bash docker-machine.bash; do\n  sudo wget \u0026quot;$base/contrib/completion/bash/${i}\u0026quot; -P /etc/bash_completion.d\ndone\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"portainer-installation-optional\" class=\"mobile-header\"\u003ePortainer Installation (Optional)\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create volume and run Portainer\ndocker volume create portainer_data\ndocker run -d -p 8000:8000 -p 9443:9443 \\\n    --name portainer --restart=always \\\n    -v /var/run/docker.sock:/var/run/docker.sock \\\n    -v portainer_data:/data \\\n    portainer/portainer-ce:latest\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"verification\" class=\"mobile-header\"\u003eVerification\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check Docker version\ndocker --version\ndocker-compose --version\n\n# Test Docker installation\ndocker run hello-world\n\n# Check Docker service status\nsudo systemctl status docker\n\n# List Docker images and containers\ndocker images\ndocker ps -a\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"usage\" class=\"mobile-header\"\u003eUsage\u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eBasic Docker commands:\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e1. \u003cstrong\u003ePull an image\u003c/strong\u003e: \u003ccode class=\"mobile-inline-code\"\u003edocker pull nginx\u003c/code\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e2. \u003cstrong\u003eRun a container\u003c/strong\u003e: \u003ccode class=\"mobile-inline-code\"\u003edocker run -d -p 80:80 nginx\u003c/code\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e3. \u003cstrong\u003eList containers\u003c/strong\u003e: \u003ccode class=\"mobile-inline-code\"\u003edocker ps\u003c/code\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e4. \u003cstrong\u003eStop container\u003c/strong\u003e: \u003ccode class=\"mobile-inline-code\"\u003edocker stop container_id\u003c/code\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e5. \u003cstrong\u003eRemove container\u003c/strong\u003e: \u003ccode class=\"mobile-inline-code\"\u003edocker rm container_id\u003c/code\u003e\u003c/p\u003e\n\u003ch2 id=\"additional-resources\" class=\"mobile-header\"\u003eAdditional Resources\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://docs.docker.com/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eOfficial Documentation\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://hub.docker.com/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eDocker Hub\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://docs.docker.com/compose/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eDocker Compose Documentation\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://documentation.portainer.io/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003ePortainer Documentation\u003c/a\u003e\u003c/li\u003e\n\u003cp class=\"mobile-paragraph\"\u003e---\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This guide is part of the \u003ca href=\"https://howtomgr.github.io\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eHowToMgr\u003c/a\u003e collection.\u003c/p\u003e","readTime":"2 min","wordCount":336,"lastBuilt":"2025-09-14T00:58:31.975Z"},{"name":"k3s","displayName":"K3s","slug":"k3s","description":"Repo for k3s","category":"container","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/k3s","updatedAt":"2025-09-08T03:09:53Z","createdAt":"2025-09-08T03:09:43Z","readmeRaw":"## 👋 Welcome to k3s 🚀  \n\nk3s README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-k3s\" class=\"mobile-header\"\u003e👋 Welcome to k3s 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003ek3s README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T00:58:29.181Z"},{"name":"minikube","displayName":"Minikube","slug":"minikube","description":"Repo for minikube","category":"container","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/minikube","updatedAt":"2025-09-08T03:11:25Z","createdAt":"2025-09-08T03:11:15Z","readmeRaw":"## 👋 Welcome to minikube 🚀  \n\nminikube README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-minikube\" class=\"mobile-header\"\u003e👋 Welcome to minikube 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eminikube README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T00:58:27.705Z"}]},"__N_SSG":true},"page":"/[category]/[guide]","query":{"category":"container","guide":"kubernetes"},"buildId":"gwB4j0n9ndF37HVylNSlu","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

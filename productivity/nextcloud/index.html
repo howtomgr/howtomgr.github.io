@@ -1,0 +1,867 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/><meta name="theme-color" content="#bd93f9"/><link rel="icon" href="/favicon.ico"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/><title class="jsx-745d6189719dfe72">Nextcloud Installation Guide - HowToMgr</title><meta name="description" content="Repo for nextcloud" class="jsx-745d6189719dfe72"/><meta name="keywords" content="installation guides, tutorials, linux, docker, kubernetes, mobile-first, responsive" class="jsx-745d6189719dfe72"/><meta property="og:title" content="Nextcloud Installation Guide - HowToMgr" class="jsx-745d6189719dfe72"/><meta property="og:description" content="Repo for nextcloud" class="jsx-745d6189719dfe72"/><meta property="og:type" content="website" class="jsx-745d6189719dfe72"/><meta property="og:url" content="https://howtomgr.github.io" class="jsx-745d6189719dfe72"/><meta property="og:image" content="https://howtomgr.github.io/social-preview.png" class="jsx-745d6189719dfe72"/><meta property="twitter:card" content="summary_large_image" class="jsx-745d6189719dfe72"/><meta property="twitter:title" content="Nextcloud Installation Guide - HowToMgr" class="jsx-745d6189719dfe72"/><meta property="twitter:description" content="Repo for nextcloud" class="jsx-745d6189719dfe72"/><meta name="next-head-count" content="17"/><link rel="dns-prefetch" href="//api.github.com"/><link rel="dns-prefetch" href="//github.com"/><link rel="preload" href="/favicon.ico" as="image"/><meta name="application-name" content="HowToMgr"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="default"/><meta name="apple-mobile-web-app-title" content="HowToMgr"/><meta name="format-detection" content="telephone=no"/><meta name="mobile-web-app-capable" content="yes"/><noscript><style>
+            .requires-js { display: none !important; }
+            .no-js-message { display: block !important; }
+          </style></noscript><link rel="preload" href="/_next/static/css/eec6c1c201affe77.css" as="style"/><link rel="stylesheet" href="/_next/static/css/eec6c1c201affe77.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/_next/static/chunks/webpack-ee7e63bc15b31913.js" defer=""></script><script src="/_next/static/chunks/framework-2b1f7a23d657eae4.js" defer=""></script><script src="/_next/static/chunks/main-6ec3f7584970eebe.js" defer=""></script><script src="/_next/static/chunks/pages/_app-d149ee305b4f74bb.js" defer=""></script><script src="/_next/static/chunks/675-4a724ee9ded8dc5b.js" defer=""></script><script src="/_next/static/chunks/pages/%5Bcategory%5D/%5Bguide%5D-1ac9c2ceb48b9f4e.js" defer=""></script><script src="/_next/static/gwB4j0n9ndF37HVylNSlu/_buildManifest.js" defer=""></script><script src="/_next/static/gwB4j0n9ndF37HVylNSlu/_ssgManifest.js" defer=""></script><style id="__jsx-8a7f0cdcf94f52ce">.breadcrumb.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:var(--space-2);margin-bottom:var(--space-6);font-size:var(--font-sm);color:var(--text-secondary);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);text-decoration:none;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce:hover{text-decoration:underline}.separator.jsx-8a7f0cdcf94f52ce{color:var(--text-muted);-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.current.jsx-8a7f0cdcf94f52ce{color:var(--text-primary);font-weight:500;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}.guide-header.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface)}.guide-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-3xl);margin-bottom:var(--space-4);line-height:1.2;word-break:break-word}.guide-description.jsx-8a7f0cdcf94f52ce{color:var(--text-secondary);font-size:var(--font-lg);margin-bottom:var(--space-5);line-height:1.5}.guide-badges.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);margin-bottom:var(--space-5);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-content.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface);overflow-x:hidden}.related-section.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-8)}.section-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-2xl);text-align:center;margin-bottom:var(--space-6)}.guide-navigation.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:var(--space-8)}.loading-container.jsx-8a7f0cdcf94f52ce,.error-container.jsx-8a7f0cdcf94f52ce{text-align:center;padding:var(--space-8)}.error-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:var(--space-6);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}@media(max-width:767px){.guide-header.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-title.jsx-8a7f0cdcf94f52ce{font-size:var(--font-2xl)}.guide-description.jsx-8a7f0cdcf94f52ce{font-size:var(--font-base)}.guide-content.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-badges.jsx-8a7f0cdcf94f52ce{gap:var(--space-2)}.guide-actions.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.guide-navigation.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.breadcrumb.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-4)}}</style><style id="__jsx-745d6189719dfe72">.app-container.jsx-745d6189719dfe72{min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-top:56px}.main-content.jsx-745d6189719dfe72{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;padding:var(--space-6)0}.mobile-footer.jsx-745d6189719dfe72{background:var(--bg-secondary);border-top:1px solid var(--bg-surface);padding:var(--space-6)0;margin-top:auto}.footer-content.jsx-745d6189719dfe72{text-align:center}.footer-links.jsx-745d6189719dfe72{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:var(--space-6);margin-bottom:var(--space-4);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72{color:var(--accent-primary);text-decoration:none;font-size:var(--font-sm)}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72:hover{color:var(--accent-secondary)}.footer-separator.jsx-745d6189719dfe72{height:1px;background:var(--bg-surface);margin:var(--space-4)auto;width:200px}.footer-text.jsx-745d6189719dfe72,.footer-tech.jsx-745d6189719dfe72{color:var(--text-secondary);font-size:var(--font-sm);margin-bottom:var(--space-2)}.footer-disclaimer.jsx-745d6189719dfe72{color:var(--text-muted);font-size:var(--font-xs)}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-dark.jsx-745d6189719dfe72{display:none}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-light.jsx-745d6189719dfe72{display:inline!important}@media(max-width:767px){.main-content.jsx-745d6189719dfe72{padding:var(--space-4)0}.footer-links.jsx-745d6189719dfe72{gap:var(--space-4)}}</style></head><body><noscript><div class="no-js-message" style="padding:1rem;background:#ff5555;color:#f8f8f2;text-align:center;font-size:0.9rem">This site requires JavaScript to function properly. Please enable JavaScript in your browser.</div></noscript><div id="__next"><div class="jsx-745d6189719dfe72 app-container"><a href="#main-content" class="jsx-745d6189719dfe72 skip-link">Skip to main content</a><nav class="jsx-745d6189719dfe72 mobile-nav"><div class="jsx-745d6189719dfe72 mobile-nav-content"><a class="mobile-brand" href="/"><span role="img" aria-label="Books" class="jsx-745d6189719dfe72">📚</span>HowToMgr</a><button aria-label="Toggle theme" title="Switch theme" class="jsx-745d6189719dfe72 mobile-theme-toggle touch-target"><span class="jsx-745d6189719dfe72 theme-icon-dark">🌙</span><span style="display:none" class="jsx-745d6189719dfe72 theme-icon-light">☀️</span></button></div></nav><main id="main-content" tabindex="-1" class="jsx-745d6189719dfe72 main-content"><div class="jsx-745d6189719dfe72 container"><nav aria-label="Breadcrumb" class="jsx-8a7f0cdcf94f52ce breadcrumb"><a href="/">Home</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><a href="/productivity/">Productivity</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><span class="jsx-8a7f0cdcf94f52ce current">Nextcloud</span></nav><header class="jsx-8a7f0cdcf94f52ce guide-header"><div class="jsx-8a7f0cdcf94f52ce guide-meta-top"><h1 class="jsx-8a7f0cdcf94f52ce guide-title">Nextcloud</h1><p class="jsx-8a7f0cdcf94f52ce guide-description">Repo for nextcloud</p><div class="jsx-8a7f0cdcf94f52ce guide-badges"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-primary">Productivity</span><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">12 min</span></div><div class="jsx-8a7f0cdcf94f52ce guide-actions"><a href="https://github.com/howtomgr/nextcloud" target="_blank" rel="noopener" class="jsx-8a7f0cdcf94f52ce btn btn-secondary">View on GitHub</a></div></div></header><article class="jsx-8a7f0cdcf94f52ce guide-content"><div class="jsx-8a7f0cdcf94f52ce readme-content"><h1 id="nextcloud-installation-guide" class="mobile-header">Nextcloud Installation Guide</h1>
+<p class="mobile-paragraph">Self-hosted file sync and share platform with collaboration features, calendar, contacts, and extensive app ecosystem.</p>
+<h2 id="prerequisites" class="mobile-header">Prerequisites</h2>
+<li class="mobile-list-item">Linux system (Ubuntu/Debian, RHEL/CentOS, or compatible)</li>
+<li class="mobile-list-item">Web server (Apache or NGINX)</li>
+<li class="mobile-list-item">PHP 8.0+ with required extensions</li>
+<li class="mobile-list-item">Database (MySQL/MariaDB, PostgreSQL, or SQLite)</li>
+<li class="mobile-list-item">2GB RAM minimum, 4GB+ recommended</li>
+<h2 id="installation" class="mobile-header">Installation</h2>
+<h3 id="lamp-stack-setup-apache-mysql-php" class="mobile-header">LAMP Stack Setup (Apache + MySQL + PHP)</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Ubuntu/Debian
+sudo apt update
+sudo apt install -y apache2 mariadb-server php php-mysql php-gd php-curl php-mbstring php-intl php-mcrypt php-imagick php-xml php-zip php-bcmath php-gmp
+
+# RHEL/CentOS
+sudo yum install -y httpd mariadb-server php php-mysql php-gd php-curl php-mbstring php-intl php-mcrypt php-imagick php-xml php-zip php-bcmath php-gmp
+
+# Enable services
+sudo systemctl enable --now apache2 mariadb  # Ubuntu/Debian
+sudo systemctl enable --now httpd mariadb    # RHEL/CentOS</code></pre>
+      </div>
+    </div>
+<h3 id="database-setup" class="mobile-header">Database Setup</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Secure MySQL installation
+sudo mysql_secure_installation
+
+# Create Nextcloud database
+sudo mysql -u root -p &lt;&lt;EOF
+CREATE DATABASE nextcloud CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE USER &#039;nextclouduser&#039;@&#039;localhost&#039; IDENTIFIED BY &#039;secure_password&#039;;
+GRANT ALL PRIVILEGES ON nextcloud.* TO &#039;nextclouduser&#039;@&#039;localhost&#039;;
+FLUSH PRIVILEGES;
+EXIT
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="nextcloud-download-and-setup" class="mobile-header">Nextcloud Download and Setup</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Download Nextcloud
+cd /tmp
+wget https://download.nextcloud.com/server/releases/latest.tar.bz2
+tar -xjf latest.tar.bz2
+
+# Move to web directory
+sudo cp -R nextcloud /var/www/html/
+sudo chown -R www-data:www-data /var/www/html/nextcloud  # Ubuntu/Debian
+sudo chown -R apache:apache /var/www/html/nextcloud      # RHEL/CentOS
+
+# Set proper permissions
+sudo find /var/www/html/nextcloud/ -type f -print0 | xargs -0 chmod 0640
+sudo find /var/www/html/nextcloud/ -type d -print0 | xargs -0 chmod 0750
+sudo chmod 750 /var/www/html/nextcloud
+sudo chmod -R 770 /var/www/html/nextcloud/data
+sudo chmod -R 770 /var/www/html/nextcloud/apps
+sudo chmod -R 770 /var/www/html/nextcloud/config</code></pre>
+      </div>
+    </div>
+<h3 id="using-docker-compose" class="mobile-header">Using Docker Compose</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create docker-compose.yml
+mkdir -p ~/nextcloud &amp;&amp; cd ~/nextcloud
+
+cat &gt; docker-compose.yml &lt;&lt;EOF
+version: &#039;3.8&#039;
+
+services:
+  nextcloud:
+    image: nextcloud:latest
+    restart: unless-stopped
+    ports:
+      - &quot;8080:80&quot;
+    volumes:
+      - nextcloud_data:/var/www/html
+      - ./config:/var/www/html/config
+      - ./custom_apps:/var/www/html/custom_apps
+      - ./data:/var/www/html/data
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=secure_password
+      - NEXTCLOUD_ADMIN_USER=admin
+      - NEXTCLOUD_ADMIN_PASSWORD=admin_password
+      - NEXTCLOUD_TRUSTED_DOMAINS=nextcloud.example.com
+    depends_on:
+      - db
+      - redis
+    networks:
+      - nextcloud
+
+  db:
+    image: mariadb:10.6
+    restart: unless-stopped
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --innodb-file-per-table=1 --skip-innodb-read-only-compressed
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_password
+      - MYSQL_PASSWORD=secure_password
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+    networks:
+      - nextcloud
+
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    networks:
+      - nextcloud
+
+volumes:
+  nextcloud_data:
+  db_data:
+
+networks:
+  nextcloud:
+    driver: bridge
+EOF
+
+# Start services
+docker-compose up -d
+
+# Check logs
+docker-compose logs -f nextcloud</code></pre>
+      </div>
+    </div>
+<h2 id="configuration" class="mobile-header">Configuration</h2>
+<h3 id="apache-virtual-host" class="mobile-header">Apache Virtual Host</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create Apache virtual host
+sudo tee /etc/apache2/sites-available/nextcloud.conf &gt; /dev/null &lt;&lt;EOF
+&lt;VirtualHost *:80&gt;
+    ServerName nextcloud.example.com
+    DocumentRoot /var/www/html/nextcloud
+
+    &lt;Directory /var/www/html/nextcloud/&gt;
+        Require all granted
+        AllowOverride All
+        Options FollowSymLinks MultiViews
+        
+        &lt;IfModule mod_dav.c&gt;
+            Dav off
+        &lt;/IfModule&gt;
+    &lt;/Directory&gt;
+
+    # Security headers
+    Header always set Strict-Transport-Security &quot;max-age=15552000; includeSubDomains&quot;
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options &quot;SAMEORIGIN&quot;
+    Header always set X-XSS-Protection &quot;1; mode=block&quot;
+    Header always set Referrer-Policy &quot;no-referrer&quot;
+    Header always set Feature-Policy &quot;camera &#039;none&#039;; microphone &#039;none&#039;&quot;
+
+    ErrorLog \${APACHE_LOG_DIR}/nextcloud_error.log
+    CustomLog \${APACHE_LOG_DIR}/nextcloud_access.log combined
+&lt;/VirtualHost&gt;
+EOF
+
+# Enable required modules
+sudo a2enmod rewrite headers env dir mime ssl
+sudo a2ensite nextcloud.conf
+sudo systemctl restart apache2</code></pre>
+      </div>
+    </div>
+<h3 id="nginx-configuration" class="mobile-header">NGINX Configuration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create NGINX server block
+sudo tee /etc/nginx/sites-available/nextcloud &gt; /dev/null &lt;&lt;EOF
+upstream php-handler {
+    server unix:/var/run/php/php8.0-fpm.sock;
+}
+
+server {
+    listen 80;
+    server_name nextcloud.example.com;
+    return 301 https://\$server_name\$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name nextcloud.example.com;
+
+    # SSL configuration
+    ssl_certificate /etc/ssl/certs/nextcloud.crt;
+    ssl_certificate_key /etc/ssl/private/nextcloud.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384;
+    ssl_prefer_server_ciphers off;
+
+    # Security headers
+    add_header Strict-Transport-Security &quot;max-age=15768000; includeSubDomains; preload&quot; always;
+    add_header Referrer-Policy &quot;no-referrer&quot; always;
+    add_header X-Content-Type-Options &quot;nosniff&quot; always;
+    add_header X-Download-Options &quot;noopen&quot; always;
+    add_header X-Frame-Options &quot;SAMEORIGIN&quot; always;
+    add_header X-Permitted-Cross-Domain-Policies &quot;none&quot; always;
+    add_header X-Robots-Tag &quot;none&quot; always;
+    add_header X-XSS-Protection &quot;1; mode=block&quot; always;
+
+    # Remove X-Powered-By
+    fastcgi_hide_header X-Powered-By;
+
+    # Path to the root of your installation
+    root /var/www/html/nextcloud;
+    index index.php index.html /index.php\$request_uri;
+
+    # Rule borrowed from `.htaccess` to handle Microsoft DAV clients
+    location = / {
+        if ( \$http_user_agent ~ ^DavClnt ) {
+            return 302 /remote.php/webdav/\$is_args\$args;
+        }
+    }
+
+    location = /robots.txt {
+        allow all;
+        log_not_found off;
+        access_log off;
+    }
+
+    # Make a regex exception for `/.well-known` so that clients can still
+    # access it despite the existence of the regex rule
+    location ^~ /.well-known {
+        location = /.well-known/carddav { return 301 /remote.php/dav/; }
+        location = /.well-known/caldav  { return 301 /remote.php/dav/; }
+        location /.well-known/acme-challenge    { try_files \$uri \$uri/ =404; }
+        location /.well-known/pki-validation    { try_files \$uri \$uri/ =404; }
+        return 301 /index.php\$request_uri;
+    }
+
+    # Rules borrowed from `.htaccess` to hide certain paths.
+    location ~ ^/(?:build|tests|config|lib|3rdparty|templates|data)(?:\$|/)  { return 404; }
+    location ~ ^/(?:\\.|autotest|occ|issue|indie|db_|console)                { return 404; }
+
+    # Ensure this block, which passes PHP files to the PHP process, is above the blocks
+    # which handle static assets (as seen below). If this block is not declared first,
+    # then Nginx will encounter an infinite rewriting loop when it prepends
+    # `/index.php` to the URI, resulting in a HTTP 500 error response.
+    location ~ \\.php(?:\$|/) {
+        # Required for legacy support
+        rewrite ^/(?!index|remote|public|cron|core\\/ajax\\/update|status|ocs\\/v[12]|updater\\/.+|oc[ms]-provider\\/.+|.+\\/richdocumentscode\\/proxy) /index.php\$request_uri;
+
+        fastcgi_split_path_info ^(.+?\\.php)(/.*)\$;
+        set \$path_info \$fastcgi_path_info;
+
+        try_files \$fastcgi_script_name =404;
+
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME \$document_root\$fastcgi_script_name;
+        fastcgi_param PATH_INFO \$path_info;
+        fastcgi_param HTTPS on;
+
+        fastcgi_param modHeadersAvailable true;
+        fastcgi_param front_controller_active true;
+        fastcgi_pass php-handler;
+
+        fastcgi_intercept_errors on;
+        fastcgi_request_buffering off;
+    }
+
+    location ~ \\.(?:css|js|svg|gif|png|jpg|ico)\$ {
+        try_files \$uri /index.php\$request_uri;
+        expires 6M;
+        access_log off;
+    }
+
+    location ~ \\.woff2?\$ {
+        try_files \$uri /index.php\$request_uri;
+        expires 7d;
+        access_log off;
+    }
+
+    # Rule borrowed from `.htaccess`
+    location /remote {
+        return 301 /remote.php\$request_uri;
+    }
+
+    location / {
+        try_files \$uri \$uri/ /index.php\$request_uri;
+    }
+}
+EOF
+
+# Enable site
+sudo ln -s /etc/nginx/sites-available/nextcloud /etc/nginx/sites-enabled/
+sudo nginx -t &amp;&amp; sudo systemctl restart nginx</code></pre>
+      </div>
+    </div>
+<h3 id="php-configuration" class="mobile-header">PHP Configuration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Optimize PHP for Nextcloud
+sudo nano /etc/php/8.0/apache2/php.ini  # Apache
+sudo nano /etc/php/8.0/fpm/php.ini      # NGINX
+
+# Recommended settings:
+memory_limit = 512M
+upload_max_filesize = 16G
+post_max_size = 16G
+max_execution_time = 3600
+max_input_time = 3600
+max_input_vars = 3000
+date.timezone = &quot;America/New_York&quot;
+
+# OPcache settings
+opcache.enable = 1
+opcache.interned_strings_buffer = 16
+opcache.max_accelerated_files = 10000
+opcache.memory_consumption = 128
+opcache.save_comments = 1
+opcache.revalidate_freq = 1
+
+# APCu for local cache
+apc.enable_cli = 1
+
+sudo systemctl restart apache2  # Apache
+sudo systemctl restart php8.0-fpm  # NGINX</code></pre>
+      </div>
+    </div>
+<h3 id="command-line-installation" class="mobile-header">Command Line Installation</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install via command line
+cd /var/www/html/nextcloud
+sudo -u www-data php occ maintenance:install \
+  --database=&quot;mysql&quot; \
+  --database-name=&quot;nextcloud&quot; \
+  --database-user=&quot;nextclouduser&quot; \
+  --database-pass=&quot;secure_password&quot; \
+  --admin-user=&quot;admin&quot; \
+  --admin-pass=&quot;admin_password&quot; \
+  --data-dir=&quot;/var/www/html/nextcloud/data&quot;
+
+# Configure trusted domains
+sudo -u www-data php occ config:system:set trusted_domains 0 --value=nextcloud.example.com
+sudo -u www-data php occ config:system:set trusted_domains 1 --value=192.168.1.100
+
+# Configure caching
+sudo -u www-data php occ config:system:set memcache.local --value=&quot;\\OC\\Memcache\\APCu&quot;
+sudo -u www-data php occ config:system:set memcache.distributed --value=&quot;\\OC\\Memcache\\Redis&quot;
+sudo -u www-data php occ config:system:set redis host --value=&quot;localhost&quot;
+sudo -u www-data php occ config:system:set redis port --value=6379</code></pre>
+      </div>
+    </div>
+<h2 id="performance-optimization" class="mobile-header">Performance Optimization</h2>
+<h3 id="redis-caching-setup" class="mobile-header">Redis Caching Setup</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install Redis
+sudo apt install -y redis-server  # Ubuntu/Debian
+sudo yum install -y redis          # RHEL/CentOS
+
+sudo systemctl enable --now redis
+
+# Configure Redis for Nextcloud
+sudo tee -a /etc/redis/redis.conf &gt; /dev/null &lt;&lt;EOF
+maxmemory 512mb
+maxmemory-policy allkeys-lru
+save 900 1
+save 300 10
+save 60 10000
+EOF
+
+sudo systemctl restart redis
+
+# Install Redis PHP extension
+sudo apt install -y php-redis  # Ubuntu/Debian
+sudo yum install -y php-redis   # RHEL/CentOS
+
+# Configure Nextcloud to use Redis
+sudo -u www-data php occ config:system:set memcache.local --value=&quot;\\OC\\Memcache\\APCu&quot;
+sudo -u www-data php occ config:system:set memcache.distributed --value=&quot;\\OC\\Memcache\\Redis&quot;
+sudo -u www-data php occ config:system:set redis host --value=&quot;localhost&quot;
+sudo -u www-data php occ config:system:set redis port --value=6379</code></pre>
+      </div>
+    </div>
+<h3 id="database-optimization" class="mobile-header">Database Optimization</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># MySQL/MariaDB optimization for Nextcloud
+sudo tee -a /etc/mysql/mysql.conf.d/nextcloud.cnf &gt; /dev/null &lt;&lt;EOF
+[mysqld]
+innodb_buffer_pool_size = 1G
+innodb_io_capacity = 4000
+innodb_log_file_size = 128M
+innodb_log_buffer_size = 32M
+innodb_flush_log_at_trx_commit = 1
+innodb_flush_method = O_DIRECT
+innodb_file_per_table = 1
+
+query_cache_type = 1
+query_cache_limit = 2M
+query_cache_size = 64M
+
+tmp_table_size = 64M
+max_heap_table_size = 64M
+
+join_buffer_size = 262144
+sort_buffer_size = 262144
+
+max_connections = 100
+max_connect_errors = 10
+connect_timeout = 5
+wait_timeout = 600
+max_allowed_packet = 64M
+
+thread_cache_size = 128
+query_cache_size = 64M
+
+[mysql.server]
+default-table-type = innodb
+EOF
+
+sudo systemctl restart mysql
+
+# Add indexes for better performance
+mysql -u nextclouduser -p nextcloud &lt;&lt;EOF
+ALTER TABLE oc_jobs ADD INDEX jobs_class_index (class);
+ALTER TABLE oc_filecache ADD INDEX fs_mtime (mtime);
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="background-jobs" class="mobile-header">Background Jobs</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Configure cron for background jobs
+sudo crontab -u www-data -e
+# Add: */5 * * * * php /var/www/html/nextcloud/occ system:cron
+
+# Or configure via occ command
+sudo -u www-data php occ background:cron
+
+# Check background job status
+sudo -u www-data php occ status
+sudo -u www-data php occ background:job:list</code></pre>
+      </div>
+    </div>
+<h2 id="security-hardening" class="mobile-header">Security Hardening</h2>
+<h3 id="file-permissions-and-security" class="mobile-header">File Permissions and Security</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Secure file permissions script
+sudo tee /usr/local/bin/nextcloud-permissions.sh &gt; /dev/null &lt;&lt;&#039;EOF&#039;
+#!/bin/bash
+ncpath=&#039;/var/www/html/nextcloud&#039;
+htuser=&#039;www-data&#039;
+htgroup=&#039;www-data&#039;
+rootuser=&#039;root&#039;
+
+printf &quot;Creating possible missing Directories\n&quot;
+mkdir -p $ncpath/data
+mkdir -p $ncpath/assets
+mkdir -p $ncpath/updater
+
+printf &quot;chmod Files and Directories\n&quot;
+find ${ncpath}/ -type f -print0 | xargs -0 chmod 0640
+find ${ncpath}/ -type d -print0 | xargs -0 chmod 0750
+
+printf &quot;chown Directories\n&quot;
+chown -R ${rootuser}:${htgroup} ${ncpath}/
+chown -R ${htuser}:${htgroup} ${ncpath}/apps/
+chown -R ${htuser}:${htgroup} ${ncpath}/assets/
+chown -R ${htuser}:${htgroup} ${ncpath}/config/
+chown -R ${htuser}:${htgroup} ${ncpath}/data/
+chown -R ${htuser}:${htgroup} ${ncpath}/themes/
+chown -R ${htuser}:${htgroup} ${ncpath}/updater/
+
+chmod +x ${ncpath}/occ
+
+printf &quot;chmod/chown .htaccess\n&quot;
+if [ -f ${ncpath}/.htaccess ]; then
+    chmod 0644 ${ncpath}/.htaccess
+    chown ${rootuser}:${htgroup} ${ncpath}/.htaccess
+fi
+
+if [ -f ${ncpath}/data/.htaccess ]; then
+    chmod 0644 ${ncpath}/data/.htaccess
+    chown ${rootuser}:${htgroup} ${ncpath}/data/.htaccess
+fi
+EOF
+
+sudo chmod +x /usr/local/bin/nextcloud-permissions.sh
+sudo /usr/local/bin/nextcloud-permissions.sh</code></pre>
+      </div>
+    </div>
+<h3 id="ssltls-configuration" class="mobile-header">SSL/TLS Configuration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install Let&#039;s Encrypt certificate
+sudo apt install -y certbot python3-certbot-apache  # Apache
+sudo apt install -y certbot python3-certbot-nginx   # NGINX
+
+# Obtain certificate
+sudo certbot --apache -d nextcloud.example.com  # Apache
+sudo certbot --nginx -d nextcloud.example.com   # NGINX
+
+# Configure HTTPS redirect in Nextcloud
+sudo -u www-data php occ config:system:set overwrite.cli.url --value=&quot;https://nextcloud.example.com&quot;
+sudo -u www-data php occ config:system:set overwriteprotocol --value=&quot;https&quot;</code></pre>
+      </div>
+    </div>
+<h3 id="security-scan-and-hardening" class="mobile-header">Security Scan and Hardening</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Run Nextcloud security scan
+sudo -u www-data php occ security:certificates
+sudo -u www-data php occ security:bruteforce:reset admin
+
+# Configure rate limiting
+sudo -u www-data php occ config:app:set brute_force_protection delay_increment --value=10
+sudo -u www-data php occ config:app:set brute_force_protection fail_tolerance --value=3
+
+# Enable two-factor authentication
+sudo -u www-data php occ app:enable twofactor_totp
+sudo -u www-data php occ app:enable twofactor_u2f
+
+# Configure file access control
+sudo -u www-data php occ config:system:set default_file_access --value=&quot;restrict&quot;</code></pre>
+      </div>
+    </div>
+<h2 id="app-management" class="mobile-header">App Management</h2>
+<h3 id="essential-apps-installation" class="mobile-header">Essential Apps Installation</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install popular apps via occ
+sudo -u www-data php occ app:install calendar
+sudo -u www-data php occ app:install contacts
+sudo -u www-data php occ app:install mail
+sudo -u www-data php occ app:install notes
+sudo -u www-data php occ app:install tasks
+sudo -u www-data php occ app:install deck
+sudo -u www-data php occ app:install polls
+sudo -u www-data php occ app:install richdocuments  # OnlyOffice integration
+
+# Enable apps
+sudo -u www-data php occ app:enable calendar
+sudo -u www-data php occ app:enable contacts
+sudo -u www-data php occ app:enable mail
+
+# List available apps
+sudo -u www-data php occ app:list
+
+# Update apps
+sudo -u www-data php occ app:update --all</code></pre>
+      </div>
+    </div>
+<h3 id="onlyoffice-integration" class="mobile-header">OnlyOffice Integration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install OnlyOffice Document Server
+docker run -d --name onlyoffice \
+  -p 8080:80 \
+  -v onlyoffice_data:/var/www/onlyoffice/Data \
+  -v onlyoffice_log:/var/log/onlyoffice \
+  -v onlyoffice_fonts:/usr/share/fonts/truetype/custom \
+  -v onlyoffice_forgotten:/var/lib/onlyoffice/documentserver/App_Data/cache/files/forgotten \
+  onlyoffice/documentserver
+
+# Configure Nextcloud to use OnlyOffice
+sudo -u www-data php occ config:app:set richdocuments wopi_url --value=&quot;http://localhost:8080&quot;</code></pre>
+      </div>
+    </div>
+<h2 id="backup-and-maintenance" class="mobile-header">Backup and Maintenance</h2>
+<h3 id="backup-script" class="mobile-header">Backup Script</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash">sudo tee /usr/local/bin/nextcloud-backup.sh &gt; /dev/null &lt;&lt;&#039;EOF&#039;
+#!/bin/bash
+BACKUP_DIR=&quot;/backup/nextcloud&quot;
+NC_DIR=&quot;/var/www/html/nextcloud&quot;
+DATE=$(date +%Y%m%d_%H%M%S)
+
+mkdir -p ${BACKUP_DIR}/{files,database}
+
+# Enable maintenance mode
+sudo -u www-data php ${NC_DIR}/occ maintenance:mode --on
+
+# Backup files (exclude data directory for space)
+tar --exclude=&quot;${NC_DIR}/data&quot; -czf ${BACKUP_DIR}/files/nextcloud-files-${DATE}.tar.gz -C /var/www/html nextcloud
+
+# Backup database
+mysqldump -u nextclouduser -p&#039;secure_password&#039; nextcloud &gt; ${BACKUP_DIR}/database/nextcloud-db-${DATE}.sql
+gzip ${BACKUP_DIR}/database/nextcloud-db-${DATE}.sql
+
+# Backup data directory separately (if needed)
+# tar -czf ${BACKUP_DIR}/files/nextcloud-data-${DATE}.tar.gz -C ${NC_DIR} data
+
+# Disable maintenance mode
+sudo -u www-data php ${NC_DIR}/occ maintenance:mode --off
+
+# Keep only last 7 backups
+find ${BACKUP_DIR} -name &quot;nextcloud-*&quot; -type f -mtime +7 -delete
+
+echo &quot;Backup completed: nextcloud-${DATE}&quot;
+EOF
+
+sudo chmod +x /usr/local/bin/nextcloud-backup.sh
+
+# Schedule daily backup
+echo &quot;0 2 * * * root /usr/local/bin/nextcloud-backup.sh&quot; | sudo tee -a /etc/crontab</code></pre>
+      </div>
+    </div>
+<h3 id="update-and-maintenance" class="mobile-header">Update and Maintenance</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create update script
+sudo tee /usr/local/bin/nextcloud-update.sh &gt; /dev/null &lt;&lt;&#039;EOF&#039;
+#!/bin/bash
+NC_DIR=&quot;/var/www/html/nextcloud&quot;
+
+# Check for updates
+sudo -u www-data php ${NC_DIR}/occ update:check
+
+# Run updater
+sudo -u www-data php ${NC_DIR}/updater/updater.phar
+
+# Update apps
+sudo -u www-data php ${NC_DIR}/occ app:update --all
+
+# Run database upgrades
+sudo -u www-data php ${NC_DIR}/occ upgrade
+
+# Scan files
+sudo -u www-data php ${NC_DIR}/occ files:scan --all
+
+# Clean up
+sudo -u www-data php ${NC_DIR}/occ files:cleanup
+sudo -u www-data php ${NC_DIR}/occ trashbin:cleanup --all-users
+
+echo &quot;Nextcloud update completed&quot;
+EOF
+
+sudo chmod +x /usr/local/bin/nextcloud-update.sh</code></pre>
+      </div>
+    </div>
+<h2 id="verification" class="mobile-header">Verification</h2>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check web server status
+sudo systemctl status apache2  # or nginx
+sudo systemctl status mysql
+
+# Test Nextcloud installation
+curl -I http://localhost/nextcloud
+curl -I https://nextcloud.example.com
+
+# Check Nextcloud status via occ
+cd /var/www/html/nextcloud
+sudo -u www-data php occ status
+sudo -u www-data php occ check
+
+# Check background jobs
+sudo -u www-data php occ background:job:list
+
+# Check database connectivity
+sudo -u www-data php occ db:check
+
+# Check security status
+sudo -u www-data php occ security:certificates
+sudo -u www-data php occ security:bruteforce:attempts
+
+# Test file operations
+sudo -u www-data php occ files:scan admin
+sudo -u www-data php occ files:scan --all
+
+# Check logs
+sudo tail -f /var/www/html/nextcloud/data/nextcloud.log
+sudo tail -f /var/log/apache2/nextcloud_error.log</code></pre>
+      </div>
+    </div>
+<h2 id="troubleshooting" class="mobile-header">Troubleshooting</h2>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Enable debug mode
+sudo -u www-data php occ config:system:set debug --value=true --type=boolean
+sudo -u www-data php occ config:system:set loglevel --value=0
+
+# Check system requirements
+sudo -u www-data php occ check
+
+# Repair installation
+sudo -u www-data php occ maintenance:repair
+
+# Clear cache
+sudo -u www-data php occ files:cleanup
+
+# Fix file permissions
+sudo /usr/local/bin/nextcloud-permissions.sh
+
+# Database repair
+sudo -u www-data php occ db:check-and-repair
+
+# Update file cache
+sudo -u www-data php occ files:scan --all
+
+# Check configuration
+sudo -u www-data php occ config:list system
+
+# Reset user password
+sudo -u www-data php occ user:resetpassword admin
+
+# Check disk usage
+du -sh /var/www/html/nextcloud/data/
+df -h /var/www/html/nextcloud/
+
+# Memory usage check
+sudo -u www-data php occ status --output=json</code></pre>
+      </div>
+    </div>
+<h2 id="additional-resources" class="mobile-header">Additional Resources</h2>
+<li class="mobile-list-item"><a href="https://docs.nextcloud.com/" target="_blank" rel="noopener" class="mobile-link">Official Documentation</a></li>
+<li class="mobile-list-item"><a href="https://docs.nextcloud.com/server/latest/admin_manual/" target="_blank" rel="noopener" class="mobile-link">Admin Manual</a></li>
+<li class="mobile-list-item"><a href="https://docs.nextcloud.com/server/latest/admin_manual/installation/harden_server.html" target="_blank" rel="noopener" class="mobile-link">Security Hardening Guide</a></li>
+<li class="mobile-list-item"><a href="https://docs.nextcloud.com/server/latest/admin_manual/installation/server_tuning.html" target="_blank" rel="noopener" class="mobile-link">Performance Tuning</a></li>
+<li class="mobile-list-item"><a href="https://help.nextcloud.com/" target="_blank" rel="noopener" class="mobile-link">Community Forum</a></li>
+<p class="mobile-paragraph">---</p>
+<p class="mobile-paragraph"><strong>Note:</strong> This guide is part of the <a href="https://howtomgr.github.io" target="_blank" rel="noopener" class="mobile-link">HowToMgr</a> collection.</p></div></article><section class="jsx-8a7f0cdcf94f52ce related-section"><h2 class="jsx-8a7f0cdcf94f52ce section-title">Related <!-- -->Productivity<!-- --> Guides</h2><div class="jsx-8a7f0cdcf94f52ce mobile-grid"><a class="mobile-card" href="/productivity/ghost/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Ghost</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for ghost</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a><a class="mobile-card" href="/productivity/wordpress/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Wordpress</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for wordpress</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">11 min</span></div></a></div></section><nav class="jsx-8a7f0cdcf94f52ce guide-navigation"><a class="btn btn-secondary" href="/productivity/">← All <!-- -->Productivity</a><a class="btn btn-secondary" href="/">All Categories</a></nav></div></main><footer class="jsx-745d6189719dfe72 mobile-footer"><div class="jsx-745d6189719dfe72 container"><div class="jsx-745d6189719dfe72 footer-content"><div class="jsx-745d6189719dfe72 footer-links"><a href="/">Home</a><a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">GitHub</a><a href="https://github.com/howtomgr/howtomgr.github.io" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">Source</a></div><div class="jsx-745d6189719dfe72 footer-separator"></div><p class="jsx-745d6189719dfe72 footer-text">© <!-- -->2025<!-- --> HowToMgr Organization. Open source installation guides.</p><p class="jsx-745d6189719dfe72 footer-tech">Built with ❤️ using Next.js + GitHub Pages</p><p class="jsx-745d6189719dfe72 footer-disclaimer"><small class="jsx-745d6189719dfe72">All guides are provided as-is. Please review and test before production use.</small></p></div></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"guide":{"name":"nextcloud","displayName":"Nextcloud","slug":"nextcloud","description":"Repo for nextcloud","category":"productivity","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/nextcloud","updatedAt":"2025-09-08T03:12:12Z","createdAt":"2025-09-08T03:12:02Z","readmeRaw":"# Nextcloud Installation Guide\n\nSelf-hosted file sync and share platform with collaboration features, calendar, contacts, and extensive app ecosystem.\n\n## Prerequisites\n\n- Linux system (Ubuntu/Debian, RHEL/CentOS, or compatible)\n- Web server (Apache or NGINX)\n- PHP 8.0+ with required extensions\n- Database (MySQL/MariaDB, PostgreSQL, or SQLite)\n- 2GB RAM minimum, 4GB+ recommended\n\n## Installation\n\n### LAMP Stack Setup (Apache + MySQL + PHP)\n```bash\n# Ubuntu/Debian\nsudo apt update\nsudo apt install -y apache2 mariadb-server php php-mysql php-gd php-curl php-mbstring php-intl php-mcrypt php-imagick php-xml php-zip php-bcmath php-gmp\n\n# RHEL/CentOS\nsudo yum install -y httpd mariadb-server php php-mysql php-gd php-curl php-mbstring php-intl php-mcrypt php-imagick php-xml php-zip php-bcmath php-gmp\n\n# Enable services\nsudo systemctl enable --now apache2 mariadb  # Ubuntu/Debian\nsudo systemctl enable --now httpd mariadb    # RHEL/CentOS\n```\n\n### Database Setup\n```bash\n# Secure MySQL installation\nsudo mysql_secure_installation\n\n# Create Nextcloud database\nsudo mysql -u root -p \u003c\u003cEOF\nCREATE DATABASE nextcloud CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;\nCREATE USER 'nextclouduser'@'localhost' IDENTIFIED BY 'secure_password';\nGRANT ALL PRIVILEGES ON nextcloud.* TO 'nextclouduser'@'localhost';\nFLUSH PRIVILEGES;\nEXIT\nEOF\n```\n\n### Nextcloud Download and Setup\n```bash\n# Download Nextcloud\ncd /tmp\nwget https://download.nextcloud.com/server/releases/latest.tar.bz2\ntar -xjf latest.tar.bz2\n\n# Move to web directory\nsudo cp -R nextcloud /var/www/html/\nsudo chown -R www-data:www-data /var/www/html/nextcloud  # Ubuntu/Debian\nsudo chown -R apache:apache /var/www/html/nextcloud      # RHEL/CentOS\n\n# Set proper permissions\nsudo find /var/www/html/nextcloud/ -type f -print0 | xargs -0 chmod 0640\nsudo find /var/www/html/nextcloud/ -type d -print0 | xargs -0 chmod 0750\nsudo chmod 750 /var/www/html/nextcloud\nsudo chmod -R 770 /var/www/html/nextcloud/data\nsudo chmod -R 770 /var/www/html/nextcloud/apps\nsudo chmod -R 770 /var/www/html/nextcloud/config\n```\n\n### Using Docker Compose\n```bash\n# Create docker-compose.yml\nmkdir -p ~/nextcloud \u0026\u0026 cd ~/nextcloud\n\ncat \u003e docker-compose.yml \u003c\u003cEOF\nversion: '3.8'\n\nservices:\n  nextcloud:\n    image: nextcloud:latest\n    restart: unless-stopped\n    ports:\n      - \"8080:80\"\n    volumes:\n      - nextcloud_data:/var/www/html\n      - ./config:/var/www/html/config\n      - ./custom_apps:/var/www/html/custom_apps\n      - ./data:/var/www/html/data\n    environment:\n      - MYSQL_HOST=db\n      - MYSQL_DATABASE=nextcloud\n      - MYSQL_USER=nextcloud\n      - MYSQL_PASSWORD=secure_password\n      - NEXTCLOUD_ADMIN_USER=admin\n      - NEXTCLOUD_ADMIN_PASSWORD=admin_password\n      - NEXTCLOUD_TRUSTED_DOMAINS=nextcloud.example.com\n    depends_on:\n      - db\n      - redis\n    networks:\n      - nextcloud\n\n  db:\n    image: mariadb:10.6\n    restart: unless-stopped\n    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --innodb-file-per-table=1 --skip-innodb-read-only-compressed\n    volumes:\n      - db_data:/var/lib/mysql\n    environment:\n      - MYSQL_ROOT_PASSWORD=root_password\n      - MYSQL_PASSWORD=secure_password\n      - MYSQL_DATABASE=nextcloud\n      - MYSQL_USER=nextcloud\n    networks:\n      - nextcloud\n\n  redis:\n    image: redis:alpine\n    restart: unless-stopped\n    networks:\n      - nextcloud\n\nvolumes:\n  nextcloud_data:\n  db_data:\n\nnetworks:\n  nextcloud:\n    driver: bridge\nEOF\n\n# Start services\ndocker-compose up -d\n\n# Check logs\ndocker-compose logs -f nextcloud\n```\n\n## Configuration\n\n### Apache Virtual Host\n```bash\n# Create Apache virtual host\nsudo tee /etc/apache2/sites-available/nextcloud.conf \u003e /dev/null \u003c\u003cEOF\n\u003cVirtualHost *:80\u003e\n    ServerName nextcloud.example.com\n    DocumentRoot /var/www/html/nextcloud\n\n    \u003cDirectory /var/www/html/nextcloud/\u003e\n        Require all granted\n        AllowOverride All\n        Options FollowSymLinks MultiViews\n        \n        \u003cIfModule mod_dav.c\u003e\n            Dav off\n        \u003c/IfModule\u003e\n    \u003c/Directory\u003e\n\n    # Security headers\n    Header always set Strict-Transport-Security \"max-age=15552000; includeSubDomains\"\n    Header always set X-Content-Type-Options nosniff\n    Header always set X-Frame-Options \"SAMEORIGIN\"\n    Header always set X-XSS-Protection \"1; mode=block\"\n    Header always set Referrer-Policy \"no-referrer\"\n    Header always set Feature-Policy \"camera 'none'; microphone 'none'\"\n\n    ErrorLog \\${APACHE_LOG_DIR}/nextcloud_error.log\n    CustomLog \\${APACHE_LOG_DIR}/nextcloud_access.log combined\n\u003c/VirtualHost\u003e\nEOF\n\n# Enable required modules\nsudo a2enmod rewrite headers env dir mime ssl\nsudo a2ensite nextcloud.conf\nsudo systemctl restart apache2\n```\n\n### NGINX Configuration\n```bash\n# Create NGINX server block\nsudo tee /etc/nginx/sites-available/nextcloud \u003e /dev/null \u003c\u003cEOF\nupstream php-handler {\n    server unix:/var/run/php/php8.0-fpm.sock;\n}\n\nserver {\n    listen 80;\n    server_name nextcloud.example.com;\n    return 301 https://\\$server_name\\$request_uri;\n}\n\nserver {\n    listen 443 ssl http2;\n    server_name nextcloud.example.com;\n\n    # SSL configuration\n    ssl_certificate /etc/ssl/certs/nextcloud.crt;\n    ssl_certificate_key /etc/ssl/private/nextcloud.key;\n    ssl_protocols TLSv1.2 TLSv1.3;\n    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384;\n    ssl_prefer_server_ciphers off;\n\n    # Security headers\n    add_header Strict-Transport-Security \"max-age=15768000; includeSubDomains; preload\" always;\n    add_header Referrer-Policy \"no-referrer\" always;\n    add_header X-Content-Type-Options \"nosniff\" always;\n    add_header X-Download-Options \"noopen\" always;\n    add_header X-Frame-Options \"SAMEORIGIN\" always;\n    add_header X-Permitted-Cross-Domain-Policies \"none\" always;\n    add_header X-Robots-Tag \"none\" always;\n    add_header X-XSS-Protection \"1; mode=block\" always;\n\n    # Remove X-Powered-By\n    fastcgi_hide_header X-Powered-By;\n\n    # Path to the root of your installation\n    root /var/www/html/nextcloud;\n    index index.php index.html /index.php\\$request_uri;\n\n    # Rule borrowed from `.htaccess` to handle Microsoft DAV clients\n    location = / {\n        if ( \\$http_user_agent ~ ^DavClnt ) {\n            return 302 /remote.php/webdav/\\$is_args\\$args;\n        }\n    }\n\n    location = /robots.txt {\n        allow all;\n        log_not_found off;\n        access_log off;\n    }\n\n    # Make a regex exception for `/.well-known` so that clients can still\n    # access it despite the existence of the regex rule\n    location ^~ /.well-known {\n        location = /.well-known/carddav { return 301 /remote.php/dav/; }\n        location = /.well-known/caldav  { return 301 /remote.php/dav/; }\n        location /.well-known/acme-challenge    { try_files \\$uri \\$uri/ =404; }\n        location /.well-known/pki-validation    { try_files \\$uri \\$uri/ =404; }\n        return 301 /index.php\\$request_uri;\n    }\n\n    # Rules borrowed from `.htaccess` to hide certain paths.\n    location ~ ^/(?:build|tests|config|lib|3rdparty|templates|data)(?:\\$|/)  { return 404; }\n    location ~ ^/(?:\\\\.|autotest|occ|issue|indie|db_|console)                { return 404; }\n\n    # Ensure this block, which passes PHP files to the PHP process, is above the blocks\n    # which handle static assets (as seen below). If this block is not declared first,\n    # then Nginx will encounter an infinite rewriting loop when it prepends\n    # `/index.php` to the URI, resulting in a HTTP 500 error response.\n    location ~ \\\\.php(?:\\$|/) {\n        # Required for legacy support\n        rewrite ^/(?!index|remote|public|cron|core\\\\/ajax\\\\/update|status|ocs\\\\/v[12]|updater\\\\/.+|oc[ms]-provider\\\\/.+|.+\\\\/richdocumentscode\\\\/proxy) /index.php\\$request_uri;\n\n        fastcgi_split_path_info ^(.+?\\\\.php)(/.*)\\$;\n        set \\$path_info \\$fastcgi_path_info;\n\n        try_files \\$fastcgi_script_name =404;\n\n        include fastcgi_params;\n        fastcgi_param SCRIPT_FILENAME \\$document_root\\$fastcgi_script_name;\n        fastcgi_param PATH_INFO \\$path_info;\n        fastcgi_param HTTPS on;\n\n        fastcgi_param modHeadersAvailable true;\n        fastcgi_param front_controller_active true;\n        fastcgi_pass php-handler;\n\n        fastcgi_intercept_errors on;\n        fastcgi_request_buffering off;\n    }\n\n    location ~ \\\\.(?:css|js|svg|gif|png|jpg|ico)\\$ {\n        try_files \\$uri /index.php\\$request_uri;\n        expires 6M;\n        access_log off;\n    }\n\n    location ~ \\\\.woff2?\\$ {\n        try_files \\$uri /index.php\\$request_uri;\n        expires 7d;\n        access_log off;\n    }\n\n    # Rule borrowed from `.htaccess`\n    location /remote {\n        return 301 /remote.php\\$request_uri;\n    }\n\n    location / {\n        try_files \\$uri \\$uri/ /index.php\\$request_uri;\n    }\n}\nEOF\n\n# Enable site\nsudo ln -s /etc/nginx/sites-available/nextcloud /etc/nginx/sites-enabled/\nsudo nginx -t \u0026\u0026 sudo systemctl restart nginx\n```\n\n### PHP Configuration\n```bash\n# Optimize PHP for Nextcloud\nsudo nano /etc/php/8.0/apache2/php.ini  # Apache\nsudo nano /etc/php/8.0/fpm/php.ini      # NGINX\n\n# Recommended settings:\nmemory_limit = 512M\nupload_max_filesize = 16G\npost_max_size = 16G\nmax_execution_time = 3600\nmax_input_time = 3600\nmax_input_vars = 3000\ndate.timezone = \"America/New_York\"\n\n# OPcache settings\nopcache.enable = 1\nopcache.interned_strings_buffer = 16\nopcache.max_accelerated_files = 10000\nopcache.memory_consumption = 128\nopcache.save_comments = 1\nopcache.revalidate_freq = 1\n\n# APCu for local cache\napc.enable_cli = 1\n\nsudo systemctl restart apache2  # Apache\nsudo systemctl restart php8.0-fpm  # NGINX\n```\n\n### Command Line Installation\n```bash\n# Install via command line\ncd /var/www/html/nextcloud\nsudo -u www-data php occ maintenance:install \\\n  --database=\"mysql\" \\\n  --database-name=\"nextcloud\" \\\n  --database-user=\"nextclouduser\" \\\n  --database-pass=\"secure_password\" \\\n  --admin-user=\"admin\" \\\n  --admin-pass=\"admin_password\" \\\n  --data-dir=\"/var/www/html/nextcloud/data\"\n\n# Configure trusted domains\nsudo -u www-data php occ config:system:set trusted_domains 0 --value=nextcloud.example.com\nsudo -u www-data php occ config:system:set trusted_domains 1 --value=192.168.1.100\n\n# Configure caching\nsudo -u www-data php occ config:system:set memcache.local --value=\"\\\\OC\\\\Memcache\\\\APCu\"\nsudo -u www-data php occ config:system:set memcache.distributed --value=\"\\\\OC\\\\Memcache\\\\Redis\"\nsudo -u www-data php occ config:system:set redis host --value=\"localhost\"\nsudo -u www-data php occ config:system:set redis port --value=6379\n```\n\n## Performance Optimization\n\n### Redis Caching Setup\n```bash\n# Install Redis\nsudo apt install -y redis-server  # Ubuntu/Debian\nsudo yum install -y redis          # RHEL/CentOS\n\nsudo systemctl enable --now redis\n\n# Configure Redis for Nextcloud\nsudo tee -a /etc/redis/redis.conf \u003e /dev/null \u003c\u003cEOF\nmaxmemory 512mb\nmaxmemory-policy allkeys-lru\nsave 900 1\nsave 300 10\nsave 60 10000\nEOF\n\nsudo systemctl restart redis\n\n# Install Redis PHP extension\nsudo apt install -y php-redis  # Ubuntu/Debian\nsudo yum install -y php-redis   # RHEL/CentOS\n\n# Configure Nextcloud to use Redis\nsudo -u www-data php occ config:system:set memcache.local --value=\"\\\\OC\\\\Memcache\\\\APCu\"\nsudo -u www-data php occ config:system:set memcache.distributed --value=\"\\\\OC\\\\Memcache\\\\Redis\"\nsudo -u www-data php occ config:system:set redis host --value=\"localhost\"\nsudo -u www-data php occ config:system:set redis port --value=6379\n```\n\n### Database Optimization\n```bash\n# MySQL/MariaDB optimization for Nextcloud\nsudo tee -a /etc/mysql/mysql.conf.d/nextcloud.cnf \u003e /dev/null \u003c\u003cEOF\n[mysqld]\ninnodb_buffer_pool_size = 1G\ninnodb_io_capacity = 4000\ninnodb_log_file_size = 128M\ninnodb_log_buffer_size = 32M\ninnodb_flush_log_at_trx_commit = 1\ninnodb_flush_method = O_DIRECT\ninnodb_file_per_table = 1\n\nquery_cache_type = 1\nquery_cache_limit = 2M\nquery_cache_size = 64M\n\ntmp_table_size = 64M\nmax_heap_table_size = 64M\n\njoin_buffer_size = 262144\nsort_buffer_size = 262144\n\nmax_connections = 100\nmax_connect_errors = 10\nconnect_timeout = 5\nwait_timeout = 600\nmax_allowed_packet = 64M\n\nthread_cache_size = 128\nquery_cache_size = 64M\n\n[mysql.server]\ndefault-table-type = innodb\nEOF\n\nsudo systemctl restart mysql\n\n# Add indexes for better performance\nmysql -u nextclouduser -p nextcloud \u003c\u003cEOF\nALTER TABLE oc_jobs ADD INDEX jobs_class_index (class);\nALTER TABLE oc_filecache ADD INDEX fs_mtime (mtime);\nEOF\n```\n\n### Background Jobs\n```bash\n# Configure cron for background jobs\nsudo crontab -u www-data -e\n# Add: */5 * * * * php /var/www/html/nextcloud/occ system:cron\n\n# Or configure via occ command\nsudo -u www-data php occ background:cron\n\n# Check background job status\nsudo -u www-data php occ status\nsudo -u www-data php occ background:job:list\n```\n\n## Security Hardening\n\n### File Permissions and Security\n```bash\n# Secure file permissions script\nsudo tee /usr/local/bin/nextcloud-permissions.sh \u003e /dev/null \u003c\u003c'EOF'\n#!/bin/bash\nncpath='/var/www/html/nextcloud'\nhtuser='www-data'\nhtgroup='www-data'\nrootuser='root'\n\nprintf \"Creating possible missing Directories\\n\"\nmkdir -p $ncpath/data\nmkdir -p $ncpath/assets\nmkdir -p $ncpath/updater\n\nprintf \"chmod Files and Directories\\n\"\nfind ${ncpath}/ -type f -print0 | xargs -0 chmod 0640\nfind ${ncpath}/ -type d -print0 | xargs -0 chmod 0750\n\nprintf \"chown Directories\\n\"\nchown -R ${rootuser}:${htgroup} ${ncpath}/\nchown -R ${htuser}:${htgroup} ${ncpath}/apps/\nchown -R ${htuser}:${htgroup} ${ncpath}/assets/\nchown -R ${htuser}:${htgroup} ${ncpath}/config/\nchown -R ${htuser}:${htgroup} ${ncpath}/data/\nchown -R ${htuser}:${htgroup} ${ncpath}/themes/\nchown -R ${htuser}:${htgroup} ${ncpath}/updater/\n\nchmod +x ${ncpath}/occ\n\nprintf \"chmod/chown .htaccess\\n\"\nif [ -f ${ncpath}/.htaccess ]; then\n    chmod 0644 ${ncpath}/.htaccess\n    chown ${rootuser}:${htgroup} ${ncpath}/.htaccess\nfi\n\nif [ -f ${ncpath}/data/.htaccess ]; then\n    chmod 0644 ${ncpath}/data/.htaccess\n    chown ${rootuser}:${htgroup} ${ncpath}/data/.htaccess\nfi\nEOF\n\nsudo chmod +x /usr/local/bin/nextcloud-permissions.sh\nsudo /usr/local/bin/nextcloud-permissions.sh\n```\n\n### SSL/TLS Configuration\n```bash\n# Install Let's Encrypt certificate\nsudo apt install -y certbot python3-certbot-apache  # Apache\nsudo apt install -y certbot python3-certbot-nginx   # NGINX\n\n# Obtain certificate\nsudo certbot --apache -d nextcloud.example.com  # Apache\nsudo certbot --nginx -d nextcloud.example.com   # NGINX\n\n# Configure HTTPS redirect in Nextcloud\nsudo -u www-data php occ config:system:set overwrite.cli.url --value=\"https://nextcloud.example.com\"\nsudo -u www-data php occ config:system:set overwriteprotocol --value=\"https\"\n```\n\n### Security Scan and Hardening\n```bash\n# Run Nextcloud security scan\nsudo -u www-data php occ security:certificates\nsudo -u www-data php occ security:bruteforce:reset admin\n\n# Configure rate limiting\nsudo -u www-data php occ config:app:set brute_force_protection delay_increment --value=10\nsudo -u www-data php occ config:app:set brute_force_protection fail_tolerance --value=3\n\n# Enable two-factor authentication\nsudo -u www-data php occ app:enable twofactor_totp\nsudo -u www-data php occ app:enable twofactor_u2f\n\n# Configure file access control\nsudo -u www-data php occ config:system:set default_file_access --value=\"restrict\"\n```\n\n## App Management\n\n### Essential Apps Installation\n```bash\n# Install popular apps via occ\nsudo -u www-data php occ app:install calendar\nsudo -u www-data php occ app:install contacts\nsudo -u www-data php occ app:install mail\nsudo -u www-data php occ app:install notes\nsudo -u www-data php occ app:install tasks\nsudo -u www-data php occ app:install deck\nsudo -u www-data php occ app:install polls\nsudo -u www-data php occ app:install richdocuments  # OnlyOffice integration\n\n# Enable apps\nsudo -u www-data php occ app:enable calendar\nsudo -u www-data php occ app:enable contacts\nsudo -u www-data php occ app:enable mail\n\n# List available apps\nsudo -u www-data php occ app:list\n\n# Update apps\nsudo -u www-data php occ app:update --all\n```\n\n### OnlyOffice Integration\n```bash\n# Install OnlyOffice Document Server\ndocker run -d --name onlyoffice \\\n  -p 8080:80 \\\n  -v onlyoffice_data:/var/www/onlyoffice/Data \\\n  -v onlyoffice_log:/var/log/onlyoffice \\\n  -v onlyoffice_fonts:/usr/share/fonts/truetype/custom \\\n  -v onlyoffice_forgotten:/var/lib/onlyoffice/documentserver/App_Data/cache/files/forgotten \\\n  onlyoffice/documentserver\n\n# Configure Nextcloud to use OnlyOffice\nsudo -u www-data php occ config:app:set richdocuments wopi_url --value=\"http://localhost:8080\"\n```\n\n## Backup and Maintenance\n\n### Backup Script\n```bash\nsudo tee /usr/local/bin/nextcloud-backup.sh \u003e /dev/null \u003c\u003c'EOF'\n#!/bin/bash\nBACKUP_DIR=\"/backup/nextcloud\"\nNC_DIR=\"/var/www/html/nextcloud\"\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p ${BACKUP_DIR}/{files,database}\n\n# Enable maintenance mode\nsudo -u www-data php ${NC_DIR}/occ maintenance:mode --on\n\n# Backup files (exclude data directory for space)\ntar --exclude=\"${NC_DIR}/data\" -czf ${BACKUP_DIR}/files/nextcloud-files-${DATE}.tar.gz -C /var/www/html nextcloud\n\n# Backup database\nmysqldump -u nextclouduser -p'secure_password' nextcloud \u003e ${BACKUP_DIR}/database/nextcloud-db-${DATE}.sql\ngzip ${BACKUP_DIR}/database/nextcloud-db-${DATE}.sql\n\n# Backup data directory separately (if needed)\n# tar -czf ${BACKUP_DIR}/files/nextcloud-data-${DATE}.tar.gz -C ${NC_DIR} data\n\n# Disable maintenance mode\nsudo -u www-data php ${NC_DIR}/occ maintenance:mode --off\n\n# Keep only last 7 backups\nfind ${BACKUP_DIR} -name \"nextcloud-*\" -type f -mtime +7 -delete\n\necho \"Backup completed: nextcloud-${DATE}\"\nEOF\n\nsudo chmod +x /usr/local/bin/nextcloud-backup.sh\n\n# Schedule daily backup\necho \"0 2 * * * root /usr/local/bin/nextcloud-backup.sh\" | sudo tee -a /etc/crontab\n```\n\n### Update and Maintenance\n```bash\n# Create update script\nsudo tee /usr/local/bin/nextcloud-update.sh \u003e /dev/null \u003c\u003c'EOF'\n#!/bin/bash\nNC_DIR=\"/var/www/html/nextcloud\"\n\n# Check for updates\nsudo -u www-data php ${NC_DIR}/occ update:check\n\n# Run updater\nsudo -u www-data php ${NC_DIR}/updater/updater.phar\n\n# Update apps\nsudo -u www-data php ${NC_DIR}/occ app:update --all\n\n# Run database upgrades\nsudo -u www-data php ${NC_DIR}/occ upgrade\n\n# Scan files\nsudo -u www-data php ${NC_DIR}/occ files:scan --all\n\n# Clean up\nsudo -u www-data php ${NC_DIR}/occ files:cleanup\nsudo -u www-data php ${NC_DIR}/occ trashbin:cleanup --all-users\n\necho \"Nextcloud update completed\"\nEOF\n\nsudo chmod +x /usr/local/bin/nextcloud-update.sh\n```\n\n## Verification\n\n```bash\n# Check web server status\nsudo systemctl status apache2  # or nginx\nsudo systemctl status mysql\n\n# Test Nextcloud installation\ncurl -I http://localhost/nextcloud\ncurl -I https://nextcloud.example.com\n\n# Check Nextcloud status via occ\ncd /var/www/html/nextcloud\nsudo -u www-data php occ status\nsudo -u www-data php occ check\n\n# Check background jobs\nsudo -u www-data php occ background:job:list\n\n# Check database connectivity\nsudo -u www-data php occ db:check\n\n# Check security status\nsudo -u www-data php occ security:certificates\nsudo -u www-data php occ security:bruteforce:attempts\n\n# Test file operations\nsudo -u www-data php occ files:scan admin\nsudo -u www-data php occ files:scan --all\n\n# Check logs\nsudo tail -f /var/www/html/nextcloud/data/nextcloud.log\nsudo tail -f /var/log/apache2/nextcloud_error.log\n```\n\n## Troubleshooting\n\n```bash\n# Enable debug mode\nsudo -u www-data php occ config:system:set debug --value=true --type=boolean\nsudo -u www-data php occ config:system:set loglevel --value=0\n\n# Check system requirements\nsudo -u www-data php occ check\n\n# Repair installation\nsudo -u www-data php occ maintenance:repair\n\n# Clear cache\nsudo -u www-data php occ files:cleanup\n\n# Fix file permissions\nsudo /usr/local/bin/nextcloud-permissions.sh\n\n# Database repair\nsudo -u www-data php occ db:check-and-repair\n\n# Update file cache\nsudo -u www-data php occ files:scan --all\n\n# Check configuration\nsudo -u www-data php occ config:list system\n\n# Reset user password\nsudo -u www-data php occ user:resetpassword admin\n\n# Check disk usage\ndu -sh /var/www/html/nextcloud/data/\ndf -h /var/www/html/nextcloud/\n\n# Memory usage check\nsudo -u www-data php occ status --output=json\n```\n\n## Additional Resources\n\n- [Official Documentation](https://docs.nextcloud.com/)\n- [Admin Manual](https://docs.nextcloud.com/server/latest/admin_manual/)\n- [Security Hardening Guide](https://docs.nextcloud.com/server/latest/admin_manual/installation/harden_server.html)\n- [Performance Tuning](https://docs.nextcloud.com/server/latest/admin_manual/installation/server_tuning.html)\n- [Community Forum](https://help.nextcloud.com/)\n\n---\n\n**Note:** This guide is part of the [HowToMgr](https://howtomgr.github.io) collection.","readmeHtml":"\u003ch1 id=\"nextcloud-installation-guide\" class=\"mobile-header\"\u003eNextcloud Installation Guide\u003c/h1\u003e\n\u003cp class=\"mobile-paragraph\"\u003eSelf-hosted file sync and share platform with collaboration features, calendar, contacts, and extensive app ecosystem.\u003c/p\u003e\n\u003ch2 id=\"prerequisites\" class=\"mobile-header\"\u003ePrerequisites\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003eLinux system (Ubuntu/Debian, RHEL/CentOS, or compatible)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eWeb server (Apache or NGINX)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003ePHP 8.0+ with required extensions\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eDatabase (MySQL/MariaDB, PostgreSQL, or SQLite)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e2GB RAM minimum, 4GB+ recommended\u003c/li\u003e\n\u003ch2 id=\"installation\" class=\"mobile-header\"\u003eInstallation\u003c/h2\u003e\n\u003ch3 id=\"lamp-stack-setup-apache-mysql-php\" class=\"mobile-header\"\u003eLAMP Stack Setup (Apache + MySQL + PHP)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Ubuntu/Debian\nsudo apt update\nsudo apt install -y apache2 mariadb-server php php-mysql php-gd php-curl php-mbstring php-intl php-mcrypt php-imagick php-xml php-zip php-bcmath php-gmp\n\n# RHEL/CentOS\nsudo yum install -y httpd mariadb-server php php-mysql php-gd php-curl php-mbstring php-intl php-mcrypt php-imagick php-xml php-zip php-bcmath php-gmp\n\n# Enable services\nsudo systemctl enable --now apache2 mariadb  # Ubuntu/Debian\nsudo systemctl enable --now httpd mariadb    # RHEL/CentOS\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"database-setup\" class=\"mobile-header\"\u003eDatabase Setup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Secure MySQL installation\nsudo mysql_secure_installation\n\n# Create Nextcloud database\nsudo mysql -u root -p \u0026lt;\u0026lt;EOF\nCREATE DATABASE nextcloud CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;\nCREATE USER \u0026#039;nextclouduser\u0026#039;@\u0026#039;localhost\u0026#039; IDENTIFIED BY \u0026#039;secure_password\u0026#039;;\nGRANT ALL PRIVILEGES ON nextcloud.* TO \u0026#039;nextclouduser\u0026#039;@\u0026#039;localhost\u0026#039;;\nFLUSH PRIVILEGES;\nEXIT\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"nextcloud-download-and-setup\" class=\"mobile-header\"\u003eNextcloud Download and Setup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Download Nextcloud\ncd /tmp\nwget https://download.nextcloud.com/server/releases/latest.tar.bz2\ntar -xjf latest.tar.bz2\n\n# Move to web directory\nsudo cp -R nextcloud /var/www/html/\nsudo chown -R www-data:www-data /var/www/html/nextcloud  # Ubuntu/Debian\nsudo chown -R apache:apache /var/www/html/nextcloud      # RHEL/CentOS\n\n# Set proper permissions\nsudo find /var/www/html/nextcloud/ -type f -print0 | xargs -0 chmod 0640\nsudo find /var/www/html/nextcloud/ -type d -print0 | xargs -0 chmod 0750\nsudo chmod 750 /var/www/html/nextcloud\nsudo chmod -R 770 /var/www/html/nextcloud/data\nsudo chmod -R 770 /var/www/html/nextcloud/apps\nsudo chmod -R 770 /var/www/html/nextcloud/config\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"using-docker-compose\" class=\"mobile-header\"\u003eUsing Docker Compose\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create docker-compose.yml\nmkdir -p ~/nextcloud \u0026amp;\u0026amp; cd ~/nextcloud\n\ncat \u0026gt; docker-compose.yml \u0026lt;\u0026lt;EOF\nversion: \u0026#039;3.8\u0026#039;\n\nservices:\n  nextcloud:\n    image: nextcloud:latest\n    restart: unless-stopped\n    ports:\n      - \u0026quot;8080:80\u0026quot;\n    volumes:\n      - nextcloud_data:/var/www/html\n      - ./config:/var/www/html/config\n      - ./custom_apps:/var/www/html/custom_apps\n      - ./data:/var/www/html/data\n    environment:\n      - MYSQL_HOST=db\n      - MYSQL_DATABASE=nextcloud\n      - MYSQL_USER=nextcloud\n      - MYSQL_PASSWORD=secure_password\n      - NEXTCLOUD_ADMIN_USER=admin\n      - NEXTCLOUD_ADMIN_PASSWORD=admin_password\n      - NEXTCLOUD_TRUSTED_DOMAINS=nextcloud.example.com\n    depends_on:\n      - db\n      - redis\n    networks:\n      - nextcloud\n\n  db:\n    image: mariadb:10.6\n    restart: unless-stopped\n    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --innodb-file-per-table=1 --skip-innodb-read-only-compressed\n    volumes:\n      - db_data:/var/lib/mysql\n    environment:\n      - MYSQL_ROOT_PASSWORD=root_password\n      - MYSQL_PASSWORD=secure_password\n      - MYSQL_DATABASE=nextcloud\n      - MYSQL_USER=nextcloud\n    networks:\n      - nextcloud\n\n  redis:\n    image: redis:alpine\n    restart: unless-stopped\n    networks:\n      - nextcloud\n\nvolumes:\n  nextcloud_data:\n  db_data:\n\nnetworks:\n  nextcloud:\n    driver: bridge\nEOF\n\n# Start services\ndocker-compose up -d\n\n# Check logs\ndocker-compose logs -f nextcloud\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"configuration\" class=\"mobile-header\"\u003eConfiguration\u003c/h2\u003e\n\u003ch3 id=\"apache-virtual-host\" class=\"mobile-header\"\u003eApache Virtual Host\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create Apache virtual host\nsudo tee /etc/apache2/sites-available/nextcloud.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n\u0026lt;VirtualHost *:80\u0026gt;\n    ServerName nextcloud.example.com\n    DocumentRoot /var/www/html/nextcloud\n\n    \u0026lt;Directory /var/www/html/nextcloud/\u0026gt;\n        Require all granted\n        AllowOverride All\n        Options FollowSymLinks MultiViews\n        \n        \u0026lt;IfModule mod_dav.c\u0026gt;\n            Dav off\n        \u0026lt;/IfModule\u0026gt;\n    \u0026lt;/Directory\u0026gt;\n\n    # Security headers\n    Header always set Strict-Transport-Security \u0026quot;max-age=15552000; includeSubDomains\u0026quot;\n    Header always set X-Content-Type-Options nosniff\n    Header always set X-Frame-Options \u0026quot;SAMEORIGIN\u0026quot;\n    Header always set X-XSS-Protection \u0026quot;1; mode=block\u0026quot;\n    Header always set Referrer-Policy \u0026quot;no-referrer\u0026quot;\n    Header always set Feature-Policy \u0026quot;camera \u0026#039;none\u0026#039;; microphone \u0026#039;none\u0026#039;\u0026quot;\n\n    ErrorLog \\${APACHE_LOG_DIR}/nextcloud_error.log\n    CustomLog \\${APACHE_LOG_DIR}/nextcloud_access.log combined\n\u0026lt;/VirtualHost\u0026gt;\nEOF\n\n# Enable required modules\nsudo a2enmod rewrite headers env dir mime ssl\nsudo a2ensite nextcloud.conf\nsudo systemctl restart apache2\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"nginx-configuration\" class=\"mobile-header\"\u003eNGINX Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create NGINX server block\nsudo tee /etc/nginx/sites-available/nextcloud \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\nupstream php-handler {\n    server unix:/var/run/php/php8.0-fpm.sock;\n}\n\nserver {\n    listen 80;\n    server_name nextcloud.example.com;\n    return 301 https://\\$server_name\\$request_uri;\n}\n\nserver {\n    listen 443 ssl http2;\n    server_name nextcloud.example.com;\n\n    # SSL configuration\n    ssl_certificate /etc/ssl/certs/nextcloud.crt;\n    ssl_certificate_key /etc/ssl/private/nextcloud.key;\n    ssl_protocols TLSv1.2 TLSv1.3;\n    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384;\n    ssl_prefer_server_ciphers off;\n\n    # Security headers\n    add_header Strict-Transport-Security \u0026quot;max-age=15768000; includeSubDomains; preload\u0026quot; always;\n    add_header Referrer-Policy \u0026quot;no-referrer\u0026quot; always;\n    add_header X-Content-Type-Options \u0026quot;nosniff\u0026quot; always;\n    add_header X-Download-Options \u0026quot;noopen\u0026quot; always;\n    add_header X-Frame-Options \u0026quot;SAMEORIGIN\u0026quot; always;\n    add_header X-Permitted-Cross-Domain-Policies \u0026quot;none\u0026quot; always;\n    add_header X-Robots-Tag \u0026quot;none\u0026quot; always;\n    add_header X-XSS-Protection \u0026quot;1; mode=block\u0026quot; always;\n\n    # Remove X-Powered-By\n    fastcgi_hide_header X-Powered-By;\n\n    # Path to the root of your installation\n    root /var/www/html/nextcloud;\n    index index.php index.html /index.php\\$request_uri;\n\n    # Rule borrowed from `.htaccess` to handle Microsoft DAV clients\n    location = / {\n        if ( \\$http_user_agent ~ ^DavClnt ) {\n            return 302 /remote.php/webdav/\\$is_args\\$args;\n        }\n    }\n\n    location = /robots.txt {\n        allow all;\n        log_not_found off;\n        access_log off;\n    }\n\n    # Make a regex exception for `/.well-known` so that clients can still\n    # access it despite the existence of the regex rule\n    location ^~ /.well-known {\n        location = /.well-known/carddav { return 301 /remote.php/dav/; }\n        location = /.well-known/caldav  { return 301 /remote.php/dav/; }\n        location /.well-known/acme-challenge    { try_files \\$uri \\$uri/ =404; }\n        location /.well-known/pki-validation    { try_files \\$uri \\$uri/ =404; }\n        return 301 /index.php\\$request_uri;\n    }\n\n    # Rules borrowed from `.htaccess` to hide certain paths.\n    location ~ ^/(?:build|tests|config|lib|3rdparty|templates|data)(?:\\$|/)  { return 404; }\n    location ~ ^/(?:\\\\.|autotest|occ|issue|indie|db_|console)                { return 404; }\n\n    # Ensure this block, which passes PHP files to the PHP process, is above the blocks\n    # which handle static assets (as seen below). If this block is not declared first,\n    # then Nginx will encounter an infinite rewriting loop when it prepends\n    # `/index.php` to the URI, resulting in a HTTP 500 error response.\n    location ~ \\\\.php(?:\\$|/) {\n        # Required for legacy support\n        rewrite ^/(?!index|remote|public|cron|core\\\\/ajax\\\\/update|status|ocs\\\\/v[12]|updater\\\\/.+|oc[ms]-provider\\\\/.+|.+\\\\/richdocumentscode\\\\/proxy) /index.php\\$request_uri;\n\n        fastcgi_split_path_info ^(.+?\\\\.php)(/.*)\\$;\n        set \\$path_info \\$fastcgi_path_info;\n\n        try_files \\$fastcgi_script_name =404;\n\n        include fastcgi_params;\n        fastcgi_param SCRIPT_FILENAME \\$document_root\\$fastcgi_script_name;\n        fastcgi_param PATH_INFO \\$path_info;\n        fastcgi_param HTTPS on;\n\n        fastcgi_param modHeadersAvailable true;\n        fastcgi_param front_controller_active true;\n        fastcgi_pass php-handler;\n\n        fastcgi_intercept_errors on;\n        fastcgi_request_buffering off;\n    }\n\n    location ~ \\\\.(?:css|js|svg|gif|png|jpg|ico)\\$ {\n        try_files \\$uri /index.php\\$request_uri;\n        expires 6M;\n        access_log off;\n    }\n\n    location ~ \\\\.woff2?\\$ {\n        try_files \\$uri /index.php\\$request_uri;\n        expires 7d;\n        access_log off;\n    }\n\n    # Rule borrowed from `.htaccess`\n    location /remote {\n        return 301 /remote.php\\$request_uri;\n    }\n\n    location / {\n        try_files \\$uri \\$uri/ /index.php\\$request_uri;\n    }\n}\nEOF\n\n# Enable site\nsudo ln -s /etc/nginx/sites-available/nextcloud /etc/nginx/sites-enabled/\nsudo nginx -t \u0026amp;\u0026amp; sudo systemctl restart nginx\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"php-configuration\" class=\"mobile-header\"\u003ePHP Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Optimize PHP for Nextcloud\nsudo nano /etc/php/8.0/apache2/php.ini  # Apache\nsudo nano /etc/php/8.0/fpm/php.ini      # NGINX\n\n# Recommended settings:\nmemory_limit = 512M\nupload_max_filesize = 16G\npost_max_size = 16G\nmax_execution_time = 3600\nmax_input_time = 3600\nmax_input_vars = 3000\ndate.timezone = \u0026quot;America/New_York\u0026quot;\n\n# OPcache settings\nopcache.enable = 1\nopcache.interned_strings_buffer = 16\nopcache.max_accelerated_files = 10000\nopcache.memory_consumption = 128\nopcache.save_comments = 1\nopcache.revalidate_freq = 1\n\n# APCu for local cache\napc.enable_cli = 1\n\nsudo systemctl restart apache2  # Apache\nsudo systemctl restart php8.0-fpm  # NGINX\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"command-line-installation\" class=\"mobile-header\"\u003eCommand Line Installation\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install via command line\ncd /var/www/html/nextcloud\nsudo -u www-data php occ maintenance:install \\\n  --database=\u0026quot;mysql\u0026quot; \\\n  --database-name=\u0026quot;nextcloud\u0026quot; \\\n  --database-user=\u0026quot;nextclouduser\u0026quot; \\\n  --database-pass=\u0026quot;secure_password\u0026quot; \\\n  --admin-user=\u0026quot;admin\u0026quot; \\\n  --admin-pass=\u0026quot;admin_password\u0026quot; \\\n  --data-dir=\u0026quot;/var/www/html/nextcloud/data\u0026quot;\n\n# Configure trusted domains\nsudo -u www-data php occ config:system:set trusted_domains 0 --value=nextcloud.example.com\nsudo -u www-data php occ config:system:set trusted_domains 1 --value=192.168.1.100\n\n# Configure caching\nsudo -u www-data php occ config:system:set memcache.local --value=\u0026quot;\\\\OC\\\\Memcache\\\\APCu\u0026quot;\nsudo -u www-data php occ config:system:set memcache.distributed --value=\u0026quot;\\\\OC\\\\Memcache\\\\Redis\u0026quot;\nsudo -u www-data php occ config:system:set redis host --value=\u0026quot;localhost\u0026quot;\nsudo -u www-data php occ config:system:set redis port --value=6379\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"performance-optimization\" class=\"mobile-header\"\u003ePerformance Optimization\u003c/h2\u003e\n\u003ch3 id=\"redis-caching-setup\" class=\"mobile-header\"\u003eRedis Caching Setup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install Redis\nsudo apt install -y redis-server  # Ubuntu/Debian\nsudo yum install -y redis          # RHEL/CentOS\n\nsudo systemctl enable --now redis\n\n# Configure Redis for Nextcloud\nsudo tee -a /etc/redis/redis.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\nmaxmemory 512mb\nmaxmemory-policy allkeys-lru\nsave 900 1\nsave 300 10\nsave 60 10000\nEOF\n\nsudo systemctl restart redis\n\n# Install Redis PHP extension\nsudo apt install -y php-redis  # Ubuntu/Debian\nsudo yum install -y php-redis   # RHEL/CentOS\n\n# Configure Nextcloud to use Redis\nsudo -u www-data php occ config:system:set memcache.local --value=\u0026quot;\\\\OC\\\\Memcache\\\\APCu\u0026quot;\nsudo -u www-data php occ config:system:set memcache.distributed --value=\u0026quot;\\\\OC\\\\Memcache\\\\Redis\u0026quot;\nsudo -u www-data php occ config:system:set redis host --value=\u0026quot;localhost\u0026quot;\nsudo -u www-data php occ config:system:set redis port --value=6379\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"database-optimization\" class=\"mobile-header\"\u003eDatabase Optimization\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# MySQL/MariaDB optimization for Nextcloud\nsudo tee -a /etc/mysql/mysql.conf.d/nextcloud.cnf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n[mysqld]\ninnodb_buffer_pool_size = 1G\ninnodb_io_capacity = 4000\ninnodb_log_file_size = 128M\ninnodb_log_buffer_size = 32M\ninnodb_flush_log_at_trx_commit = 1\ninnodb_flush_method = O_DIRECT\ninnodb_file_per_table = 1\n\nquery_cache_type = 1\nquery_cache_limit = 2M\nquery_cache_size = 64M\n\ntmp_table_size = 64M\nmax_heap_table_size = 64M\n\njoin_buffer_size = 262144\nsort_buffer_size = 262144\n\nmax_connections = 100\nmax_connect_errors = 10\nconnect_timeout = 5\nwait_timeout = 600\nmax_allowed_packet = 64M\n\nthread_cache_size = 128\nquery_cache_size = 64M\n\n[mysql.server]\ndefault-table-type = innodb\nEOF\n\nsudo systemctl restart mysql\n\n# Add indexes for better performance\nmysql -u nextclouduser -p nextcloud \u0026lt;\u0026lt;EOF\nALTER TABLE oc_jobs ADD INDEX jobs_class_index (class);\nALTER TABLE oc_filecache ADD INDEX fs_mtime (mtime);\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"background-jobs\" class=\"mobile-header\"\u003eBackground Jobs\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Configure cron for background jobs\nsudo crontab -u www-data -e\n# Add: */5 * * * * php /var/www/html/nextcloud/occ system:cron\n\n# Or configure via occ command\nsudo -u www-data php occ background:cron\n\n# Check background job status\nsudo -u www-data php occ status\nsudo -u www-data php occ background:job:list\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"security-hardening\" class=\"mobile-header\"\u003eSecurity Hardening\u003c/h2\u003e\n\u003ch3 id=\"file-permissions-and-security\" class=\"mobile-header\"\u003eFile Permissions and Security\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Secure file permissions script\nsudo tee /usr/local/bin/nextcloud-permissions.sh \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n#!/bin/bash\nncpath=\u0026#039;/var/www/html/nextcloud\u0026#039;\nhtuser=\u0026#039;www-data\u0026#039;\nhtgroup=\u0026#039;www-data\u0026#039;\nrootuser=\u0026#039;root\u0026#039;\n\nprintf \u0026quot;Creating possible missing Directories\\n\u0026quot;\nmkdir -p $ncpath/data\nmkdir -p $ncpath/assets\nmkdir -p $ncpath/updater\n\nprintf \u0026quot;chmod Files and Directories\\n\u0026quot;\nfind ${ncpath}/ -type f -print0 | xargs -0 chmod 0640\nfind ${ncpath}/ -type d -print0 | xargs -0 chmod 0750\n\nprintf \u0026quot;chown Directories\\n\u0026quot;\nchown -R ${rootuser}:${htgroup} ${ncpath}/\nchown -R ${htuser}:${htgroup} ${ncpath}/apps/\nchown -R ${htuser}:${htgroup} ${ncpath}/assets/\nchown -R ${htuser}:${htgroup} ${ncpath}/config/\nchown -R ${htuser}:${htgroup} ${ncpath}/data/\nchown -R ${htuser}:${htgroup} ${ncpath}/themes/\nchown -R ${htuser}:${htgroup} ${ncpath}/updater/\n\nchmod +x ${ncpath}/occ\n\nprintf \u0026quot;chmod/chown .htaccess\\n\u0026quot;\nif [ -f ${ncpath}/.htaccess ]; then\n    chmod 0644 ${ncpath}/.htaccess\n    chown ${rootuser}:${htgroup} ${ncpath}/.htaccess\nfi\n\nif [ -f ${ncpath}/data/.htaccess ]; then\n    chmod 0644 ${ncpath}/data/.htaccess\n    chown ${rootuser}:${htgroup} ${ncpath}/data/.htaccess\nfi\nEOF\n\nsudo chmod +x /usr/local/bin/nextcloud-permissions.sh\nsudo /usr/local/bin/nextcloud-permissions.sh\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"ssltls-configuration\" class=\"mobile-header\"\u003eSSL/TLS Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install Let\u0026#039;s Encrypt certificate\nsudo apt install -y certbot python3-certbot-apache  # Apache\nsudo apt install -y certbot python3-certbot-nginx   # NGINX\n\n# Obtain certificate\nsudo certbot --apache -d nextcloud.example.com  # Apache\nsudo certbot --nginx -d nextcloud.example.com   # NGINX\n\n# Configure HTTPS redirect in Nextcloud\nsudo -u www-data php occ config:system:set overwrite.cli.url --value=\u0026quot;https://nextcloud.example.com\u0026quot;\nsudo -u www-data php occ config:system:set overwriteprotocol --value=\u0026quot;https\u0026quot;\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"security-scan-and-hardening\" class=\"mobile-header\"\u003eSecurity Scan and Hardening\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Run Nextcloud security scan\nsudo -u www-data php occ security:certificates\nsudo -u www-data php occ security:bruteforce:reset admin\n\n# Configure rate limiting\nsudo -u www-data php occ config:app:set brute_force_protection delay_increment --value=10\nsudo -u www-data php occ config:app:set brute_force_protection fail_tolerance --value=3\n\n# Enable two-factor authentication\nsudo -u www-data php occ app:enable twofactor_totp\nsudo -u www-data php occ app:enable twofactor_u2f\n\n# Configure file access control\nsudo -u www-data php occ config:system:set default_file_access --value=\u0026quot;restrict\u0026quot;\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"app-management\" class=\"mobile-header\"\u003eApp Management\u003c/h2\u003e\n\u003ch3 id=\"essential-apps-installation\" class=\"mobile-header\"\u003eEssential Apps Installation\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install popular apps via occ\nsudo -u www-data php occ app:install calendar\nsudo -u www-data php occ app:install contacts\nsudo -u www-data php occ app:install mail\nsudo -u www-data php occ app:install notes\nsudo -u www-data php occ app:install tasks\nsudo -u www-data php occ app:install deck\nsudo -u www-data php occ app:install polls\nsudo -u www-data php occ app:install richdocuments  # OnlyOffice integration\n\n# Enable apps\nsudo -u www-data php occ app:enable calendar\nsudo -u www-data php occ app:enable contacts\nsudo -u www-data php occ app:enable mail\n\n# List available apps\nsudo -u www-data php occ app:list\n\n# Update apps\nsudo -u www-data php occ app:update --all\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"onlyoffice-integration\" class=\"mobile-header\"\u003eOnlyOffice Integration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install OnlyOffice Document Server\ndocker run -d --name onlyoffice \\\n  -p 8080:80 \\\n  -v onlyoffice_data:/var/www/onlyoffice/Data \\\n  -v onlyoffice_log:/var/log/onlyoffice \\\n  -v onlyoffice_fonts:/usr/share/fonts/truetype/custom \\\n  -v onlyoffice_forgotten:/var/lib/onlyoffice/documentserver/App_Data/cache/files/forgotten \\\n  onlyoffice/documentserver\n\n# Configure Nextcloud to use OnlyOffice\nsudo -u www-data php occ config:app:set richdocuments wopi_url --value=\u0026quot;http://localhost:8080\u0026quot;\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"backup-and-maintenance\" class=\"mobile-header\"\u003eBackup and Maintenance\u003c/h2\u003e\n\u003ch3 id=\"backup-script\" class=\"mobile-header\"\u003eBackup Script\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003esudo tee /usr/local/bin/nextcloud-backup.sh \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n#!/bin/bash\nBACKUP_DIR=\u0026quot;/backup/nextcloud\u0026quot;\nNC_DIR=\u0026quot;/var/www/html/nextcloud\u0026quot;\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p ${BACKUP_DIR}/{files,database}\n\n# Enable maintenance mode\nsudo -u www-data php ${NC_DIR}/occ maintenance:mode --on\n\n# Backup files (exclude data directory for space)\ntar --exclude=\u0026quot;${NC_DIR}/data\u0026quot; -czf ${BACKUP_DIR}/files/nextcloud-files-${DATE}.tar.gz -C /var/www/html nextcloud\n\n# Backup database\nmysqldump -u nextclouduser -p\u0026#039;secure_password\u0026#039; nextcloud \u0026gt; ${BACKUP_DIR}/database/nextcloud-db-${DATE}.sql\ngzip ${BACKUP_DIR}/database/nextcloud-db-${DATE}.sql\n\n# Backup data directory separately (if needed)\n# tar -czf ${BACKUP_DIR}/files/nextcloud-data-${DATE}.tar.gz -C ${NC_DIR} data\n\n# Disable maintenance mode\nsudo -u www-data php ${NC_DIR}/occ maintenance:mode --off\n\n# Keep only last 7 backups\nfind ${BACKUP_DIR} -name \u0026quot;nextcloud-*\u0026quot; -type f -mtime +7 -delete\n\necho \u0026quot;Backup completed: nextcloud-${DATE}\u0026quot;\nEOF\n\nsudo chmod +x /usr/local/bin/nextcloud-backup.sh\n\n# Schedule daily backup\necho \u0026quot;0 2 * * * root /usr/local/bin/nextcloud-backup.sh\u0026quot; | sudo tee -a /etc/crontab\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"update-and-maintenance\" class=\"mobile-header\"\u003eUpdate and Maintenance\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create update script\nsudo tee /usr/local/bin/nextcloud-update.sh \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n#!/bin/bash\nNC_DIR=\u0026quot;/var/www/html/nextcloud\u0026quot;\n\n# Check for updates\nsudo -u www-data php ${NC_DIR}/occ update:check\n\n# Run updater\nsudo -u www-data php ${NC_DIR}/updater/updater.phar\n\n# Update apps\nsudo -u www-data php ${NC_DIR}/occ app:update --all\n\n# Run database upgrades\nsudo -u www-data php ${NC_DIR}/occ upgrade\n\n# Scan files\nsudo -u www-data php ${NC_DIR}/occ files:scan --all\n\n# Clean up\nsudo -u www-data php ${NC_DIR}/occ files:cleanup\nsudo -u www-data php ${NC_DIR}/occ trashbin:cleanup --all-users\n\necho \u0026quot;Nextcloud update completed\u0026quot;\nEOF\n\nsudo chmod +x /usr/local/bin/nextcloud-update.sh\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"verification\" class=\"mobile-header\"\u003eVerification\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check web server status\nsudo systemctl status apache2  # or nginx\nsudo systemctl status mysql\n\n# Test Nextcloud installation\ncurl -I http://localhost/nextcloud\ncurl -I https://nextcloud.example.com\n\n# Check Nextcloud status via occ\ncd /var/www/html/nextcloud\nsudo -u www-data php occ status\nsudo -u www-data php occ check\n\n# Check background jobs\nsudo -u www-data php occ background:job:list\n\n# Check database connectivity\nsudo -u www-data php occ db:check\n\n# Check security status\nsudo -u www-data php occ security:certificates\nsudo -u www-data php occ security:bruteforce:attempts\n\n# Test file operations\nsudo -u www-data php occ files:scan admin\nsudo -u www-data php occ files:scan --all\n\n# Check logs\nsudo tail -f /var/www/html/nextcloud/data/nextcloud.log\nsudo tail -f /var/log/apache2/nextcloud_error.log\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"troubleshooting\" class=\"mobile-header\"\u003eTroubleshooting\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Enable debug mode\nsudo -u www-data php occ config:system:set debug --value=true --type=boolean\nsudo -u www-data php occ config:system:set loglevel --value=0\n\n# Check system requirements\nsudo -u www-data php occ check\n\n# Repair installation\nsudo -u www-data php occ maintenance:repair\n\n# Clear cache\nsudo -u www-data php occ files:cleanup\n\n# Fix file permissions\nsudo /usr/local/bin/nextcloud-permissions.sh\n\n# Database repair\nsudo -u www-data php occ db:check-and-repair\n\n# Update file cache\nsudo -u www-data php occ files:scan --all\n\n# Check configuration\nsudo -u www-data php occ config:list system\n\n# Reset user password\nsudo -u www-data php occ user:resetpassword admin\n\n# Check disk usage\ndu -sh /var/www/html/nextcloud/data/\ndf -h /var/www/html/nextcloud/\n\n# Memory usage check\nsudo -u www-data php occ status --output=json\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"additional-resources\" class=\"mobile-header\"\u003eAdditional Resources\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://docs.nextcloud.com/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eOfficial Documentation\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://docs.nextcloud.com/server/latest/admin_manual/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eAdmin Manual\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://docs.nextcloud.com/server/latest/admin_manual/installation/harden_server.html\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eSecurity Hardening Guide\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://docs.nextcloud.com/server/latest/admin_manual/installation/server_tuning.html\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003ePerformance Tuning\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://help.nextcloud.com/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eCommunity Forum\u003c/a\u003e\u003c/li\u003e\n\u003cp class=\"mobile-paragraph\"\u003e---\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This guide is part of the \u003ca href=\"https://howtomgr.github.io\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eHowToMgr\u003c/a\u003e collection.\u003c/p\u003e","readTime":"12 min","wordCount":2269,"lastBuilt":"2025-09-14T00:58:26.994Z"},"category":{"key":"productivity","name":"Productivity","description":"Content management and productivity tools","icon":"⚡","color":"#ff79c6","keywords":["nextcloud","wordpress","ghost","bookstack","outline","bitwarden"]},"relatedGuides":[{"name":"ghost","displayName":"Ghost","slug":"ghost","description":"Repo for ghost","category":"productivity","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/ghost","updatedAt":"2025-09-08T03:07:48Z","createdAt":"2025-09-08T03:07:38Z","readmeRaw":"## 👋 Welcome to ghost 🚀  \n\nghost README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-ghost\" class=\"mobile-header\"\u003e👋 Welcome to ghost 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eghost README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T00:58:31.027Z"},{"name":"wordpress","displayName":"Wordpress","slug":"wordpress","description":"Repo for wordpress","category":"productivity","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/wordpress","updatedAt":"2025-09-08T03:18:39Z","createdAt":"2025-09-08T03:18:29Z","readmeRaw":"# WordPress Installation Guide\n\nPopular content management system (CMS) for creating websites, blogs, and web applications with a user-friendly interface.\n\n## Prerequisites\n\n- Linux system (Ubuntu/Debian, RHEL/CentOS, or compatible)\n- Web server (Apache or NGINX)\n- PHP 7.4+ with required extensions\n- MySQL 5.7+ or PostgreSQL 9.6+\n- SSL certificate (recommended)\n\n## Installation\n\n### LAMP Stack Setup (Apache + MySQL + PHP)\n```bash\n# Ubuntu/Debian\nsudo apt update\nsudo apt install -y apache2 mysql-server php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip\n\n# RHEL/CentOS\nsudo yum install -y httpd mariadb-server php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip\n\n# Enable services\nsudo systemctl enable --now apache2 mysql  # Ubuntu/Debian\nsudo systemctl enable --now httpd mariadb  # RHEL/CentOS\n```\n\n### LEMP Stack Setup (NGINX + MySQL + PHP)\n```bash\n# Ubuntu/Debian\nsudo apt update\nsudo apt install -y nginx mysql-server php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip\n\n# RHEL/CentOS  \nsudo yum install -y nginx mariadb-server php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip\n\n# Enable services\nsudo systemctl enable --now nginx mysql php7.4-fpm  # Ubuntu/Debian\nsudo systemctl enable --now nginx mariadb php-fpm   # RHEL/CentOS\n```\n\n### Database Setup\n```bash\n# Secure MySQL installation\nsudo mysql_secure_installation\n\n# Create WordPress database\nsudo mysql -u root -p \u003c\u003cEOF\nCREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;\nCREATE USER 'wordpressuser'@'localhost' IDENTIFIED BY 'secure_password';\nGRANT ALL ON wordpress.* TO 'wordpressuser'@'localhost';\nFLUSH PRIVILEGES;\nEXIT\nEOF\n```\n\n### WordPress Download and Setup\n```bash\n# Download WordPress\ncd /tmp\nwget https://wordpress.org/latest.tar.gz\ntar xzf latest.tar.gz\n\n# Create document root and copy files\nsudo mkdir -p /var/www/html/wordpress\nsudo cp -R /tmp/wordpress/* /var/www/html/wordpress/\nsudo chown -R www-data:www-data /var/www/html/wordpress  # Ubuntu/Debian\nsudo chown -R apache:apache /var/www/html/wordpress      # RHEL/CentOS\n\n# Set proper permissions\nsudo find /var/www/html/wordpress/ -type d -exec chmod 755 {} \\;\nsudo find /var/www/html/wordpress/ -type f -exec chmod 644 {} \\;\n\n# Create wp-config.php\ncd /var/www/html/wordpress\nsudo cp wp-config-sample.php wp-config.php\n\n# Generate salt keys\ncurl -s https://api.wordpress.org/secret-key/1.1/salt/\n\n# Edit wp-config.php with database details and salt keys\nsudo nano wp-config.php\n```\n\n## Configuration\n\n### Apache Virtual Host\n```bash\n# Create Apache virtual host\nsudo tee /etc/apache2/sites-available/wordpress.conf \u003e /dev/null \u003c\u003cEOF\n\u003cVirtualHost *:80\u003e\n    ServerName wordpress.example.com\n    ServerAlias www.wordpress.example.com\n    DocumentRoot /var/www/html/wordpress\n    \n    \u003cDirectory /var/www/html/wordpress/\u003e\n        AllowOverride All\n        Options -Indexes +FollowSymLinks\n        Require all granted\n    \u003c/Directory\u003e\n    \n    # Security headers\n    Header always set X-Frame-Options SAMEORIGIN\n    Header always set X-Content-Type-Options nosniff\n    Header always set X-XSS-Protection \"1; mode=block\"\n    Header always set Referrer-Policy \"strict-origin-when-cross-origin\"\n    \n    # Hide PHP version\n    Header always unset X-Powered-By\n    \n    # Disable server signature\n    ServerSignature Off\n    \n    ErrorLog \\${APACHE_LOG_DIR}/wordpress_error.log\n    CustomLog \\${APACHE_LOG_DIR}/wordpress_access.log combined\n\u003c/VirtualHost\u003e\nEOF\n\n# Enable modules and site\nsudo a2enmod rewrite headers ssl\nsudo a2ensite wordpress.conf\nsudo systemctl restart apache2\n```\n\n### NGINX Configuration\n```bash\n# Create NGINX server block\nsudo tee /etc/nginx/sites-available/wordpress \u003e /dev/null \u003c\u003cEOF\nserver {\n    listen 80;\n    server_name wordpress.example.com www.wordpress.example.com;\n    root /var/www/html/wordpress;\n    index index.php index.html index.htm;\n\n    # Security headers\n    add_header X-Frame-Options \"SAMEORIGIN\" always;\n    add_header X-XSS-Protection \"1; mode=block\" always;\n    add_header X-Content-Type-Options \"nosniff\" always;\n    add_header Referrer-Policy \"no-referrer-when-downgrade\" always;\n    add_header Content-Security-Policy \"default-src 'self' http: https: data: blob: 'unsafe-inline'\" always;\n\n    # Hide nginx version\n    server_tokens off;\n\n    # WordPress specific rules\n    location / {\n        try_files \\$uri \\$uri/ /index.php?\\$args;\n    }\n\n    location ~ \\.php\\$ {\n        include snippets/fastcgi-php.conf;\n        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;  # Adjust PHP version\n        fastcgi_param SCRIPT_FILENAME \\$document_root\\$fastcgi_script_name;\n        include fastcgi_params;\n    }\n\n    # Security rules\n    location ~* /(?:uploads|files)/.*\\.php\\$ {\n        deny all;\n    }\n\n    location ~* \\.(js|css|png|jpg|jpeg|gif|ico|svg)\\$ {\n        expires 1y;\n        add_header Cache-Control \"public, immutable\";\n    }\n\n    # Deny access to sensitive files\n    location ~* \\.(htaccess|htpasswd|ini|log|sh|inc|bak)\\$ {\n        deny all;\n    }\n\n    # WordPress: deny wp-config.php access\n    location ~* wp-config\\.php {\n        deny all;\n    }\n\n    # WordPress: deny general stuff\n    location ~* ^/(\\.user.ini|php.ini|\\..*)$ {\n        deny all;\n    }\n}\nEOF\n\n# Enable site\nsudo ln -s /etc/nginx/sites-available/wordpress /etc/nginx/sites-enabled/\nsudo nginx -t \u0026\u0026 sudo systemctl restart nginx\n```\n\n### WordPress Configuration (wp-config.php)\n```bash\n# Create secure wp-config.php\nsudo tee /var/www/html/wordpress/wp-config.php \u003e /dev/null \u003c\u003c'EOF'\n\u003c?php\n// Database settings\ndefine('DB_NAME', 'wordpress');\ndefine('DB_USER', 'wordpressuser');\ndefine('DB_PASSWORD', 'secure_password');\ndefine('DB_HOST', 'localhost');\ndefine('DB_CHARSET', 'utf8mb4');\ndefine('DB_COLLATE', '');\n\n// Authentication Unique Keys and Salts\n// Generate these at: https://api.wordpress.org/secret-key/1.1/salt/\ndefine('AUTH_KEY',         'put your unique phrase here');\ndefine('SECURE_AUTH_KEY',  'put your unique phrase here');\ndefine('LOGGED_IN_KEY',    'put your unique phrase here');\ndefine('NONCE_KEY',        'put your unique phrase here');\ndefine('AUTH_SALT',        'put your unique phrase here');\ndefine('SECURE_AUTH_SALT', 'put your unique phrase here');\ndefine('LOGGED_IN_SALT',   'put your unique phrase here');\ndefine('NONCE_SALT',       'put your unique phrase here');\n\n// WordPress Database Table prefix\n$table_prefix = 'wp_';\n\n// WordPress debug mode (disable in production)\ndefine('WP_DEBUG', false);\n\n// Security enhancements\ndefine('DISALLOW_FILE_EDIT', true);\ndefine('DISALLOW_FILE_MODS', true);\ndefine('FORCE_SSL_ADMIN', true);\ndefine('WP_AUTO_UPDATE_CORE', true);\n\n// Increase memory limit\ndefine('WP_MEMORY_LIMIT', '512M');\n\n// Custom content directory (optional)\ndefine('WP_CONTENT_DIR', '/var/www/html/wordpress/wp-content');\ndefine('WP_CONTENT_URL', 'https://wordpress.example.com/wp-content');\n\n// Automatic updates\ndefine('WP_AUTO_UPDATE_CORE', 'minor');\n\n/* That's all, stop editing! Happy publishing. */\nif ( ! defined( 'ABSPATH' ) ) {\n    define( 'ABSPATH', dirname( __FILE__ ) . '/' );\n}\n\nrequire_once ABSPATH . 'wp-settings.php';\nEOF\n\nsudo chown www-data:www-data /var/www/html/wordpress/wp-config.php\nsudo chmod 600 /var/www/html/wordpress/wp-config.php\n```\n\n### SSL Configuration with Let's Encrypt\n```bash\n# Install Certbot\nsudo apt install -y certbot python3-certbot-apache  # For Apache\nsudo apt install -y certbot python3-certbot-nginx   # For NGINX\n\n# Obtain SSL certificate\nsudo certbot --apache -d wordpress.example.com -d www.wordpress.example.com  # Apache\nsudo certbot --nginx -d wordpress.example.com -d www.wordpress.example.com   # NGINX\n\n# Auto-renewal\nsudo crontab -e\n# Add: 0 12 * * * /usr/bin/certbot renew --quiet\n```\n\n## Performance Optimization\n\n### PHP Optimization\n```bash\n# Edit PHP configuration\nsudo nano /etc/php/7.4/apache2/php.ini  # Apache\nsudo nano /etc/php/7.4/fpm/php.ini      # NGINX\n\n# Recommended settings:\nmemory_limit = 512M\npost_max_size = 128M\nupload_max_filesize = 128M\nmax_execution_time = 300\nmax_input_time = 300\nmax_input_vars = 3000\ndate.timezone = \"America/New_York\"\n\n# Enable OPcache\nopcache.enable = 1\nopcache.memory_consumption = 128\nopcache.interned_strings_buffer = 8\nopcache.max_accelerated_files = 4000\nopcache.revalidate_freq = 2\nopcache.fast_shutdown = 1\n\nsudo systemctl restart apache2  # Apache\nsudo systemctl restart php7.4-fpm nginx  # NGINX\n```\n\n### WordPress Caching\n```bash\n# Install Redis for object caching\nsudo apt install -y redis-server\nsudo systemctl enable --now redis-server\n\n# Configure Redis\nsudo tee -a /etc/redis/redis.conf \u003e /dev/null \u003c\u003cEOF\nmaxmemory 256mb\nmaxmemory-policy allkeys-lru\nEOF\n\nsudo systemctl restart redis-server\n\n# Install WordPress Redis plugin via WP-CLI\ncd /var/www/html/wordpress\ncurl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar\nchmod +x wp-cli.phar\nsudo mv wp-cli.phar /usr/local/bin/wp\n\n# Install and configure Redis plugin\nsudo -u www-data wp plugin install redis-cache --activate\nsudo -u www-data wp redis enable\n\n# Install caching plugins\nsudo -u www-data wp plugin install w3-total-cache --activate\nsudo -u www-data wp plugin install wp-super-cache --activate\n```\n\n### Database Optimization\n```bash\n# Optimize MySQL for WordPress\nsudo tee -a /etc/mysql/mysql.conf.d/mysqld.cnf \u003e /dev/null \u003c\u003cEOF\n\n# WordPress optimizations\ninnodb_buffer_pool_size = 1G\ninnodb_log_file_size = 256M\ninnodb_log_buffer_size = 8M\ninnodb_file_per_table = 1\ninnodb_open_files = 400\ninnodb_io_capacity = 400\ninnodb_flush_method = O_DIRECT\nquery_cache_type = 1\nquery_cache_limit = 1M\nquery_cache_size = 16M\ntmp_table_size = 32M\nmax_heap_table_size = 32M\nmax_connections = 500\nthread_cache_size = 50\nopen_files_limit = 65535\ntable_definition_cache = 4096\ntable_open_cache = 10240\nEOF\n\nsudo systemctl restart mysql\n```\n\n## Security Hardening\n\n### WordPress Security\n```bash\n# Install security plugins\nsudo -u www-data wp plugin install wordfence --activate\nsudo -u www-data wp plugin install sucuri-scanner --activate\nsudo -u www-data wp plugin install all-in-one-wp-security-and-firewall --activate\n\n# Hide WordPress version\necho \"remove_action('wp_head', 'wp_generator');\" | sudo tee -a /var/www/html/wordpress/wp-content/themes/active-theme/functions.php\n\n# Disable XML-RPC if not needed\necho \"add_filter('xmlrpc_enabled', '__return_false');\" | sudo tee -a /var/www/html/wordpress/wp-content/themes/active-theme/functions.php\n\n# Change WordPress security keys regularly\ncurl -s https://api.wordpress.org/secret-key/1.1/salt/ | sudo tee -a /var/www/html/wordpress/wp-config.php\n\n# Create .htaccess security rules (Apache)\nsudo tee /var/www/html/wordpress/.htaccess \u003e /dev/null \u003c\u003cEOF\n# Block access to wp-config.php\n\u003cFiles wp-config.php\u003e\norder allow,deny\ndeny from all\n\u003c/Files\u003e\n\n# Block access to readme.html, license.txt\n\u003cFilesMatch \"^(readme\\.html|license\\.txt|wp-config\\.php)\"\u003e\norder allow,deny\ndeny from all\n\u003c/FilesMatch\u003e\n\n# Protect against script injections\nOptions +FollowSymLinks\nRewriteEngine On\nRewriteCond %{QUERY_STRING} (\u003c|%3C).*script.*(\u003e|%3E) [NC,OR]\nRewriteCond %{QUERY_STRING} GLOBALS(=|[|%[0-9A-Z]{0,2}) [OR]\nRewriteCond %{QUERY_STRING} _REQUEST(=|[|%[0-9A-Z]{0,2}) [OR]\nRewriteCond %{QUERY_STRING} ^.*(\\[|\\]|\\(|\\)|\u003c|\u003e|ê|\"|;|\\?|\\*|=$).* [NC,OR]\nRewriteCond %{QUERY_STRING} ^.*(â|á|à|ä|â|ã|å|æ|ç|è|é|ê|ë|ì|í|î|ï|ð|ñ|ò|ó|ô|õ|ö|ø|ù|ú|û|ü|ý|þ|ÿ|À|Á|Â|Ã|Å|Æ|Ç|È|É|Ê|Ë|Ì|Í|Î|Ï|Ð|Ñ|Ò|Ó|Ô|Õ|Ö|Ø|Ù|Ú|Û|Ü|Ý|Þ).* [NC]\nRewriteRule ^(.*)$ index.php [F,L]\n\n# Limit login attempts\n\u003cFilesMatch \"wp-login.php\"\u003e\norder allow,deny\nallow from all\n# Add your IP addresses here for admin access\n# allow from 192.168.1.100\n\u003c/FilesMatch\u003e\n\n# Disable directory browsing\nOptions -Indexes\n\n# Protect uploads directory\n\u003cDirectory \"/var/www/html/wordpress/wp-content/uploads/\"\u003e\n    \u003cFiles \"*.php\"\u003e\n        Order Deny,Allow\n        Deny from All\n    \u003c/Files\u003e\n\u003c/Directory\u003e\nEOF\n\nsudo chown www-data:www-data /var/www/html/wordpress/.htaccess\n```\n\n### Firewall Configuration\n```bash\n# UFW (Ubuntu/Debian)\nsudo ufw allow 'Apache Full'    # or 'Nginx Full'\nsudo ufw allow ssh\nsudo ufw enable\n\n# Firewalld (RHEL/CentOS)\nsudo firewall-cmd --permanent --add-service=http\nsudo firewall-cmd --permanent --add-service=https\nsudo firewall-cmd --permanent --add-service=ssh\nsudo firewall-cmd --reload\n```\n\n## WordPress CLI (WP-CLI) Installation\n\n```bash\n# Install WP-CLI\ncurl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar\nchmod +x wp-cli.phar\nsudo mv wp-cli.phar /usr/local/bin/wp\n\n# Verify installation\nwp --info\n\n# Common WP-CLI commands\ncd /var/www/html/wordpress\n\n# Download WordPress core\nsudo -u www-data wp core download\n\n# Create wp-config.php\nsudo -u www-data wp config create \\\n  --dbname=wordpress \\\n  --dbuser=wordpressuser \\\n  --dbpass=secure_password \\\n  --dbhost=localhost\n\n# Install WordPress\nsudo -u www-data wp core install \\\n  --url=https://wordpress.example.com \\\n  --title=\"My WordPress Site\" \\\n  --admin_user=admin \\\n  --admin_password=secure_admin_password \\\n  --admin_email=admin@example.com\n\n# Update WordPress core\nsudo -u www-data wp core update\n\n# Install and activate plugins\nsudo -u www-data wp plugin install akismet --activate\nsudo -u www-data wp plugin install jetpack --activate\nsudo -u www-data wp plugin install yoast-seo --activate\n\n# Update plugins\nsudo -u www-data wp plugin update --all\n\n# Install themes\nsudo -u www-data wp theme install twentytwentythree --activate\nsudo -u www-data wp theme update --all\n\n# Create users\nsudo -u www-data wp user create editor editor@example.com \\\n  --role=editor --user_pass=secure_password\n\n# Database operations\nsudo -u www-data wp db optimize\nsudo -u www-data wp db repair\nsudo -u www-data wp db check\n```\n\n## Backup and Maintenance\n\n### Automated Backup Script\n```bash\n# Create backup script\nsudo tee /usr/local/bin/wordpress-backup.sh \u003e /dev/null \u003c\u003c'EOF'\n#!/bin/bash\nBACKUP_DIR=\"/backup/wordpress\"\nWP_DIR=\"/var/www/html/wordpress\"\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p ${BACKUP_DIR}/{files,database}\n\n# Backup WordPress files\ntar -czf ${BACKUP_DIR}/files/wordpress-files-${DATE}.tar.gz -C ${WP_DIR} .\n\n# Backup database\nmysqldump -u wordpressuser -p'secure_password' wordpress \u003e ${BACKUP_DIR}/database/wordpress-db-${DATE}.sql\ngzip ${BACKUP_DIR}/database/wordpress-db-${DATE}.sql\n\n# Using WP-CLI for database export\ncd ${WP_DIR}\nsudo -u www-data wp db export ${BACKUP_DIR}/database/wordpress-wpcli-${DATE}.sql\ngzip ${BACKUP_DIR}/database/wordpress-wpcli-${DATE}.sql\n\n# Keep only last 7 backups\nfind ${BACKUP_DIR} -name \"wordpress-*\" -type f -mtime +7 -delete\n\necho \"Backup completed: wordpress-${DATE}\"\nEOF\n\nsudo chmod +x /usr/local/bin/wordpress-backup.sh\n\n# Schedule daily backup\necho \"0 2 * * * root /usr/local/bin/wordpress-backup.sh\" | sudo tee -a /etc/crontab\n```\n\n### Maintenance Tasks\n```bash\n# Create maintenance script\nsudo tee /usr/local/bin/wordpress-maintenance.sh \u003e /dev/null \u003c\u003c'EOF'\n#!/bin/bash\nWP_DIR=\"/var/www/html/wordpress\"\ncd ${WP_DIR}\n\n# Update WordPress core, plugins, and themes\nsudo -u www-data wp core update\nsudo -u www-data wp plugin update --all\nsudo -u www-data wp theme update --all\n\n# Database cleanup\nsudo -u www-data wp transient delete --all\nsudo -u www-data wp db optimize\n\n# Clear caches\nif sudo -u www-data wp plugin is-installed w3-total-cache; then\n    sudo -u www-data wp w3-total-cache flush all\nfi\n\nif sudo -u www-data wp plugin is-installed wp-super-cache; then\n    sudo -u www-data wp super-cache flush\nfi\n\necho \"WordPress maintenance completed\"\nEOF\n\nsudo chmod +x /usr/local/bin/wordpress-maintenance.sh\n\n# Schedule weekly maintenance\necho \"0 3 * * 0 root /usr/local/bin/wordpress-maintenance.sh\" | sudo tee -a /etc/crontab\n```\n\n## Verification\n\n```bash\n# Check web server status\nsudo systemctl status apache2  # or nginx\nsudo systemctl status mysql\n\n# Check PHP-FPM (if using NGINX)\nsudo systemctl status php7.4-fpm\n\n# Test database connection\nmysql -u wordpressuser -p -e \"SHOW DATABASES;\"\n\n# Test website\ncurl -I http://wordpress.example.com\n\n# Check WordPress status via WP-CLI\ncd /var/www/html/wordpress\nsudo -u www-data wp core version\nsudo -u www-data wp plugin status\nsudo -u www-data wp theme status\n\n# Check file permissions\nls -la /var/www/html/wordpress/\nls -la /var/www/html/wordpress/wp-content/\n\n# Test uploads directory\nsudo -u www-data wp media regenerate --yes\n\n# Check for WordPress updates\nsudo -u www-data wp core check-update\nsudo -u www-data wp plugin list --update=available\n```\n\n## Troubleshooting\n\n```bash\n# Enable WordPress debug mode\nsudo nano /var/www/html/wordpress/wp-config.php\n# Add: define('WP_DEBUG', true);\n# Add: define('WP_DEBUG_LOG', true);\n\n# Check WordPress debug log\ntail -f /var/www/html/wordpress/wp-content/debug.log\n\n# Check web server logs\nsudo tail -f /var/log/apache2/wordpress_error.log  # Apache\nsudo tail -f /var/log/nginx/error.log              # NGINX\n\n# Check PHP logs\nsudo tail -f /var/log/php7.4-fpm.log\n\n# Database connectivity test\nsudo -u www-data wp db check\n\n# Plugin conflict troubleshooting\nsudo -u www-data wp plugin deactivate --all\nsudo -u www-data wp plugin activate plugin-name\n\n# Theme troubleshooting\nsudo -u www-data wp theme activate twentytwentythree\n\n# Check disk space\ndf -h /var/www/html/wordpress/\n\n# File permission issues\nsudo chown -R www-data:www-data /var/www/html/wordpress/\nsudo find /var/www/html/wordpress/ -type d -exec chmod 755 {} \\;\nsudo find /var/www/html/wordpress/ -type f -exec chmod 644 {} \\;\n\n# Reset user password via WP-CLI\nsudo -u www-data wp user update admin --user_pass=new_password\n```\n\n## Additional Resources\n\n- [WordPress Codex](https://codex.wordpress.org/)\n- [WP-CLI Documentation](https://wp-cli.org/)\n- [WordPress Security Guide](https://wordpress.org/support/article/hardening-wordpress/)\n- [Performance Best Practices](https://wordpress.org/support/article/optimization/)\n- [WordPress Forums](https://wordpress.org/support/forums/)\n\n---\n\n**Note:** This guide is part of the [HowToMgr](https://howtomgr.github.io) collection.","readmeHtml":"\u003ch1 id=\"wordpress-installation-guide\" class=\"mobile-header\"\u003eWordPress Installation Guide\u003c/h1\u003e\n\u003cp class=\"mobile-paragraph\"\u003ePopular content management system (CMS) for creating websites, blogs, and web applications with a user-friendly interface.\u003c/p\u003e\n\u003ch2 id=\"prerequisites\" class=\"mobile-header\"\u003ePrerequisites\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003eLinux system (Ubuntu/Debian, RHEL/CentOS, or compatible)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eWeb server (Apache or NGINX)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003ePHP 7.4+ with required extensions\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eMySQL 5.7+ or PostgreSQL 9.6+\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eSSL certificate (recommended)\u003c/li\u003e\n\u003ch2 id=\"installation\" class=\"mobile-header\"\u003eInstallation\u003c/h2\u003e\n\u003ch3 id=\"lamp-stack-setup-apache-mysql-php\" class=\"mobile-header\"\u003eLAMP Stack Setup (Apache + MySQL + PHP)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Ubuntu/Debian\nsudo apt update\nsudo apt install -y apache2 mysql-server php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip\n\n# RHEL/CentOS\nsudo yum install -y httpd mariadb-server php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip\n\n# Enable services\nsudo systemctl enable --now apache2 mysql  # Ubuntu/Debian\nsudo systemctl enable --now httpd mariadb  # RHEL/CentOS\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"lemp-stack-setup-nginx-mysql-php\" class=\"mobile-header\"\u003eLEMP Stack Setup (NGINX + MySQL + PHP)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Ubuntu/Debian\nsudo apt update\nsudo apt install -y nginx mysql-server php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip\n\n# RHEL/CentOS  \nsudo yum install -y nginx mariadb-server php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip\n\n# Enable services\nsudo systemctl enable --now nginx mysql php7.4-fpm  # Ubuntu/Debian\nsudo systemctl enable --now nginx mariadb php-fpm   # RHEL/CentOS\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"database-setup\" class=\"mobile-header\"\u003eDatabase Setup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Secure MySQL installation\nsudo mysql_secure_installation\n\n# Create WordPress database\nsudo mysql -u root -p \u0026lt;\u0026lt;EOF\nCREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;\nCREATE USER \u0026#039;wordpressuser\u0026#039;@\u0026#039;localhost\u0026#039; IDENTIFIED BY \u0026#039;secure_password\u0026#039;;\nGRANT ALL ON wordpress.* TO \u0026#039;wordpressuser\u0026#039;@\u0026#039;localhost\u0026#039;;\nFLUSH PRIVILEGES;\nEXIT\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"wordpress-download-and-setup\" class=\"mobile-header\"\u003eWordPress Download and Setup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Download WordPress\ncd /tmp\nwget https://wordpress.org/latest.tar.gz\ntar xzf latest.tar.gz\n\n# Create document root and copy files\nsudo mkdir -p /var/www/html/wordpress\nsudo cp -R /tmp/wordpress/* /var/www/html/wordpress/\nsudo chown -R www-data:www-data /var/www/html/wordpress  # Ubuntu/Debian\nsudo chown -R apache:apache /var/www/html/wordpress      # RHEL/CentOS\n\n# Set proper permissions\nsudo find /var/www/html/wordpress/ -type d -exec chmod 755 {} \\;\nsudo find /var/www/html/wordpress/ -type f -exec chmod 644 {} \\;\n\n# Create wp-config.php\ncd /var/www/html/wordpress\nsudo cp wp-config-sample.php wp-config.php\n\n# Generate salt keys\ncurl -s https://api.wordpress.org/secret-key/1.1/salt/\n\n# Edit wp-config.php with database details and salt keys\nsudo nano wp-config.php\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"configuration\" class=\"mobile-header\"\u003eConfiguration\u003c/h2\u003e\n\u003ch3 id=\"apache-virtual-host\" class=\"mobile-header\"\u003eApache Virtual Host\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create Apache virtual host\nsudo tee /etc/apache2/sites-available/wordpress.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n\u0026lt;VirtualHost *:80\u0026gt;\n    ServerName wordpress.example.com\n    ServerAlias www.wordpress.example.com\n    DocumentRoot /var/www/html/wordpress\n    \n    \u0026lt;Directory /var/www/html/wordpress/\u0026gt;\n        AllowOverride All\n        Options -Indexes +FollowSymLinks\n        Require all granted\n    \u0026lt;/Directory\u0026gt;\n    \n    # Security headers\n    Header always set X-Frame-Options SAMEORIGIN\n    Header always set X-Content-Type-Options nosniff\n    Header always set X-XSS-Protection \u0026quot;1; mode=block\u0026quot;\n    Header always set Referrer-Policy \u0026quot;strict-origin-when-cross-origin\u0026quot;\n    \n    # Hide PHP version\n    Header always unset X-Powered-By\n    \n    # Disable server signature\n    ServerSignature Off\n    \n    ErrorLog \\${APACHE_LOG_DIR}/wordpress_error.log\n    CustomLog \\${APACHE_LOG_DIR}/wordpress_access.log combined\n\u0026lt;/VirtualHost\u0026gt;\nEOF\n\n# Enable modules and site\nsudo a2enmod rewrite headers ssl\nsudo a2ensite wordpress.conf\nsudo systemctl restart apache2\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"nginx-configuration\" class=\"mobile-header\"\u003eNGINX Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create NGINX server block\nsudo tee /etc/nginx/sites-available/wordpress \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\nserver {\n    listen 80;\n    server_name wordpress.example.com www.wordpress.example.com;\n    root /var/www/html/wordpress;\n    index index.php index.html index.htm;\n\n    # Security headers\n    add_header X-Frame-Options \u0026quot;SAMEORIGIN\u0026quot; always;\n    add_header X-XSS-Protection \u0026quot;1; mode=block\u0026quot; always;\n    add_header X-Content-Type-Options \u0026quot;nosniff\u0026quot; always;\n    add_header Referrer-Policy \u0026quot;no-referrer-when-downgrade\u0026quot; always;\n    add_header Content-Security-Policy \u0026quot;default-src \u0026#039;self\u0026#039; http: https: data: blob: \u0026#039;unsafe-inline\u0026#039;\u0026quot; always;\n\n    # Hide nginx version\n    server_tokens off;\n\n    # WordPress specific rules\n    location / {\n        try_files \\$uri \\$uri/ /index.php?\\$args;\n    }\n\n    location ~ \\.php\\$ {\n        include snippets/fastcgi-php.conf;\n        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;  # Adjust PHP version\n        fastcgi_param SCRIPT_FILENAME \\$document_root\\$fastcgi_script_name;\n        include fastcgi_params;\n    }\n\n    # Security rules\n    location ~* /(?:uploads|files)/.*\\.php\\$ {\n        deny all;\n    }\n\n    location ~* \\.(js|css|png|jpg|jpeg|gif|ico|svg)\\$ {\n        expires 1y;\n        add_header Cache-Control \u0026quot;public, immutable\u0026quot;;\n    }\n\n    # Deny access to sensitive files\n    location ~* \\.(htaccess|htpasswd|ini|log|sh|inc|bak)\\$ {\n        deny all;\n    }\n\n    # WordPress: deny wp-config.php access\n    location ~* wp-config\\.php {\n        deny all;\n    }\n\n    # WordPress: deny general stuff\n    location ~* ^/(\\.user.ini|php.ini|\\..*)$ {\n        deny all;\n    }\n}\nEOF\n\n# Enable site\nsudo ln -s /etc/nginx/sites-available/wordpress /etc/nginx/sites-enabled/\nsudo nginx -t \u0026amp;\u0026amp; sudo systemctl restart nginx\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"wordpress-configuration-wp-configphp\" class=\"mobile-header\"\u003eWordPress Configuration (wp-config.php)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create secure wp-config.php\nsudo tee /var/www/html/wordpress/wp-config.php \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n\u0026lt;?php\n// Database settings\ndefine(\u0026#039;DB_NAME\u0026#039;, \u0026#039;wordpress\u0026#039;);\ndefine(\u0026#039;DB_USER\u0026#039;, \u0026#039;wordpressuser\u0026#039;);\ndefine(\u0026#039;DB_PASSWORD\u0026#039;, \u0026#039;secure_password\u0026#039;);\ndefine(\u0026#039;DB_HOST\u0026#039;, \u0026#039;localhost\u0026#039;);\ndefine(\u0026#039;DB_CHARSET\u0026#039;, \u0026#039;utf8mb4\u0026#039;);\ndefine(\u0026#039;DB_COLLATE\u0026#039;, \u0026#039;\u0026#039;);\n\n// Authentication Unique Keys and Salts\n// Generate these at: https://api.wordpress.org/secret-key/1.1/salt/\ndefine(\u0026#039;AUTH_KEY\u0026#039;,         \u0026#039;put your unique phrase here\u0026#039;);\ndefine(\u0026#039;SECURE_AUTH_KEY\u0026#039;,  \u0026#039;put your unique phrase here\u0026#039;);\ndefine(\u0026#039;LOGGED_IN_KEY\u0026#039;,    \u0026#039;put your unique phrase here\u0026#039;);\ndefine(\u0026#039;NONCE_KEY\u0026#039;,        \u0026#039;put your unique phrase here\u0026#039;);\ndefine(\u0026#039;AUTH_SALT\u0026#039;,        \u0026#039;put your unique phrase here\u0026#039;);\ndefine(\u0026#039;SECURE_AUTH_SALT\u0026#039;, \u0026#039;put your unique phrase here\u0026#039;);\ndefine(\u0026#039;LOGGED_IN_SALT\u0026#039;,   \u0026#039;put your unique phrase here\u0026#039;);\ndefine(\u0026#039;NONCE_SALT\u0026#039;,       \u0026#039;put your unique phrase here\u0026#039;);\n\n// WordPress Database Table prefix\n$table_prefix = \u0026#039;wp_\u0026#039;;\n\n// WordPress debug mode (disable in production)\ndefine(\u0026#039;WP_DEBUG\u0026#039;, false);\n\n// Security enhancements\ndefine(\u0026#039;DISALLOW_FILE_EDIT\u0026#039;, true);\ndefine(\u0026#039;DISALLOW_FILE_MODS\u0026#039;, true);\ndefine(\u0026#039;FORCE_SSL_ADMIN\u0026#039;, true);\ndefine(\u0026#039;WP_AUTO_UPDATE_CORE\u0026#039;, true);\n\n// Increase memory limit\ndefine(\u0026#039;WP_MEMORY_LIMIT\u0026#039;, \u0026#039;512M\u0026#039;);\n\n// Custom content directory (optional)\ndefine(\u0026#039;WP_CONTENT_DIR\u0026#039;, \u0026#039;/var/www/html/wordpress/wp-content\u0026#039;);\ndefine(\u0026#039;WP_CONTENT_URL\u0026#039;, \u0026#039;https://wordpress.example.com/wp-content\u0026#039;);\n\n// Automatic updates\ndefine(\u0026#039;WP_AUTO_UPDATE_CORE\u0026#039;, \u0026#039;minor\u0026#039;);\n\n/* That\u0026#039;s all, stop editing! Happy publishing. */\nif ( ! defined( \u0026#039;ABSPATH\u0026#039; ) ) {\n    define( \u0026#039;ABSPATH\u0026#039;, dirname( __FILE__ ) . \u0026#039;/\u0026#039; );\n}\n\nrequire_once ABSPATH . \u0026#039;wp-settings.php\u0026#039;;\nEOF\n\nsudo chown www-data:www-data /var/www/html/wordpress/wp-config.php\nsudo chmod 600 /var/www/html/wordpress/wp-config.php\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"ssl-configuration-with-lets-encrypt\" class=\"mobile-header\"\u003eSSL Configuration with Let's Encrypt\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install Certbot\nsudo apt install -y certbot python3-certbot-apache  # For Apache\nsudo apt install -y certbot python3-certbot-nginx   # For NGINX\n\n# Obtain SSL certificate\nsudo certbot --apache -d wordpress.example.com -d www.wordpress.example.com  # Apache\nsudo certbot --nginx -d wordpress.example.com -d www.wordpress.example.com   # NGINX\n\n# Auto-renewal\nsudo crontab -e\n# Add: 0 12 * * * /usr/bin/certbot renew --quiet\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"performance-optimization\" class=\"mobile-header\"\u003ePerformance Optimization\u003c/h2\u003e\n\u003ch3 id=\"php-optimization\" class=\"mobile-header\"\u003ePHP Optimization\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Edit PHP configuration\nsudo nano /etc/php/7.4/apache2/php.ini  # Apache\nsudo nano /etc/php/7.4/fpm/php.ini      # NGINX\n\n# Recommended settings:\nmemory_limit = 512M\npost_max_size = 128M\nupload_max_filesize = 128M\nmax_execution_time = 300\nmax_input_time = 300\nmax_input_vars = 3000\ndate.timezone = \u0026quot;America/New_York\u0026quot;\n\n# Enable OPcache\nopcache.enable = 1\nopcache.memory_consumption = 128\nopcache.interned_strings_buffer = 8\nopcache.max_accelerated_files = 4000\nopcache.revalidate_freq = 2\nopcache.fast_shutdown = 1\n\nsudo systemctl restart apache2  # Apache\nsudo systemctl restart php7.4-fpm nginx  # NGINX\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"wordpress-caching\" class=\"mobile-header\"\u003eWordPress Caching\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install Redis for object caching\nsudo apt install -y redis-server\nsudo systemctl enable --now redis-server\n\n# Configure Redis\nsudo tee -a /etc/redis/redis.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\nmaxmemory 256mb\nmaxmemory-policy allkeys-lru\nEOF\n\nsudo systemctl restart redis-server\n\n# Install WordPress Redis plugin via WP-CLI\ncd /var/www/html/wordpress\ncurl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar\nchmod +x wp-cli.phar\nsudo mv wp-cli.phar /usr/local/bin/wp\n\n# Install and configure Redis plugin\nsudo -u www-data wp plugin install redis-cache --activate\nsudo -u www-data wp redis enable\n\n# Install caching plugins\nsudo -u www-data wp plugin install w3-total-cache --activate\nsudo -u www-data wp plugin install wp-super-cache --activate\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"database-optimization\" class=\"mobile-header\"\u003eDatabase Optimization\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Optimize MySQL for WordPress\nsudo tee -a /etc/mysql/mysql.conf.d/mysqld.cnf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n\n# WordPress optimizations\ninnodb_buffer_pool_size = 1G\ninnodb_log_file_size = 256M\ninnodb_log_buffer_size = 8M\ninnodb_file_per_table = 1\ninnodb_open_files = 400\ninnodb_io_capacity = 400\ninnodb_flush_method = O_DIRECT\nquery_cache_type = 1\nquery_cache_limit = 1M\nquery_cache_size = 16M\ntmp_table_size = 32M\nmax_heap_table_size = 32M\nmax_connections = 500\nthread_cache_size = 50\nopen_files_limit = 65535\ntable_definition_cache = 4096\ntable_open_cache = 10240\nEOF\n\nsudo systemctl restart mysql\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"security-hardening\" class=\"mobile-header\"\u003eSecurity Hardening\u003c/h2\u003e\n\u003ch3 id=\"wordpress-security\" class=\"mobile-header\"\u003eWordPress Security\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install security plugins\nsudo -u www-data wp plugin install wordfence --activate\nsudo -u www-data wp plugin install sucuri-scanner --activate\nsudo -u www-data wp plugin install all-in-one-wp-security-and-firewall --activate\n\n# Hide WordPress version\necho \u0026quot;remove_action(\u0026#039;wp_head\u0026#039;, \u0026#039;wp_generator\u0026#039;);\u0026quot; | sudo tee -a /var/www/html/wordpress/wp-content/themes/active-theme/functions.php\n\n# Disable XML-RPC if not needed\necho \u0026quot;add_filter(\u0026#039;xmlrpc_enabled\u0026#039;, \u0026#039;__return_false\u0026#039;);\u0026quot; | sudo tee -a /var/www/html/wordpress/wp-content/themes/active-theme/functions.php\n\n# Change WordPress security keys regularly\ncurl -s https://api.wordpress.org/secret-key/1.1/salt/ | sudo tee -a /var/www/html/wordpress/wp-config.php\n\n# Create .htaccess security rules (Apache)\nsudo tee /var/www/html/wordpress/.htaccess \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n# Block access to wp-config.php\n\u0026lt;Files wp-config.php\u0026gt;\norder allow,deny\ndeny from all\n\u0026lt;/Files\u0026gt;\n\n# Block access to readme.html, license.txt\n\u0026lt;FilesMatch \u0026quot;^(readme\\.html|license\\.txt|wp-config\\.php)\u0026quot;\u0026gt;\norder allow,deny\ndeny from all\n\u0026lt;/FilesMatch\u0026gt;\n\n# Protect against script injections\nOptions +FollowSymLinks\nRewriteEngine On\nRewriteCond %{QUERY_STRING} (\u0026lt;|%3C).*script.*(\u0026gt;|%3E) [NC,OR]\nRewriteCond %{QUERY_STRING} GLOBALS(=|[|%[0-9A-Z]{0,2}) [OR]\nRewriteCond %{QUERY_STRING} _REQUEST(=|[|%[0-9A-Z]{0,2}) [OR]\nRewriteCond %{QUERY_STRING} ^.*(\\[|\\]|\\(|\\)|\u0026lt;|\u0026gt;|ê|\u0026quot;|;|\\?|\\*|=$).* [NC,OR]\nRewriteCond %{QUERY_STRING} ^.*(â|á|à|ä|â|ã|å|æ|ç|è|é|ê|ë|ì|í|î|ï|ð|ñ|ò|ó|ô|õ|ö|ø|ù|ú|û|ü|ý|þ|ÿ|À|Á|Â|Ã|Å|Æ|Ç|È|É|Ê|Ë|Ì|Í|Î|Ï|Ð|Ñ|Ò|Ó|Ô|Õ|Ö|Ø|Ù|Ú|Û|Ü|Ý|Þ).* [NC]\nRewriteRule ^(.*)$ index.php [F,L]\n\n# Limit login attempts\n\u0026lt;FilesMatch \u0026quot;wp-login.php\u0026quot;\u0026gt;\norder allow,deny\nallow from all\n# Add your IP addresses here for admin access\n# allow from 192.168.1.100\n\u0026lt;/FilesMatch\u0026gt;\n\n# Disable directory browsing\nOptions -Indexes\n\n# Protect uploads directory\n\u0026lt;Directory \u0026quot;/var/www/html/wordpress/wp-content/uploads/\u0026quot;\u0026gt;\n    \u0026lt;Files \u0026quot;*.php\u0026quot;\u0026gt;\n        Order Deny,Allow\n        Deny from All\n    \u0026lt;/Files\u0026gt;\n\u0026lt;/Directory\u0026gt;\nEOF\n\nsudo chown www-data:www-data /var/www/html/wordpress/.htaccess\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"firewall-configuration\" class=\"mobile-header\"\u003eFirewall Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# UFW (Ubuntu/Debian)\nsudo ufw allow \u0026#039;Apache Full\u0026#039;    # or \u0026#039;Nginx Full\u0026#039;\nsudo ufw allow ssh\nsudo ufw enable\n\n# Firewalld (RHEL/CentOS)\nsudo firewall-cmd --permanent --add-service=http\nsudo firewall-cmd --permanent --add-service=https\nsudo firewall-cmd --permanent --add-service=ssh\nsudo firewall-cmd --reload\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"wordpress-cli-wp-cli-installation\" class=\"mobile-header\"\u003eWordPress CLI (WP-CLI) Installation\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install WP-CLI\ncurl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar\nchmod +x wp-cli.phar\nsudo mv wp-cli.phar /usr/local/bin/wp\n\n# Verify installation\nwp --info\n\n# Common WP-CLI commands\ncd /var/www/html/wordpress\n\n# Download WordPress core\nsudo -u www-data wp core download\n\n# Create wp-config.php\nsudo -u www-data wp config create \\\n  --dbname=wordpress \\\n  --dbuser=wordpressuser \\\n  --dbpass=secure_password \\\n  --dbhost=localhost\n\n# Install WordPress\nsudo -u www-data wp core install \\\n  --url=https://wordpress.example.com \\\n  --title=\u0026quot;My WordPress Site\u0026quot; \\\n  --admin_user=admin \\\n  --admin_password=secure_admin_password \\\n  --admin_email=admin@example.com\n\n# Update WordPress core\nsudo -u www-data wp core update\n\n# Install and activate plugins\nsudo -u www-data wp plugin install akismet --activate\nsudo -u www-data wp plugin install jetpack --activate\nsudo -u www-data wp plugin install yoast-seo --activate\n\n# Update plugins\nsudo -u www-data wp plugin update --all\n\n# Install themes\nsudo -u www-data wp theme install twentytwentythree --activate\nsudo -u www-data wp theme update --all\n\n# Create users\nsudo -u www-data wp user create editor editor@example.com \\\n  --role=editor --user_pass=secure_password\n\n# Database operations\nsudo -u www-data wp db optimize\nsudo -u www-data wp db repair\nsudo -u www-data wp db check\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"backup-and-maintenance\" class=\"mobile-header\"\u003eBackup and Maintenance\u003c/h2\u003e\n\u003ch3 id=\"automated-backup-script\" class=\"mobile-header\"\u003eAutomated Backup Script\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create backup script\nsudo tee /usr/local/bin/wordpress-backup.sh \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n#!/bin/bash\nBACKUP_DIR=\u0026quot;/backup/wordpress\u0026quot;\nWP_DIR=\u0026quot;/var/www/html/wordpress\u0026quot;\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p ${BACKUP_DIR}/{files,database}\n\n# Backup WordPress files\ntar -czf ${BACKUP_DIR}/files/wordpress-files-${DATE}.tar.gz -C ${WP_DIR} .\n\n# Backup database\nmysqldump -u wordpressuser -p\u0026#039;secure_password\u0026#039; wordpress \u0026gt; ${BACKUP_DIR}/database/wordpress-db-${DATE}.sql\ngzip ${BACKUP_DIR}/database/wordpress-db-${DATE}.sql\n\n# Using WP-CLI for database export\ncd ${WP_DIR}\nsudo -u www-data wp db export ${BACKUP_DIR}/database/wordpress-wpcli-${DATE}.sql\ngzip ${BACKUP_DIR}/database/wordpress-wpcli-${DATE}.sql\n\n# Keep only last 7 backups\nfind ${BACKUP_DIR} -name \u0026quot;wordpress-*\u0026quot; -type f -mtime +7 -delete\n\necho \u0026quot;Backup completed: wordpress-${DATE}\u0026quot;\nEOF\n\nsudo chmod +x /usr/local/bin/wordpress-backup.sh\n\n# Schedule daily backup\necho \u0026quot;0 2 * * * root /usr/local/bin/wordpress-backup.sh\u0026quot; | sudo tee -a /etc/crontab\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"maintenance-tasks\" class=\"mobile-header\"\u003eMaintenance Tasks\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create maintenance script\nsudo tee /usr/local/bin/wordpress-maintenance.sh \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n#!/bin/bash\nWP_DIR=\u0026quot;/var/www/html/wordpress\u0026quot;\ncd ${WP_DIR}\n\n# Update WordPress core, plugins, and themes\nsudo -u www-data wp core update\nsudo -u www-data wp plugin update --all\nsudo -u www-data wp theme update --all\n\n# Database cleanup\nsudo -u www-data wp transient delete --all\nsudo -u www-data wp db optimize\n\n# Clear caches\nif sudo -u www-data wp plugin is-installed w3-total-cache; then\n    sudo -u www-data wp w3-total-cache flush all\nfi\n\nif sudo -u www-data wp plugin is-installed wp-super-cache; then\n    sudo -u www-data wp super-cache flush\nfi\n\necho \u0026quot;WordPress maintenance completed\u0026quot;\nEOF\n\nsudo chmod +x /usr/local/bin/wordpress-maintenance.sh\n\n# Schedule weekly maintenance\necho \u0026quot;0 3 * * 0 root /usr/local/bin/wordpress-maintenance.sh\u0026quot; | sudo tee -a /etc/crontab\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"verification\" class=\"mobile-header\"\u003eVerification\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check web server status\nsudo systemctl status apache2  # or nginx\nsudo systemctl status mysql\n\n# Check PHP-FPM (if using NGINX)\nsudo systemctl status php7.4-fpm\n\n# Test database connection\nmysql -u wordpressuser -p -e \u0026quot;SHOW DATABASES;\u0026quot;\n\n# Test website\ncurl -I http://wordpress.example.com\n\n# Check WordPress status via WP-CLI\ncd /var/www/html/wordpress\nsudo -u www-data wp core version\nsudo -u www-data wp plugin status\nsudo -u www-data wp theme status\n\n# Check file permissions\nls -la /var/www/html/wordpress/\nls -la /var/www/html/wordpress/wp-content/\n\n# Test uploads directory\nsudo -u www-data wp media regenerate --yes\n\n# Check for WordPress updates\nsudo -u www-data wp core check-update\nsudo -u www-data wp plugin list --update=available\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"troubleshooting\" class=\"mobile-header\"\u003eTroubleshooting\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Enable WordPress debug mode\nsudo nano /var/www/html/wordpress/wp-config.php\n# Add: define(\u0026#039;WP_DEBUG\u0026#039;, true);\n# Add: define(\u0026#039;WP_DEBUG_LOG\u0026#039;, true);\n\n# Check WordPress debug log\ntail -f /var/www/html/wordpress/wp-content/debug.log\n\n# Check web server logs\nsudo tail -f /var/log/apache2/wordpress_error.log  # Apache\nsudo tail -f /var/log/nginx/error.log              # NGINX\n\n# Check PHP logs\nsudo tail -f /var/log/php7.4-fpm.log\n\n# Database connectivity test\nsudo -u www-data wp db check\n\n# Plugin conflict troubleshooting\nsudo -u www-data wp plugin deactivate --all\nsudo -u www-data wp plugin activate plugin-name\n\n# Theme troubleshooting\nsudo -u www-data wp theme activate twentytwentythree\n\n# Check disk space\ndf -h /var/www/html/wordpress/\n\n# File permission issues\nsudo chown -R www-data:www-data /var/www/html/wordpress/\nsudo find /var/www/html/wordpress/ -type d -exec chmod 755 {} \\;\nsudo find /var/www/html/wordpress/ -type f -exec chmod 644 {} \\;\n\n# Reset user password via WP-CLI\nsudo -u www-data wp user update admin --user_pass=new_password\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"additional-resources\" class=\"mobile-header\"\u003eAdditional Resources\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://codex.wordpress.org/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eWordPress Codex\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://wp-cli.org/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eWP-CLI Documentation\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://wordpress.org/support/article/hardening-wordpress/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eWordPress Security Guide\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://wordpress.org/support/article/optimization/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003ePerformance Best Practices\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://wordpress.org/support/forums/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eWordPress Forums\u003c/a\u003e\u003c/li\u003e\n\u003cp class=\"mobile-paragraph\"\u003e---\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This guide is part of the \u003ca href=\"https://howtomgr.github.io\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eHowToMgr\u003c/a\u003e collection.\u003c/p\u003e","readTime":"11 min","wordCount":2044,"lastBuilt":"2025-09-14T00:58:21.223Z"}]},"__N_SSG":true},"page":"/[category]/[guide]","query":{"category":"productivity","guide":"nextcloud"},"buildId":"gwB4j0n9ndF37HVylNSlu","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

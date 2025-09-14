@@ -1,0 +1,575 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/><meta name="theme-color" content="#bd93f9"/><link rel="icon" href="/favicon.ico"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/><title class="jsx-745d6189719dfe72">Ansible Installation Guide - HowToMgr</title><meta name="description" content="Repo for ansible" class="jsx-745d6189719dfe72"/><meta name="keywords" content="installation guides, tutorials, linux, docker, kubernetes, mobile-first, responsive" class="jsx-745d6189719dfe72"/><meta property="og:title" content="Ansible Installation Guide - HowToMgr" class="jsx-745d6189719dfe72"/><meta property="og:description" content="Repo for ansible" class="jsx-745d6189719dfe72"/><meta property="og:type" content="website" class="jsx-745d6189719dfe72"/><meta property="og:url" content="https://howtomgr.github.io" class="jsx-745d6189719dfe72"/><meta property="og:image" content="https://howtomgr.github.io/social-preview.png" class="jsx-745d6189719dfe72"/><meta property="twitter:card" content="summary_large_image" class="jsx-745d6189719dfe72"/><meta property="twitter:title" content="Ansible Installation Guide - HowToMgr" class="jsx-745d6189719dfe72"/><meta property="twitter:description" content="Repo for ansible" class="jsx-745d6189719dfe72"/><meta name="next-head-count" content="17"/><link rel="dns-prefetch" href="//api.github.com"/><link rel="dns-prefetch" href="//github.com"/><link rel="preload" href="/favicon.ico" as="image"/><meta name="application-name" content="HowToMgr"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="default"/><meta name="apple-mobile-web-app-title" content="HowToMgr"/><meta name="format-detection" content="telephone=no"/><meta name="mobile-web-app-capable" content="yes"/><noscript><style>
+            .requires-js { display: none !important; }
+            .no-js-message { display: block !important; }
+          </style></noscript><link rel="preload" href="/_next/static/css/eec6c1c201affe77.css" as="style"/><link rel="stylesheet" href="/_next/static/css/eec6c1c201affe77.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/_next/static/chunks/webpack-ee7e63bc15b31913.js" defer=""></script><script src="/_next/static/chunks/framework-2b1f7a23d657eae4.js" defer=""></script><script src="/_next/static/chunks/main-6ec3f7584970eebe.js" defer=""></script><script src="/_next/static/chunks/pages/_app-d149ee305b4f74bb.js" defer=""></script><script src="/_next/static/chunks/675-4a724ee9ded8dc5b.js" defer=""></script><script src="/_next/static/chunks/pages/%5Bcategory%5D/%5Bguide%5D-1ac9c2ceb48b9f4e.js" defer=""></script><script src="/_next/static/gwB4j0n9ndF37HVylNSlu/_buildManifest.js" defer=""></script><script src="/_next/static/gwB4j0n9ndF37HVylNSlu/_ssgManifest.js" defer=""></script><style id="__jsx-8a7f0cdcf94f52ce">.breadcrumb.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:var(--space-2);margin-bottom:var(--space-6);font-size:var(--font-sm);color:var(--text-secondary);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);text-decoration:none;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce:hover{text-decoration:underline}.separator.jsx-8a7f0cdcf94f52ce{color:var(--text-muted);-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.current.jsx-8a7f0cdcf94f52ce{color:var(--text-primary);font-weight:500;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}.guide-header.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface)}.guide-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-3xl);margin-bottom:var(--space-4);line-height:1.2;word-break:break-word}.guide-description.jsx-8a7f0cdcf94f52ce{color:var(--text-secondary);font-size:var(--font-lg);margin-bottom:var(--space-5);line-height:1.5}.guide-badges.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);margin-bottom:var(--space-5);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-content.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface);overflow-x:hidden}.related-section.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-8)}.section-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-2xl);text-align:center;margin-bottom:var(--space-6)}.guide-navigation.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:var(--space-8)}.loading-container.jsx-8a7f0cdcf94f52ce,.error-container.jsx-8a7f0cdcf94f52ce{text-align:center;padding:var(--space-8)}.error-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:var(--space-6);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}@media(max-width:767px){.guide-header.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-title.jsx-8a7f0cdcf94f52ce{font-size:var(--font-2xl)}.guide-description.jsx-8a7f0cdcf94f52ce{font-size:var(--font-base)}.guide-content.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-badges.jsx-8a7f0cdcf94f52ce{gap:var(--space-2)}.guide-actions.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.guide-navigation.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.breadcrumb.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-4)}}</style><style id="__jsx-745d6189719dfe72">.app-container.jsx-745d6189719dfe72{min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-top:56px}.main-content.jsx-745d6189719dfe72{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;padding:var(--space-6)0}.mobile-footer.jsx-745d6189719dfe72{background:var(--bg-secondary);border-top:1px solid var(--bg-surface);padding:var(--space-6)0;margin-top:auto}.footer-content.jsx-745d6189719dfe72{text-align:center}.footer-links.jsx-745d6189719dfe72{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:var(--space-6);margin-bottom:var(--space-4);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72{color:var(--accent-primary);text-decoration:none;font-size:var(--font-sm)}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72:hover{color:var(--accent-secondary)}.footer-separator.jsx-745d6189719dfe72{height:1px;background:var(--bg-surface);margin:var(--space-4)auto;width:200px}.footer-text.jsx-745d6189719dfe72,.footer-tech.jsx-745d6189719dfe72{color:var(--text-secondary);font-size:var(--font-sm);margin-bottom:var(--space-2)}.footer-disclaimer.jsx-745d6189719dfe72{color:var(--text-muted);font-size:var(--font-xs)}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-dark.jsx-745d6189719dfe72{display:none}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-light.jsx-745d6189719dfe72{display:inline!important}@media(max-width:767px){.main-content.jsx-745d6189719dfe72{padding:var(--space-4)0}.footer-links.jsx-745d6189719dfe72{gap:var(--space-4)}}</style></head><body><noscript><div class="no-js-message" style="padding:1rem;background:#ff5555;color:#f8f8f2;text-align:center;font-size:0.9rem">This site requires JavaScript to function properly. Please enable JavaScript in your browser.</div></noscript><div id="__next"><div class="jsx-745d6189719dfe72 app-container"><a href="#main-content" class="jsx-745d6189719dfe72 skip-link">Skip to main content</a><nav class="jsx-745d6189719dfe72 mobile-nav"><div class="jsx-745d6189719dfe72 mobile-nav-content"><a class="mobile-brand" href="/"><span role="img" aria-label="Books" class="jsx-745d6189719dfe72">📚</span>HowToMgr</a><button aria-label="Toggle theme" title="Switch theme" class="jsx-745d6189719dfe72 mobile-theme-toggle touch-target"><span class="jsx-745d6189719dfe72 theme-icon-dark">🌙</span><span style="display:none" class="jsx-745d6189719dfe72 theme-icon-light">☀️</span></button></div></nav><main id="main-content" tabindex="-1" class="jsx-745d6189719dfe72 main-content"><div class="jsx-745d6189719dfe72 container"><nav aria-label="Breadcrumb" class="jsx-8a7f0cdcf94f52ce breadcrumb"><a href="/">Home</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><a href="/infrastructure/">Infrastructure</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><span class="jsx-8a7f0cdcf94f52ce current">Ansible</span></nav><header class="jsx-8a7f0cdcf94f52ce guide-header"><div class="jsx-8a7f0cdcf94f52ce guide-meta-top"><h1 class="jsx-8a7f0cdcf94f52ce guide-title">Ansible</h1><p class="jsx-8a7f0cdcf94f52ce guide-description">Repo for ansible</p><div class="jsx-8a7f0cdcf94f52ce guide-badges"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-primary">Infrastructure</span><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">7 min</span></div><div class="jsx-8a7f0cdcf94f52ce guide-actions"><a href="https://github.com/howtomgr/ansible" target="_blank" rel="noopener" class="jsx-8a7f0cdcf94f52ce btn btn-secondary">View on GitHub</a></div></div></header><article class="jsx-8a7f0cdcf94f52ce guide-content"><div class="jsx-8a7f0cdcf94f52ce readme-content"><h1 id="ansible-installation-guide" class="mobile-header">Ansible Installation Guide</h1>
+<p class="mobile-paragraph">Agentless automation platform for configuration management, application deployment, and task automation across multiple systems.</p>
+<h2 id="prerequisites" class="mobile-header">Prerequisites</h2>
+<li class="mobile-list-item">Linux control machine (Ubuntu/Debian, RHEL/CentOS, or compatible)</li>
+<li class="mobile-list-item">SSH access to target hosts</li>
+<li class="mobile-list-item">Python 3.8+ on control machine</li>
+<li class="mobile-list-item">Python 2.7+ or 3.5+ on target hosts</li>
+<h2 id="installation" class="mobile-header">Installation</h2>
+<h3 id="using-package-manager-recommended" class="mobile-header">Using Package Manager (Recommended)</h3>
+<p class="mobile-paragraph">#### Ubuntu/Debian</p>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Update package list
+sudo apt update
+
+# Install Ansible
+sudo apt install -y ansible
+
+# Install additional collections
+ansible-galaxy collection install community.general
+ansible-galaxy collection install ansible.posix</code></pre>
+      </div>
+    </div>
+<p class="mobile-paragraph">#### RHEL/CentOS/Rocky Linux</p>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install EPEL repository
+sudo yum install -y epel-release
+
+# Install Ansible
+sudo yum install -y ansible
+
+# For CentOS Stream/RHEL 8+
+sudo dnf install -y ansible</code></pre>
+      </div>
+    </div>
+<h3 id="using-pip-latest-version" class="mobile-header">Using pip (Latest Version)</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install pip if not available
+sudo apt install -y python3-pip
+
+# Install Ansible via pip
+pip3 install --user ansible
+
+# Add to PATH
+echo &#039;export PATH=$PATH:~/.local/bin&#039; &gt;&gt; ~/.bashrc
+source ~/.bashrc
+
+# Install additional collections
+ansible-galaxy collection install community.general
+ansible-galaxy collection install ansible.posix
+ansible-galaxy collection install kubernetes.core</code></pre>
+      </div>
+    </div>
+<h3 id="using-docker" class="mobile-header">Using Docker</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create Ansible Docker container
+docker run --rm -it \
+  -v $(pwd):/ansible \
+  -v ~/.ssh:/root/.ssh:ro \
+  --workdir /ansible \
+  ansible/ansible:latest \
+  ansible-playbook playbook.yml
+
+# Create alias for convenience
+echo &#039;alias ansible-docker=&quot;docker run --rm -it -v $(pwd):/ansible -v ~/.ssh:/root/.ssh:ro --workdir /ansible ansible/ansible:latest&quot;&#039; &gt;&gt; ~/.bashrc</code></pre>
+      </div>
+    </div>
+<h2 id="configuration" class="mobile-header">Configuration</h2>
+<h3 id="inventory-setup" class="mobile-header">Inventory Setup</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create project structure
+mkdir -p ~/ansible-project/{inventories,playbooks,roles,group_vars,host_vars}
+cd ~/ansible-project
+
+# Create inventory file
+cat &gt; inventories/production/hosts.yml &lt;&lt;EOF
+all:
+  children:
+    webservers:
+      hosts:
+        web1:
+          ansible_host: 192.168.1.10
+          ansible_user: ubuntu
+        web2:
+          ansible_host: 192.168.1.11
+          ansible_user: ubuntu
+    dbservers:
+      hosts:
+        db1:
+          ansible_host: 192.168.1.20
+          ansible_user: ubuntu
+        db2:
+          ansible_host: 192.168.1.21
+          ansible_user: ubuntu
+    loadbalancers:
+      hosts:
+        lb1:
+          ansible_host: 192.168.1.30
+          ansible_user: ubuntu
+
+webservers:
+  vars:
+    http_port: 80
+    max_clients: 200
+
+dbservers:
+  vars:
+    mysql_port: 3306
+    mysql_root_password: &quot;{{ vault_mysql_root_password }}&quot;
+EOF
+
+# Create ansible configuration
+cat &gt; ansible.cfg &lt;&lt;EOF
+[defaults]
+inventory = inventories/production/hosts.yml
+remote_user = ubuntu
+private_key_file = ~/.ssh/id_rsa
+host_key_checking = False
+retry_files_enabled = False
+stdout_callback = yaml
+bin_ansible_callbacks = True
+
+[ssh_connection]
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s
+pipelining = True
+control_path = ~/.ansible/cp/%%h-%%p-%%r
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="ansible-vault-for-secrets" class="mobile-header">Ansible Vault for Secrets</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create encrypted vault file
+ansible-vault create group_vars/all/vault.yml
+# Enter vault password and add:
+# vault_mysql_root_password: your_secure_password
+# vault_api_key: your_api_key
+
+# Edit vault file
+ansible-vault edit group_vars/all/vault.yml
+
+# View vault file
+ansible-vault view group_vars/all/vault.yml
+
+# Create vault password file
+echo &quot;your_vault_password&quot; &gt; ~/.ansible_vault_pass
+chmod 600 ~/.ansible_vault_pass
+
+# Update ansible.cfg
+echo &quot;vault_password_file = ~/.ansible_vault_pass&quot; &gt;&gt; ansible.cfg</code></pre>
+      </div>
+    </div>
+<h2 id="playbooks" class="mobile-header">Playbooks</h2>
+<h3 id="basic-system-setup-playbook" class="mobile-header">Basic System Setup Playbook</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash">cat &gt; playbooks/system-setup.yml &lt;&lt;EOF
+---
+- name: System Setup and Hardening
+  hosts: all
+  become: yes
+  vars:
+    packages:
+      - curl
+      - wget
+      - vim
+      - htop
+      - fail2ban
+      - ufw
+      
+  tasks:
+    - name: Update package cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+      when: ansible_os_family == &quot;Debian&quot;
+    
+    - name: Update package cache (RHEL/CentOS)
+      yum:
+        update_cache: yes
+      when: ansible_os_family == &quot;RedHat&quot;
+    
+    - name: Install essential packages
+      package:
+        name: &quot;{{ packages }}&quot;
+        state: present
+    
+    - name: Create admin user
+      user:
+        name: admin
+        groups: sudo
+        shell: /bin/bash
+        create_home: yes
+        generate_ssh_key: yes
+    
+    - name: Configure SSH
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: &quot;{{ item.regexp }}&quot;
+        line: &quot;{{ item.line }}&quot;
+        backup: yes
+      loop:
+        - { regexp: &#039;^#?PermitRootLogin&#039;, line: &#039;PermitRootLogin no&#039; }
+        - { regexp: &#039;^#?PasswordAuthentication&#039;, line: &#039;PasswordAuthentication no&#039; }
+        - { regexp: &#039;^#?X11Forwarding&#039;, line: &#039;X11Forwarding no&#039; }
+      notify: restart ssh
+    
+    - name: Configure UFW firewall
+      ufw:
+        state: enabled
+        policy: deny
+        direction: incoming
+    
+    - name: Allow SSH through firewall
+      ufw:
+        rule: allow
+        port: 22
+        proto: tcp
+  
+  handlers:
+    - name: restart ssh
+      service:
+        name: &quot;{{ &#039;ssh&#039; if ansible_os_family == &#039;Debian&#039; else &#039;sshd&#039; }}&quot;
+        state: restarted
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="web-server-deployment-playbook" class="mobile-header">Web Server Deployment Playbook</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash">cat &gt; playbooks/nginx-deployment.yml &lt;&lt;EOF
+---
+- name: Deploy NGINX Web Server
+  hosts: webservers
+  become: yes
+  vars:
+    domain_name: example.com
+    
+  tasks:
+    - name: Install NGINX
+      package:
+        name: nginx
+        state: present
+    
+    - name: Create document root
+      file:
+        path: &quot;/var/www/{{ domain_name }}/html&quot;
+        state: directory
+        owner: www-data
+        group: www-data
+        mode: &#039;0755&#039;
+    
+    - name: Deploy website content
+      template:
+        src: templates/index.html.j2
+        dest: &quot;/var/www/{{ domain_name }}/html/index.html&quot;
+        owner: www-data
+        group: www-data
+        mode: &#039;0644&#039;
+      notify: reload nginx
+    
+    - name: Configure NGINX virtual host
+      template:
+        src: templates/nginx-vhost.conf.j2
+        dest: &quot;/etc/nginx/sites-available/{{ domain_name }}.conf&quot;
+        backup: yes
+      notify: reload nginx
+    
+    - name: Enable NGINX site
+      file:
+        src: &quot;/etc/nginx/sites-available/{{ domain_name }}.conf&quot;
+        dest: &quot;/etc/nginx/sites-enabled/{{ domain_name }}.conf&quot;
+        state: link
+      notify: reload nginx
+    
+    - name: Ensure NGINX is running
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+    
+    - name: Configure firewall for web traffic
+      ufw:
+        rule: allow
+        port: &quot;{{ item }}&quot;
+        proto: tcp
+      loop:
+        - 80
+        - 443
+  
+  handlers:
+    - name: reload nginx
+      service:
+        name: nginx
+        state: reloaded
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="multi-environment-deployment" class="mobile-header">Multi-Environment Deployment</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash">cat &gt; playbooks/application-deployment.yml &lt;&lt;EOF
+---
+- name: Deploy Application Stack
+  hosts: all
+  become: yes
+  vars:
+    app_name: myapp
+    app_version: &quot;{{ lookup(&#039;env&#039;, &#039;APP_VERSION&#039;) | default(&#039;latest&#039;) }}&quot;
+    environment: &quot;{{ ansible_environment | default(&#039;production&#039;) }}&quot;
+    
+  tasks:
+    - name: Create application user
+      user:
+        name: &quot;{{ app_name }}&quot;
+        system: yes
+        shell: /bin/false
+        home: &quot;/opt/{{ app_name }}&quot;
+        create_home: yes
+    
+    - name: Deploy application
+      unarchive:
+        src: &quot;https://github.com/company/{{ app_name }}/releases/download/{{ app_version }}/{{ app_name }}-{{ app_version }}.tar.gz&quot;
+        dest: &quot;/opt/{{ app_name }}&quot;
+        owner: &quot;{{ app_name }}&quot;
+        group: &quot;{{ app_name }}&quot;
+        remote_src: yes
+      notify: restart application
+    
+    - name: Install systemd service
+      template:
+        src: templates/app.service.j2
+        dest: &quot;/etc/systemd/system/{{ app_name }}.service&quot;
+      notify:
+        - daemon reload
+        - restart application
+    
+    - name: Start and enable application
+      systemd:
+        name: &quot;{{ app_name }}&quot;
+        state: started
+        enabled: yes
+        daemon_reload: yes
+  
+  handlers:
+    - name: daemon reload
+      systemd:
+        daemon_reload: yes
+    
+    - name: restart application
+      systemd:
+        name: &quot;{{ app_name }}&quot;
+        state: restarted
+EOF</code></pre>
+      </div>
+    </div>
+<h2 id="roles-development" class="mobile-header">Roles Development</h2>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create role structure
+ansible-galaxy init roles/nginx
+
+# roles/nginx/tasks/main.yml
+cat &gt; roles/nginx/tasks/main.yml &lt;&lt;EOF
+---
+- name: Install NGINX
+  package:
+    name: nginx
+    state: present
+
+- name: Start and enable NGINX
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+
+- name: Configure NGINX
+  template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/nginx.conf
+    backup: yes
+  notify: reload nginx
+
+- name: Create virtual hosts
+  template:
+    src: vhost.conf.j2
+    dest: &quot;/etc/nginx/sites-available/{{ item.name }}.conf&quot;
+  loop: &quot;{{ nginx_vhosts }}&quot;
+  when: nginx_vhosts is defined
+  notify: reload nginx
+
+- name: Enable virtual hosts
+  file:
+    src: &quot;/etc/nginx/sites-available/{{ item.name }}.conf&quot;
+    dest: &quot;/etc/nginx/sites-enabled/{{ item.name }}.conf&quot;
+    state: link
+  loop: &quot;{{ nginx_vhosts }}&quot;
+  when: nginx_vhosts is defined
+  notify: reload nginx
+EOF
+
+# Use role in playbook
+cat &gt; playbooks/webserver.yml &lt;&lt;EOF
+---
+- name: Configure Web Servers
+  hosts: webservers
+  become: yes
+  roles:
+    - nginx
+  vars:
+    nginx_vhosts:
+      - name: example.com
+        root: /var/www/example.com/html
+        index: index.html
+EOF</code></pre>
+      </div>
+    </div>
+<h2 id="verification" class="mobile-header">Verification</h2>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check Ansible version
+ansible --version
+
+# Test connectivity to all hosts
+ansible all -m ping
+
+# Check facts gathering
+ansible all -m setup
+
+# Test specific host
+ansible web1 -m command -a &quot;uptime&quot;
+
+# Run playbook in check mode (dry run)
+ansible-playbook playbooks/system-setup.yml --check
+
+# Run playbook with specific inventory
+ansible-playbook -i inventories/staging/hosts.yml playbooks/system-setup.yml
+
+# Run specific tasks
+ansible-playbook playbooks/system-setup.yml --tags &quot;firewall&quot;
+
+# Skip specific tasks
+ansible-playbook playbooks/system-setup.yml --skip-tags &quot;packages&quot;
+
+# Run on specific hosts
+ansible-playbook playbooks/system-setup.yml --limit webservers
+
+# Verbose output
+ansible-playbook playbooks/system-setup.yml -vvv</code></pre>
+      </div>
+    </div>
+<h2 id="performance-and-optimization" class="mobile-header">Performance and Optimization</h2>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Parallel execution
+ansible-playbook playbooks/system-setup.yml --forks 10
+
+# Pipelining for faster execution
+echo &quot;pipelining = True&quot; &gt;&gt; ansible.cfg
+
+# Fact caching
+echo &quot;gathering = smart&quot; &gt;&gt; ansible.cfg
+echo &quot;fact_caching = jsonfile&quot; &gt;&gt; ansible.cfg
+echo &quot;fact_caching_connection = ~/.ansible/facts_cache&quot; &gt;&gt; ansible.cfg
+echo &quot;fact_caching_timeout = 86400&quot; &gt;&gt; ansible.cfg
+
+# Strategy plugins
+ansible-playbook playbooks/system-setup.yml --strategy free
+
+# Async tasks for long-running operations
+- name: Long running task
+  command: /usr/bin/long_running_command
+  async: 300
+  poll: 5</code></pre>
+      </div>
+    </div>
+<h2 id="additional-resources" class="mobile-header">Additional Resources</h2>
+<li class="mobile-list-item"><a href="https://docs.ansible.com/" target="_blank" rel="noopener" class="mobile-link">Official Documentation</a></li>
+<li class="mobile-list-item"><a href="https://galaxy.ansible.com/" target="_blank" rel="noopener" class="mobile-link">Ansible Galaxy</a></li>
+<li class="mobile-list-item"><a href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html" target="_blank" rel="noopener" class="mobile-link">Best Practices</a></li>
+<li class="mobile-list-item"><a href="https://github.com/ansible/ansible-examples" target="_blank" rel="noopener" class="mobile-link">Ansible Examples</a></li>
+<li class="mobile-list-item"><a href="https://docs.ansible.com/ansible/latest/collections/index.html" target="_blank" rel="noopener" class="mobile-link">Community Collections</a></li>
+<p class="mobile-paragraph">---</p>
+<p class="mobile-paragraph"><strong>Note:</strong> This guide is part of the <a href="https://howtomgr.github.io" target="_blank" rel="noopener" class="mobile-link">HowToMgr</a> collection.</p></div></article><section class="jsx-8a7f0cdcf94f52ce related-section"><h2 class="jsx-8a7f0cdcf94f52ce section-title">Related <!-- -->Infrastructure<!-- --> Guides</h2><div class="jsx-8a7f0cdcf94f52ce mobile-grid"><a class="mobile-card" href="/infrastructure/.claude"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">.claude</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for .claude</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a><a class="mobile-card" href="/infrastructure/adguard-home/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Adguard Home</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for adguard-home</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a><a class="mobile-card" href="/infrastructure/adminer/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Adminer</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for adminer</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a></div></section><nav class="jsx-8a7f0cdcf94f52ce guide-navigation"><a class="btn btn-secondary" href="/infrastructure/">← All <!-- -->Infrastructure</a><a class="btn btn-secondary" href="/">All Categories</a></nav></div></main><footer class="jsx-745d6189719dfe72 mobile-footer"><div class="jsx-745d6189719dfe72 container"><div class="jsx-745d6189719dfe72 footer-content"><div class="jsx-745d6189719dfe72 footer-links"><a href="/">Home</a><a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">GitHub</a><a href="https://github.com/howtomgr/howtomgr.github.io" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">Source</a></div><div class="jsx-745d6189719dfe72 footer-separator"></div><p class="jsx-745d6189719dfe72 footer-text">© <!-- -->2025<!-- --> HowToMgr Organization. Open source installation guides.</p><p class="jsx-745d6189719dfe72 footer-tech">Built with ❤️ using Next.js + GitHub Pages</p><p class="jsx-745d6189719dfe72 footer-disclaimer"><small class="jsx-745d6189719dfe72">All guides are provided as-is. Please review and test before production use.</small></p></div></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"guide":{"name":"ansible","displayName":"Ansible","slug":"ansible","description":"Repo for ansible","category":"infrastructure","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/ansible","updatedAt":"2025-09-08T03:04:45Z","createdAt":"2025-09-08T03:04:35Z","readmeRaw":"# Ansible Installation Guide\n\nAgentless automation platform for configuration management, application deployment, and task automation across multiple systems.\n\n## Prerequisites\n\n- Linux control machine (Ubuntu/Debian, RHEL/CentOS, or compatible)\n- SSH access to target hosts\n- Python 3.8+ on control machine\n- Python 2.7+ or 3.5+ on target hosts\n\n## Installation\n\n### Using Package Manager (Recommended)\n\n#### Ubuntu/Debian\n```bash\n# Update package list\nsudo apt update\n\n# Install Ansible\nsudo apt install -y ansible\n\n# Install additional collections\nansible-galaxy collection install community.general\nansible-galaxy collection install ansible.posix\n```\n\n#### RHEL/CentOS/Rocky Linux\n```bash\n# Install EPEL repository\nsudo yum install -y epel-release\n\n# Install Ansible\nsudo yum install -y ansible\n\n# For CentOS Stream/RHEL 8+\nsudo dnf install -y ansible\n```\n\n### Using pip (Latest Version)\n```bash\n# Install pip if not available\nsudo apt install -y python3-pip\n\n# Install Ansible via pip\npip3 install --user ansible\n\n# Add to PATH\necho 'export PATH=$PATH:~/.local/bin' \u003e\u003e ~/.bashrc\nsource ~/.bashrc\n\n# Install additional collections\nansible-galaxy collection install community.general\nansible-galaxy collection install ansible.posix\nansible-galaxy collection install kubernetes.core\n```\n\n### Using Docker\n```bash\n# Create Ansible Docker container\ndocker run --rm -it \\\n  -v $(pwd):/ansible \\\n  -v ~/.ssh:/root/.ssh:ro \\\n  --workdir /ansible \\\n  ansible/ansible:latest \\\n  ansible-playbook playbook.yml\n\n# Create alias for convenience\necho 'alias ansible-docker=\"docker run --rm -it -v $(pwd):/ansible -v ~/.ssh:/root/.ssh:ro --workdir /ansible ansible/ansible:latest\"' \u003e\u003e ~/.bashrc\n```\n\n## Configuration\n\n### Inventory Setup\n```bash\n# Create project structure\nmkdir -p ~/ansible-project/{inventories,playbooks,roles,group_vars,host_vars}\ncd ~/ansible-project\n\n# Create inventory file\ncat \u003e inventories/production/hosts.yml \u003c\u003cEOF\nall:\n  children:\n    webservers:\n      hosts:\n        web1:\n          ansible_host: 192.168.1.10\n          ansible_user: ubuntu\n        web2:\n          ansible_host: 192.168.1.11\n          ansible_user: ubuntu\n    dbservers:\n      hosts:\n        db1:\n          ansible_host: 192.168.1.20\n          ansible_user: ubuntu\n        db2:\n          ansible_host: 192.168.1.21\n          ansible_user: ubuntu\n    loadbalancers:\n      hosts:\n        lb1:\n          ansible_host: 192.168.1.30\n          ansible_user: ubuntu\n\nwebservers:\n  vars:\n    http_port: 80\n    max_clients: 200\n\ndbservers:\n  vars:\n    mysql_port: 3306\n    mysql_root_password: \"{{ vault_mysql_root_password }}\"\nEOF\n\n# Create ansible configuration\ncat \u003e ansible.cfg \u003c\u003cEOF\n[defaults]\ninventory = inventories/production/hosts.yml\nremote_user = ubuntu\nprivate_key_file = ~/.ssh/id_rsa\nhost_key_checking = False\nretry_files_enabled = False\nstdout_callback = yaml\nbin_ansible_callbacks = True\n\n[ssh_connection]\nssh_args = -o ControlMaster=auto -o ControlPersist=60s\npipelining = True\ncontrol_path = ~/.ansible/cp/%%h-%%p-%%r\nEOF\n```\n\n### Ansible Vault for Secrets\n```bash\n# Create encrypted vault file\nansible-vault create group_vars/all/vault.yml\n# Enter vault password and add:\n# vault_mysql_root_password: your_secure_password\n# vault_api_key: your_api_key\n\n# Edit vault file\nansible-vault edit group_vars/all/vault.yml\n\n# View vault file\nansible-vault view group_vars/all/vault.yml\n\n# Create vault password file\necho \"your_vault_password\" \u003e ~/.ansible_vault_pass\nchmod 600 ~/.ansible_vault_pass\n\n# Update ansible.cfg\necho \"vault_password_file = ~/.ansible_vault_pass\" \u003e\u003e ansible.cfg\n```\n\n## Playbooks\n\n### Basic System Setup Playbook\n```bash\ncat \u003e playbooks/system-setup.yml \u003c\u003cEOF\n---\n- name: System Setup and Hardening\n  hosts: all\n  become: yes\n  vars:\n    packages:\n      - curl\n      - wget\n      - vim\n      - htop\n      - fail2ban\n      - ufw\n      \n  tasks:\n    - name: Update package cache\n      apt:\n        update_cache: yes\n        cache_valid_time: 3600\n      when: ansible_os_family == \"Debian\"\n    \n    - name: Update package cache (RHEL/CentOS)\n      yum:\n        update_cache: yes\n      when: ansible_os_family == \"RedHat\"\n    \n    - name: Install essential packages\n      package:\n        name: \"{{ packages }}\"\n        state: present\n    \n    - name: Create admin user\n      user:\n        name: admin\n        groups: sudo\n        shell: /bin/bash\n        create_home: yes\n        generate_ssh_key: yes\n    \n    - name: Configure SSH\n      lineinfile:\n        path: /etc/ssh/sshd_config\n        regexp: \"{{ item.regexp }}\"\n        line: \"{{ item.line }}\"\n        backup: yes\n      loop:\n        - { regexp: '^#?PermitRootLogin', line: 'PermitRootLogin no' }\n        - { regexp: '^#?PasswordAuthentication', line: 'PasswordAuthentication no' }\n        - { regexp: '^#?X11Forwarding', line: 'X11Forwarding no' }\n      notify: restart ssh\n    \n    - name: Configure UFW firewall\n      ufw:\n        state: enabled\n        policy: deny\n        direction: incoming\n    \n    - name: Allow SSH through firewall\n      ufw:\n        rule: allow\n        port: 22\n        proto: tcp\n  \n  handlers:\n    - name: restart ssh\n      service:\n        name: \"{{ 'ssh' if ansible_os_family == 'Debian' else 'sshd' }}\"\n        state: restarted\nEOF\n```\n\n### Web Server Deployment Playbook\n```bash\ncat \u003e playbooks/nginx-deployment.yml \u003c\u003cEOF\n---\n- name: Deploy NGINX Web Server\n  hosts: webservers\n  become: yes\n  vars:\n    domain_name: example.com\n    \n  tasks:\n    - name: Install NGINX\n      package:\n        name: nginx\n        state: present\n    \n    - name: Create document root\n      file:\n        path: \"/var/www/{{ domain_name }}/html\"\n        state: directory\n        owner: www-data\n        group: www-data\n        mode: '0755'\n    \n    - name: Deploy website content\n      template:\n        src: templates/index.html.j2\n        dest: \"/var/www/{{ domain_name }}/html/index.html\"\n        owner: www-data\n        group: www-data\n        mode: '0644'\n      notify: reload nginx\n    \n    - name: Configure NGINX virtual host\n      template:\n        src: templates/nginx-vhost.conf.j2\n        dest: \"/etc/nginx/sites-available/{{ domain_name }}.conf\"\n        backup: yes\n      notify: reload nginx\n    \n    - name: Enable NGINX site\n      file:\n        src: \"/etc/nginx/sites-available/{{ domain_name }}.conf\"\n        dest: \"/etc/nginx/sites-enabled/{{ domain_name }}.conf\"\n        state: link\n      notify: reload nginx\n    \n    - name: Ensure NGINX is running\n      service:\n        name: nginx\n        state: started\n        enabled: yes\n    \n    - name: Configure firewall for web traffic\n      ufw:\n        rule: allow\n        port: \"{{ item }}\"\n        proto: tcp\n      loop:\n        - 80\n        - 443\n  \n  handlers:\n    - name: reload nginx\n      service:\n        name: nginx\n        state: reloaded\nEOF\n```\n\n### Multi-Environment Deployment\n```bash\ncat \u003e playbooks/application-deployment.yml \u003c\u003cEOF\n---\n- name: Deploy Application Stack\n  hosts: all\n  become: yes\n  vars:\n    app_name: myapp\n    app_version: \"{{ lookup('env', 'APP_VERSION') | default('latest') }}\"\n    environment: \"{{ ansible_environment | default('production') }}\"\n    \n  tasks:\n    - name: Create application user\n      user:\n        name: \"{{ app_name }}\"\n        system: yes\n        shell: /bin/false\n        home: \"/opt/{{ app_name }}\"\n        create_home: yes\n    \n    - name: Deploy application\n      unarchive:\n        src: \"https://github.com/company/{{ app_name }}/releases/download/{{ app_version }}/{{ app_name }}-{{ app_version }}.tar.gz\"\n        dest: \"/opt/{{ app_name }}\"\n        owner: \"{{ app_name }}\"\n        group: \"{{ app_name }}\"\n        remote_src: yes\n      notify: restart application\n    \n    - name: Install systemd service\n      template:\n        src: templates/app.service.j2\n        dest: \"/etc/systemd/system/{{ app_name }}.service\"\n      notify:\n        - daemon reload\n        - restart application\n    \n    - name: Start and enable application\n      systemd:\n        name: \"{{ app_name }}\"\n        state: started\n        enabled: yes\n        daemon_reload: yes\n  \n  handlers:\n    - name: daemon reload\n      systemd:\n        daemon_reload: yes\n    \n    - name: restart application\n      systemd:\n        name: \"{{ app_name }}\"\n        state: restarted\nEOF\n```\n\n## Roles Development\n\n```bash\n# Create role structure\nansible-galaxy init roles/nginx\n\n# roles/nginx/tasks/main.yml\ncat \u003e roles/nginx/tasks/main.yml \u003c\u003cEOF\n---\n- name: Install NGINX\n  package:\n    name: nginx\n    state: present\n\n- name: Start and enable NGINX\n  service:\n    name: nginx\n    state: started\n    enabled: yes\n\n- name: Configure NGINX\n  template:\n    src: nginx.conf.j2\n    dest: /etc/nginx/nginx.conf\n    backup: yes\n  notify: reload nginx\n\n- name: Create virtual hosts\n  template:\n    src: vhost.conf.j2\n    dest: \"/etc/nginx/sites-available/{{ item.name }}.conf\"\n  loop: \"{{ nginx_vhosts }}\"\n  when: nginx_vhosts is defined\n  notify: reload nginx\n\n- name: Enable virtual hosts\n  file:\n    src: \"/etc/nginx/sites-available/{{ item.name }}.conf\"\n    dest: \"/etc/nginx/sites-enabled/{{ item.name }}.conf\"\n    state: link\n  loop: \"{{ nginx_vhosts }}\"\n  when: nginx_vhosts is defined\n  notify: reload nginx\nEOF\n\n# Use role in playbook\ncat \u003e playbooks/webserver.yml \u003c\u003cEOF\n---\n- name: Configure Web Servers\n  hosts: webservers\n  become: yes\n  roles:\n    - nginx\n  vars:\n    nginx_vhosts:\n      - name: example.com\n        root: /var/www/example.com/html\n        index: index.html\nEOF\n```\n\n## Verification\n\n```bash\n# Check Ansible version\nansible --version\n\n# Test connectivity to all hosts\nansible all -m ping\n\n# Check facts gathering\nansible all -m setup\n\n# Test specific host\nansible web1 -m command -a \"uptime\"\n\n# Run playbook in check mode (dry run)\nansible-playbook playbooks/system-setup.yml --check\n\n# Run playbook with specific inventory\nansible-playbook -i inventories/staging/hosts.yml playbooks/system-setup.yml\n\n# Run specific tasks\nansible-playbook playbooks/system-setup.yml --tags \"firewall\"\n\n# Skip specific tasks\nansible-playbook playbooks/system-setup.yml --skip-tags \"packages\"\n\n# Run on specific hosts\nansible-playbook playbooks/system-setup.yml --limit webservers\n\n# Verbose output\nansible-playbook playbooks/system-setup.yml -vvv\n```\n\n## Performance and Optimization\n\n```bash\n# Parallel execution\nansible-playbook playbooks/system-setup.yml --forks 10\n\n# Pipelining for faster execution\necho \"pipelining = True\" \u003e\u003e ansible.cfg\n\n# Fact caching\necho \"gathering = smart\" \u003e\u003e ansible.cfg\necho \"fact_caching = jsonfile\" \u003e\u003e ansible.cfg\necho \"fact_caching_connection = ~/.ansible/facts_cache\" \u003e\u003e ansible.cfg\necho \"fact_caching_timeout = 86400\" \u003e\u003e ansible.cfg\n\n# Strategy plugins\nansible-playbook playbooks/system-setup.yml --strategy free\n\n# Async tasks for long-running operations\n- name: Long running task\n  command: /usr/bin/long_running_command\n  async: 300\n  poll: 5\n```\n\n## Additional Resources\n\n- [Official Documentation](https://docs.ansible.com/)\n- [Ansible Galaxy](https://galaxy.ansible.com/)\n- [Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html)\n- [Ansible Examples](https://github.com/ansible/ansible-examples)\n- [Community Collections](https://docs.ansible.com/ansible/latest/collections/index.html)\n\n---\n\n**Note:** This guide is part of the [HowToMgr](https://howtomgr.github.io) collection.","readmeHtml":"\u003ch1 id=\"ansible-installation-guide\" class=\"mobile-header\"\u003eAnsible Installation Guide\u003c/h1\u003e\n\u003cp class=\"mobile-paragraph\"\u003eAgentless automation platform for configuration management, application deployment, and task automation across multiple systems.\u003c/p\u003e\n\u003ch2 id=\"prerequisites\" class=\"mobile-header\"\u003ePrerequisites\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003eLinux control machine (Ubuntu/Debian, RHEL/CentOS, or compatible)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eSSH access to target hosts\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003ePython 3.8+ on control machine\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003ePython 2.7+ or 3.5+ on target hosts\u003c/li\u003e\n\u003ch2 id=\"installation\" class=\"mobile-header\"\u003eInstallation\u003c/h2\u003e\n\u003ch3 id=\"using-package-manager-recommended\" class=\"mobile-header\"\u003eUsing Package Manager (Recommended)\u003c/h3\u003e\n\u003cp class=\"mobile-paragraph\"\u003e#### Ubuntu/Debian\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Update package list\nsudo apt update\n\n# Install Ansible\nsudo apt install -y ansible\n\n# Install additional collections\nansible-galaxy collection install community.general\nansible-galaxy collection install ansible.posix\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003cp class=\"mobile-paragraph\"\u003e#### RHEL/CentOS/Rocky Linux\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install EPEL repository\nsudo yum install -y epel-release\n\n# Install Ansible\nsudo yum install -y ansible\n\n# For CentOS Stream/RHEL 8+\nsudo dnf install -y ansible\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"using-pip-latest-version\" class=\"mobile-header\"\u003eUsing pip (Latest Version)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install pip if not available\nsudo apt install -y python3-pip\n\n# Install Ansible via pip\npip3 install --user ansible\n\n# Add to PATH\necho \u0026#039;export PATH=$PATH:~/.local/bin\u0026#039; \u0026gt;\u0026gt; ~/.bashrc\nsource ~/.bashrc\n\n# Install additional collections\nansible-galaxy collection install community.general\nansible-galaxy collection install ansible.posix\nansible-galaxy collection install kubernetes.core\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"using-docker\" class=\"mobile-header\"\u003eUsing Docker\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create Ansible Docker container\ndocker run --rm -it \\\n  -v $(pwd):/ansible \\\n  -v ~/.ssh:/root/.ssh:ro \\\n  --workdir /ansible \\\n  ansible/ansible:latest \\\n  ansible-playbook playbook.yml\n\n# Create alias for convenience\necho \u0026#039;alias ansible-docker=\u0026quot;docker run --rm -it -v $(pwd):/ansible -v ~/.ssh:/root/.ssh:ro --workdir /ansible ansible/ansible:latest\u0026quot;\u0026#039; \u0026gt;\u0026gt; ~/.bashrc\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"configuration\" class=\"mobile-header\"\u003eConfiguration\u003c/h2\u003e\n\u003ch3 id=\"inventory-setup\" class=\"mobile-header\"\u003eInventory Setup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create project structure\nmkdir -p ~/ansible-project/{inventories,playbooks,roles,group_vars,host_vars}\ncd ~/ansible-project\n\n# Create inventory file\ncat \u0026gt; inventories/production/hosts.yml \u0026lt;\u0026lt;EOF\nall:\n  children:\n    webservers:\n      hosts:\n        web1:\n          ansible_host: 192.168.1.10\n          ansible_user: ubuntu\n        web2:\n          ansible_host: 192.168.1.11\n          ansible_user: ubuntu\n    dbservers:\n      hosts:\n        db1:\n          ansible_host: 192.168.1.20\n          ansible_user: ubuntu\n        db2:\n          ansible_host: 192.168.1.21\n          ansible_user: ubuntu\n    loadbalancers:\n      hosts:\n        lb1:\n          ansible_host: 192.168.1.30\n          ansible_user: ubuntu\n\nwebservers:\n  vars:\n    http_port: 80\n    max_clients: 200\n\ndbservers:\n  vars:\n    mysql_port: 3306\n    mysql_root_password: \u0026quot;{{ vault_mysql_root_password }}\u0026quot;\nEOF\n\n# Create ansible configuration\ncat \u0026gt; ansible.cfg \u0026lt;\u0026lt;EOF\n[defaults]\ninventory = inventories/production/hosts.yml\nremote_user = ubuntu\nprivate_key_file = ~/.ssh/id_rsa\nhost_key_checking = False\nretry_files_enabled = False\nstdout_callback = yaml\nbin_ansible_callbacks = True\n\n[ssh_connection]\nssh_args = -o ControlMaster=auto -o ControlPersist=60s\npipelining = True\ncontrol_path = ~/.ansible/cp/%%h-%%p-%%r\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"ansible-vault-for-secrets\" class=\"mobile-header\"\u003eAnsible Vault for Secrets\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create encrypted vault file\nansible-vault create group_vars/all/vault.yml\n# Enter vault password and add:\n# vault_mysql_root_password: your_secure_password\n# vault_api_key: your_api_key\n\n# Edit vault file\nansible-vault edit group_vars/all/vault.yml\n\n# View vault file\nansible-vault view group_vars/all/vault.yml\n\n# Create vault password file\necho \u0026quot;your_vault_password\u0026quot; \u0026gt; ~/.ansible_vault_pass\nchmod 600 ~/.ansible_vault_pass\n\n# Update ansible.cfg\necho \u0026quot;vault_password_file = ~/.ansible_vault_pass\u0026quot; \u0026gt;\u0026gt; ansible.cfg\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"playbooks\" class=\"mobile-header\"\u003ePlaybooks\u003c/h2\u003e\n\u003ch3 id=\"basic-system-setup-playbook\" class=\"mobile-header\"\u003eBasic System Setup Playbook\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003ecat \u0026gt; playbooks/system-setup.yml \u0026lt;\u0026lt;EOF\n---\n- name: System Setup and Hardening\n  hosts: all\n  become: yes\n  vars:\n    packages:\n      - curl\n      - wget\n      - vim\n      - htop\n      - fail2ban\n      - ufw\n      \n  tasks:\n    - name: Update package cache\n      apt:\n        update_cache: yes\n        cache_valid_time: 3600\n      when: ansible_os_family == \u0026quot;Debian\u0026quot;\n    \n    - name: Update package cache (RHEL/CentOS)\n      yum:\n        update_cache: yes\n      when: ansible_os_family == \u0026quot;RedHat\u0026quot;\n    \n    - name: Install essential packages\n      package:\n        name: \u0026quot;{{ packages }}\u0026quot;\n        state: present\n    \n    - name: Create admin user\n      user:\n        name: admin\n        groups: sudo\n        shell: /bin/bash\n        create_home: yes\n        generate_ssh_key: yes\n    \n    - name: Configure SSH\n      lineinfile:\n        path: /etc/ssh/sshd_config\n        regexp: \u0026quot;{{ item.regexp }}\u0026quot;\n        line: \u0026quot;{{ item.line }}\u0026quot;\n        backup: yes\n      loop:\n        - { regexp: \u0026#039;^#?PermitRootLogin\u0026#039;, line: \u0026#039;PermitRootLogin no\u0026#039; }\n        - { regexp: \u0026#039;^#?PasswordAuthentication\u0026#039;, line: \u0026#039;PasswordAuthentication no\u0026#039; }\n        - { regexp: \u0026#039;^#?X11Forwarding\u0026#039;, line: \u0026#039;X11Forwarding no\u0026#039; }\n      notify: restart ssh\n    \n    - name: Configure UFW firewall\n      ufw:\n        state: enabled\n        policy: deny\n        direction: incoming\n    \n    - name: Allow SSH through firewall\n      ufw:\n        rule: allow\n        port: 22\n        proto: tcp\n  \n  handlers:\n    - name: restart ssh\n      service:\n        name: \u0026quot;{{ \u0026#039;ssh\u0026#039; if ansible_os_family == \u0026#039;Debian\u0026#039; else \u0026#039;sshd\u0026#039; }}\u0026quot;\n        state: restarted\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"web-server-deployment-playbook\" class=\"mobile-header\"\u003eWeb Server Deployment Playbook\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003ecat \u0026gt; playbooks/nginx-deployment.yml \u0026lt;\u0026lt;EOF\n---\n- name: Deploy NGINX Web Server\n  hosts: webservers\n  become: yes\n  vars:\n    domain_name: example.com\n    \n  tasks:\n    - name: Install NGINX\n      package:\n        name: nginx\n        state: present\n    \n    - name: Create document root\n      file:\n        path: \u0026quot;/var/www/{{ domain_name }}/html\u0026quot;\n        state: directory\n        owner: www-data\n        group: www-data\n        mode: \u0026#039;0755\u0026#039;\n    \n    - name: Deploy website content\n      template:\n        src: templates/index.html.j2\n        dest: \u0026quot;/var/www/{{ domain_name }}/html/index.html\u0026quot;\n        owner: www-data\n        group: www-data\n        mode: \u0026#039;0644\u0026#039;\n      notify: reload nginx\n    \n    - name: Configure NGINX virtual host\n      template:\n        src: templates/nginx-vhost.conf.j2\n        dest: \u0026quot;/etc/nginx/sites-available/{{ domain_name }}.conf\u0026quot;\n        backup: yes\n      notify: reload nginx\n    \n    - name: Enable NGINX site\n      file:\n        src: \u0026quot;/etc/nginx/sites-available/{{ domain_name }}.conf\u0026quot;\n        dest: \u0026quot;/etc/nginx/sites-enabled/{{ domain_name }}.conf\u0026quot;\n        state: link\n      notify: reload nginx\n    \n    - name: Ensure NGINX is running\n      service:\n        name: nginx\n        state: started\n        enabled: yes\n    \n    - name: Configure firewall for web traffic\n      ufw:\n        rule: allow\n        port: \u0026quot;{{ item }}\u0026quot;\n        proto: tcp\n      loop:\n        - 80\n        - 443\n  \n  handlers:\n    - name: reload nginx\n      service:\n        name: nginx\n        state: reloaded\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"multi-environment-deployment\" class=\"mobile-header\"\u003eMulti-Environment Deployment\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003ecat \u0026gt; playbooks/application-deployment.yml \u0026lt;\u0026lt;EOF\n---\n- name: Deploy Application Stack\n  hosts: all\n  become: yes\n  vars:\n    app_name: myapp\n    app_version: \u0026quot;{{ lookup(\u0026#039;env\u0026#039;, \u0026#039;APP_VERSION\u0026#039;) | default(\u0026#039;latest\u0026#039;) }}\u0026quot;\n    environment: \u0026quot;{{ ansible_environment | default(\u0026#039;production\u0026#039;) }}\u0026quot;\n    \n  tasks:\n    - name: Create application user\n      user:\n        name: \u0026quot;{{ app_name }}\u0026quot;\n        system: yes\n        shell: /bin/false\n        home: \u0026quot;/opt/{{ app_name }}\u0026quot;\n        create_home: yes\n    \n    - name: Deploy application\n      unarchive:\n        src: \u0026quot;https://github.com/company/{{ app_name }}/releases/download/{{ app_version }}/{{ app_name }}-{{ app_version }}.tar.gz\u0026quot;\n        dest: \u0026quot;/opt/{{ app_name }}\u0026quot;\n        owner: \u0026quot;{{ app_name }}\u0026quot;\n        group: \u0026quot;{{ app_name }}\u0026quot;\n        remote_src: yes\n      notify: restart application\n    \n    - name: Install systemd service\n      template:\n        src: templates/app.service.j2\n        dest: \u0026quot;/etc/systemd/system/{{ app_name }}.service\u0026quot;\n      notify:\n        - daemon reload\n        - restart application\n    \n    - name: Start and enable application\n      systemd:\n        name: \u0026quot;{{ app_name }}\u0026quot;\n        state: started\n        enabled: yes\n        daemon_reload: yes\n  \n  handlers:\n    - name: daemon reload\n      systemd:\n        daemon_reload: yes\n    \n    - name: restart application\n      systemd:\n        name: \u0026quot;{{ app_name }}\u0026quot;\n        state: restarted\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"roles-development\" class=\"mobile-header\"\u003eRoles Development\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create role structure\nansible-galaxy init roles/nginx\n\n# roles/nginx/tasks/main.yml\ncat \u0026gt; roles/nginx/tasks/main.yml \u0026lt;\u0026lt;EOF\n---\n- name: Install NGINX\n  package:\n    name: nginx\n    state: present\n\n- name: Start and enable NGINX\n  service:\n    name: nginx\n    state: started\n    enabled: yes\n\n- name: Configure NGINX\n  template:\n    src: nginx.conf.j2\n    dest: /etc/nginx/nginx.conf\n    backup: yes\n  notify: reload nginx\n\n- name: Create virtual hosts\n  template:\n    src: vhost.conf.j2\n    dest: \u0026quot;/etc/nginx/sites-available/{{ item.name }}.conf\u0026quot;\n  loop: \u0026quot;{{ nginx_vhosts }}\u0026quot;\n  when: nginx_vhosts is defined\n  notify: reload nginx\n\n- name: Enable virtual hosts\n  file:\n    src: \u0026quot;/etc/nginx/sites-available/{{ item.name }}.conf\u0026quot;\n    dest: \u0026quot;/etc/nginx/sites-enabled/{{ item.name }}.conf\u0026quot;\n    state: link\n  loop: \u0026quot;{{ nginx_vhosts }}\u0026quot;\n  when: nginx_vhosts is defined\n  notify: reload nginx\nEOF\n\n# Use role in playbook\ncat \u0026gt; playbooks/webserver.yml \u0026lt;\u0026lt;EOF\n---\n- name: Configure Web Servers\n  hosts: webservers\n  become: yes\n  roles:\n    - nginx\n  vars:\n    nginx_vhosts:\n      - name: example.com\n        root: /var/www/example.com/html\n        index: index.html\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"verification\" class=\"mobile-header\"\u003eVerification\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check Ansible version\nansible --version\n\n# Test connectivity to all hosts\nansible all -m ping\n\n# Check facts gathering\nansible all -m setup\n\n# Test specific host\nansible web1 -m command -a \u0026quot;uptime\u0026quot;\n\n# Run playbook in check mode (dry run)\nansible-playbook playbooks/system-setup.yml --check\n\n# Run playbook with specific inventory\nansible-playbook -i inventories/staging/hosts.yml playbooks/system-setup.yml\n\n# Run specific tasks\nansible-playbook playbooks/system-setup.yml --tags \u0026quot;firewall\u0026quot;\n\n# Skip specific tasks\nansible-playbook playbooks/system-setup.yml --skip-tags \u0026quot;packages\u0026quot;\n\n# Run on specific hosts\nansible-playbook playbooks/system-setup.yml --limit webservers\n\n# Verbose output\nansible-playbook playbooks/system-setup.yml -vvv\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"performance-and-optimization\" class=\"mobile-header\"\u003ePerformance and Optimization\u003c/h2\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Parallel execution\nansible-playbook playbooks/system-setup.yml --forks 10\n\n# Pipelining for faster execution\necho \u0026quot;pipelining = True\u0026quot; \u0026gt;\u0026gt; ansible.cfg\n\n# Fact caching\necho \u0026quot;gathering = smart\u0026quot; \u0026gt;\u0026gt; ansible.cfg\necho \u0026quot;fact_caching = jsonfile\u0026quot; \u0026gt;\u0026gt; ansible.cfg\necho \u0026quot;fact_caching_connection = ~/.ansible/facts_cache\u0026quot; \u0026gt;\u0026gt; ansible.cfg\necho \u0026quot;fact_caching_timeout = 86400\u0026quot; \u0026gt;\u0026gt; ansible.cfg\n\n# Strategy plugins\nansible-playbook playbooks/system-setup.yml --strategy free\n\n# Async tasks for long-running operations\n- name: Long running task\n  command: /usr/bin/long_running_command\n  async: 300\n  poll: 5\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"additional-resources\" class=\"mobile-header\"\u003eAdditional Resources\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://docs.ansible.com/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eOfficial Documentation\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://galaxy.ansible.com/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eAnsible Galaxy\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eBest Practices\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://github.com/ansible/ansible-examples\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eAnsible Examples\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://docs.ansible.com/ansible/latest/collections/index.html\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eCommunity Collections\u003c/a\u003e\u003c/li\u003e\n\u003cp class=\"mobile-paragraph\"\u003e---\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This guide is part of the \u003ca href=\"https://howtomgr.github.io\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eHowToMgr\u003c/a\u003e collection.\u003c/p\u003e","readTime":"7 min","wordCount":1212,"lastBuilt":"2025-09-14T00:58:33.540Z"},"category":{"key":"infrastructure","name":"Infrastructure","description":"DevOps and infrastructure automation tools","icon":"🏗️","color":"#44475a","keywords":["ansible","terraform","gitlab","jenkins","consul","etcd"]},"relatedGuides":[{"name":".claude","displayName":".claude","slug":".claude","description":"Repo for .claude","category":"infrastructure","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/.claude","updatedAt":"2025-09-08T03:05:59Z","createdAt":"2025-09-08T03:05:48Z","readmeRaw":"## 👋 Welcome to .claude 🚀  \n\n.claude README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-claude\" class=\"mobile-header\"\u003e👋 Welcome to .claude 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e.claude README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T00:58:32.668Z"},{"name":"adguard-home","displayName":"Adguard Home","slug":"adguard-home","description":"Repo for adguard-home","category":"infrastructure","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/adguard-home","updatedAt":"2025-09-08T03:04:18Z","createdAt":"2025-09-08T03:04:08Z","readmeRaw":"## 👋 Welcome to adguard-home 🚀  \n\nadguard-home README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-adguard-home\" class=\"mobile-header\"\u003e👋 Welcome to adguard-home 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eadguard-home README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T00:58:33.831Z"},{"name":"adminer","displayName":"Adminer","slug":"adminer","description":"Repo for adminer","category":"infrastructure","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/adminer","updatedAt":"2025-09-08T03:04:32Z","createdAt":"2025-09-08T03:04:22Z","readmeRaw":"## 👋 Welcome to adminer 🚀  \n\nadminer README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-adminer\" class=\"mobile-header\"\u003e👋 Welcome to adminer 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eadminer README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T00:58:33.684Z"}]},"__N_SSG":true},"page":"/[category]/[guide]","query":{"category":"infrastructure","guide":"ansible"},"buildId":"gwB4j0n9ndF37HVylNSlu","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
