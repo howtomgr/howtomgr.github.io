@@ -1,7 +1,796 @@
 <!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/><meta name="theme-color" content="#bd93f9"/><link rel="icon" href="/favicon.ico"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/><title class="jsx-745d6189719dfe72">Fail2ban Installation Guide - HowToMgr</title><meta name="description" content="Repo for fail2ban" class="jsx-745d6189719dfe72"/><meta name="keywords" content="installation guides, tutorials, linux, docker, kubernetes, mobile-first, responsive" class="jsx-745d6189719dfe72"/><meta property="og:title" content="Fail2ban Installation Guide - HowToMgr" class="jsx-745d6189719dfe72"/><meta property="og:description" content="Repo for fail2ban" class="jsx-745d6189719dfe72"/><meta property="og:type" content="website" class="jsx-745d6189719dfe72"/><meta property="og:url" content="https://howtomgr.github.io" class="jsx-745d6189719dfe72"/><meta property="og:image" content="https://howtomgr.github.io/social-preview.png" class="jsx-745d6189719dfe72"/><meta property="twitter:card" content="summary_large_image" class="jsx-745d6189719dfe72"/><meta property="twitter:title" content="Fail2ban Installation Guide - HowToMgr" class="jsx-745d6189719dfe72"/><meta property="twitter:description" content="Repo for fail2ban" class="jsx-745d6189719dfe72"/><meta name="next-head-count" content="17"/><link rel="dns-prefetch" href="//api.github.com"/><link rel="dns-prefetch" href="//github.com"/><link rel="preload" href="/favicon.ico" as="image"/><meta name="application-name" content="HowToMgr"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="default"/><meta name="apple-mobile-web-app-title" content="HowToMgr"/><meta name="format-detection" content="telephone=no"/><meta name="mobile-web-app-capable" content="yes"/><noscript><style>
             .requires-js { display: none !important; }
             .no-js-message { display: block !important; }
-          </style></noscript><link rel="preload" href="/_next/static/css/eec6c1c201affe77.css" as="style"/><link rel="stylesheet" href="/_next/static/css/eec6c1c201affe77.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/_next/static/chunks/webpack-ee7e63bc15b31913.js" defer=""></script><script src="/_next/static/chunks/framework-2b1f7a23d657eae4.js" defer=""></script><script src="/_next/static/chunks/main-6ec3f7584970eebe.js" defer=""></script><script src="/_next/static/chunks/pages/_app-d149ee305b4f74bb.js" defer=""></script><script src="/_next/static/chunks/409-41afef934247f89e.js" defer=""></script><script src="/_next/static/chunks/pages/%5Bcategory%5D/%5Bguide%5D-38cc5ea2e41d9e97.js" defer=""></script><script src="/_next/static/lu0_WLQIo6fIzJ-IeQpog/_buildManifest.js" defer=""></script><script src="/_next/static/lu0_WLQIo6fIzJ-IeQpog/_ssgManifest.js" defer=""></script><style id="__jsx-8a7f0cdcf94f52ce">.breadcrumb.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:var(--space-2);margin-bottom:var(--space-6);font-size:var(--font-sm);color:var(--text-secondary);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);text-decoration:none;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce:hover{text-decoration:underline}.separator.jsx-8a7f0cdcf94f52ce{color:var(--text-muted);-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.current.jsx-8a7f0cdcf94f52ce{color:var(--text-primary);font-weight:500;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}.guide-header.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface)}.guide-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-3xl);margin-bottom:var(--space-4);line-height:1.2;word-break:break-word}.guide-description.jsx-8a7f0cdcf94f52ce{color:var(--text-secondary);font-size:var(--font-lg);margin-bottom:var(--space-5);line-height:1.5}.guide-badges.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);margin-bottom:var(--space-5);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-content.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface);overflow-x:hidden}.related-section.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-8)}.section-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-2xl);text-align:center;margin-bottom:var(--space-6)}.guide-navigation.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:var(--space-8)}.loading-container.jsx-8a7f0cdcf94f52ce,.error-container.jsx-8a7f0cdcf94f52ce{text-align:center;padding:var(--space-8)}.error-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:var(--space-6);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}@media(max-width:767px){.guide-header.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-title.jsx-8a7f0cdcf94f52ce{font-size:var(--font-2xl)}.guide-description.jsx-8a7f0cdcf94f52ce{font-size:var(--font-base)}.guide-content.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-badges.jsx-8a7f0cdcf94f52ce{gap:var(--space-2)}.guide-actions.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.guide-navigation.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.breadcrumb.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-4)}}</style><style id="__jsx-745d6189719dfe72">.app-container.jsx-745d6189719dfe72{min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-top:56px}.main-content.jsx-745d6189719dfe72{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;padding:var(--space-6)0}.mobile-footer.jsx-745d6189719dfe72{background:var(--bg-secondary);border-top:1px solid var(--bg-surface);padding:var(--space-6)0;margin-top:auto}.footer-content.jsx-745d6189719dfe72{text-align:center}.footer-links.jsx-745d6189719dfe72{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:var(--space-6);margin-bottom:var(--space-4);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72{color:var(--accent-primary);text-decoration:none;font-size:var(--font-sm)}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72:hover{color:var(--accent-secondary)}.footer-separator.jsx-745d6189719dfe72{height:1px;background:var(--bg-surface);margin:var(--space-4)auto;width:200px}.footer-text.jsx-745d6189719dfe72,.footer-tech.jsx-745d6189719dfe72{color:var(--text-secondary);font-size:var(--font-sm);margin-bottom:var(--space-2)}.footer-disclaimer.jsx-745d6189719dfe72{color:var(--text-muted);font-size:var(--font-xs)}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-dark.jsx-745d6189719dfe72{display:none}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-light.jsx-745d6189719dfe72{display:inline!important}@media(max-width:767px){.main-content.jsx-745d6189719dfe72{padding:var(--space-4)0}.footer-links.jsx-745d6189719dfe72{gap:var(--space-4)}}</style></head><body><noscript><div class="no-js-message" style="padding:1rem;background:#ff5555;color:#f8f8f2;text-align:center;font-size:0.9rem">This site requires JavaScript to function properly. Please enable JavaScript in your browser.</div></noscript><div id="__next"><div class="jsx-745d6189719dfe72 app-container"><a href="#main-content" class="jsx-745d6189719dfe72 skip-link">Skip to main content</a><nav class="jsx-745d6189719dfe72 mobile-nav"><div class="jsx-745d6189719dfe72 mobile-nav-content"><a class="mobile-brand" href="/"><span role="img" aria-label="Books" class="jsx-745d6189719dfe72">📚</span>HowToMgr</a><button aria-label="Toggle theme" title="Switch theme" class="jsx-745d6189719dfe72 mobile-theme-toggle touch-target"><span class="jsx-745d6189719dfe72 theme-icon-dark">🌙</span><span style="display:none" class="jsx-745d6189719dfe72 theme-icon-light">☀️</span></button></div></nav><main id="main-content" tabindex="-1" class="jsx-745d6189719dfe72 main-content"><div class="jsx-745d6189719dfe72 container"><nav aria-label="Breadcrumb" class="jsx-8a7f0cdcf94f52ce breadcrumb"><a href="/">Home</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><a href="/security/">Security</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><span class="jsx-8a7f0cdcf94f52ce current">Fail2ban</span></nav><header class="jsx-8a7f0cdcf94f52ce guide-header"><div class="jsx-8a7f0cdcf94f52ce guide-meta-top"><h1 class="jsx-8a7f0cdcf94f52ce guide-title">Fail2ban</h1><p class="jsx-8a7f0cdcf94f52ce guide-description">Repo for fail2ban</p><div class="jsx-8a7f0cdcf94f52ce guide-badges"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-primary">Security</span><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div><div class="jsx-8a7f0cdcf94f52ce guide-actions"><a href="https://github.com/howtomgr/fail2ban" target="_blank" rel="noopener" class="jsx-8a7f0cdcf94f52ce btn btn-secondary">View on GitHub</a></div></div></header><article class="jsx-8a7f0cdcf94f52ce guide-content"><div class="jsx-8a7f0cdcf94f52ce readme-content"><h2 id="welcome-to-fail2ban" class="mobile-header">👋 Welcome to fail2ban 🚀  </h2>
-<p class="mobile-paragraph">fail2ban README  </p>
-<h2 id="author" class="mobile-header">Author  </h2>
-<p class="mobile-paragraph">🤖 casjay: <a href="https://github.com/casjay" target="_blank" rel="noopener" class="mobile-link">Github</a> 🤖  </p></div></article><section class="jsx-8a7f0cdcf94f52ce related-section"><h2 class="jsx-8a7f0cdcf94f52ce section-title">Related <!-- -->Security<!-- --> Guides</h2><div class="jsx-8a7f0cdcf94f52ce mobile-grid"><a class="mobile-card" href="/security/keycloak/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Keycloak</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for keycloak</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a><a class="mobile-card" href="/security/openvpn/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Openvpn</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for openvpn</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a><a class="mobile-card" href="/security/pihole/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Pi-hole</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for pihole</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a></div></section><nav class="jsx-8a7f0cdcf94f52ce guide-navigation"><a class="btn btn-secondary" href="/security/">← All <!-- -->Security</a><a class="btn btn-secondary" href="/">All Categories</a></nav></div></main><footer class="jsx-745d6189719dfe72 mobile-footer"><div class="jsx-745d6189719dfe72 container"><div class="jsx-745d6189719dfe72 footer-content"><div class="jsx-745d6189719dfe72 footer-links"><a href="/">Home</a><a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">GitHub</a><a href="https://github.com/howtomgr/howtomgr.github.io" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">Source</a></div><div class="jsx-745d6189719dfe72 footer-separator"></div><p class="jsx-745d6189719dfe72 footer-text">© <!-- -->2025<!-- --> HowToMgr Organization. Open source installation guides.</p><p class="jsx-745d6189719dfe72 footer-tech">Built with ❤️ using Next.js + GitHub Pages</p><p class="jsx-745d6189719dfe72 footer-disclaimer"><small class="jsx-745d6189719dfe72">All guides are provided as-is. Please review and test before production use.</small></p></div></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"guide":{"name":"fail2ban","displayName":"Fail2ban","slug":"fail2ban","description":"Repo for fail2ban","category":"security","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/fail2ban","updatedAt":"2025-09-08T03:07:35Z","createdAt":"2025-09-08T03:07:24Z","readmeRaw":"## 👋 Welcome to fail2ban 🚀  \n\nfail2ban README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-fail2ban\" class=\"mobile-header\"\u003e👋 Welcome to fail2ban 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003efail2ban README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T01:15:34.243Z"},"category":{"key":"security","name":"Security","description":"Security tools and authentication systems","icon":"🔒","color":"#ff5555","keywords":["vault","authelia","keycloak","pihole","fail2ban","wireguard","openvpn"]},"relatedGuides":[{"name":"keycloak","displayName":"Keycloak","slug":"keycloak","description":"Repo for keycloak","category":"security","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/keycloak","updatedAt":"2025-09-08T03:10:05Z","createdAt":"2025-09-08T03:09:55Z","readmeRaw":"## 👋 Welcome to keycloak 🚀  \n\nkeycloak README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-keycloak\" class=\"mobile-header\"\u003e👋 Welcome to keycloak 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003ekeycloak README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T01:15:32.541Z"},{"name":"openvpn","displayName":"Openvpn","slug":"openvpn","description":"Repo for openvpn","category":"security","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/openvpn","updatedAt":"2025-09-08T03:13:07Z","createdAt":"2025-09-08T03:12:57Z","readmeRaw":"## 👋 Welcome to openvpn 🚀  \n\nopenvpn README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-openvpn\" class=\"mobile-header\"\u003e👋 Welcome to openvpn 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eopenvpn README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T01:15:30.301Z"},{"name":"pihole","displayName":"Pi-hole","slug":"pihole","description":"Repo for pihole","category":"security","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/pihole","updatedAt":"2025-09-08T03:14:18Z","createdAt":"2025-09-08T03:14:08Z","readmeRaw":"## 👋 Welcome to pihole 🚀  \n\npihole README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-pihole\" class=\"mobile-header\"\u003e👋 Welcome to pihole 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003epihole README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T01:15:29.372Z"}]},"__N_SSG":true},"page":"/[category]/[guide]","query":{"category":"security","guide":"fail2ban"},"buildId":"lu0_WLQIo6fIzJ-IeQpog","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
+          </style></noscript><link rel="preload" href="/_next/static/css/eec6c1c201affe77.css" as="style"/><link rel="stylesheet" href="/_next/static/css/eec6c1c201affe77.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/_next/static/chunks/webpack-ee7e63bc15b31913.js" defer=""></script><script src="/_next/static/chunks/framework-2b1f7a23d657eae4.js" defer=""></script><script src="/_next/static/chunks/main-6ec3f7584970eebe.js" defer=""></script><script src="/_next/static/chunks/pages/_app-d149ee305b4f74bb.js" defer=""></script><script src="/_next/static/chunks/409-41afef934247f89e.js" defer=""></script><script src="/_next/static/chunks/pages/%5Bcategory%5D/%5Bguide%5D-38cc5ea2e41d9e97.js" defer=""></script><script src="/_next/static/Bpk6_onWDzX5EeMLHWxll/_buildManifest.js" defer=""></script><script src="/_next/static/Bpk6_onWDzX5EeMLHWxll/_ssgManifest.js" defer=""></script><style id="__jsx-8a7f0cdcf94f52ce">.breadcrumb.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:var(--space-2);margin-bottom:var(--space-6);font-size:var(--font-sm);color:var(--text-secondary);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);text-decoration:none;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.breadcrumb.jsx-8a7f0cdcf94f52ce a.jsx-8a7f0cdcf94f52ce:hover{text-decoration:underline}.separator.jsx-8a7f0cdcf94f52ce{color:var(--text-muted);-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.current.jsx-8a7f0cdcf94f52ce{color:var(--text-primary);font-weight:500;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}.guide-header.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface)}.guide-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-3xl);margin-bottom:var(--space-4);line-height:1.2;word-break:break-word}.guide-description.jsx-8a7f0cdcf94f52ce{color:var(--text-secondary);font-size:var(--font-lg);margin-bottom:var(--space-5);line-height:1.5}.guide-badges.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);margin-bottom:var(--space-5);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-content.jsx-8a7f0cdcf94f52ce{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface);overflow-x:hidden}.related-section.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-8)}.section-title.jsx-8a7f0cdcf94f52ce{color:var(--accent-primary);font-size:var(--font-2xl);text-align:center;margin-bottom:var(--space-6)}.guide-navigation.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:var(--space-8)}.loading-container.jsx-8a7f0cdcf94f52ce,.error-container.jsx-8a7f0cdcf94f52ce{text-align:center;padding:var(--space-8)}.error-actions.jsx-8a7f0cdcf94f52ce{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:var(--space-6);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}@media(max-width:767px){.guide-header.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-title.jsx-8a7f0cdcf94f52ce{font-size:var(--font-2xl)}.guide-description.jsx-8a7f0cdcf94f52ce{font-size:var(--font-base)}.guide-content.jsx-8a7f0cdcf94f52ce{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-badges.jsx-8a7f0cdcf94f52ce{gap:var(--space-2)}.guide-actions.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.guide-navigation.jsx-8a7f0cdcf94f52ce{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.breadcrumb.jsx-8a7f0cdcf94f52ce{margin-bottom:var(--space-4)}}</style><style id="__jsx-745d6189719dfe72">.app-container.jsx-745d6189719dfe72{min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-top:56px}.main-content.jsx-745d6189719dfe72{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;padding:var(--space-6)0}.mobile-footer.jsx-745d6189719dfe72{background:var(--bg-secondary);border-top:1px solid var(--bg-surface);padding:var(--space-6)0;margin-top:auto}.footer-content.jsx-745d6189719dfe72{text-align:center}.footer-links.jsx-745d6189719dfe72{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:var(--space-6);margin-bottom:var(--space-4);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72{color:var(--accent-primary);text-decoration:none;font-size:var(--font-sm)}.footer-links.jsx-745d6189719dfe72 a.jsx-745d6189719dfe72:hover{color:var(--accent-secondary)}.footer-separator.jsx-745d6189719dfe72{height:1px;background:var(--bg-surface);margin:var(--space-4)auto;width:200px}.footer-text.jsx-745d6189719dfe72,.footer-tech.jsx-745d6189719dfe72{color:var(--text-secondary);font-size:var(--font-sm);margin-bottom:var(--space-2)}.footer-disclaimer.jsx-745d6189719dfe72{color:var(--text-muted);font-size:var(--font-xs)}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-dark.jsx-745d6189719dfe72{display:none}[data-theme="light"].jsx-745d6189719dfe72 .theme-icon-light.jsx-745d6189719dfe72{display:inline!important}@media(max-width:767px){.main-content.jsx-745d6189719dfe72{padding:var(--space-4)0}.footer-links.jsx-745d6189719dfe72{gap:var(--space-4)}}</style></head><body><noscript><div class="no-js-message" style="padding:1rem;background:#ff5555;color:#f8f8f2;text-align:center;font-size:0.9rem">This site requires JavaScript to function properly. Please enable JavaScript in your browser.</div></noscript><div id="__next"><div class="jsx-745d6189719dfe72 app-container"><a href="#main-content" class="jsx-745d6189719dfe72 skip-link">Skip to main content</a><nav class="jsx-745d6189719dfe72 mobile-nav"><div class="jsx-745d6189719dfe72 mobile-nav-content"><a class="mobile-brand" href="/"><span role="img" aria-label="Books" class="jsx-745d6189719dfe72">📚</span>HowToMgr</a><button aria-label="Toggle theme" title="Switch theme" class="jsx-745d6189719dfe72 mobile-theme-toggle touch-target"><span class="jsx-745d6189719dfe72 theme-icon-dark">🌙</span><span style="display:none" class="jsx-745d6189719dfe72 theme-icon-light">☀️</span></button></div></nav><main id="main-content" tabindex="-1" class="jsx-745d6189719dfe72 main-content"><div class="jsx-745d6189719dfe72 container"><nav aria-label="Breadcrumb" class="jsx-8a7f0cdcf94f52ce breadcrumb"><a href="/">Home</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><a href="/security/">Security</a><span class="jsx-8a7f0cdcf94f52ce separator">→</span><span class="jsx-8a7f0cdcf94f52ce current">Fail2ban</span></nav><header class="jsx-8a7f0cdcf94f52ce guide-header"><div class="jsx-8a7f0cdcf94f52ce guide-meta-top"><h1 class="jsx-8a7f0cdcf94f52ce guide-title">Fail2ban</h1><p class="jsx-8a7f0cdcf94f52ce guide-description">Repo for fail2ban</p><div class="jsx-8a7f0cdcf94f52ce guide-badges"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-primary">Security</span><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">12 min</span></div><div class="jsx-8a7f0cdcf94f52ce guide-actions"><a href="https://github.com/howtomgr/fail2ban" target="_blank" rel="noopener" class="jsx-8a7f0cdcf94f52ce btn btn-secondary">View on GitHub</a></div></div></header><article class="jsx-8a7f0cdcf94f52ce guide-content"><div class="jsx-8a7f0cdcf94f52ce readme-content"><h1 id="fail2ban-installation-guide" class="mobile-header">Fail2Ban Installation Guide</h1>
+<p class="mobile-paragraph">Intrusion prevention software that protects servers from brute-force attacks by monitoring log files and automatically banning malicious IP addresses. Essential security tool for any public-facing server.</p>
+<h2 id="prerequisites" class="mobile-header">Prerequisites</h2>
+<li class="mobile-list-item">Linux system (any modern distribution)</li>
+<li class="mobile-list-item">Root or sudo access</li>
+<li class="mobile-list-item">iptables or firewalld</li>
+<li class="mobile-list-item">Log files to monitor (SSH, web server, etc.)</li>
+<li class="mobile-list-item">Python 3.6+ (usually pre-installed)</li>
+<h2 id="installation" class="mobile-header">Installation</h2>
+<h3 id="ubuntudebian" class="mobile-header">Ubuntu/Debian</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Update system packages
+sudo apt update &amp;&amp; sudo apt upgrade -y
+
+# Install Fail2Ban
+sudo apt install -y fail2ban whois
+
+# Enable and start service
+sudo systemctl enable --now fail2ban
+
+# Verify installation
+sudo systemctl status fail2ban
+fail2ban-client version</code></pre>
+      </div>
+    </div>
+<h3 id="rhelcentosrocky-linuxalmalinux" class="mobile-header">RHEL/CentOS/Rocky Linux/AlmaLinux</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install EPEL repository
+sudo yum install -y epel-release
+
+# Install Fail2Ban
+sudo yum install -y fail2ban fail2ban-systemd whois
+
+# Enable and start service
+sudo systemctl enable --now fail2ban
+
+# Verify installation
+sudo systemctl status fail2ban</code></pre>
+      </div>
+    </div>
+<h3 id="fedora" class="mobile-header">Fedora</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install Fail2Ban
+sudo dnf install -y fail2ban whois
+
+# Enable and start service
+sudo systemctl enable --now fail2ban
+
+# Verify installation
+sudo systemctl status fail2ban</code></pre>
+      </div>
+    </div>
+<h2 id="configuration" class="mobile-header">Configuration</h2>
+<h3 id="basic-configuration" class="mobile-header">Basic Configuration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create local jail configuration (never edit jail.conf directly)
+sudo tee /etc/fail2ban/jail.local &gt; /dev/null &lt;&lt;EOF
+# Fail2Ban Local Configuration
+
+[DEFAULT]
+# Ban settings
+bantime = 3600
+findtime = 600
+maxretry = 3
+backend = auto
+
+# Notification settings
+destemail = admin@example.com
+sender = fail2ban@example.com
+mta = sendmail
+
+# Actions
+action = %(action_mwl)s
+
+# Ignore IP addresses (whitelist)
+ignoreip = 127.0.0.1/8 ::1 192.168.1.0/24 10.0.0.0/8
+
+# SSH protection
+[sshd]
+enabled = true
+port = ssh,2222
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 3
+bantime = 3600
+
+# HTTP/HTTPS brute force protection
+[nginx-http-auth]
+enabled = true
+filter = nginx-http-auth
+logpath = /var/log/nginx/error.log
+maxretry = 3
+
+[nginx-noscript]
+enabled = true
+filter = nginx-noscript
+logpath = /var/log/nginx/access.log
+maxretry = 6
+
+[nginx-badbots]
+enabled = true
+filter = nginx-badbots
+logpath = /var/log/nginx/access.log
+maxretry = 2
+
+# Apache protection
+[apache-auth]
+enabled = false
+filter = apache-auth
+logpath = /var/log/apache2/error.log
+maxretry = 3
+
+[apache-badbots]
+enabled = false
+filter = apache-badbots
+logpath = /var/log/apache2/access.log
+maxretry = 2
+
+# Database protection
+[mysql]
+enabled = false
+filter = mysql-auth
+logpath = /var/log/mysql/error.log
+maxretry = 3
+bantime = 7200
+
+[postgresql]
+enabled = false
+filter = postgresql
+logpath = /var/log/postgresql/postgresql-*-main.log
+maxretry = 3
+
+# Mail server protection
+[postfix]
+enabled = false
+filter = postfix
+logpath = /var/log/mail.log
+maxretry = 3
+
+[dovecot]
+enabled = false
+filter = dovecot
+logpath = /var/log/mail.log
+maxretry = 3
+
+# FTP protection
+[vsftpd]
+enabled = false
+filter = vsftpd
+logpath = /var/log/vsftpd.log
+maxretry = 3
+
+# Custom application protection
+[custom-app]
+enabled = false
+filter = custom-app
+logpath = /var/log/myapp/error.log
+maxretry = 5
+bantime = 1800
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="custom-filters" class="mobile-header">Custom Filters</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create custom filter for web applications
+sudo tee /etc/fail2ban/filter.d/nginx-custom.conf &gt; /dev/null &lt;&lt;EOF
+# Custom NGINX filter for advanced protection
+
+[Definition]
+failregex = 
+    # Failed login attempts
+    ^&lt;HOST&gt; -.*POST.*(wp-login\.php|login|signin|admin).*HTTP/[0-9\.]+\&quot; 200
+    # Directory traversal attempts
+    ^&lt;HOST&gt; -.*GET.*(\.\./|\.\.\%2F).*HTTP/[0-9\.]+\&quot; 404
+    # SQL injection attempts  
+    ^&lt;HOST&gt; -.*GET.*(union|select|insert|cast|set|declare|drop|create|alter|delete|update|replace|truncate).*HTTP/[0-9\.]+\&quot; 200
+    # XSS attempts
+    ^&lt;HOST&gt; -.*GET.*(script|javascript|vbscript|onload|onerror|onclick).*HTTP/[0-9\.]+\&quot; 200
+    # Suspicious user agents
+    ^&lt;HOST&gt; -.*\&quot;(.*sqlmap.*|.*nikto.*|.*nessus.*|.*openvas.*|.*python-requests.*|.*curl.*|.*wget.*)\&quot;$
+    # Too many 404 errors
+    ^&lt;HOST&gt; -.*\&quot; 404 
+
+ignoreregex =
+    # Ignore legitimate requests
+    ^&lt;HOST&gt; -.*GET.*/favicon\.ico.*HTTP/[0-9\.]+\&quot; 404
+    ^&lt;HOST&gt; -.*GET.*/robots\.txt.*HTTP/[0-9\.]+\&quot; 404
+EOF
+
+# Create WordPress-specific filter
+sudo tee /etc/fail2ban/filter.d/wordpress.conf &gt; /dev/null &lt;&lt;EOF
+[Definition]
+failregex = 
+    # WordPress login failures
+    ^&lt;HOST&gt; -.*POST.*/wp-login\.php.*HTTP/[0-9\.]+\&quot; 200
+    # WordPress admin access attempts
+    ^&lt;HOST&gt; -.*GET.*/wp-admin.*HTTP/[0-9\.]+\&quot; 403
+    # XML-RPC attacks
+    ^&lt;HOST&gt; -.*POST.*/xmlrpc\.php.*HTTP/[0-9\.]+\&quot; 200
+
+ignoreregex =
+    # Ignore successful admin logins (adjust pattern as needed)
+    ^&lt;HOST&gt; -.*POST.*/wp-login\.php.*HTTP/[0-9\.]+\&quot; 302
+EOF
+
+# Add WordPress jail to jail.local
+sudo tee -a /etc/fail2ban/jail.local &gt; /dev/null &lt;&lt;EOF
+
+[wordpress]
+enabled = true
+filter = wordpress
+logpath = /var/log/nginx/access.log
+port = http,https
+maxretry = 3
+bantime = 1800
+findtime = 600
+EOF
+
+sudo systemctl restart fail2ban</code></pre>
+      </div>
+    </div>
+<h3 id="advanced-configuration" class="mobile-header">Advanced Configuration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create advanced fail2ban configuration with multiple actions
+sudo tee /etc/fail2ban/action.d/telegram.conf &gt; /dev/null &lt;&lt;EOF
+# Telegram notification action
+
+[Definition]
+actionstart = 
+actionstop = 
+actioncheck = 
+actionban = curl -s &quot;https://api.telegram.org/bot&lt;bot_token&gt;/sendMessage&quot; -d &quot;chat_id=&lt;chat_id&gt;&amp;text=🚫 Fail2Ban: &lt;name&gt; banned &lt;ip&gt; for &lt;failures&gt; failures&quot;
+actionunban = curl -s &quot;https://api.telegram.org/bot&lt;bot_token&gt;/sendMessage&quot; -d &quot;chat_id=&lt;chat_id&gt;&amp;text=✅ Fail2Ban: &lt;name&gt; unbanned &lt;ip&gt;&quot;
+
+[Init]
+bot_token = your_telegram_bot_token
+chat_id = your_telegram_chat_id
+EOF
+
+# Create comprehensive protection configuration
+sudo tee /etc/fail2ban/jail.d/comprehensive.conf &gt; /dev/null &lt;&lt;EOF
+# Comprehensive Security Configuration
+
+[DEFAULT]
+# Enhanced ban settings
+bantime.increment = true
+bantime.rndtime = 60
+bantime.maxtime = 86400
+bantime.factor = 2
+bantime.formula = ban.Time * (1&lt;&lt;(ban.Count if ban.Count&lt;20 else 20)) * banFactor
+
+# Multiple actions (ban + notify)
+action = %(action_mwl)s[dest=security@example.com]
+         telegram[bot_token=your_bot_token, chat_id=your_chat_id]
+
+[sshd-aggressive]
+enabled = true
+port = ssh
+filter = sshd[mode=aggressive]
+logpath = /var/log/auth.log
+maxretry = 2
+bantime = 7200
+findtime = 300
+
+[nginx-limit-req]
+enabled = true
+filter = nginx-limit-req
+logpath = /var/log/nginx/error.log
+maxretry = 10
+bantime = 3600
+
+[nginx-noproxy]
+enabled = true
+filter = nginx-noproxy
+logpath = /var/log/nginx/access.log
+maxretry = 2
+bantime = 86400
+
+# Protect against port scans
+[port-scan]
+enabled = true
+filter = port-scan
+logpath = /var/log/messages
+maxretry = 1
+bantime = 86400
+
+# DNS amplification protection
+[named-refused]
+enabled = false
+filter = named-refused
+logpath = /var/log/messages
+maxretry = 5
+bantime = 3600
+EOF</code></pre>
+      </div>
+    </div>
+<h3 id="custom-filters-for-applications" class="mobile-header">Custom Filters for Applications</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create filter for Node.js applications
+sudo tee /etc/fail2ban/filter.d/nodejs-auth.conf &gt; /dev/null &lt;&lt;EOF
+[Definition]
+failregex = ^.*Authentication failed for.*from &lt;HOST&gt;.*$
+            ^.*Invalid login attempt.*IP: &lt;HOST&gt;.*$
+            ^.*Failed login.*remote_addr: &lt;HOST&gt;.*$
+ignoreregex =
+EOF
+
+# Create filter for Grafana
+sudo tee /etc/fail2ban/filter.d/grafana.conf &gt; /dev/null &lt;&lt;EOF
+[Definition]
+failregex = ^.*logger=context.*error=&quot;invalid username or password&quot;.*remote_addr=&lt;HOST&gt;
+            ^.*logger=context.*error=&quot;user not found&quot;.*remote_addr=&lt;HOST&gt;
+ignoreregex =
+EOF
+
+# Create filter for GitLab
+sudo tee /etc/fail2ban/filter.d/gitlab.conf &gt; /dev/null &lt;&lt;EOF
+[Definition]
+failregex = ^.*Failed Login:.*IP: &lt;HOST&gt;.*$
+            ^.*Rack_Attack.*Throttle.*IP: &lt;HOST&gt;.*$
+ignoreregex =
+EOF
+
+# Add application-specific jails
+sudo tee /etc/fail2ban/jail.d/applications.conf &gt; /dev/null &lt;&lt;EOF
+[nodejs-auth]
+enabled = false
+filter = nodejs-auth
+logpath = /var/log/nodejs/app.log
+maxretry = 5
+bantime = 1800
+
+[grafana]
+enabled = false
+filter = grafana
+logpath = /var/log/grafana/grafana.log
+maxretry = 5
+bantime = 3600
+
+[gitlab]
+enabled = false
+filter = gitlab
+logpath = /var/log/gitlab/gitlab-rails/production.log
+maxretry = 5
+bantime = 3600
+EOF</code></pre>
+      </div>
+    </div>
+<h2 id="monitoring-and-management" class="mobile-header">Monitoring and Management</h2>
+<h3 id="fail2ban-management-script" class="mobile-header">Fail2Ban Management Script</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash">sudo tee /usr/local/bin/fail2ban-manager.sh &gt; /dev/null &lt;&lt;&#039;EOF&#039;
+#!/bin/bash
+
+case &quot;${1}&quot; in
+    &quot;status&quot;)
+        echo &quot;=== Fail2Ban Status ===&quot;
+        sudo fail2ban-client status
+        echo &quot;&quot;
+        echo &quot;=== Active Jails ===&quot;
+        for jail in $(sudo fail2ban-client status | grep &quot;Jail list:&quot; | sed -e &#039;s/.*Jail list://&#039; -e &#039;s/,/ /g&#039;); do
+            echo &quot;Jail: $jail&quot;
+            sudo fail2ban-client status $jail
+            echo &quot;&quot;
+        done
+        ;;
+        
+    &quot;unban&quot;)
+        IP=&quot;${2}&quot;
+        if [ -z &quot;$IP&quot; ]; then
+            echo &quot;Usage: $0 unban &lt;ip_address&gt;&quot;
+            exit 1
+        fi
+        
+        echo &quot;Unbanning IP: $IP from all jails&quot;
+        for jail in $(sudo fail2ban-client status | grep &quot;Jail list:&quot; | sed -e &#039;s/.*Jail list://&#039; -e &#039;s/,/ /g&#039;); do
+            sudo fail2ban-client set $jail unbanip $IP 2&gt;/dev/null &amp;&amp; echo &quot;  - Unbanned from $jail&quot;
+        done
+        ;;
+        
+    &quot;ban&quot;)
+        IP=&quot;${2}&quot;
+        JAIL=&quot;${3:-sshd}&quot;
+        if [ -z &quot;$IP&quot; ]; then
+            echo &quot;Usage: $0 ban &lt;ip_address&gt; [jail_name]&quot;
+            exit 1
+        fi
+        
+        echo &quot;Banning IP: $IP in jail: $JAIL&quot;
+        sudo fail2ban-client set $JAIL banip $IP
+        ;;
+        
+    &quot;whitelist&quot;)
+        IP=&quot;${2}&quot;
+        if [ -z &quot;$IP&quot; ]; then
+            echo &quot;Usage: $0 whitelist &lt;ip_address&gt;&quot;
+            exit 1
+        fi
+        
+        echo &quot;Adding $IP to whitelist&quot;
+        sudo sed -i &quot;s/ignoreip = .*/&amp; $IP/&quot; /etc/fail2ban/jail.local
+        sudo systemctl restart fail2ban
+        ;;
+        
+    &quot;logs&quot;)
+        JAIL=&quot;${2:-sshd}&quot;
+        echo &quot;Recent bans for jail: $JAIL&quot;
+        sudo grep &quot;Ban\|Unban&quot; /var/log/fail2ban.log | grep &quot;$JAIL&quot; | tail -20
+        ;;
+        
+    &quot;stats&quot;)
+        echo &quot;=== Fail2Ban Statistics ===&quot;
+        echo &quot;Total bans today: $(sudo grep &quot;$(date +&#039;%Y-%m-%d&#039;)&quot; /var/log/fail2ban.log | grep -c &quot;Ban &quot;)&quot;
+        echo &quot;Total unbans today: $(sudo grep &quot;$(date +&#039;%Y-%m-%d&#039;)&quot; /var/log/fail2ban.log | grep -c &quot;Unban &quot;)&quot;
+        echo &quot;&quot;
+        echo &quot;Top banned IPs (last 1000 entries):&quot;
+        sudo tail -1000 /var/log/fail2ban.log | grep &quot;Ban &quot; | awk &#039;{print $(NF-1)}&#039; | sort | uniq -c | sort -nr | head -10
+        ;;
+        
+    &quot;test&quot;)
+        JAIL=&quot;${2:-sshd}&quot;
+        LOG_FILE=&quot;${3:-/var/log/auth.log}&quot;
+        echo &quot;Testing filter for jail: $JAIL&quot;
+        echo &quot;Log file: $LOG_FILE&quot;
+        sudo fail2ban-regex $LOG_FILE /etc/fail2ban/filter.d/${JAIL}.conf
+        ;;
+        
+    &quot;reload&quot;)
+        echo &quot;Reloading Fail2Ban configuration...&quot;
+        sudo fail2ban-client reload
+        echo &quot;Configuration reloaded&quot;
+        ;;
+        
+    *)
+        echo &quot;Fail2Ban Management Script&quot;
+        echo &quot;Usage: $0 {status|unban|ban|whitelist|logs|stats|test|reload}&quot;
+        echo &quot;&quot;
+        echo &quot;Examples:&quot;
+        echo &quot;  $0 status                    # Show status of all jails&quot;
+        echo &quot;  $0 unban 192.168.1.100      # Unban IP from all jails&quot;
+        echo &quot;  $0 ban 10.0.0.1 sshd        # Ban IP in specific jail&quot;
+        echo &quot;  $0 whitelist 192.168.1.50   # Add IP to whitelist&quot;
+        echo &quot;  $0 logs sshd                # Show recent logs for jail&quot;
+        echo &quot;  $0 stats                    # Show ban statistics&quot;
+        echo &quot;  $0 test sshd                # Test jail filter&quot;
+        echo &quot;  $0 reload                   # Reload configuration&quot;
+        exit 1
+        ;;
+esac
+EOF
+
+sudo chmod +x /usr/local/bin/fail2ban-manager.sh</code></pre>
+      </div>
+    </div>
+<h3 id="security-monitoring" class="mobile-header">Security Monitoring</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create comprehensive monitoring script
+sudo tee /usr/local/bin/fail2ban-monitor.sh &gt; /dev/null &lt;&lt;&#039;EOF&#039;
+#!/bin/bash
+MONITOR_LOG=&quot;/var/log/fail2ban-monitor.log&quot;
+
+log_message() {
+    echo &quot;$(date &#039;+%Y-%m-%d %H:%M:%S&#039;) - $1&quot; | tee -a ${MONITOR_LOG}
+}
+
+# Check Fail2Ban service
+if systemctl is-active fail2ban &gt;/dev/null 2&gt;&amp;1; then
+    log_message &quot;✓ Fail2Ban service is running&quot;
+else
+    log_message &quot;✗ Fail2Ban service is not running&quot;
+    exit 1
+fi
+
+# Check jail status
+ACTIVE_JAILS=$(sudo fail2ban-client status | grep &quot;Jail list:&quot; | sed -e &#039;s/.*Jail list://&#039; -e &#039;s/,/ /g&#039; | wc -w)
+log_message &quot;ℹ Active jails: ${ACTIVE_JAILS}&quot;
+
+# Check today&#039;s bans
+BANS_TODAY=$(sudo grep &quot;$(date +&#039;%Y-%m-%d&#039;)&quot; /var/log/fail2ban.log | grep -c &quot;Ban &quot; 2&gt;/dev/null || echo &quot;0&quot;)
+UNBANS_TODAY=$(sudo grep &quot;$(date +&#039;%Y-%m-%d&#039;)&quot; /var/log/fail2ban.log | grep -c &quot;Unban &quot; 2&gt;/dev/null || echo &quot;0&quot;)
+log_message &quot;ℹ Today&#039;s activity: ${BANS_TODAY} bans, ${UNBANS_TODAY} unbans&quot;
+
+# Check currently banned IPs
+TOTAL_BANNED=0
+for jail in $(sudo fail2ban-client status | grep &quot;Jail list:&quot; | sed -e &#039;s/.*Jail list://&#039; -e &#039;s/,/ /g&#039;); do
+    JAIL_BANNED=$(sudo fail2ban-client status $jail | grep &quot;Currently banned:&quot; | awk &#039;{print $3}&#039;)
+    TOTAL_BANNED=$((TOTAL_BANNED + JAIL_BANNED))
+done
+
+log_message &quot;ℹ Currently banned IPs: ${TOTAL_BANNED}&quot;
+
+# Check for configuration errors
+if ! sudo fail2ban-client status &gt;/dev/null 2&gt;&amp;1; then
+    log_message &quot;⚠ Fail2Ban configuration errors detected&quot;
+    sudo fail2ban-client status 2&gt;&amp;1 | head -5 &gt;&gt; ${MONITOR_LOG}
+fi
+
+# Check log file accessibility
+for jail in $(sudo fail2ban-client status | grep &quot;Jail list:&quot; | sed -e &#039;s/.*Jail list://&#039; -e &#039;s/,/ /g&#039;); do
+    LOG_PATH=$(sudo fail2ban-client get $jail logpath 2&gt;/dev/null)
+    if [ -n &quot;$LOG_PATH&quot; ] &amp;&amp; [ ! -r &quot;$LOG_PATH&quot; ]; then
+        log_message &quot;⚠ Cannot read log file for $jail: $LOG_PATH&quot;
+    fi
+done
+
+log_message &quot;Fail2Ban monitoring completed&quot;
+EOF
+
+sudo chmod +x /usr/local/bin/fail2ban-monitor.sh
+
+# Schedule monitoring every 15 minutes
+echo &quot;*/15 * * * * root /usr/local/bin/fail2ban-monitor.sh&quot; | sudo tee -a /etc/crontab</code></pre>
+      </div>
+    </div>
+<h3 id="geographic-blocking-integration" class="mobile-header">Geographic Blocking Integration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install GeoIP for country-based blocking
+sudo apt install -y geoip-database geoip-bin  # Ubuntu/Debian
+sudo yum install -y GeoIP GeoIP-data          # RHEL/CentOS
+
+# Create geographic blocking filter
+sudo tee /etc/fail2ban/filter.d/geoip-block.conf &gt; /dev/null &lt;&lt;EOF
+[Definition]
+# Block connections from specific countries
+failregex = ^&lt;HOST&gt; -
+ignoreregex =
+
+[Init]
+# Countries to block (ISO country codes)
+countries = CN,RU,KP,IR
+EOF
+
+# Create action for geographic blocking
+sudo tee /etc/fail2ban/action.d/geoip-block.conf &gt; /dev/null &lt;&lt;EOF
+[Definition]
+actioncheck = 
+actionstart = 
+actionstop = 
+actionban = COUNTRY=$(geoiplookup &lt;ip&gt; | awk -F: &#039;{print $2}&#039; | awk &#039;{print $1}&#039;); if echo &quot;CN RU KP IR&quot; | grep -q &quot;$COUNTRY&quot;; then iptables -A f2b-&lt;name&gt; -s &lt;ip&gt; -j DROP; fi
+actionunban = iptables -D f2b-&lt;name&gt; -s &lt;ip&gt; -j DROP 2&gt;/dev/null || true
+
+[Init]
+name = geoip-block
+EOF
+
+# Add geographic blocking jail
+sudo tee /etc/fail2ban/jail.d/geoip.conf &gt; /dev/null &lt;&lt;EOF
+[geoip-block]
+enabled = false  # Enable if needed
+filter = geoip-block
+action = geoip-block
+logpath = /var/log/nginx/access.log
+maxretry = 1
+bantime = 86400
+findtime = 60
+EOF</code></pre>
+      </div>
+    </div>
+<h2 id="integration-examples" class="mobile-header">Integration Examples</h2>
+<h3 id="web-server-integration" class="mobile-header">Web Server Integration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># NGINX: Enable logging for Fail2Ban
+sudo tee -a /etc/nginx/nginx.conf &gt; /dev/null &lt;&lt;EOF
+
+http {
+    # Log format for Fail2Ban
+    log_format fail2ban &#039;\$remote_addr - \$remote_user [\$time_local] &#039;
+                       &#039;&quot;\$request&quot; \$status \$body_bytes_sent &#039;
+                       &#039;&quot;\$http_referer&quot; &quot;\$http_user_agent&quot;&#039;;
+    
+    # Enable access and error logging
+    access_log /var/log/nginx/access.log fail2ban;
+    error_log /var/log/nginx/error.log warn;
+}
+EOF
+
+sudo nginx -t &amp;&amp; sudo systemctl reload nginx
+
+# Apache: Enable logging
+sudo tee -a /etc/apache2/apache2.conf &gt; /dev/null &lt;&lt;EOF
+
+# Enhanced logging for Fail2Ban
+LogFormat &quot;%h %l %u %t \&quot;%r\&quot; %&gt;s %O \&quot;%{Referer}i\&quot; \&quot;%{User-Agent}i\&quot;&quot; fail2ban
+CustomLog \${APACHE_LOG_DIR}/access.log fail2ban
+ErrorLog \${APACHE_LOG_DIR}/error.log
+LogLevel warn
+EOF
+
+sudo systemctl reload apache2</code></pre>
+      </div>
+    </div>
+<h2 id="backup-and-disaster-recovery" class="mobile-header">Backup and Disaster Recovery</h2>
+<h3 id="configuration-backup" class="mobile-header">Configuration Backup</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash">sudo tee /usr/local/bin/fail2ban-backup.sh &gt; /dev/null &lt;&lt;&#039;EOF&#039;
+#!/bin/bash
+BACKUP_DIR=&quot;/backup/fail2ban&quot;
+DATE=$(date +%Y%m%d_%H%M%S)
+
+mkdir -p ${BACKUP_DIR}
+
+echo &quot;Starting Fail2Ban backup...&quot;
+
+# Backup configuration files
+tar -czf ${BACKUP_DIR}/fail2ban-config-${DATE}.tar.gz \
+    /etc/fail2ban/ \
+    /var/lib/fail2ban/
+
+# Export current ban list
+sudo fail2ban-client status | grep &quot;Jail list:&quot; | sed -e &#039;s/.*Jail list://&#039; -e &#039;s/,/ /g&#039; &gt; /tmp/jails.txt
+while read jail; do
+    sudo fail2ban-client status $jail | grep &quot;Banned IP list:&quot; &gt; ${BACKUP_DIR}/banned-ips-${jail}-${DATE}.txt
+done &lt; /tmp/jails.txt
+
+# Keep last 30 backups
+find ${BACKUP_DIR} -name &quot;fail2ban-*&quot; -type f -mtime +30 -delete
+
+echo &quot;Fail2Ban backup completed: ${DATE}&quot;
+EOF
+
+sudo chmod +x /usr/local/bin/fail2ban-backup.sh
+
+# Schedule weekly backups
+echo &quot;0 4 * * 0 root /usr/local/bin/fail2ban-backup.sh&quot; | sudo tee -a /etc/crontab</code></pre>
+      </div>
+    </div>
+<h2 id="troubleshooting" class="mobile-header">Troubleshooting</h2>
+<h3 id="common-issues-and-solutions" class="mobile-header">Common Issues and Solutions</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check Fail2Ban service status
+sudo systemctl status fail2ban
+sudo journalctl -u fail2ban -f
+
+# Check jail status
+sudo fail2ban-client status
+sudo fail2ban-client status sshd
+
+# Test filter patterns
+sudo fail2ban-regex /var/log/auth.log /etc/fail2ban/filter.d/sshd.conf
+
+# Check banned IPs
+sudo fail2ban-client status sshd
+sudo iptables -L -n | grep f2b
+
+# View Fail2Ban logs
+sudo tail -f /var/log/fail2ban.log
+
+# Unban IP address
+sudo fail2ban-client set sshd unbanip 192.168.1.100
+
+# Ban IP manually
+sudo fail2ban-client set sshd banip 10.0.0.1
+
+# Reload configuration
+sudo fail2ban-client reload
+
+# Test SSH jail
+sudo grep &quot;Failed password&quot; /var/log/auth.log | head -5
+sudo fail2ban-regex /var/log/auth.log /etc/fail2ban/filter.d/sshd.conf
+
+# Check iptables rules
+sudo iptables -L f2b-sshd -n
+sudo iptables -L INPUT -n | grep f2b
+
+# Debug mode
+sudo fail2ban-server -f -v
+
+# Configuration validation
+sudo fail2ban-client -t
+
+# Check log file permissions
+ls -la /var/log/auth.log
+ls -la /var/log/nginx/access.log
+
+# Monitor real-time bans
+sudo tail -f /var/log/fail2ban.log | grep &quot;Ban\|Unban&quot;
+
+# Check jail configuration
+sudo fail2ban-client get sshd maxretry
+sudo fail2ban-client get sshd bantime
+sudo fail2ban-client get sshd findtime</code></pre>
+      </div>
+    </div>
+<h2 id="additional-resources" class="mobile-header">Additional Resources</h2>
+<li class="mobile-list-item"><a href="https://fail2ban.readthedocs.io/" target="_blank" rel="noopener" class="mobile-link">Fail2Ban Documentation</a></li>
+<li class="mobile-list-item"><a href="https://github.com/fail2ban/fail2ban" target="_blank" rel="noopener" class="mobile-link">Fail2Ban GitHub</a></li>
+<li class="mobile-list-item"><a href="https://fail2ban.readthedocs.io/en/stable/filters.html" target="_blank" rel="noopener" class="mobile-link">Filter Configuration Guide</a></li>
+<p class="mobile-paragraph">---</p>
+<p class="mobile-paragraph"><strong>Note:</strong> This guide is part of the <a href="https://howtomgr.github.io" target="_blank" rel="noopener" class="mobile-link">HowToMgr</a> collection.</p></div></article><section class="jsx-8a7f0cdcf94f52ce related-section"><h2 class="jsx-8a7f0cdcf94f52ce section-title">Related <!-- -->Security<!-- --> Guides</h2><div class="jsx-8a7f0cdcf94f52ce mobile-grid"><a class="mobile-card" href="/security/keycloak/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Keycloak</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for keycloak</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a><a class="mobile-card" href="/security/openvpn/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Openvpn</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for openvpn</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a><a class="mobile-card" href="/security/pihole/"><div class="jsx-8a7f0cdcf94f52ce mobile-card-header"><h3 class="jsx-8a7f0cdcf94f52ce mobile-card-title">Pi-hole</h3><p class="jsx-8a7f0cdcf94f52ce mobile-card-description">Repo for pihole</p></div><div class="jsx-8a7f0cdcf94f52ce mobile-card-meta"><span class="jsx-8a7f0cdcf94f52ce mobile-badge mobile-badge-info">1 min</span></div></a></div></section><nav class="jsx-8a7f0cdcf94f52ce guide-navigation"><a class="btn btn-secondary" href="/security/">← All <!-- -->Security</a><a class="btn btn-secondary" href="/">All Categories</a></nav></div></main><footer class="jsx-745d6189719dfe72 mobile-footer"><div class="jsx-745d6189719dfe72 container"><div class="jsx-745d6189719dfe72 footer-content"><div class="jsx-745d6189719dfe72 footer-links"><a href="/">Home</a><a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">GitHub</a><a href="https://github.com/howtomgr/howtomgr.github.io" target="_blank" rel="noopener" class="jsx-745d6189719dfe72">Source</a></div><div class="jsx-745d6189719dfe72 footer-separator"></div><p class="jsx-745d6189719dfe72 footer-text">© <!-- -->2025<!-- --> HowToMgr Organization. Open source installation guides.</p><p class="jsx-745d6189719dfe72 footer-tech">Built with ❤️ using Next.js + GitHub Pages</p><p class="jsx-745d6189719dfe72 footer-disclaimer"><small class="jsx-745d6189719dfe72">All guides are provided as-is. Please review and test before production use.</small></p></div></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"guide":{"name":"fail2ban","displayName":"Fail2ban","slug":"fail2ban","description":"Repo for fail2ban","category":"security","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/fail2ban","updatedAt":"2025-09-14T01:29:56Z","createdAt":"2025-09-08T03:07:24Z","readmeRaw":"# Fail2Ban Installation Guide\n\nIntrusion prevention software that protects servers from brute-force attacks by monitoring log files and automatically banning malicious IP addresses. Essential security tool for any public-facing server.\n\n## Prerequisites\n\n- Linux system (any modern distribution)\n- Root or sudo access\n- iptables or firewalld\n- Log files to monitor (SSH, web server, etc.)\n- Python 3.6+ (usually pre-installed)\n\n## Installation\n\n### Ubuntu/Debian\n```bash\n# Update system packages\nsudo apt update \u0026\u0026 sudo apt upgrade -y\n\n# Install Fail2Ban\nsudo apt install -y fail2ban whois\n\n# Enable and start service\nsudo systemctl enable --now fail2ban\n\n# Verify installation\nsudo systemctl status fail2ban\nfail2ban-client version\n```\n\n### RHEL/CentOS/Rocky Linux/AlmaLinux\n```bash\n# Install EPEL repository\nsudo yum install -y epel-release\n\n# Install Fail2Ban\nsudo yum install -y fail2ban fail2ban-systemd whois\n\n# Enable and start service\nsudo systemctl enable --now fail2ban\n\n# Verify installation\nsudo systemctl status fail2ban\n```\n\n### Fedora\n```bash\n# Install Fail2Ban\nsudo dnf install -y fail2ban whois\n\n# Enable and start service\nsudo systemctl enable --now fail2ban\n\n# Verify installation\nsudo systemctl status fail2ban\n```\n\n## Configuration\n\n### Basic Configuration\n```bash\n# Create local jail configuration (never edit jail.conf directly)\nsudo tee /etc/fail2ban/jail.local \u003e /dev/null \u003c\u003cEOF\n# Fail2Ban Local Configuration\n\n[DEFAULT]\n# Ban settings\nbantime = 3600\nfindtime = 600\nmaxretry = 3\nbackend = auto\n\n# Notification settings\ndestemail = admin@example.com\nsender = fail2ban@example.com\nmta = sendmail\n\n# Actions\naction = %(action_mwl)s\n\n# Ignore IP addresses (whitelist)\nignoreip = 127.0.0.1/8 ::1 192.168.1.0/24 10.0.0.0/8\n\n# SSH protection\n[sshd]\nenabled = true\nport = ssh,2222\nfilter = sshd\nlogpath = /var/log/auth.log\nmaxretry = 3\nbantime = 3600\n\n# HTTP/HTTPS brute force protection\n[nginx-http-auth]\nenabled = true\nfilter = nginx-http-auth\nlogpath = /var/log/nginx/error.log\nmaxretry = 3\n\n[nginx-noscript]\nenabled = true\nfilter = nginx-noscript\nlogpath = /var/log/nginx/access.log\nmaxretry = 6\n\n[nginx-badbots]\nenabled = true\nfilter = nginx-badbots\nlogpath = /var/log/nginx/access.log\nmaxretry = 2\n\n# Apache protection\n[apache-auth]\nenabled = false\nfilter = apache-auth\nlogpath = /var/log/apache2/error.log\nmaxretry = 3\n\n[apache-badbots]\nenabled = false\nfilter = apache-badbots\nlogpath = /var/log/apache2/access.log\nmaxretry = 2\n\n# Database protection\n[mysql]\nenabled = false\nfilter = mysql-auth\nlogpath = /var/log/mysql/error.log\nmaxretry = 3\nbantime = 7200\n\n[postgresql]\nenabled = false\nfilter = postgresql\nlogpath = /var/log/postgresql/postgresql-*-main.log\nmaxretry = 3\n\n# Mail server protection\n[postfix]\nenabled = false\nfilter = postfix\nlogpath = /var/log/mail.log\nmaxretry = 3\n\n[dovecot]\nenabled = false\nfilter = dovecot\nlogpath = /var/log/mail.log\nmaxretry = 3\n\n# FTP protection\n[vsftpd]\nenabled = false\nfilter = vsftpd\nlogpath = /var/log/vsftpd.log\nmaxretry = 3\n\n# Custom application protection\n[custom-app]\nenabled = false\nfilter = custom-app\nlogpath = /var/log/myapp/error.log\nmaxretry = 5\nbantime = 1800\nEOF\n```\n\n### Custom Filters\n```bash\n# Create custom filter for web applications\nsudo tee /etc/fail2ban/filter.d/nginx-custom.conf \u003e /dev/null \u003c\u003cEOF\n# Custom NGINX filter for advanced protection\n\n[Definition]\nfailregex = \n    # Failed login attempts\n    ^\u003cHOST\u003e -.*POST.*(wp-login\\.php|login|signin|admin).*HTTP/[0-9\\.]+\\\" 200\n    # Directory traversal attempts\n    ^\u003cHOST\u003e -.*GET.*(\\.\\./|\\.\\.\\%2F).*HTTP/[0-9\\.]+\\\" 404\n    # SQL injection attempts  \n    ^\u003cHOST\u003e -.*GET.*(union|select|insert|cast|set|declare|drop|create|alter|delete|update|replace|truncate).*HTTP/[0-9\\.]+\\\" 200\n    # XSS attempts\n    ^\u003cHOST\u003e -.*GET.*(script|javascript|vbscript|onload|onerror|onclick).*HTTP/[0-9\\.]+\\\" 200\n    # Suspicious user agents\n    ^\u003cHOST\u003e -.*\\\"(.*sqlmap.*|.*nikto.*|.*nessus.*|.*openvas.*|.*python-requests.*|.*curl.*|.*wget.*)\\\"$\n    # Too many 404 errors\n    ^\u003cHOST\u003e -.*\\\" 404 \n\nignoreregex =\n    # Ignore legitimate requests\n    ^\u003cHOST\u003e -.*GET.*/favicon\\.ico.*HTTP/[0-9\\.]+\\\" 404\n    ^\u003cHOST\u003e -.*GET.*/robots\\.txt.*HTTP/[0-9\\.]+\\\" 404\nEOF\n\n# Create WordPress-specific filter\nsudo tee /etc/fail2ban/filter.d/wordpress.conf \u003e /dev/null \u003c\u003cEOF\n[Definition]\nfailregex = \n    # WordPress login failures\n    ^\u003cHOST\u003e -.*POST.*/wp-login\\.php.*HTTP/[0-9\\.]+\\\" 200\n    # WordPress admin access attempts\n    ^\u003cHOST\u003e -.*GET.*/wp-admin.*HTTP/[0-9\\.]+\\\" 403\n    # XML-RPC attacks\n    ^\u003cHOST\u003e -.*POST.*/xmlrpc\\.php.*HTTP/[0-9\\.]+\\\" 200\n\nignoreregex =\n    # Ignore successful admin logins (adjust pattern as needed)\n    ^\u003cHOST\u003e -.*POST.*/wp-login\\.php.*HTTP/[0-9\\.]+\\\" 302\nEOF\n\n# Add WordPress jail to jail.local\nsudo tee -a /etc/fail2ban/jail.local \u003e /dev/null \u003c\u003cEOF\n\n[wordpress]\nenabled = true\nfilter = wordpress\nlogpath = /var/log/nginx/access.log\nport = http,https\nmaxretry = 3\nbantime = 1800\nfindtime = 600\nEOF\n\nsudo systemctl restart fail2ban\n```\n\n### Advanced Configuration\n```bash\n# Create advanced fail2ban configuration with multiple actions\nsudo tee /etc/fail2ban/action.d/telegram.conf \u003e /dev/null \u003c\u003cEOF\n# Telegram notification action\n\n[Definition]\nactionstart = \nactionstop = \nactioncheck = \nactionban = curl -s \"https://api.telegram.org/bot\u003cbot_token\u003e/sendMessage\" -d \"chat_id=\u003cchat_id\u003e\u0026text=🚫 Fail2Ban: \u003cname\u003e banned \u003cip\u003e for \u003cfailures\u003e failures\"\nactionunban = curl -s \"https://api.telegram.org/bot\u003cbot_token\u003e/sendMessage\" -d \"chat_id=\u003cchat_id\u003e\u0026text=✅ Fail2Ban: \u003cname\u003e unbanned \u003cip\u003e\"\n\n[Init]\nbot_token = your_telegram_bot_token\nchat_id = your_telegram_chat_id\nEOF\n\n# Create comprehensive protection configuration\nsudo tee /etc/fail2ban/jail.d/comprehensive.conf \u003e /dev/null \u003c\u003cEOF\n# Comprehensive Security Configuration\n\n[DEFAULT]\n# Enhanced ban settings\nbantime.increment = true\nbantime.rndtime = 60\nbantime.maxtime = 86400\nbantime.factor = 2\nbantime.formula = ban.Time * (1\u003c\u003c(ban.Count if ban.Count\u003c20 else 20)) * banFactor\n\n# Multiple actions (ban + notify)\naction = %(action_mwl)s[dest=security@example.com]\n         telegram[bot_token=your_bot_token, chat_id=your_chat_id]\n\n[sshd-aggressive]\nenabled = true\nport = ssh\nfilter = sshd[mode=aggressive]\nlogpath = /var/log/auth.log\nmaxretry = 2\nbantime = 7200\nfindtime = 300\n\n[nginx-limit-req]\nenabled = true\nfilter = nginx-limit-req\nlogpath = /var/log/nginx/error.log\nmaxretry = 10\nbantime = 3600\n\n[nginx-noproxy]\nenabled = true\nfilter = nginx-noproxy\nlogpath = /var/log/nginx/access.log\nmaxretry = 2\nbantime = 86400\n\n# Protect against port scans\n[port-scan]\nenabled = true\nfilter = port-scan\nlogpath = /var/log/messages\nmaxretry = 1\nbantime = 86400\n\n# DNS amplification protection\n[named-refused]\nenabled = false\nfilter = named-refused\nlogpath = /var/log/messages\nmaxretry = 5\nbantime = 3600\nEOF\n```\n\n### Custom Filters for Applications\n```bash\n# Create filter for Node.js applications\nsudo tee /etc/fail2ban/filter.d/nodejs-auth.conf \u003e /dev/null \u003c\u003cEOF\n[Definition]\nfailregex = ^.*Authentication failed for.*from \u003cHOST\u003e.*$\n            ^.*Invalid login attempt.*IP: \u003cHOST\u003e.*$\n            ^.*Failed login.*remote_addr: \u003cHOST\u003e.*$\nignoreregex =\nEOF\n\n# Create filter for Grafana\nsudo tee /etc/fail2ban/filter.d/grafana.conf \u003e /dev/null \u003c\u003cEOF\n[Definition]\nfailregex = ^.*logger=context.*error=\"invalid username or password\".*remote_addr=\u003cHOST\u003e\n            ^.*logger=context.*error=\"user not found\".*remote_addr=\u003cHOST\u003e\nignoreregex =\nEOF\n\n# Create filter for GitLab\nsudo tee /etc/fail2ban/filter.d/gitlab.conf \u003e /dev/null \u003c\u003cEOF\n[Definition]\nfailregex = ^.*Failed Login:.*IP: \u003cHOST\u003e.*$\n            ^.*Rack_Attack.*Throttle.*IP: \u003cHOST\u003e.*$\nignoreregex =\nEOF\n\n# Add application-specific jails\nsudo tee /etc/fail2ban/jail.d/applications.conf \u003e /dev/null \u003c\u003cEOF\n[nodejs-auth]\nenabled = false\nfilter = nodejs-auth\nlogpath = /var/log/nodejs/app.log\nmaxretry = 5\nbantime = 1800\n\n[grafana]\nenabled = false\nfilter = grafana\nlogpath = /var/log/grafana/grafana.log\nmaxretry = 5\nbantime = 3600\n\n[gitlab]\nenabled = false\nfilter = gitlab\nlogpath = /var/log/gitlab/gitlab-rails/production.log\nmaxretry = 5\nbantime = 3600\nEOF\n```\n\n## Monitoring and Management\n\n### Fail2Ban Management Script\n```bash\nsudo tee /usr/local/bin/fail2ban-manager.sh \u003e /dev/null \u003c\u003c'EOF'\n#!/bin/bash\n\ncase \"${1}\" in\n    \"status\")\n        echo \"=== Fail2Ban Status ===\"\n        sudo fail2ban-client status\n        echo \"\"\n        echo \"=== Active Jails ===\"\n        for jail in $(sudo fail2ban-client status | grep \"Jail list:\" | sed -e 's/.*Jail list://' -e 's/,/ /g'); do\n            echo \"Jail: $jail\"\n            sudo fail2ban-client status $jail\n            echo \"\"\n        done\n        ;;\n        \n    \"unban\")\n        IP=\"${2}\"\n        if [ -z \"$IP\" ]; then\n            echo \"Usage: $0 unban \u003cip_address\u003e\"\n            exit 1\n        fi\n        \n        echo \"Unbanning IP: $IP from all jails\"\n        for jail in $(sudo fail2ban-client status | grep \"Jail list:\" | sed -e 's/.*Jail list://' -e 's/,/ /g'); do\n            sudo fail2ban-client set $jail unbanip $IP 2\u003e/dev/null \u0026\u0026 echo \"  - Unbanned from $jail\"\n        done\n        ;;\n        \n    \"ban\")\n        IP=\"${2}\"\n        JAIL=\"${3:-sshd}\"\n        if [ -z \"$IP\" ]; then\n            echo \"Usage: $0 ban \u003cip_address\u003e [jail_name]\"\n            exit 1\n        fi\n        \n        echo \"Banning IP: $IP in jail: $JAIL\"\n        sudo fail2ban-client set $JAIL banip $IP\n        ;;\n        \n    \"whitelist\")\n        IP=\"${2}\"\n        if [ -z \"$IP\" ]; then\n            echo \"Usage: $0 whitelist \u003cip_address\u003e\"\n            exit 1\n        fi\n        \n        echo \"Adding $IP to whitelist\"\n        sudo sed -i \"s/ignoreip = .*/\u0026 $IP/\" /etc/fail2ban/jail.local\n        sudo systemctl restart fail2ban\n        ;;\n        \n    \"logs\")\n        JAIL=\"${2:-sshd}\"\n        echo \"Recent bans for jail: $JAIL\"\n        sudo grep \"Ban\\|Unban\" /var/log/fail2ban.log | grep \"$JAIL\" | tail -20\n        ;;\n        \n    \"stats\")\n        echo \"=== Fail2Ban Statistics ===\"\n        echo \"Total bans today: $(sudo grep \"$(date +'%Y-%m-%d')\" /var/log/fail2ban.log | grep -c \"Ban \")\"\n        echo \"Total unbans today: $(sudo grep \"$(date +'%Y-%m-%d')\" /var/log/fail2ban.log | grep -c \"Unban \")\"\n        echo \"\"\n        echo \"Top banned IPs (last 1000 entries):\"\n        sudo tail -1000 /var/log/fail2ban.log | grep \"Ban \" | awk '{print $(NF-1)}' | sort | uniq -c | sort -nr | head -10\n        ;;\n        \n    \"test\")\n        JAIL=\"${2:-sshd}\"\n        LOG_FILE=\"${3:-/var/log/auth.log}\"\n        echo \"Testing filter for jail: $JAIL\"\n        echo \"Log file: $LOG_FILE\"\n        sudo fail2ban-regex $LOG_FILE /etc/fail2ban/filter.d/${JAIL}.conf\n        ;;\n        \n    \"reload\")\n        echo \"Reloading Fail2Ban configuration...\"\n        sudo fail2ban-client reload\n        echo \"Configuration reloaded\"\n        ;;\n        \n    *)\n        echo \"Fail2Ban Management Script\"\n        echo \"Usage: $0 {status|unban|ban|whitelist|logs|stats|test|reload}\"\n        echo \"\"\n        echo \"Examples:\"\n        echo \"  $0 status                    # Show status of all jails\"\n        echo \"  $0 unban 192.168.1.100      # Unban IP from all jails\"\n        echo \"  $0 ban 10.0.0.1 sshd        # Ban IP in specific jail\"\n        echo \"  $0 whitelist 192.168.1.50   # Add IP to whitelist\"\n        echo \"  $0 logs sshd                # Show recent logs for jail\"\n        echo \"  $0 stats                    # Show ban statistics\"\n        echo \"  $0 test sshd                # Test jail filter\"\n        echo \"  $0 reload                   # Reload configuration\"\n        exit 1\n        ;;\nesac\nEOF\n\nsudo chmod +x /usr/local/bin/fail2ban-manager.sh\n```\n\n### Security Monitoring\n```bash\n# Create comprehensive monitoring script\nsudo tee /usr/local/bin/fail2ban-monitor.sh \u003e /dev/null \u003c\u003c'EOF'\n#!/bin/bash\nMONITOR_LOG=\"/var/log/fail2ban-monitor.log\"\n\nlog_message() {\n    echo \"$(date '+%Y-%m-%d %H:%M:%S') - $1\" | tee -a ${MONITOR_LOG}\n}\n\n# Check Fail2Ban service\nif systemctl is-active fail2ban \u003e/dev/null 2\u003e\u00261; then\n    log_message \"✓ Fail2Ban service is running\"\nelse\n    log_message \"✗ Fail2Ban service is not running\"\n    exit 1\nfi\n\n# Check jail status\nACTIVE_JAILS=$(sudo fail2ban-client status | grep \"Jail list:\" | sed -e 's/.*Jail list://' -e 's/,/ /g' | wc -w)\nlog_message \"ℹ Active jails: ${ACTIVE_JAILS}\"\n\n# Check today's bans\nBANS_TODAY=$(sudo grep \"$(date +'%Y-%m-%d')\" /var/log/fail2ban.log | grep -c \"Ban \" 2\u003e/dev/null || echo \"0\")\nUNBANS_TODAY=$(sudo grep \"$(date +'%Y-%m-%d')\" /var/log/fail2ban.log | grep -c \"Unban \" 2\u003e/dev/null || echo \"0\")\nlog_message \"ℹ Today's activity: ${BANS_TODAY} bans, ${UNBANS_TODAY} unbans\"\n\n# Check currently banned IPs\nTOTAL_BANNED=0\nfor jail in $(sudo fail2ban-client status | grep \"Jail list:\" | sed -e 's/.*Jail list://' -e 's/,/ /g'); do\n    JAIL_BANNED=$(sudo fail2ban-client status $jail | grep \"Currently banned:\" | awk '{print $3}')\n    TOTAL_BANNED=$((TOTAL_BANNED + JAIL_BANNED))\ndone\n\nlog_message \"ℹ Currently banned IPs: ${TOTAL_BANNED}\"\n\n# Check for configuration errors\nif ! sudo fail2ban-client status \u003e/dev/null 2\u003e\u00261; then\n    log_message \"⚠ Fail2Ban configuration errors detected\"\n    sudo fail2ban-client status 2\u003e\u00261 | head -5 \u003e\u003e ${MONITOR_LOG}\nfi\n\n# Check log file accessibility\nfor jail in $(sudo fail2ban-client status | grep \"Jail list:\" | sed -e 's/.*Jail list://' -e 's/,/ /g'); do\n    LOG_PATH=$(sudo fail2ban-client get $jail logpath 2\u003e/dev/null)\n    if [ -n \"$LOG_PATH\" ] \u0026\u0026 [ ! -r \"$LOG_PATH\" ]; then\n        log_message \"⚠ Cannot read log file for $jail: $LOG_PATH\"\n    fi\ndone\n\nlog_message \"Fail2Ban monitoring completed\"\nEOF\n\nsudo chmod +x /usr/local/bin/fail2ban-monitor.sh\n\n# Schedule monitoring every 15 minutes\necho \"*/15 * * * * root /usr/local/bin/fail2ban-monitor.sh\" | sudo tee -a /etc/crontab\n```\n\n### Geographic Blocking Integration\n```bash\n# Install GeoIP for country-based blocking\nsudo apt install -y geoip-database geoip-bin  # Ubuntu/Debian\nsudo yum install -y GeoIP GeoIP-data          # RHEL/CentOS\n\n# Create geographic blocking filter\nsudo tee /etc/fail2ban/filter.d/geoip-block.conf \u003e /dev/null \u003c\u003cEOF\n[Definition]\n# Block connections from specific countries\nfailregex = ^\u003cHOST\u003e -\nignoreregex =\n\n[Init]\n# Countries to block (ISO country codes)\ncountries = CN,RU,KP,IR\nEOF\n\n# Create action for geographic blocking\nsudo tee /etc/fail2ban/action.d/geoip-block.conf \u003e /dev/null \u003c\u003cEOF\n[Definition]\nactioncheck = \nactionstart = \nactionstop = \nactionban = COUNTRY=$(geoiplookup \u003cip\u003e | awk -F: '{print $2}' | awk '{print $1}'); if echo \"CN RU KP IR\" | grep -q \"$COUNTRY\"; then iptables -A f2b-\u003cname\u003e -s \u003cip\u003e -j DROP; fi\nactionunban = iptables -D f2b-\u003cname\u003e -s \u003cip\u003e -j DROP 2\u003e/dev/null || true\n\n[Init]\nname = geoip-block\nEOF\n\n# Add geographic blocking jail\nsudo tee /etc/fail2ban/jail.d/geoip.conf \u003e /dev/null \u003c\u003cEOF\n[geoip-block]\nenabled = false  # Enable if needed\nfilter = geoip-block\naction = geoip-block\nlogpath = /var/log/nginx/access.log\nmaxretry = 1\nbantime = 86400\nfindtime = 60\nEOF\n```\n\n## Integration Examples\n\n### Web Server Integration\n```bash\n# NGINX: Enable logging for Fail2Ban\nsudo tee -a /etc/nginx/nginx.conf \u003e /dev/null \u003c\u003cEOF\n\nhttp {\n    # Log format for Fail2Ban\n    log_format fail2ban '\\$remote_addr - \\$remote_user [\\$time_local] '\n                       '\"\\$request\" \\$status \\$body_bytes_sent '\n                       '\"\\$http_referer\" \"\\$http_user_agent\"';\n    \n    # Enable access and error logging\n    access_log /var/log/nginx/access.log fail2ban;\n    error_log /var/log/nginx/error.log warn;\n}\nEOF\n\nsudo nginx -t \u0026\u0026 sudo systemctl reload nginx\n\n# Apache: Enable logging\nsudo tee -a /etc/apache2/apache2.conf \u003e /dev/null \u003c\u003cEOF\n\n# Enhanced logging for Fail2Ban\nLogFormat \"%h %l %u %t \\\"%r\\\" %\u003es %O \\\"%{Referer}i\\\" \\\"%{User-Agent}i\\\"\" fail2ban\nCustomLog \\${APACHE_LOG_DIR}/access.log fail2ban\nErrorLog \\${APACHE_LOG_DIR}/error.log\nLogLevel warn\nEOF\n\nsudo systemctl reload apache2\n```\n\n## Backup and Disaster Recovery\n\n### Configuration Backup\n```bash\nsudo tee /usr/local/bin/fail2ban-backup.sh \u003e /dev/null \u003c\u003c'EOF'\n#!/bin/bash\nBACKUP_DIR=\"/backup/fail2ban\"\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p ${BACKUP_DIR}\n\necho \"Starting Fail2Ban backup...\"\n\n# Backup configuration files\ntar -czf ${BACKUP_DIR}/fail2ban-config-${DATE}.tar.gz \\\n    /etc/fail2ban/ \\\n    /var/lib/fail2ban/\n\n# Export current ban list\nsudo fail2ban-client status | grep \"Jail list:\" | sed -e 's/.*Jail list://' -e 's/,/ /g' \u003e /tmp/jails.txt\nwhile read jail; do\n    sudo fail2ban-client status $jail | grep \"Banned IP list:\" \u003e ${BACKUP_DIR}/banned-ips-${jail}-${DATE}.txt\ndone \u003c /tmp/jails.txt\n\n# Keep last 30 backups\nfind ${BACKUP_DIR} -name \"fail2ban-*\" -type f -mtime +30 -delete\n\necho \"Fail2Ban backup completed: ${DATE}\"\nEOF\n\nsudo chmod +x /usr/local/bin/fail2ban-backup.sh\n\n# Schedule weekly backups\necho \"0 4 * * 0 root /usr/local/bin/fail2ban-backup.sh\" | sudo tee -a /etc/crontab\n```\n\n## Troubleshooting\n\n### Common Issues and Solutions\n```bash\n# Check Fail2Ban service status\nsudo systemctl status fail2ban\nsudo journalctl -u fail2ban -f\n\n# Check jail status\nsudo fail2ban-client status\nsudo fail2ban-client status sshd\n\n# Test filter patterns\nsudo fail2ban-regex /var/log/auth.log /etc/fail2ban/filter.d/sshd.conf\n\n# Check banned IPs\nsudo fail2ban-client status sshd\nsudo iptables -L -n | grep f2b\n\n# View Fail2Ban logs\nsudo tail -f /var/log/fail2ban.log\n\n# Unban IP address\nsudo fail2ban-client set sshd unbanip 192.168.1.100\n\n# Ban IP manually\nsudo fail2ban-client set sshd banip 10.0.0.1\n\n# Reload configuration\nsudo fail2ban-client reload\n\n# Test SSH jail\nsudo grep \"Failed password\" /var/log/auth.log | head -5\nsudo fail2ban-regex /var/log/auth.log /etc/fail2ban/filter.d/sshd.conf\n\n# Check iptables rules\nsudo iptables -L f2b-sshd -n\nsudo iptables -L INPUT -n | grep f2b\n\n# Debug mode\nsudo fail2ban-server -f -v\n\n# Configuration validation\nsudo fail2ban-client -t\n\n# Check log file permissions\nls -la /var/log/auth.log\nls -la /var/log/nginx/access.log\n\n# Monitor real-time bans\nsudo tail -f /var/log/fail2ban.log | grep \"Ban\\|Unban\"\n\n# Check jail configuration\nsudo fail2ban-client get sshd maxretry\nsudo fail2ban-client get sshd bantime\nsudo fail2ban-client get sshd findtime\n```\n\n## Additional Resources\n\n- [Fail2Ban Documentation](https://fail2ban.readthedocs.io/)\n- [Fail2Ban GitHub](https://github.com/fail2ban/fail2ban)\n- [Filter Configuration Guide](https://fail2ban.readthedocs.io/en/stable/filters.html)\n\n---\n\n**Note:** This guide is part of the [HowToMgr](https://howtomgr.github.io) collection.","readmeHtml":"\u003ch1 id=\"fail2ban-installation-guide\" class=\"mobile-header\"\u003eFail2Ban Installation Guide\u003c/h1\u003e\n\u003cp class=\"mobile-paragraph\"\u003eIntrusion prevention software that protects servers from brute-force attacks by monitoring log files and automatically banning malicious IP addresses. Essential security tool for any public-facing server.\u003c/p\u003e\n\u003ch2 id=\"prerequisites\" class=\"mobile-header\"\u003ePrerequisites\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003eLinux system (any modern distribution)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eRoot or sudo access\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eiptables or firewalld\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eLog files to monitor (SSH, web server, etc.)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003ePython 3.6+ (usually pre-installed)\u003c/li\u003e\n\u003ch2 id=\"installation\" class=\"mobile-header\"\u003eInstallation\u003c/h2\u003e\n\u003ch3 id=\"ubuntudebian\" class=\"mobile-header\"\u003eUbuntu/Debian\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Update system packages\nsudo apt update \u0026amp;\u0026amp; sudo apt upgrade -y\n\n# Install Fail2Ban\nsudo apt install -y fail2ban whois\n\n# Enable and start service\nsudo systemctl enable --now fail2ban\n\n# Verify installation\nsudo systemctl status fail2ban\nfail2ban-client version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"rhelcentosrocky-linuxalmalinux\" class=\"mobile-header\"\u003eRHEL/CentOS/Rocky Linux/AlmaLinux\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install EPEL repository\nsudo yum install -y epel-release\n\n# Install Fail2Ban\nsudo yum install -y fail2ban fail2ban-systemd whois\n\n# Enable and start service\nsudo systemctl enable --now fail2ban\n\n# Verify installation\nsudo systemctl status fail2ban\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"fedora\" class=\"mobile-header\"\u003eFedora\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install Fail2Ban\nsudo dnf install -y fail2ban whois\n\n# Enable and start service\nsudo systemctl enable --now fail2ban\n\n# Verify installation\nsudo systemctl status fail2ban\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"configuration\" class=\"mobile-header\"\u003eConfiguration\u003c/h2\u003e\n\u003ch3 id=\"basic-configuration\" class=\"mobile-header\"\u003eBasic Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create local jail configuration (never edit jail.conf directly)\nsudo tee /etc/fail2ban/jail.local \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n# Fail2Ban Local Configuration\n\n[DEFAULT]\n# Ban settings\nbantime = 3600\nfindtime = 600\nmaxretry = 3\nbackend = auto\n\n# Notification settings\ndestemail = admin@example.com\nsender = fail2ban@example.com\nmta = sendmail\n\n# Actions\naction = %(action_mwl)s\n\n# Ignore IP addresses (whitelist)\nignoreip = 127.0.0.1/8 ::1 192.168.1.0/24 10.0.0.0/8\n\n# SSH protection\n[sshd]\nenabled = true\nport = ssh,2222\nfilter = sshd\nlogpath = /var/log/auth.log\nmaxretry = 3\nbantime = 3600\n\n# HTTP/HTTPS brute force protection\n[nginx-http-auth]\nenabled = true\nfilter = nginx-http-auth\nlogpath = /var/log/nginx/error.log\nmaxretry = 3\n\n[nginx-noscript]\nenabled = true\nfilter = nginx-noscript\nlogpath = /var/log/nginx/access.log\nmaxretry = 6\n\n[nginx-badbots]\nenabled = true\nfilter = nginx-badbots\nlogpath = /var/log/nginx/access.log\nmaxretry = 2\n\n# Apache protection\n[apache-auth]\nenabled = false\nfilter = apache-auth\nlogpath = /var/log/apache2/error.log\nmaxretry = 3\n\n[apache-badbots]\nenabled = false\nfilter = apache-badbots\nlogpath = /var/log/apache2/access.log\nmaxretry = 2\n\n# Database protection\n[mysql]\nenabled = false\nfilter = mysql-auth\nlogpath = /var/log/mysql/error.log\nmaxretry = 3\nbantime = 7200\n\n[postgresql]\nenabled = false\nfilter = postgresql\nlogpath = /var/log/postgresql/postgresql-*-main.log\nmaxretry = 3\n\n# Mail server protection\n[postfix]\nenabled = false\nfilter = postfix\nlogpath = /var/log/mail.log\nmaxretry = 3\n\n[dovecot]\nenabled = false\nfilter = dovecot\nlogpath = /var/log/mail.log\nmaxretry = 3\n\n# FTP protection\n[vsftpd]\nenabled = false\nfilter = vsftpd\nlogpath = /var/log/vsftpd.log\nmaxretry = 3\n\n# Custom application protection\n[custom-app]\nenabled = false\nfilter = custom-app\nlogpath = /var/log/myapp/error.log\nmaxretry = 5\nbantime = 1800\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"custom-filters\" class=\"mobile-header\"\u003eCustom Filters\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create custom filter for web applications\nsudo tee /etc/fail2ban/filter.d/nginx-custom.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n# Custom NGINX filter for advanced protection\n\n[Definition]\nfailregex = \n    # Failed login attempts\n    ^\u0026lt;HOST\u0026gt; -.*POST.*(wp-login\\.php|login|signin|admin).*HTTP/[0-9\\.]+\\\u0026quot; 200\n    # Directory traversal attempts\n    ^\u0026lt;HOST\u0026gt; -.*GET.*(\\.\\./|\\.\\.\\%2F).*HTTP/[0-9\\.]+\\\u0026quot; 404\n    # SQL injection attempts  \n    ^\u0026lt;HOST\u0026gt; -.*GET.*(union|select|insert|cast|set|declare|drop|create|alter|delete|update|replace|truncate).*HTTP/[0-9\\.]+\\\u0026quot; 200\n    # XSS attempts\n    ^\u0026lt;HOST\u0026gt; -.*GET.*(script|javascript|vbscript|onload|onerror|onclick).*HTTP/[0-9\\.]+\\\u0026quot; 200\n    # Suspicious user agents\n    ^\u0026lt;HOST\u0026gt; -.*\\\u0026quot;(.*sqlmap.*|.*nikto.*|.*nessus.*|.*openvas.*|.*python-requests.*|.*curl.*|.*wget.*)\\\u0026quot;$\n    # Too many 404 errors\n    ^\u0026lt;HOST\u0026gt; -.*\\\u0026quot; 404 \n\nignoreregex =\n    # Ignore legitimate requests\n    ^\u0026lt;HOST\u0026gt; -.*GET.*/favicon\\.ico.*HTTP/[0-9\\.]+\\\u0026quot; 404\n    ^\u0026lt;HOST\u0026gt; -.*GET.*/robots\\.txt.*HTTP/[0-9\\.]+\\\u0026quot; 404\nEOF\n\n# Create WordPress-specific filter\nsudo tee /etc/fail2ban/filter.d/wordpress.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n[Definition]\nfailregex = \n    # WordPress login failures\n    ^\u0026lt;HOST\u0026gt; -.*POST.*/wp-login\\.php.*HTTP/[0-9\\.]+\\\u0026quot; 200\n    # WordPress admin access attempts\n    ^\u0026lt;HOST\u0026gt; -.*GET.*/wp-admin.*HTTP/[0-9\\.]+\\\u0026quot; 403\n    # XML-RPC attacks\n    ^\u0026lt;HOST\u0026gt; -.*POST.*/xmlrpc\\.php.*HTTP/[0-9\\.]+\\\u0026quot; 200\n\nignoreregex =\n    # Ignore successful admin logins (adjust pattern as needed)\n    ^\u0026lt;HOST\u0026gt; -.*POST.*/wp-login\\.php.*HTTP/[0-9\\.]+\\\u0026quot; 302\nEOF\n\n# Add WordPress jail to jail.local\nsudo tee -a /etc/fail2ban/jail.local \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n\n[wordpress]\nenabled = true\nfilter = wordpress\nlogpath = /var/log/nginx/access.log\nport = http,https\nmaxretry = 3\nbantime = 1800\nfindtime = 600\nEOF\n\nsudo systemctl restart fail2ban\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"advanced-configuration\" class=\"mobile-header\"\u003eAdvanced Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create advanced fail2ban configuration with multiple actions\nsudo tee /etc/fail2ban/action.d/telegram.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n# Telegram notification action\n\n[Definition]\nactionstart = \nactionstop = \nactioncheck = \nactionban = curl -s \u0026quot;https://api.telegram.org/bot\u0026lt;bot_token\u0026gt;/sendMessage\u0026quot; -d \u0026quot;chat_id=\u0026lt;chat_id\u0026gt;\u0026amp;text=🚫 Fail2Ban: \u0026lt;name\u0026gt; banned \u0026lt;ip\u0026gt; for \u0026lt;failures\u0026gt; failures\u0026quot;\nactionunban = curl -s \u0026quot;https://api.telegram.org/bot\u0026lt;bot_token\u0026gt;/sendMessage\u0026quot; -d \u0026quot;chat_id=\u0026lt;chat_id\u0026gt;\u0026amp;text=✅ Fail2Ban: \u0026lt;name\u0026gt; unbanned \u0026lt;ip\u0026gt;\u0026quot;\n\n[Init]\nbot_token = your_telegram_bot_token\nchat_id = your_telegram_chat_id\nEOF\n\n# Create comprehensive protection configuration\nsudo tee /etc/fail2ban/jail.d/comprehensive.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n# Comprehensive Security Configuration\n\n[DEFAULT]\n# Enhanced ban settings\nbantime.increment = true\nbantime.rndtime = 60\nbantime.maxtime = 86400\nbantime.factor = 2\nbantime.formula = ban.Time * (1\u0026lt;\u0026lt;(ban.Count if ban.Count\u0026lt;20 else 20)) * banFactor\n\n# Multiple actions (ban + notify)\naction = %(action_mwl)s[dest=security@example.com]\n         telegram[bot_token=your_bot_token, chat_id=your_chat_id]\n\n[sshd-aggressive]\nenabled = true\nport = ssh\nfilter = sshd[mode=aggressive]\nlogpath = /var/log/auth.log\nmaxretry = 2\nbantime = 7200\nfindtime = 300\n\n[nginx-limit-req]\nenabled = true\nfilter = nginx-limit-req\nlogpath = /var/log/nginx/error.log\nmaxretry = 10\nbantime = 3600\n\n[nginx-noproxy]\nenabled = true\nfilter = nginx-noproxy\nlogpath = /var/log/nginx/access.log\nmaxretry = 2\nbantime = 86400\n\n# Protect against port scans\n[port-scan]\nenabled = true\nfilter = port-scan\nlogpath = /var/log/messages\nmaxretry = 1\nbantime = 86400\n\n# DNS amplification protection\n[named-refused]\nenabled = false\nfilter = named-refused\nlogpath = /var/log/messages\nmaxretry = 5\nbantime = 3600\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"custom-filters-for-applications\" class=\"mobile-header\"\u003eCustom Filters for Applications\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create filter for Node.js applications\nsudo tee /etc/fail2ban/filter.d/nodejs-auth.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n[Definition]\nfailregex = ^.*Authentication failed for.*from \u0026lt;HOST\u0026gt;.*$\n            ^.*Invalid login attempt.*IP: \u0026lt;HOST\u0026gt;.*$\n            ^.*Failed login.*remote_addr: \u0026lt;HOST\u0026gt;.*$\nignoreregex =\nEOF\n\n# Create filter for Grafana\nsudo tee /etc/fail2ban/filter.d/grafana.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n[Definition]\nfailregex = ^.*logger=context.*error=\u0026quot;invalid username or password\u0026quot;.*remote_addr=\u0026lt;HOST\u0026gt;\n            ^.*logger=context.*error=\u0026quot;user not found\u0026quot;.*remote_addr=\u0026lt;HOST\u0026gt;\nignoreregex =\nEOF\n\n# Create filter for GitLab\nsudo tee /etc/fail2ban/filter.d/gitlab.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n[Definition]\nfailregex = ^.*Failed Login:.*IP: \u0026lt;HOST\u0026gt;.*$\n            ^.*Rack_Attack.*Throttle.*IP: \u0026lt;HOST\u0026gt;.*$\nignoreregex =\nEOF\n\n# Add application-specific jails\nsudo tee /etc/fail2ban/jail.d/applications.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n[nodejs-auth]\nenabled = false\nfilter = nodejs-auth\nlogpath = /var/log/nodejs/app.log\nmaxretry = 5\nbantime = 1800\n\n[grafana]\nenabled = false\nfilter = grafana\nlogpath = /var/log/grafana/grafana.log\nmaxretry = 5\nbantime = 3600\n\n[gitlab]\nenabled = false\nfilter = gitlab\nlogpath = /var/log/gitlab/gitlab-rails/production.log\nmaxretry = 5\nbantime = 3600\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"monitoring-and-management\" class=\"mobile-header\"\u003eMonitoring and Management\u003c/h2\u003e\n\u003ch3 id=\"fail2ban-management-script\" class=\"mobile-header\"\u003eFail2Ban Management Script\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003esudo tee /usr/local/bin/fail2ban-manager.sh \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n#!/bin/bash\n\ncase \u0026quot;${1}\u0026quot; in\n    \u0026quot;status\u0026quot;)\n        echo \u0026quot;=== Fail2Ban Status ===\u0026quot;\n        sudo fail2ban-client status\n        echo \u0026quot;\u0026quot;\n        echo \u0026quot;=== Active Jails ===\u0026quot;\n        for jail in $(sudo fail2ban-client status | grep \u0026quot;Jail list:\u0026quot; | sed -e \u0026#039;s/.*Jail list://\u0026#039; -e \u0026#039;s/,/ /g\u0026#039;); do\n            echo \u0026quot;Jail: $jail\u0026quot;\n            sudo fail2ban-client status $jail\n            echo \u0026quot;\u0026quot;\n        done\n        ;;\n        \n    \u0026quot;unban\u0026quot;)\n        IP=\u0026quot;${2}\u0026quot;\n        if [ -z \u0026quot;$IP\u0026quot; ]; then\n            echo \u0026quot;Usage: $0 unban \u0026lt;ip_address\u0026gt;\u0026quot;\n            exit 1\n        fi\n        \n        echo \u0026quot;Unbanning IP: $IP from all jails\u0026quot;\n        for jail in $(sudo fail2ban-client status | grep \u0026quot;Jail list:\u0026quot; | sed -e \u0026#039;s/.*Jail list://\u0026#039; -e \u0026#039;s/,/ /g\u0026#039;); do\n            sudo fail2ban-client set $jail unbanip $IP 2\u0026gt;/dev/null \u0026amp;\u0026amp; echo \u0026quot;  - Unbanned from $jail\u0026quot;\n        done\n        ;;\n        \n    \u0026quot;ban\u0026quot;)\n        IP=\u0026quot;${2}\u0026quot;\n        JAIL=\u0026quot;${3:-sshd}\u0026quot;\n        if [ -z \u0026quot;$IP\u0026quot; ]; then\n            echo \u0026quot;Usage: $0 ban \u0026lt;ip_address\u0026gt; [jail_name]\u0026quot;\n            exit 1\n        fi\n        \n        echo \u0026quot;Banning IP: $IP in jail: $JAIL\u0026quot;\n        sudo fail2ban-client set $JAIL banip $IP\n        ;;\n        \n    \u0026quot;whitelist\u0026quot;)\n        IP=\u0026quot;${2}\u0026quot;\n        if [ -z \u0026quot;$IP\u0026quot; ]; then\n            echo \u0026quot;Usage: $0 whitelist \u0026lt;ip_address\u0026gt;\u0026quot;\n            exit 1\n        fi\n        \n        echo \u0026quot;Adding $IP to whitelist\u0026quot;\n        sudo sed -i \u0026quot;s/ignoreip = .*/\u0026amp; $IP/\u0026quot; /etc/fail2ban/jail.local\n        sudo systemctl restart fail2ban\n        ;;\n        \n    \u0026quot;logs\u0026quot;)\n        JAIL=\u0026quot;${2:-sshd}\u0026quot;\n        echo \u0026quot;Recent bans for jail: $JAIL\u0026quot;\n        sudo grep \u0026quot;Ban\\|Unban\u0026quot; /var/log/fail2ban.log | grep \u0026quot;$JAIL\u0026quot; | tail -20\n        ;;\n        \n    \u0026quot;stats\u0026quot;)\n        echo \u0026quot;=== Fail2Ban Statistics ===\u0026quot;\n        echo \u0026quot;Total bans today: $(sudo grep \u0026quot;$(date +\u0026#039;%Y-%m-%d\u0026#039;)\u0026quot; /var/log/fail2ban.log | grep -c \u0026quot;Ban \u0026quot;)\u0026quot;\n        echo \u0026quot;Total unbans today: $(sudo grep \u0026quot;$(date +\u0026#039;%Y-%m-%d\u0026#039;)\u0026quot; /var/log/fail2ban.log | grep -c \u0026quot;Unban \u0026quot;)\u0026quot;\n        echo \u0026quot;\u0026quot;\n        echo \u0026quot;Top banned IPs (last 1000 entries):\u0026quot;\n        sudo tail -1000 /var/log/fail2ban.log | grep \u0026quot;Ban \u0026quot; | awk \u0026#039;{print $(NF-1)}\u0026#039; | sort | uniq -c | sort -nr | head -10\n        ;;\n        \n    \u0026quot;test\u0026quot;)\n        JAIL=\u0026quot;${2:-sshd}\u0026quot;\n        LOG_FILE=\u0026quot;${3:-/var/log/auth.log}\u0026quot;\n        echo \u0026quot;Testing filter for jail: $JAIL\u0026quot;\n        echo \u0026quot;Log file: $LOG_FILE\u0026quot;\n        sudo fail2ban-regex $LOG_FILE /etc/fail2ban/filter.d/${JAIL}.conf\n        ;;\n        \n    \u0026quot;reload\u0026quot;)\n        echo \u0026quot;Reloading Fail2Ban configuration...\u0026quot;\n        sudo fail2ban-client reload\n        echo \u0026quot;Configuration reloaded\u0026quot;\n        ;;\n        \n    *)\n        echo \u0026quot;Fail2Ban Management Script\u0026quot;\n        echo \u0026quot;Usage: $0 {status|unban|ban|whitelist|logs|stats|test|reload}\u0026quot;\n        echo \u0026quot;\u0026quot;\n        echo \u0026quot;Examples:\u0026quot;\n        echo \u0026quot;  $0 status                    # Show status of all jails\u0026quot;\n        echo \u0026quot;  $0 unban 192.168.1.100      # Unban IP from all jails\u0026quot;\n        echo \u0026quot;  $0 ban 10.0.0.1 sshd        # Ban IP in specific jail\u0026quot;\n        echo \u0026quot;  $0 whitelist 192.168.1.50   # Add IP to whitelist\u0026quot;\n        echo \u0026quot;  $0 logs sshd                # Show recent logs for jail\u0026quot;\n        echo \u0026quot;  $0 stats                    # Show ban statistics\u0026quot;\n        echo \u0026quot;  $0 test sshd                # Test jail filter\u0026quot;\n        echo \u0026quot;  $0 reload                   # Reload configuration\u0026quot;\n        exit 1\n        ;;\nesac\nEOF\n\nsudo chmod +x /usr/local/bin/fail2ban-manager.sh\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"security-monitoring\" class=\"mobile-header\"\u003eSecurity Monitoring\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create comprehensive monitoring script\nsudo tee /usr/local/bin/fail2ban-monitor.sh \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n#!/bin/bash\nMONITOR_LOG=\u0026quot;/var/log/fail2ban-monitor.log\u0026quot;\n\nlog_message() {\n    echo \u0026quot;$(date \u0026#039;+%Y-%m-%d %H:%M:%S\u0026#039;) - $1\u0026quot; | tee -a ${MONITOR_LOG}\n}\n\n# Check Fail2Ban service\nif systemctl is-active fail2ban \u0026gt;/dev/null 2\u0026gt;\u0026amp;1; then\n    log_message \u0026quot;✓ Fail2Ban service is running\u0026quot;\nelse\n    log_message \u0026quot;✗ Fail2Ban service is not running\u0026quot;\n    exit 1\nfi\n\n# Check jail status\nACTIVE_JAILS=$(sudo fail2ban-client status | grep \u0026quot;Jail list:\u0026quot; | sed -e \u0026#039;s/.*Jail list://\u0026#039; -e \u0026#039;s/,/ /g\u0026#039; | wc -w)\nlog_message \u0026quot;ℹ Active jails: ${ACTIVE_JAILS}\u0026quot;\n\n# Check today\u0026#039;s bans\nBANS_TODAY=$(sudo grep \u0026quot;$(date +\u0026#039;%Y-%m-%d\u0026#039;)\u0026quot; /var/log/fail2ban.log | grep -c \u0026quot;Ban \u0026quot; 2\u0026gt;/dev/null || echo \u0026quot;0\u0026quot;)\nUNBANS_TODAY=$(sudo grep \u0026quot;$(date +\u0026#039;%Y-%m-%d\u0026#039;)\u0026quot; /var/log/fail2ban.log | grep -c \u0026quot;Unban \u0026quot; 2\u0026gt;/dev/null || echo \u0026quot;0\u0026quot;)\nlog_message \u0026quot;ℹ Today\u0026#039;s activity: ${BANS_TODAY} bans, ${UNBANS_TODAY} unbans\u0026quot;\n\n# Check currently banned IPs\nTOTAL_BANNED=0\nfor jail in $(sudo fail2ban-client status | grep \u0026quot;Jail list:\u0026quot; | sed -e \u0026#039;s/.*Jail list://\u0026#039; -e \u0026#039;s/,/ /g\u0026#039;); do\n    JAIL_BANNED=$(sudo fail2ban-client status $jail | grep \u0026quot;Currently banned:\u0026quot; | awk \u0026#039;{print $3}\u0026#039;)\n    TOTAL_BANNED=$((TOTAL_BANNED + JAIL_BANNED))\ndone\n\nlog_message \u0026quot;ℹ Currently banned IPs: ${TOTAL_BANNED}\u0026quot;\n\n# Check for configuration errors\nif ! sudo fail2ban-client status \u0026gt;/dev/null 2\u0026gt;\u0026amp;1; then\n    log_message \u0026quot;⚠ Fail2Ban configuration errors detected\u0026quot;\n    sudo fail2ban-client status 2\u0026gt;\u0026amp;1 | head -5 \u0026gt;\u0026gt; ${MONITOR_LOG}\nfi\n\n# Check log file accessibility\nfor jail in $(sudo fail2ban-client status | grep \u0026quot;Jail list:\u0026quot; | sed -e \u0026#039;s/.*Jail list://\u0026#039; -e \u0026#039;s/,/ /g\u0026#039;); do\n    LOG_PATH=$(sudo fail2ban-client get $jail logpath 2\u0026gt;/dev/null)\n    if [ -n \u0026quot;$LOG_PATH\u0026quot; ] \u0026amp;\u0026amp; [ ! -r \u0026quot;$LOG_PATH\u0026quot; ]; then\n        log_message \u0026quot;⚠ Cannot read log file for $jail: $LOG_PATH\u0026quot;\n    fi\ndone\n\nlog_message \u0026quot;Fail2Ban monitoring completed\u0026quot;\nEOF\n\nsudo chmod +x /usr/local/bin/fail2ban-monitor.sh\n\n# Schedule monitoring every 15 minutes\necho \u0026quot;*/15 * * * * root /usr/local/bin/fail2ban-monitor.sh\u0026quot; | sudo tee -a /etc/crontab\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"geographic-blocking-integration\" class=\"mobile-header\"\u003eGeographic Blocking Integration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install GeoIP for country-based blocking\nsudo apt install -y geoip-database geoip-bin  # Ubuntu/Debian\nsudo yum install -y GeoIP GeoIP-data          # RHEL/CentOS\n\n# Create geographic blocking filter\nsudo tee /etc/fail2ban/filter.d/geoip-block.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n[Definition]\n# Block connections from specific countries\nfailregex = ^\u0026lt;HOST\u0026gt; -\nignoreregex =\n\n[Init]\n# Countries to block (ISO country codes)\ncountries = CN,RU,KP,IR\nEOF\n\n# Create action for geographic blocking\nsudo tee /etc/fail2ban/action.d/geoip-block.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n[Definition]\nactioncheck = \nactionstart = \nactionstop = \nactionban = COUNTRY=$(geoiplookup \u0026lt;ip\u0026gt; | awk -F: \u0026#039;{print $2}\u0026#039; | awk \u0026#039;{print $1}\u0026#039;); if echo \u0026quot;CN RU KP IR\u0026quot; | grep -q \u0026quot;$COUNTRY\u0026quot;; then iptables -A f2b-\u0026lt;name\u0026gt; -s \u0026lt;ip\u0026gt; -j DROP; fi\nactionunban = iptables -D f2b-\u0026lt;name\u0026gt; -s \u0026lt;ip\u0026gt; -j DROP 2\u0026gt;/dev/null || true\n\n[Init]\nname = geoip-block\nEOF\n\n# Add geographic blocking jail\nsudo tee /etc/fail2ban/jail.d/geoip.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n[geoip-block]\nenabled = false  # Enable if needed\nfilter = geoip-block\naction = geoip-block\nlogpath = /var/log/nginx/access.log\nmaxretry = 1\nbantime = 86400\nfindtime = 60\nEOF\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"integration-examples\" class=\"mobile-header\"\u003eIntegration Examples\u003c/h2\u003e\n\u003ch3 id=\"web-server-integration\" class=\"mobile-header\"\u003eWeb Server Integration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# NGINX: Enable logging for Fail2Ban\nsudo tee -a /etc/nginx/nginx.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n\nhttp {\n    # Log format for Fail2Ban\n    log_format fail2ban \u0026#039;\\$remote_addr - \\$remote_user [\\$time_local] \u0026#039;\n                       \u0026#039;\u0026quot;\\$request\u0026quot; \\$status \\$body_bytes_sent \u0026#039;\n                       \u0026#039;\u0026quot;\\$http_referer\u0026quot; \u0026quot;\\$http_user_agent\u0026quot;\u0026#039;;\n    \n    # Enable access and error logging\n    access_log /var/log/nginx/access.log fail2ban;\n    error_log /var/log/nginx/error.log warn;\n}\nEOF\n\nsudo nginx -t \u0026amp;\u0026amp; sudo systemctl reload nginx\n\n# Apache: Enable logging\nsudo tee -a /etc/apache2/apache2.conf \u0026gt; /dev/null \u0026lt;\u0026lt;EOF\n\n# Enhanced logging for Fail2Ban\nLogFormat \u0026quot;%h %l %u %t \\\u0026quot;%r\\\u0026quot; %\u0026gt;s %O \\\u0026quot;%{Referer}i\\\u0026quot; \\\u0026quot;%{User-Agent}i\\\u0026quot;\u0026quot; fail2ban\nCustomLog \\${APACHE_LOG_DIR}/access.log fail2ban\nErrorLog \\${APACHE_LOG_DIR}/error.log\nLogLevel warn\nEOF\n\nsudo systemctl reload apache2\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"backup-and-disaster-recovery\" class=\"mobile-header\"\u003eBackup and Disaster Recovery\u003c/h2\u003e\n\u003ch3 id=\"configuration-backup\" class=\"mobile-header\"\u003eConfiguration Backup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003esudo tee /usr/local/bin/fail2ban-backup.sh \u0026gt; /dev/null \u0026lt;\u0026lt;\u0026#039;EOF\u0026#039;\n#!/bin/bash\nBACKUP_DIR=\u0026quot;/backup/fail2ban\u0026quot;\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p ${BACKUP_DIR}\n\necho \u0026quot;Starting Fail2Ban backup...\u0026quot;\n\n# Backup configuration files\ntar -czf ${BACKUP_DIR}/fail2ban-config-${DATE}.tar.gz \\\n    /etc/fail2ban/ \\\n    /var/lib/fail2ban/\n\n# Export current ban list\nsudo fail2ban-client status | grep \u0026quot;Jail list:\u0026quot; | sed -e \u0026#039;s/.*Jail list://\u0026#039; -e \u0026#039;s/,/ /g\u0026#039; \u0026gt; /tmp/jails.txt\nwhile read jail; do\n    sudo fail2ban-client status $jail | grep \u0026quot;Banned IP list:\u0026quot; \u0026gt; ${BACKUP_DIR}/banned-ips-${jail}-${DATE}.txt\ndone \u0026lt; /tmp/jails.txt\n\n# Keep last 30 backups\nfind ${BACKUP_DIR} -name \u0026quot;fail2ban-*\u0026quot; -type f -mtime +30 -delete\n\necho \u0026quot;Fail2Ban backup completed: ${DATE}\u0026quot;\nEOF\n\nsudo chmod +x /usr/local/bin/fail2ban-backup.sh\n\n# Schedule weekly backups\necho \u0026quot;0 4 * * 0 root /usr/local/bin/fail2ban-backup.sh\u0026quot; | sudo tee -a /etc/crontab\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"troubleshooting\" class=\"mobile-header\"\u003eTroubleshooting\u003c/h2\u003e\n\u003ch3 id=\"common-issues-and-solutions\" class=\"mobile-header\"\u003eCommon Issues and Solutions\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check Fail2Ban service status\nsudo systemctl status fail2ban\nsudo journalctl -u fail2ban -f\n\n# Check jail status\nsudo fail2ban-client status\nsudo fail2ban-client status sshd\n\n# Test filter patterns\nsudo fail2ban-regex /var/log/auth.log /etc/fail2ban/filter.d/sshd.conf\n\n# Check banned IPs\nsudo fail2ban-client status sshd\nsudo iptables -L -n | grep f2b\n\n# View Fail2Ban logs\nsudo tail -f /var/log/fail2ban.log\n\n# Unban IP address\nsudo fail2ban-client set sshd unbanip 192.168.1.100\n\n# Ban IP manually\nsudo fail2ban-client set sshd banip 10.0.0.1\n\n# Reload configuration\nsudo fail2ban-client reload\n\n# Test SSH jail\nsudo grep \u0026quot;Failed password\u0026quot; /var/log/auth.log | head -5\nsudo fail2ban-regex /var/log/auth.log /etc/fail2ban/filter.d/sshd.conf\n\n# Check iptables rules\nsudo iptables -L f2b-sshd -n\nsudo iptables -L INPUT -n | grep f2b\n\n# Debug mode\nsudo fail2ban-server -f -v\n\n# Configuration validation\nsudo fail2ban-client -t\n\n# Check log file permissions\nls -la /var/log/auth.log\nls -la /var/log/nginx/access.log\n\n# Monitor real-time bans\nsudo tail -f /var/log/fail2ban.log | grep \u0026quot;Ban\\|Unban\u0026quot;\n\n# Check jail configuration\nsudo fail2ban-client get sshd maxretry\nsudo fail2ban-client get sshd bantime\nsudo fail2ban-client get sshd findtime\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"additional-resources\" class=\"mobile-header\"\u003eAdditional Resources\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://fail2ban.readthedocs.io/\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eFail2Ban Documentation\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://github.com/fail2ban/fail2ban\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eFail2Ban GitHub\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003ca href=\"https://fail2ban.readthedocs.io/en/stable/filters.html\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eFilter Configuration Guide\u003c/a\u003e\u003c/li\u003e\n\u003cp class=\"mobile-paragraph\"\u003e---\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This guide is part of the \u003ca href=\"https://howtomgr.github.io\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eHowToMgr\u003c/a\u003e collection.\u003c/p\u003e","readTime":"12 min","wordCount":2249,"lastBuilt":"2025-09-14T01:30:35.925Z"},"category":{"key":"security","name":"Security","description":"Security tools and authentication systems","icon":"🔒","color":"#ff5555","keywords":["vault","authelia","keycloak","pihole","fail2ban","wireguard","openvpn"]},"relatedGuides":[{"name":"keycloak","displayName":"Keycloak","slug":"keycloak","description":"Repo for keycloak","category":"security","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/keycloak","updatedAt":"2025-09-08T03:10:05Z","createdAt":"2025-09-08T03:09:55Z","readmeRaw":"## 👋 Welcome to keycloak 🚀  \n\nkeycloak README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-keycloak\" class=\"mobile-header\"\u003e👋 Welcome to keycloak 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003ekeycloak README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T01:30:44.485Z"},{"name":"openvpn","displayName":"Openvpn","slug":"openvpn","description":"Repo for openvpn","category":"security","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/openvpn","updatedAt":"2025-09-08T03:13:07Z","createdAt":"2025-09-08T03:12:57Z","readmeRaw":"## 👋 Welcome to openvpn 🚀  \n\nopenvpn README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-openvpn\" class=\"mobile-header\"\u003e👋 Welcome to openvpn 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eopenvpn README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T01:30:42.310Z"},{"name":"pihole","displayName":"Pi-hole","slug":"pihole","description":"Repo for pihole","category":"security","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/pihole","updatedAt":"2025-09-08T03:14:18Z","createdAt":"2025-09-08T03:14:08Z","readmeRaw":"## 👋 Welcome to pihole 🚀  \n\npihole README  \n  \n  \n## Author  \n\n🤖 casjay: [Github](https://github.com/casjay) 🤖  \n","readmeHtml":"\u003ch2 id=\"welcome-to-pihole\" class=\"mobile-header\"\u003e👋 Welcome to pihole 🚀  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003epihole README  \u003c/p\u003e\n\u003ch2 id=\"author\" class=\"mobile-header\"\u003eAuthor  \u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e🤖 casjay: \u003ca href=\"https://github.com/casjay\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eGithub\u003c/a\u003e 🤖  \u003c/p\u003e","readTime":"1 min","wordCount":15,"lastBuilt":"2025-09-14T01:30:41.333Z"}]},"__N_SSG":true},"page":"/[category]/[guide]","query":{"category":"security","guide":"fail2ban"},"buildId":"Bpk6_onWDzX5EeMLHWxll","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
