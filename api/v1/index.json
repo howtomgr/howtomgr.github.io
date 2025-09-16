@@ -9,7 +9,7 @@
   "meta": {
     "total_guides": 583,
     "total_categories": 102,
-    "last_updated": "2025-09-16T17:25:37.578Z"
+    "last_updated": "2025-09-16T18:17:29.012Z"
   },
   "categories": [
     {
@@ -440,6 +440,13 @@
       "api_url": "https://howtomgr.github.io/api/v1/home-automation.json"
     },
     {
+      "name": "streaming-servers",
+      "display_name": "Streaming servers",
+      "count": 2,
+      "url": "https://howtomgr.github.io/streaming-servers/",
+      "api_url": "https://howtomgr.github.io/api/v1/streaming-servers.json"
+    },
+    {
       "name": "media",
       "display_name": "Media",
       "count": 1,
@@ -526,7 +533,7 @@
     {
       "name": "mailing-lists",
       "display_name": "Mailing lists",
-      "count": 5,
+      "count": 4,
       "url": "https://howtomgr.github.io/mailing-lists/",
       "api_url": "https://howtomgr.github.io/api/v1/mailing-lists.json"
     },
@@ -664,13 +671,6 @@
       "api_url": "https://howtomgr.github.io/api/v1/surveillance.json"
     },
     {
-      "name": "streaming-servers",
-      "display_name": "Streaming servers",
-      "count": 1,
-      "url": "https://howtomgr.github.io/streaming-servers/",
-      "api_url": "https://howtomgr.github.io/api/v1/streaming-servers.json"
-    },
-    {
       "name": "reverse-proxies",
       "display_name": "Reverse proxies",
       "count": 3,
@@ -791,6 +791,7 @@
       "/api/v1/vulnerability-scanning.json",
       "/api/v1/container-registries.json",
       "/api/v1/home-automation.json",
+      "/api/v1/streaming-servers.json",
       "/api/v1/media.json",
       "/api/v1/virtualization.json",
       "/api/v1/time-series-databases.json",
@@ -823,7 +824,6 @@
       "/api/v1/operating-systems.json",
       "/api/v1/anti-spam.json",
       "/api/v1/surveillance.json",
-      "/api/v1/streaming-servers.json",
       "/api/v1/reverse-proxies.json",
       "/api/v1/code-quality.json",
       "/api/v1/infrastructure-as-code.json",
@@ -1035,6 +1035,7 @@
       "/api/v1/miscellaneous/hubitat.json",
       "/api/v1/static-site-generators/hugo.json",
       "/api/v1/miscellaneous/hyperledger_fabric.json",
+      "/api/v1/streaming-servers/icecast.json",
       "/api/v1/miscellaneous/icinga.json",
       "/api/v1/network-monitoring/iftop.json",
       "/api/v1/education/ilias.json",
@@ -1221,7 +1222,6 @@
       "/api/v1/miscellaneous/phabricator.json",
       "/api/v1/miscellaneous/photoprism.json",
       "/api/v1/miscellaneous/phpbb.json",
-      "/api/v1/mailing-lists/phplist.json",
       "/api/v1/mailing-lists/phplist.json",
       "/api/v1/database-management/phpmyadmin.json",
       "/api/v1/dns-filtering/pihole.json",

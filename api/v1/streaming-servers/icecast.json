@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T18:17:29.097Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "icecast",
+    "title": "Icecast Installation Guide",
+    "description": "Icecast is a free and open-source Streaming Server. Streaming media server",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "streaming-servers",
+    "subcategory": "streaming-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      2048,
+      8000
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "streaming-servers",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/streaming-servers/icecast/",
+    "api": "https://howtomgr.github.io/api/v1/streaming-servers/icecast.json",
+    "documentation_url": "https://howtomgr.github.io/streaming-servers/icecast",
+    "website_url": "https://howtomgr.github.io/streaming-servers/icecast",
+    "github_url": "https://github.com/howtomgr/icecast",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T17:19:53Z",
+      "created": "2025-09-16T03:22:07Z"
+    },
+    "guide_info": {
+      "word_count": 1978,
+      "estimated_read_time": "10 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T18:16:32.748Z"
+    }
+  }
+}
