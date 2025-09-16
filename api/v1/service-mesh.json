@@ -1,0 +1,194 @@
+{
+  "category": {
+    "name": "service-mesh",
+    "display_name": "Service mesh",
+    "total_guides": 4
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.759Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "envoy",
+      "title": "envoy Installation Guide",
+      "description": "envoy is a free and open-source edge and service proxy. Envoy provides high-performance edge/service proxy",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "service-mesh",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/service-mesh/envoy/",
+      "api": "https://howtomgr.github.io/api/v1/service-mesh/envoy.json",
+      "github": "https://github.com/howtomgr/envoy"
+    },
+    {
+      "name": "istio",
+      "title": "istio Installation Guide",
+      "description": "istio is a free and open-source service mesh. Istio provides open platform to connect, manage, and secure microservices",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "service-mesh",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/service-mesh/istio/",
+      "api": "https://howtomgr.github.io/api/v1/service-mesh/istio.json",
+      "github": "https://github.com/howtomgr/istio"
+    },
+    {
+      "name": "kuma",
+      "title": "kuma Installation Guide",
+      "description": "kuma is a free and open-source service mesh. Kuma provides universal service mesh for multi-zone deployments",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "service-mesh",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/service-mesh/kuma/",
+      "api": "https://howtomgr.github.io/api/v1/service-mesh/kuma.json",
+      "github": "https://github.com/howtomgr/kuma"
+    },
+    {
+      "name": "linkerd",
+      "title": "linkerd Installation Guide",
+      "description": "linkerd is a free and open-source service mesh. Linkerd provides ultralight, security-focused service mesh for Kubernetes",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "service-mesh",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/service-mesh/linkerd/",
+      "api": "https://howtomgr.github.io/api/v1/service-mesh/linkerd.json",
+      "github": "https://github.com/howtomgr/linkerd"
+    }
+  ]
+}

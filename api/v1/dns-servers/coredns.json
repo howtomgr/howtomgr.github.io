@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.785Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "coredns",
+    "title": "CoreDNS Installation Guide",
+    "description": "CoreDNS is a free and open-source DNS Server. A flexible, extensible DNS server written in Go",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "dns-servers",
+    "subcategory": "dns-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      53,
+      80,
+      443,
+      2048
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "dns-servers",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/dns-servers/coredns/",
+    "api": "https://howtomgr.github.io/api/v1/dns-servers/coredns.json",
+    "documentation_url": "https://howtomgr.github.io/dns-servers/coredns",
+    "website_url": "https://howtomgr.github.io/dns-servers/coredns",
+    "github_url": "https://github.com/howtomgr/coredns",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:04:14Z",
+      "created": "2025-09-16T02:28:41Z"
+    },
+    "guide_info": {
+      "word_count": 1891,
+      "estimated_read_time": "10 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:33.186Z"
+    }
+  }
+}

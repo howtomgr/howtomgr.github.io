@@ -1,0 +1,103 @@
+{
+  "category": {
+    "name": "container-security",
+    "display_name": "Container security",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.752Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "anchore",
+      "title": "anchore Installation Guide",
+      "description": "anchore is a free and open-source container analysis. Anchore provides deep image inspection and vulnerability scanning",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "container-security",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/container-security/anchore/",
+      "api": "https://howtomgr.github.io/api/v1/container-security/anchore.json",
+      "github": "https://github.com/howtomgr/anchore"
+    },
+    {
+      "name": "clair",
+      "title": "clair Installation Guide",
+      "description": "clair is a free and open-source container vulnerability scanner. Clair provides static analysis of vulnerabilities in containers",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "container-security",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/container-security/clair/",
+      "api": "https://howtomgr.github.io/api/v1/container-security/clair.json",
+      "github": "https://github.com/howtomgr/clair"
+    }
+  ]
+}

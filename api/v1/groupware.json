@@ -1,0 +1,106 @@
+{
+  "category": {
+    "name": "groupware",
+    "display_name": "Groupware",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.763Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "kolab",
+      "title": "Kolab Installation Guide",
+      "description": "Kolab is a free and open-source Groupware Suite. A comprehensive groupware solution with email, calendaring, and collaboration",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "groupware",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/groupware/kolab/",
+      "api": "https://howtomgr.github.io/api/v1/groupware/kolab.json",
+      "github": "https://github.com/howtomgr/kolab"
+    },
+    {
+      "name": "kopano",
+      "title": "Kopano Installation Guide",
+      "description": "Kopano is a free and open-source Groupware. An open-source groupware suite with Outlook compatibility",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "groupware",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/groupware/kopano/",
+      "api": "https://howtomgr.github.io/api/v1/groupware/kopano.json",
+      "github": "https://github.com/howtomgr/kopano"
+    }
+  ]
+}

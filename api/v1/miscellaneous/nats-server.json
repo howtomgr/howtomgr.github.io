@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.844Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "nats-server",
+    "title": "nats Installation Guide",
+    "description": "nats is a free and open-source cloud native messaging system. NATS provides publish-subscribe, request-reply, and queue groups with at-most-once delivery, serving as a lightweight alternative to RabbitMQ or Kafka",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      4222,
+      8222
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/nats-server/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/nats-server.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/nats-server",
+    "website_url": "https://howtomgr.github.io/miscellaneous/nats-server",
+    "github_url": "https://github.com/howtomgr/nats-server",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:48:27Z",
+      "created": "2025-09-16T03:48:17Z"
+    },
+    "guide_info": {
+      "word_count": 1172,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:57:55.104Z"
+    }
+  }
+}

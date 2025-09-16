@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.779Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "ceph",
+    "title": "ceph Installation Guide",
+    "description": "ceph is a free and open-source distributed storage. Ceph provides massively scalable distributed storage system",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "distributed-storage",
+    "subcategory": "distributed-storage",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      6789
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "distributed-storage",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/distributed-storage/ceph/",
+    "api": "https://howtomgr.github.io/api/v1/distributed-storage/ceph.json",
+    "documentation_url": "https://howtomgr.github.io/distributed-storage/ceph",
+    "website_url": "https://howtomgr.github.io/distributed-storage/ceph",
+    "github_url": "https://github.com/howtomgr/ceph",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:01:04Z",
+      "created": "2025-09-16T02:24:41Z"
+    },
+    "guide_info": {
+      "word_count": 1154,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:43.051Z"
+    }
+  }
+}

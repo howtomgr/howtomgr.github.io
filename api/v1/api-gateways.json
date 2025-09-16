@@ -1,0 +1,238 @@
+{
+  "category": {
+    "name": "api-gateways",
+    "display_name": "Api gateways",
+    "total_guides": 5
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.760Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "fusio",
+      "title": "fusio Installation Guide",
+      "description": "fusio is a free and open-source API management. Fusio provides open source API management platform to build REST APIs",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/fusio/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/fusio.json",
+      "github": "https://github.com/howtomgr/fusio"
+    },
+    {
+      "name": "gloo",
+      "title": "gloo Installation Guide",
+      "description": "gloo is a free and open-source API gateway. Gloo provides next-generation API gateway built on Envoy proxy",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/gloo/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/gloo.json",
+      "github": "https://github.com/howtomgr/gloo"
+    },
+    {
+      "name": "gravitee",
+      "title": "gravitee Installation Guide",
+      "description": "gravitee is a free and open-source API management. Gravitee provides flexible, lightweight and open source API management",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/gravitee/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/gravitee.json",
+      "github": "https://github.com/howtomgr/gravitee"
+    },
+    {
+      "name": "kong",
+      "title": "kong Installation Guide",
+      "description": "kong is a free and open-source API gateway. Kong provides cloud-native API gateway built on nginx",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/kong/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/kong.json",
+      "github": "https://github.com/howtomgr/kong"
+    },
+    {
+      "name": "krakend",
+      "title": "krakend Installation Guide",
+      "description": "krakend is a free and open-source API gateway. KrakenD provides stateless, distributed, high-performance API gateway",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/krakend/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/krakend.json",
+      "github": "https://github.com/howtomgr/krakend"
+    }
+  ]
+}

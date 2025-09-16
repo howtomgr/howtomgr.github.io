@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.834Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "manticore",
+    "title": "manticore Installation Guide",
+    "description": "manticore is a free and open-source database for search. Manticore provides fast database for search with SQL support",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "search-engines",
+    "subcategory": "search-engines",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      9306
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "search-engines",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/search-engines/manticore/",
+    "api": "https://howtomgr.github.io/api/v1/search-engines/manticore.json",
+    "documentation_url": "https://howtomgr.github.io/search-engines/manticore",
+    "website_url": "https://howtomgr.github.io/search-engines/manticore",
+    "github_url": "https://github.com/howtomgr/manticore",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:39:46Z",
+      "created": "2025-09-16T03:39:36Z"
+    },
+    "guide_info": {
+      "word_count": 1158,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:11.539Z"
+    }
+  }
+}

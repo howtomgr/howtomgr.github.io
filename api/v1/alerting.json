@@ -1,0 +1,59 @@
+{
+  "category": {
+    "name": "alerting",
+    "display_name": "Alerting",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.765Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "alertmanager",
+      "title": "prometheus-alertmanager Installation Guide",
+      "description": "prometheus-alertmanager is a free and open-source alert handling component for Prometheus. Part of the Prometheus ecosystem, Alertmanager handles alerts sent by Prometheus server and routes them to receivers like email, Slack, or PagerDuty",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "alerting",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/alerting/alertmanager/",
+      "api": "https://howtomgr.github.io/api/v1/alerting/alertmanager.json",
+      "github": "https://github.com/howtomgr/alertmanager"
+    }
+  ]
+}

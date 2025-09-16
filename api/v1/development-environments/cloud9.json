@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.782Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "cloud9",
+    "title": "cloud9 Installation Guide",
+    "description": "cloud9 is a free and open-source cloud development. Cloud9 provides cloud-based integrated development environment",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "development-environments",
+    "subcategory": "development-environments",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      8080
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "development-environments",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/development-environments/cloud9/",
+    "api": "https://howtomgr.github.io/api/v1/development-environments/cloud9.json",
+    "documentation_url": "https://howtomgr.github.io/development-environments/cloud9",
+    "website_url": "https://howtomgr.github.io/development-environments/cloud9",
+    "github_url": "https://github.com/howtomgr/cloud9",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:02:30Z",
+      "created": "2025-09-16T02:26:23Z"
+    },
+    "guide_info": {
+      "word_count": 1150,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:38.728Z"
+    }
+  }
+}

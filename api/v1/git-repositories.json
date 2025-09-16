@@ -1,0 +1,106 @@
+{
+  "category": {
+    "name": "git-repositories",
+    "display_name": "Git repositories",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.760Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "gitea",
+      "title": "gitea Installation Guide",
+      "description": "gitea is a free and open-source lightweight self-hosted Git service. Written in Go, Gitea provides a lightweight alternative to GitHub, GitLab, or Bitbucket for self-hosted Git repository management",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "git-repositories",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/git-repositories/gitea/",
+      "api": "https://howtomgr.github.io/api/v1/git-repositories/gitea.json",
+      "github": "https://github.com/howtomgr/gitea"
+    },
+    {
+      "name": "gitlab",
+      "title": "GitLab Installation and Configuration Guide",
+      "description": "Gitlab installation and configuration guide",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "git-repositories",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "web-services",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/git-repositories/gitlab/",
+      "api": "https://howtomgr.github.io/api/v1/git-repositories/gitlab.json",
+      "github": "https://github.com/howtomgr/gitlab"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "category": {
+    "name": "cms",
+    "display_name": "Cms",
+    "total_guides": 4
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.758Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "drupal",
+      "title": "drupal Installation Guide",
+      "description": "drupal is a free and open-source content management framework. Drupal provides flexible CMS framework for ambitious digital experiences",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "cms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/cms/drupal/",
+      "api": "https://howtomgr.github.io/api/v1/cms/drupal.json",
+      "github": "https://github.com/howtomgr/drupal"
+    },
+    {
+      "name": "ghost",
+      "title": "ghost Installation Guide",
+      "description": "ghost is a free and open-source publishing platform. Ghost provides modern publishing platform for professional publishers",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "cms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/cms/ghost/",
+      "api": "https://howtomgr.github.io/api/v1/cms/ghost.json",
+      "github": "https://github.com/howtomgr/ghost"
+    },
+    {
+      "name": "grav",
+      "title": "grav Installation Guide",
+      "description": "grav is a free and open-source flat-file CMS. Grav provides fast, simple, flexible file-based CMS",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "cms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/cms/grav/",
+      "api": "https://howtomgr.github.io/api/v1/cms/grav.json",
+      "github": "https://github.com/howtomgr/grav"
+    },
+    {
+      "name": "joomla",
+      "title": "joomla Installation Guide",
+      "description": "joomla is a free and open-source content management system. Joomla provides powerful CMS for building websites and applications",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "cms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/cms/joomla/",
+      "api": "https://howtomgr.github.io/api/v1/cms/joomla.json",
+      "github": "https://github.com/howtomgr/joomla"
+    }
+  ]
+}

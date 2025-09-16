@@ -1,0 +1,283 @@
+{
+  "category": {
+    "name": "distributed-storage",
+    "display_name": "Distributed storage",
+    "total_guides": 6
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.754Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "beegfs",
+      "title": "beegfs Installation Guide",
+      "description": "beegfs is a free and open-source parallel file system. BeeGFS provides parallel file system for performance-critical environments",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "distributed-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/distributed-storage/beegfs/",
+      "api": "https://howtomgr.github.io/api/v1/distributed-storage/beegfs.json",
+      "github": "https://github.com/howtomgr/beegfs"
+    },
+    {
+      "name": "ceph",
+      "title": "ceph Installation Guide",
+      "description": "ceph is a free and open-source distributed storage. Ceph provides massively scalable distributed storage system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "distributed-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/distributed-storage/ceph/",
+      "api": "https://howtomgr.github.io/api/v1/distributed-storage/ceph.json",
+      "github": "https://github.com/howtomgr/ceph"
+    },
+    {
+      "name": "glusterfs",
+      "title": "glusterfs Installation Guide",
+      "description": "glusterfs is a free and open-source scale-out storage. GlusterFS provides scale-out network-attached storage file system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "distributed-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/distributed-storage/glusterfs/",
+      "api": "https://howtomgr.github.io/api/v1/distributed-storage/glusterfs.json",
+      "github": "https://github.com/howtomgr/glusterfs"
+    },
+    {
+      "name": "juicefs",
+      "title": "juicefs Installation Guide",
+      "description": "juicefs is a free and open-source POSIX file system. JuiceFS provides POSIX-compatible file system built on object storage",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "distributed-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/distributed-storage/juicefs/",
+      "api": "https://howtomgr.github.io/api/v1/distributed-storage/juicefs.json",
+      "github": "https://github.com/howtomgr/juicefs"
+    },
+    {
+      "name": "lizardfs",
+      "title": "lizardfs Installation Guide",
+      "description": "lizardfs is a free and open-source distributed file system. LizardFS provides distributed file system for data centers",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "distributed-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/distributed-storage/lizardfs/",
+      "api": "https://howtomgr.github.io/api/v1/distributed-storage/lizardfs.json",
+      "github": "https://github.com/howtomgr/lizardfs"
+    },
+    {
+      "name": "moosefs",
+      "title": "moosefs Installation Guide",
+      "description": "moosefs is a free and open-source distributed file system. MooseFS provides fault-tolerant distributed file system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "distributed-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/distributed-storage/moosefs/",
+      "api": "https://howtomgr.github.io/api/v1/distributed-storage/moosefs.json",
+      "github": "https://github.com/howtomgr/moosefs"
+    }
+  ]
+}

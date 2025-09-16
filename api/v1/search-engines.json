@@ -1,0 +1,194 @@
+{
+  "category": {
+    "name": "search-engines",
+    "display_name": "Search engines",
+    "total_guides": 4
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.758Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "elasticsearch",
+      "title": "Elasticsearch Installation Guide",
+      "description": "Elasticsearch is a free and open-source distributed, RESTful search and analytics engine. Originally developed by Shay Banon and now maintained by Elastic N.V., Elasticsearch is built on Apache Lucene and designed for horizontal scalability, reliability, and real-time search. It serves as a FOSS alternative to commercial search solutions like Amazon CloudSearch, Azure Cognitive Search, or Splunk Enterprise, offering enterprise-grade features including full-text search, aggregations, and analytics without licensing costs, with features like distributed architecture, RESTful API, and multi-tenancy.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/elasticsearch/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/elasticsearch.json",
+      "github": "https://github.com/howtomgr/elasticsearch"
+    },
+    {
+      "name": "lnx",
+      "title": "lnx Installation Guide",
+      "description": "lnx is a free and open-source search engine. lnx provides fast, lightweight search engine written in Rust",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/lnx/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/lnx.json",
+      "github": "https://github.com/howtomgr/lnx"
+    },
+    {
+      "name": "manticore",
+      "title": "manticore Installation Guide",
+      "description": "manticore is a free and open-source database for search. Manticore provides fast database for search with SQL support",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/manticore/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/manticore.json",
+      "github": "https://github.com/howtomgr/manticore"
+    },
+    {
+      "name": "meilisearch",
+      "title": "meilisearch Installation Guide",
+      "description": "meilisearch is a free and open-source search API. Meilisearch provides instant search with typo tolerance",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/meilisearch/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/meilisearch.json",
+      "github": "https://github.com/howtomgr/meilisearch"
+    }
+  ]
+}

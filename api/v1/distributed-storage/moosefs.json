@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.842Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "moosefs",
+    "title": "moosefs Installation Guide",
+    "description": "moosefs is a free and open-source distributed file system. MooseFS provides fault-tolerant distributed file system",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "distributed-storage",
+    "subcategory": "distributed-storage",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      9420
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "distributed-storage",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/distributed-storage/moosefs/",
+    "api": "https://howtomgr.github.io/api/v1/distributed-storage/moosefs.json",
+    "documentation_url": "https://howtomgr.github.io/distributed-storage/moosefs",
+    "website_url": "https://howtomgr.github.io/distributed-storage/moosefs",
+    "github_url": "https://github.com/howtomgr/moosefs",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:46:12Z",
+      "created": "2025-09-16T03:46:02Z"
+    },
+    "guide_info": {
+      "word_count": 1154,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:57:59.313Z"
+    }
+  }
+}

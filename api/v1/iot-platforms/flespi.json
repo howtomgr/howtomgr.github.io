@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.798Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "flespi",
+    "title": "flespi Installation Guide",
+    "description": "flespi is a free and open-source telematics gateway. Flespi provides telematics gateway platform",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "iot-platforms",
+    "subcategory": "iot-platforms",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      1883
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "iot-platforms",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/iot-platforms/flespi/",
+    "api": "https://howtomgr.github.io/api/v1/iot-platforms/flespi.json",
+    "documentation_url": "https://howtomgr.github.io/iot-platforms/flespi",
+    "website_url": "https://howtomgr.github.io/iot-platforms/flespi",
+    "github_url": "https://github.com/howtomgr/flespi",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:11:35Z",
+      "created": "2025-09-16T02:37:48Z"
+    },
+    "guide_info": {
+      "word_count": 1151,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:07.488Z"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.800Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "foreman",
+    "title": "foreman Installation Guide",
+    "description": "foreman is a free and open-source lifecycle management. Foreman provides complete lifecycle management for servers",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "infrastructure-management",
+    "subcategory": "infrastructure-management",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "infrastructure-management",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/infrastructure-management/foreman/",
+    "api": "https://howtomgr.github.io/api/v1/infrastructure-management/foreman.json",
+    "documentation_url": "https://howtomgr.github.io/infrastructure-management/foreman",
+    "website_url": "https://howtomgr.github.io/infrastructure-management/foreman",
+    "github_url": "https://github.com/howtomgr/foreman",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:12:11Z",
+      "created": "2025-09-16T02:38:36Z"
+    },
+    "guide_info": {
+      "word_count": 1154,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:05.578Z"
+    }
+  }
+}

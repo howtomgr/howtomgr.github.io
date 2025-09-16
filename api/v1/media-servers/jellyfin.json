@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.818Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "jellyfin",
+    "title": "jellyfin Installation Guide",
+    "description": "jellyfin is a free and open-source free software media system. Jellyfin is a free and open-source media server for hosting and streaming your media library, serving as an alternative to Plex, Emby, or commercial streaming solutions",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "media-servers",
+    "subcategory": "media-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      8096,
+      8920
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "media-servers",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/media-servers/jellyfin/",
+    "api": "https://howtomgr.github.io/api/v1/media-servers/jellyfin.json",
+    "documentation_url": "https://howtomgr.github.io/media-servers/jellyfin",
+    "website_url": "https://howtomgr.github.io/media-servers/jellyfin",
+    "github_url": "https://github.com/howtomgr/jellyfin",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:25:31Z",
+      "created": "2025-09-08T03:08:57Z"
+    },
+    "guide_info": {
+      "word_count": 1184,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:37.417Z"
+    }
+  }
+}

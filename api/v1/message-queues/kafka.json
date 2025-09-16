@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.822Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "kafka",
+    "title": "kafka Installation Guide",
+    "description": "kafka is a free and open-source distributed streaming platform. Kafka provides high-throughput distributed messaging system",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "message-queues",
+    "subcategory": "message-queues",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      9092
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "message-queues",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/message-queues/kafka/",
+    "api": "https://howtomgr.github.io/api/v1/message-queues/kafka.json",
+    "documentation_url": "https://howtomgr.github.io/message-queues/kafka",
+    "website_url": "https://howtomgr.github.io/message-queues/kafka",
+    "github_url": "https://github.com/howtomgr/kafka",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:27:57Z",
+      "created": "2025-09-16T03:27:47Z"
+    },
+    "guide_info": {
+      "word_count": 1157,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:31.942Z"
+    }
+  }
+}

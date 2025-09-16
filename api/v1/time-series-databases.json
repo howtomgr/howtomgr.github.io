@@ -1,0 +1,58 @@
+{
+  "category": {
+    "name": "time-series-databases",
+    "display_name": "Time series-databases",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.761Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "influxdb",
+      "title": "influxdb Installation Guide",
+      "description": "influxdb is a free and open-source time series database. InfluxDB is designed for high-performance time series data storage and retrieval, serving as an open-source alternative to proprietary solutions like AWS Timestream or Azure Time Series Insights",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "time-series-databases",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/time-series-databases/influxdb/",
+      "api": "https://howtomgr.github.io/api/v1/time-series-databases/influxdb.json",
+      "github": "https://github.com/howtomgr/influxdb"
+    }
+  ]
+}

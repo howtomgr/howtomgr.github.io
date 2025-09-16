@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.775Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "blackbox-exporter",
+    "title": "Blackbox Exporter Installation Guide",
+    "description": "Blackbox Exporter is a Prometheus exporter that allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP, ICMP and gRPC. It's essential for monitoring external services and endpoints from a user perspective.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "monitoring",
+    "subcategory": "monitoring",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "arch"
+    ],
+    "default_ports": [
+      5432,
+      5672,
+      6379,
+      8080,
+      9115
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "monitoring",
+      "containerization",
+      "observability",
+      "data-storage",
+      "security",
+      "networking"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/monitoring/blackbox-exporter/",
+    "api": "https://howtomgr.github.io/api/v1/monitoring/blackbox-exporter.json",
+    "documentation_url": "https://howtomgr.github.io/monitoring/blackbox-exporter",
+    "website_url": "https://howtomgr.github.io/monitoring/blackbox-exporter",
+    "github_url": "https://github.com/howtomgr/blackbox-exporter",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:59:10Z",
+      "created": "2025-09-16T02:22:27Z"
+    },
+    "guide_info": {
+      "word_count": 1338,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:48.493Z"
+    }
+  }
+}

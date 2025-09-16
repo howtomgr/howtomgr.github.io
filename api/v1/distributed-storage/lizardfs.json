@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.830Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "lizardfs",
+    "title": "lizardfs Installation Guide",
+    "description": "lizardfs is a free and open-source distributed file system. LizardFS provides distributed file system for data centers",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "distributed-storage",
+    "subcategory": "distributed-storage",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      9420
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "distributed-storage",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/distributed-storage/lizardfs/",
+    "api": "https://howtomgr.github.io/api/v1/distributed-storage/lizardfs.json",
+    "documentation_url": "https://howtomgr.github.io/distributed-storage/lizardfs",
+    "website_url": "https://howtomgr.github.io/distributed-storage/lizardfs",
+    "github_url": "https://github.com/howtomgr/lizardfs",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:35:18Z",
+      "created": "2025-09-16T03:35:08Z"
+    },
+    "guide_info": {
+      "word_count": 1156,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:18.596Z"
+    }
+  }
+}

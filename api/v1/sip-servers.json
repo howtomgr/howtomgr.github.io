@@ -1,0 +1,60 @@
+{
+  "category": {
+    "name": "sip-servers",
+    "display_name": "Sip servers",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.763Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "kamailio",
+      "title": "Kamailio Installation Guide",
+      "description": "Kamailio is a free and open-source SIP Server. Open source SIP server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "sip-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/sip-servers/kamailio/",
+      "api": "https://howtomgr.github.io/api/v1/sip-servers/kamailio.json",
+      "github": "https://github.com/howtomgr/kamailio"
+    }
+  ]
+}

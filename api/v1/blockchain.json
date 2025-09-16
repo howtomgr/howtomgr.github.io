@@ -1,0 +1,193 @@
+{
+  "category": {
+    "name": "blockchain",
+    "display_name": "Blockchain",
+    "total_guides": 4
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.757Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "corda",
+      "title": "corda Installation Guide",
+      "description": "corda is a free and open-source blockchain platform. R3 Corda provides blockchain platform for business",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "blockchain",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/blockchain/corda/",
+      "api": "https://howtomgr.github.io/api/v1/blockchain/corda.json",
+      "github": "https://github.com/howtomgr/corda"
+    },
+    {
+      "name": "cosmos",
+      "title": "cosmos Installation Guide",
+      "description": "cosmos is a free and open-source blockchain framework. Cosmos SDK provides framework for building blockchains",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "blockchain",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/blockchain/cosmos/",
+      "api": "https://howtomgr.github.io/api/v1/blockchain/cosmos.json",
+      "github": "https://github.com/howtomgr/cosmos"
+    },
+    {
+      "name": "monero",
+      "title": "monero Installation Guide",
+      "description": "monero is a free and open-source privacy coin node. Monero provides private, secure, untraceable cryptocurrency node",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "blockchain",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/blockchain/monero/",
+      "api": "https://howtomgr.github.io/api/v1/blockchain/monero.json",
+      "github": "https://github.com/howtomgr/monero"
+    },
+    {
+      "name": "multichain",
+      "title": "multichain Installation Guide",
+      "description": "multichain is a free and open-source blockchain platform. MultiChain provides platform for private blockchains",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "blockchain",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/blockchain/multichain/",
+      "api": "https://howtomgr.github.io/api/v1/blockchain/multichain.json",
+      "github": "https://github.com/howtomgr/multichain"
+    }
+  ]
+}

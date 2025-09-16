@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.829Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "lidarr",
+    "title": "lidarr Installation Guide",
+    "description": "lidarr is a free and open-source music collection manager. Lidarr automates music downloading and organization, part of the *arr suite",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      8686
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/lidarr/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/lidarr.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/lidarr",
+    "website_url": "https://howtomgr.github.io/miscellaneous/lidarr",
+    "github_url": "https://github.com/howtomgr/lidarr",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:34:19Z",
+      "created": "2025-09-16T03:34:10Z"
+    },
+    "guide_info": {
+      "word_count": 1158,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:20.227Z"
+    }
+  }
+}

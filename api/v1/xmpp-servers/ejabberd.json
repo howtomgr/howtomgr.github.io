@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.792Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "ejabberd",
+    "title": "ejabberd Installation Guide",
+    "description": "ejabberd is a free and open-source XMPP Server. Robust, scalable and extensible XMPP server",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "xmpp-servers",
+    "subcategory": "xmpp-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      2048,
+      5222
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "xmpp-servers",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/xmpp-servers/ejabberd/",
+    "api": "https://howtomgr.github.io/api/v1/xmpp-servers/ejabberd.json",
+    "documentation_url": "https://howtomgr.github.io/xmpp-servers/ejabberd",
+    "website_url": "https://howtomgr.github.io/xmpp-servers/ejabberd",
+    "github_url": "https://github.com/howtomgr/ejabberd",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:08:08Z",
+      "created": "2025-09-16T02:33:31Z"
+    },
+    "guide_info": {
+      "word_count": 1871,
+      "estimated_read_time": "10 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:18.939Z"
+    }
+  }
+}

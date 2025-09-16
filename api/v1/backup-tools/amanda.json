@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.767Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "amanda",
+    "title": "amanda Installation Guide",
+    "description": "amanda is a free and open-source network backup. Amanda provides enterprise backup solution for multiple platforms",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "backup-tools",
+    "subcategory": "backup-tools",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      10080
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "backup-tools",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/backup-tools/amanda/",
+    "api": "https://howtomgr.github.io/api/v1/backup-tools/amanda.json",
+    "documentation_url": "https://howtomgr.github.io/backup-tools/amanda",
+    "website_url": "https://howtomgr.github.io/backup-tools/amanda",
+    "github_url": "https://github.com/howtomgr/amanda",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:55:07Z",
+      "created": "2025-09-16T02:17:31Z"
+    },
+    "guide_info": {
+      "word_count": 1156,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T07:00:01.654Z"
+    }
+  }
+}

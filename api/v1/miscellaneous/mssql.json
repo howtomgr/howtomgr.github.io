@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.838Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "mssql",
+    "title": "Microsoft SQL Server Installation Guide",
+    "description": "Enterprise-grade relational database management system for mission-critical applications. Full-featured database platform with advanced security, high availability, and comprehensive tooling for Linux environments.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux"
+    ],
+    "default_ports": [
+      1433,
+      2022,
+      4096
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/mssql/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/mssql.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/mssql",
+    "website_url": "https://howtomgr.github.io/miscellaneous/mssql",
+    "github_url": "https://github.com/howtomgr/mssql",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:46:54Z",
+      "created": "2025-09-16T03:46:44Z"
+    },
+    "guide_info": {
+      "word_count": 2647,
+      "estimated_read_time": "14 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:57:58.044Z"
+    }
+  }
+}

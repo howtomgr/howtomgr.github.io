@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.786Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "crane",
+    "title": "crane Installation Guide",
+    "description": "crane is a free and open-source Docker registry UI. Crane provides UI for Docker Registry with authentication",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "container-tools",
+    "subcategory": "container-tools",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "container-tools",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/container-tools/crane/",
+    "api": "https://howtomgr.github.io/api/v1/container-tools/crane.json",
+    "documentation_url": "https://howtomgr.github.io/container-tools/crane",
+    "website_url": "https://howtomgr.github.io/container-tools/crane",
+    "github_url": "https://github.com/howtomgr/crane",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:04:35Z",
+      "created": "2025-09-16T02:29:10Z"
+    },
+    "guide_info": {
+      "word_count": 1156,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:31.857Z"
+    }
+  }
+}

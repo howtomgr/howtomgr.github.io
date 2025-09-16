@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.792Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "dvc",
+    "title": "dvc Installation Guide",
+    "description": "dvc is a free and open-source ML version control. DVC provides version control system for ML projects",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "data-science",
+    "subcategory": "data-science",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "data-science",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/data-science/dvc/",
+    "api": "https://howtomgr.github.io/api/v1/data-science/dvc.json",
+    "documentation_url": "https://howtomgr.github.io/data-science/dvc",
+    "website_url": "https://howtomgr.github.io/data-science/dvc",
+    "github_url": "https://github.com/howtomgr/dvc",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:08:01Z",
+      "created": "2025-09-16T02:33:21Z"
+    },
+    "guide_info": {
+      "word_count": 1156,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:19.338Z"
+    }
+  }
+}

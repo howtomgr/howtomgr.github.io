@@ -1,0 +1,144 @@
+{
+  "category": {
+    "name": "orchestration",
+    "display_name": "Orchestration",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.763Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "k3s",
+      "title": "k3s Installation Guide",
+      "description": "k3s is a free and open-source lightweight Kubernetes distribution. K3s provides a production-ready Kubernetes distribution optimized for edge, IoT, and resource-constrained environments, serving as a lightweight alternative to full Kubernetes",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "orchestration",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/orchestration/k3s/",
+      "api": "https://howtomgr.github.io/api/v1/orchestration/k3s.json",
+      "github": "https://github.com/howtomgr/k3s"
+    },
+    {
+      "name": "kubernetes",
+      "title": "Kubernetes Installation Guide",
+      "description": "Kubernetes is a free and open-source container orchestration platform for automating deployment, scaling, and management of containerized applications. Originally developed by Google and now maintained by the Cloud Native Computing Foundation (CNCF), Kubernetes serves as the industry standard for container orchestration. It provides enterprise-grade security, scalability, and reliability for cloud-native applications, offering a robust alternative to proprietary solutions like AWS ECS, Azure Container Instances, or Google Cloud Run without vendor lock-in.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "orchestration",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/orchestration/kubernetes/",
+      "api": "https://howtomgr.github.io/api/v1/orchestration/kubernetes.json",
+      "github": "https://github.com/howtomgr/kubernetes"
+    },
+    {
+      "name": "minikube",
+      "title": "Minikube",
+      "description": "Minikube is a local Kubernetes cluster for development and testing",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "kubernetes",
+        "containers",
+        "orchestration",
+        "development"
+      ],
+      "site": "https://howtomgr.github.io/orchestration/minikube/",
+      "api": "https://howtomgr.github.io/api/v1/orchestration/minikube.json",
+      "github": "https://github.com/howtomgr/minikube"
+    }
+  ]
+}

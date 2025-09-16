@@ -1,0 +1,328 @@
+{
+  "category": {
+    "name": "static-site-generators",
+    "display_name": "Static site-generators",
+    "total_guides": 7
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.759Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "eleventy",
+      "title": "eleventy Installation Guide",
+      "description": "eleventy is a free and open-source static site generator. Eleventy provides simpler static site generator alternative",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/eleventy/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/eleventy.json",
+      "github": "https://github.com/howtomgr/eleventy"
+    },
+    {
+      "name": "gatsby",
+      "title": "gatsby Installation Guide",
+      "description": "gatsby is a free and open-source React-based generator. Gatsby provides React-based framework for creating websites and apps",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/gatsby/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/gatsby.json",
+      "github": "https://github.com/howtomgr/gatsby"
+    },
+    {
+      "name": "gridsome",
+      "title": "gridsome Installation Guide",
+      "description": "gridsome is a free and open-source Vue.js framework. Gridsome provides Vue.js framework for building static websites",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/gridsome/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/gridsome.json",
+      "github": "https://github.com/howtomgr/gridsome"
+    },
+    {
+      "name": "hexo",
+      "title": "hexo Installation Guide",
+      "description": "hexo is a free and open-source blog framework. Hexo provides fast, simple, and powerful blog framework",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/hexo/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/hexo.json",
+      "github": "https://github.com/howtomgr/hexo"
+    },
+    {
+      "name": "hugo",
+      "title": "hugo Installation Guide",
+      "description": "hugo is a free and open-source static site generator. Hugo provides fast static site generator with flexible themes",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/hugo/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/hugo.json",
+      "github": "https://github.com/howtomgr/hugo"
+    },
+    {
+      "name": "jekyll",
+      "title": "jekyll Installation Guide",
+      "description": "jekyll is a free and open-source static site generator. Jekyll transforms plain text into static websites and blogs",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/jekyll/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/jekyll.json",
+      "github": "https://github.com/howtomgr/jekyll"
+    },
+    {
+      "name": "metalsmith",
+      "title": "metalsmith Installation Guide",
+      "description": "metalsmith is a free and open-source pluggable generator. Metalsmith provides extremely simple, pluggable static site generator",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/metalsmith/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/metalsmith.json",
+      "github": "https://github.com/howtomgr/metalsmith"
+    }
+  ]
+}

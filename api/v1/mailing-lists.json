@@ -1,0 +1,107 @@
+{
+  "category": {
+    "name": "mailing-lists",
+    "display_name": "Mailing lists",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.764Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "listmonk",
+      "title": "Listmonk Installation Guide",
+      "description": "Listmonk is a free and open-source Newsletter. Self-hosted newsletter and mailing list manager",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mailing-lists",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mailing-lists/listmonk/",
+      "api": "https://howtomgr.github.io/api/v1/mailing-lists/listmonk.json",
+      "github": "https://github.com/howtomgr/listmonk"
+    },
+    {
+      "name": "mailman",
+      "title": "Mailman Installation Guide",
+      "description": "Mailman is a free and open-source Mailing List. Free software for managing electronic mail discussion lists",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mailing-lists",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mailing-lists/mailman/",
+      "api": "https://howtomgr.github.io/api/v1/mailing-lists/mailman.json",
+      "github": "https://github.com/howtomgr/mailman"
+    }
+  ]
+}

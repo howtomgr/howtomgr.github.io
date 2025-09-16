@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.827Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "kopano",
+    "title": "Kopano Installation Guide",
+    "description": "Kopano is a free and open-source Groupware. An open-source groupware suite with Outlook compatibility",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "groupware",
+    "subcategory": "groupware",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      236,
+      443,
+      2048
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "groupware",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/groupware/kopano/",
+    "api": "https://howtomgr.github.io/api/v1/groupware/kopano.json",
+    "documentation_url": "https://howtomgr.github.io/groupware/kopano",
+    "website_url": "https://howtomgr.github.io/groupware/kopano",
+    "github_url": "https://github.com/howtomgr/kopano",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:31:56Z",
+      "created": "2025-09-16T03:31:46Z"
+    },
+    "guide_info": {
+      "word_count": 1883,
+      "estimated_read_time": "10 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:24.836Z"
+    }
+  }
+}

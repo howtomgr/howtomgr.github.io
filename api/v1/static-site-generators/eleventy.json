@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.793Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "eleventy",
+    "title": "eleventy Installation Guide",
+    "description": "eleventy is a free and open-source static site generator. Eleventy provides simpler static site generator alternative",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "static-site-generators",
+    "subcategory": "static-site-generators",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "static-site-generators",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/static-site-generators/eleventy/",
+    "api": "https://howtomgr.github.io/api/v1/static-site-generators/eleventy.json",
+    "documentation_url": "https://howtomgr.github.io/static-site-generators/eleventy",
+    "website_url": "https://howtomgr.github.io/static-site-generators/eleventy",
+    "github_url": "https://github.com/howtomgr/eleventy",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:08:42Z",
+      "created": "2025-09-16T02:34:05Z"
+    },
+    "guide_info": {
+      "word_count": 1157,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:17.323Z"
+    }
+  }
+}

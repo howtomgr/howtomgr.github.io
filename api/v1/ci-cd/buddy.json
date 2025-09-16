@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.776Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "buddy",
+    "title": "buddy Installation Guide",
+    "description": "buddy is a free and open-source CI/CD platform. Buddy provides on-premises CI/CD with visual pipeline builder",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "ci-cd",
+    "subcategory": "ci-cd",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "ci-cd",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/ci-cd/buddy/",
+    "api": "https://howtomgr.github.io/api/v1/ci-cd/buddy.json",
+    "documentation_url": "https://howtomgr.github.io/ci-cd/buddy",
+    "website_url": "https://howtomgr.github.io/ci-cd/buddy",
+    "github_url": "https://github.com/howtomgr/buddy",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:59:39Z",
+      "created": "2025-09-16T02:23:04Z"
+    },
+    "guide_info": {
+      "word_count": 1154,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:46.980Z"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "category": {
+    "name": "object-storage",
+    "display_name": "Object storage",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.760Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "garage",
+      "title": "garage Installation Guide",
+      "description": "garage is a free and open-source S3-compatible storage. Garage provides self-hosted S3-compatible distributed object storage",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "object-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/object-storage/garage/",
+      "api": "https://howtomgr.github.io/api/v1/object-storage/garage.json",
+      "github": "https://github.com/howtomgr/garage"
+    },
+    {
+      "name": "minio",
+      "title": "MinIO Installation Guide",
+      "description": "MinIO is a free and open-source high-performance object storage server compatible with Amazon S3. MinIO provides enterprise-grade object storage that is 100% open source and S3 compatible, serving as a powerful alternative to Amazon S3, Azure Blob Storage, or Google Cloud Storage without vendor lock-in",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "object-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/object-storage/minio/",
+      "api": "https://howtomgr.github.io/api/v1/object-storage/minio.json",
+      "github": "https://github.com/howtomgr/minio"
+    }
+  ]
+}

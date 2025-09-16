@@ -1,0 +1,58 @@
+{
+  "category": {
+    "name": "dns-filtering",
+    "display_name": "Dns filtering",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.750Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "adguardhome",
+      "title": "adguard-home Installation Guide",
+      "description": "adguard-home is a free and open-source network-wide ads and tracking blocking. AdGuard Home provides DNS-based blocking of ads and trackers with a modern UI, serving as an alternative to Pi-hole",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "dns-filtering",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/dns-filtering/adguardhome/",
+      "api": "https://howtomgr.github.io/api/v1/dns-filtering/adguardhome.json",
+      "github": "https://github.com/howtomgr/adguardhome"
+    }
+  ]
+}

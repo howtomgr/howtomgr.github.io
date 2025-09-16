@@ -1,0 +1,242 @@
+{
+  "category": {
+    "name": "dns-servers",
+    "display_name": "Dns servers",
+    "total_guides": 5
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.754Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "bind",
+      "title": "BIND Installation Guide",
+      "description": "BIND is a free and open-source DNS Server. Berkeley Internet Name Domain is the most widely used DNS server software",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "dns-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/dns-servers/bind/",
+      "api": "https://howtomgr.github.io/api/v1/dns-servers/bind.json",
+      "github": "https://github.com/howtomgr/bind"
+    },
+    {
+      "name": "coredns",
+      "title": "CoreDNS Installation Guide",
+      "description": "CoreDNS is a free and open-source DNS Server. A flexible, extensible DNS server written in Go",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "dns-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/dns-servers/coredns/",
+      "api": "https://howtomgr.github.io/api/v1/dns-servers/coredns.json",
+      "github": "https://github.com/howtomgr/coredns"
+    },
+    {
+      "name": "dnsmasq",
+      "title": "dnsmasq Installation Guide",
+      "description": "dnsmasq is a free and open-source lightweight DNS/DHCP/TFTP server. dnsmasq provides integrated DNS, DHCP, and TFTP services in a small footprint, perfect for small networks",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "dns-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/dns-servers/dnsmasq/",
+      "api": "https://howtomgr.github.io/api/v1/dns-servers/dnsmasq.json",
+      "github": "https://github.com/howtomgr/dnsmasq"
+    },
+    {
+      "name": "knot",
+      "title": "Knot DNS Installation Guide",
+      "description": "Knot DNS is a free and open-source DNS Server. A high-performance authoritative DNS server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "dns-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/dns-servers/knot/",
+      "api": "https://howtomgr.github.io/api/v1/dns-servers/knot.json",
+      "github": "https://github.com/howtomgr/knot"
+    },
+    {
+      "name": "nsd",
+      "title": "NSD Installation Guide",
+      "description": "NSD is a free and open-source DNS Server. An authoritative-only, high performance DNS server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "dns-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/dns-servers/nsd/",
+      "api": "https://howtomgr.github.io/api/v1/dns-servers/nsd.json",
+      "github": "https://github.com/howtomgr/nsd"
+    }
+  ]
+}

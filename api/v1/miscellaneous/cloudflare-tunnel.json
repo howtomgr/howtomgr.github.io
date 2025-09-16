@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.782Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "cloudflare-tunnel",
+    "title": "Cloudflare Tunnel Installation Guide",
+    "description": "Secure way to connect your applications to Cloudflare without opening inbound ports. Essential tool for exposing self-hosted services securely through Cloudflare's global network.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux"
+    ],
+    "default_ports": [
+      80,
+      404,
+      3000,
+      8096,
+      8123
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "security",
+      "communication",
+      "networking"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/cloudflare-tunnel/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/cloudflare-tunnel.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/cloudflare-tunnel",
+    "website_url": "https://howtomgr.github.io/miscellaneous/cloudflare-tunnel",
+    "github_url": "https://github.com/howtomgr/cloudflare-tunnel",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:02:37Z",
+      "created": "2025-09-16T02:26:32Z"
+    },
+    "guide_info": {
+      "word_count": 596,
+      "estimated_read_time": "3 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:38.228Z"
+    }
+  }
+}

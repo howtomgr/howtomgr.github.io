@@ -1,0 +1,103 @@
+{
+  "category": {
+    "name": "e-commerce",
+    "display_name": "E commerce",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.754Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "bagisto",
+      "title": "bagisto Installation Guide",
+      "description": "bagisto is a free and open-source Laravel e-commerce. Bagisto provides Laravel-based e-commerce platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "e-commerce",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/e-commerce/bagisto/",
+      "api": "https://howtomgr.github.io/api/v1/e-commerce/bagisto.json",
+      "github": "https://github.com/howtomgr/bagisto"
+    },
+    {
+      "name": "magento",
+      "title": "magento Installation Guide",
+      "description": "magento is a free and open-source e-commerce platform. Magento provides flexible e-commerce platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "e-commerce",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/e-commerce/magento/",
+      "api": "https://howtomgr.github.io/api/v1/e-commerce/magento.json",
+      "github": "https://github.com/howtomgr/magento"
+    }
+  ]
+}

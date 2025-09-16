@@ -1,0 +1,277 @@
+{
+  "category": {
+    "name": "iot-platforms",
+    "display_name": "Iot platforms",
+    "total_guides": 6
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.756Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "chirpstack",
+      "title": "chirpstack Installation Guide",
+      "description": "chirpstack is a free and open-source LoRaWAN server. ChirpStack provides open-source LoRaWAN Network Server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/chirpstack/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/chirpstack.json",
+      "github": "https://github.com/howtomgr/chirpstack"
+    },
+    {
+      "name": "emqx",
+      "title": "emqx Installation Guide",
+      "description": "emqx is a free and open-source MQTT broker. EMQX provides scalable MQTT broker for IoT",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/emqx/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/emqx.json",
+      "github": "https://github.com/howtomgr/emqx"
+    },
+    {
+      "name": "flespi",
+      "title": "flespi Installation Guide",
+      "description": "flespi is a free and open-source telematics gateway. Flespi provides telematics gateway platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/flespi/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/flespi.json",
+      "github": "https://github.com/howtomgr/flespi"
+    },
+    {
+      "name": "home-assistant",
+      "title": "Home-Assistant on CentOS 7",
+      "description": "```bash",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/home-assistant/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/home-assistant.json",
+      "github": "https://github.com/howtomgr/home-assistant"
+    },
+    {
+      "name": "kaa",
+      "title": "kaa Installation Guide",
+      "description": "kaa is a free and open-source IoT platform. Kaa provides multi-purpose middleware for IoT",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/kaa/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/kaa.json",
+      "github": "https://github.com/howtomgr/kaa"
+    },
+    {
+      "name": "mainflux",
+      "title": "mainflux Installation Guide",
+      "description": "mainflux is a free and open-source IoT platform. Mainflux provides scalable, secure IoT platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/mainflux/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/mainflux.json",
+      "github": "https://github.com/howtomgr/mainflux"
+    }
+  ]
+}

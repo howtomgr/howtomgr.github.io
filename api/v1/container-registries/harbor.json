@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.811Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "harbor",
+    "title": "harbor Installation Guide",
+    "description": "harbor is a free and open-source cloud native registry. Harbor provides container image registry with security scanning, signing, and replication, serving as an enterprise alternative to Docker Hub",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "container-registries",
+    "subcategory": "container-registries",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      4443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "container-registries",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/container-registries/harbor/",
+    "api": "https://howtomgr.github.io/api/v1/container-registries/harbor.json",
+    "documentation_url": "https://howtomgr.github.io/container-registries/harbor",
+    "website_url": "https://howtomgr.github.io/container-registries/harbor",
+    "github_url": "https://github.com/howtomgr/harbor",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:19:44Z",
+      "created": "2025-09-16T03:19:34Z"
+    },
+    "guide_info": {
+      "word_count": 1173,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:48.238Z"
+    }
+  }
+}

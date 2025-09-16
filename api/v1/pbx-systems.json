@@ -1,0 +1,153 @@
+{
+  "category": {
+    "name": "pbx-systems",
+    "display_name": "Pbx systems",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.753Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "asterisk",
+      "title": "Asterisk Installation Guide",
+      "description": "Asterisk is a free and open-source PBX. Open source PBX and telephony toolkit",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "pbx-systems",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/pbx-systems/asterisk/",
+      "api": "https://howtomgr.github.io/api/v1/pbx-systems/asterisk.json",
+      "github": "https://github.com/howtomgr/asterisk"
+    },
+    {
+      "name": "freeswitch",
+      "title": "FreeSWITCH Installation Guide",
+      "description": "FreeSWITCH is a free and open-source Softswitch. Scalable softswitch platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "pbx-systems",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/pbx-systems/freeswitch/",
+      "api": "https://howtomgr.github.io/api/v1/pbx-systems/freeswitch.json",
+      "github": "https://github.com/howtomgr/freeswitch"
+    },
+    {
+      "name": "fusionpbx",
+      "title": "FusionPBX Installation Guide",
+      "description": "FusionPBX is a free and open-source PBX. Multi-tenant PBX and voice switch",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "pbx-systems",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/pbx-systems/fusionpbx/",
+      "api": "https://howtomgr.github.io/api/v1/pbx-systems/fusionpbx.json",
+      "github": "https://github.com/howtomgr/fusionpbx"
+    }
+  ]
+}

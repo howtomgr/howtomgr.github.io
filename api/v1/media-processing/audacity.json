@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.771Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "audacity",
+    "title": "audacity Installation Guide",
+    "description": "audacity is a free and open-source audio editor. Audacity provides multi-track audio editor",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "media-processing",
+    "subcategory": "media-processing",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "media-processing",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "multimedia"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/media-processing/audacity/",
+    "api": "https://howtomgr.github.io/api/v1/media-processing/audacity.json",
+    "documentation_url": "https://howtomgr.github.io/media-processing/audacity",
+    "website_url": "https://howtomgr.github.io/media-processing/audacity",
+    "github_url": "https://github.com/howtomgr/audacity",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:57:01Z",
+      "created": "2025-09-16T02:19:36Z"
+    },
+    "guide_info": {
+      "word_count": 1150,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:55.167Z"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "category": {
+    "name": "media-centers",
+    "display_name": "Media centers",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.763Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "kodi",
+      "title": "kodi Installation Guide",
+      "description": "kodi is a free and open-source open source media center. Kodi (formerly XBMC) provides a complete media center solution for local and network content",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-centers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/media-centers/kodi/",
+      "api": "https://howtomgr.github.io/api/v1/media-centers/kodi.json",
+      "github": "https://github.com/howtomgr/kodi"
+    }
+  ]
+}

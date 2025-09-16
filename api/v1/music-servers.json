@@ -1,0 +1,194 @@
+{
+  "category": {
+    "name": "music-servers",
+    "display_name": "Music servers",
+    "total_guides": 4
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.751Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "airsonic",
+      "title": "airsonic Installation Guide",
+      "description": "airsonic is a free and open-source free music streaming server. Fork of Subsonic, Airsonic provides personal music streaming, serving as a FOSS alternative to proprietary options",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "music-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/music-servers/airsonic/",
+      "api": "https://howtomgr.github.io/api/v1/music-servers/airsonic.json",
+      "github": "https://github.com/howtomgr/airsonic"
+    },
+    {
+      "name": "ampache",
+      "title": "ampache Installation Guide",
+      "description": "ampache is a free and open-source web-based audio streaming. Ampache provides web-based audio streaming and management, serving as a FOSS alternative to Spotify server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "music-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "multimedia"
+      ],
+      "site": "https://howtomgr.github.io/music-servers/ampache/",
+      "api": "https://howtomgr.github.io/api/v1/music-servers/ampache.json",
+      "github": "https://github.com/howtomgr/ampache"
+    },
+    {
+      "name": "funkwhale",
+      "title": "funkwhale Installation Guide",
+      "description": "funkwhale is a free and open-source social music platform. Funkwhale enables sharing and listening to music within a decentralized, open network",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "music-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/music-servers/funkwhale/",
+      "api": "https://howtomgr.github.io/api/v1/music-servers/funkwhale.json",
+      "github": "https://github.com/howtomgr/funkwhale"
+    },
+    {
+      "name": "navidrome",
+      "title": "navidrome Installation Guide",
+      "description": "navidrome is a free and open-source modern music server. Navidrome provides a modern, lightweight music server and streamer compatible with Subsonic/Airsonic",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "music-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/music-servers/navidrome/",
+      "api": "https://howtomgr.github.io/api/v1/music-servers/navidrome.json",
+      "github": "https://github.com/howtomgr/navidrome"
+    }
+  ]
+}

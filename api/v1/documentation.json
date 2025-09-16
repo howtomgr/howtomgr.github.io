@@ -1,0 +1,148 @@
+{
+  "category": {
+    "name": "documentation",
+    "display_name": "Documentation",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.755Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "bookstack",
+      "title": "bookstack Installation Guide",
+      "description": "bookstack is a free and open-source documentation platform. BookStack provides simple, self-hosted platform for organizing documentation",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "documentation",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/documentation/bookstack/",
+      "api": "https://howtomgr.github.io/api/v1/documentation/bookstack.json",
+      "github": "https://github.com/howtomgr/bookstack"
+    },
+    {
+      "name": "dokuwiki",
+      "title": "dokuwiki Installation Guide",
+      "description": "dokuwiki is a free and open-source wiki without database. DokuWiki provides simple wiki that stores data in plain text files",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "documentation",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/documentation/dokuwiki/",
+      "api": "https://howtomgr.github.io/api/v1/documentation/dokuwiki.json",
+      "github": "https://github.com/howtomgr/dokuwiki"
+    },
+    {
+      "name": "mkdocs",
+      "title": "mkdocs Installation Guide",
+      "description": "mkdocs is a free and open-source project documentation. MkDocs builds beautiful project documentation from Markdown",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "documentation",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/documentation/mkdocs/",
+      "api": "https://howtomgr.github.io/api/v1/documentation/mkdocs.json",
+      "github": "https://github.com/howtomgr/mkdocs"
+    }
+  ]
+}

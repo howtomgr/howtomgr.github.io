@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.769Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "apache-kafka",
+    "title": "Apache-Kafka",
+    "description": "apache-kafka README",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "message-queues",
+    "subcategory": "message-queues",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "message-queues"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/message-queues/apache-kafka/",
+    "api": "https://howtomgr.github.io/api/v1/message-queues/apache-kafka.json",
+    "documentation_url": "https://howtomgr.github.io/message-queues/apache-kafka",
+    "website_url": "https://howtomgr.github.io/message-queues/apache-kafka",
+    "github_url": "https://github.com/howtomgr/apache-kafka",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:55:51Z",
+      "created": "2025-09-08T03:05:01Z"
+    },
+    "guide_info": {
+      "word_count": 15,
+      "estimated_read_time": "1 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:59.049Z"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "category": {
+    "name": "visualization",
+    "display_name": "Visualization",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.760Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "grafana",
+      "title": "grafana Installation Guide",
+      "description": "grafana is a free and open-source observability platform. Grafana provides visualization and observability platform for metrics",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "visualization",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/visualization/grafana/",
+      "api": "https://howtomgr.github.io/api/v1/visualization/grafana.json",
+      "github": "https://github.com/howtomgr/grafana"
+    }
+  ]
+}

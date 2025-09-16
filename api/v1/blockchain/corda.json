@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.784Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "corda",
+    "title": "corda Installation Guide",
+    "description": "corda is a free and open-source blockchain platform. R3 Corda provides blockchain platform for business",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "blockchain",
+    "subcategory": "blockchain",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      10002
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "blockchain",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/blockchain/corda/",
+    "api": "https://howtomgr.github.io/api/v1/blockchain/corda.json",
+    "documentation_url": "https://howtomgr.github.io/blockchain/corda",
+    "website_url": "https://howtomgr.github.io/blockchain/corda",
+    "github_url": "https://github.com/howtomgr/corda",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:04:06Z",
+      "created": "2025-09-16T02:28:32Z"
+    },
+    "guide_info": {
+      "word_count": 1152,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:33.633Z"
+    }
+  }
+}

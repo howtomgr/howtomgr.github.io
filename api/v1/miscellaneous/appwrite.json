@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.769Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "appwrite",
+    "title": "Appwrite Installation Guide",
+    "description": "Appwrite is an open-source backend-as-a-service platform that provides developers with all the core APIs required to build modern applications. It includes authentication, databases, storage, functions, and real-time capabilities.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      10,
+      80,
+      443,
+      999
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "security",
+      "data-protection",
+      "communication",
+      "networking"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/appwrite/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/appwrite.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/appwrite",
+    "website_url": "https://howtomgr.github.io/miscellaneous/appwrite",
+    "github_url": "https://github.com/howtomgr/appwrite",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:55:57Z",
+      "created": "2025-09-16T02:18:14Z"
+    },
+    "guide_info": {
+      "word_count": 969,
+      "estimated_read_time": "5 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:58.651Z"
+    }
+  }
+}

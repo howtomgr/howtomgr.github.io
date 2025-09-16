@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.805Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "gitlab",
+    "title": "GitLab Installation and Configuration Guide",
+    "description": "Gitlab installation and configuration guide",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "git-repositories",
+    "subcategory": "git-repositories",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      1,
+      2,
+      5,
+      10,
+      18,
+      22,
+      80,
+      443,
+      514,
+      5000,
+      8080,
+      8082,
+      8090,
+      8091,
+      8150,
+      8151,
+      8181,
+      8404,
+      9090,
+      9093,
+      9100,
+      9121,
+      9168,
+      9187,
+      9229,
+      9236
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "git-repositories",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "web-services",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/git-repositories/gitlab/",
+    "api": "https://howtomgr.github.io/api/v1/git-repositories/gitlab.json",
+    "documentation_url": "https://howtomgr.github.io/git-repositories/gitlab",
+    "website_url": "https://howtomgr.github.io/git-repositories/gitlab",
+    "github_url": "https://github.com/howtomgr/gitlab",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:14:33Z",
+      "created": "2025-09-08T03:07:56Z"
+    },
+    "guide_info": {
+      "word_count": 7700,
+      "estimated_read_time": "39 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:58.348Z"
+    }
+  }
+}

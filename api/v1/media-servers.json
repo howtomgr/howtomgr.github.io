@@ -1,0 +1,103 @@
+{
+  "category": {
+    "name": "media-servers",
+    "display_name": "Media servers",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.759Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "emby",
+      "title": "emby Installation Guide",
+      "description": "emby is a free and open-source media server system. Emby provides media streaming and management, serving as an alternative to Plex with more open components",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/media-servers/emby/",
+      "api": "https://howtomgr.github.io/api/v1/media-servers/emby.json",
+      "github": "https://github.com/howtomgr/emby"
+    },
+    {
+      "name": "jellyfin",
+      "title": "jellyfin Installation Guide",
+      "description": "jellyfin is a free and open-source free software media system. Jellyfin is a free and open-source media server for hosting and streaming your media library, serving as an alternative to Plex, Emby, or commercial streaming solutions",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/media-servers/jellyfin/",
+      "api": "https://howtomgr.github.io/api/v1/media-servers/jellyfin.json",
+      "github": "https://github.com/howtomgr/jellyfin"
+    }
+  ]
+}

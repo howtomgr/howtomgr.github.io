@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.840Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "modoboa",
+    "title": "Modoboa Installation Guide",
+    "description": "Modoboa is a free and open-source Mail Server Stack. Mail hosting made simple",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "mail-stacks",
+    "subcategory": "mail-stacks",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      2048
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "mail-stacks",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/mail-stacks/modoboa/",
+    "api": "https://howtomgr.github.io/api/v1/mail-stacks/modoboa.json",
+    "documentation_url": "https://howtomgr.github.io/mail-stacks/modoboa",
+    "website_url": "https://howtomgr.github.io/mail-stacks/modoboa",
+    "github_url": "https://github.com/howtomgr/modoboa",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:44:54Z",
+      "created": "2025-09-16T03:44:42Z"
+    },
+    "guide_info": {
+      "word_count": 1877,
+      "estimated_read_time": "10 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:01.734Z"
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "category": {
+    "name": "web-servers",
+    "display_name": "Web servers",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.752Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "apache",
+      "title": "Apache HTTP Server Installation Guide",
+      "description": "Apache HTTP Server is a free and open-source cross-platform web server software developed and maintained by the Apache Software Foundation. Originally based on the NCSA HTTPd server, Apache has been the most popular web server on the Internet since April 1996, serving over 40% of active websites. It serves as a FOSS alternative to commercial web servers like Microsoft IIS, NGINX Plus, or F5 BIG-IP, offering enterprise-grade performance, security, and flexibility without licensing costs.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "web-servers",
+        "observability",
+        "data-storage",
+        "web-services",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/web-servers/apache/",
+      "api": "https://howtomgr.github.io/api/v1/web-servers/apache.json",
+      "github": "https://github.com/howtomgr/apache"
+    },
+    {
+      "name": "caddy",
+      "title": "Caddy Installation Guide",
+      "description": "Caddy is a free and open-source fast, multi-platform web server with automatic HTTPS. Written in Go, Caddy is a powerful web server that automatically obtains and renews SSL certificates, serving as a modern alternative to nginx or Apache with built-in HTTPS automation",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "web-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "web-services",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/web-servers/caddy/",
+      "api": "https://howtomgr.github.io/api/v1/web-servers/caddy.json",
+      "github": "https://github.com/howtomgr/caddy"
+    },
+    {
+      "name": "nginx",
+      "title": "NGINX Installation Guide",
+      "description": "NGINX is a free and open-source web server, reverse proxy, load balancer, and HTTP cache. Originally written by Igor Sysoev to solve the C10K problem, it's now one of the most popular web servers in the world. NGINX serves as a FOSS alternative to commercial solutions like F5 BIG-IP, Citrix ADC, or proprietary CDNs, offering enterprise-grade performance and reliability without licensing costs.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "web-servers",
+        "observability",
+        "data-storage",
+        "web-services",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/web-servers/nginx/",
+      "api": "https://howtomgr.github.io/api/v1/web-servers/nginx.json",
+      "github": "https://github.com/howtomgr/nginx"
+    }
+  ]
+}

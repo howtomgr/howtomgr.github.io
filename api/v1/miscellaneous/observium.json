@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.850Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "observium",
+    "title": "observium Installation Guide",
+    "description": "observium is a free and open-source network monitoring platform. Observium provides autodiscovering network monitoring platform",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/observium/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/observium.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/observium",
+    "website_url": "https://howtomgr.github.io/miscellaneous/observium",
+    "github_url": "https://github.com/howtomgr/observium",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:53:32Z",
+      "created": "2025-09-16T03:53:22Z"
+    },
+    "guide_info": {
+      "word_count": 1151,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:57:46.053Z"
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "category": {
+    "name": "task-queues",
+    "display_name": "Task queues",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.755Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "celery",
+      "title": "celery Installation Guide",
+      "description": "celery is a free and open-source distributed task queue. Celery provides distributed task queue for Python applications",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "task-queues",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/task-queues/celery/",
+      "api": "https://howtomgr.github.io/api/v1/task-queues/celery.json",
+      "github": "https://github.com/howtomgr/celery"
+    },
+    {
+      "name": "faktory",
+      "title": "faktory Installation Guide",
+      "description": "faktory is a free and open-source job server. Faktory provides language-agnostic persistent background job server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "task-queues",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/task-queues/faktory/",
+      "api": "https://howtomgr.github.io/api/v1/task-queues/faktory.json",
+      "github": "https://github.com/howtomgr/faktory"
+    },
+    {
+      "name": "gearman",
+      "title": "gearman Installation Guide",
+      "description": "gearman is a free and open-source job server. Gearman provides generic application framework for farming out work",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "task-queues",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/task-queues/gearman/",
+      "api": "https://howtomgr.github.io/api/v1/task-queues/gearman.json",
+      "github": "https://github.com/howtomgr/gearman"
+    }
+  ]
+}

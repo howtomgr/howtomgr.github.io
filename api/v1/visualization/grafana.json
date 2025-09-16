@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.808Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "grafana",
+    "title": "grafana Installation Guide",
+    "description": "grafana is a free and open-source observability platform. Grafana provides visualization and observability platform for metrics",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "visualization",
+    "subcategory": "visualization",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      3000
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "visualization",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/visualization/grafana/",
+    "api": "https://howtomgr.github.io/api/v1/visualization/grafana.json",
+    "documentation_url": "https://howtomgr.github.io/visualization/grafana",
+    "website_url": "https://howtomgr.github.io/visualization/grafana",
+    "github_url": "https://github.com/howtomgr/grafana",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:16:42Z",
+      "created": "2025-09-08T03:08:10Z"
+    },
+    "guide_info": {
+      "word_count": 1154,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:54.023Z"
+    }
+  }
+}

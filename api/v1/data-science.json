@@ -1,0 +1,191 @@
+{
+  "category": {
+    "name": "data-science",
+    "display_name": "Data science",
+    "total_guides": 4
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.758Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "dvc",
+      "title": "dvc Installation Guide",
+      "description": "dvc is a free and open-source ML version control. DVC provides version control system for ML projects",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "data-science",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/data-science/dvc/",
+      "api": "https://howtomgr.github.io/api/v1/data-science/dvc.json",
+      "github": "https://github.com/howtomgr/dvc"
+    },
+    {
+      "name": "jupyter",
+      "title": "Jupyter",
+      "description": "Jupyter Lab is an interactive development environment for notebooks, code, and data",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "data-science",
+        "notebooks",
+        "python",
+        "development"
+      ],
+      "site": "https://howtomgr.github.io/data-science/jupyter/",
+      "api": "https://howtomgr.github.io/api/v1/data-science/jupyter.json",
+      "github": "https://github.com/howtomgr/jupyter"
+    },
+    {
+      "name": "kubeflow",
+      "title": "kubeflow Installation Guide",
+      "description": "kubeflow is a free and open-source ML platform. Kubeflow provides ML workflows on Kubernetes",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "data-science",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/data-science/kubeflow/",
+      "api": "https://howtomgr.github.io/api/v1/data-science/kubeflow.json",
+      "github": "https://github.com/howtomgr/kubeflow"
+    },
+    {
+      "name": "mlflow",
+      "title": "mlflow Installation Guide",
+      "description": "mlflow is a free and open-source ML lifecycle. MLflow provides open source platform for ML lifecycle",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "data-science",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/data-science/mlflow/",
+      "api": "https://howtomgr.github.io/api/v1/data-science/mlflow.json",
+      "github": "https://github.com/howtomgr/mlflow"
+    }
+  ]
+}

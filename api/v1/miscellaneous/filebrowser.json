@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.797Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "filebrowser",
+    "title": "filebrowser Installation Guide",
+    "description": "filebrowser is a free and open-source web file manager. File Browser provides a web interface for managing files with sharing capabilities",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/filebrowser/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/filebrowser.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/filebrowser",
+    "website_url": "https://howtomgr.github.io/miscellaneous/filebrowser",
+    "github_url": "https://github.com/howtomgr/filebrowser",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:11:07Z",
+      "created": "2025-09-16T02:37:07Z"
+    },
+    "guide_info": {
+      "word_count": 1159,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:09.090Z"
+    }
+  }
+}

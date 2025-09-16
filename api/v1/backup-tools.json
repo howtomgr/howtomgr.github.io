@@ -1,0 +1,148 @@
+{
+  "category": {
+    "name": "backup-tools",
+    "display_name": "Backup tools",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.752Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "amanda",
+      "title": "amanda Installation Guide",
+      "description": "amanda is a free and open-source network backup. Amanda provides enterprise backup solution for multiple platforms",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "backup-tools",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/backup-tools/amanda/",
+      "api": "https://howtomgr.github.io/api/v1/backup-tools/amanda.json",
+      "github": "https://github.com/howtomgr/amanda"
+    },
+    {
+      "name": "bacula",
+      "title": "bacula Installation Guide",
+      "description": "bacula is a free and open-source backup system. Bacula provides enterprise-ready network backup solution",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "backup-tools",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/backup-tools/bacula/",
+      "api": "https://howtomgr.github.io/api/v1/backup-tools/bacula.json",
+      "github": "https://github.com/howtomgr/bacula"
+    },
+    {
+      "name": "duplicati",
+      "title": "duplicati Installation Guide",
+      "description": "duplicati is a free and open-source backup client. Duplicati provides encrypted backups to cloud storage services",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "backup-tools",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/backup-tools/duplicati/",
+      "api": "https://howtomgr.github.io/api/v1/backup-tools/duplicati.json",
+      "github": "https://github.com/howtomgr/duplicati"
+    }
+  ]
+}

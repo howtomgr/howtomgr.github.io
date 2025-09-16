@@ -1,0 +1,107 @@
+{
+  "category": {
+    "name": "webmail",
+    "display_name": "Webmail",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.750Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "afterlogic",
+      "title": "AfterLogic WebMail Installation Guide",
+      "description": "AfterLogic WebMail is a free and open-source Webmail. Fast and easy-to-use webmail front-end",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "webmail",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/webmail/afterlogic/",
+      "api": "https://howtomgr.github.io/api/v1/webmail/afterlogic.json",
+      "github": "https://github.com/howtomgr/afterlogic"
+    },
+    {
+      "name": "horde",
+      "title": "Horde Installation Guide",
+      "description": "Horde is a free and open-source Groupware. Web application framework with webmail and groupware",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "webmail",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/webmail/horde/",
+      "api": "https://howtomgr.github.io/api/v1/webmail/horde.json",
+      "github": "https://github.com/howtomgr/horde"
+    }
+  ]
+}

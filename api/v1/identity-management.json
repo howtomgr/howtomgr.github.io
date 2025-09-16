@@ -1,0 +1,58 @@
+{
+  "category": {
+    "name": "identity-management",
+    "display_name": "Identity management",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.763Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "keycloak",
+      "title": "keycloak Installation Guide",
+      "description": "keycloak is a free and open-source open source identity and access management solution. Keycloak provides single sign-on (SSO) with identity brokering and social login, serving as a powerful FOSS alternative to Auth0, Okta, or Azure AD B2C",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "identity-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/identity-management/keycloak/",
+      "api": "https://howtomgr.github.io/api/v1/identity-management/keycloak.json",
+      "github": "https://github.com/howtomgr/keycloak"
+    }
+  ]
+}

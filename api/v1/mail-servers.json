@@ -1,0 +1,154 @@
+{
+  "category": {
+    "name": "mail-servers",
+    "display_name": "Mail servers",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.757Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "dovecot",
+      "title": "Dovecot Installation Guide",
+      "description": "Dovecot is a free and open-source Mail Server. An open-source IMAP and POP3 server for Unix-like systems",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mail-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mail-servers/dovecot/",
+      "api": "https://howtomgr.github.io/api/v1/mail-servers/dovecot.json",
+      "github": "https://github.com/howtomgr/dovecot"
+    },
+    {
+      "name": "exim",
+      "title": "Exim Installation Guide",
+      "description": "Exim is a free and open-source Mail Server. A message transfer agent (MTA) developed at Cambridge",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mail-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mail-servers/exim/",
+      "api": "https://howtomgr.github.io/api/v1/mail-servers/exim.json",
+      "github": "https://github.com/howtomgr/exim"
+    },
+    {
+      "name": "haraka",
+      "title": "Haraka Installation Guide",
+      "description": "Haraka is a free and open-source Mail Server. A highly scalable node.js email server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mail-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mail-servers/haraka/",
+      "api": "https://howtomgr.github.io/api/v1/mail-servers/haraka.json",
+      "github": "https://github.com/howtomgr/haraka"
+    }
+  ]
+}

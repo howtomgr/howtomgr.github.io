@@ -1,0 +1,287 @@
+{
+  "category": {
+    "name": "media-processing",
+    "display_name": "Media processing",
+    "total_guides": 6
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.753Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "ardour",
+      "title": "ardour Installation Guide",
+      "description": "ardour is a free and open-source audio workstation. Ardour provides digital audio workstation",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "multimedia"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/ardour/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/ardour.json",
+      "github": "https://github.com/howtomgr/ardour"
+    },
+    {
+      "name": "audacity",
+      "title": "audacity Installation Guide",
+      "description": "audacity is a free and open-source audio editor. Audacity provides multi-track audio editor",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "multimedia"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/audacity/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/audacity.json",
+      "github": "https://github.com/howtomgr/audacity"
+    },
+    {
+      "name": "blender",
+      "title": "blender Installation Guide",
+      "description": "blender is a free and open-source 3D creation suite. Blender provides 3D creation suite",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/blender/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/blender.json",
+      "github": "https://github.com/howtomgr/blender"
+    },
+    {
+      "name": "ffmpeg",
+      "title": "ffmpeg Installation Guide",
+      "description": "ffmpeg is a free and open-source multimedia framework. FFmpeg provides tools to decode, encode, transcode multimedia",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/ffmpeg/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/ffmpeg.json",
+      "github": "https://github.com/howtomgr/ffmpeg"
+    },
+    {
+      "name": "handbrake",
+      "title": "handbrake Installation Guide",
+      "description": "handbrake is a free and open-source video transcoder. HandBrake provides open source video transcoder",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "multimedia"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/handbrake/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/handbrake.json",
+      "github": "https://github.com/howtomgr/handbrake"
+    },
+    {
+      "name": "kdenlive",
+      "title": "kdenlive Installation Guide",
+      "description": "kdenlive is a free and open-source video editor. Kdenlive provides multi-track video editor",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "multimedia"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/kdenlive/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/kdenlive.json",
+      "github": "https://github.com/howtomgr/kdenlive"
+    }
+  ]
+}

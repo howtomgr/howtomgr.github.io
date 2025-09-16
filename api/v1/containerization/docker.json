@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.789Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "docker",
+    "title": "Docker Installation Guide",
+    "description": "Docker is a free and open-source containerization platform that enables developers to package applications and their dependencies into portable containers. Originally developed by Solomon Hykes at dotCloud, Docker revolutionized application deployment by providing OS-level virtualization. It serves as a FOSS alternative to proprietary virtualization solutions like VMware vSphere, Microsoft Hyper-V containers, or commercial container platforms, offering comparable functionality with features like image layering, container orchestration, and resource isolation.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "containerization",
+    "subcategory": "containerization",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      0,
+      1,
+      2,
+      8,
+      15,
+      80,
+      127,
+      443,
+      2375,
+      2376,
+      2377,
+      3306,
+      4789,
+      5000,
+      5432,
+      7946,
+      8080,
+      9090,
+      9100
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/containerization/docker/",
+    "api": "https://howtomgr.github.io/api/v1/containerization/docker.json",
+    "documentation_url": "https://howtomgr.github.io/containerization/docker",
+    "website_url": "https://howtomgr.github.io/containerization/docker",
+    "github_url": "https://github.com/howtomgr/docker",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:06:42Z",
+      "created": "2023-08-28T03:47:37Z"
+    },
+    "guide_info": {
+      "word_count": 3265,
+      "estimated_read_time": "17 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:24.060Z"
+    }
+  }
+}

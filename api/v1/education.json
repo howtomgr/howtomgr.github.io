@@ -1,0 +1,328 @@
+{
+  "category": {
+    "name": "education",
+    "display_name": "Education",
+    "total_guides": 7
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.755Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "chamilo",
+      "title": "chamilo Installation Guide",
+      "description": "chamilo is a free and open-source e-learning platform. Chamilo provides e-learning and collaboration platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "education",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/education/chamilo/",
+      "api": "https://howtomgr.github.io/api/v1/education/chamilo.json",
+      "github": "https://github.com/howtomgr/chamilo"
+    },
+    {
+      "name": "gibbon",
+      "title": "gibbon Installation Guide",
+      "description": "gibbon is a free and open-source school platform. Gibbon provides flexible school management platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "education",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/education/gibbon/",
+      "api": "https://howtomgr.github.io/api/v1/education/gibbon.json",
+      "github": "https://github.com/howtomgr/gibbon"
+    },
+    {
+      "name": "h5p",
+      "title": "h5p Installation Guide",
+      "description": "h5p is a free and open-source interactive content. H5P provides framework for creating interactive content",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "education",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/education/h5p/",
+      "api": "https://howtomgr.github.io/api/v1/education/h5p.json",
+      "github": "https://github.com/howtomgr/h5p"
+    },
+    {
+      "name": "ilias",
+      "title": "ilias Installation Guide",
+      "description": "ilias is a free and open-source learning management. ILIAS provides comprehensive learning management system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "education",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/education/ilias/",
+      "api": "https://howtomgr.github.io/api/v1/education/ilias.json",
+      "github": "https://github.com/howtomgr/ilias"
+    },
+    {
+      "name": "kolibri",
+      "title": "kolibri Installation Guide",
+      "description": "kolibri is a free and open-source offline learning. Kolibri provides offline-first learning platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "education",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/education/kolibri/",
+      "api": "https://howtomgr.github.io/api/v1/education/kolibri.json",
+      "github": "https://github.com/howtomgr/kolibri"
+    },
+    {
+      "name": "mahara",
+      "title": "mahara Installation Guide",
+      "description": "mahara is a free and open-source ePortfolio system. Mahara provides learner-centered ePortfolio system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "education",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/education/mahara/",
+      "api": "https://howtomgr.github.io/api/v1/education/mahara.json",
+      "github": "https://github.com/howtomgr/mahara"
+    },
+    {
+      "name": "moodle",
+      "title": "moodle Installation Guide",
+      "description": "moodle is a free and open-source learning platform. Moodle provides open source learning management system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "education",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/education/moodle/",
+      "api": "https://howtomgr.github.io/api/v1/education/moodle.json",
+      "github": "https://github.com/howtomgr/moodle"
+    }
+  ]
+}

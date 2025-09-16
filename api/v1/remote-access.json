@@ -1,0 +1,193 @@
+{
+  "category": {
+    "name": "remote-access",
+    "display_name": "Remote access",
+    "total_guides": 4
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.761Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "guacamole",
+      "title": "guacamole Installation Guide",
+      "description": "guacamole is a free and open-source remote desktop gateway. Guacamole provides clientless remote desktop gateway",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "remote-access",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/remote-access/guacamole/",
+      "api": "https://howtomgr.github.io/api/v1/remote-access/guacamole.json",
+      "github": "https://github.com/howtomgr/guacamole"
+    },
+    {
+      "name": "kasm",
+      "title": "kasm Installation Guide",
+      "description": "kasm is a free and open-source browser isolation. Kasm provides browser isolation and remote apps",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "remote-access",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/remote-access/kasm/",
+      "api": "https://howtomgr.github.io/api/v1/remote-access/kasm.json",
+      "github": "https://github.com/howtomgr/kasm"
+    },
+    {
+      "name": "meshcentral",
+      "title": "meshcentral Installation Guide",
+      "description": "meshcentral is a free and open-source remote management. MeshCentral provides full computer management over web",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "remote-access",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/remote-access/meshcentral/",
+      "api": "https://howtomgr.github.io/api/v1/remote-access/meshcentral.json",
+      "github": "https://github.com/howtomgr/meshcentral"
+    },
+    {
+      "name": "nomachine",
+      "title": "nomachine Installation Guide",
+      "description": "nomachine is a free and open-source remote desktop. NoMachine provides fast remote desktop access",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "remote-access",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/remote-access/nomachine/",
+      "api": "https://howtomgr.github.io/api/v1/remote-access/nomachine.json",
+      "github": "https://github.com/howtomgr/nomachine"
+    }
+  ]
+}

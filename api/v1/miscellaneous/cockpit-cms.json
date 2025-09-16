@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.783Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "cockpit-cms",
+    "title": "cockpit-cms Installation Guide",
+    "description": "cockpit-cms is a free and open-source API-first CMS. Cockpit provides simple content platform for developers",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/cockpit-cms/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/cockpit-cms.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/cockpit-cms",
+    "website_url": "https://howtomgr.github.io/miscellaneous/cockpit-cms",
+    "github_url": "https://github.com/howtomgr/cockpit-cms",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:03:05Z",
+      "created": "2025-09-16T02:27:11Z"
+    },
+    "guide_info": {
+      "word_count": 1153,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:36.526Z"
+    }
+  }
+}

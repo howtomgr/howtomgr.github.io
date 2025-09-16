@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.811Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "haproxy",
+    "title": "HAProxy Installation Guide",
+    "description": "High-performance TCP/HTTP load balancer and reverse proxy for distributing traffic across multiple backend servers. Industry standard for load balancing with enterprise-grade security and reliability.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "load-balancers",
+    "subcategory": "load-balancers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "arch",
+      "alpine"
+    ],
+    "default_ports": [
+      1,
+      53,
+      80,
+      443,
+      514,
+      3000,
+      3001,
+      3002,
+      3003,
+      3004,
+      3306,
+      4096,
+      5432,
+      6379,
+      8080,
+      8404,
+      8405,
+      9000,
+      9101
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "load-balancers",
+      "containerization",
+      "observability",
+      "data-storage",
+      "web-services",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/load-balancers/haproxy/",
+    "api": "https://howtomgr.github.io/api/v1/load-balancers/haproxy.json",
+    "documentation_url": "https://howtomgr.github.io/load-balancers/haproxy",
+    "website_url": "https://howtomgr.github.io/load-balancers/haproxy",
+    "github_url": "https://github.com/howtomgr/haproxy",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:19:14Z",
+      "created": "2025-09-08T03:08:23Z"
+    },
+    "guide_info": {
+      "word_count": 5710,
+      "estimated_read_time": "29 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:49.185Z"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.828Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "laminar",
+    "title": "laminar Installation Guide",
+    "description": "laminar is a free and open-source lightweight CI. Laminar provides lightweight, modular continuous integration service",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "ci-cd",
+    "subcategory": "ci-cd",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      8080
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "ci-cd",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/ci-cd/laminar/",
+    "api": "https://howtomgr.github.io/api/v1/ci-cd/laminar.json",
+    "documentation_url": "https://howtomgr.github.io/ci-cd/laminar",
+    "website_url": "https://howtomgr.github.io/ci-cd/laminar",
+    "github_url": "https://github.com/howtomgr/laminar",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:33:29Z",
+      "created": "2025-09-16T03:33:19Z"
+    },
+    "guide_info": {
+      "word_count": 1153,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:21.981Z"
+    }
+  }
+}

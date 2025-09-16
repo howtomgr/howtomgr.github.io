@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.802Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "garage",
+    "title": "garage Installation Guide",
+    "description": "garage is a free and open-source S3-compatible storage. Garage provides self-hosted S3-compatible distributed object storage",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "object-storage",
+    "subcategory": "object-storage",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      3900
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "object-storage",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/object-storage/garage/",
+    "api": "https://howtomgr.github.io/api/v1/object-storage/garage.json",
+    "documentation_url": "https://howtomgr.github.io/object-storage/garage",
+    "website_url": "https://howtomgr.github.io/object-storage/garage",
+    "github_url": "https://github.com/howtomgr/garage",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:13:09Z",
+      "created": "2025-09-16T02:39:53Z"
+    },
+    "guide_info": {
+      "word_count": 1154,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:02.240Z"
+    }
+  }
+}

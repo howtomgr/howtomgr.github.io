@@ -1,0 +1,90 @@
+{
+  "category": {
+    "name": "monitoring",
+    "display_name": "Monitoring",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.755Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "blackbox-exporter",
+      "title": "Blackbox Exporter Installation Guide",
+      "description": "Blackbox Exporter is a Prometheus exporter that allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP, ICMP and gRPC. It's essential for monitoring external services and endpoints from a user perspective.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "arch"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "security",
+        "networking"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/blackbox-exporter/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/blackbox-exporter.json",
+      "github": "https://github.com/howtomgr/blackbox-exporter"
+    },
+    {
+      "name": "nagios",
+      "title": "nagios Installation Guide",
+      "description": "nagios is a free and open-source system monitoring. Nagios provides comprehensive IT infrastructure monitoring",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/nagios/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/nagios.json",
+      "github": "https://github.com/howtomgr/nagios"
+    }
+  ]
+}

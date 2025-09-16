@@ -1,0 +1,103 @@
+{
+  "category": {
+    "name": "container-registries",
+    "display_name": "Container registries",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.761Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "harbor",
+      "title": "harbor Installation Guide",
+      "description": "harbor is a free and open-source cloud native registry. Harbor provides container image registry with security scanning, signing, and replication, serving as an enterprise alternative to Docker Hub",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "container-registries",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/container-registries/harbor/",
+      "api": "https://howtomgr.github.io/api/v1/container-registries/harbor.json",
+      "github": "https://github.com/howtomgr/harbor"
+    },
+    {
+      "name": "docker-registry",
+      "title": "registry Installation Guide",
+      "description": "registry is a free and open-source Docker image registry. Docker Registry stores and distributes Docker images, providing a self-hosted alternative to Docker Hub or cloud registries",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "container-registries",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/container-registries/docker-registry/",
+      "api": "https://howtomgr.github.io/api/v1/container-registries/docker-registry.json",
+      "github": "https://github.com/howtomgr/docker-registry"
+    }
+  ]
+}

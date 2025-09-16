@@ -1,0 +1,58 @@
+{
+  "category": {
+    "name": "container-tools",
+    "display_name": "Container tools",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.757Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "crane",
+      "title": "crane Installation Guide",
+      "description": "crane is a free and open-source Docker registry UI. Crane provides UI for Docker Registry with authentication",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "container-tools",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/container-tools/crane/",
+      "api": "https://howtomgr.github.io/api/v1/container-tools/crane.json",
+      "github": "https://github.com/howtomgr/crane"
+    }
+  ]
+}

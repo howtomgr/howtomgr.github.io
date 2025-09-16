@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.835Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "mariadb",
+    "title": "MariaDB Installation Guide",
+    "description": "MariaDB is a free and open-source relational database management system (RDBMS) and a fork of MySQL. Originally developed by Michael \"Monty\" Widenius, the original developer of MySQL, MariaDB was created to remain free under the GNU GPL after Oracle's acquisition of MySQL. It serves as a FOSS alternative to commercial databases like Oracle Database, Microsoft SQL Server, or IBM Db2, offering enterprise-grade features including Galera clustering, advanced storage engines, and enhanced performance optimizations without licensing costs, with features like ACID compliance, replication, and horizontal scaling.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "databases",
+    "subcategory": "databases",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      0,
+      1,
+      30,
+      2048,
+      3306,
+      3307,
+      4444,
+      4567,
+      4568
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "databases",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/databases/mariadb/",
+    "api": "https://howtomgr.github.io/api/v1/databases/mariadb.json",
+    "documentation_url": "https://howtomgr.github.io/databases/mariadb",
+    "website_url": "https://howtomgr.github.io/databases/mariadb",
+    "github_url": "https://github.com/howtomgr/mariadb",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:40:00Z",
+      "created": "2025-09-16T03:39:50Z"
+    },
+    "guide_info": {
+      "word_count": 3350,
+      "estimated_read_time": "17 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:11.154Z"
+    }
+  }
+}

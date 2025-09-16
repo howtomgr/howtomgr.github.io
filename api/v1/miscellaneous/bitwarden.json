@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.775Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "bitwarden",
+    "title": "bitwarden Installation Guide",
+    "description": "bitwarden is a free and open-source open source password manager. Bitwarden provides secure password management for individuals and teams, serving as a FOSS alternative to LastPass, 1Password, or Dashlane",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      3012
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/bitwarden/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/bitwarden.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/bitwarden",
+    "website_url": "https://howtomgr.github.io/miscellaneous/bitwarden",
+    "github_url": "https://github.com/howtomgr/bitwarden",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:59:04Z",
+      "created": "2025-09-16T02:22:17Z"
+    },
+    "guide_info": {
+      "word_count": 1176,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:48.885Z"
+    }
+  }
+}

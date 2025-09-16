@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.819Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "jitsi",
+    "title": "Jitsi",
+    "description": "Jitsi Meet is an open-source video conferencing solution",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "video-conferencing",
+    "subcategory": "video-conferencing",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      443,
+      10000
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "video",
+      "conferencing",
+      "webrtc",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/video-conferencing/jitsi/",
+    "api": "https://howtomgr.github.io/api/v1/video-conferencing/jitsi.json",
+    "documentation_url": "https://howtomgr.github.io/video-conferencing/jitsi",
+    "website_url": "https://howtomgr.github.io/video-conferencing/jitsi",
+    "github_url": "https://github.com/howtomgr/jitsi",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:26:01Z",
+      "created": "2025-09-08T03:09:16Z"
+    },
+    "guide_info": {
+      "word_count": 3059,
+      "estimated_read_time": "16 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:35.966Z"
+    }
+  }
+}

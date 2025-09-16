@@ -1,0 +1,239 @@
+{
+  "category": {
+    "name": "databases",
+    "display_name": "Databases",
+    "total_guides": 5
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.755Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "cassandra",
+      "title": "cassandra Installation Guide",
+      "description": "cassandra is a free and open-source distributed NoSQL database. Apache Cassandra provides high availability with no single point of failure, serving as an open-source alternative to Amazon DynamoDB or Azure Cosmos DB",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "databases",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/databases/cassandra/",
+      "api": "https://howtomgr.github.io/api/v1/databases/cassandra.json",
+      "github": "https://github.com/howtomgr/cassandra"
+    },
+    {
+      "name": "cockroachdb",
+      "title": "cockroachdb Installation Guide",
+      "description": "cockroachdb is a free and open-source distributed SQL database. CockroachDB provides distributed SQL with strong consistency and survivability, serving as an open-source alternative to Google Spanner or Amazon Aurora",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "databases",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/databases/cockroachdb/",
+      "api": "https://howtomgr.github.io/api/v1/databases/cockroachdb.json",
+      "github": "https://github.com/howtomgr/cockroachdb"
+    },
+    {
+      "name": "mariadb",
+      "title": "MariaDB Installation Guide",
+      "description": "MariaDB is a free and open-source relational database management system (RDBMS) and a fork of MySQL. Originally developed by Michael \"Monty\" Widenius, the original developer of MySQL, MariaDB was created to remain free under the GNU GPL after Oracle's acquisition of MySQL. It serves as a FOSS alternative to commercial databases like Oracle Database, Microsoft SQL Server, or IBM Db2, offering enterprise-grade features including Galera clustering, advanced storage engines, and enhanced performance optimizations without licensing costs, with features like ACID compliance, replication, and horizontal scaling.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "databases",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/databases/mariadb/",
+      "api": "https://howtomgr.github.io/api/v1/databases/mariadb.json",
+      "github": "https://github.com/howtomgr/mariadb"
+    },
+    {
+      "name": "mongodb",
+      "title": "MongoDB Installation Guide",
+      "description": "MongoDB is a free and open-source document-oriented NoSQL database. Originally developed by 10gen (now MongoDB Inc.), MongoDB uses JSON-like documents with optional schemas instead of traditional table-based relational database structure. It serves as a FOSS alternative to commercial document databases like Amazon DocumentDB, Azure Cosmos DB, or Oracle NoSQL Database, offering enterprise-grade features including horizontal scaling, replica sets, and sharding without licensing costs, with features like ACID transactions, aggregation pipelines, and full-text search.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "databases",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/databases/mongodb/",
+      "api": "https://howtomgr.github.io/api/v1/databases/mongodb.json",
+      "github": "https://github.com/howtomgr/mongodb"
+    },
+    {
+      "name": "mysql",
+      "title": "MySQL Installation Guide",
+      "description": "MySQL is a free and open-source relational database management system (RDBMS). Originally developed by Michael \"Monty\" Widenius and now owned by Oracle Corporation, MySQL is the world's second-most widely used relational database management system. It serves as a FOSS alternative to commercial databases like Oracle Database, Microsoft SQL Server, or IBM Db2, offering enterprise-grade reliability, performance, and scalability without licensing costs, with features like ACID compliance, transactions, replication, and clustering.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "databases",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/databases/mysql/",
+      "api": "https://howtomgr.github.io/api/v1/databases/mysql.json",
+      "github": "https://github.com/howtomgr/mysql"
+    }
+  ]
+}

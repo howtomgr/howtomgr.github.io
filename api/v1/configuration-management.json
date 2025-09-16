@@ -1,0 +1,106 @@
+{
+  "category": {
+    "name": "configuration-management",
+    "display_name": "Configuration management",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.752Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "ansible",
+      "title": "Ansible Installation Guide",
+      "description": "Ansible is a free and open-source agentless automation platform for configuration management, application deployment, and task automation across multiple systems. Originally developed by Michael DeHaan and acquired by Red Hat, Ansible serves as the industry standard for infrastructure automation with enterprise-grade security and scalability. It provides a robust alternative to proprietary solutions like VMware vRealize Automation, Microsoft System Center, or Puppet Enterprise without vendor lock-in or licensing costs.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "configuration-management",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "web-services",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/configuration-management/ansible/",
+      "api": "https://howtomgr.github.io/api/v1/configuration-management/ansible.json",
+      "github": "https://github.com/howtomgr/ansible"
+    },
+    {
+      "name": "chef",
+      "title": "chef Installation Guide",
+      "description": "chef is a free and open-source infrastructure automation. Chef provides infrastructure automation platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "configuration-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/configuration-management/chef/",
+      "api": "https://howtomgr.github.io/api/v1/configuration-management/chef.json",
+      "github": "https://github.com/howtomgr/chef"
+    }
+  ]
+}

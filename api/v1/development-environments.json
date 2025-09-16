@@ -1,0 +1,104 @@
+{
+  "category": {
+    "name": "development-environments",
+    "display_name": "Development environments",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.756Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "che",
+      "title": "che Installation Guide",
+      "description": "che is a free and open-source developer workspace. Eclipse Che provides Kubernetes-native IDE and developer workspace",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "development-environments",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/development-environments/che/",
+      "api": "https://howtomgr.github.io/api/v1/development-environments/che.json",
+      "github": "https://github.com/howtomgr/che"
+    },
+    {
+      "name": "cloud9",
+      "title": "cloud9 Installation Guide",
+      "description": "cloud9 is a free and open-source cloud development. Cloud9 provides cloud-based integrated development environment",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "development-environments",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/development-environments/cloud9/",
+      "api": "https://howtomgr.github.io/api/v1/development-environments/cloud9.json",
+      "github": "https://github.com/howtomgr/cloud9"
+    }
+  ]
+}

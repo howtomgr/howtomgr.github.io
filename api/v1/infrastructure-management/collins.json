@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.783Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "collins",
+    "title": "collins Installation Guide",
+    "description": "collins is a free and open-source infrastructure management. Collins provides infrastructure asset management",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "infrastructure-management",
+    "subcategory": "infrastructure-management",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      9000
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "infrastructure-management",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/infrastructure-management/collins/",
+    "api": "https://howtomgr.github.io/api/v1/infrastructure-management/collins.json",
+    "documentation_url": "https://howtomgr.github.io/infrastructure-management/collins",
+    "website_url": "https://howtomgr.github.io/infrastructure-management/collins",
+    "github_url": "https://github.com/howtomgr/collins",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:03:26Z",
+      "created": "2025-09-16T02:27:43Z"
+    },
+    "guide_info": {
+      "word_count": 1149,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:35.700Z"
+    }
+  }
+}

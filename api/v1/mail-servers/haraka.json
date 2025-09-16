@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.811Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "haraka",
+    "title": "Haraka Installation Guide",
+    "description": "Haraka is a free and open-source Mail Server. A highly scalable node.js email server",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "mail-servers",
+    "subcategory": "mail-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      25,
+      80,
+      443,
+      2048
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "mail-servers",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/mail-servers/haraka/",
+    "api": "https://howtomgr.github.io/api/v1/mail-servers/haraka.json",
+    "documentation_url": "https://howtomgr.github.io/mail-servers/haraka",
+    "website_url": "https://howtomgr.github.io/mail-servers/haraka",
+    "github_url": "https://github.com/howtomgr/haraka",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:19:29Z",
+      "created": "2025-09-16T03:19:19Z"
+    },
+    "guide_info": {
+      "word_count": 1868,
+      "estimated_read_time": "10 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:48.717Z"
+    }
+  }
+}

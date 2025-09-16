@@ -1,0 +1,55 @@
+{
+  "category": {
+    "name": "tracing",
+    "display_name": "Tracing",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.762Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "jaeger",
+      "title": "Jaeger Installation Guide",
+      "description": "End-to-end distributed tracing system for monitoring and troubleshooting complex microservices architectures. Essential tool for understanding request flows and performance bottlenecks.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "tracing",
+        "containerization",
+        "orchestration",
+        "observability"
+      ],
+      "site": "https://howtomgr.github.io/tracing/jaeger/",
+      "api": "https://howtomgr.github.io/api/v1/tracing/jaeger.json",
+      "github": "https://github.com/howtomgr/jaeger"
+    }
+  ]
+}

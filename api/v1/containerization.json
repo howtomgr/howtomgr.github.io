@@ -1,0 +1,102 @@
+{
+  "category": {
+    "name": "containerization",
+    "display_name": "Containerization",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.757Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "containerd",
+      "title": "containerd Installation Guide",
+      "description": "containerd is a free and open-source industry-standard container runtime. containerd provides a reliable container runtime with an emphasis on simplicity, robustness, and portability",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/containerization/containerd/",
+      "api": "https://howtomgr.github.io/api/v1/containerization/containerd.json",
+      "github": "https://github.com/howtomgr/containerd"
+    },
+    {
+      "name": "docker",
+      "title": "Docker Installation Guide",
+      "description": "Docker is a free and open-source containerization platform that enables developers to package applications and their dependencies into portable containers. Originally developed by Solomon Hykes at dotCloud, Docker revolutionized application deployment by providing OS-level virtualization. It serves as a FOSS alternative to proprietary virtualization solutions like VMware vSphere, Microsoft Hyper-V containers, or commercial container platforms, offering comparable functionality with features like image layering, container orchestration, and resource isolation.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/containerization/docker/",
+      "api": "https://howtomgr.github.io/api/v1/containerization/docker.json",
+      "github": "https://github.com/howtomgr/docker"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.846Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "nginx",
+    "title": "NGINX Installation Guide",
+    "description": "NGINX is a free and open-source web server, reverse proxy, load balancer, and HTTP cache. Originally written by Igor Sysoev to solve the C10K problem, it's now one of the most popular web servers in the world. NGINX serves as a FOSS alternative to commercial solutions like F5 BIG-IP, Citrix ADC, or proprietary CDNs, offering enterprise-grade performance and reliability without licensing costs.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "web-servers",
+    "subcategory": "web-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      2,
+      10,
+      50,
+      80,
+      443,
+      3000,
+      3001,
+      8080,
+      9113
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "web-servers",
+      "observability",
+      "data-storage",
+      "web-services",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/web-servers/nginx/",
+    "api": "https://howtomgr.github.io/api/v1/web-servers/nginx.json",
+    "documentation_url": "https://howtomgr.github.io/web-servers/nginx",
+    "website_url": "https://howtomgr.github.io/web-servers/nginx",
+    "github_url": "https://github.com/howtomgr/nginx",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:50:16Z",
+      "created": "2025-09-08T03:12:26Z"
+    },
+    "guide_info": {
+      "word_count": 2897,
+      "estimated_read_time": "15 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:57:51.551Z"
+    }
+  }
+}

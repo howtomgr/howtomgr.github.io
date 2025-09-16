@@ -1,0 +1,103 @@
+{
+  "category": {
+    "name": "security-monitoring",
+    "display_name": "Security monitoring",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.751Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "aide",
+      "title": "aide Installation Guide",
+      "description": "aide is a free and open-source intrusion detection. AIDE provides file integrity checker and intrusion detection",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "security-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/security-monitoring/aide/",
+      "api": "https://howtomgr.github.io/api/v1/security-monitoring/aide.json",
+      "github": "https://github.com/howtomgr/aide"
+    },
+    {
+      "name": "falco",
+      "title": "falco Installation Guide",
+      "description": "falco is a free and open-source runtime security. Falco provides cloud-native runtime security",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "security-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/security-monitoring/falco/",
+      "api": "https://howtomgr.github.io/api/v1/security-monitoring/falco.json",
+      "github": "https://github.com/howtomgr/falco"
+    }
+  ]
+}

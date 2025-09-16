@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.792Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "elasticsearch",
+    "title": "Elasticsearch Installation Guide",
+    "description": "Elasticsearch is a free and open-source distributed, RESTful search and analytics engine. Originally developed by Shay Banon and now maintained by Elastic N.V., Elasticsearch is built on Apache Lucene and designed for horizontal scalability, reliability, and real-time search. It serves as a FOSS alternative to commercial search solutions like Amazon CloudSearch, Azure Cognitive Search, or Splunk Enterprise, offering enterprise-grade features including full-text search, aggregations, and analytics without licensing costs, with features like distributed architecture, RESTful API, and multi-tenancy.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "search-engines",
+    "subcategory": "search-engines",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      0,
+      8,
+      30,
+      443,
+      5601,
+      9200,
+      9201,
+      9300
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "search-engines",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/search-engines/elasticsearch/",
+    "api": "https://howtomgr.github.io/api/v1/search-engines/elasticsearch.json",
+    "documentation_url": "https://howtomgr.github.io/search-engines/elasticsearch",
+    "website_url": "https://howtomgr.github.io/search-engines/elasticsearch",
+    "github_url": "https://github.com/howtomgr/elasticsearch",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:08:15Z",
+      "created": "2025-09-08T03:06:51Z"
+    },
+    "guide_info": {
+      "word_count": 3365,
+      "estimated_read_time": "17 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:18.484Z"
+    }
+  }
+}

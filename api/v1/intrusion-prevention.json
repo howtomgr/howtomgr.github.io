@@ -1,0 +1,59 @@
+{
+  "category": {
+    "name": "intrusion-prevention",
+    "display_name": "Intrusion prevention",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.759Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "fail2ban",
+      "title": "Fail2ban Installation Guide",
+      "description": "Fail2ban is a free and open-source intrusion prevention software framework that protects servers from brute-force attacks. Written in Python, it monitors log files and bans IP addresses that show malicious signs such as too many password failures or seeking exploits. It serves as a powerful FOSS alternative to commercial security solutions like Cloudflare Rate Limiting, AWS WAF, or proprietary IPS systems, providing enterprise-grade protection without licensing costs or vendor lock-in.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "intrusion-prevention",
+        "observability",
+        "data-storage",
+        "web-services",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/intrusion-prevention/fail2ban/",
+      "api": "https://howtomgr.github.io/api/v1/intrusion-prevention/fail2ban.json",
+      "github": "https://github.com/howtomgr/fail2ban"
+    }
+  ]
+}

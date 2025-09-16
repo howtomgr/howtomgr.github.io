@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.765Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "adguardhome",
+    "title": "adguard-home Installation Guide",
+    "description": "adguard-home is a free and open-source network-wide ads and tracking blocking. AdGuard Home provides DNS-based blocking of ads and trackers with a modern UI, serving as an alternative to Pi-hole",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "dns-filtering",
+    "subcategory": "dns-filtering",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      53,
+      80,
+      443,
+      3000
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "dns-filtering",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/dns-filtering/adguardhome/",
+    "api": "https://howtomgr.github.io/api/v1/dns-filtering/adguardhome.json",
+    "documentation_url": "https://howtomgr.github.io/dns-filtering/adguardhome",
+    "website_url": "https://howtomgr.github.io/dns-filtering/adguardhome",
+    "github_url": "https://github.com/howtomgr/adguardhome",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:54:04Z",
+      "created": "2025-09-16T02:16:06Z"
+    },
+    "guide_info": {
+      "word_count": 1172,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T07:00:05.318Z"
+    }
+  }
+}

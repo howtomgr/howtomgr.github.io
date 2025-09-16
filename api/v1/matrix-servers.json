@@ -1,0 +1,59 @@
+{
+  "category": {
+    "name": "matrix-servers",
+    "display_name": "Matrix servers",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.757Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "dendrite",
+      "title": "Dendrite Installation Guide",
+      "description": "Dendrite is a free and open-source Matrix Server. Second-generation Matrix homeserver",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "matrix-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/matrix-servers/dendrite/",
+      "api": "https://howtomgr.github.io/api/v1/matrix-servers/dendrite.json",
+      "github": "https://github.com/howtomgr/dendrite"
+    }
+  ]
+}

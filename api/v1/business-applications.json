@@ -1,0 +1,196 @@
+{
+  "category": {
+    "name": "business-applications",
+    "display_name": "Business applications",
+    "total_guides": 4
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.751Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "akaunting",
+      "title": "akaunting Installation Guide",
+      "description": "akaunting is a free and open-source accounting software. Akaunting provides free accounting software for small businesses",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "business-applications",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/business-applications/akaunting/",
+      "api": "https://howtomgr.github.io/api/v1/business-applications/akaunting.json",
+      "github": "https://github.com/howtomgr/akaunting"
+    },
+    {
+      "name": "dolibarr",
+      "title": "dolibarr Installation Guide",
+      "description": "dolibarr is a free and open-source ERP/CRM system. Dolibarr provides ERP/CRM for small and medium businesses",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "business-applications",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/business-applications/dolibarr/",
+      "api": "https://howtomgr.github.io/api/v1/business-applications/dolibarr.json",
+      "github": "https://github.com/howtomgr/dolibarr"
+    },
+    {
+      "name": "invoiceninja",
+      "title": "Invoice Ninja Installation Guide",
+      "description": "Invoice Ninja is a powerful open-source invoicing and billing platform designed for freelancers and businesses. It provides features for creating invoices, quotes, managing clients, tracking payments, time tracking, and expense management.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "business-applications",
+        "containerization",
+        "observability",
+        "data-storage",
+        "web-services",
+        "security",
+        "data-protection",
+        "communication",
+        "multimedia",
+        "networking"
+      ],
+      "site": "https://howtomgr.github.io/business-applications/invoiceninja/",
+      "api": "https://howtomgr.github.io/api/v1/business-applications/invoiceninja.json",
+      "github": "https://github.com/howtomgr/invoiceninja"
+    },
+    {
+      "name": "odoo",
+      "title": "odoo Installation Guide",
+      "description": "odoo is a free and open-source business management software. Odoo provides all-in-one business software including CRM, eCommerce, accounting",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "business-applications",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/business-applications/odoo/",
+      "api": "https://howtomgr.github.io/api/v1/business-applications/odoo.json",
+      "github": "https://github.com/howtomgr/odoo"
+    }
+  ]
+}

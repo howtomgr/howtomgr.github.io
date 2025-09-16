@@ -1,0 +1,58 @@
+{
+  "category": {
+    "name": "file-sharing",
+    "display_name": "File sharing",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.764Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "nextcloud",
+      "title": "nextcloud Installation Guide",
+      "description": "nextcloud is a free and open-source self-hosted file sync and collaboration platform. Nextcloud provides file hosting, sync, and collaboration features, serving as a privacy-focused alternative to Google Drive, Dropbox, or Microsoft OneDrive",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "file-sharing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/file-sharing/nextcloud/",
+      "api": "https://howtomgr.github.io/api/v1/file-sharing/nextcloud.json",
+      "github": "https://github.com/howtomgr/nextcloud"
+    }
+  ]
+}

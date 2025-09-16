@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.769Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "apache",
+    "title": "Apache HTTP Server Installation Guide",
+    "description": "Apache HTTP Server is a free and open-source cross-platform web server software developed and maintained by the Apache Software Foundation. Originally based on the NCSA HTTPd server, Apache has been the most popular web server on the Internet since April 1996, serving over 40% of active websites. It serves as a FOSS alternative to commercial web servers like Microsoft IIS, NGINX Plus, or F5 BIG-IP, offering enterprise-grade performance, security, and flexibility without licensing costs.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "web-servers",
+    "subcategory": "web-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      1,
+      5,
+      80,
+      443,
+      3000,
+      8080,
+      8081
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "web-servers",
+      "observability",
+      "data-storage",
+      "web-services",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/web-servers/apache/",
+    "api": "https://howtomgr.github.io/api/v1/web-servers/apache.json",
+    "documentation_url": "https://howtomgr.github.io/web-servers/apache",
+    "website_url": "https://howtomgr.github.io/web-servers/apache",
+    "github_url": "https://github.com/howtomgr/apache",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:55:43Z",
+      "created": "2025-09-08T03:04:47Z"
+    },
+    "guide_info": {
+      "word_count": 4766,
+      "estimated_read_time": "24 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:59.521Z"
+    }
+  }
+}

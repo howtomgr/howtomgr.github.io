@@ -1,0 +1,238 @@
+{
+  "category": {
+    "name": "infrastructure-management",
+    "display_name": "Infrastructure management",
+    "total_guides": 5
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.756Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "cobbler",
+      "title": "cobbler Installation Guide",
+      "description": "cobbler is a free and open-source provisioning server. Cobbler provides network installation server for rapid setup",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "infrastructure-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/infrastructure-management/cobbler/",
+      "api": "https://howtomgr.github.io/api/v1/infrastructure-management/cobbler.json",
+      "github": "https://github.com/howtomgr/cobbler"
+    },
+    {
+      "name": "collins",
+      "title": "collins Installation Guide",
+      "description": "collins is a free and open-source infrastructure management. Collins provides infrastructure asset management",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "infrastructure-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/infrastructure-management/collins/",
+      "api": "https://howtomgr.github.io/api/v1/infrastructure-management/collins.json",
+      "github": "https://github.com/howtomgr/collins"
+    },
+    {
+      "name": "foreman",
+      "title": "foreman Installation Guide",
+      "description": "foreman is a free and open-source lifecycle management. Foreman provides complete lifecycle management for servers",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "infrastructure-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/infrastructure-management/foreman/",
+      "api": "https://howtomgr.github.io/api/v1/infrastructure-management/foreman.json",
+      "github": "https://github.com/howtomgr/foreman"
+    },
+    {
+      "name": "ironic",
+      "title": "ironic Installation Guide",
+      "description": "ironic is a free and open-source bare metal provisioning. Ironic provides bare metal provisioning for OpenStack",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "infrastructure-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/infrastructure-management/ironic/",
+      "api": "https://howtomgr.github.io/api/v1/infrastructure-management/ironic.json",
+      "github": "https://github.com/howtomgr/ironic"
+    },
+    {
+      "name": "maas",
+      "title": "maas Installation Guide",
+      "description": "maas is a free and open-source bare metal cloud. MAAS provides bare metal provisioning for physical servers",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "infrastructure-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/infrastructure-management/maas/",
+      "api": "https://howtomgr.github.io/api/v1/infrastructure-management/maas.json",
+      "github": "https://github.com/howtomgr/maas"
+    }
+  ]
+}

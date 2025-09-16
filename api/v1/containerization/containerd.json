@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.784Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "containerd",
+    "title": "containerd Installation Guide",
+    "description": "containerd is a free and open-source industry-standard container runtime. containerd provides a reliable container runtime with an emphasis on simplicity, robustness, and portability",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "containerization",
+    "subcategory": "containerization",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/containerization/containerd/",
+    "api": "https://howtomgr.github.io/api/v1/containerization/containerd.json",
+    "documentation_url": "https://howtomgr.github.io/containerization/containerd",
+    "website_url": "https://howtomgr.github.io/containerization/containerd",
+    "github_url": "https://github.com/howtomgr/containerd",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:03:59Z",
+      "created": "2025-09-16T02:28:22Z"
+    },
+    "guide_info": {
+      "word_count": 1163,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:34.024Z"
+    }
+  }
+}

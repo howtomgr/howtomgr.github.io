@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.817Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "istio",
+    "title": "istio Installation Guide",
+    "description": "istio is a free and open-source service mesh. Istio provides open platform to connect, manage, and secure microservices",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "service-mesh",
+    "subcategory": "service-mesh",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      15000
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "service-mesh",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/service-mesh/istio/",
+    "api": "https://howtomgr.github.io/api/v1/service-mesh/istio.json",
+    "documentation_url": "https://howtomgr.github.io/service-mesh/istio",
+    "website_url": "https://howtomgr.github.io/service-mesh/istio",
+    "github_url": "https://github.com/howtomgr/istio",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:24:26Z",
+      "created": "2025-09-16T03:24:17Z"
+    },
+    "guide_info": {
+      "word_count": 1157,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:58:39.827Z"
+    }
+  }
+}

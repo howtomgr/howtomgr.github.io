@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.767Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "akaunting",
+    "title": "akaunting Installation Guide",
+    "description": "akaunting is a free and open-source accounting software. Akaunting provides free accounting software for small businesses",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "business-applications",
+    "subcategory": "business-applications",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "business-applications",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/business-applications/akaunting/",
+    "api": "https://howtomgr.github.io/api/v1/business-applications/akaunting.json",
+    "documentation_url": "https://howtomgr.github.io/business-applications/akaunting",
+    "website_url": "https://howtomgr.github.io/business-applications/akaunting",
+    "github_url": "https://github.com/howtomgr/akaunting",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:54:52Z",
+      "created": "2025-09-16T02:17:13Z"
+    },
+    "guide_info": {
+      "word_count": 1154,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T07:00:02.506Z"
+    }
+  }
+}

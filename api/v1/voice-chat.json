@@ -1,0 +1,60 @@
+{
+  "category": {
+    "name": "voice-chat",
+    "display_name": "Voice chat",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.764Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "mumble",
+      "title": "Mumble Installation Guide",
+      "description": "Mumble is a free and open-source Voice Server. Low-latency, high quality voice chat",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "voice-chat",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/voice-chat/mumble/",
+      "api": "https://howtomgr.github.io/api/v1/voice-chat/mumble.json",
+      "github": "https://github.com/howtomgr/mumble"
+    }
+  ]
+}

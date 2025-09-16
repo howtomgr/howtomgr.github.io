@@ -1,0 +1,142 @@
+{
+  "category": {
+    "name": "load-balancers",
+    "display_name": "Load balancers",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.759Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "fabio",
+      "title": "fabio Installation Guide",
+      "description": "fabio is a free and open-source load balancer. Fabio provides fast, zero-conf load balancing HTTP/S router",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "load-balancers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/load-balancers/fabio/",
+      "api": "https://howtomgr.github.io/api/v1/load-balancers/fabio.json",
+      "github": "https://github.com/howtomgr/fabio"
+    },
+    {
+      "name": "gobetween",
+      "title": "gobetween Installation Guide",
+      "description": "gobetween is a free and open-source load balancer. Gobetween provides modern, minimalistic load balancer",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "load-balancers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/load-balancers/gobetween/",
+      "api": "https://howtomgr.github.io/api/v1/load-balancers/gobetween.json",
+      "github": "https://github.com/howtomgr/gobetween"
+    },
+    {
+      "name": "haproxy",
+      "title": "HAProxy Installation Guide",
+      "description": "High-performance TCP/HTTP load balancer and reverse proxy for distributing traffic across multiple backend servers. Industry standard for load balancing with enterprise-grade security and reliability.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "arch",
+        "alpine"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "load-balancers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "web-services",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/load-balancers/haproxy/",
+      "api": "https://howtomgr.github.io/api/v1/load-balancers/haproxy.json",
+      "github": "https://github.com/howtomgr/haproxy"
+    }
+  ]
+}

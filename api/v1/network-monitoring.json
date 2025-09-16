@@ -1,0 +1,283 @@
+{
+  "category": {
+    "name": "network-monitoring",
+    "display_name": "Network monitoring",
+    "total_guides": 6
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.754Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "bandwidthd",
+      "title": "bandwidthd Installation Guide",
+      "description": "bandwidthd is a free and open-source bandwidth monitoring. BandwidthD tracks bandwidth usage and provides graphs",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "network-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/network-monitoring/bandwidthd/",
+      "api": "https://howtomgr.github.io/api/v1/network-monitoring/bandwidthd.json",
+      "github": "https://github.com/howtomgr/bandwidthd"
+    },
+    {
+      "name": "darkstat",
+      "title": "darkstat Installation Guide",
+      "description": "darkstat is a free and open-source network statistics. darkstat captures network traffic and provides statistics",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "network-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/network-monitoring/darkstat/",
+      "api": "https://howtomgr.github.io/api/v1/network-monitoring/darkstat.json",
+      "github": "https://github.com/howtomgr/darkstat"
+    },
+    {
+      "name": "iftop",
+      "title": "iftop Installation Guide",
+      "description": "iftop is a free and open-source bandwidth usage. iftop displays bandwidth usage on interface by host",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "network-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/network-monitoring/iftop/",
+      "api": "https://howtomgr.github.io/api/v1/network-monitoring/iftop.json",
+      "github": "https://github.com/howtomgr/iftop"
+    },
+    {
+      "name": "mrtg",
+      "title": "mrtg Installation Guide",
+      "description": "mrtg is a free and open-source traffic grapher. MRTG provides tool to monitor traffic load on network links",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "network-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/network-monitoring/mrtg/",
+      "api": "https://howtomgr.github.io/api/v1/network-monitoring/mrtg.json",
+      "github": "https://github.com/howtomgr/mrtg"
+    },
+    {
+      "name": "netflow",
+      "title": "netflow Installation Guide",
+      "description": "netflow is a free and open-source flow collection. nfdump provides NetFlow collection and processing",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "network-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/network-monitoring/netflow/",
+      "api": "https://howtomgr.github.io/api/v1/network-monitoring/netflow.json",
+      "github": "https://github.com/howtomgr/netflow"
+    },
+    {
+      "name": "nethogs",
+      "title": "nethogs Installation Guide",
+      "description": "nethogs is a free and open-source bandwidth monitor. NetHogs groups bandwidth by process",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "network-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/network-monitoring/nethogs/",
+      "api": "https://howtomgr.github.io/api/v1/network-monitoring/nethogs.json",
+      "github": "https://github.com/howtomgr/nethogs"
+    }
+  ]
+}

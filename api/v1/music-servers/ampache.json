@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.768Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "ampache",
+    "title": "ampache Installation Guide",
+    "description": "ampache is a free and open-source web-based audio streaming. Ampache provides web-based audio streaming and management, serving as a FOSS alternative to Spotify server",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "music-servers",
+    "subcategory": "music-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "music-servers",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "multimedia"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/music-servers/ampache/",
+    "api": "https://howtomgr.github.io/api/v1/music-servers/ampache.json",
+    "documentation_url": "https://howtomgr.github.io/music-servers/ampache",
+    "website_url": "https://howtomgr.github.io/music-servers/ampache",
+    "github_url": "https://github.com/howtomgr/ampache",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T02:55:21Z",
+      "created": "2025-09-16T02:17:50Z"
+    },
+    "guide_info": {
+      "word_count": 1162,
+      "estimated_read_time": "6 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T07:00:00.749Z"
+    }
+  }
+}

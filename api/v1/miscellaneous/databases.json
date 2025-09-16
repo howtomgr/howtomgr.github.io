@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T07:00:12.787Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "databases",
+    "title": "Database Installation Guide",
+    "description": "Comprehensive installation and configuration guide for popular database management systems including MySQL/MariaDB, PostgreSQL, MongoDB, and more. Complete with security hardening and performance optimization for production environments.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "arch"
+    ],
+    "default_ports": [
+      0,
+      1,
+      4096,
+      6379,
+      6380,
+      26379,
+      27017,
+      27019
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "observability",
+      "data-storage",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/databases/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/databases.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/databases",
+    "website_url": "https://howtomgr.github.io/miscellaneous/databases",
+    "github_url": "https://github.com/howtomgr/databases",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T03:05:31Z",
+      "created": "2023-08-28T03:47:28Z"
+    },
+    "guide_info": {
+      "word_count": 4871,
+      "estimated_read_time": "25 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T06:59:28.287Z"
+    }
+  }
+}

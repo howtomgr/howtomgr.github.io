@@ -1,0 +1,373 @@
+{
+  "category": {
+    "name": "workflow-engines",
+    "display_name": "Workflow engines",
+    "total_guides": 8
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:00:12.751Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "airflow",
+      "title": "airflow Installation Guide",
+      "description": "airflow is a free and open-source workflow platform. Airflow provides platform to programmatically author and monitor workflows",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/airflow/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/airflow.json",
+      "github": "https://github.com/howtomgr/airflow"
+    },
+    {
+      "name": "azkaban",
+      "title": "azkaban Installation Guide",
+      "description": "azkaban is a free and open-source workflow manager. LinkedIn Azkaban provides batch workflow job scheduler",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/azkaban/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/azkaban.json",
+      "github": "https://github.com/howtomgr/azkaban"
+    },
+    {
+      "name": "cadence",
+      "title": "cadence Installation Guide",
+      "description": "cadence is a free and open-source workflow orchestration. Uber Cadence provides fault-tolerant stateful code platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/cadence/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/cadence.json",
+      "github": "https://github.com/howtomgr/cadence"
+    },
+    {
+      "name": "dagster",
+      "title": "dagster Installation Guide",
+      "description": "dagster is a free and open-source data orchestrator. Dagster provides data orchestrator for machine learning and ETL",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/dagster/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/dagster.json",
+      "github": "https://github.com/howtomgr/dagster"
+    },
+    {
+      "name": "digdag",
+      "title": "digdag Installation Guide",
+      "description": "digdag is a free and open-source workflow engine. Digdag provides simple workflow engine for multi-cloud",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/digdag/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/digdag.json",
+      "github": "https://github.com/howtomgr/digdag"
+    },
+    {
+      "name": "kedro",
+      "title": "kedro Installation Guide",
+      "description": "kedro is a free and open-source data pipeline framework. Kedro provides framework for creating reproducible data pipelines",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/kedro/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/kedro.json",
+      "github": "https://github.com/howtomgr/kedro"
+    },
+    {
+      "name": "luigi",
+      "title": "luigi Installation Guide",
+      "description": "luigi is a free and open-source pipeline framework. Luigi helps build complex pipelines of batch jobs",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/luigi/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/luigi.json",
+      "github": "https://github.com/howtomgr/luigi"
+    },
+    {
+      "name": "metaflow",
+      "title": "metaflow Installation Guide",
+      "description": "metaflow is a free and open-source ML infrastructure. Netflix Metaflow provides framework for real-life ML projects",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/metaflow/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/metaflow.json",
+      "github": "https://github.com/howtomgr/metaflow"
+    }
+  ]
+}
