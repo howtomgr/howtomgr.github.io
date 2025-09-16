@@ -1,0 +1,43 @@
+{
+  "name": "howtomgr-website",
+  "version": "3.0.0",
+  "description": "HowToMgr - Installation guides and how-to tutorials",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build-data": "node scripts/fetch-github-data.js",
+    "build-all": "npm run build-data && npm run build",
+    "serve": "npx serve out",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.15"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/howtomgr/howtomgr.github.io.git"
+  },
+  "keywords": [
+    "installation",
+    "guides",
+    "tutorials",
+    "linux",
+    "devops",
+    "howto",
+    "nextjs"
+  ],
+  "author": "HowToMgr Organization",
+  "license": "WTFPL",
+  "homepage": "https://howtomgr.github.io"
+}

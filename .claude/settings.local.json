@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Read(//root/Projects/github/howtomgr/**)",
+      "Bash(docker build:*)",
+      "Bash(docker run:*)",
+      "Bash(docker rmi:*)",
+      "Bash(grep:*)",
+      "Bash(npm install)",
+      "Bash(npm run lint)",
+      "Bash(npm outdated)",
+      "Bash(npm audit:*)",
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)",
+      "WebFetch(domain:mb.pste.us)",
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(gh api:*)",
+      "Bash(gh workflow run:*)",
+      "Bash(curl:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

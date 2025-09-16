@@ -1,0 +1,117 @@
+name: 🚀 Build & Deploy Next.js Site
+
+on:
+  schedule:
+    - cron: '0 6,18 * * *'  # 6 AM & 6 PM UTC
+
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'out/**'       # Ignore Next.js build output
+      - 'data/**'      # Ignore generated data files
+      - '*.md'         # Ignore README and docs
+
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    # Prevent infinite loops
+    if: |
+      github.event_name == 'schedule' ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'push' && !contains(github.event.head_commit.message, '🚀 Deploy:') && github.actor != 'github-actions[bot]')
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🔄 Fetch GitHub data
+        env:
+          GITHUB_TOKEN: ${{ secrets.HOWTOMGR_TOKEN || secrets.GITHUB_TOKEN }}
+        run: npm run build-data
+
+      - name: 🏗️ Build & Export Next.js site
+        run: npm run build
+
+      - name: 📊 Generate build summary
+        id: summary
+        run: |
+          if [ -f "data/guides.json" ]; then
+            GUIDE_COUNT=$(jq '.metadata.totalGuides' data/guides.json)
+            echo "guide_count=$GUIDE_COUNT" >> $GITHUB_OUTPUT
+          else
+            echo "guide_count=0" >> $GITHUB_OUTPUT
+          fi
+
+          TIMESTAMP=$(date '+%Y-%m-%d %H:%M UTC')
+          echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
+
+      - name: 🚀 Deploy to GitHub Pages
+        run: |
+          # Configure Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Clone and setup gh-pages branch
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/howtomgr/howtomgr.github.io.git gh-pages-repo
+          cd gh-pages-repo
+
+          # Create/checkout gh-pages branch
+          git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
+
+          # Clear existing content
+          git rm -rf . 2>/dev/null || true
+
+          # Copy new build
+          cp -r ../out/* .
+          cp ../out/.nojekyll . 2>/dev/null || echo "" > .nojekyll
+
+          # Commit and push
+          git add .
+          git commit -m "🚀 Deploy: ${{ steps.summary.outputs.guide_count }} guides - ${{ steps.summary.outputs.timestamp }}
+
+          📊 Deployment:
+          • Guides: ${{ steps.summary.outputs.guide_count }}
+          • Framework: Next.js + Static Export
+          • Trigger: ${{ github.event_name }}
+          • Mobile-First: ✅
+
+          🔗 https://howtomgr.github.io" || echo "No changes to deploy"
+
+          git push origin gh-pages --force
+
+          # Cleanup
+          cd ..
+          rm -rf gh-pages-repo
+
+      - name: 📋 Deployment Summary
+        run: |
+          echo "## 🚀 Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- **Guides**: ${{ steps.summary.outputs.guide_count }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Framework**: Next.js" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mobile-First**: ✅" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: ${{ steps.summary.outputs.timestamp }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🔗 Site Links" >> $GITHUB_STEP_SUMMARY
+          echo "- [🏠 Homepage](https://howtomgr.github.io)" >> $GITHUB_STEP_SUMMARY
+          echo "- [🌐 Web Servers](https://howtomgr.github.io/web-server)" >> $GITHUB_STEP_SUMMARY
+          echo "- [🗄️ Databases](https://howtomgr.github.io/database)" >> $GITHUB_STEP_SUMMARY
+          echo "- [📦 Containers](https://howtomgr.github.io/container)" >> $GITHUB_STEP_SUMMARY
