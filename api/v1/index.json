@@ -8,14 +8,14 @@
   },
   "meta": {
     "total_guides": 339,
-    "total_categories": 77,
-    "last_updated": "2025-09-16T07:00:12.747Z"
+    "total_categories": 80,
+    "last_updated": "2025-09-16T07:36:16.090Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 139,
+      "count": 137,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -25,6 +25,13 @@
       "count": 1,
       "url": "https://howtomgr.github.io/dns-filtering/",
       "api_url": "https://howtomgr.github.io/api/v1/dns-filtering.json"
+    },
+    {
+      "name": "database-management",
+      "display_name": "Database management",
+      "count": 1,
+      "url": "https://howtomgr.github.io/database-management/",
+      "api_url": "https://howtomgr.github.io/api/v1/database-management.json"
     },
     {
       "name": "webmail",
@@ -218,7 +225,7 @@
     {
       "name": "iot-platforms",
       "display_name": "Iot platforms",
-      "count": 6,
+      "count": 5,
       "url": "https://howtomgr.github.io/iot-platforms/",
       "api_url": "https://howtomgr.github.io/api/v1/iot-platforms.json"
     },
@@ -315,7 +322,7 @@
     },
     {
       "name": "static-site-generators",
-      "display_name": "Static site-generators",
+      "display_name": "Static site generators",
       "count": 7,
       "url": "https://howtomgr.github.io/static-site-generators/",
       "api_url": "https://howtomgr.github.io/api/v1/static-site-generators.json"
@@ -336,7 +343,7 @@
     },
     {
       "name": "key-value-stores",
-      "display_name": "Key value-stores",
+      "display_name": "Key value stores",
       "count": 1,
       "url": "https://howtomgr.github.io/key-value-stores/",
       "api_url": "https://howtomgr.github.io/api/v1/key-value-stores.json"
@@ -412,6 +419,13 @@
       "api_url": "https://howtomgr.github.io/api/v1/container-registries.json"
     },
     {
+      "name": "home-automation",
+      "display_name": "Home automation",
+      "count": 1,
+      "url": "https://howtomgr.github.io/home-automation/",
+      "api_url": "https://howtomgr.github.io/api/v1/home-automation.json"
+    },
+    {
       "name": "streaming-servers",
       "display_name": "Streaming servers",
       "count": 1,
@@ -420,7 +434,7 @@
     },
     {
       "name": "time-series-databases",
-      "display_name": "Time series-databases",
+      "display_name": "Time series databases",
       "count": 1,
       "url": "https://howtomgr.github.io/time-series-databases/",
       "api_url": "https://howtomgr.github.io/api/v1/time-series-databases.json"
@@ -517,6 +531,13 @@
       "api_url": "https://howtomgr.github.io/api/v1/caching.json"
     },
     {
+      "name": "mail",
+      "display_name": "Mail",
+      "count": 1,
+      "url": "https://howtomgr.github.io/mail/",
+      "api_url": "https://howtomgr.github.io/api/v1/mail.json"
+    },
+    {
       "name": "voice-chat",
       "display_name": "Voice chat",
       "count": 1,
@@ -557,6 +578,7 @@
     "categories": [
       "/api/v1/miscellaneous.json",
       "/api/v1/dns-filtering.json",
+      "/api/v1/database-management.json",
       "/api/v1/webmail.json",
       "/api/v1/ci-cd.json",
       "/api/v1/security-monitoring.json",
@@ -612,6 +634,7 @@
       "/api/v1/remote-access.json",
       "/api/v1/vulnerability-scanning.json",
       "/api/v1/container-registries.json",
+      "/api/v1/home-automation.json",
       "/api/v1/streaming-servers.json",
       "/api/v1/time-series-databases.json",
       "/api/v1/mail-stacks.json",
@@ -627,6 +650,7 @@
       "/api/v1/mailing-lists.json",
       "/api/v1/team-chat.json",
       "/api/v1/caching.json",
+      "/api/v1/mail.json",
       "/api/v1/voice-chat.json",
       "/api/v1/file-sharing.json",
       "/api/v1/data-processing.json",
@@ -636,7 +660,7 @@
     "tools": [
       "/api/v1/miscellaneous/ackee.json",
       "/api/v1/dns-filtering/adguardhome.json",
-      "/api/v1/miscellaneous/adminer.json",
+      "/api/v1/database-management/adminer.json",
       "/api/v1/webmail/afterlogic.json",
       "/api/v1/ci-cd/agola.json",
       "/api/v1/security-monitoring/aide.json",
@@ -733,6 +757,7 @@
       "/api/v1/miscellaneous/deluge.json",
       "/api/v1/matrix-servers/dendrite.json",
       "/api/v1/miscellaneous/dgraph.json",
+      "/api/v1/miscellaneous/dgraph.json",
       "/api/v1/workflow-engines/digdag.json",
       "/api/v1/headless-cms/directus.json",
       "/api/v1/miscellaneous/discourse.json",
@@ -762,7 +787,6 @@
       "/api/v1/key-value-stores/etcd.json",
       "/api/v1/miscellaneous/ethereum_geth.json",
       "/api/v1/miscellaneous/eventstore.json",
-      "/api/v1/miscellaneous/exchange.json",
       "/api/v1/mail-servers/exim.json",
       "/api/v1/miscellaneous/express_gateway.json",
       "/api/v1/load-balancers/fabio.json",
@@ -827,11 +851,10 @@
       "/api/v1/miscellaneous/headscale.json",
       "/api/v1/miscellaneous/hedgedoc.json",
       "/api/v1/static-site-generators/hexo.json",
-      "/api/v1/iot-platforms/home-assistant.json",
+      "/api/v1/home-automation/home-assistant.json",
       "/api/v1/webmail/horde.json",
       "/api/v1/miscellaneous/hubitat.json",
       "/api/v1/static-site-generators/hugo.json",
-      "/api/v1/miscellaneous/hyperledger_fabric.json",
       "/api/v1/streaming-servers/icecast.json",
       "/api/v1/miscellaneous/icinga.json",
       "/api/v1/network-monitoring/iftop.json",
@@ -921,6 +944,7 @@
       "/api/v1/workflow-engines/metaflow.json",
       "/api/v1/static-site-generators/metalsmith.json",
       "/api/v1/miscellaneous/microk8s.json",
+      "/api/v1/mail/exchange.json",
       "/api/v1/miscellaneous/mssql.json",
       "/api/v1/miscellaneous/milvus.json",
       "/api/v1/miscellaneous/minecraft-bedrock.json",

@@ -1,0 +1,51 @@
+{
+  "category": {
+    "name": "mail",
+    "display_name": "Mail",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:36:16.109Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "exchange",
+      "title": "Microsoft Exchange Server 2016 Installation Guide",
+      "description": "Microsoft Exchange Server 2016 is a proprietary messaging and collaboration platform for enterprise environments. This comprehensive installation guide covers all aspects of deploying Exchange on Windows Server 2016, while highlighting open-source alternatives like Zimbra, iRedMail, and Mailcow.",
+      "difficulty_level": "advanced",
+      "estimated_setup_time": "2-4 hours",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "windows-server-2016"
+      ],
+      "features": [
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides",
+        "high-availability-setup",
+        "ssl-tls-configuration",
+        "monitoring-alerting",
+        "database-management",
+        "reverse-proxy-setup"
+      ],
+      "tags": [
+        "mail-server",
+        "messaging",
+        "collaboration",
+        "enterprise",
+        "microsoft",
+        "proprietary",
+        "groupware",
+        "exchange"
+      ],
+      "site": "https://howtomgr.github.io/mail/exchange/",
+      "api": "https://howtomgr.github.io/api/v1/mail/exchange.json",
+      "github": "https://github.com/howtomgr/exchange"
+    }
+  ]
+}

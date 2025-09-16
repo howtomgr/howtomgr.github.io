@@ -1,0 +1,54 @@
+{
+  "category": {
+    "name": "home-automation",
+    "display_name": "Home automation",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T07:36:16.106Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "home-assistant",
+      "title": "Home Assistant Installation Guide",
+      "description": "Home Assistant is a free and open-source home automation platform that runs on Python. It puts local control and privacy first, serving as a FOSS alternative to proprietary smart home platforms like Google Home, Amazon Alexa, Apple HomeKit, or Samsung SmartThings.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "30-60 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "smart-home",
+        "automation",
+        "iot",
+        "home-control",
+        "privacy-focused"
+      ],
+      "site": "https://howtomgr.github.io/home-automation/home-assistant/",
+      "api": "https://howtomgr.github.io/api/v1/home-automation/home-assistant.json",
+      "github": "https://github.com/howtomgr/home-assistant"
+    }
+  ]
+}

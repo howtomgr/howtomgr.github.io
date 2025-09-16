@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 139
+    "total_guides": 137
   },
   "meta": {
-    "generated_at": "2025-09-16T07:00:12.748Z",
+    "generated_at": "2025-09-16T07:36:16.091Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -53,45 +53,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/ackee/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/ackee.json",
       "github": "https://github.com/howtomgr/ackee"
-    },
-    {
-      "name": "adminer",
-      "title": "Adminer",
-      "description": "adminer README",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/adminer/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/adminer.json",
-      "github": "https://github.com/howtomgr/adminer"
     },
     {
       "name": "appwrite",
@@ -1879,6 +1840,51 @@
       "github": "https://github.com/howtomgr/dgraph"
     },
     {
+      "name": "dgraph",
+      "title": "dgraph Installation Guide",
+      "description": "dgraph is a free and open-source distributed graph database. Dgraph provides a native GraphQL database with a graph backend, serving as an open-source alternative to Neo4j or Amazon Neptune",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/dgraph/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/dgraph.json",
+      "github": "https://github.com/howtomgr/dgraph"
+    },
+    {
       "name": "discourse",
       "title": "discourse Installation Guide",
       "description": "discourse is a free and open-source modern discussion platform. Discourse reimagines online discussion forums with modern features, serving as an alternative to vBulletin, phpBB, or commercial forum software",
@@ -2372,34 +2378,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/eventstore/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/eventstore.json",
       "github": "https://github.com/howtomgr/eventstore"
-    },
-    {
-      "name": "exchange",
-      "title": "Exchange 2016 on Server 2016",
-      "description": "```text",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "networking"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/exchange/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/exchange.json",
-      "github": "https://github.com/howtomgr/exchange"
     },
     {
       "name": "express_gateway",
@@ -3706,51 +3684,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/hubitat/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/hubitat.json",
       "github": "https://github.com/howtomgr/hubitat"
-    },
-    {
-      "name": "hyperledger_fabric",
-      "title": "hyperledger-fabric Installation Guide",
-      "description": "hyperledger-fabric is a free and open-source enterprise blockchain. Fabric provides enterprise-grade permissioned blockchain",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/hyperledger_fabric/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/hyperledger_fabric.json",
-      "github": "https://github.com/howtomgr/hyperledger_fabric"
     },
     {
       "name": "icinga",

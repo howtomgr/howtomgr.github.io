@@ -1,0 +1,725 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/><meta name="theme-color" content="#bd93f9"/><link rel="icon" href="/favicon.ico"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"/><title class="jsx-f92e766e9414ef16">artifactory Installation Guide Installation Guide - HowToMgr</title><meta name="description" content="artifactory is a free and open-source universal repository manager. Artifactory provides universal repository management for all major package formats" class="jsx-f92e766e9414ef16"/><meta name="keywords" content="installation guides, tutorials, linux, docker, kubernetes, mobile-first, responsive" class="jsx-f92e766e9414ef16"/><meta property="og:title" content="artifactory Installation Guide Installation Guide - HowToMgr" class="jsx-f92e766e9414ef16"/><meta property="og:description" content="artifactory is a free and open-source universal repository manager. Artifactory provides universal repository management for all major package formats" class="jsx-f92e766e9414ef16"/><meta property="og:type" content="website" class="jsx-f92e766e9414ef16"/><meta property="og:url" content="https://howtomgr.github.io" class="jsx-f92e766e9414ef16"/><meta property="og:image" content="https://howtomgr.github.io/social-preview.png" class="jsx-f92e766e9414ef16"/><meta property="twitter:card" content="summary_large_image" class="jsx-f92e766e9414ef16"/><meta property="twitter:title" content="artifactory Installation Guide Installation Guide - HowToMgr" class="jsx-f92e766e9414ef16"/><meta property="twitter:description" content="artifactory is a free and open-source universal repository manager. Artifactory provides universal repository management for all major package formats" class="jsx-f92e766e9414ef16"/><meta name="next-head-count" content="17"/><link rel="dns-prefetch" href="//api.github.com"/><link rel="dns-prefetch" href="//github.com"/><link rel="preload" href="/favicon.ico" as="image"/><meta name="application-name" content="HowToMgr"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="default"/><meta name="apple-mobile-web-app-title" content="HowToMgr"/><meta name="format-detection" content="telephone=no"/><meta name="mobile-web-app-capable" content="yes"/><noscript><style>
+            .requires-js { display: none !important; }
+            .no-js-message { display: block !important; }
+          </style></noscript><link rel="preload" href="/_next/static/css/eec6c1c201affe77.css" as="style"/><link rel="stylesheet" href="/_next/static/css/eec6c1c201affe77.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/_next/static/chunks/webpack-ee7e63bc15b31913.js" defer=""></script><script src="/_next/static/chunks/framework-2b1f7a23d657eae4.js" defer=""></script><script src="/_next/static/chunks/main-6ec3f7584970eebe.js" defer=""></script><script src="/_next/static/chunks/pages/_app-f7367f88af207b64.js" defer=""></script><script src="/_next/static/chunks/119-abfbe7c9e22798da.js" defer=""></script><script src="/_next/static/chunks/pages/%5Bcategory%5D/%5Bguide%5D-49be0242df755af9.js" defer=""></script><script src="/_next/static/20so-B5n1BtXhVd04NVg4/_buildManifest.js" defer=""></script><script src="/_next/static/20so-B5n1BtXhVd04NVg4/_ssgManifest.js" defer=""></script><style id="__jsx-6606b434a58724e9">.breadcrumb.jsx-6606b434a58724e9{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:var(--space-2);margin-bottom:var(--space-6);font-size:var(--font-sm);color:var(--text-secondary);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}.breadcrumb.jsx-6606b434a58724e9 a.jsx-6606b434a58724e9{color:var(--accent-primary);text-decoration:none;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.breadcrumb.jsx-6606b434a58724e9 a.jsx-6606b434a58724e9:hover{text-decoration:underline}.separator.jsx-6606b434a58724e9{color:var(--text-muted);-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}.current.jsx-6606b434a58724e9{color:var(--text-primary);font-weight:500;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}.guide-header.jsx-6606b434a58724e9{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface)}.guide-title.jsx-6606b434a58724e9{color:var(--accent-primary);font-size:var(--font-3xl);margin-bottom:var(--space-4);line-height:1.2;word-break:break-word}.guide-description.jsx-6606b434a58724e9{color:var(--text-secondary);font-size:var(--font-lg);margin-bottom:var(--space-5);line-height:1.5}.guide-badges.jsx-6606b434a58724e9{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);margin-bottom:var(--space-5);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.guide-actions.jsx-6606b434a58724e9{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-3);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.difficulty-beginner.jsx-6606b434a58724e9{background:var(--accent-secondary);color:var(--bg-primary)}.difficulty-intermediate.jsx-6606b434a58724e9{background:var(--accent-warning);color:var(--bg-primary)}.difficulty-advanced.jsx-6606b434a58724e9{background:var(--accent-error);color:var(--bg-primary)}.guide-content.jsx-6606b434a58724e9{background:var(--bg-secondary);-webkit-border-radius:var(--border-radius-lg);-moz-border-radius:var(--border-radius-lg);border-radius:var(--border-radius-lg);padding:var(--space-6);margin-bottom:var(--space-8);border:1px solid var(--bg-surface);overflow-x:hidden}.related-section.jsx-6606b434a58724e9{margin-bottom:var(--space-8)}.section-title.jsx-6606b434a58724e9{color:var(--accent-primary);font-size:var(--font-2xl);text-align:center;margin-bottom:var(--space-6)}.guide-navigation.jsx-6606b434a58724e9{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:var(--space-8)}.loading-container.jsx-6606b434a58724e9,.error-container.jsx-6606b434a58724e9{text-align:center;padding:var(--space-8)}.error-actions.jsx-6606b434a58724e9{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:var(--space-6);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}@media(max-width:767px){.guide-header.jsx-6606b434a58724e9{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-title.jsx-6606b434a58724e9{font-size:var(--font-2xl)}.guide-description.jsx-6606b434a58724e9{font-size:var(--font-base)}.guide-content.jsx-6606b434a58724e9{padding:var(--space-4);margin-bottom:var(--space-6)}.guide-badges.jsx-6606b434a58724e9{gap:var(--space-2)}.guide-actions.jsx-6606b434a58724e9{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.guide-navigation.jsx-6606b434a58724e9{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.breadcrumb.jsx-6606b434a58724e9{margin-bottom:var(--space-4)}}</style><style id="__jsx-f92e766e9414ef16">.app-container.jsx-f92e766e9414ef16{min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-top:56px}.main-content.jsx-f92e766e9414ef16{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;padding:var(--space-6)0}.mobile-footer.jsx-f92e766e9414ef16{background:var(--bg-secondary);border-top:1px solid var(--bg-surface);padding:var(--space-6)0;margin-top:auto}.footer-content.jsx-f92e766e9414ef16{text-align:center}.footer-links.jsx-f92e766e9414ef16{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:var(--space-6);margin-bottom:var(--space-4);-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.footer-links.jsx-f92e766e9414ef16 a.jsx-f92e766e9414ef16{color:var(--accent-primary);text-decoration:none;font-size:var(--font-sm)}.footer-links.jsx-f92e766e9414ef16 a.jsx-f92e766e9414ef16:hover{color:var(--accent-secondary)}.footer-separator.jsx-f92e766e9414ef16{height:1px;background:var(--bg-surface);margin:var(--space-4)auto;width:200px}.footer-text.jsx-f92e766e9414ef16,.footer-tech.jsx-f92e766e9414ef16{color:var(--text-secondary);font-size:var(--font-sm);margin-bottom:var(--space-2)}.footer-disclaimer.jsx-f92e766e9414ef16{color:var(--text-muted);font-size:var(--font-xs)}.nav-links.jsx-f92e766e9414ef16{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:var(--space-4)}.nav-link.jsx-f92e766e9414ef16{color:var(--text-primary);text-decoration:none;padding:var(--space-2)var(--space-3);-webkit-border-radius:var(--border-radius);-moz-border-radius:var(--border-radius);border-radius:var(--border-radius);font-size:var(--font-sm);font-weight:500;-webkit-transition:var(--transition);-moz-transition:var(--transition);-o-transition:var(--transition);transition:var(--transition);min-height:36px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}.nav-link.jsx-f92e766e9414ef16:hover{background:var(--bg-surface);color:var(--accent-primary);text-decoration:none}[data-theme="light"].jsx-f92e766e9414ef16 .theme-icon-dark.jsx-f92e766e9414ef16{display:none}[data-theme="light"].jsx-f92e766e9414ef16 .theme-icon-light.jsx-f92e766e9414ef16{display:inline!important}@media(max-width:767px){.main-content.jsx-f92e766e9414ef16{padding:var(--space-4)0}.footer-links.jsx-f92e766e9414ef16{gap:var(--space-4)}}</style></head><body><noscript><div class="no-js-message" style="padding:1rem;background:#ff5555;color:#f8f8f2;text-align:center;font-size:0.9rem">This site requires JavaScript to function properly. Please enable JavaScript in your browser.</div></noscript><div id="__next"><div class="jsx-f92e766e9414ef16 app-container"><a href="#main-content" class="jsx-f92e766e9414ef16 skip-link">Skip to main content</a><nav class="jsx-f92e766e9414ef16 mobile-nav"><div class="jsx-f92e766e9414ef16 mobile-nav-content"><a class="mobile-brand" href="/"><span role="img" aria-label="Books" class="jsx-f92e766e9414ef16">📚</span>HowToMgr</a><div class="jsx-f92e766e9414ef16 nav-links"><a class="nav-link" href="/all/">All</a><a class="nav-link" href="/search/">Search</a></div><button aria-label="Toggle theme" title="Switch theme" class="jsx-f92e766e9414ef16 mobile-theme-toggle touch-target"><span class="jsx-f92e766e9414ef16 theme-icon-dark">🌙</span><span style="display:none" class="jsx-f92e766e9414ef16 theme-icon-light">☀️</span></button></div></nav><main id="main-content" tabindex="-1" class="jsx-f92e766e9414ef16 main-content"><div class="jsx-f92e766e9414ef16 container"><nav aria-label="Breadcrumb" class="jsx-6606b434a58724e9 breadcrumb"><a href="/">Home</a><span class="jsx-6606b434a58724e9 separator">→</span><a href="/artifact-repositories/">Artifact repositories</a><span class="jsx-6606b434a58724e9 separator">→</span><span class="jsx-6606b434a58724e9 current">artifactory Installation Guide</span></nav><header class="jsx-6606b434a58724e9 guide-header"><div class="jsx-6606b434a58724e9 guide-meta-top"><h1 class="jsx-6606b434a58724e9 guide-title">artifactory Installation Guide</h1><p class="jsx-6606b434a58724e9 guide-description">artifactory is a free and open-source universal repository manager. Artifactory provides universal repository management for all major package formats</p><div class="jsx-6606b434a58724e9 guide-badges"><span class="jsx-6606b434a58724e9 mobile-badge mobile-badge-primary">Artifact repositories</span><span class="jsx-6606b434a58724e9 mobile-badge difficulty-intermediate">🟡<!-- --> <!-- -->intermediate</span><span class="jsx-6606b434a58724e9 mobile-badge mobile-badge-info">7 min</span><span class="jsx-6606b434a58724e9 mobile-badge mobile-badge-secondary">⏱️ <!-- -->15-30 minutes</span></div><div class="jsx-6606b434a58724e9 guide-actions"><a href="https://github.com/howtomgr/artifactory" target="_blank" rel="noopener" class="jsx-6606b434a58724e9 btn btn-secondary">View on GitHub</a></div></div></header><article class="jsx-6606b434a58724e9 guide-content"><div class="jsx-6606b434a58724e9 readme-content"><h1 id="artifactory-installation-guide" class="mobile-header">artifactory Installation Guide</h1>
+<p class="mobile-paragraph">artifactory is a free and open-source universal repository manager. Artifactory provides universal repository management for all major package formats</p>
+<h2 id="table-of-contents" class="mobile-header">Table of Contents</h2>
+<p class="mobile-paragraph">1. <a href="#prerequisites" target="_blank" rel="noopener" class="mobile-link">Prerequisites</a></p>
+<p class="mobile-paragraph">2. <a href="#supported-operating-systems" target="_blank" rel="noopener" class="mobile-link">Supported Operating Systems</a></p>
+<p class="mobile-paragraph">3. <a href="#installation" target="_blank" rel="noopener" class="mobile-link">Installation</a></p>
+<p class="mobile-paragraph">4. <a href="#configuration" target="_blank" rel="noopener" class="mobile-link">Configuration</a></p>
+<p class="mobile-paragraph">5. <a href="#service-management" target="_blank" rel="noopener" class="mobile-link">Service Management</a></p>
+<p class="mobile-paragraph">6. <a href="#troubleshooting" target="_blank" rel="noopener" class="mobile-link">Troubleshooting</a></p>
+<p class="mobile-paragraph">7. <a href="#security-considerations" target="_blank" rel="noopener" class="mobile-link">Security Considerations</a></p>
+<p class="mobile-paragraph">8. <a href="#performance-tuning" target="_blank" rel="noopener" class="mobile-link">Performance Tuning</a></p>
+<p class="mobile-paragraph">9. <a href="#backup-and-restore" target="_blank" rel="noopener" class="mobile-link">Backup and Restore</a></p>
+<p class="mobile-paragraph">10. <a href="#system-requirements" target="_blank" rel="noopener" class="mobile-link">System Requirements</a></p>
+<p class="mobile-paragraph">11. <a href="#support" target="_blank" rel="noopener" class="mobile-link">Support</a></p>
+<p class="mobile-paragraph">12. <a href="#contributing" target="_blank" rel="noopener" class="mobile-link">Contributing</a></p>
+<p class="mobile-paragraph">13. <a href="#license" target="_blank" rel="noopener" class="mobile-link">License</a></p>
+<p class="mobile-paragraph">14. <a href="#acknowledgments" target="_blank" rel="noopener" class="mobile-link">Acknowledgments</a></p>
+<p class="mobile-paragraph">15. <a href="#version-history" target="_blank" rel="noopener" class="mobile-link">Version History</a></p>
+<p class="mobile-paragraph">16. <a href="#appendices" target="_blank" rel="noopener" class="mobile-link">Appendices</a></p>
+<h2 id="1-prerequisites" class="mobile-header">1. Prerequisites</h2>
+<li class="mobile-list-item"><strong>Hardware Requirements</strong>:</li>
+<li class="mobile-list-item">CPU: 4+ cores</li>
+<li class="mobile-list-item">RAM: 4GB minimum (16GB+ recommended)</li>
+<li class="mobile-list-item">Storage: 100GB+ for artifacts</li>
+<li class="mobile-list-item">Network: HTTP/HTTPS access</li>
+<li class="mobile-list-item"><strong>Operating System</strong>: </li>
+<li class="mobile-list-item">Linux: Any modern distribution (RHEL, Debian, Ubuntu, CentOS, Fedora, Arch, Alpine, openSUSE)</li>
+<li class="mobile-list-item">macOS: 10.14+ (Mojave or newer)</li>
+<li class="mobile-list-item">Windows: Windows Server 2016+ or Windows 10</li>
+<li class="mobile-list-item">FreeBSD: 11.0+</li>
+<li class="mobile-list-item"><strong>Network Requirements</strong>:</li>
+<li class="mobile-list-item">Port 8081 (default artifactory port)</li>
+<li class="mobile-list-item">Various service ports</li>
+<li class="mobile-list-item"><strong>Dependencies</strong>:</li>
+<li class="mobile-list-item">See official documentation for specific requirements</li>
+<li class="mobile-list-item"><strong>System Access</strong>: root or sudo privileges required</li>
+<h2 id="2-supported-operating-systems" class="mobile-header">2. Supported Operating Systems</h2>
+<p class="mobile-paragraph">This guide supports installation on:</p>
+<li class="mobile-list-item">RHEL 8/9 and derivatives (CentOS Stream, Rocky Linux, AlmaLinux)</li>
+<li class="mobile-list-item">Debian 11/12</li>
+<li class="mobile-list-item">Ubuntu 20.04/22.04/24.04 LTS</li>
+<li class="mobile-list-item">Arch Linux (rolling release)</li>
+<li class="mobile-list-item">Alpine Linux 3.18+</li>
+<li class="mobile-list-item">openSUSE Leap 15.5+ / Tumbleweed</li>
+<li class="mobile-list-item">SUSE Linux Enterprise Server (SLES) 15+</li>
+<li class="mobile-list-item">macOS 12+ (Monterey and later) </li>
+<li class="mobile-list-item">FreeBSD 13+</li>
+<li class="mobile-list-item">Windows 10/11/Server 2019+ (where applicable)</li>
+<h2 id="3-installation" class="mobile-header">3. Installation</h2>
+<h3 id="rhelcentosrocky-linuxalmalinux" class="mobile-header">RHEL/CentOS/Rocky Linux/AlmaLinux</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install EPEL repository if needed
+sudo dnf install -y epel-release
+
+# Install artifactory
+sudo dnf install -y artifactory
+
+# Enable and start service
+sudo systemctl enable --now artifactory
+
+# Configure firewall
+sudo firewall-cmd --permanent --add-port=8081/tcp
+sudo firewall-cmd --reload
+
+# Verify installation
+artifactory --version</code></pre>
+      </div>
+    </div>
+<h3 id="debianubuntu" class="mobile-header">Debian/Ubuntu</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Update package index
+sudo apt update
+
+# Install artifactory
+sudo apt install -y artifactory
+
+# Enable and start service
+sudo systemctl enable --now artifactory
+
+# Configure firewall
+sudo ufw allow 8081
+
+# Verify installation
+artifactory --version</code></pre>
+      </div>
+    </div>
+<h3 id="arch-linux" class="mobile-header">Arch Linux</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install artifactory
+sudo pacman -S artifactory
+
+# Enable and start service
+sudo systemctl enable --now artifactory
+
+# Verify installation
+artifactory --version</code></pre>
+      </div>
+    </div>
+<h3 id="alpine-linux" class="mobile-header">Alpine Linux</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install artifactory
+apk add --no-cache artifactory
+
+# Enable and start service
+rc-update add artifactory default
+rc-service artifactory start
+
+# Verify installation
+artifactory --version</code></pre>
+      </div>
+    </div>
+<h3 id="opensusesles" class="mobile-header">openSUSE/SLES</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Install artifactory
+sudo zypper install -y artifactory
+
+# Enable and start service
+sudo systemctl enable --now artifactory
+
+# Configure firewall
+sudo firewall-cmd --permanent --add-port=8081/tcp
+sudo firewall-cmd --reload
+
+# Verify installation
+artifactory --version</code></pre>
+      </div>
+    </div>
+<h3 id="macos" class="mobile-header">macOS</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Using Homebrew
+brew install artifactory
+
+# Start service
+brew services start artifactory
+
+# Verify installation
+artifactory --version</code></pre>
+      </div>
+    </div>
+<h3 id="freebsd" class="mobile-header">FreeBSD</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Using pkg
+pkg install artifactory
+
+# Enable in rc.conf
+echo &#039;artifactory_enable=&quot;YES&quot;&#039; &gt;&gt; /etc/rc.conf
+
+# Start service
+service artifactory start
+
+# Verify installation
+artifactory --version</code></pre>
+      </div>
+    </div>
+<h3 id="windows" class="mobile-header">Windows</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Using Chocolatey
+choco install artifactory
+
+# Or using Scoop
+scoop install artifactory
+
+# Verify installation
+artifactory --version</code></pre>
+      </div>
+    </div>
+<h2 id="initial-configuration" class="mobile-header">Initial Configuration</h2>
+<h3 id="basic-configuration" class="mobile-header">Basic Configuration</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Create configuration directory
+sudo mkdir -p /etc/artifactory
+
+# Set up basic configuration
+# See official documentation for detailed configuration options
+
+# Test configuration
+artifactory --version</code></pre>
+      </div>
+    </div>
+<h2 id="5-service-management" class="mobile-header">5. Service Management</h2>
+<h3 id="systemd-rhel-debian-ubuntu-arch-opensuse" class="mobile-header">systemd (RHEL, Debian, Ubuntu, Arch, openSUSE)</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Enable service
+sudo systemctl enable artifactory
+
+# Start service
+sudo systemctl start artifactory
+
+# Stop service
+sudo systemctl stop artifactory
+
+# Restart service
+sudo systemctl restart artifactory
+
+# Check status
+sudo systemctl status artifactory
+
+# View logs
+sudo journalctl -u artifactory -f</code></pre>
+      </div>
+    </div>
+<h3 id="openrc-alpine-linux" class="mobile-header">OpenRC (Alpine Linux)</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Enable service
+rc-update add artifactory default
+
+# Start service
+rc-service artifactory start
+
+# Stop service
+rc-service artifactory stop
+
+# Restart service
+rc-service artifactory restart
+
+# Check status
+rc-service artifactory status</code></pre>
+      </div>
+    </div>
+<h3 id="rcd-freebsd" class="mobile-header">rc.d (FreeBSD)</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Enable in /etc/rc.conf
+echo &#039;artifactory_enable=&quot;YES&quot;&#039; &gt;&gt; /etc/rc.conf
+
+# Start service
+service artifactory start
+
+# Stop service
+service artifactory stop
+
+# Restart service
+service artifactory restart
+
+# Check status
+service artifactory status</code></pre>
+      </div>
+    </div>
+<h3 id="launchd-macos" class="mobile-header">launchd (macOS)</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Using Homebrew services
+brew services start artifactory
+brew services stop artifactory
+brew services restart artifactory
+
+# Check status
+brew services list | grep artifactory</code></pre>
+      </div>
+    </div>
+<h3 id="windows-service-manager" class="mobile-header">Windows Service Manager</h3>
+<div class="mobile-code-block" data-language="powershell">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">powershell</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-powershell"># Start service
+net start artifactory
+
+# Stop service
+net stop artifactory
+
+# Using PowerShell
+Start-Service artifactory
+Stop-Service artifactory
+Restart-Service artifactory
+
+# Check status
+Get-Service artifactory</code></pre>
+      </div>
+    </div>
+<h2 id="advanced-configuration" class="mobile-header">Advanced Configuration</h2>
+<p class="mobile-paragraph">See the official documentation for advanced configuration options.</p>
+<h2 id="reverse-proxy-setup" class="mobile-header">Reverse Proxy Setup</h2>
+<h3 id="nginx-configuration" class="mobile-header">nginx Configuration</h3>
+<div class="mobile-code-block" data-language="nginx">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">nginx</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-nginx">upstream artifactory_backend {
+    server 127.0.0.1:8081;
+}
+
+server {
+    listen 80;
+    server_name artifactory.example.com;
+    return 301 https://$server_name$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name artifactory.example.com;
+
+    ssl_certificate /etc/ssl/certs/artifactory.example.com.crt;
+    ssl_certificate_key /etc/ssl/private/artifactory.example.com.key;
+
+    location / {
+        proxy_pass http://artifactory_backend;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}</code></pre>
+      </div>
+    </div>
+<h3 id="apache-configuration" class="mobile-header">Apache Configuration</h3>
+<div class="mobile-code-block" data-language="apache">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">apache</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-apache">&lt;VirtualHost *:80&gt;
+    ServerName artifactory.example.com
+    Redirect permanent / https://artifactory.example.com/
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost *:443&gt;
+    ServerName artifactory.example.com
+    
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/artifactory.example.com.crt
+    SSLCertificateKeyFile /etc/ssl/private/artifactory.example.com.key
+    
+    ProxyRequests Off
+    ProxyPreserveHost On
+    
+    ProxyPass / http://127.0.0.1:8081/
+    ProxyPassReverse / http://127.0.0.1:8081/
+&lt;/VirtualHost&gt;</code></pre>
+      </div>
+    </div>
+<h3 id="haproxy-configuration" class="mobile-header">HAProxy Configuration</h3>
+<div class="mobile-code-block" data-language="haproxy">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">haproxy</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-haproxy">frontend artifactory_frontend
+    bind *:80
+    bind *:443 ssl crt /etc/ssl/certs/artifactory.pem
+    redirect scheme https if !{ ssl_fc }
+    default_backend artifactory_backend
+
+backend artifactory_backend
+    balance roundrobin
+    server artifactory1 127.0.0.1:8081 check</code></pre>
+      </div>
+    </div>
+<h2 id="security-configuration" class="mobile-header">Security Configuration</h2>
+<h3 id="basic-security-setup" class="mobile-header">Basic Security Setup</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Set appropriate permissions
+sudo chown -R artifactory:artifactory /etc/artifactory
+sudo chmod 750 /etc/artifactory
+
+# Configure firewall
+sudo firewall-cmd --permanent --add-port=8081/tcp
+sudo firewall-cmd --reload
+
+# Enable SELinux policies (if applicable)
+sudo setsebool -P httpd_can_network_connect on</code></pre>
+      </div>
+    </div>
+<h2 id="database-setup" class="mobile-header">Database Setup</h2>
+<p class="mobile-paragraph">See official documentation for database configuration requirements.</p>
+<h2 id="performance-optimization" class="mobile-header">Performance Optimization</h2>
+<h3 id="system-tuning" class="mobile-header">System Tuning</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Basic system tuning
+echo &#039;net.core.somaxconn = 65535&#039; | sudo tee -a /etc/sysctl.conf
+echo &#039;net.ipv4.tcp_max_syn_backlog = 65535&#039; | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p</code></pre>
+      </div>
+    </div>
+<h2 id="monitoring" class="mobile-header">Monitoring</h2>
+<h3 id="basic-monitoring" class="mobile-header">Basic Monitoring</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check service status
+sudo systemctl status artifactory
+
+# View logs
+sudo journalctl -u artifactory -f
+
+# Monitor resource usage
+top -p $(pgrep artifactory)</code></pre>
+      </div>
+    </div>
+<h2 id="9-backup-and-restore" class="mobile-header">9. Backup and Restore</h2>
+<h3 id="backup-script" class="mobile-header">Backup Script</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash">#!/bin/bash
+# Basic backup script
+BACKUP_DIR=&quot;/backup/artifactory&quot;
+DATE=$(date +%Y%m%d_%H%M%S)
+
+mkdir -p &quot;$BACKUP_DIR&quot;
+tar -czf &quot;$BACKUP_DIR/artifactory-backup-$DATE.tar.gz&quot; /etc/artifactory /var/lib/artifactory
+
+echo &quot;Backup completed: $BACKUP_DIR/artifactory-backup-$DATE.tar.gz&quot;</code></pre>
+      </div>
+    </div>
+<h3 id="restore-procedure" class="mobile-header">Restore Procedure</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Stop service
+sudo systemctl stop artifactory
+
+# Restore from backup
+tar -xzf /backup/artifactory/artifactory-backup-*.tar.gz -C /
+
+# Start service
+sudo systemctl start artifactory</code></pre>
+      </div>
+    </div>
+<h2 id="6-troubleshooting" class="mobile-header">6. Troubleshooting</h2>
+<h3 id="common-issues" class="mobile-header">Common Issues</h3>
+<p class="mobile-paragraph">1. <strong>Service won't start</strong>:</p>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check logs
+sudo journalctl -u artifactory -n 100
+sudo tail -f /var/log/artifactory/artifactory.log
+
+# Check configuration
+artifactory --version
+
+# Check permissions
+ls -la /etc/artifactory</code></pre>
+      </div>
+    </div>
+<p class="mobile-paragraph">2. <strong>Connection issues</strong>:</p>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check if service is listening
+sudo ss -tlnp | grep 8081
+
+# Test connectivity
+telnet localhost 8081
+
+# Check firewall
+sudo firewall-cmd --list-all</code></pre>
+      </div>
+    </div>
+<p class="mobile-paragraph">3. <strong>Performance issues</strong>:</p>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Check resource usage
+top -p $(pgrep artifactory)
+
+# Check disk I/O
+iotop -p $(pgrep artifactory)
+
+# Check connections
+ss -an | grep 8081</code></pre>
+      </div>
+    </div>
+<h2 id="integration-examples" class="mobile-header">Integration Examples</h2>
+<h3 id="docker-compose-example" class="mobile-header">Docker Compose Example</h3>
+<div class="mobile-code-block" data-language="yaml">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">yaml</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-yaml">version: &#039;3.8&#039;
+services:
+  artifactory:
+    image: artifactory:latest
+    ports:
+      - &quot;8081:8081&quot;
+    volumes:
+      - ./config:/etc/artifactory
+      - ./data:/var/lib/artifactory
+    restart: unless-stopped</code></pre>
+      </div>
+    </div>
+<h2 id="maintenance" class="mobile-header">Maintenance</h2>
+<h3 id="update-procedures" class="mobile-header">Update Procedures</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># RHEL/CentOS/Rocky/AlmaLinux
+sudo dnf update artifactory
+
+# Debian/Ubuntu
+sudo apt update &amp;&amp; sudo apt upgrade artifactory
+
+# Arch Linux
+sudo pacman -Syu artifactory
+
+# Alpine Linux
+apk update &amp;&amp; apk upgrade artifactory
+
+# openSUSE
+sudo zypper update artifactory
+
+# FreeBSD
+pkg update &amp;&amp; pkg upgrade artifactory
+
+# Always backup before updates
+tar -czf /backup/artifactory-pre-update-$(date +%Y%m%d).tar.gz /etc/artifactory
+
+# Restart after updates
+sudo systemctl restart artifactory</code></pre>
+      </div>
+    </div>
+<h3 id="regular-maintenance" class="mobile-header">Regular Maintenance</h3>
+<div class="mobile-code-block" data-language="bash">
+      <div class="mobile-code-header">
+        <span class="mobile-code-language">bash</span>
+        <button class="mobile-copy-button" onclick="copyCode(this)" title="Copy code">
+          <span class="copy-icon">📋</span>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <div class="mobile-code-content">
+        <pre><code class="language-bash"># Log rotation
+sudo logrotate -f /etc/logrotate.d/artifactory
+
+# Clean old logs
+find /var/log/artifactory -name &quot;*.log&quot; -mtime +30 -delete
+
+# Check disk usage
+du -sh /var/lib/artifactory</code></pre>
+      </div>
+    </div>
+<h2 id="additional-resources" class="mobile-header">Additional Resources</h2>
+<li class="mobile-list-item">Official Documentation: https://docs.artifactory.org/</li>
+<li class="mobile-list-item">GitHub Repository: https://github.com/artifactory/artifactory</li>
+<li class="mobile-list-item">Community Forum: https://forum.artifactory.org/</li>
+<li class="mobile-list-item">Best Practices Guide: https://docs.artifactory.org/best-practices</li>
+<p class="mobile-paragraph">---</p>
+<p class="mobile-paragraph"><strong>Note:</strong> This guide is part of the <a href="https://howtomgr.github.io" target="_blank" rel="noopener" class="mobile-link">HowToMgr</a> collection. Always refer to official documentation for the most up-to-date information.</p></div></article><section class="jsx-6606b434a58724e9 related-section"><h2 class="jsx-6606b434a58724e9 section-title">Related <!-- -->Artifact repositories<!-- --> Guides</h2><div class="jsx-6606b434a58724e9 mobile-grid"><a class="mobile-card" href="/artifact-repositories/nexus/"><div class="jsx-6606b434a58724e9 mobile-card-header"><h3 class="jsx-6606b434a58724e9 mobile-card-title">nexus Installation Guide</h3><p class="jsx-6606b434a58724e9 mobile-card-description">nexus is a free and open-source repository manager. Sonatype Nexus manages binaries and build artifacts across your software supply chain</p></div><div class="jsx-6606b434a58724e9 mobile-card-meta"><span class="jsx-6606b434a58724e9 mobile-badge mobile-badge-info">6 min</span></div></a></div></section><nav class="jsx-6606b434a58724e9 guide-navigation"><a class="btn btn-secondary" href="/artifact-repositories/">← All <!-- -->Artifact repositories</a><a class="btn btn-secondary" href="/">All Categories</a></nav></div></main><footer class="jsx-f92e766e9414ef16 mobile-footer"><div class="jsx-f92e766e9414ef16 container"><div class="jsx-f92e766e9414ef16 footer-content"><div class="jsx-f92e766e9414ef16 footer-links"><a href="/">Home</a><a href="https://github.com/howtomgr" target="_blank" rel="noopener" class="jsx-f92e766e9414ef16">GitHub</a><a href="https://github.com/howtomgr/howtomgr.github.io" target="_blank" rel="noopener" class="jsx-f92e766e9414ef16">Source</a></div><div class="jsx-f92e766e9414ef16 footer-separator"></div><p class="jsx-f92e766e9414ef16 footer-text">© <!-- -->2025<!-- --> HowToMgr Organization. Open source installation guides.</p><p class="jsx-f92e766e9414ef16 footer-tech">Built with ❤️ using Next.js + GitHub Pages</p><p class="jsx-f92e766e9414ef16 footer-disclaimer"><small class="jsx-f92e766e9414ef16">All guides are provided as-is. Please review and test before production use.</small></p></div></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"guide":{"name":"artifactory","displayName":"artifactory Installation Guide","slug":"artifactory","description":"artifactory is a free and open-source universal repository manager. Artifactory provides universal repository management for all major package formats","category":"artifact-repositories","subcategory":"artifact-repositories","difficultyLevel":"intermediate","estimatedSetupTime":"15-30 minutes","supportedOS":["rhel","centos","rocky","almalinux","debian","ubuntu","arch","alpine","opensuse","sles","macos","freebsd","windows"],"defaultPorts":[80,443,8081],"installationMethods":["native-packages","source-compilation"],"features":["multi-os-support","comprehensive-documentation","security-hardening","performance-optimization","backup-restore-procedures","troubleshooting-guides"],"tags":["artifact-repositories","containerization","observability","data-storage","networking","security","data-protection"],"maintenanceStatus":"active","specVersion":"2.0","version":"1.0.0","license":"Open Source","websiteUrl":"https://howtomgr.github.io/artifact-repositories/artifactory","documentationUrl":"https://howtomgr.github.io/artifact-repositories/artifactory","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/artifactory","updatedAt":"2025-09-16T07:12:29Z","createdAt":"2025-09-16T02:19:18Z","readmeRaw":"# artifactory Installation Guide\n\nartifactory is a free and open-source universal repository manager. Artifactory provides universal repository management for all major package formats\n\n## Table of Contents\n1. [Prerequisites](#prerequisites)\n2. [Supported Operating Systems](#supported-operating-systems)\n3. [Installation](#installation)\n4. [Configuration](#configuration)\n5. [Service Management](#service-management)\n6. [Troubleshooting](#troubleshooting)\n7. [Security Considerations](#security-considerations)\n8. [Performance Tuning](#performance-tuning)\n9. [Backup and Restore](#backup-and-restore)\n10. [System Requirements](#system-requirements)\n11. [Support](#support)\n12. [Contributing](#contributing)\n13. [License](#license)\n14. [Acknowledgments](#acknowledgments)\n15. [Version History](#version-history)\n16. [Appendices](#appendices)\n\n## 1. Prerequisites\n\n- **Hardware Requirements**:\n  - CPU: 4+ cores\n  - RAM: 4GB minimum (16GB+ recommended)\n  - Storage: 100GB+ for artifacts\n  - Network: HTTP/HTTPS access\n- **Operating System**: \n  - Linux: Any modern distribution (RHEL, Debian, Ubuntu, CentOS, Fedora, Arch, Alpine, openSUSE)\n  - macOS: 10.14+ (Mojave or newer)\n  - Windows: Windows Server 2016+ or Windows 10\n  - FreeBSD: 11.0+\n- **Network Requirements**:\n  - Port 8081 (default artifactory port)\n  - Various service ports\n- **Dependencies**:\n  - See official documentation for specific requirements\n- **System Access**: root or sudo privileges required\n\n\n## 2. Supported Operating Systems\n\nThis guide supports installation on:\n- RHEL 8/9 and derivatives (CentOS Stream, Rocky Linux, AlmaLinux)\n- Debian 11/12\n- Ubuntu 20.04/22.04/24.04 LTS\n- Arch Linux (rolling release)\n- Alpine Linux 3.18+\n- openSUSE Leap 15.5+ / Tumbleweed\n- SUSE Linux Enterprise Server (SLES) 15+\n- macOS 12+ (Monterey and later) \n- FreeBSD 13+\n- Windows 10/11/Server 2019+ (where applicable)\n\n## 3. Installation\n\n### RHEL/CentOS/Rocky Linux/AlmaLinux\n\n```bash\n# Install EPEL repository if needed\nsudo dnf install -y epel-release\n\n# Install artifactory\nsudo dnf install -y artifactory\n\n# Enable and start service\nsudo systemctl enable --now artifactory\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Verify installation\nartifactory --version\n```\n\n### Debian/Ubuntu\n\n```bash\n# Update package index\nsudo apt update\n\n# Install artifactory\nsudo apt install -y artifactory\n\n# Enable and start service\nsudo systemctl enable --now artifactory\n\n# Configure firewall\nsudo ufw allow 8081\n\n# Verify installation\nartifactory --version\n```\n\n### Arch Linux\n\n```bash\n# Install artifactory\nsudo pacman -S artifactory\n\n# Enable and start service\nsudo systemctl enable --now artifactory\n\n# Verify installation\nartifactory --version\n```\n\n### Alpine Linux\n\n```bash\n# Install artifactory\napk add --no-cache artifactory\n\n# Enable and start service\nrc-update add artifactory default\nrc-service artifactory start\n\n# Verify installation\nartifactory --version\n```\n\n### openSUSE/SLES\n\n```bash\n# Install artifactory\nsudo zypper install -y artifactory\n\n# Enable and start service\nsudo systemctl enable --now artifactory\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Verify installation\nartifactory --version\n```\n\n### macOS\n\n```bash\n# Using Homebrew\nbrew install artifactory\n\n# Start service\nbrew services start artifactory\n\n# Verify installation\nartifactory --version\n```\n\n### FreeBSD\n\n```bash\n# Using pkg\npkg install artifactory\n\n# Enable in rc.conf\necho 'artifactory_enable=\"YES\"' \u003e\u003e /etc/rc.conf\n\n# Start service\nservice artifactory start\n\n# Verify installation\nartifactory --version\n```\n\n### Windows\n\n```bash\n# Using Chocolatey\nchoco install artifactory\n\n# Or using Scoop\nscoop install artifactory\n\n# Verify installation\nartifactory --version\n```\n\n## Initial Configuration\n\n### Basic Configuration\n\n```bash\n# Create configuration directory\nsudo mkdir -p /etc/artifactory\n\n# Set up basic configuration\n# See official documentation for detailed configuration options\n\n# Test configuration\nartifactory --version\n```\n\n## 5. Service Management\n\n### systemd (RHEL, Debian, Ubuntu, Arch, openSUSE)\n\n```bash\n# Enable service\nsudo systemctl enable artifactory\n\n# Start service\nsudo systemctl start artifactory\n\n# Stop service\nsudo systemctl stop artifactory\n\n# Restart service\nsudo systemctl restart artifactory\n\n# Check status\nsudo systemctl status artifactory\n\n# View logs\nsudo journalctl -u artifactory -f\n```\n\n### OpenRC (Alpine Linux)\n\n```bash\n# Enable service\nrc-update add artifactory default\n\n# Start service\nrc-service artifactory start\n\n# Stop service\nrc-service artifactory stop\n\n# Restart service\nrc-service artifactory restart\n\n# Check status\nrc-service artifactory status\n```\n\n### rc.d (FreeBSD)\n\n```bash\n# Enable in /etc/rc.conf\necho 'artifactory_enable=\"YES\"' \u003e\u003e /etc/rc.conf\n\n# Start service\nservice artifactory start\n\n# Stop service\nservice artifactory stop\n\n# Restart service\nservice artifactory restart\n\n# Check status\nservice artifactory status\n```\n\n### launchd (macOS)\n\n```bash\n# Using Homebrew services\nbrew services start artifactory\nbrew services stop artifactory\nbrew services restart artifactory\n\n# Check status\nbrew services list | grep artifactory\n```\n\n### Windows Service Manager\n\n```powershell\n# Start service\nnet start artifactory\n\n# Stop service\nnet stop artifactory\n\n# Using PowerShell\nStart-Service artifactory\nStop-Service artifactory\nRestart-Service artifactory\n\n# Check status\nGet-Service artifactory\n```\n\n## Advanced Configuration\n\nSee the official documentation for advanced configuration options.\n\n## Reverse Proxy Setup\n\n### nginx Configuration\n\n```nginx\nupstream artifactory_backend {\n    server 127.0.0.1:8081;\n}\n\nserver {\n    listen 80;\n    server_name artifactory.example.com;\n    return 301 https://$server_name$request_uri;\n}\n\nserver {\n    listen 443 ssl http2;\n    server_name artifactory.example.com;\n\n    ssl_certificate /etc/ssl/certs/artifactory.example.com.crt;\n    ssl_certificate_key /etc/ssl/private/artifactory.example.com.key;\n\n    location / {\n        proxy_pass http://artifactory_backend;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto $scheme;\n    }\n}\n```\n\n### Apache Configuration\n\n```apache\n\u003cVirtualHost *:80\u003e\n    ServerName artifactory.example.com\n    Redirect permanent / https://artifactory.example.com/\n\u003c/VirtualHost\u003e\n\n\u003cVirtualHost *:443\u003e\n    ServerName artifactory.example.com\n    \n    SSLEngine on\n    SSLCertificateFile /etc/ssl/certs/artifactory.example.com.crt\n    SSLCertificateKeyFile /etc/ssl/private/artifactory.example.com.key\n    \n    ProxyRequests Off\n    ProxyPreserveHost On\n    \n    ProxyPass / http://127.0.0.1:8081/\n    ProxyPassReverse / http://127.0.0.1:8081/\n\u003c/VirtualHost\u003e\n```\n\n### HAProxy Configuration\n\n```haproxy\nfrontend artifactory_frontend\n    bind *:80\n    bind *:443 ssl crt /etc/ssl/certs/artifactory.pem\n    redirect scheme https if !{ ssl_fc }\n    default_backend artifactory_backend\n\nbackend artifactory_backend\n    balance roundrobin\n    server artifactory1 127.0.0.1:8081 check\n```\n\n## Security Configuration\n\n### Basic Security Setup\n\n```bash\n# Set appropriate permissions\nsudo chown -R artifactory:artifactory /etc/artifactory\nsudo chmod 750 /etc/artifactory\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Enable SELinux policies (if applicable)\nsudo setsebool -P httpd_can_network_connect on\n```\n\n## Database Setup\n\nSee official documentation for database configuration requirements.\n\n## Performance Optimization\n\n### System Tuning\n\n```bash\n# Basic system tuning\necho 'net.core.somaxconn = 65535' | sudo tee -a /etc/sysctl.conf\necho 'net.ipv4.tcp_max_syn_backlog = 65535' | sudo tee -a /etc/sysctl.conf\nsudo sysctl -p\n```\n\n## Monitoring\n\n### Basic Monitoring\n\n```bash\n# Check service status\nsudo systemctl status artifactory\n\n# View logs\nsudo journalctl -u artifactory -f\n\n# Monitor resource usage\ntop -p $(pgrep artifactory)\n```\n\n## 9. Backup and Restore\n\n### Backup Script\n\n```bash\n#!/bin/bash\n# Basic backup script\nBACKUP_DIR=\"/backup/artifactory\"\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p \"$BACKUP_DIR\"\ntar -czf \"$BACKUP_DIR/artifactory-backup-$DATE.tar.gz\" /etc/artifactory /var/lib/artifactory\n\necho \"Backup completed: $BACKUP_DIR/artifactory-backup-$DATE.tar.gz\"\n```\n\n### Restore Procedure\n\n```bash\n# Stop service\nsudo systemctl stop artifactory\n\n# Restore from backup\ntar -xzf /backup/artifactory/artifactory-backup-*.tar.gz -C /\n\n# Start service\nsudo systemctl start artifactory\n```\n\n## 6. Troubleshooting\n\n### Common Issues\n\n1. **Service won't start**:\n```bash\n# Check logs\nsudo journalctl -u artifactory -n 100\nsudo tail -f /var/log/artifactory/artifactory.log\n\n# Check configuration\nartifactory --version\n\n# Check permissions\nls -la /etc/artifactory\n```\n\n2. **Connection issues**:\n```bash\n# Check if service is listening\nsudo ss -tlnp | grep 8081\n\n# Test connectivity\ntelnet localhost 8081\n\n# Check firewall\nsudo firewall-cmd --list-all\n```\n\n3. **Performance issues**:\n```bash\n# Check resource usage\ntop -p $(pgrep artifactory)\n\n# Check disk I/O\niotop -p $(pgrep artifactory)\n\n# Check connections\nss -an | grep 8081\n```\n\n## Integration Examples\n\n### Docker Compose Example\n\n```yaml\nversion: '3.8'\nservices:\n  artifactory:\n    image: artifactory:latest\n    ports:\n      - \"8081:8081\"\n    volumes:\n      - ./config:/etc/artifactory\n      - ./data:/var/lib/artifactory\n    restart: unless-stopped\n```\n\n## Maintenance\n\n### Update Procedures\n\n```bash\n# RHEL/CentOS/Rocky/AlmaLinux\nsudo dnf update artifactory\n\n# Debian/Ubuntu\nsudo apt update \u0026\u0026 sudo apt upgrade artifactory\n\n# Arch Linux\nsudo pacman -Syu artifactory\n\n# Alpine Linux\napk update \u0026\u0026 apk upgrade artifactory\n\n# openSUSE\nsudo zypper update artifactory\n\n# FreeBSD\npkg update \u0026\u0026 pkg upgrade artifactory\n\n# Always backup before updates\ntar -czf /backup/artifactory-pre-update-$(date +%Y%m%d).tar.gz /etc/artifactory\n\n# Restart after updates\nsudo systemctl restart artifactory\n```\n\n### Regular Maintenance\n\n```bash\n# Log rotation\nsudo logrotate -f /etc/logrotate.d/artifactory\n\n# Clean old logs\nfind /var/log/artifactory -name \"*.log\" -mtime +30 -delete\n\n# Check disk usage\ndu -sh /var/lib/artifactory\n```\n\n## Additional Resources\n\n- Official Documentation: https://docs.artifactory.org/\n- GitHub Repository: https://github.com/artifactory/artifactory\n- Community Forum: https://forum.artifactory.org/\n- Best Practices Guide: https://docs.artifactory.org/best-practices\n\n---\n\n**Note:** This guide is part of the [HowToMgr](https://howtomgr.github.io) collection. Always refer to official documentation for the most up-to-date information.\n","readmeHtml":"\u003ch1 id=\"artifactory-installation-guide\" class=\"mobile-header\"\u003eartifactory Installation Guide\u003c/h1\u003e\n\u003cp class=\"mobile-paragraph\"\u003eartifactory is a free and open-source universal repository manager. Artifactory provides universal repository management for all major package formats\u003c/p\u003e\n\u003ch2 id=\"table-of-contents\" class=\"mobile-header\"\u003eTable of Contents\u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003e1. \u003ca href=\"#prerequisites\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003ePrerequisites\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e2. \u003ca href=\"#supported-operating-systems\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eSupported Operating Systems\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e3. \u003ca href=\"#installation\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eInstallation\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e4. \u003ca href=\"#configuration\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eConfiguration\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e5. \u003ca href=\"#service-management\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eService Management\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e6. \u003ca href=\"#troubleshooting\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eTroubleshooting\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e7. \u003ca href=\"#security-considerations\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eSecurity Considerations\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e8. \u003ca href=\"#performance-tuning\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003ePerformance Tuning\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e9. \u003ca href=\"#backup-and-restore\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eBackup and Restore\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e10. \u003ca href=\"#system-requirements\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eSystem Requirements\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e11. \u003ca href=\"#support\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eSupport\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e12. \u003ca href=\"#contributing\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eContributing\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e13. \u003ca href=\"#license\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eLicense\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e14. \u003ca href=\"#acknowledgments\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eAcknowledgments\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e15. \u003ca href=\"#version-history\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eVersion History\u003c/a\u003e\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e16. \u003ca href=\"#appendices\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eAppendices\u003c/a\u003e\u003c/p\u003e\n\u003ch2 id=\"1-prerequisites\" class=\"mobile-header\"\u003e1. Prerequisites\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eHardware Requirements\u003c/strong\u003e:\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eCPU: 4+ cores\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eRAM: 4GB minimum (16GB+ recommended)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eStorage: 100GB+ for artifacts\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eNetwork: HTTP/HTTPS access\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eOperating System\u003c/strong\u003e: \u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eLinux: Any modern distribution (RHEL, Debian, Ubuntu, CentOS, Fedora, Arch, Alpine, openSUSE)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003emacOS: 10.14+ (Mojave or newer)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eWindows: Windows Server 2016+ or Windows 10\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eFreeBSD: 11.0+\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eNetwork Requirements\u003c/strong\u003e:\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003ePort 8081 (default artifactory port)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eVarious service ports\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eDependencies\u003c/strong\u003e:\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eSee official documentation for specific requirements\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eSystem Access\u003c/strong\u003e: root or sudo privileges required\u003c/li\u003e\n\u003ch2 id=\"2-supported-operating-systems\" class=\"mobile-header\"\u003e2. Supported Operating Systems\u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eThis guide supports installation on:\u003c/p\u003e\n\u003cli class=\"mobile-list-item\"\u003eRHEL 8/9 and derivatives (CentOS Stream, Rocky Linux, AlmaLinux)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eDebian 11/12\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eUbuntu 20.04/22.04/24.04 LTS\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eArch Linux (rolling release)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eAlpine Linux 3.18+\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eopenSUSE Leap 15.5+ / Tumbleweed\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eSUSE Linux Enterprise Server (SLES) 15+\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003emacOS 12+ (Monterey and later) \u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eFreeBSD 13+\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eWindows 10/11/Server 2019+ (where applicable)\u003c/li\u003e\n\u003ch2 id=\"3-installation\" class=\"mobile-header\"\u003e3. Installation\u003c/h2\u003e\n\u003ch3 id=\"rhelcentosrocky-linuxalmalinux\" class=\"mobile-header\"\u003eRHEL/CentOS/Rocky Linux/AlmaLinux\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install EPEL repository if needed\nsudo dnf install -y epel-release\n\n# Install artifactory\nsudo dnf install -y artifactory\n\n# Enable and start service\nsudo systemctl enable --now artifactory\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Verify installation\nartifactory --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"debianubuntu\" class=\"mobile-header\"\u003eDebian/Ubuntu\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Update package index\nsudo apt update\n\n# Install artifactory\nsudo apt install -y artifactory\n\n# Enable and start service\nsudo systemctl enable --now artifactory\n\n# Configure firewall\nsudo ufw allow 8081\n\n# Verify installation\nartifactory --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"arch-linux\" class=\"mobile-header\"\u003eArch Linux\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install artifactory\nsudo pacman -S artifactory\n\n# Enable and start service\nsudo systemctl enable --now artifactory\n\n# Verify installation\nartifactory --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"alpine-linux\" class=\"mobile-header\"\u003eAlpine Linux\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install artifactory\napk add --no-cache artifactory\n\n# Enable and start service\nrc-update add artifactory default\nrc-service artifactory start\n\n# Verify installation\nartifactory --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"opensusesles\" class=\"mobile-header\"\u003eopenSUSE/SLES\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install artifactory\nsudo zypper install -y artifactory\n\n# Enable and start service\nsudo systemctl enable --now artifactory\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Verify installation\nartifactory --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"macos\" class=\"mobile-header\"\u003emacOS\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Using Homebrew\nbrew install artifactory\n\n# Start service\nbrew services start artifactory\n\n# Verify installation\nartifactory --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"freebsd\" class=\"mobile-header\"\u003eFreeBSD\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Using pkg\npkg install artifactory\n\n# Enable in rc.conf\necho \u0026#039;artifactory_enable=\u0026quot;YES\u0026quot;\u0026#039; \u0026gt;\u0026gt; /etc/rc.conf\n\n# Start service\nservice artifactory start\n\n# Verify installation\nartifactory --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"windows\" class=\"mobile-header\"\u003eWindows\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Using Chocolatey\nchoco install artifactory\n\n# Or using Scoop\nscoop install artifactory\n\n# Verify installation\nartifactory --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"initial-configuration\" class=\"mobile-header\"\u003eInitial Configuration\u003c/h2\u003e\n\u003ch3 id=\"basic-configuration\" class=\"mobile-header\"\u003eBasic Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create configuration directory\nsudo mkdir -p /etc/artifactory\n\n# Set up basic configuration\n# See official documentation for detailed configuration options\n\n# Test configuration\nartifactory --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"5-service-management\" class=\"mobile-header\"\u003e5. Service Management\u003c/h2\u003e\n\u003ch3 id=\"systemd-rhel-debian-ubuntu-arch-opensuse\" class=\"mobile-header\"\u003esystemd (RHEL, Debian, Ubuntu, Arch, openSUSE)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Enable service\nsudo systemctl enable artifactory\n\n# Start service\nsudo systemctl start artifactory\n\n# Stop service\nsudo systemctl stop artifactory\n\n# Restart service\nsudo systemctl restart artifactory\n\n# Check status\nsudo systemctl status artifactory\n\n# View logs\nsudo journalctl -u artifactory -f\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"openrc-alpine-linux\" class=\"mobile-header\"\u003eOpenRC (Alpine Linux)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Enable service\nrc-update add artifactory default\n\n# Start service\nrc-service artifactory start\n\n# Stop service\nrc-service artifactory stop\n\n# Restart service\nrc-service artifactory restart\n\n# Check status\nrc-service artifactory status\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"rcd-freebsd\" class=\"mobile-header\"\u003erc.d (FreeBSD)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Enable in /etc/rc.conf\necho \u0026#039;artifactory_enable=\u0026quot;YES\u0026quot;\u0026#039; \u0026gt;\u0026gt; /etc/rc.conf\n\n# Start service\nservice artifactory start\n\n# Stop service\nservice artifactory stop\n\n# Restart service\nservice artifactory restart\n\n# Check status\nservice artifactory status\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"launchd-macos\" class=\"mobile-header\"\u003elaunchd (macOS)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Using Homebrew services\nbrew services start artifactory\nbrew services stop artifactory\nbrew services restart artifactory\n\n# Check status\nbrew services list | grep artifactory\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"windows-service-manager\" class=\"mobile-header\"\u003eWindows Service Manager\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"powershell\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003epowershell\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-powershell\"\u003e# Start service\nnet start artifactory\n\n# Stop service\nnet stop artifactory\n\n# Using PowerShell\nStart-Service artifactory\nStop-Service artifactory\nRestart-Service artifactory\n\n# Check status\nGet-Service artifactory\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"advanced-configuration\" class=\"mobile-header\"\u003eAdvanced Configuration\u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eSee the official documentation for advanced configuration options.\u003c/p\u003e\n\u003ch2 id=\"reverse-proxy-setup\" class=\"mobile-header\"\u003eReverse Proxy Setup\u003c/h2\u003e\n\u003ch3 id=\"nginx-configuration\" class=\"mobile-header\"\u003enginx Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"nginx\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003enginx\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-nginx\"\u003eupstream artifactory_backend {\n    server 127.0.0.1:8081;\n}\n\nserver {\n    listen 80;\n    server_name artifactory.example.com;\n    return 301 https://$server_name$request_uri;\n}\n\nserver {\n    listen 443 ssl http2;\n    server_name artifactory.example.com;\n\n    ssl_certificate /etc/ssl/certs/artifactory.example.com.crt;\n    ssl_certificate_key /etc/ssl/private/artifactory.example.com.key;\n\n    location / {\n        proxy_pass http://artifactory_backend;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto $scheme;\n    }\n}\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"apache-configuration\" class=\"mobile-header\"\u003eApache Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"apache\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003eapache\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-apache\"\u003e\u0026lt;VirtualHost *:80\u0026gt;\n    ServerName artifactory.example.com\n    Redirect permanent / https://artifactory.example.com/\n\u0026lt;/VirtualHost\u0026gt;\n\n\u0026lt;VirtualHost *:443\u0026gt;\n    ServerName artifactory.example.com\n    \n    SSLEngine on\n    SSLCertificateFile /etc/ssl/certs/artifactory.example.com.crt\n    SSLCertificateKeyFile /etc/ssl/private/artifactory.example.com.key\n    \n    ProxyRequests Off\n    ProxyPreserveHost On\n    \n    ProxyPass / http://127.0.0.1:8081/\n    ProxyPassReverse / http://127.0.0.1:8081/\n\u0026lt;/VirtualHost\u0026gt;\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"haproxy-configuration\" class=\"mobile-header\"\u003eHAProxy Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"haproxy\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ehaproxy\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-haproxy\"\u003efrontend artifactory_frontend\n    bind *:80\n    bind *:443 ssl crt /etc/ssl/certs/artifactory.pem\n    redirect scheme https if !{ ssl_fc }\n    default_backend artifactory_backend\n\nbackend artifactory_backend\n    balance roundrobin\n    server artifactory1 127.0.0.1:8081 check\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"security-configuration\" class=\"mobile-header\"\u003eSecurity Configuration\u003c/h2\u003e\n\u003ch3 id=\"basic-security-setup\" class=\"mobile-header\"\u003eBasic Security Setup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Set appropriate permissions\nsudo chown -R artifactory:artifactory /etc/artifactory\nsudo chmod 750 /etc/artifactory\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Enable SELinux policies (if applicable)\nsudo setsebool -P httpd_can_network_connect on\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"database-setup\" class=\"mobile-header\"\u003eDatabase Setup\u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eSee official documentation for database configuration requirements.\u003c/p\u003e\n\u003ch2 id=\"performance-optimization\" class=\"mobile-header\"\u003ePerformance Optimization\u003c/h2\u003e\n\u003ch3 id=\"system-tuning\" class=\"mobile-header\"\u003eSystem Tuning\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Basic system tuning\necho \u0026#039;net.core.somaxconn = 65535\u0026#039; | sudo tee -a /etc/sysctl.conf\necho \u0026#039;net.ipv4.tcp_max_syn_backlog = 65535\u0026#039; | sudo tee -a /etc/sysctl.conf\nsudo sysctl -p\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"monitoring\" class=\"mobile-header\"\u003eMonitoring\u003c/h2\u003e\n\u003ch3 id=\"basic-monitoring\" class=\"mobile-header\"\u003eBasic Monitoring\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check service status\nsudo systemctl status artifactory\n\n# View logs\nsudo journalctl -u artifactory -f\n\n# Monitor resource usage\ntop -p $(pgrep artifactory)\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"9-backup-and-restore\" class=\"mobile-header\"\u003e9. Backup and Restore\u003c/h2\u003e\n\u003ch3 id=\"backup-script\" class=\"mobile-header\"\u003eBackup Script\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e#!/bin/bash\n# Basic backup script\nBACKUP_DIR=\u0026quot;/backup/artifactory\u0026quot;\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p \u0026quot;$BACKUP_DIR\u0026quot;\ntar -czf \u0026quot;$BACKUP_DIR/artifactory-backup-$DATE.tar.gz\u0026quot; /etc/artifactory /var/lib/artifactory\n\necho \u0026quot;Backup completed: $BACKUP_DIR/artifactory-backup-$DATE.tar.gz\u0026quot;\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"restore-procedure\" class=\"mobile-header\"\u003eRestore Procedure\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Stop service\nsudo systemctl stop artifactory\n\n# Restore from backup\ntar -xzf /backup/artifactory/artifactory-backup-*.tar.gz -C /\n\n# Start service\nsudo systemctl start artifactory\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"6-troubleshooting\" class=\"mobile-header\"\u003e6. Troubleshooting\u003c/h2\u003e\n\u003ch3 id=\"common-issues\" class=\"mobile-header\"\u003eCommon Issues\u003c/h3\u003e\n\u003cp class=\"mobile-paragraph\"\u003e1. \u003cstrong\u003eService won't start\u003c/strong\u003e:\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check logs\nsudo journalctl -u artifactory -n 100\nsudo tail -f /var/log/artifactory/artifactory.log\n\n# Check configuration\nartifactory --version\n\n# Check permissions\nls -la /etc/artifactory\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003cp class=\"mobile-paragraph\"\u003e2. \u003cstrong\u003eConnection issues\u003c/strong\u003e:\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check if service is listening\nsudo ss -tlnp | grep 8081\n\n# Test connectivity\ntelnet localhost 8081\n\n# Check firewall\nsudo firewall-cmd --list-all\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003cp class=\"mobile-paragraph\"\u003e3. \u003cstrong\u003ePerformance issues\u003c/strong\u003e:\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check resource usage\ntop -p $(pgrep artifactory)\n\n# Check disk I/O\niotop -p $(pgrep artifactory)\n\n# Check connections\nss -an | grep 8081\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"integration-examples\" class=\"mobile-header\"\u003eIntegration Examples\u003c/h2\u003e\n\u003ch3 id=\"docker-compose-example\" class=\"mobile-header\"\u003eDocker Compose Example\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"yaml\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003eyaml\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-yaml\"\u003eversion: \u0026#039;3.8\u0026#039;\nservices:\n  artifactory:\n    image: artifactory:latest\n    ports:\n      - \u0026quot;8081:8081\u0026quot;\n    volumes:\n      - ./config:/etc/artifactory\n      - ./data:/var/lib/artifactory\n    restart: unless-stopped\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"maintenance\" class=\"mobile-header\"\u003eMaintenance\u003c/h2\u003e\n\u003ch3 id=\"update-procedures\" class=\"mobile-header\"\u003eUpdate Procedures\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# RHEL/CentOS/Rocky/AlmaLinux\nsudo dnf update artifactory\n\n# Debian/Ubuntu\nsudo apt update \u0026amp;\u0026amp; sudo apt upgrade artifactory\n\n# Arch Linux\nsudo pacman -Syu artifactory\n\n# Alpine Linux\napk update \u0026amp;\u0026amp; apk upgrade artifactory\n\n# openSUSE\nsudo zypper update artifactory\n\n# FreeBSD\npkg update \u0026amp;\u0026amp; pkg upgrade artifactory\n\n# Always backup before updates\ntar -czf /backup/artifactory-pre-update-$(date +%Y%m%d).tar.gz /etc/artifactory\n\n# Restart after updates\nsudo systemctl restart artifactory\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"regular-maintenance\" class=\"mobile-header\"\u003eRegular Maintenance\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Log rotation\nsudo logrotate -f /etc/logrotate.d/artifactory\n\n# Clean old logs\nfind /var/log/artifactory -name \u0026quot;*.log\u0026quot; -mtime +30 -delete\n\n# Check disk usage\ndu -sh /var/lib/artifactory\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"additional-resources\" class=\"mobile-header\"\u003eAdditional Resources\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003eOfficial Documentation: https://docs.artifactory.org/\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eGitHub Repository: https://github.com/artifactory/artifactory\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eCommunity Forum: https://forum.artifactory.org/\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eBest Practices Guide: https://docs.artifactory.org/best-practices\u003c/li\u003e\n\u003cp class=\"mobile-paragraph\"\u003e---\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This guide is part of the \u003ca href=\"https://howtomgr.github.io\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eHowToMgr\u003c/a\u003e collection. Always refer to official documentation for the most up-to-date information.\u003c/p\u003e","readTime":"7 min","wordCount":1274,"lastBuilt":"2025-09-16T07:35:23.106Z","metadataVersion":"2.0"},"category":{"key":"artifact-repositories","name":"Artifact repositories","description":"Artifact repositories tools and applications","icon":"🔧","color":"#6272a4"},"relatedGuides":[{"name":"nexus","displayName":"nexus Installation Guide","slug":"nexus","description":"nexus is a free and open-source repository manager. Sonatype Nexus manages binaries and build artifacts across your software supply chain","category":"artifact-repositories","subcategory":"artifact-repositories","difficultyLevel":"intermediate","estimatedSetupTime":"15-30 minutes","supportedOS":["rhel","centos","rocky","almalinux","debian","ubuntu","arch","alpine","opensuse","sles","macos","freebsd","windows"],"defaultPorts":[80,443,8081],"installationMethods":["native-packages","source-compilation"],"features":["multi-os-support","comprehensive-documentation","security-hardening","performance-optimization","backup-restore-procedures","troubleshooting-guides"],"tags":["artifact-repositories","containerization","observability","data-storage","networking","security","data-protection"],"maintenanceStatus":"active","specVersion":"2.0","version":"1.0.0","license":"Open Source","websiteUrl":"https://howtomgr.github.io/artifact-repositories/nexus","documentationUrl":"https://howtomgr.github.io/artifact-repositories/nexus","language":null,"stars":0,"forks":0,"topics":[],"githubUrl":"https://github.com/howtomgr/nexus","updatedAt":"2025-09-16T03:50:08Z","createdAt":"2025-09-08T03:12:14Z","readmeRaw":"# nexus Installation Guide\n\nnexus is a free and open-source repository manager. Sonatype Nexus manages binaries and build artifacts across your software supply chain\n\n## Prerequisites\n\n- **Hardware Requirements**:\n  - CPU: 2+ cores\n  - RAM: 4GB minimum (8GB+ recommended)\n  - Storage: 100GB for artifacts\n  - Network: HTTP/HTTPS access\n- **Operating System**: \n  - Linux: Any modern distribution (RHEL, Debian, Ubuntu, CentOS, Fedora, Arch, Alpine, openSUSE)\n  - macOS: 10.14+ (Mojave or newer)\n  - Windows: Windows Server 2016+ or Windows 10\n  - FreeBSD: 11.0+\n- **Network Requirements**:\n  - Port 8081 (default nexus port)\n  - Docker registry on 5000\n- **Dependencies**:\n  - See official documentation for specific requirements\n- **System Access**: root or sudo privileges required\n\n## Installation\n\n### RHEL/CentOS/Rocky Linux/AlmaLinux\n\n```bash\n# Install EPEL repository if needed\nsudo dnf install -y epel-release\n\n# Install nexus\nsudo dnf install -y nexus\n\n# Enable and start service\nsudo systemctl enable --now nexus\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Verify installation\nnexus --version\n```\n\n### Debian/Ubuntu\n\n```bash\n# Update package index\nsudo apt update\n\n# Install nexus\nsudo apt install -y nexus\n\n# Enable and start service\nsudo systemctl enable --now nexus\n\n# Configure firewall\nsudo ufw allow 8081\n\n# Verify installation\nnexus --version\n```\n\n### Arch Linux\n\n```bash\n# Install nexus\nsudo pacman -S nexus\n\n# Enable and start service\nsudo systemctl enable --now nexus\n\n# Verify installation\nnexus --version\n```\n\n### Alpine Linux\n\n```bash\n# Install nexus\napk add --no-cache nexus\n\n# Enable and start service\nrc-update add nexus default\nrc-service nexus start\n\n# Verify installation\nnexus --version\n```\n\n### openSUSE/SLES\n\n```bash\n# Install nexus\nsudo zypper install -y nexus\n\n# Enable and start service\nsudo systemctl enable --now nexus\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Verify installation\nnexus --version\n```\n\n### macOS\n\n```bash\n# Using Homebrew\nbrew install nexus\n\n# Start service\nbrew services start nexus\n\n# Verify installation\nnexus --version\n```\n\n### FreeBSD\n\n```bash\n# Using pkg\npkg install nexus\n\n# Enable in rc.conf\necho 'nexus_enable=\"YES\"' \u003e\u003e /etc/rc.conf\n\n# Start service\nservice nexus start\n\n# Verify installation\nnexus --version\n```\n\n### Windows\n\n```bash\n# Using Chocolatey\nchoco install nexus\n\n# Or using Scoop\nscoop install nexus\n\n# Verify installation\nnexus --version\n```\n\n## Initial Configuration\n\n### Basic Configuration\n\n```bash\n# Create configuration directory\nsudo mkdir -p /etc/nexus\n\n# Set up basic configuration\n# See official documentation for detailed configuration options\n\n# Test configuration\nnexus --version\n```\n\n## Service Management\n\n### systemd (RHEL, Debian, Ubuntu, Arch, openSUSE)\n\n```bash\n# Enable service\nsudo systemctl enable nexus\n\n# Start service\nsudo systemctl start nexus\n\n# Stop service\nsudo systemctl stop nexus\n\n# Restart service\nsudo systemctl restart nexus\n\n# Check status\nsudo systemctl status nexus\n\n# View logs\nsudo journalctl -u nexus -f\n```\n\n### OpenRC (Alpine Linux)\n\n```bash\n# Enable service\nrc-update add nexus default\n\n# Start service\nrc-service nexus start\n\n# Stop service\nrc-service nexus stop\n\n# Restart service\nrc-service nexus restart\n\n# Check status\nrc-service nexus status\n```\n\n### rc.d (FreeBSD)\n\n```bash\n# Enable in /etc/rc.conf\necho 'nexus_enable=\"YES\"' \u003e\u003e /etc/rc.conf\n\n# Start service\nservice nexus start\n\n# Stop service\nservice nexus stop\n\n# Restart service\nservice nexus restart\n\n# Check status\nservice nexus status\n```\n\n### launchd (macOS)\n\n```bash\n# Using Homebrew services\nbrew services start nexus\nbrew services stop nexus\nbrew services restart nexus\n\n# Check status\nbrew services list | grep nexus\n```\n\n### Windows Service Manager\n\n```powershell\n# Start service\nnet start nexus\n\n# Stop service\nnet stop nexus\n\n# Using PowerShell\nStart-Service nexus\nStop-Service nexus\nRestart-Service nexus\n\n# Check status\nGet-Service nexus\n```\n\n## Advanced Configuration\n\nSee the official documentation for advanced configuration options.\n\n## Reverse Proxy Setup\n\n### nginx Configuration\n\n```nginx\nupstream nexus_backend {\n    server 127.0.0.1:8081;\n}\n\nserver {\n    listen 80;\n    server_name nexus.example.com;\n    return 301 https://$server_name$request_uri;\n}\n\nserver {\n    listen 443 ssl http2;\n    server_name nexus.example.com;\n\n    ssl_certificate /etc/ssl/certs/nexus.example.com.crt;\n    ssl_certificate_key /etc/ssl/private/nexus.example.com.key;\n\n    location / {\n        proxy_pass http://nexus_backend;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto $scheme;\n    }\n}\n```\n\n### Apache Configuration\n\n```apache\n\u003cVirtualHost *:80\u003e\n    ServerName nexus.example.com\n    Redirect permanent / https://nexus.example.com/\n\u003c/VirtualHost\u003e\n\n\u003cVirtualHost *:443\u003e\n    ServerName nexus.example.com\n    \n    SSLEngine on\n    SSLCertificateFile /etc/ssl/certs/nexus.example.com.crt\n    SSLCertificateKeyFile /etc/ssl/private/nexus.example.com.key\n    \n    ProxyRequests Off\n    ProxyPreserveHost On\n    \n    ProxyPass / http://127.0.0.1:8081/\n    ProxyPassReverse / http://127.0.0.1:8081/\n\u003c/VirtualHost\u003e\n```\n\n### HAProxy Configuration\n\n```haproxy\nfrontend nexus_frontend\n    bind *:80\n    bind *:443 ssl crt /etc/ssl/certs/nexus.pem\n    redirect scheme https if !{ ssl_fc }\n    default_backend nexus_backend\n\nbackend nexus_backend\n    balance roundrobin\n    server nexus1 127.0.0.1:8081 check\n```\n\n## Security Configuration\n\n### Basic Security Setup\n\n```bash\n# Set appropriate permissions\nsudo chown -R nexus:nexus /etc/nexus\nsudo chmod 750 /etc/nexus\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Enable SELinux policies (if applicable)\nsudo setsebool -P httpd_can_network_connect on\n```\n\n## Database Setup\n\nSee official documentation for database configuration requirements.\n\n## Performance Optimization\n\n### System Tuning\n\n```bash\n# Basic system tuning\necho 'net.core.somaxconn = 65535' | sudo tee -a /etc/sysctl.conf\necho 'net.ipv4.tcp_max_syn_backlog = 65535' | sudo tee -a /etc/sysctl.conf\nsudo sysctl -p\n```\n\n## Monitoring\n\n### Basic Monitoring\n\n```bash\n# Check service status\nsudo systemctl status nexus\n\n# View logs\nsudo journalctl -u nexus -f\n\n# Monitor resource usage\ntop -p $(pgrep nexus)\n```\n\n## Backup and Restore\n\n### Backup Script\n\n```bash\n#!/bin/bash\n# Basic backup script\nBACKUP_DIR=\"/backup/nexus\"\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p \"$BACKUP_DIR\"\ntar -czf \"$BACKUP_DIR/nexus-backup-$DATE.tar.gz\" /etc/nexus /var/lib/nexus\n\necho \"Backup completed: $BACKUP_DIR/nexus-backup-$DATE.tar.gz\"\n```\n\n### Restore Procedure\n\n```bash\n# Stop service\nsudo systemctl stop nexus\n\n# Restore from backup\ntar -xzf /backup/nexus/nexus-backup-*.tar.gz -C /\n\n# Start service\nsudo systemctl start nexus\n```\n\n## Troubleshooting\n\n### Common Issues\n\n1. **Service won't start**:\n```bash\n# Check logs\nsudo journalctl -u nexus -n 100\nsudo tail -f /var/log/nexus/nexus.log\n\n# Check configuration\nnexus --version\n\n# Check permissions\nls -la /etc/nexus\n```\n\n2. **Connection issues**:\n```bash\n# Check if service is listening\nsudo ss -tlnp | grep 8081\n\n# Test connectivity\ntelnet localhost 8081\n\n# Check firewall\nsudo firewall-cmd --list-all\n```\n\n3. **Performance issues**:\n```bash\n# Check resource usage\ntop -p $(pgrep nexus)\n\n# Check disk I/O\niotop -p $(pgrep nexus)\n\n# Check connections\nss -an | grep 8081\n```\n\n## Integration Examples\n\n### Docker Compose Example\n\n```yaml\nversion: '3.8'\nservices:\n  nexus:\n    image: nexus:latest\n    ports:\n      - \"8081:8081\"\n    volumes:\n      - ./config:/etc/nexus\n      - ./data:/var/lib/nexus\n    restart: unless-stopped\n```\n\n## Maintenance\n\n### Update Procedures\n\n```bash\n# RHEL/CentOS/Rocky/AlmaLinux\nsudo dnf update nexus\n\n# Debian/Ubuntu\nsudo apt update \u0026\u0026 sudo apt upgrade nexus\n\n# Arch Linux\nsudo pacman -Syu nexus\n\n# Alpine Linux\napk update \u0026\u0026 apk upgrade nexus\n\n# openSUSE\nsudo zypper update nexus\n\n# FreeBSD\npkg update \u0026\u0026 pkg upgrade nexus\n\n# Always backup before updates\ntar -czf /backup/nexus-pre-update-$(date +%Y%m%d).tar.gz /etc/nexus\n\n# Restart after updates\nsudo systemctl restart nexus\n```\n\n### Regular Maintenance\n\n```bash\n# Log rotation\nsudo logrotate -f /etc/logrotate.d/nexus\n\n# Clean old logs\nfind /var/log/nexus -name \"*.log\" -mtime +30 -delete\n\n# Check disk usage\ndu -sh /var/lib/nexus\n```\n\n## Additional Resources\n\n- Official Documentation: https://docs.nexus.org/\n- GitHub Repository: https://github.com/nexus/nexus\n- Community Forum: https://forum.nexus.org/\n- Best Practices Guide: https://docs.nexus.org/best-practices\n\n---\n\n**Note:** This guide is part of the [HowToMgr](https://howtomgr.github.io) collection. Always refer to official documentation for the most up-to-date information.\n","readmeHtml":"\u003ch1 id=\"nexus-installation-guide\" class=\"mobile-header\"\u003enexus Installation Guide\u003c/h1\u003e\n\u003cp class=\"mobile-paragraph\"\u003enexus is a free and open-source repository manager. Sonatype Nexus manages binaries and build artifacts across your software supply chain\u003c/p\u003e\n\u003ch2 id=\"prerequisites\" class=\"mobile-header\"\u003ePrerequisites\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eHardware Requirements\u003c/strong\u003e:\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eCPU: 2+ cores\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eRAM: 4GB minimum (8GB+ recommended)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eStorage: 100GB for artifacts\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eNetwork: HTTP/HTTPS access\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eOperating System\u003c/strong\u003e: \u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eLinux: Any modern distribution (RHEL, Debian, Ubuntu, CentOS, Fedora, Arch, Alpine, openSUSE)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003emacOS: 10.14+ (Mojave or newer)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eWindows: Windows Server 2016+ or Windows 10\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eFreeBSD: 11.0+\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eNetwork Requirements\u003c/strong\u003e:\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003ePort 8081 (default nexus port)\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eDocker registry on 5000\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eDependencies\u003c/strong\u003e:\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eSee official documentation for specific requirements\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003e\u003cstrong\u003eSystem Access\u003c/strong\u003e: root or sudo privileges required\u003c/li\u003e\n\u003ch2 id=\"installation\" class=\"mobile-header\"\u003eInstallation\u003c/h2\u003e\n\u003ch3 id=\"rhelcentosrocky-linuxalmalinux\" class=\"mobile-header\"\u003eRHEL/CentOS/Rocky Linux/AlmaLinux\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install EPEL repository if needed\nsudo dnf install -y epel-release\n\n# Install nexus\nsudo dnf install -y nexus\n\n# Enable and start service\nsudo systemctl enable --now nexus\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Verify installation\nnexus --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"debianubuntu\" class=\"mobile-header\"\u003eDebian/Ubuntu\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Update package index\nsudo apt update\n\n# Install nexus\nsudo apt install -y nexus\n\n# Enable and start service\nsudo systemctl enable --now nexus\n\n# Configure firewall\nsudo ufw allow 8081\n\n# Verify installation\nnexus --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"arch-linux\" class=\"mobile-header\"\u003eArch Linux\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install nexus\nsudo pacman -S nexus\n\n# Enable and start service\nsudo systemctl enable --now nexus\n\n# Verify installation\nnexus --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"alpine-linux\" class=\"mobile-header\"\u003eAlpine Linux\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install nexus\napk add --no-cache nexus\n\n# Enable and start service\nrc-update add nexus default\nrc-service nexus start\n\n# Verify installation\nnexus --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"opensusesles\" class=\"mobile-header\"\u003eopenSUSE/SLES\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Install nexus\nsudo zypper install -y nexus\n\n# Enable and start service\nsudo systemctl enable --now nexus\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Verify installation\nnexus --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"macos\" class=\"mobile-header\"\u003emacOS\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Using Homebrew\nbrew install nexus\n\n# Start service\nbrew services start nexus\n\n# Verify installation\nnexus --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"freebsd\" class=\"mobile-header\"\u003eFreeBSD\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Using pkg\npkg install nexus\n\n# Enable in rc.conf\necho \u0026#039;nexus_enable=\u0026quot;YES\u0026quot;\u0026#039; \u0026gt;\u0026gt; /etc/rc.conf\n\n# Start service\nservice nexus start\n\n# Verify installation\nnexus --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"windows\" class=\"mobile-header\"\u003eWindows\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Using Chocolatey\nchoco install nexus\n\n# Or using Scoop\nscoop install nexus\n\n# Verify installation\nnexus --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"initial-configuration\" class=\"mobile-header\"\u003eInitial Configuration\u003c/h2\u003e\n\u003ch3 id=\"basic-configuration\" class=\"mobile-header\"\u003eBasic Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Create configuration directory\nsudo mkdir -p /etc/nexus\n\n# Set up basic configuration\n# See official documentation for detailed configuration options\n\n# Test configuration\nnexus --version\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"service-management\" class=\"mobile-header\"\u003eService Management\u003c/h2\u003e\n\u003ch3 id=\"systemd-rhel-debian-ubuntu-arch-opensuse\" class=\"mobile-header\"\u003esystemd (RHEL, Debian, Ubuntu, Arch, openSUSE)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Enable service\nsudo systemctl enable nexus\n\n# Start service\nsudo systemctl start nexus\n\n# Stop service\nsudo systemctl stop nexus\n\n# Restart service\nsudo systemctl restart nexus\n\n# Check status\nsudo systemctl status nexus\n\n# View logs\nsudo journalctl -u nexus -f\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"openrc-alpine-linux\" class=\"mobile-header\"\u003eOpenRC (Alpine Linux)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Enable service\nrc-update add nexus default\n\n# Start service\nrc-service nexus start\n\n# Stop service\nrc-service nexus stop\n\n# Restart service\nrc-service nexus restart\n\n# Check status\nrc-service nexus status\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"rcd-freebsd\" class=\"mobile-header\"\u003erc.d (FreeBSD)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Enable in /etc/rc.conf\necho \u0026#039;nexus_enable=\u0026quot;YES\u0026quot;\u0026#039; \u0026gt;\u0026gt; /etc/rc.conf\n\n# Start service\nservice nexus start\n\n# Stop service\nservice nexus stop\n\n# Restart service\nservice nexus restart\n\n# Check status\nservice nexus status\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"launchd-macos\" class=\"mobile-header\"\u003elaunchd (macOS)\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Using Homebrew services\nbrew services start nexus\nbrew services stop nexus\nbrew services restart nexus\n\n# Check status\nbrew services list | grep nexus\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"windows-service-manager\" class=\"mobile-header\"\u003eWindows Service Manager\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"powershell\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003epowershell\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-powershell\"\u003e# Start service\nnet start nexus\n\n# Stop service\nnet stop nexus\n\n# Using PowerShell\nStart-Service nexus\nStop-Service nexus\nRestart-Service nexus\n\n# Check status\nGet-Service nexus\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"advanced-configuration\" class=\"mobile-header\"\u003eAdvanced Configuration\u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eSee the official documentation for advanced configuration options.\u003c/p\u003e\n\u003ch2 id=\"reverse-proxy-setup\" class=\"mobile-header\"\u003eReverse Proxy Setup\u003c/h2\u003e\n\u003ch3 id=\"nginx-configuration\" class=\"mobile-header\"\u003enginx Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"nginx\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003enginx\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-nginx\"\u003eupstream nexus_backend {\n    server 127.0.0.1:8081;\n}\n\nserver {\n    listen 80;\n    server_name nexus.example.com;\n    return 301 https://$server_name$request_uri;\n}\n\nserver {\n    listen 443 ssl http2;\n    server_name nexus.example.com;\n\n    ssl_certificate /etc/ssl/certs/nexus.example.com.crt;\n    ssl_certificate_key /etc/ssl/private/nexus.example.com.key;\n\n    location / {\n        proxy_pass http://nexus_backend;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto $scheme;\n    }\n}\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"apache-configuration\" class=\"mobile-header\"\u003eApache Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"apache\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003eapache\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-apache\"\u003e\u0026lt;VirtualHost *:80\u0026gt;\n    ServerName nexus.example.com\n    Redirect permanent / https://nexus.example.com/\n\u0026lt;/VirtualHost\u0026gt;\n\n\u0026lt;VirtualHost *:443\u0026gt;\n    ServerName nexus.example.com\n    \n    SSLEngine on\n    SSLCertificateFile /etc/ssl/certs/nexus.example.com.crt\n    SSLCertificateKeyFile /etc/ssl/private/nexus.example.com.key\n    \n    ProxyRequests Off\n    ProxyPreserveHost On\n    \n    ProxyPass / http://127.0.0.1:8081/\n    ProxyPassReverse / http://127.0.0.1:8081/\n\u0026lt;/VirtualHost\u0026gt;\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"haproxy-configuration\" class=\"mobile-header\"\u003eHAProxy Configuration\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"haproxy\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ehaproxy\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-haproxy\"\u003efrontend nexus_frontend\n    bind *:80\n    bind *:443 ssl crt /etc/ssl/certs/nexus.pem\n    redirect scheme https if !{ ssl_fc }\n    default_backend nexus_backend\n\nbackend nexus_backend\n    balance roundrobin\n    server nexus1 127.0.0.1:8081 check\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"security-configuration\" class=\"mobile-header\"\u003eSecurity Configuration\u003c/h2\u003e\n\u003ch3 id=\"basic-security-setup\" class=\"mobile-header\"\u003eBasic Security Setup\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Set appropriate permissions\nsudo chown -R nexus:nexus /etc/nexus\nsudo chmod 750 /etc/nexus\n\n# Configure firewall\nsudo firewall-cmd --permanent --add-port=8081/tcp\nsudo firewall-cmd --reload\n\n# Enable SELinux policies (if applicable)\nsudo setsebool -P httpd_can_network_connect on\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"database-setup\" class=\"mobile-header\"\u003eDatabase Setup\u003c/h2\u003e\n\u003cp class=\"mobile-paragraph\"\u003eSee official documentation for database configuration requirements.\u003c/p\u003e\n\u003ch2 id=\"performance-optimization\" class=\"mobile-header\"\u003ePerformance Optimization\u003c/h2\u003e\n\u003ch3 id=\"system-tuning\" class=\"mobile-header\"\u003eSystem Tuning\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Basic system tuning\necho \u0026#039;net.core.somaxconn = 65535\u0026#039; | sudo tee -a /etc/sysctl.conf\necho \u0026#039;net.ipv4.tcp_max_syn_backlog = 65535\u0026#039; | sudo tee -a /etc/sysctl.conf\nsudo sysctl -p\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"monitoring\" class=\"mobile-header\"\u003eMonitoring\u003c/h2\u003e\n\u003ch3 id=\"basic-monitoring\" class=\"mobile-header\"\u003eBasic Monitoring\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check service status\nsudo systemctl status nexus\n\n# View logs\nsudo journalctl -u nexus -f\n\n# Monitor resource usage\ntop -p $(pgrep nexus)\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"backup-and-restore\" class=\"mobile-header\"\u003eBackup and Restore\u003c/h2\u003e\n\u003ch3 id=\"backup-script\" class=\"mobile-header\"\u003eBackup Script\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e#!/bin/bash\n# Basic backup script\nBACKUP_DIR=\u0026quot;/backup/nexus\u0026quot;\nDATE=$(date +%Y%m%d_%H%M%S)\n\nmkdir -p \u0026quot;$BACKUP_DIR\u0026quot;\ntar -czf \u0026quot;$BACKUP_DIR/nexus-backup-$DATE.tar.gz\u0026quot; /etc/nexus /var/lib/nexus\n\necho \u0026quot;Backup completed: $BACKUP_DIR/nexus-backup-$DATE.tar.gz\u0026quot;\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"restore-procedure\" class=\"mobile-header\"\u003eRestore Procedure\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Stop service\nsudo systemctl stop nexus\n\n# Restore from backup\ntar -xzf /backup/nexus/nexus-backup-*.tar.gz -C /\n\n# Start service\nsudo systemctl start nexus\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"troubleshooting\" class=\"mobile-header\"\u003eTroubleshooting\u003c/h2\u003e\n\u003ch3 id=\"common-issues\" class=\"mobile-header\"\u003eCommon Issues\u003c/h3\u003e\n\u003cp class=\"mobile-paragraph\"\u003e1. \u003cstrong\u003eService won't start\u003c/strong\u003e:\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check logs\nsudo journalctl -u nexus -n 100\nsudo tail -f /var/log/nexus/nexus.log\n\n# Check configuration\nnexus --version\n\n# Check permissions\nls -la /etc/nexus\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003cp class=\"mobile-paragraph\"\u003e2. \u003cstrong\u003eConnection issues\u003c/strong\u003e:\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check if service is listening\nsudo ss -tlnp | grep 8081\n\n# Test connectivity\ntelnet localhost 8081\n\n# Check firewall\nsudo firewall-cmd --list-all\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003cp class=\"mobile-paragraph\"\u003e3. \u003cstrong\u003ePerformance issues\u003c/strong\u003e:\u003c/p\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Check resource usage\ntop -p $(pgrep nexus)\n\n# Check disk I/O\niotop -p $(pgrep nexus)\n\n# Check connections\nss -an | grep 8081\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"integration-examples\" class=\"mobile-header\"\u003eIntegration Examples\u003c/h2\u003e\n\u003ch3 id=\"docker-compose-example\" class=\"mobile-header\"\u003eDocker Compose Example\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"yaml\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003eyaml\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-yaml\"\u003eversion: \u0026#039;3.8\u0026#039;\nservices:\n  nexus:\n    image: nexus:latest\n    ports:\n      - \u0026quot;8081:8081\u0026quot;\n    volumes:\n      - ./config:/etc/nexus\n      - ./data:/var/lib/nexus\n    restart: unless-stopped\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"maintenance\" class=\"mobile-header\"\u003eMaintenance\u003c/h2\u003e\n\u003ch3 id=\"update-procedures\" class=\"mobile-header\"\u003eUpdate Procedures\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# RHEL/CentOS/Rocky/AlmaLinux\nsudo dnf update nexus\n\n# Debian/Ubuntu\nsudo apt update \u0026amp;\u0026amp; sudo apt upgrade nexus\n\n# Arch Linux\nsudo pacman -Syu nexus\n\n# Alpine Linux\napk update \u0026amp;\u0026amp; apk upgrade nexus\n\n# openSUSE\nsudo zypper update nexus\n\n# FreeBSD\npkg update \u0026amp;\u0026amp; pkg upgrade nexus\n\n# Always backup before updates\ntar -czf /backup/nexus-pre-update-$(date +%Y%m%d).tar.gz /etc/nexus\n\n# Restart after updates\nsudo systemctl restart nexus\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch3 id=\"regular-maintenance\" class=\"mobile-header\"\u003eRegular Maintenance\u003c/h3\u003e\n\u003cdiv class=\"mobile-code-block\" data-language=\"bash\"\u003e\n      \u003cdiv class=\"mobile-code-header\"\u003e\n        \u003cspan class=\"mobile-code-language\"\u003ebash\u003c/span\u003e\n        \u003cbutton class=\"mobile-copy-button\" onclick=\"copyCode(this)\" title=\"Copy code\"\u003e\n          \u003cspan class=\"copy-icon\"\u003e📋\u003c/span\u003e\n          \u003cspan class=\"copy-text\"\u003eCopy\u003c/span\u003e\n        \u003c/button\u003e\n      \u003c/div\u003e\n      \u003cdiv class=\"mobile-code-content\"\u003e\n        \u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Log rotation\nsudo logrotate -f /etc/logrotate.d/nexus\n\n# Clean old logs\nfind /var/log/nexus -name \u0026quot;*.log\u0026quot; -mtime +30 -delete\n\n# Check disk usage\ndu -sh /var/lib/nexus\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n\u003ch2 id=\"additional-resources\" class=\"mobile-header\"\u003eAdditional Resources\u003c/h2\u003e\n\u003cli class=\"mobile-list-item\"\u003eOfficial Documentation: https://docs.nexus.org/\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eGitHub Repository: https://github.com/nexus/nexus\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eCommunity Forum: https://forum.nexus.org/\u003c/li\u003e\n\u003cli class=\"mobile-list-item\"\u003eBest Practices Guide: https://docs.nexus.org/best-practices\u003c/li\u003e\n\u003cp class=\"mobile-paragraph\"\u003e---\u003c/p\u003e\n\u003cp class=\"mobile-paragraph\"\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This guide is part of the \u003ca href=\"https://howtomgr.github.io\" target=\"_blank\" rel=\"noopener\" class=\"mobile-link\"\u003eHowToMgr\u003c/a\u003e collection. Always refer to official documentation for the most up-to-date information.\u003c/p\u003e","readTime":"6 min","wordCount":1162,"lastBuilt":"2025-09-16T07:35:34.711Z","metadataVersion":"2.0"}]},"__N_SSG":true},"page":"/[category]/[guide]","query":{"category":"artifact-repositories","guide":"artifactory"},"buildId":"20so-B5n1BtXhVd04NVg4","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
