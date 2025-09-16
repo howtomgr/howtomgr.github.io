@@ -2,13 +2,58 @@
   "category": {
     "name": "tracing",
     "display_name": "Tracing",
-    "total_guides": 1
+    "total_guides": 2
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.107Z",
+    "generated_at": "2025-09-16T10:34:06.237Z",
     "api_version": "1.0"
   },
   "guides": [
+    {
+      "name": "tempo",
+      "title": "grafana-tempo Installation Guide",
+      "description": "grafana-tempo is a free and open-source high-scale distributed tracing backend. Grafana Tempo provides cost-effective, high-scale distributed tracing storage, integrating seamlessly with Grafana for trace visualization, serving as an alternative to Jaeger or AWS X-Ray",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "tracing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/tracing/tempo/",
+      "api": "https://howtomgr.github.io/api/v1/tracing/tempo.json",
+      "github": "https://github.com/howtomgr/tempo"
+    },
     {
       "name": "jaeger",
       "title": "Jaeger Installation Guide",

@@ -2,10 +2,10 @@
   "category": {
     "name": "mail-servers",
     "display_name": "Mail servers",
-    "total_guides": 3
+    "total_guides": 7
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.102Z",
+    "generated_at": "2025-09-16T10:34:06.234Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -149,6 +149,193 @@
       "site": "https://howtomgr.github.io/mail-servers/haraka/",
       "api": "https://howtomgr.github.io/api/v1/mail-servers/haraka.json",
       "github": "https://github.com/howtomgr/haraka"
+    },
+    {
+      "name": "opensmtpd",
+      "title": "OpenSMTPD Installation Guide",
+      "description": "OpenSMTPD is a free and open-source Mail Server. A FREE implementation of the SMTP protocol",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mail-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mail-servers/opensmtpd/",
+      "api": "https://howtomgr.github.io/api/v1/mail-servers/opensmtpd.json",
+      "github": "https://github.com/howtomgr/opensmtpd"
+    },
+    {
+      "name": "postfix",
+      "title": "postfix Installation Guide",
+      "description": "postfix is a free and open-source mail transfer agent. Postfix provides fast, secure mail transfer agent as alternative to Sendmail",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mail-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mail-servers/postfix/",
+      "api": "https://howtomgr.github.io/api/v1/mail-servers/postfix.json",
+      "github": "https://github.com/howtomgr/postfix"
+    },
+    {
+      "name": "qmail",
+      "title": "Qmail Installation Guide",
+      "description": "Qmail is a free and open-source Mail Server. A secure, reliable, efficient mail server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mail-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mail-servers/qmail/",
+      "api": "https://howtomgr.github.io/api/v1/mail-servers/qmail.json",
+      "github": "https://github.com/howtomgr/qmail"
+    },
+    {
+      "name": "sendmail",
+      "title": "Sendmail Installation Guide",
+      "description": "Sendmail is a free and open-source Mail Server. A general purpose internetwork email routing facility",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mail-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mail-servers/sendmail/",
+      "api": "https://howtomgr.github.io/api/v1/mail-servers/sendmail.json",
+      "github": "https://github.com/howtomgr/sendmail"
     }
   ]
 }

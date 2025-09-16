@@ -2,10 +2,10 @@
   "category": {
     "name": "e-commerce",
     "display_name": "E commerce",
-    "total_guides": 2
+    "total_guides": 8
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.099Z",
+    "generated_at": "2025-09-16T10:34:06.229Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -98,6 +98,276 @@
       "site": "https://howtomgr.github.io/e-commerce/magento/",
       "api": "https://howtomgr.github.io/api/v1/e-commerce/magento.json",
       "github": "https://github.com/howtomgr/magento"
+    },
+    {
+      "name": "opencart",
+      "title": "opencart Installation Guide",
+      "description": "opencart is a free and open-source online store platform. OpenCart provides easy-to-use e-commerce platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "e-commerce",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/e-commerce/opencart/",
+      "api": "https://howtomgr.github.io/api/v1/e-commerce/opencart.json",
+      "github": "https://github.com/howtomgr/opencart"
+    },
+    {
+      "name": "oscommerce",
+      "title": "oscommerce Installation Guide",
+      "description": "oscommerce is a free and open-source online shop. osCommerce provides online shop e-commerce solution",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "e-commerce",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/e-commerce/oscommerce/",
+      "api": "https://howtomgr.github.io/api/v1/e-commerce/oscommerce.json",
+      "github": "https://github.com/howtomgr/oscommerce"
+    },
+    {
+      "name": "prestashop",
+      "title": "prestashop Installation Guide",
+      "description": "prestashop is a free and open-source e-commerce solution. PrestaShop provides free e-commerce solution",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "e-commerce",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/e-commerce/prestashop/",
+      "api": "https://howtomgr.github.io/api/v1/e-commerce/prestashop.json",
+      "github": "https://github.com/howtomgr/prestashop"
+    },
+    {
+      "name": "saleor",
+      "title": "saleor Installation Guide",
+      "description": "saleor is a free and open-source e-commerce platform. Saleor provides high-performance e-commerce platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "e-commerce",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/e-commerce/saleor/",
+      "api": "https://howtomgr.github.io/api/v1/e-commerce/saleor.json",
+      "github": "https://github.com/howtomgr/saleor"
+    },
+    {
+      "name": "sylius",
+      "title": "sylius Installation Guide",
+      "description": "sylius is a free and open-source e-commerce framework. Sylius provides e-commerce framework based on Symfony",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "e-commerce",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/e-commerce/sylius/",
+      "api": "https://howtomgr.github.io/api/v1/e-commerce/sylius.json",
+      "github": "https://github.com/howtomgr/sylius"
+    },
+    {
+      "name": "woocommerce",
+      "title": "woocommerce Installation Guide",
+      "description": "woocommerce is a free and open-source WordPress e-commerce. WooCommerce provides e-commerce plugin for WordPress",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "e-commerce",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/e-commerce/woocommerce/",
+      "api": "https://howtomgr.github.io/api/v1/e-commerce/woocommerce.json",
+      "github": "https://github.com/howtomgr/woocommerce"
     }
   ]
 }

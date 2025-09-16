@@ -1,0 +1,54 @@
+{
+  "category": {
+    "name": "virtualization",
+    "display_name": "Virtualization",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.245Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "webvirt",
+      "title": "WebVirtMgr Installation Guide",
+      "description": "WebVirtMgr is a free and open-source web-based interface for managing virtual machines through libvirt. It provides a complete KVM management solution with an intuitive web interface, serving as a FOSS alternative to proprietary virtualization management platforms like VMware vSphere or Microsoft SCVMM.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "30-60 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "freebsd"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "virtualization",
+        "kvm",
+        "libvirt",
+        "vm-management",
+        "web-interface"
+      ],
+      "site": "https://howtomgr.github.io/virtualization/webvirt/",
+      "api": "https://howtomgr.github.io/api/v1/virtualization/webvirt.json",
+      "github": "https://github.com/howtomgr/webvirt"
+    }
+  ]
+}

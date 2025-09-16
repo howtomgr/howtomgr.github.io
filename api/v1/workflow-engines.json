@@ -2,10 +2,10 @@
   "category": {
     "name": "workflow-engines",
     "display_name": "Workflow engines",
-    "total_guides": 8
+    "total_guides": 11
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.096Z",
+    "generated_at": "2025-09-16T10:34:06.226Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -368,6 +368,141 @@
       "site": "https://howtomgr.github.io/workflow-engines/metaflow/",
       "api": "https://howtomgr.github.io/api/v1/workflow-engines/metaflow.json",
       "github": "https://github.com/howtomgr/metaflow"
+    },
+    {
+      "name": "oozie",
+      "title": "oozie Installation Guide",
+      "description": "oozie is a free and open-source workflow scheduler. Oozie provides workflow scheduler for Hadoop jobs",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/oozie/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/oozie.json",
+      "github": "https://github.com/howtomgr/oozie"
+    },
+    {
+      "name": "prefect",
+      "title": "prefect Installation Guide",
+      "description": "prefect is a free and open-source workflow orchestration. Prefect provides modern workflow orchestration framework",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/prefect/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/prefect.json",
+      "github": "https://github.com/howtomgr/prefect"
+    },
+    {
+      "name": "temporal",
+      "title": "temporal Installation Guide",
+      "description": "temporal is a free and open-source workflow orchestration. Temporal provides workflow orchestration platform for mission-critical applications",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "workflow-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/workflow-engines/temporal/",
+      "api": "https://howtomgr.github.io/api/v1/workflow-engines/temporal.json",
+      "github": "https://github.com/howtomgr/temporal"
     }
   ]
 }

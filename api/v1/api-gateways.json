@@ -2,10 +2,10 @@
   "category": {
     "name": "api-gateways",
     "display_name": "Api gateways",
-    "total_guides": 5
+    "total_guides": 9
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.105Z",
+    "generated_at": "2025-09-16T10:34:06.236Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -233,6 +233,186 @@
       "site": "https://howtomgr.github.io/api-gateways/krakend/",
       "api": "https://howtomgr.github.io/api/v1/api-gateways/krakend.json",
       "github": "https://github.com/howtomgr/krakend"
+    },
+    {
+      "name": "ocelot",
+      "title": "ocelot Installation Guide",
+      "description": "ocelot is a free and open-source .NET API gateway. Ocelot provides .NET Core API gateway",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/ocelot/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/ocelot.json",
+      "github": "https://github.com/howtomgr/ocelot"
+    },
+    {
+      "name": "tyk",
+      "title": "tyk Installation Guide",
+      "description": "tyk is a free and open-source API gateway. Tyk provides open source API gateway and management platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/tyk/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/tyk.json",
+      "github": "https://github.com/howtomgr/tyk"
+    },
+    {
+      "name": "wso2",
+      "title": "wso2 Installation Guide",
+      "description": "wso2 is a free and open-source API management platform. WSO2 provides complete open source API management platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/wso2/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/wso2.json",
+      "github": "https://github.com/howtomgr/wso2"
+    },
+    {
+      "name": "zuul",
+      "title": "zuul Installation Guide",
+      "description": "zuul is a free and open-source edge service. Netflix Zuul provides edge service for dynamic routing and monitoring",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/zuul/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/zuul.json",
+      "github": "https://github.com/howtomgr/zuul"
     }
   ]
 }

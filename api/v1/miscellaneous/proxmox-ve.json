@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.352Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "proxmox-ve",
+    "title": "proxmox-ve Installation Guide",
+    "description": "proxmox-ve is a free and open-source virtualization platform. Proxmox VE combines KVM and LXC for enterprise virtualization",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      8006
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/proxmox-ve/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/proxmox-ve.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/proxmox-ve",
+    "website_url": "https://howtomgr.github.io/miscellaneous/proxmox-ve",
+    "github_url": "https://github.com/howtomgr/proxmox-ve",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:06:33Z",
+      "created": "2025-09-16T08:06:23Z"
+    },
+    "guide_info": {
+      "word_count": 1270,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:54.686Z"
+    }
+  }
+}

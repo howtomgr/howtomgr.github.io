@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.337Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "ocelot",
+    "title": "ocelot Installation Guide",
+    "description": "ocelot is a free and open-source .NET API gateway. Ocelot provides .NET Core API gateway",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "api-gateways",
+    "subcategory": "api-gateways",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      5000
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "api-gateways",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/api-gateways/ocelot/",
+    "api": "https://howtomgr.github.io/api/v1/api-gateways/ocelot.json",
+    "documentation_url": "https://howtomgr.github.io/api-gateways/ocelot",
+    "website_url": "https://howtomgr.github.io/api-gateways/ocelot",
+    "github_url": "https://github.com/howtomgr/ocelot",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T07:51:51Z",
+      "created": "2025-09-16T07:51:41Z"
+    },
+    "guide_info": {
+      "word_count": 1265,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:33:16.738Z"
+    }
+  }
+}

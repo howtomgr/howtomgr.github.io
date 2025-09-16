@@ -1,0 +1,58 @@
+{
+  "category": {
+    "name": "iot-development",
+    "display_name": "Iot development",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.243Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "platformio",
+      "title": "platformio Installation Guide",
+      "description": "platformio is a free and open-source embedded development. PlatformIO provides professional collaborative platform for embedded",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-development",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-development/platformio/",
+      "api": "https://howtomgr.github.io/api/v1/iot-development/platformio.json",
+      "github": "https://github.com/howtomgr/platformio"
+    }
+  ]
+}

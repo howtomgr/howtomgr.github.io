@@ -2,10 +2,10 @@
   "category": {
     "name": "distributed-storage",
     "display_name": "Distributed storage",
-    "total_guides": 6
+    "total_guides": 9
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.099Z",
+    "generated_at": "2025-09-16T10:34:06.230Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -278,6 +278,141 @@
       "site": "https://howtomgr.github.io/distributed-storage/moosefs/",
       "api": "https://howtomgr.github.io/api/v1/distributed-storage/moosefs.json",
       "github": "https://github.com/howtomgr/moosefs"
+    },
+    {
+      "name": "orangefs",
+      "title": "orangefs Installation Guide",
+      "description": "orangefs is a free and open-source parallel file system. OrangeFS provides scale-out parallel file system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "distributed-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/distributed-storage/orangefs/",
+      "api": "https://howtomgr.github.io/api/v1/distributed-storage/orangefs.json",
+      "github": "https://github.com/howtomgr/orangefs"
+    },
+    {
+      "name": "seaweedfs",
+      "title": "seaweedfs Installation Guide",
+      "description": "seaweedfs is a free and open-source distributed storage. SeaweedFS provides simple and highly scalable distributed file system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "distributed-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/distributed-storage/seaweedfs/",
+      "api": "https://howtomgr.github.io/api/v1/distributed-storage/seaweedfs.json",
+      "github": "https://github.com/howtomgr/seaweedfs"
+    },
+    {
+      "name": "storj",
+      "title": "storj Installation Guide",
+      "description": "storj is a free and open-source decentralized storage. Storj provides decentralized cloud object storage",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "distributed-storage",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/distributed-storage/storj/",
+      "api": "https://howtomgr.github.io/api/v1/distributed-storage/storj.json",
+      "github": "https://github.com/howtomgr/storj"
     }
   ]
 }

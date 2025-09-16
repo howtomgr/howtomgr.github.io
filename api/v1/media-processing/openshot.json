@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.340Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "openshot",
+    "title": "openshot Installation Guide",
+    "description": "openshot is a free and open-source video editor. OpenShot provides easy-to-use video editor",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "media-processing",
+    "subcategory": "media-processing",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "media-processing",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "multimedia"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/media-processing/openshot/",
+    "api": "https://howtomgr.github.io/api/v1/media-processing/openshot.json",
+    "documentation_url": "https://howtomgr.github.io/media-processing/openshot",
+    "website_url": "https://howtomgr.github.io/media-processing/openshot",
+    "github_url": "https://github.com/howtomgr/openshot",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T07:54:53Z",
+      "created": "2025-09-16T07:54:42Z"
+    },
+    "guide_info": {
+      "word_count": 1264,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:33:12.100Z"
+    }
+  }
+}

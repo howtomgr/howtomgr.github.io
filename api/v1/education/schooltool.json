@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.362Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "schooltool",
+    "title": "schooltool Installation Guide",
+    "description": "schooltool is a free and open-source student information. SchoolTool provides student information system",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "education",
+    "subcategory": "education",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      7080
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "education",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/education/schooltool/",
+    "api": "https://howtomgr.github.io/api/v1/education/schooltool.json",
+    "documentation_url": "https://howtomgr.github.io/education/schooltool",
+    "website_url": "https://howtomgr.github.io/education/schooltool",
+    "github_url": "https://github.com/howtomgr/schooltool",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:17:04Z",
+      "created": "2025-09-16T08:16:54Z"
+    },
+    "guide_info": {
+      "word_count": 1264,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:39.971Z"
+    }
+  }
+}

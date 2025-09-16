@@ -1,13 +1,13 @@
 {
   "meta": {
     "api_version": "1.0",
-    "generated_at": "2025-09-16T07:36:16.132Z",
+    "generated_at": "2025-09-16T10:34:06.321Z",
     "spec_version": "2.0"
   },
   "tool": {
     "name": "mce",
-    "title": "CouchPotato/HeadPhones/SickRage/Plex/Emby install",
-    "description": "Mce installation and configuration guide",
+    "title": "MCE (Media Center Enterprise) Installation Guide",
+    "description": "MCE (Media Center Enterprise) is a comprehensive media server solution that combines multiple FOSS tools to create a complete home entertainment system. It includes Jellyfin for media streaming, Sonarr/Radarr for content management, and various download clients, serving as a FOSS alternative to commercial solutions like Kaleidescape or Control4.",
     "version": "1.0.0",
     "license": "Open Source",
     "category": "miscellaneous",
@@ -35,7 +35,10 @@
     ],
     "default_ports": [
       8096,
-      32400
+      8989,
+      7878,
+      9696,
+      8080
     ],
     "features": [
       "multi-os-support",
@@ -46,7 +49,11 @@
       "troubleshooting-guides"
     ],
     "tags": [
-      "miscellaneous"
+      "media-center",
+      "streaming",
+      "entertainment",
+      "media-management",
+      "home-theater"
     ],
     "maintenance_status": "active",
     "site": "https://howtomgr.github.io/miscellaneous/mce/",
@@ -59,14 +66,14 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "last_updated": "2025-09-16T03:40:51Z",
+      "last_updated": "2025-09-16T07:44:36Z",
       "created": "2023-08-28T03:48:56Z"
     },
     "guide_info": {
-      "word_count": 448,
-      "estimated_read_time": "3 min",
+      "word_count": 2013,
+      "estimated_read_time": "11 min",
       "has_readme": true,
-      "last_built": "2025-09-16T07:35:46.716Z"
+      "last_built": "2025-09-16T10:33:36.953Z"
     }
   }
 }

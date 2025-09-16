@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.374Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "terraform",
+    "title": "Terraform Installation and Management Guide",
+    "description": "Terraform installation and configuration guide",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "infrastructure-as-code",
+    "subcategory": "infrastructure-as-code",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      0,
+      4,
+      5,
+      443,
+      2379,
+      5432,
+      8080,
+      8500,
+      8800,
+      8801
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "infrastructure-as-code",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/infrastructure-as-code/terraform/",
+    "api": "https://howtomgr.github.io/api/v1/infrastructure-as-code/terraform.json",
+    "documentation_url": "https://howtomgr.github.io/infrastructure-as-code/terraform",
+    "website_url": "https://howtomgr.github.io/infrastructure-as-code/terraform",
+    "github_url": "https://github.com/howtomgr/terraform",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:29:55Z",
+      "created": "2025-09-08T03:16:51Z"
+    },
+    "guide_info": {
+      "word_count": 8635,
+      "estimated_read_time": "44 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:23.705Z"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.342Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "openvpn",
+    "title": "openvpn Installation Guide",
+    "description": "openvpn is a free and open-source full-featured SSL VPN solution. OpenVPN provides secure point-to-point or site-to-site connections, serving as an open-source alternative to commercial VPN solutions",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "vpn",
+    "subcategory": "vpn",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      1194
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "vpn",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/vpn/openvpn/",
+    "api": "https://howtomgr.github.io/api/v1/vpn/openvpn.json",
+    "documentation_url": "https://howtomgr.github.io/vpn/openvpn",
+    "website_url": "https://howtomgr.github.io/vpn/openvpn",
+    "github_url": "https://github.com/howtomgr/openvpn",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T07:55:57Z",
+      "created": "2025-09-08T03:12:57Z"
+    },
+    "guide_info": {
+      "word_count": 1281,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:33:10.448Z"
+    }
+  }
+}

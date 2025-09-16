@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.379Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "unifi-controller",
+    "title": "Unifi Controller",
+    "description": "UniFi Network Controller is centralized management software for Ubiquiti UniFi devices",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "network-management",
+    "subcategory": "network-management",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      8443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "networking",
+      "wifi",
+      "management",
+      "ubiquiti"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/network-management/unifi-controller/",
+    "api": "https://howtomgr.github.io/api/v1/network-management/unifi-controller.json",
+    "documentation_url": "https://howtomgr.github.io/network-management/unifi-controller",
+    "website_url": "https://howtomgr.github.io/network-management/unifi-controller",
+    "github_url": "https://github.com/howtomgr/unifi-controller",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:34:56Z",
+      "created": "2025-09-08T03:17:43Z"
+    },
+    "guide_info": {
+      "word_count": 3142,
+      "estimated_read_time": "16 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:16.910Z"
+    }
+  }
+}

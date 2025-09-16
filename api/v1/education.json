@@ -2,10 +2,10 @@
   "category": {
     "name": "education",
     "display_name": "Education",
-    "total_guides": 7
+    "total_guides": 8
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.100Z",
+    "generated_at": "2025-09-16T10:34:06.231Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -323,6 +323,51 @@
       "site": "https://howtomgr.github.io/education/moodle/",
       "api": "https://howtomgr.github.io/api/v1/education/moodle.json",
       "github": "https://github.com/howtomgr/moodle"
+    },
+    {
+      "name": "schooltool",
+      "title": "schooltool Installation Guide",
+      "description": "schooltool is a free and open-source student information. SchoolTool provides student information system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "education",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/education/schooltool/",
+      "api": "https://howtomgr.github.io/api/v1/education/schooltool.json",
+      "github": "https://github.com/howtomgr/schooltool"
     }
   ]
 }

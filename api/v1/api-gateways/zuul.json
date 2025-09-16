@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.389Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "zuul",
+    "title": "zuul Installation Guide",
+    "description": "zuul is a free and open-source edge service. Netflix Zuul provides edge service for dynamic routing and monitoring",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "api-gateways",
+    "subcategory": "api-gateways",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      8080
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "api-gateways",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/api-gateways/zuul/",
+    "api": "https://howtomgr.github.io/api/v1/api-gateways/zuul.json",
+    "documentation_url": "https://howtomgr.github.io/api-gateways/zuul",
+    "website_url": "https://howtomgr.github.io/api-gateways/zuul",
+    "github_url": "https://github.com/howtomgr/zuul",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:45:11Z",
+      "created": "2025-09-16T08:45:00Z"
+    },
+    "guide_info": {
+      "word_count": 1268,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:02.020Z"
+    }
+  }
+}

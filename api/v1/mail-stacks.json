@@ -2,10 +2,10 @@
   "category": {
     "name": "mail-stacks",
     "display_name": "Mail stacks",
-    "total_guides": 4
+    "total_guides": 5
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.107Z",
+    "generated_at": "2025-09-16T10:34:06.239Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -196,6 +196,53 @@
       "site": "https://howtomgr.github.io/mail-stacks/modoboa/",
       "api": "https://howtomgr.github.io/api/v1/mail-stacks/modoboa.json",
       "github": "https://github.com/howtomgr/modoboa"
+    },
+    {
+      "name": "poste",
+      "title": "Poste.io Installation Guide",
+      "description": "Poste.io is a free and open-source Mail Server Stack. Complete mail server with webmail and admin",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mail-stacks",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mail-stacks/poste/",
+      "api": "https://howtomgr.github.io/api/v1/mail-stacks/poste.json",
+      "github": "https://github.com/howtomgr/poste"
     }
   ]
 }

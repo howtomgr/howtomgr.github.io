@@ -2,10 +2,10 @@
   "category": {
     "name": "remote-access",
     "display_name": "Remote access",
-    "total_guides": 4
+    "total_guides": 9
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.106Z",
+    "generated_at": "2025-09-16T10:34:06.237Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -188,6 +188,231 @@
       "site": "https://howtomgr.github.io/remote-access/nomachine/",
       "api": "https://howtomgr.github.io/api/v1/remote-access/nomachine.json",
       "github": "https://github.com/howtomgr/nomachine"
+    },
+    {
+      "name": "remmina",
+      "title": "remmina Installation Guide",
+      "description": "remmina is a free and open-source remote desktop client. Remmina provides feature-rich remote desktop client",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "remote-access",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/remote-access/remmina/",
+      "api": "https://howtomgr.github.io/api/v1/remote-access/remmina.json",
+      "github": "https://github.com/howtomgr/remmina"
+    },
+    {
+      "name": "teleport",
+      "title": "teleport Installation Guide",
+      "description": "teleport is a free and open-source access plane. Gravitational Teleport provides zero trust access",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "remote-access",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/remote-access/teleport/",
+      "api": "https://howtomgr.github.io/api/v1/remote-access/teleport.json",
+      "github": "https://github.com/howtomgr/teleport"
+    },
+    {
+      "name": "tigervnc",
+      "title": "tigervnc Installation Guide",
+      "description": "tigervnc is a free and open-source VNC server. TigerVNC provides high-performance VNC implementation",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "remote-access",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/remote-access/tigervnc/",
+      "api": "https://howtomgr.github.io/api/v1/remote-access/tigervnc.json",
+      "github": "https://github.com/howtomgr/tigervnc"
+    },
+    {
+      "name": "x2go",
+      "title": "x2go Installation Guide",
+      "description": "x2go is a free and open-source remote desktop. X2Go provides remote desktop solution for Linux",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "remote-access",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/remote-access/x2go/",
+      "api": "https://howtomgr.github.io/api/v1/remote-access/x2go.json",
+      "github": "https://github.com/howtomgr/x2go"
+    },
+    {
+      "name": "xrdp",
+      "title": "xrdp Installation Guide",
+      "description": "xrdp is a free and open-source RDP server. xrdp provides open source RDP server for Linux",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "remote-access",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/remote-access/xrdp/",
+      "api": "https://howtomgr.github.io/api/v1/remote-access/xrdp.json",
+      "github": "https://github.com/howtomgr/xrdp"
     }
   ]
 }

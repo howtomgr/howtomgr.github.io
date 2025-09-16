@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.328Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "prometheus-mysqld-exporter",
+    "title": "mysqld-exporter Installation Guide",
+    "description": "mysqld-exporter is a free and open-source Prometheus exporter for MySQL server metrics. MySQL Exporter extracts metrics from MySQL/MariaDB servers for Prometheus monitoring, providing database performance insights",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "monitoring",
+    "subcategory": "monitoring",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      9104
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "monitoring",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/monitoring/prometheus-mysqld-exporter/",
+    "api": "https://howtomgr.github.io/api/v1/monitoring/prometheus-mysqld-exporter.json",
+    "documentation_url": "https://howtomgr.github.io/monitoring/prometheus-mysqld-exporter",
+    "website_url": "https://howtomgr.github.io/monitoring/prometheus-mysqld-exporter",
+    "github_url": "https://github.com/howtomgr/prometheus-mysqld-exporter",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:05:05Z",
+      "created": "2025-09-16T08:04:55Z"
+    },
+    "guide_info": {
+      "word_count": 1281,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:56.881Z"
+    }
+  }
+}

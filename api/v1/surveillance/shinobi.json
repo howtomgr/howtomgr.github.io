@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.364Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "shinobi",
+    "title": "Shinobi Installation Guide",
+    "description": "Shinobi is a free and open-source CCTV/NVR (Network Video Recorder) solution written in Node.js. It serves as a modern FOSS alternative to proprietary video surveillance systems like Blue Iris, Milestone XProtect, or commercial NVR solutions, supporting RTSP, ONVIF, motion detection, and multi-user access.",
+    "version": "1.0.0",
+    "license": "GPLv3",
+    "category": "surveillance",
+    "subcategory": "nvr-systems",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "45-90 minutes",
+    "installation_methods": [
+      "native-packages",
+      "git-clone",
+      "npm-install"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "windows"
+    ],
+    "default_ports": [
+      8080,
+      8443,
+      554
+    ],
+    "features": [
+      "multi-os-support",
+      "rtsp-support",
+      "motion-detection",
+      "multi-user",
+      "api-integration",
+      "hardware-acceleration",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "cctv",
+      "nvr",
+      "surveillance",
+      "security-cameras",
+      "rtsp",
+      "onvif",
+      "motion-detection",
+      "video-recording",
+      "nodejs"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/surveillance/shinobi/",
+    "api": "https://howtomgr.github.io/api/v1/surveillance/shinobi.json",
+    "documentation_url": "https://howtomgr.github.io/surveillance/shinobi",
+    "website_url": "https://howtomgr.github.io/surveillance/shinobi",
+    "github_url": "https://github.com/howtomgr/shinobi",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:18:33Z",
+      "created": "2023-08-28T03:50:05Z"
+    },
+    "guide_info": {
+      "word_count": 2364,
+      "estimated_read_time": "12 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:38.148Z"
+    }
+  }
+}

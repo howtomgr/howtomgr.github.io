@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.357Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "redis_stream",
+    "title": "redis-stream Installation Guide",
+    "description": "redis-stream is a free and open-source message broker. Redis Streams provides log data structure for message broker use cases",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      6379
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/redis_stream/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/redis_stream.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/redis_stream",
+    "website_url": "https://howtomgr.github.io/miscellaneous/redis_stream",
+    "github_url": "https://github.com/howtomgr/redis_stream",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:12:15Z",
+      "created": "2025-09-16T08:12:04Z"
+    },
+    "guide_info": {
+      "word_count": 1272,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:46.635Z"
+    }
+  }
+}

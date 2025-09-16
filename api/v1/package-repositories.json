@@ -2,10 +2,10 @@
   "category": {
     "name": "package-repositories",
     "display_name": "Package repositories",
-    "total_guides": 1
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.098Z",
+    "generated_at": "2025-09-16T10:34:06.228Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -53,6 +53,141 @@
       "site": "https://howtomgr.github.io/package-repositories/aptly/",
       "api": "https://howtomgr.github.io/api/v1/package-repositories/aptly.json",
       "github": "https://github.com/howtomgr/aptly"
+    },
+    {
+      "name": "pulp",
+      "title": "pulp Installation Guide",
+      "description": "pulp is a free and open-source repository management. Pulp manages repositories of software packages and makes them available",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "package-repositories",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/package-repositories/pulp/",
+      "api": "https://howtomgr.github.io/api/v1/package-repositories/pulp.json",
+      "github": "https://github.com/howtomgr/pulp"
+    },
+    {
+      "name": "pypiserver",
+      "title": "pypiserver Installation Guide",
+      "description": "pypiserver is a free and open-source Python package server. pypiserver provides minimal PyPI server for private Python packages",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "package-repositories",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/package-repositories/pypiserver/",
+      "api": "https://howtomgr.github.io/api/v1/package-repositories/pypiserver.json",
+      "github": "https://github.com/howtomgr/pypiserver"
+    },
+    {
+      "name": "verdaccio",
+      "title": "verdaccio Installation Guide",
+      "description": "verdaccio is a free and open-source npm registry proxy. Verdaccio provides lightweight private npm proxy registry",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "package-repositories",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/package-repositories/verdaccio/",
+      "api": "https://howtomgr.github.io/api/v1/package-repositories/verdaccio.json",
+      "github": "https://github.com/howtomgr/verdaccio"
     }
   ]
 }

@@ -2,10 +2,10 @@
   "category": {
     "name": "security-monitoring",
     "display_name": "Security monitoring",
-    "total_guides": 2
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.096Z",
+    "generated_at": "2025-09-16T10:34:06.225Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -98,6 +98,96 @@
       "site": "https://howtomgr.github.io/security-monitoring/falco/",
       "api": "https://howtomgr.github.io/api/v1/security-monitoring/falco.json",
       "github": "https://github.com/howtomgr/falco"
+    },
+    {
+      "name": "osquery",
+      "title": "osquery Installation Guide",
+      "description": "osquery is a free and open-source SQL-based OS instrumentation. osquery exposes OS as relational database for monitoring",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "security-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/security-monitoring/osquery/",
+      "api": "https://howtomgr.github.io/api/v1/security-monitoring/osquery.json",
+      "github": "https://github.com/howtomgr/osquery"
+    },
+    {
+      "name": "samhain",
+      "title": "samhain Installation Guide",
+      "description": "samhain is a free and open-source integrity monitoring. Samhain provides host-based intrusion detection system",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "security-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/security-monitoring/samhain/",
+      "api": "https://howtomgr.github.io/api/v1/security-monitoring/samhain.json",
+      "github": "https://github.com/howtomgr/samhain"
     }
   ]
 }

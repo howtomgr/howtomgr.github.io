@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.377Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "truenas-scale",
+    "title": "Truenas Scale",
+    "description": "TrueNAS SCALE is an open-source hyper-converged storage solution",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "storage-solutions",
+    "subcategory": "storage-solutions",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "storage",
+      "nas",
+      "zfs",
+      "kubernetes",
+      "hyperconverged"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/storage-solutions/truenas-scale/",
+    "api": "https://howtomgr.github.io/api/v1/storage-solutions/truenas-scale.json",
+    "documentation_url": "https://howtomgr.github.io/storage-solutions/truenas-scale",
+    "website_url": "https://howtomgr.github.io/storage-solutions/truenas-scale",
+    "github_url": "https://github.com/howtomgr/truenas-scale",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:33:19Z",
+      "created": "2025-09-08T03:17:30Z"
+    },
+    "guide_info": {
+      "word_count": 3129,
+      "estimated_read_time": "16 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:19.106Z"
+    }
+  }
+}

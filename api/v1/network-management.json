@@ -1,0 +1,55 @@
+{
+  "category": {
+    "name": "network-management",
+    "display_name": "Network management",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.245Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "unifi-controller",
+      "title": "Unifi Controller",
+      "description": "UniFi Network Controller is centralized management software for Ubiquiti UniFi devices",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "networking",
+        "wifi",
+        "management",
+        "ubiquiti"
+      ],
+      "site": "https://howtomgr.github.io/network-management/unifi-controller/",
+      "api": "https://howtomgr.github.io/api/v1/network-management/unifi-controller.json",
+      "github": "https://github.com/howtomgr/unifi-controller"
+    }
+  ]
+}

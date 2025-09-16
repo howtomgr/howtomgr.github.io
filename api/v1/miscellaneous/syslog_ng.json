@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.372Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "syslog_ng",
+    "title": "syslog-ng Installation Guide",
+    "description": "syslog-ng is a free and open-source log management. syslog-ng provides flexible and scalable log management",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      514
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/syslog_ng/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/syslog_ng.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/syslog_ng",
+    "website_url": "https://howtomgr.github.io/miscellaneous/syslog_ng",
+    "github_url": "https://github.com/howtomgr/syslog_ng",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:27:16Z",
+      "created": "2025-09-16T08:27:05Z"
+    },
+    "guide_info": {
+      "word_count": 1269,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:27.080Z"
+    }
+  }
+}

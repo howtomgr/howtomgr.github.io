@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.384Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "webvirt",
+    "title": "WebVirtMgr Installation Guide",
+    "description": "WebVirtMgr is a free and open-source web-based interface for managing virtual machines through libvirt. It provides a complete KVM management solution with an intuitive web interface, serving as a FOSS alternative to proprietary virtualization management platforms like VMware vSphere or Microsoft SCVMM.",
+    "version": "1.0.0",
+    "license": "Apache-2.0",
+    "category": "virtualization",
+    "subcategory": "virtualization",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "30-60 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-installation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "freebsd"
+    ],
+    "default_ports": [
+      80,
+      443,
+      8000,
+      6080,
+      16509
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "virtualization",
+      "kvm",
+      "libvirt",
+      "vm-management",
+      "web-interface"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/virtualization/webvirt/",
+    "api": "https://howtomgr.github.io/api/v1/virtualization/webvirt.json",
+    "documentation_url": "https://howtomgr.github.io/virtualization/webvirt",
+    "website_url": "https://howtomgr.github.io/virtualization/webvirt",
+    "github_url": "https://github.com/howtomgr/webvirt",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:40:16Z",
+      "created": "2023-08-28T03:50:25Z"
+    },
+    "guide_info": {
+      "word_count": 2156,
+      "estimated_read_time": "11 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:09.464Z"
+    }
+  }
+}

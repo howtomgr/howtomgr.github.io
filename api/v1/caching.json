@@ -2,10 +2,10 @@
   "category": {
     "name": "caching",
     "display_name": "Caching",
-    "total_guides": 1
+    "total_guides": 2
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.109Z",
+    "generated_at": "2025-09-16T10:34:06.241Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -51,6 +51,47 @@
       "site": "https://howtomgr.github.io/caching/memcached/",
       "api": "https://howtomgr.github.io/api/v1/caching/memcached.json",
       "github": "https://github.com/howtomgr/memcached"
+    },
+    {
+      "name": "varnish",
+      "title": "Varnish Cache Installation Guide",
+      "description": "Varnish Cache is a high-performance HTTP accelerator designed for content-heavy dynamic websites as well as APIs. It sits between your web server and clients, caching frequently requested content to dramatically improve response times and reduce server load.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "alpine",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "caching",
+        "observability",
+        "web-services",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/caching/varnish/",
+      "api": "https://howtomgr.github.io/api/v1/caching/varnish.json",
+      "github": "https://github.com/howtomgr/varnish"
     }
   ]
 }

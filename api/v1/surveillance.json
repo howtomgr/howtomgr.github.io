@@ -1,0 +1,64 @@
+{
+  "category": {
+    "name": "surveillance",
+    "display_name": "Surveillance",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.244Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "shinobi",
+      "title": "Shinobi Installation Guide",
+      "description": "Shinobi is a free and open-source CCTV/NVR (Network Video Recorder) solution written in Node.js. It serves as a modern FOSS alternative to proprietary video surveillance systems like Blue Iris, Milestone XProtect, or commercial NVR solutions, supporting RTSP, ONVIF, motion detection, and multi-user access.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "45-90 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "rtsp-support",
+        "motion-detection",
+        "multi-user",
+        "api-integration",
+        "hardware-acceleration",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "cctv",
+        "nvr",
+        "surveillance",
+        "security-cameras",
+        "rtsp",
+        "onvif",
+        "motion-detection",
+        "video-recording",
+        "nodejs"
+      ],
+      "site": "https://howtomgr.github.io/surveillance/shinobi/",
+      "api": "https://howtomgr.github.io/api/v1/surveillance/shinobi.json",
+      "github": "https://github.com/howtomgr/shinobi"
+    }
+  ]
+}

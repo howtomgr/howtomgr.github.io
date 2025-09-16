@@ -2,10 +2,10 @@
   "category": {
     "name": "dns-filtering",
     "display_name": "Dns filtering",
-    "total_guides": 1
+    "total_guides": 2
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.095Z",
+    "generated_at": "2025-09-16T10:34:06.224Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -53,6 +53,51 @@
       "site": "https://howtomgr.github.io/dns-filtering/adguardhome/",
       "api": "https://howtomgr.github.io/api/v1/dns-filtering/adguardhome.json",
       "github": "https://github.com/howtomgr/adguardhome"
+    },
+    {
+      "name": "pihole",
+      "title": "pihole Installation Guide",
+      "description": "pihole is a free and open-source network-wide ad blocker. Pi-hole acts as a DNS sinkhole to block ads and trackers network-wide, providing privacy and performance benefits",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "dns-filtering",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/dns-filtering/pihole/",
+      "api": "https://howtomgr.github.io/api/v1/dns-filtering/pihole.json",
+      "github": "https://github.com/howtomgr/pihole"
     }
   ]
 }

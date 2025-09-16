@@ -1,0 +1,147 @@
+{
+  "category": {
+    "name": "container-management",
+    "display_name": "Container management",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.243Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "portainer",
+      "title": "portainer Installation Guide",
+      "description": "portainer is a free and open-source container management platform. Portainer simplifies container management across Docker, Swarm, and Kubernetes environments, providing a GUI alternative to command-line tools",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "container-management",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/container-management/portainer/",
+      "api": "https://howtomgr.github.io/api/v1/container-management/portainer.json",
+      "github": "https://github.com/howtomgr/portainer"
+    },
+    {
+      "name": "rancher",
+      "title": "rancher Installation Guide",
+      "description": "rancher is a free and open-source multi-cluster Kubernetes management platform. Rancher simplifies Kubernetes cluster deployment and management across any infrastructure, serving as an open-source alternative to proprietary Kubernetes platforms",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "container-management",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/container-management/rancher/",
+      "api": "https://howtomgr.github.io/api/v1/container-management/rancher.json",
+      "github": "https://github.com/howtomgr/rancher"
+    },
+    {
+      "name": "yacht",
+      "title": "Yacht",
+      "description": "Yacht is a web-based UI for managing Docker containers",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "docker",
+        "containers",
+        "web-interface",
+        "management"
+      ],
+      "site": "https://howtomgr.github.io/container-management/yacht/",
+      "api": "https://howtomgr.github.io/api/v1/container-management/yacht.json",
+      "github": "https://github.com/howtomgr/yacht"
+    }
+  ]
+}

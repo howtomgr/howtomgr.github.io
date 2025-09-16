@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.347Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "plex",
+    "title": "plex Installation Guide",
+    "description": "plex is a free and open-source media server for streaming. Plex organizes media and streams to devices, though the server is proprietary with some FOSS clients available",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "media-servers",
+    "subcategory": "media-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      32400
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "media-servers",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/media-servers/plex/",
+    "api": "https://howtomgr.github.io/api/v1/media-servers/plex.json",
+    "documentation_url": "https://howtomgr.github.io/media-servers/plex",
+    "website_url": "https://howtomgr.github.io/media-servers/plex",
+    "github_url": "https://github.com/howtomgr/plex",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:01:37Z",
+      "created": "2025-09-08T03:14:20Z"
+    },
+    "guide_info": {
+      "word_count": 1280,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:33:01.691Z"
+    }
+  }
+}

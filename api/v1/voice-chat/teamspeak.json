@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.373Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "teamspeak",
+    "title": "TeamSpeak Installation Guide",
+    "description": "TeamSpeak is a free and open-source Voice Server. Voice communication system for online gaming",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "voice-chat",
+    "subcategory": "voice-chat",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      2048,
+      9987
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "voice-chat",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/voice-chat/teamspeak/",
+    "api": "https://howtomgr.github.io/api/v1/voice-chat/teamspeak.json",
+    "documentation_url": "https://howtomgr.github.io/voice-chat/teamspeak",
+    "website_url": "https://howtomgr.github.io/voice-chat/teamspeak",
+    "github_url": "https://github.com/howtomgr/teamspeak",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:28:45Z",
+      "created": "2025-09-16T08:28:35Z"
+    },
+    "guide_info": {
+      "word_count": 1979,
+      "estimated_read_time": "10 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:25.252Z"
+    }
+  }
+}

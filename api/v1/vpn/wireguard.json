@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.385Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "wireguard",
+    "title": "WireGuard Installation Guide",
+    "description": "WireGuard is a free and open-source VPN protocol and software implementation that aims to be simpler, faster, and more secure than existing VPN protocols. Originally developed by Jason A. Donenfeld, WireGuard provides state-of-the-art cryptography and minimal attack surface. It serves as a modern FOSS alternative to proprietary VPN solutions like Cisco AnyConnect, Palo Alto GlobalProtect, or commercial VPN services, offering enterprise-grade security with significantly better performance and a fraction of the codebase.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "vpn",
+    "subcategory": "vpn",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      0,
+      1,
+      2,
+      443,
+      51820,
+      51821
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "vpn",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/vpn/wireguard/",
+    "api": "https://howtomgr.github.io/api/v1/vpn/wireguard.json",
+    "documentation_url": "https://howtomgr.github.io/vpn/wireguard",
+    "website_url": "https://howtomgr.github.io/vpn/wireguard",
+    "github_url": "https://github.com/howtomgr/wireguard",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:40:52Z",
+      "created": "2025-09-08T03:18:17Z"
+    },
+    "guide_info": {
+      "word_count": 3553,
+      "estimated_read_time": "18 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:08.450Z"
+    }
+  }
+}

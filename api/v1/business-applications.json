@@ -2,10 +2,10 @@
   "category": {
     "name": "business-applications",
     "display_name": "Business applications",
-    "total_guides": 4
+    "total_guides": 5
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.096Z",
+    "generated_at": "2025-09-16T10:34:06.226Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -191,6 +191,51 @@
       "site": "https://howtomgr.github.io/business-applications/odoo/",
       "api": "https://howtomgr.github.io/api/v1/business-applications/odoo.json",
       "github": "https://github.com/howtomgr/odoo"
+    },
+    {
+      "name": "suitecrm",
+      "title": "suitecrm Installation Guide",
+      "description": "suitecrm is a free and open-source customer relationship management. SuiteCRM provides enterprise-ready CRM as SugarCRM fork",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "business-applications",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/business-applications/suitecrm/",
+      "api": "https://howtomgr.github.io/api/v1/business-applications/suitecrm.json",
+      "github": "https://github.com/howtomgr/suitecrm"
     }
   ]
 }

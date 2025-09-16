@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.362Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "samhain",
+    "title": "samhain Installation Guide",
+    "description": "samhain is a free and open-source integrity monitoring. Samhain provides host-based intrusion detection system",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "security-monitoring",
+    "subcategory": "security-monitoring",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      49777
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "security-monitoring",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/security-monitoring/samhain/",
+    "api": "https://howtomgr.github.io/api/v1/security-monitoring/samhain.json",
+    "documentation_url": "https://howtomgr.github.io/security-monitoring/samhain",
+    "website_url": "https://howtomgr.github.io/security-monitoring/samhain",
+    "github_url": "https://github.com/howtomgr/samhain",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:16:49Z",
+      "created": "2025-09-16T08:16:39Z"
+    },
+    "guide_info": {
+      "word_count": 1265,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:40.294Z"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.357Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "redis-server",
+    "title": "Redis Installation Guide",
+    "description": "Redis is a free and open-source in-memory data structure store used as database, cache, message broker, and streaming engine. Originally developed by Salvatore Sanfilippo, Redis (REmote DIctionary Server) is known for its performance, simplicity, and versatility. It serves as a FOSS alternative to commercial in-memory solutions like Amazon ElastiCache, Azure Cache for Redis, or Oracle Coherence, offering enterprise-grade features including persistence, replication, clustering, and pub/sub messaging without licensing costs.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "databases",
+    "subcategory": "databases",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      0,
+      1,
+      2,
+      30,
+      123,
+      1000,
+      6379,
+      6380,
+      6381,
+      7000,
+      16379,
+      22122,
+      26379
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "databases",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/databases/redis-server/",
+    "api": "https://howtomgr.github.io/api/v1/databases/redis-server.json",
+    "documentation_url": "https://howtomgr.github.io/databases/redis-server",
+    "website_url": "https://howtomgr.github.io/databases/redis-server",
+    "github_url": "https://github.com/howtomgr/redis-server",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:11:59Z",
+      "created": "2025-09-08T03:15:51Z"
+    },
+    "guide_info": {
+      "word_count": 3233,
+      "estimated_read_time": "17 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:46.999Z"
+    }
+  }
+}

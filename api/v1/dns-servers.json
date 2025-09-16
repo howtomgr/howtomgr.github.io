@@ -2,10 +2,10 @@
   "category": {
     "name": "dns-servers",
     "display_name": "Dns servers",
-    "total_guides": 5
+    "total_guides": 6
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.099Z",
+    "generated_at": "2025-09-16T10:34:06.230Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -237,6 +237,52 @@
       "site": "https://howtomgr.github.io/dns-servers/nsd/",
       "api": "https://howtomgr.github.io/api/v1/dns-servers/nsd.json",
       "github": "https://github.com/howtomgr/nsd"
+    },
+    {
+      "name": "powerdns",
+      "title": "PowerDNS Installation Guide",
+      "description": "PowerDNS is a free and open-source DNS Server. A modern authoritative DNS server with various backends",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "dns-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/dns-servers/powerdns/",
+      "api": "https://howtomgr.github.io/api/v1/dns-servers/powerdns.json",
+      "github": "https://github.com/howtomgr/powerdns"
     }
   ]
 }

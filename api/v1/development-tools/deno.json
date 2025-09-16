@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.272Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "deno",
+    "title": "Deno Installation Guide",
+    "description": "Deno is a free and open-source modern runtime for JavaScript and TypeScript built on V8 and Rust. It serves as a FOSS alternative to Node.js, providing built-in TypeScript support, security-first design, web-standard APIs, and modern development features without package.json or node_modules.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "category": "development-tools",
+    "subcategory": "javascript-runtimes",
+    "difficulty_level": "beginner",
+    "estimated_setup_time": "5-15 minutes",
+    "installation_methods": [
+      "official-installer",
+      "package-manager",
+      "binary-download",
+      "cargo-install"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "fedora",
+      "macos",
+      "windows"
+    ],
+    "default_ports": [
+      8000,
+      3000,
+      9229
+    ],
+    "features": [
+      "multi-os-support",
+      "typescript-native",
+      "security-first",
+      "web-standards",
+      "single-executable",
+      "no-package-json",
+      "built-in-testing",
+      "built-in-formatting",
+      "top-level-await",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "javascript",
+      "typescript",
+      "runtime",
+      "nodejs-alternative",
+      "security",
+      "web-standards",
+      "v8",
+      "rust",
+      "modern"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/development-tools/deno/",
+    "api": "https://howtomgr.github.io/api/v1/development-tools/deno.json",
+    "documentation_url": "https://howtomgr.github.io/development-tools/deno",
+    "website_url": "https://howtomgr.github.io/development-tools/deno",
+    "github_url": "https://github.com/howtomgr/deno",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T10:18:10Z",
+      "created": "2025-09-16T10:17:59Z"
+    },
+    "guide_info": {
+      "word_count": 2018,
+      "estimated_read_time": "11 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:31:30.337Z"
+    }
+  }
+}

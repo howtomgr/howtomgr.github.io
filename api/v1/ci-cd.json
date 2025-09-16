@@ -2,10 +2,10 @@
   "category": {
     "name": "ci-cd",
     "display_name": "Ci cd",
-    "total_guides": 8
+    "total_guides": 11
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.095Z",
+    "generated_at": "2025-09-16T10:34:06.225Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -370,6 +370,141 @@
       "site": "https://howtomgr.github.io/ci-cd/laminar/",
       "api": "https://howtomgr.github.io/api/v1/ci-cd/laminar.json",
       "github": "https://github.com/howtomgr/laminar"
+    },
+    {
+      "name": "onedev",
+      "title": "onedev Installation Guide",
+      "description": "onedev is a free and open-source Git server with CI/CD. OneDev provides all-in-one DevOps platform with Git and CI/CD",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "ci-cd",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/ci-cd/onedev/",
+      "api": "https://howtomgr.github.io/api/v1/ci-cd/onedev.json",
+      "github": "https://github.com/howtomgr/onedev"
+    },
+    {
+      "name": "screwdriver",
+      "title": "screwdriver Installation Guide",
+      "description": "screwdriver is a free and open-source CI/CD platform. Yahoo Screwdriver provides scalable CI/CD platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "ci-cd",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/ci-cd/screwdriver/",
+      "api": "https://howtomgr.github.io/api/v1/ci-cd/screwdriver.json",
+      "github": "https://github.com/howtomgr/screwdriver"
+    },
+    {
+      "name": "strider",
+      "title": "strider Installation Guide",
+      "description": "strider is a free and open-source continuous deployment. Strider provides open source continuous deployment/integration platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "ci-cd",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/ci-cd/strider/",
+      "api": "https://howtomgr.github.io/api/v1/ci-cd/strider.json",
+      "github": "https://github.com/howtomgr/strider"
     }
   ]
 }

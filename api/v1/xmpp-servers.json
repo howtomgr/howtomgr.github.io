@@ -2,10 +2,10 @@
   "category": {
     "name": "xmpp-servers",
     "display_name": "Xmpp servers",
-    "total_guides": 1
+    "total_guides": 3
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.103Z",
+    "generated_at": "2025-09-16T10:34:06.234Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -54,6 +54,98 @@
       "site": "https://howtomgr.github.io/xmpp-servers/ejabberd/",
       "api": "https://howtomgr.github.io/api/v1/xmpp-servers/ejabberd.json",
       "github": "https://github.com/howtomgr/ejabberd"
+    },
+    {
+      "name": "openfire",
+      "title": "Openfire Installation Guide",
+      "description": "Openfire is a free and open-source XMPP Server. Cross-platform real-time collaboration server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "xmpp-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/xmpp-servers/openfire/",
+      "api": "https://howtomgr.github.io/api/v1/xmpp-servers/openfire.json",
+      "github": "https://github.com/howtomgr/openfire"
+    },
+    {
+      "name": "prosody",
+      "title": "Prosody Installation Guide",
+      "description": "Prosody is a free and open-source XMPP Server. Modern XMPP communication server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "xmpp-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/xmpp-servers/prosody/",
+      "api": "https://howtomgr.github.io/api/v1/xmpp-servers/prosody.json",
+      "github": "https://github.com/howtomgr/prosody"
     }
   ]
 }

@@ -2,10 +2,10 @@
   "category": {
     "name": "static-site-generators",
     "display_name": "Static site generators",
-    "total_guides": 7
+    "total_guides": 10
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.104Z",
+    "generated_at": "2025-09-16T10:34:06.235Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -323,6 +323,141 @@
       "site": "https://howtomgr.github.io/static-site-generators/metalsmith/",
       "api": "https://howtomgr.github.io/api/v1/static-site-generators/metalsmith.json",
       "github": "https://github.com/howtomgr/metalsmith"
+    },
+    {
+      "name": "pelican",
+      "title": "pelican Installation Guide",
+      "description": "pelican is a free and open-source Python static generator. Pelican provides static site generator powered by Python",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/pelican/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/pelican.json",
+      "github": "https://github.com/howtomgr/pelican"
+    },
+    {
+      "name": "vuepress",
+      "title": "vuepress Installation Guide",
+      "description": "vuepress is a free and open-source Vue-powered generator. VuePress provides Vue-powered static site generator",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/vuepress/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/vuepress.json",
+      "github": "https://github.com/howtomgr/vuepress"
+    },
+    {
+      "name": "wintersmith",
+      "title": "wintersmith Installation Guide",
+      "description": "wintersmith is a free and open-source Node.js generator. Wintersmith provides flexible, minimalistic static site generator",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "static-site-generators",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/static-site-generators/wintersmith/",
+      "api": "https://howtomgr.github.io/api/v1/static-site-generators/wintersmith.json",
+      "github": "https://github.com/howtomgr/wintersmith"
     }
   ]
 }

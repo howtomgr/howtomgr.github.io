@@ -2,10 +2,10 @@
   "category": {
     "name": "groupware",
     "display_name": "Groupware",
-    "total_guides": 2
+    "total_guides": 3
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.109Z",
+    "generated_at": "2025-09-16T10:34:06.240Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -101,6 +101,53 @@
       "site": "https://howtomgr.github.io/groupware/kopano/",
       "api": "https://howtomgr.github.io/api/v1/groupware/kopano.json",
       "github": "https://github.com/howtomgr/kopano"
+    },
+    {
+      "name": "zimbra",
+      "title": "Zimbra Installation Guide",
+      "description": "Zimbra is a free and open-source Collaboration Suite. An open-source collaborative software suite",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "groupware",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/groupware/zimbra/",
+      "api": "https://howtomgr.github.io/api/v1/groupware/zimbra.json",
+      "github": "https://github.com/howtomgr/zimbra"
     }
   ]
 }

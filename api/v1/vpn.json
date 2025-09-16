@@ -1,0 +1,148 @@
+{
+  "category": {
+    "name": "vpn",
+    "display_name": "Vpn",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.242Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "openvpn",
+      "title": "openvpn Installation Guide",
+      "description": "openvpn is a free and open-source full-featured SSL VPN solution. OpenVPN provides secure point-to-point or site-to-site connections, serving as an open-source alternative to commercial VPN solutions",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "vpn",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/vpn/openvpn/",
+      "api": "https://howtomgr.github.io/api/v1/vpn/openvpn.json",
+      "github": "https://github.com/howtomgr/openvpn"
+    },
+    {
+      "name": "tailscale",
+      "title": "tailscale Installation Guide",
+      "description": "tailscale is a free and open-source zero config VPN. Built on WireGuard, Tailscale provides mesh VPN that works like magic, serving as a user-friendly alternative to traditional VPNs",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "vpn",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/vpn/tailscale/",
+      "api": "https://howtomgr.github.io/api/v1/vpn/tailscale.json",
+      "github": "https://github.com/howtomgr/tailscale"
+    },
+    {
+      "name": "wireguard",
+      "title": "WireGuard Installation Guide",
+      "description": "WireGuard is a free and open-source VPN protocol and software implementation that aims to be simpler, faster, and more secure than existing VPN protocols. Originally developed by Jason A. Donenfeld, WireGuard provides state-of-the-art cryptography and minimal attack surface. It serves as a modern FOSS alternative to proprietary VPN solutions like Cisco AnyConnect, Palo Alto GlobalProtect, or commercial VPN services, offering enterprise-grade security with significantly better performance and a fraction of the codebase.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "vpn",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/vpn/wireguard/",
+      "api": "https://howtomgr.github.io/api/v1/vpn/wireguard.json",
+      "github": "https://github.com/howtomgr/wireguard"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.356Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "raspbian",
+    "title": "Raspberry Pi OS Installation Guide",
+    "description": "Raspberry Pi OS (formerly Raspbian) is a free and open-source Debian-based operating system optimized for Raspberry Pi hardware. It provides a complete desktop environment and serves as a FOSS alternative to proprietary embedded operating systems, ideal for IoT, education, and hobbyist projects.",
+    "version": "1.0.0",
+    "license": "Various Open Source",
+    "category": "operating-systems",
+    "subcategory": "arm-linux",
+    "difficulty_level": "beginner",
+    "estimated_setup_time": "30-45 minutes",
+    "installation_methods": [
+      "imager-tool",
+      "dd-command",
+      "network-boot"
+    ],
+    "supported_os": [
+      "raspberry-pi"
+    ],
+    "default_ports": [
+      22,
+      80,
+      443,
+      5900
+    ],
+    "features": [
+      "hardware-optimization",
+      "gpio-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "raspberry-pi",
+      "arm",
+      "debian",
+      "education",
+      "iot",
+      "gpio",
+      "embedded"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/operating-systems/raspbian/",
+    "api": "https://howtomgr.github.io/api/v1/operating-systems/raspbian.json",
+    "documentation_url": "https://howtomgr.github.io/operating-systems/raspbian",
+    "website_url": "https://howtomgr.github.io/operating-systems/raspbian",
+    "github_url": "https://github.com/howtomgr/raspbian",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:10:38Z",
+      "created": "2023-08-28T03:49:55Z"
+    },
+    "guide_info": {
+      "word_count": 2336,
+      "estimated_read_time": "12 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:48.915Z"
+    }
+  }
+}

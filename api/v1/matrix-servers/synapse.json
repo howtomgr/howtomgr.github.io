@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.371Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "synapse",
+    "title": "Synapse Installation Guide",
+    "description": "Synapse is a free and open-source Matrix Server. Matrix homeserver written in Python",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "matrix-servers",
+    "subcategory": "matrix-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      2048,
+      8008
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "matrix-servers",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/matrix-servers/synapse/",
+    "api": "https://howtomgr.github.io/api/v1/matrix-servers/synapse.json",
+    "documentation_url": "https://howtomgr.github.io/matrix-servers/synapse",
+    "website_url": "https://howtomgr.github.io/matrix-servers/synapse",
+    "github_url": "https://github.com/howtomgr/synapse",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:26:30Z",
+      "created": "2025-09-16T08:26:20Z"
+    },
+    "guide_info": {
+      "word_count": 1983,
+      "estimated_read_time": "10 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:27.962Z"
+    }
+  }
+}

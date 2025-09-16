@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.334Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "prometheus-node-exporter",
+    "title": "node-exporter Installation Guide",
+    "description": "node-exporter is a free and open-source Prometheus exporter for hardware and OS metrics. Node Exporter exposes hardware and kernel-related metrics for *NIX systems, essential for system monitoring with Prometheus",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "monitoring",
+    "subcategory": "monitoring",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      9100
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "monitoring",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/monitoring/prometheus-node-exporter/",
+    "api": "https://howtomgr.github.io/api/v1/monitoring/prometheus-node-exporter.json",
+    "documentation_url": "https://howtomgr.github.io/monitoring/prometheus-node-exporter",
+    "website_url": "https://howtomgr.github.io/monitoring/prometheus-node-exporter",
+    "github_url": "https://github.com/howtomgr/prometheus-node-exporter",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:05:20Z",
+      "created": "2025-09-16T08:05:10Z"
+    },
+    "guide_info": {
+      "word_count": 1283,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:56.548Z"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "category": {
+    "name": "operating-systems",
+    "display_name": "Operating systems",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.243Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "raspbian",
+      "title": "Raspberry Pi OS Installation Guide",
+      "description": "Raspberry Pi OS (formerly Raspbian) is a free and open-source Debian-based operating system optimized for Raspberry Pi hardware. It provides a complete desktop environment and serves as a FOSS alternative to proprietary embedded operating systems, ideal for IoT, education, and hobbyist projects.",
+      "difficulty_level": "beginner",
+      "estimated_setup_time": "30-45 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "raspberry-pi"
+      ],
+      "features": [
+        "hardware-optimization",
+        "gpio-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "raspberry-pi",
+        "arm",
+        "debian",
+        "education",
+        "iot",
+        "gpio",
+        "embedded"
+      ],
+      "site": "https://howtomgr.github.io/operating-systems/raspbian/",
+      "api": "https://howtomgr.github.io/api/v1/operating-systems/raspbian.json",
+      "github": "https://github.com/howtomgr/raspbian"
+    }
+  ]
+}

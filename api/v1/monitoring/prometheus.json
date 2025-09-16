@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.351Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "prometheus",
+    "title": "Prometheus Installation Guide",
+    "description": "Prometheus is a free and open-source systems monitoring and alerting toolkit originally built at SoundCloud. Now a standalone project and part of the Cloud Native Computing Foundation, it features a multi-dimensional data model with time series data identified by metric name and key/value pairs, PromQL query language, and powerful alerting capabilities. It serves as a FOSS alternative to commercial monitoring solutions like Datadog, New Relic, or Splunk, offering enterprise-grade monitoring and alerting without licensing costs.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "monitoring",
+    "subcategory": "monitoring",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      443,
+      3000,
+      5001,
+      8080,
+      8086,
+      9009,
+      9090,
+      9093,
+      9094,
+      9100,
+      9201,
+      19291
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "monitoring",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/monitoring/prometheus/",
+    "api": "https://howtomgr.github.io/api/v1/monitoring/prometheus.json",
+    "documentation_url": "https://howtomgr.github.io/monitoring/prometheus",
+    "website_url": "https://howtomgr.github.io/monitoring/prometheus",
+    "github_url": "https://github.com/howtomgr/prometheus",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:04:35Z",
+      "created": "2025-09-08T03:14:43Z"
+    },
+    "guide_info": {
+      "word_count": 3186,
+      "estimated_read_time": "16 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:57.538Z"
+    }
+  }
+}

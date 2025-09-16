@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.358Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "remmina",
+    "title": "remmina Installation Guide",
+    "description": "remmina is a free and open-source remote desktop client. Remmina provides feature-rich remote desktop client",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "remote-access",
+    "subcategory": "remote-access",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "remote-access",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/remote-access/remmina/",
+    "api": "https://howtomgr.github.io/api/v1/remote-access/remmina.json",
+    "documentation_url": "https://howtomgr.github.io/remote-access/remmina",
+    "website_url": "https://howtomgr.github.io/remote-access/remmina",
+    "github_url": "https://github.com/howtomgr/remmina",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:12:29Z",
+      "created": "2025-09-16T08:12:20Z"
+    },
+    "guide_info": {
+      "word_count": 1267,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:46.298Z"
+    }
+  }
+}

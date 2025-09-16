@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.361Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "sabnzbd",
+    "title": "sabnzbd Installation Guide",
+    "description": "sabnzbd is a free and open-source Usenet downloader. SABnzbd makes Usenet downloading simple with automation and integration",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      8080
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/sabnzbd/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/sabnzbd.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/sabnzbd",
+    "website_url": "https://howtomgr.github.io/miscellaneous/sabnzbd",
+    "github_url": "https://github.com/howtomgr/sabnzbd",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:16:05Z",
+      "created": "2025-09-16T08:15:54Z"
+    },
+    "guide_info": {
+      "word_count": 1271,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:41.362Z"
+    }
+  }
+}

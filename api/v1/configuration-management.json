@@ -2,10 +2,10 @@
   "category": {
     "name": "configuration-management",
     "display_name": "Configuration management",
-    "total_guides": 2
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.097Z",
+    "generated_at": "2025-09-16T10:34:06.227Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -101,6 +101,96 @@
       "site": "https://howtomgr.github.io/configuration-management/chef/",
       "api": "https://howtomgr.github.io/api/v1/configuration-management/chef.json",
       "github": "https://github.com/howtomgr/chef"
+    },
+    {
+      "name": "puppet",
+      "title": "puppet Installation Guide",
+      "description": "puppet is a free and open-source configuration management. Puppet provides infrastructure automation and delivery",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "configuration-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/configuration-management/puppet/",
+      "api": "https://howtomgr.github.io/api/v1/configuration-management/puppet.json",
+      "github": "https://github.com/howtomgr/puppet"
+    },
+    {
+      "name": "saltstack",
+      "title": "saltstack Installation Guide",
+      "description": "saltstack is a free and open-source infrastructure automation. SaltStack provides powerful automation for infrastructure management",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "configuration-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/configuration-management/saltstack/",
+      "api": "https://howtomgr.github.io/api/v1/configuration-management/saltstack.json",
+      "github": "https://github.com/howtomgr/saltstack"
     }
   ]
 }

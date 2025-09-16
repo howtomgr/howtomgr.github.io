@@ -2,10 +2,10 @@
   "category": {
     "name": "blockchain",
     "display_name": "Blockchain",
-    "total_guides": 4
+    "total_guides": 5
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.102Z",
+    "generated_at": "2025-09-16T10:34:06.233Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -188,6 +188,51 @@
       "site": "https://howtomgr.github.io/blockchain/multichain/",
       "api": "https://howtomgr.github.io/api/v1/blockchain/multichain.json",
       "github": "https://github.com/howtomgr/multichain"
+    },
+    {
+      "name": "substrate",
+      "title": "substrate Installation Guide",
+      "description": "substrate is a free and open-source blockchain framework. Parity Substrate provides framework for building blockchains",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "blockchain",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/blockchain/substrate/",
+      "api": "https://howtomgr.github.io/api/v1/blockchain/substrate.json",
+      "github": "https://github.com/howtomgr/substrate"
     }
   ]
 }

@@ -2,10 +2,10 @@
   "category": {
     "name": "documentation",
     "display_name": "Documentation",
-    "total_guides": 3
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.100Z",
+    "generated_at": "2025-09-16T10:34:06.230Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -143,6 +143,52 @@
       "site": "https://howtomgr.github.io/documentation/mkdocs/",
       "api": "https://howtomgr.github.io/api/v1/documentation/mkdocs.json",
       "github": "https://github.com/howtomgr/mkdocs"
+    },
+    {
+      "name": "outline",
+      "title": "Outline Installation Guide",
+      "description": "Modern team knowledge base with real-time collaboration, powerful search, and intuitive interface. Essential tool for documentation, note-taking, and team knowledge sharing with enterprise-grade security.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "documentation",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/documentation/outline/",
+      "api": "https://howtomgr.github.io/api/v1/documentation/outline.json",
+      "github": "https://github.com/howtomgr/outline"
     }
   ]
 }

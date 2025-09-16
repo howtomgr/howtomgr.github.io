@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.341Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "opensips",
+    "title": "OpenSIPS Installation Guide",
+    "description": "OpenSIPS is a free and open-source SIP Server. Multi-functional SIP server",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "sip-servers",
+    "subcategory": "sip-servers",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      2048,
+      5060
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "sip-servers",
+      "containerization",
+      "orchestration",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/sip-servers/opensips/",
+    "api": "https://howtomgr.github.io/api/v1/sip-servers/opensips.json",
+    "documentation_url": "https://howtomgr.github.io/sip-servers/opensips",
+    "website_url": "https://howtomgr.github.io/sip-servers/opensips",
+    "github_url": "https://github.com/howtomgr/opensips",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T07:55:07Z",
+      "created": "2025-09-16T07:54:55Z"
+    },
+    "guide_info": {
+      "word_count": 1975,
+      "estimated_read_time": "10 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:33:11.763Z"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.361Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "rust-server",
+    "title": "rust-server Installation Guide",
+    "description": "rust-server is a free and open-source Rust game server. Rust survival game dedicated server",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      28015
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/rust-server/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/rust-server.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/rust-server",
+    "website_url": "https://howtomgr.github.io/miscellaneous/rust-server",
+    "github_url": "https://github.com/howtomgr/rust-server",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:15:35Z",
+      "created": "2025-09-16T08:15:24Z"
+    },
+    "guide_info": {
+      "word_count": 1267,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:41.957Z"
+    }
+  }
+}

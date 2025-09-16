@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "1.0",
-    "generated_at": "2025-09-16T07:36:16.194Z",
+    "generated_at": "2025-09-16T10:34:06.327Z",
     "spec_version": "2.0"
   },
   "tool": {
@@ -66,14 +66,14 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "last_updated": "2025-09-16T03:46:26Z",
+      "last_updated": "2025-09-16T07:47:36Z",
       "created": "2025-09-16T03:46:16Z"
     },
     "guide_info": {
-      "word_count": 1154,
-      "estimated_read_time": "6 min",
+      "word_count": 1268,
+      "estimated_read_time": "7 min",
       "has_readme": true,
-      "last_built": "2025-09-16T07:35:39.730Z"
+      "last_built": "2025-09-16T10:33:28.135Z"
     }
   }
 }

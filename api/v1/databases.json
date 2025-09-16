@@ -2,10 +2,10 @@
   "category": {
     "name": "databases",
     "display_name": "Databases",
-    "total_guides": 5
+    "total_guides": 8
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.100Z",
+    "generated_at": "2025-09-16T10:34:06.231Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -234,6 +234,141 @@
       "site": "https://howtomgr.github.io/databases/mysql/",
       "api": "https://howtomgr.github.io/api/v1/databases/mysql.json",
       "github": "https://github.com/howtomgr/mysql"
+    },
+    {
+      "name": "postgresql",
+      "title": "PostgreSQL Installation Guide",
+      "description": "PostgreSQL is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. Originally developed at UC Berkeley as POSTGRES, it has evolved into the world's most advanced open source database, competing directly with commercial solutions like Oracle Database, Microsoft SQL Server, and IBM Db2. PostgreSQL serves as a FOSS alternative to these expensive proprietary databases while offering comparable performance, reliability, and advanced features like JSON support, full-text search, and custom data types.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "databases",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/databases/postgresql/",
+      "api": "https://howtomgr.github.io/api/v1/databases/postgresql.json",
+      "github": "https://github.com/howtomgr/postgresql"
+    },
+    {
+      "name": "redis-server",
+      "title": "Redis Installation Guide",
+      "description": "Redis is a free and open-source in-memory data structure store used as database, cache, message broker, and streaming engine. Originally developed by Salvatore Sanfilippo, Redis (REmote DIctionary Server) is known for its performance, simplicity, and versatility. It serves as a FOSS alternative to commercial in-memory solutions like Amazon ElastiCache, Azure Cache for Redis, or Oracle Coherence, offering enterprise-grade features including persistence, replication, clustering, and pub/sub messaging without licensing costs.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "databases",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/databases/redis-server/",
+      "api": "https://howtomgr.github.io/api/v1/databases/redis-server.json",
+      "github": "https://github.com/howtomgr/redis-server"
+    },
+    {
+      "name": "redis",
+      "title": "Redis Installation Guide",
+      "description": "Redis is a free and open-source in-memory data structure store, used as a database, cache, message broker, and streaming engine. Originally developed by Salvatore Sanfilippo, Redis stands for \"Remote Dictionary Server\" and provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, and geospatial indexes. It serves as a FOSS alternative to commercial solutions like Amazon ElastiCache, Azure Cache for Redis, or proprietary in-memory databases, offering comparable performance with features like persistence, replication, Lua scripting, and transactions.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "databases",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/databases/redis/",
+      "api": "https://howtomgr.github.io/api/v1/databases/redis.json",
+      "github": "https://github.com/howtomgr/redis"
     }
   ]
 }

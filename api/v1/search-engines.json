@@ -2,10 +2,10 @@
   "category": {
     "name": "search-engines",
     "display_name": "Search engines",
-    "total_guides": 4
+    "total_guides": 11
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.103Z",
+    "generated_at": "2025-09-16T10:34:06.235Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -146,6 +146,51 @@
       "github": "https://github.com/howtomgr/manticore"
     },
     {
+      "name": "manticore",
+      "title": "manticore Installation Guide",
+      "description": "manticore is a free and open-source database for search. Manticore provides fast database for search with SQL support",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/manticore/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/manticore.json",
+      "github": "https://github.com/howtomgr/manticore"
+    },
+    {
       "name": "meilisearch",
       "title": "meilisearch Installation Guide",
       "description": "meilisearch is a free and open-source search API. Meilisearch provides instant search with typo tolerance",
@@ -189,6 +234,276 @@
       "site": "https://howtomgr.github.io/search-engines/meilisearch/",
       "api": "https://howtomgr.github.io/api/v1/search-engines/meilisearch.json",
       "github": "https://github.com/howtomgr/meilisearch"
+    },
+    {
+      "name": "opensearch",
+      "title": "opensearch Installation Guide",
+      "description": "opensearch is a free and open-source search and analytics suite. OpenSearch provides open source search and analytics suite forked from Elasticsearch",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/opensearch/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/opensearch.json",
+      "github": "https://github.com/howtomgr/opensearch"
+    },
+    {
+      "name": "quickwit",
+      "title": "quickwit Installation Guide",
+      "description": "quickwit is a free and open-source search engine for logs. Quickwit provides cloud-native search engine for log management",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/quickwit/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/quickwit.json",
+      "github": "https://github.com/howtomgr/quickwit"
+    },
+    {
+      "name": "solr",
+      "title": "solr Installation Guide",
+      "description": "solr is a free and open-source search platform. Solr provides powerful full-text search and near real-time indexing",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/solr/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/solr.json",
+      "github": "https://github.com/howtomgr/solr"
+    },
+    {
+      "name": "sonic",
+      "title": "sonic Installation Guide",
+      "description": "sonic is a free and open-source search backend. Sonic provides fast, lightweight, and schemaless search backend",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/sonic/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/sonic.json",
+      "github": "https://github.com/howtomgr/sonic"
+    },
+    {
+      "name": "typesense",
+      "title": "typesense Installation Guide",
+      "description": "typesense is a free and open-source search engine. Typesense provides fast search engine with built-in typo tolerance",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/typesense/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/typesense.json",
+      "github": "https://github.com/howtomgr/typesense"
+    },
+    {
+      "name": "zinc",
+      "title": "zinc Installation Guide",
+      "description": "zinc is a free and open-source search engine. Zinc provides lightweight alternative to Elasticsearch",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/zinc/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/zinc.json",
+      "github": "https://github.com/howtomgr/zinc"
     }
   ]
 }

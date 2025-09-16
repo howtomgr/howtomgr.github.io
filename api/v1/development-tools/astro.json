@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.252Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "astro",
+    "title": "Astro Installation Guide",
+    "description": "Astro is a free and open-source all-in-one web framework for building fast, content-focused websites. It serves as a FOSS alternative to static site generators like Gatsby or Next.js, offering Islands architecture, zero JavaScript by default, and support for multiple UI frameworks including React, Vue, and Svelte in the same project.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "category": "development-tools",
+    "subcategory": "static-site-generators",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "10-20 minutes",
+    "installation_methods": [
+      "npm-create",
+      "manual-setup",
+      "starter-templates"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "fedora",
+      "macos",
+      "windows"
+    ],
+    "default_ports": [
+      4321,
+      3000
+    ],
+    "features": [
+      "multi-os-support",
+      "islands-architecture",
+      "zero-javascript-default",
+      "multi-framework",
+      "content-collections",
+      "image-optimization",
+      "markdown-mdx-support",
+      "partial-hydration",
+      "edge-deployment",
+      "view-transitions",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "static-site-generator",
+      "islands",
+      "partial-hydration",
+      "content-focused",
+      "multi-framework",
+      "performance",
+      "ssg",
+      "ssr",
+      "jamstack"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/development-tools/astro/",
+    "api": "https://howtomgr.github.io/api/v1/development-tools/astro.json",
+    "documentation_url": "https://howtomgr.github.io/development-tools/astro",
+    "website_url": "https://howtomgr.github.io/development-tools/astro",
+    "github_url": "https://github.com/howtomgr/astro",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T10:08:22Z",
+      "created": "2025-09-16T10:08:12Z"
+    },
+    "guide_info": {
+      "word_count": 2273,
+      "estimated_read_time": "12 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:31:53.941Z"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.386Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "wordpress",
+    "title": "wordpress Installation Guide",
+    "description": "wordpress is a free and open-source content management system. WordPress powers over 40% of the web with extensible CMS",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "cms",
+    "subcategory": "cms",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "cms",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/cms/wordpress/",
+    "api": "https://howtomgr.github.io/api/v1/cms/wordpress.json",
+    "documentation_url": "https://howtomgr.github.io/cms/wordpress",
+    "website_url": "https://howtomgr.github.io/cms/wordpress",
+    "github_url": "https://github.com/howtomgr/wordpress",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:41:43Z",
+      "created": "2025-09-08T03:18:29Z"
+    },
+    "guide_info": {
+      "word_count": 1271,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:07.196Z"
+    }
+  }
+}

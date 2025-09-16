@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.260Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "bun",
+    "title": "Bun Installation Guide",
+    "description": "Bun is a free and open-source all-in-one JavaScript runtime and toolkit built for speed. Written in Zig and powered by JavaScriptCore, it serves as a FOSS alternative to Node.js and npm/yarn/pnpm, offering dramatically faster startup times, built-in TypeScript support, JSX transpilation, and a comprehensive toolkit including bundler, test runner, and package manager.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "category": "development-tools",
+    "subcategory": "javascript-runtimes",
+    "difficulty_level": "beginner",
+    "estimated_setup_time": "5-10 minutes",
+    "installation_methods": [
+      "official-installer",
+      "package-manager",
+      "binary-download",
+      "docker"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "fedora",
+      "macos",
+      "windows"
+    ],
+    "default_ports": [
+      3000,
+      8000
+    ],
+    "features": [
+      "multi-os-support",
+      "all-in-one-toolkit",
+      "blazing-fast",
+      "typescript-native",
+      "jsx-support",
+      "built-in-bundler",
+      "built-in-test-runner",
+      "package-manager",
+      "sqlite-native",
+      "websocket-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "javascript",
+      "typescript",
+      "runtime",
+      "nodejs-alternative",
+      "fast",
+      "bundler",
+      "package-manager",
+      "test-runner",
+      "zig"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/development-tools/bun/",
+    "api": "https://howtomgr.github.io/api/v1/development-tools/bun.json",
+    "documentation_url": "https://howtomgr.github.io/development-tools/bun",
+    "website_url": "https://howtomgr.github.io/development-tools/bun",
+    "github_url": "https://github.com/howtomgr/bun",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T10:11:53Z",
+      "created": "2025-09-16T10:11:42Z"
+    },
+    "guide_info": {
+      "word_count": 2228,
+      "estimated_read_time": "12 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:31:45.516Z"
+    }
+  }
+}

@@ -2,10 +2,10 @@
   "category": {
     "name": "media-servers",
     "display_name": "Media servers",
-    "total_guides": 2
+    "total_guides": 3
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.104Z",
+    "generated_at": "2025-09-16T10:34:06.235Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -98,6 +98,51 @@
       "site": "https://howtomgr.github.io/media-servers/jellyfin/",
       "api": "https://howtomgr.github.io/api/v1/media-servers/jellyfin.json",
       "github": "https://github.com/howtomgr/jellyfin"
+    },
+    {
+      "name": "plex",
+      "title": "plex Installation Guide",
+      "description": "plex is a free and open-source media server for streaming. Plex organizes media and streams to devices, though the server is proprietary with some FOSS clients available",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-servers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/media-servers/plex/",
+      "api": "https://howtomgr.github.io/api/v1/media-servers/plex.json",
+      "github": "https://github.com/howtomgr/plex"
     }
   ]
 }

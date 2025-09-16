@@ -2,10 +2,10 @@
   "category": {
     "name": "network-analysis",
     "display_name": "Network analysis",
-    "total_guides": 1
+    "total_guides": 3
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.110Z",
+    "generated_at": "2025-09-16T10:34:06.242Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -53,6 +53,96 @@
       "site": "https://howtomgr.github.io/network-analysis/nmap/",
       "api": "https://howtomgr.github.io/api/v1/network-analysis/nmap.json",
       "github": "https://github.com/howtomgr/nmap"
+    },
+    {
+      "name": "tcpdump",
+      "title": "tcpdump Installation Guide",
+      "description": "tcpdump is a free and open-source packet capture. tcpdump provides command-line packet analyzer",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "network-analysis",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/network-analysis/tcpdump/",
+      "api": "https://howtomgr.github.io/api/v1/network-analysis/tcpdump.json",
+      "github": "https://github.com/howtomgr/tcpdump"
+    },
+    {
+      "name": "wireshark",
+      "title": "wireshark Installation Guide",
+      "description": "wireshark is a free and open-source packet analyzer. Wireshark provides network protocol analyzer",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "network-analysis",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/network-analysis/wireshark/",
+      "api": "https://howtomgr.github.io/api/v1/network-analysis/wireshark.json",
+      "github": "https://github.com/howtomgr/wireshark"
     }
   ]
 }

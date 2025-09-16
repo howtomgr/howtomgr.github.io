@@ -2,10 +2,10 @@
   "category": {
     "name": "webmail",
     "display_name": "Webmail",
-    "total_guides": 2
+    "total_guides": 5
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.095Z",
+    "generated_at": "2025-09-16T10:34:06.225Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -102,6 +102,147 @@
       "site": "https://howtomgr.github.io/webmail/horde/",
       "api": "https://howtomgr.github.io/api/v1/webmail/horde.json",
       "github": "https://github.com/howtomgr/horde"
+    },
+    {
+      "name": "rainloop",
+      "title": "RainLoop Installation Guide",
+      "description": "RainLoop is a free and open-source Webmail. Simple, modern & fast web-based email client",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "webmail",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/webmail/rainloop/",
+      "api": "https://howtomgr.github.io/api/v1/webmail/rainloop.json",
+      "github": "https://github.com/howtomgr/rainloop"
+    },
+    {
+      "name": "roundcube",
+      "title": "Roundcube Installation Guide",
+      "description": "Roundcube is a free and open-source Webmail. Browser-based multilingual IMAP client",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "webmail",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/webmail/roundcube/",
+      "api": "https://howtomgr.github.io/api/v1/webmail/roundcube.json",
+      "github": "https://github.com/howtomgr/roundcube"
+    },
+    {
+      "name": "squirrelmail",
+      "title": "SquirrelMail Installation Guide",
+      "description": "SquirrelMail is a free and open-source Webmail. Standards-based webmail package written in PHP",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "webmail",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/webmail/squirrelmail/",
+      "api": "https://howtomgr.github.io/api/v1/webmail/squirrelmail.json",
+      "github": "https://github.com/howtomgr/squirrelmail"
     }
   ]
 }

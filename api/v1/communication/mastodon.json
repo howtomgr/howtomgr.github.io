@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.320Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "mastodon",
+    "title": "Mastodon Installation Guide",
+    "description": "Mastodon is a free and open-source decentralized social media platform that serves as an alternative to proprietary platforms like Twitter/X. It's part of the fediverse, uses the ActivityPub protocol for federation, and allows users to run their own social media instances with full control over their data and community.",
+    "version": "1.0.0",
+    "license": "AGPL-3.0",
+    "category": "communication",
+    "subcategory": "communication",
+    "difficulty_level": "advanced",
+    "estimated_setup_time": "1-2 hours",
+    "installation_methods": [
+      "native-packages",
+      "source-installation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles"
+    ],
+    "default_ports": [
+      80,
+      443,
+      3000,
+      4000
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "social-media",
+      "fediverse",
+      "activitypub",
+      "decentralized",
+      "microblogging"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/communication/mastodon/",
+    "api": "https://howtomgr.github.io/api/v1/communication/mastodon.json",
+    "documentation_url": "https://howtomgr.github.io/communication/mastodon",
+    "website_url": "https://howtomgr.github.io/communication/mastodon",
+    "github_url": "https://github.com/howtomgr/mastodon",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T07:44:08Z",
+      "created": "2023-08-28T03:48:35Z"
+    },
+    "guide_info": {
+      "word_count": 3905,
+      "estimated_read_time": "20 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:33:38.325Z"
+    }
+  }
+}

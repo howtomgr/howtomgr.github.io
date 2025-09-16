@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.370Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "supabase",
+    "title": "Supabase Installation Guide",
+    "description": "Supabase is an open-source Firebase alternative providing a PostgreSQL database, authentication, real-time subscriptions, storage, and vector embeddings. This guide covers self-hosting Supabase on your own infrastructure.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "alpine",
+      "macos"
+    ],
+    "default_ports": [
+      3000,
+      4000,
+      5000,
+      5432,
+      8000,
+      8001,
+      9999
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/supabase/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/supabase.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/supabase",
+    "website_url": "https://howtomgr.github.io/miscellaneous/supabase",
+    "github_url": "https://github.com/howtomgr/supabase",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T08:25:14Z",
+      "created": "2025-09-16T08:25:04Z"
+    },
+    "guide_info": {
+      "word_count": 2424,
+      "estimated_read_time": "13 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:32:29.557Z"
+    }
+  }
+}

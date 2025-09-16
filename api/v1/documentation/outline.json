@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.343Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "outline",
+    "title": "Outline Installation Guide",
+    "description": "Modern team knowledge base with real-time collaboration, powerful search, and intuitive interface. Essential tool for documentation, note-taking, and team knowledge sharing with enterprise-grade security.",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "documentation",
+    "subcategory": "documentation",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      15,
+      3000,
+      5432,
+      6379,
+      9000,
+      9001
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "documentation",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection",
+      "communication"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/documentation/outline/",
+    "api": "https://howtomgr.github.io/api/v1/documentation/outline.json",
+    "documentation_url": "https://howtomgr.github.io/documentation/outline",
+    "website_url": "https://howtomgr.github.io/documentation/outline",
+    "github_url": "https://github.com/howtomgr/outline",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T07:57:18Z",
+      "created": "2025-09-16T07:57:08Z"
+    },
+    "guide_info": {
+      "word_count": 850,
+      "estimated_read_time": "5 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:33:08.408Z"
+    }
+  }
+}

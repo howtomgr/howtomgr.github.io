@@ -2,10 +2,10 @@
   "category": {
     "name": "message-queues",
     "display_name": "Message queues",
-    "total_guides": 4
+    "total_guides": 5
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.098Z",
+    "generated_at": "2025-09-16T10:34:06.228Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -182,6 +182,50 @@
       "site": "https://howtomgr.github.io/message-queues/nsq/",
       "api": "https://howtomgr.github.io/api/v1/message-queues/nsq.json",
       "github": "https://github.com/howtomgr/nsq"
+    },
+    {
+      "name": "rabbitmq",
+      "title": "RabbitMQ Installation Guide",
+      "description": "RabbitMQ is a free and open-source message-queueing software and broker written in Erlang. Originally developed by Rabbit Technologies and now owned by VMware, RabbitMQ implements the Advanced Message Queuing Protocol (AMQP) and provides message routing, queuing, and delivery guarantees. It serves as a FOSS alternative to commercial message brokers like IBM MQ, Oracle WebLogic Server, or Microsoft Azure Service Bus, offering enterprise-grade reliability, clustering, and high availability without licensing costs, with features like message persistence, flexible routing, and cross-language support.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "message-queues",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/message-queues/rabbitmq/",
+      "api": "https://howtomgr.github.io/api/v1/message-queues/rabbitmq.json",
+      "github": "https://github.com/howtomgr/rabbitmq"
     }
   ]
 }

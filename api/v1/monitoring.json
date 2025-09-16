@@ -2,10 +2,10 @@
   "category": {
     "name": "monitoring",
     "display_name": "Monitoring",
-    "total_guides": 2
+    "total_guides": 9
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.100Z",
+    "generated_at": "2025-09-16T10:34:06.230Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -40,6 +40,96 @@
       "site": "https://howtomgr.github.io/monitoring/blackbox-exporter/",
       "api": "https://howtomgr.github.io/api/v1/monitoring/blackbox-exporter.json",
       "github": "https://github.com/howtomgr/blackbox-exporter"
+    },
+    {
+      "name": "prometheus-blackbox-exporter",
+      "title": "blackbox-exporter Installation Guide",
+      "description": "blackbox-exporter is a free and open-source Prometheus exporter for probing endpoints. Blackbox Exporter allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP and ICMP, essential for monitoring external services with Prometheus",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/prometheus-blackbox-exporter/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/prometheus-blackbox-exporter.json",
+      "github": "https://github.com/howtomgr/prometheus-blackbox-exporter"
+    },
+    {
+      "name": "prometheus-mysqld-exporter",
+      "title": "mysqld-exporter Installation Guide",
+      "description": "mysqld-exporter is a free and open-source Prometheus exporter for MySQL server metrics. MySQL Exporter extracts metrics from MySQL/MariaDB servers for Prometheus monitoring, providing database performance insights",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/prometheus-mysqld-exporter/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/prometheus-mysqld-exporter.json",
+      "github": "https://github.com/howtomgr/prometheus-mysqld-exporter"
     },
     {
       "name": "nagios",
@@ -85,6 +175,228 @@
       "site": "https://howtomgr.github.io/monitoring/nagios/",
       "api": "https://howtomgr.github.io/api/v1/monitoring/nagios.json",
       "github": "https://github.com/howtomgr/nagios"
+    },
+    {
+      "name": "prometheus-node-exporter",
+      "title": "node-exporter Installation Guide",
+      "description": "node-exporter is a free and open-source Prometheus exporter for hardware and OS metrics. Node Exporter exposes hardware and kernel-related metrics for *NIX systems, essential for system monitoring with Prometheus",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/prometheus-node-exporter/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/prometheus-node-exporter.json",
+      "github": "https://github.com/howtomgr/prometheus-node-exporter"
+    },
+    {
+      "name": "prometheus-postgres-exporter",
+      "title": "postgres-exporter Installation Guide",
+      "description": "postgres-exporter is a free and open-source Prometheus exporter for PostgreSQL metrics. Postgres Exporter connects to PostgreSQL databases and exports metrics for Prometheus monitoring, essential for database observability",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/prometheus-postgres-exporter/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/prometheus-postgres-exporter.json",
+      "github": "https://github.com/howtomgr/prometheus-postgres-exporter"
+    },
+    {
+      "name": "prometheus",
+      "title": "Prometheus Installation Guide",
+      "description": "Prometheus is a free and open-source systems monitoring and alerting toolkit originally built at SoundCloud. Now a standalone project and part of the Cloud Native Computing Foundation, it features a multi-dimensional data model with time series data identified by metric name and key/value pairs, PromQL query language, and powerful alerting capabilities. It serves as a FOSS alternative to commercial monitoring solutions like Datadog, New Relic, or Splunk, offering enterprise-grade monitoring and alerting without licensing costs.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "monitoring",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/prometheus/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/prometheus.json",
+      "github": "https://github.com/howtomgr/prometheus"
+    },
+    {
+      "name": "sysdig",
+      "title": "sysdig Installation Guide",
+      "description": "sysdig is a free and open-source system exploration. Sysdig provides system exploration and troubleshooting tool",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/sysdig/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/sysdig.json",
+      "github": "https://github.com/howtomgr/sysdig"
+    },
+    {
+      "name": "zabbix",
+      "title": "Zabbix",
+      "description": "Zabbix is an enterprise-class monitoring solution for networks and applications",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "monitoring",
+        "alerting",
+        "metrics",
+        "enterprise"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/zabbix/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/zabbix.json",
+      "github": "https://github.com/howtomgr/zabbix"
     }
   ]
 }

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T10:34:06.342Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "opnsense",
+    "title": "Opnsense",
+    "description": "OPNsense is an open-source firewall and routing platform",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "firewalls",
+    "subcategory": "firewalls",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      443
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "firewall",
+      "security",
+      "networking",
+      "routing"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/firewalls/opnsense/",
+    "api": "https://howtomgr.github.io/api/v1/firewalls/opnsense.json",
+    "documentation_url": "https://howtomgr.github.io/firewalls/opnsense",
+    "website_url": "https://howtomgr.github.io/firewalls/opnsense",
+    "github_url": "https://github.com/howtomgr/opnsense",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T07:56:05Z",
+      "created": "2025-09-08T03:13:08Z"
+    },
+    "guide_info": {
+      "word_count": 3103,
+      "estimated_read_time": "16 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T10:33:10.135Z"
+    }
+  }
+}

@@ -2,10 +2,10 @@
   "category": {
     "name": "development-environments",
     "display_name": "Development environments",
-    "total_guides": 2
+    "total_guides": 3
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.101Z",
+    "generated_at": "2025-09-16T10:34:06.231Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -99,6 +99,51 @@
       "site": "https://howtomgr.github.io/development-environments/cloud9/",
       "api": "https://howtomgr.github.io/api/v1/development-environments/cloud9.json",
       "github": "https://github.com/howtomgr/cloud9"
+    },
+    {
+      "name": "theia",
+      "title": "theia Installation Guide",
+      "description": "theia is a free and open-source cloud IDE. Theia provides extensible cloud IDE framework",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "development-environments",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/development-environments/theia/",
+      "api": "https://howtomgr.github.io/api/v1/development-environments/theia.json",
+      "github": "https://github.com/howtomgr/theia"
     }
   ]
 }

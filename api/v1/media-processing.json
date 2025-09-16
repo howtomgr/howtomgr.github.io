@@ -2,10 +2,10 @@
   "category": {
     "name": "media-processing",
     "display_name": "Media processing",
-    "total_guides": 6
+    "total_guides": 8
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.098Z",
+    "generated_at": "2025-09-16T10:34:06.228Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -282,6 +282,98 @@
       "site": "https://howtomgr.github.io/media-processing/kdenlive/",
       "api": "https://howtomgr.github.io/api/v1/media-processing/kdenlive.json",
       "github": "https://github.com/howtomgr/kdenlive"
+    },
+    {
+      "name": "openshot",
+      "title": "openshot Installation Guide",
+      "description": "openshot is a free and open-source video editor. OpenShot provides easy-to-use video editor",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "multimedia"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/openshot/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/openshot.json",
+      "github": "https://github.com/howtomgr/openshot"
+    },
+    {
+      "name": "shotcut",
+      "title": "shotcut Installation Guide",
+      "description": "shotcut is a free and open-source video editor. Shotcut provides cross-platform video editor",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "multimedia"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/shotcut/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/shotcut.json",
+      "github": "https://github.com/howtomgr/shotcut"
     }
   ]
 }

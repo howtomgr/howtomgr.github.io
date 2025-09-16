@@ -1,0 +1,59 @@
+{
+  "category": {
+    "name": "infrastructure-as-code",
+    "display_name": "Infrastructure as code",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.244Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "terraform",
+      "title": "Terraform Installation and Management Guide",
+      "description": "Terraform installation and configuration guide",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "infrastructure-as-code",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/infrastructure-as-code/terraform/",
+      "api": "https://howtomgr.github.io/api/v1/infrastructure-as-code/terraform.json",
+      "github": "https://github.com/howtomgr/terraform"
+    }
+  ]
+}

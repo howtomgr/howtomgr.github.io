@@ -1,0 +1,148 @@
+{
+  "category": {
+    "name": "reverse-proxies",
+    "display_name": "Reverse proxies",
+    "total_guides": 3
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.244Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "skipper",
+      "title": "skipper Installation Guide",
+      "description": "skipper is a free and open-source HTTP router. Skipper provides HTTP router and reverse proxy for service composition",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "reverse-proxies",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/reverse-proxies/skipper/",
+      "api": "https://howtomgr.github.io/api/v1/reverse-proxies/skipper.json",
+      "github": "https://github.com/howtomgr/skipper"
+    },
+    {
+      "name": "traefik",
+      "title": "Traefik Installation Guide",
+      "description": "Traefik is a free and open-source modern HTTP reverse proxy and load balancer with automatic service discovery. Traefik is a cloud-native edge router that automatically discovers services and provides dynamic configuration, serving as an alternative to HAProxy, nginx Plus, or AWS Application Load Balancer",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "reverse-proxies",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/reverse-proxies/traefik/",
+      "api": "https://howtomgr.github.io/api/v1/reverse-proxies/traefik.json",
+      "github": "https://github.com/howtomgr/traefik"
+    },
+    {
+      "name": "vulcand",
+      "title": "vulcand Installation Guide",
+      "description": "vulcand is a free and open-source HTTP proxy. Vulcand provides programmatic load balancer backed by etcd",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "reverse-proxies",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/reverse-proxies/vulcand/",
+      "api": "https://howtomgr.github.io/api/v1/reverse-proxies/vulcand.json",
+      "github": "https://github.com/howtomgr/vulcand"
+    }
+  ]
+}

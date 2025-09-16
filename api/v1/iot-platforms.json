@@ -2,10 +2,10 @@
   "category": {
     "name": "iot-platforms",
     "display_name": "Iot platforms",
-    "total_guides": 5
+    "total_guides": 8
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.101Z",
+    "generated_at": "2025-09-16T10:34:06.232Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -233,6 +233,141 @@
       "site": "https://howtomgr.github.io/iot-platforms/mainflux/",
       "api": "https://howtomgr.github.io/api/v1/iot-platforms/mainflux.json",
       "github": "https://github.com/howtomgr/mainflux"
+    },
+    {
+      "name": "thingsboard",
+      "title": "thingsboard Installation Guide",
+      "description": "thingsboard is a free and open-source IoT platform. ThingsBoard provides open-source IoT platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/thingsboard/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/thingsboard.json",
+      "github": "https://github.com/howtomgr/thingsboard"
+    },
+    {
+      "name": "ttn",
+      "title": "ttn Installation Guide",
+      "description": "ttn is a free and open-source LoRaWAN platform. The Things Stack provides LoRaWAN network server",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/ttn/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/ttn.json",
+      "github": "https://github.com/howtomgr/ttn"
+    },
+    {
+      "name": "zigbee2mqtt",
+      "title": "zigbee2mqtt Installation Guide",
+      "description": "zigbee2mqtt is a free and open-source Zigbee to MQTT bridge. Zigbee2MQTT bridges Zigbee devices to MQTT",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/zigbee2mqtt/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/zigbee2mqtt.json",
+      "github": "https://github.com/howtomgr/zigbee2mqtt"
     }
   ]
 }

@@ -1,0 +1,53 @@
+{
+  "category": {
+    "name": "communication",
+    "display_name": "Communication",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T10:34:06.241Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "mastodon",
+      "title": "Mastodon Installation Guide",
+      "description": "Mastodon is a free and open-source decentralized social media platform that serves as an alternative to proprietary platforms like Twitter/X. It's part of the fediverse, uses the ActivityPub protocol for federation, and allows users to run their own social media instances with full control over their data and community.",
+      "difficulty_level": "advanced",
+      "estimated_setup_time": "1-2 hours",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "social-media",
+        "fediverse",
+        "activitypub",
+        "decentralized",
+        "microblogging"
+      ],
+      "site": "https://howtomgr.github.io/communication/mastodon/",
+      "api": "https://howtomgr.github.io/api/v1/communication/mastodon.json",
+      "github": "https://github.com/howtomgr/mastodon"
+    }
+  ]
+}

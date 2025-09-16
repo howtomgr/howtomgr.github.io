@@ -2,10 +2,10 @@
   "category": {
     "name": "infrastructure-management",
     "display_name": "Infrastructure management",
-    "total_guides": 5
+    "total_guides": 7
   },
   "meta": {
-    "generated_at": "2025-09-16T07:36:16.101Z",
+    "generated_at": "2025-09-16T10:34:06.232Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -233,6 +233,96 @@
       "site": "https://howtomgr.github.io/infrastructure-management/maas/",
       "api": "https://howtomgr.github.io/api/v1/infrastructure-management/maas.json",
       "github": "https://github.com/howtomgr/maas"
+    },
+    {
+      "name": "razor",
+      "title": "razor Installation Guide",
+      "description": "razor is a free and open-source provisioning solution. Puppet Razor provides hardware provisioning solution",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "infrastructure-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/infrastructure-management/razor/",
+      "api": "https://howtomgr.github.io/api/v1/infrastructure-management/razor.json",
+      "github": "https://github.com/howtomgr/razor"
+    },
+    {
+      "name": "tinkerbell",
+      "title": "tinkerbell Installation Guide",
+      "description": "tinkerbell is a free and open-source bare metal provisioning. Tinkerbell provides framework for bare metal provisioning",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "infrastructure-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/infrastructure-management/tinkerbell/",
+      "api": "https://howtomgr.github.io/api/v1/infrastructure-management/tinkerbell.json",
+      "github": "https://github.com/howtomgr/tinkerbell"
     }
   ]
 }
