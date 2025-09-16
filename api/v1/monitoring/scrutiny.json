@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T17:25:37.732Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "scrutiny",
+    "title": "Scrutiny Installation Guide",
+    "description": "Scrutiny is a free and open-source S.M.A.R.T. disk monitoring tool that provides web-based dashboards, alerting, and historical data analysis for hard drive health. It serves as a FOSS alternative to proprietary disk monitoring solutions like CrystalDiskInfo or Hard Disk Sentinel, offering comprehensive disk health monitoring with proactive failure detection.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "category": "monitoring",
+    "subcategory": "disk-monitoring",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "20-40 minutes",
+    "installation_methods": [
+      "docker-compose",
+      "binary-download",
+      "native-packages"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "fedora",
+      "macos",
+      "windows"
+    ],
+    "default_ports": [
+      8080,
+      8086
+    ],
+    "features": [
+      "multi-os-support",
+      "smart-monitoring",
+      "web-dashboard",
+      "historical-data",
+      "alerting",
+      "multi-host",
+      "docker-support",
+      "influxdb-integration",
+      "notification-channels",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "smart",
+      "disk-monitoring",
+      "hard-drive-health",
+      "storage-monitoring",
+      "alerting",
+      "dashboard",
+      "ssd-monitoring",
+      "hdd-monitoring",
+      "failure-prediction"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/monitoring/scrutiny/",
+    "api": "https://howtomgr.github.io/api/v1/monitoring/scrutiny.json",
+    "documentation_url": "https://howtomgr.github.io/monitoring/scrutiny",
+    "website_url": "https://howtomgr.github.io/monitoring/scrutiny",
+    "github_url": "https://github.com/howtomgr/scrutiny",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T11:02:30Z",
+      "created": "2025-09-16T11:02:19Z"
+    },
+    "guide_info": {
+      "word_count": 2059,
+      "estimated_read_time": "11 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T17:23:02.075Z"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T17:25:37.756Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "vite",
+    "title": "Vite Installation Guide",
+    "description": "Vite is a free and open-source next-generation frontend build tool that provides blazing fast development experience. It serves as a FOSS alternative to traditional bundlers like Create React App, webpack DevServer, or Parcel, offering instant server start, lightning-fast HMR, and optimized production builds powered by Rollup.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "category": "development-tools",
+    "subcategory": "build-tools",
+    "difficulty_level": "beginner",
+    "estimated_setup_time": "5-15 minutes",
+    "installation_methods": [
+      "npm-create",
+      "package-manager",
+      "manual-setup"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "fedora",
+      "macos",
+      "windows"
+    ],
+    "default_ports": [
+      5173,
+      4173
+    ],
+    "features": [
+      "multi-os-support",
+      "instant-server-start",
+      "lightning-fast-hmr",
+      "optimized-builds",
+      "framework-agnostic",
+      "typescript-support",
+      "css-preprocessing",
+      "asset-handling",
+      "plugin-ecosystem",
+      "rollup-powered",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "build-tool",
+      "frontend",
+      "bundler",
+      "hmr",
+      "esm",
+      "rollup",
+      "esbuild",
+      "webpack-alternative",
+      "development"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/development-tools/vite/",
+    "api": "https://howtomgr.github.io/api/v1/development-tools/vite.json",
+    "documentation_url": "https://howtomgr.github.io/development-tools/vite",
+    "website_url": "https://howtomgr.github.io/development-tools/vite",
+    "github_url": "https://github.com/howtomgr/vite",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T11:13:20Z",
+      "created": "2025-09-16T11:13:11Z"
+    },
+    "guide_info": {
+      "word_count": 2311,
+      "estimated_read_time": "12 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T17:22:09.581Z"
+    }
+  }
+}

@@ -2,13 +2,66 @@
   "category": {
     "name": "virtualization",
     "display_name": "Virtualization",
-    "total_guides": 1
+    "total_guides": 2
   },
   "meta": {
-    "generated_at": "2025-09-16T10:34:06.245Z",
+    "generated_at": "2025-09-16T17:25:37.597Z",
     "api_version": "1.0"
   },
   "guides": [
+    {
+      "name": "incus",
+      "title": "Incus Installation Guide",
+      "description": "Incus is a free and open-source system container and virtual machine manager. It's a community-driven fork of LXD that maintains true open-source governance, serving as a FOSS alternative to proprietary virtualization platforms like VMware vSphere, Proxmox, or cloud-based container services.",
+      "difficulty_level": "advanced",
+      "estimated_setup_time": "30-60 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "fedora"
+      ],
+      "features": [
+        "multi-os-support",
+        "system-containers",
+        "virtual-machines",
+        "clustering",
+        "snapshots",
+        "live-migration",
+        "storage-management",
+        "network-management",
+        "api-driven",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "containers",
+        "virtualization",
+        "lxd-fork",
+        "system-containers",
+        "virtual-machines",
+        "clustering",
+        "enterprise",
+        "lxc",
+        "snapshots"
+      ],
+      "site": "https://howtomgr.github.io/virtualization/incus/",
+      "api": "https://howtomgr.github.io/api/v1/virtualization/incus.json",
+      "github": "https://github.com/howtomgr/incus"
+    },
     {
       "name": "webvirt",
       "title": "WebVirtMgr Installation Guide",

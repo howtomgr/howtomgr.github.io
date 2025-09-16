@@ -2,59 +2,13 @@
   "category": {
     "name": "streaming-servers",
     "display_name": "Streaming servers",
-    "total_guides": 2
+    "total_guides": 1
   },
   "meta": {
-    "generated_at": "2025-09-16T10:34:06.238Z",
+    "generated_at": "2025-09-16T17:25:37.603Z",
     "api_version": "1.0"
   },
   "guides": [
-    {
-      "name": "icecast",
-      "title": "Icecast Installation Guide",
-      "description": "Icecast is a free and open-source Streaming Server. Streaming media server",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "streaming-servers",
-        "containerization",
-        "orchestration",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/streaming-servers/icecast/",
-      "api": "https://howtomgr.github.io/api/v1/streaming-servers/icecast.json",
-      "github": "https://github.com/howtomgr/icecast"
-    },
     {
       "name": "shoutcast",
       "title": "SHOUTcast Installation Guide",

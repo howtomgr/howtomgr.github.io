@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T17:25:37.660Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "incus",
+    "title": "Incus Installation Guide",
+    "description": "Incus is a free and open-source system container and virtual machine manager. It's a community-driven fork of LXD that maintains true open-source governance, serving as a FOSS alternative to proprietary virtualization platforms like VMware vSphere, Proxmox, or cloud-based container services.",
+    "version": "1.0.0",
+    "license": "Apache-2.0",
+    "category": "virtualization",
+    "subcategory": "container-management",
+    "difficulty_level": "advanced",
+    "estimated_setup_time": "30-60 minutes",
+    "installation_methods": [
+      "snap-package",
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "fedora"
+    ],
+    "default_ports": [
+      8443
+    ],
+    "features": [
+      "multi-os-support",
+      "system-containers",
+      "virtual-machines",
+      "clustering",
+      "snapshots",
+      "live-migration",
+      "storage-management",
+      "network-management",
+      "api-driven",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "containers",
+      "virtualization",
+      "lxd-fork",
+      "system-containers",
+      "virtual-machines",
+      "clustering",
+      "enterprise",
+      "lxc",
+      "snapshots"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/virtualization/incus/",
+    "api": "https://howtomgr.github.io/api/v1/virtualization/incus.json",
+    "documentation_url": "https://howtomgr.github.io/virtualization/incus",
+    "website_url": "https://howtomgr.github.io/virtualization/incus",
+    "github_url": "https://github.com/howtomgr/incus",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T10:31:52Z",
+      "created": "2025-09-16T10:31:42Z"
+    },
+    "guide_info": {
+      "word_count": 2120,
+      "estimated_read_time": "11 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T17:25:33.745Z"
+    }
+  }
+}

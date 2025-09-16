@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T17:25:37.699Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "ollama",
+    "title": "Ollama Installation Guide",
+    "description": "Ollama is a free and open-source tool for running large language models (LLMs) locally on your machine. It serves as a FOSS alternative to cloud-based AI services like OpenAI API, Anthropic Claude API, or Google's Gemini API, enabling privacy-focused AI deployment, offline inference, and cost-effective local AI processing.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "category": "artificial-intelligence",
+    "subcategory": "llm-runners",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "official-installer",
+      "package-manager",
+      "manual-binary"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "windows"
+    ],
+    "default_ports": [
+      11434
+    ],
+    "features": [
+      "multi-os-support",
+      "local-llm-inference",
+      "gpu-acceleration",
+      "model-management",
+      "rest-api",
+      "privacy-focused",
+      "offline-capable",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "ai",
+      "llm",
+      "machine-learning",
+      "local-inference",
+      "privacy",
+      "openai-alternative",
+      "gpu-acceleration",
+      "model-serving",
+      "rest-api"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/artificial-intelligence/ollama/",
+    "api": "https://howtomgr.github.io/api/v1/artificial-intelligence/ollama.json",
+    "documentation_url": "https://howtomgr.github.io/artificial-intelligence/ollama",
+    "website_url": "https://howtomgr.github.io/artificial-intelligence/ollama",
+    "github_url": "https://github.com/howtomgr/ollama",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T10:48:54Z",
+      "created": "2025-09-16T10:48:43Z"
+    },
+    "guide_info": {
+      "word_count": 2213,
+      "estimated_read_time": "12 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T17:24:11.125Z"
+    }
+  }
+}

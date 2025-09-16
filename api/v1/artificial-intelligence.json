@@ -1,0 +1,65 @@
+{
+  "category": {
+    "name": "artificial-intelligence",
+    "display_name": "Artificial intelligence",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T17:25:37.601Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "ollama",
+      "title": "Ollama Installation Guide",
+      "description": "Ollama is a free and open-source tool for running large language models (LLMs) locally on your machine. It serves as a FOSS alternative to cloud-based AI services like OpenAI API, Anthropic Claude API, or Google's Gemini API, enabling privacy-focused AI deployment, offline inference, and cost-effective local AI processing.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "local-llm-inference",
+        "gpu-acceleration",
+        "model-management",
+        "rest-api",
+        "privacy-focused",
+        "offline-capable",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "ai",
+        "llm",
+        "machine-learning",
+        "local-inference",
+        "privacy",
+        "openai-alternative",
+        "gpu-acceleration",
+        "model-serving",
+        "rest-api"
+      ],
+      "site": "https://howtomgr.github.io/artificial-intelligence/ollama/",
+      "api": "https://howtomgr.github.io/api/v1/artificial-intelligence/ollama.json",
+      "github": "https://github.com/howtomgr/ollama"
+    }
+  ]
+}

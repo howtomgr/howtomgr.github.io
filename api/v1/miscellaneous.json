@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 244
+    "total_guides": 245
   },
   "meta": {
-    "generated_at": "2025-09-16T10:34:06.221Z",
+    "generated_at": "2025-09-16T17:25:37.579Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -3600,6 +3600,51 @@
       "site": "https://howtomgr.github.io/miscellaneous/hubitat/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/hubitat.json",
       "github": "https://github.com/howtomgr/hubitat"
+    },
+    {
+      "name": "hyperledger_fabric",
+      "title": "hyperledger-fabric Installation Guide",
+      "description": "hyperledger-fabric is a free and open-source enterprise blockchain. Fabric provides enterprise-grade permissioned blockchain",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/hyperledger_fabric/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/hyperledger_fabric.json",
+      "github": "https://github.com/howtomgr/hyperledger_fabric"
     },
     {
       "name": "icinga",

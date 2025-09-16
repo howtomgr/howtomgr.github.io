@@ -2,10 +2,10 @@
   "category": {
     "name": "mailing-lists",
     "display_name": "Mailing lists",
-    "total_guides": 4
+    "total_guides": 5
   },
   "meta": {
-    "generated_at": "2025-09-16T10:34:06.241Z",
+    "generated_at": "2025-09-16T17:25:37.600Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -102,6 +102,53 @@
       "site": "https://howtomgr.github.io/mailing-lists/mailman/",
       "api": "https://howtomgr.github.io/api/v1/mailing-lists/mailman.json",
       "github": "https://github.com/howtomgr/mailman"
+    },
+    {
+      "name": "phplist",
+      "title": "phpList Installation Guide",
+      "description": "phpList is a free and open-source Email Marketing. Open source newsletter and email marketing",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "mailing-lists",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/mailing-lists/phplist/",
+      "api": "https://howtomgr.github.io/api/v1/mailing-lists/phplist.json",
+      "github": "https://github.com/howtomgr/phplist"
     },
     {
       "name": "phplist",

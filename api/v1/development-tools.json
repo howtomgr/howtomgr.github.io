@@ -2,10 +2,10 @@
   "category": {
     "name": "development-tools",
     "display_name": "Development tools",
-    "total_guides": 4
+    "total_guides": 5
   },
   "meta": {
-    "generated_at": "2025-09-16T10:34:06.229Z",
+    "generated_at": "2025-09-16T17:25:37.587Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -175,6 +175,62 @@
       "site": "https://howtomgr.github.io/development-tools/deno/",
       "api": "https://howtomgr.github.io/api/v1/development-tools/deno.json",
       "github": "https://github.com/howtomgr/deno"
+    },
+    {
+      "name": "vite",
+      "title": "Vite Installation Guide",
+      "description": "Vite is a free and open-source next-generation frontend build tool that provides blazing fast development experience. It serves as a FOSS alternative to traditional bundlers like Create React App, webpack DevServer, or Parcel, offering instant server start, lightning-fast HMR, and optimized production builds powered by Rollup.",
+      "difficulty_level": "beginner",
+      "estimated_setup_time": "5-15 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "fedora",
+        "macos",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "instant-server-start",
+        "lightning-fast-hmr",
+        "optimized-builds",
+        "framework-agnostic",
+        "typescript-support",
+        "css-preprocessing",
+        "asset-handling",
+        "plugin-ecosystem",
+        "rollup-powered",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "build-tool",
+        "frontend",
+        "bundler",
+        "hmr",
+        "esm",
+        "rollup",
+        "esbuild",
+        "webpack-alternative",
+        "development"
+      ],
+      "site": "https://howtomgr.github.io/development-tools/vite/",
+      "api": "https://howtomgr.github.io/api/v1/development-tools/vite.json",
+      "github": "https://github.com/howtomgr/vite"
     },
     {
       "name": "vscode-server",

@@ -1,0 +1,68 @@
+{
+  "category": {
+    "name": "gaming",
+    "display_name": "Gaming",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-16T17:25:37.603Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "pufferpanel",
+      "title": "PufferPanel Installation Guide",
+      "description": "PufferPanel is a free and open-source game server management panel designed for both individuals and game server providers. It serves as a FOSS alternative to proprietary panels like TCAdmin, GameCP, or AMP, providing web-based management for game servers including Minecraft, CS:GO, Team Fortress 2, and many more.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "30-60 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "fedora",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "game-server-management",
+        "web-interface",
+        "docker-integration",
+        "multi-user-support",
+        "template-system",
+        "sftp-access",
+        "api-access",
+        "resource-monitoring",
+        "backup-management",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "gaming",
+        "game-servers",
+        "minecraft",
+        "csgo",
+        "panel",
+        "management",
+        "docker",
+        "multi-user",
+        "web-ui"
+      ],
+      "site": "https://howtomgr.github.io/gaming/pufferpanel/",
+      "api": "https://howtomgr.github.io/api/v1/gaming/pufferpanel.json",
+      "github": "https://github.com/howtomgr/pufferpanel"
+    }
+  ]
+}

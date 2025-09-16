@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-16T17:25:37.659Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "immich",
+    "title": "Immich Installation Guide",
+    "description": "Immich is a free and open-source self-hosted photo and video management solution. It serves as a FOSS alternative to cloud-based photo services like Google Photos, Apple iCloud Photos, Amazon Photos, or Dropbox Photos, providing automatic backup, facial recognition, object detection, and advanced search while ensuring complete privacy and data ownership.",
+    "version": "1.0.0",
+    "license": "AGPL-3.0",
+    "category": "media",
+    "subcategory": "photo-management",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "30-60 minutes",
+    "installation_methods": [
+      "docker-compose",
+      "native-packages"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "windows"
+    ],
+    "default_ports": [
+      2283,
+      2284
+    ],
+    "features": [
+      "multi-os-support",
+      "self-hosted",
+      "photo-management",
+      "video-management",
+      "facial-recognition",
+      "object-detection",
+      "mobile-sync",
+      "machine-learning",
+      "privacy-focused",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "photos",
+      "videos",
+      "self-hosted",
+      "privacy",
+      "google-photos-alternative",
+      "facial-recognition",
+      "machine-learning",
+      "mobile-backup",
+      "media-management"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/media/immich/",
+    "api": "https://howtomgr.github.io/api/v1/media/immich.json",
+    "documentation_url": "https://howtomgr.github.io/media/immich",
+    "website_url": "https://howtomgr.github.io/media/immich",
+    "github_url": "https://github.com/howtomgr/immich",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T10:31:37Z",
+      "created": "2025-09-16T10:31:27Z"
+    },
+    "guide_info": {
+      "word_count": 2238,
+      "estimated_read_time": "12 min",
+      "has_readme": true,
+      "last_built": "2025-09-16T17:25:34.274Z"
+    }
+  }
+}

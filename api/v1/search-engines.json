@@ -2,10 +2,10 @@
   "category": {
     "name": "search-engines",
     "display_name": "Search engines",
-    "total_guides": 11
+    "total_guides": 10
   },
   "meta": {
-    "generated_at": "2025-09-16T10:34:06.235Z",
+    "generated_at": "2025-09-16T17:25:37.593Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -99,51 +99,6 @@
       "site": "https://howtomgr.github.io/search-engines/lnx/",
       "api": "https://howtomgr.github.io/api/v1/search-engines/lnx.json",
       "github": "https://github.com/howtomgr/lnx"
-    },
-    {
-      "name": "manticore",
-      "title": "manticore Installation Guide",
-      "description": "manticore is a free and open-source database for search. Manticore provides fast database for search with SQL support",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "search-engines",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/search-engines/manticore/",
-      "api": "https://howtomgr.github.io/api/v1/search-engines/manticore.json",
-      "github": "https://github.com/howtomgr/manticore"
     },
     {
       "name": "manticore",

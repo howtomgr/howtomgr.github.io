@@ -2,10 +2,10 @@
   "category": {
     "name": "databases",
     "display_name": "Databases",
-    "total_guides": 8
+    "total_guides": 9
   },
   "meta": {
-    "generated_at": "2025-09-16T10:34:06.231Z",
+    "generated_at": "2025-09-16T17:25:37.589Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -369,6 +369,62 @@
       "site": "https://howtomgr.github.io/databases/redis/",
       "api": "https://howtomgr.github.io/api/v1/databases/redis.json",
       "github": "https://github.com/howtomgr/redis"
+    },
+    {
+      "name": "surrealdb",
+      "title": "SurrealDB Installation Guide",
+      "description": "SurrealDB is a free and open-source multi-model database designed for modern applications. It combines traditional database, document store, graph database, and real-time collaborative backend functionality. SurrealDB serves as a FOSS alternative to proprietary multi-model databases like FaunaDB, Amazon DynamoDB, or Google Firestore.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "fedora",
+        "macos",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "multi-model-database",
+        "sql-query-language",
+        "real-time-subscriptions",
+        "graph-queries",
+        "schemaless-schemafull",
+        "acid-transactions",
+        "advanced-permissions",
+        "geospatial-support",
+        "full-text-search",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "database",
+        "multi-model",
+        "nosql",
+        "sql",
+        "graph",
+        "document",
+        "real-time",
+        "websocket",
+        "acid"
+      ],
+      "site": "https://howtomgr.github.io/databases/surrealdb/",
+      "api": "https://howtomgr.github.io/api/v1/databases/surrealdb.json",
+      "github": "https://github.com/howtomgr/surrealdb"
     }
   ]
 }

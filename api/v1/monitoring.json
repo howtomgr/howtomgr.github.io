@@ -2,10 +2,10 @@
   "category": {
     "name": "monitoring",
     "display_name": "Monitoring",
-    "total_guides": 9
+    "total_guides": 10
   },
   "meta": {
-    "generated_at": "2025-09-16T10:34:06.230Z",
+    "generated_at": "2025-09-16T17:25:37.589Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -310,6 +310,61 @@
       "site": "https://howtomgr.github.io/monitoring/prometheus/",
       "api": "https://howtomgr.github.io/api/v1/monitoring/prometheus.json",
       "github": "https://github.com/howtomgr/prometheus"
+    },
+    {
+      "name": "scrutiny",
+      "title": "Scrutiny Installation Guide",
+      "description": "Scrutiny is a free and open-source S.M.A.R.T. disk monitoring tool that provides web-based dashboards, alerting, and historical data analysis for hard drive health. It serves as a FOSS alternative to proprietary disk monitoring solutions like CrystalDiskInfo or Hard Disk Sentinel, offering comprehensive disk health monitoring with proactive failure detection.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "20-40 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "fedora",
+        "macos",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "smart-monitoring",
+        "web-dashboard",
+        "historical-data",
+        "alerting",
+        "multi-host",
+        "docker-support",
+        "influxdb-integration",
+        "notification-channels",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "smart",
+        "disk-monitoring",
+        "hard-drive-health",
+        "storage-monitoring",
+        "alerting",
+        "dashboard",
+        "ssd-monitoring",
+        "hdd-monitoring",
+        "failure-prediction"
+      ],
+      "site": "https://howtomgr.github.io/monitoring/scrutiny/",
+      "api": "https://howtomgr.github.io/api/v1/monitoring/scrutiny.json",
+      "github": "https://github.com/howtomgr/scrutiny"
     },
     {
       "name": "sysdig",
