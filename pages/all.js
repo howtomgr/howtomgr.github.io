@@ -5,7 +5,7 @@ import SimpleSearch from '../components/SimpleSearch';
 import { LoadingSpinner, EmptyState } from '../components/LoadingStates';
 import { getCategoriesFromGuides, getAllCategories, getCategoryInfo } from '../lib/categories';
 
-export default function AllGuidesPage({ guides = [], categories = [] }) {
+export default function AllGuidesPage({ guides = [], categories = [], lastUpdated }) {
   const [filteredGuides, setFilteredGuides] = useState(guides);
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('');
@@ -70,6 +70,7 @@ export default function AllGuidesPage({ guides = [], categories = [] }) {
     <Layout
       title={`All Installation Guides (${guides.length})`}
       description={`Browse all ${guides.length} installation guides across ${categories.length} categories. Find guides for web servers, databases, containers, security tools, and more.`}
+      lastUpdated={lastUpdated}
     >
       {/* Header */}
       <section className="all-header">
@@ -719,14 +720,16 @@ export async function getStaticProps() {
       return {
         props: {
           guides: guidesData.guides || [],
-          categories: getAllCategories()
+          categories: getAllCategories(),
+          lastUpdated: guidesData.metadata?.lastUpdated || null
         }
       };
     } catch (fileError) {
       return {
         props: {
           guides: [],
-          categories: getAllCategories()
+          categories: getAllCategories(),
+          lastUpdated: null
         }
       };
     }
@@ -735,7 +738,8 @@ export async function getStaticProps() {
     return {
       props: {
         guides: [],
-        categories: getAllCategories()
+        categories: getAllCategories(),
+        lastUpdated: null
       }
     };
   }

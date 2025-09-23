@@ -9,15 +9,15 @@
   padding: 0;
 }
 
-/* Dracula Color Variables */
+/* Dracula Color Variables - Enhanced Contrast */
 :root {
-  /* Dracula Palette */
+  /* Dracula Palette - Improved for accessibility */
   --bg-primary: #282a36;
   --bg-secondary: #44475a;
   --bg-surface: #383a59;
   --text-primary: #f8f8f2;
-  --text-secondary: #6272a4;
-  --text-muted: #6272a4;
+  --text-secondary: #a4b0d3;  /* Improved contrast from #6272a4 */
+  --text-muted: #8892b8;      /* Better contrast from #6272a4 */
   --accent-primary: #bd93f9;
   --accent-secondary: #50fa7b;
   --accent-warning: #ffb86c;
@@ -69,19 +69,19 @@
   --z-modal: 1050;
 }
 
-/* Light theme */
+/* Light theme - Enhanced Contrast */
 [data-theme="light"] {
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --bg-surface: #e9ecef;
-  --text-primary: #212529;
-  --text-secondary: #495057;
-  --text-muted: #6c757d;
-  --accent-primary: #0066cc;
-  --accent-secondary: #28a745;
-  --accent-warning: #ffc107;
-  --accent-error: #dc3545;
-  --accent-info: #17a2b8;
+  --text-primary: #1a1a1a;      /* Darker for better contrast */
+  --text-secondary: #374151;    /* Improved contrast from #495057 */
+  --text-muted: #6b7280;        /* Better contrast from #6c757d */
+  --accent-primary: #0056b3;    /* Darker blue for better contrast */
+  --accent-secondary: #22863a;  /* Darker green for better contrast */
+  --accent-warning: #e6a700;    /* Darker orange for better contrast */
+  --accent-error: #d73a49;      /* Slightly darker red */
+  --accent-info: #0969da;       /* Better blue for info */
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --box-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
 }

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 
-export default function Layout({ children, title, description }) {
+export default function Layout({ children, title, description, lastUpdated }) {
   const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
@@ -101,6 +101,20 @@ export default function Layout({ children, title, description }) {
               <p className="footer-disclaimer">
                 <small>All guides are provided as-is. Please review and test before production use.</small>
               </p>
+
+              {lastUpdated && (
+                <p className="footer-updated">
+                  <small>Last updated: {new Date(lastUpdated).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    timeZone: 'UTC',
+                    timeZoneName: 'short'
+                  })}</small>
+                </p>
+              )}
             </div>
           </div>
         </footer>
@@ -165,6 +179,12 @@ export default function Layout({ children, title, description }) {
         .footer-disclaimer {
           color: var(--text-muted);
           font-size: var(--font-xs);
+        }
+
+        .footer-updated {
+          color: var(--text-muted);
+          font-size: var(--font-xs);
+          margin-top: var(--space-2);
         }
 
         .nav-links {

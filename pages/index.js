@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import SimpleSearch from '../components/SimpleSearch';
 import { getCategoriesFromGuides, getAllCategories } from '../lib/categories';
 
-export default function HomePage({ guides = [], categories = [] }) {
+export default function HomePage({ guides = [], categories = [], lastUpdated }) {
 
   const totalGuides = guides.length;
   const totalStars = guides.reduce((sum, guide) => sum + (guide.stars || 0), 0);
@@ -12,6 +12,7 @@ export default function HomePage({ guides = [], categories = [] }) {
     <Layout
       title="Installation Guides & Tutorials"
       description={`${totalGuides} comprehensive installation guides for popular software and services. Mobile-first design with security hardening and cross-platform support.`}
+      lastUpdated={lastUpdated}
     >
       {/* Hero Section */}
       <section className="hero-section">
@@ -289,7 +290,8 @@ export async function getStaticProps() {
       return {
         props: {
           guides,
-          categories
+          categories,
+          lastUpdated: guidesData.metadata?.lastUpdated || null
         }
       };
     } catch (fileError) {
@@ -297,7 +299,8 @@ export async function getStaticProps() {
       return {
         props: {
           guides: [],
-          categories: getAllCategories()
+          categories: getAllCategories(),
+          lastUpdated: null
         }
       };
     }
@@ -306,7 +309,8 @@ export async function getStaticProps() {
     return {
       props: {
         guides: [],
-        categories: getAllCategories()
+        categories: getAllCategories(),
+        lastUpdated: null
       }
     };
   }
