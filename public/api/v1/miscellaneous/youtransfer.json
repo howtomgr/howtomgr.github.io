@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-23T03:24:32.246Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "youtransfer",
+    "title": "youtransfer Installation Guide",
+    "description": "youtransfer is a free and open-source self-hosted file transfer. YouTransfer enables easy file sharing with a simple, self-hosted platform",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      5000
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/youtransfer/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/youtransfer.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/youtransfer",
+    "website_url": "https://howtomgr.github.io/miscellaneous/youtransfer",
+    "github_url": "https://github.com/howtomgr/youtransfer",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T18:04:27Z",
+      "created": "2025-09-16T08:43:16Z"
+    },
+    "guide_info": {
+      "word_count": 1271,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-23T03:24:08.771Z"
+    }
+  }
+}

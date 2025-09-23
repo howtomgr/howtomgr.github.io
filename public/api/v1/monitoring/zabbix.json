@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-23T03:24:32.247Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "zabbix",
+    "title": "Zabbix",
+    "description": "Zabbix is an enterprise-class monitoring solution for networks and applications",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "monitoring",
+    "subcategory": "monitoring",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      10051
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "monitoring",
+      "alerting",
+      "metrics",
+      "enterprise"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/monitoring/zabbix/",
+    "api": "https://howtomgr.github.io/api/v1/monitoring/zabbix.json",
+    "documentation_url": "https://howtomgr.github.io/monitoring/zabbix",
+    "website_url": "https://howtomgr.github.io/monitoring/zabbix",
+    "github_url": "https://github.com/howtomgr/zabbix",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T18:04:35Z",
+      "created": "2025-09-08T03:18:59Z"
+    },
+    "guide_info": {
+      "word_count": 3115,
+      "estimated_read_time": "16 min",
+      "has_readme": true,
+      "last_built": "2025-09-23T03:24:08.483Z"
+    }
+  }
+}

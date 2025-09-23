@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-23T03:24:32.245Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "xen-orchestra",
+    "title": "xen-orchestra - CentOS",
+    "description": "```bash",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/xen-orchestra/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/xen-orchestra.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/xen-orchestra",
+    "website_url": "https://howtomgr.github.io/miscellaneous/xen-orchestra",
+    "github_url": "https://github.com/howtomgr/xen-orchestra",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T18:04:00Z",
+      "created": "2023-08-28T03:50:35Z"
+    },
+    "guide_info": {
+      "word_count": 197,
+      "estimated_read_time": "1 min",
+      "has_readme": true,
+      "last_built": "2025-09-23T03:24:09.807Z"
+    }
+  }
+}

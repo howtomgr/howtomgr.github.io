@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "api_version": "1.0",
+    "generated_at": "2025-09-23T03:24:32.247Z",
+    "spec_version": "2.0"
+  },
+  "tool": {
+    "name": "zerotier-one",
+    "title": "zerotier Installation Guide",
+    "description": "zerotier is a free and open-source global virtual networking. ZeroTier creates secure peer-to-peer virtual networks, serving as a software-defined networking solution for distributed teams",
+    "version": "1.0.0",
+    "license": "Open Source",
+    "category": "miscellaneous",
+    "subcategory": "miscellaneous",
+    "difficulty_level": "intermediate",
+    "estimated_setup_time": "15-30 minutes",
+    "installation_methods": [
+      "native-packages",
+      "source-compilation"
+    ],
+    "supported_os": [
+      "rhel",
+      "centos",
+      "rocky",
+      "almalinux",
+      "debian",
+      "ubuntu",
+      "arch",
+      "alpine",
+      "opensuse",
+      "sles",
+      "macos",
+      "freebsd",
+      "windows"
+    ],
+    "default_ports": [
+      80,
+      443,
+      9993
+    ],
+    "features": [
+      "multi-os-support",
+      "comprehensive-documentation",
+      "security-hardening",
+      "performance-optimization",
+      "backup-restore-procedures",
+      "troubleshooting-guides"
+    ],
+    "tags": [
+      "miscellaneous",
+      "containerization",
+      "observability",
+      "data-storage",
+      "networking",
+      "security",
+      "data-protection"
+    ],
+    "maintenance_status": "active",
+    "site": "https://howtomgr.github.io/miscellaneous/zerotier-one/",
+    "api": "https://howtomgr.github.io/api/v1/miscellaneous/zerotier-one.json",
+    "documentation_url": "https://howtomgr.github.io/miscellaneous/zerotier-one",
+    "website_url": "https://howtomgr.github.io/miscellaneous/zerotier-one",
+    "github_url": "https://github.com/howtomgr/zerotier-one",
+    "github_stats": {
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "last_updated": "2025-09-16T18:04:57Z",
+      "created": "2025-09-16T08:44:08Z"
+    },
+    "guide_info": {
+      "word_count": 1277,
+      "estimated_read_time": "7 min",
+      "has_readme": true,
+      "last_built": "2025-09-23T03:24:07.611Z"
+    }
+  }
+}

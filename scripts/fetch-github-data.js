@@ -400,8 +400,13 @@ class GitHubDataFetcher {
     let codeLanguage = '';
     let codeLines = [];
     let skipFirstH1 = true; // Skip first H1 to avoid duplicate title
+    let skipTOC = false; // Skip Table of Contents section
+    let skipDescription = false; // Skip description section if it matches META.json
+    let lineIndex = 0;
 
     for (const line of lines) {
+      lineIndex++;
+
       if (line.startsWith('```')) {
         if (inCodeBlock) {
           // End code block
@@ -410,6 +415,7 @@ class GitHubDataFetcher {
           inCodeBlock = false;
           codeLanguage = '';
           codeLines = [];
+          skipTOC = false; // Reset TOC skipping after code block
         } else {
           // Start code block
           codeLanguage = line.substring(3).trim() || 'text';
@@ -429,7 +435,27 @@ class GitHubDataFetcher {
         continue;
       }
 
-      result.push(this.processMarkdownLine(line));
+      // Detect and skip Table of Contents sections
+      if (line.match(/^#+\s+(Table of Contents|Contents|TOC)$/i)) {
+        skipTOC = true;
+        continue;
+      }
+
+      // Skip TOC content until next header
+      if (skipTOC) {
+        if (line.startsWith('#')) {
+          skipTOC = false; // Found next section, stop skipping
+        } else if (line.match(/^\s*[-*]\s+\[.*\]\(.*\)/) || line.match(/^\s*\d+\.\s+\[.*\]\(.*\)/)) {
+          continue; // Skip TOC list items
+        } else if (line.trim() === '') {
+          continue; // Skip empty lines in TOC
+        }
+      }
+
+      // Only process the line if we're not skipping TOC
+      if (!skipTOC) {
+        result.push(this.processMarkdownLine(line));
+      }
     }
 
     return result.filter(line => line.trim()).join('\n');
@@ -537,18 +563,44 @@ class GitHubDataFetcher {
     const lines = markdown.split('\n');
     const toc = [];
     let skipFirstH1 = true;
+    let inCodeBlock = false;
+    let skipTOCSection = false;
 
     for (const line of lines) {
+      // Track code blocks
+      if (line.startsWith('```')) {
+        inCodeBlock = !inCodeBlock;
+        continue;
+      }
+
       // Skip code blocks
-      if (line.startsWith('```')) continue;
+      if (inCodeBlock) continue;
+
+      // Detect TOC sections to skip
+      if (line.match(/^#+\s+(Table of Contents|Contents|TOC)$/i)) {
+        skipTOCSection = true;
+        continue;
+      }
+
+      // Reset TOC skipping when we hit a new section
+      if (skipTOCSection && line.startsWith('#') && !line.match(/^#+\s+(Table of Contents|Contents|TOC)$/i)) {
+        skipTOCSection = false;
+      }
+
+      // Skip if we're in a TOC section
+      if (skipTOCSection) continue;
 
       // Extract headers
       if (line.startsWith('### ')) {
         const text = line.substring(4).trim();
+        // Skip common TOC-related headers
+        if (text.match(/^(Table of Contents|Contents|TOC)$/i)) continue;
         const id = this.createProperAnchorId(text);
         toc.push({ level: 3, text, id });
       } else if (line.startsWith('## ')) {
         const text = line.substring(3).trim();
+        // Skip common TOC-related headers
+        if (text.match(/^(Table of Contents|Contents|TOC)$/i)) continue;
         const id = this.createProperAnchorId(text);
         toc.push({ level: 2, text, id });
       } else if (line.startsWith('# ')) {
@@ -557,6 +609,8 @@ class GitHubDataFetcher {
           skipFirstH1 = false;
           continue; // Skip first H1 since it duplicates META.json title
         }
+        // Skip common TOC-related headers
+        if (text.match(/^(Table of Contents|Contents|TOC)$/i)) continue;
         const id = this.createProperAnchorId(text);
         toc.push({ level: 1, text, id });
       }

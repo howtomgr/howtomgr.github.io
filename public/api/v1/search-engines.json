@@ -1,0 +1,58 @@
+{
+  "category": {
+    "name": "search-engines",
+    "display_name": "Search engines",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-23T03:24:32.244Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "zinc",
+      "title": "zinc Installation Guide",
+      "description": "zinc is a free and open-source search engine. Zinc provides lightweight alternative to Elasticsearch",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "search-engines",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/search-engines/zinc/",
+      "api": "https://howtomgr.github.io/api/v1/search-engines/zinc.json",
+      "github": "https://github.com/howtomgr/zinc"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "api": {
+    "name": "HowToMgr API",
+    "version": "1.0",
+    "description": "Installation guides and tutorials API",
+    "base_url": "https://howtomgr.github.io/api/v1",
+    "documentation": "https://howtomgr.github.io/api/docs"
+  },
+  "meta": {
+    "total_guides": 18,
+    "total_categories": 9,
+    "last_updated": "2025-09-23T03:24:32.242Z"
+  },
+  "categories": [
+    {
+      "name": "cms",
+      "display_name": "Cms",
+      "count": 1,
+      "url": "https://howtomgr.github.io/cms/",
+      "api_url": "https://howtomgr.github.io/api/v1/cms.json"
+    },
+    {
+      "name": "api-gateways",
+      "display_name": "Api gateways",
+      "count": 2,
+      "url": "https://howtomgr.github.io/api-gateways/",
+      "api_url": "https://howtomgr.github.io/api/v1/api-gateways.json"
+    },
+    {
+      "name": "remote-access",
+      "display_name": "Remote access",
+      "count": 2,
+      "url": "https://howtomgr.github.io/remote-access/",
+      "api_url": "https://howtomgr.github.io/api/v1/remote-access.json"
+    },
+    {
+      "name": "miscellaneous",
+      "display_name": "Miscellaneous",
+      "count": 8,
+      "url": "https://howtomgr.github.io/miscellaneous/",
+      "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
+    },
+    {
+      "name": "container-management",
+      "display_name": "Container management",
+      "count": 1,
+      "url": "https://howtomgr.github.io/container-management/",
+      "api_url": "https://howtomgr.github.io/api/v1/container-management.json"
+    },
+    {
+      "name": "monitoring",
+      "display_name": "Monitoring",
+      "count": 1,
+      "url": "https://howtomgr.github.io/monitoring/",
+      "api_url": "https://howtomgr.github.io/api/v1/monitoring.json"
+    },
+    {
+      "name": "iot-platforms",
+      "display_name": "Iot platforms",
+      "count": 1,
+      "url": "https://howtomgr.github.io/iot-platforms/",
+      "api_url": "https://howtomgr.github.io/api/v1/iot-platforms.json"
+    },
+    {
+      "name": "groupware",
+      "display_name": "Groupware",
+      "count": 1,
+      "url": "https://howtomgr.github.io/groupware/",
+      "api_url": "https://howtomgr.github.io/api/v1/groupware.json"
+    },
+    {
+      "name": "search-engines",
+      "display_name": "Search engines",
+      "count": 1,
+      "url": "https://howtomgr.github.io/search-engines/",
+      "api_url": "https://howtomgr.github.io/api/v1/search-engines.json"
+    }
+  ],
+  "endpoints": {
+    "overview": "/api/v1/index.json",
+    "categories": [
+      "/api/v1/cms.json",
+      "/api/v1/api-gateways.json",
+      "/api/v1/remote-access.json",
+      "/api/v1/miscellaneous.json",
+      "/api/v1/container-management.json",
+      "/api/v1/monitoring.json",
+      "/api/v1/iot-platforms.json",
+      "/api/v1/groupware.json",
+      "/api/v1/search-engines.json"
+    ],
+    "tools": [
+      "/api/v1/cms/wordpress.json",
+      "/api/v1/api-gateways/wso2.json",
+      "/api/v1/remote-access/x2go.json",
+      "/api/v1/miscellaneous/xcp-ng.json",
+      "/api/v1/miscellaneous/xen-orchestra.json",
+      "/api/v1/remote-access/xrdp.json",
+      "/api/v1/miscellaneous/xwiki.json",
+      "/api/v1/container-management/yacht.json",
+      "/api/v1/miscellaneous/youtransfer.json",
+      "/api/v1/monitoring/zabbix.json",
+      "/api/v1/miscellaneous/zabbix-server.json",
+      "/api/v1/miscellaneous/zen_cart.json",
+      "/api/v1/miscellaneous/zerotier-one.json",
+      "/api/v1/iot-platforms/zigbee2mqtt.json",
+      "/api/v1/groupware/zimbra.json",
+      "/api/v1/search-engines/zinc.json",
+      "/api/v1/api-gateways/zuul.json",
+      "/api/v1/miscellaneous/zwavejs2mqtt.json"
+    ]
+  }
+}

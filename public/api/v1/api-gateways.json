@@ -1,0 +1,103 @@
+{
+  "category": {
+    "name": "api-gateways",
+    "display_name": "Api gateways",
+    "total_guides": 2
+  },
+  "meta": {
+    "generated_at": "2025-09-23T03:24:32.243Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "wso2",
+      "title": "wso2 Installation Guide",
+      "description": "wso2 is a free and open-source API management platform. WSO2 provides complete open source API management platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/wso2/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/wso2.json",
+      "github": "https://github.com/howtomgr/wso2"
+    },
+    {
+      "name": "zuul",
+      "title": "zuul Installation Guide",
+      "description": "zuul is a free and open-source edge service. Netflix Zuul provides edge service for dynamic routing and monitoring",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/zuul/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/zuul.json",
+      "github": "https://github.com/howtomgr/zuul"
+    }
+  ]
+}

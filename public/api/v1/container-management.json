@@ -1,0 +1,55 @@
+{
+  "category": {
+    "name": "container-management",
+    "display_name": "Container management",
+    "total_guides": 1
+  },
+  "meta": {
+    "generated_at": "2025-09-23T03:24:32.243Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "yacht",
+      "title": "Yacht",
+      "description": "Yacht is a web-based UI for managing Docker containers",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "docker",
+        "containers",
+        "web-interface",
+        "management"
+      ],
+      "site": "https://howtomgr.github.io/container-management/yacht/",
+      "api": "https://howtomgr.github.io/api/v1/container-management/yacht.json",
+      "github": "https://github.com/howtomgr/yacht"
+    }
+  ]
+}

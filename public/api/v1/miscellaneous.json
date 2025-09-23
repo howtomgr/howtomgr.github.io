@@ -1,0 +1,367 @@
+{
+  "category": {
+    "name": "miscellaneous",
+    "display_name": "Miscellaneous",
+    "total_guides": 8
+  },
+  "meta": {
+    "generated_at": "2025-09-23T03:24:32.243Z",
+    "api_version": "1.0"
+  },
+  "guides": [
+    {
+      "name": "xcp-ng",
+      "title": "xcp-ng Installation Guide",
+      "description": "xcp-ng is a free and open-source XenServer alternative. XCP-ng provides enterprise virtualization based on XenServer, fully open source",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/xcp-ng/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/xcp-ng.json",
+      "github": "https://github.com/howtomgr/xcp-ng"
+    },
+    {
+      "name": "xen-orchestra",
+      "title": "xen-orchestra - CentOS",
+      "description": "```bash",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/xen-orchestra/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/xen-orchestra.json",
+      "github": "https://github.com/howtomgr/xen-orchestra"
+    },
+    {
+      "name": "xwiki",
+      "title": "xwiki Installation Guide",
+      "description": "xwiki is a free and open-source enterprise wiki. XWiki provides powerful wiki platform with application development capabilities",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/xwiki/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/xwiki.json",
+      "github": "https://github.com/howtomgr/xwiki"
+    },
+    {
+      "name": "youtransfer",
+      "title": "youtransfer Installation Guide",
+      "description": "youtransfer is a free and open-source self-hosted file transfer. YouTransfer enables easy file sharing with a simple, self-hosted platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/youtransfer/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/youtransfer.json",
+      "github": "https://github.com/howtomgr/youtransfer"
+    },
+    {
+      "name": "zabbix-server",
+      "title": "zabbix Installation Guide",
+      "description": "zabbix is a free and open-source enterprise-class monitoring solution. Zabbix provides comprehensive monitoring for networks, servers, and applications, serving as an open-source alternative to Nagios, PRTG, or SolarWinds",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/zabbix-server/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/zabbix-server.json",
+      "github": "https://github.com/howtomgr/zabbix-server"
+    },
+    {
+      "name": "zen_cart",
+      "title": "zen-cart Installation Guide",
+      "description": "zen-cart is a free and open-source e-commerce software. Zen Cart provides user-friendly e-commerce software",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/zen_cart/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/zen_cart.json",
+      "github": "https://github.com/howtomgr/zen_cart"
+    },
+    {
+      "name": "zerotier-one",
+      "title": "zerotier Installation Guide",
+      "description": "zerotier is a free and open-source global virtual networking. ZeroTier creates secure peer-to-peer virtual networks, serving as a software-defined networking solution for distributed teams",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/zerotier-one/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/zerotier-one.json",
+      "github": "https://github.com/howtomgr/zerotier-one"
+    },
+    {
+      "name": "zwavejs2mqtt",
+      "title": "zwavejs2mqtt Installation Guide",
+      "description": "zwavejs2mqtt is a free and open-source Z-Wave to MQTT. ZwaveJS2MQTT bridges Z-Wave devices to MQTT",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/zwavejs2mqtt/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/zwavejs2mqtt.json",
+      "github": "https://github.com/howtomgr/zwavejs2mqtt"
+    }
+  ]
+}
