@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "1.0",
-    "generated_at": "2025-10-11T06:16:08.819Z",
+    "generated_at": "2025-10-11T18:14:42.437Z",
     "spec_version": "2.0"
   },
   "tool": {
@@ -64,18 +64,18 @@
     "website_url": "https://howtomgr.github.io/mailing-lists/sympa",
     "github_url": "https://github.com/howtomgr/sympa",
     "github_stats": {
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": null,
       "topics": [],
-      "last_updated": "2025-09-16T17:55:07Z",
+      "last_updated": "2025-10-11T13:51:18Z",
       "created": "2025-09-16T08:26:05Z"
     },
     "guide_info": {
       "word_count": 1987,
       "estimated_read_time": "10 min",
       "has_readme": true,
-      "last_built": "2025-10-11T06:13:31.154Z"
+      "last_built": "2025-10-11T18:11:36.499Z"
     }
   }
 }
