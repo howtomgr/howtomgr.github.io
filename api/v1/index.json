@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 583,
+    "total_guides": 581,
     "total_categories": 102,
-    "last_updated": "2025-10-29T06:20:37.709Z"
+    "last_updated": "2025-10-29T18:22:57.905Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 245,
+      "count": 243,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -1279,13 +1279,11 @@
       "/api/v1/miscellaneous/resilio-sync.json",
       "/api/v1/backup-tools/restic.json",
       "/api/v1/miscellaneous/rethinkdb.json",
-      "/api/v1/miscellaneous/reviewboard.json",
       "/api/v1/miscellaneous/rhodecode.json",
       "/api/v1/team-chat/rocketchat.json",
       "/api/v1/webmail/roundcube.json",
       "/api/v1/anti-spam/rspamd.json",
       "/api/v1/miscellaneous/rstudio_server.json",
-      "/api/v1/miscellaneous/rsyslog.json",
       "/api/v1/miscellaneous/rundeck.json",
       "/api/v1/miscellaneous/rust-server.json",
       "/api/v1/miscellaneous/rustdesk_server.json",
