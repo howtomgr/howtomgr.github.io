@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "1.0",
-    "generated_at": "2025-11-06T06:20:04.619Z",
+    "generated_at": "2025-11-06T18:21:51.495Z",
     "spec_version": "2.0"
   },
   "tool": {
@@ -64,18 +64,18 @@
     "website_url": "https://howtomgr.github.io/streaming-servers/shoutcast",
     "github_url": "https://github.com/howtomgr/shoutcast",
     "github_stats": {
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "language": null,
       "topics": [],
-      "last_updated": "2025-09-16T17:51:29Z",
+      "last_updated": "2025-11-06T07:48:28Z",
       "created": "2025-09-16T08:18:53Z"
     },
     "guide_info": {
       "word_count": 1975,
       "estimated_read_time": "10 min",
       "has_readme": true,
-      "last_built": "2025-11-06T06:17:20.363Z"
+      "last_built": "2025-11-06T18:15:27.636Z"
     }
   }
 }
