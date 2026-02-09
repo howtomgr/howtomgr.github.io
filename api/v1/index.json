@@ -7,9 +7,9 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 582,
+    "total_guides": 583,
     "total_categories": 102,
-    "last_updated": "2026-02-08T18:28:50.834Z"
+    "last_updated": "2026-02-09T06:56:42.238Z"
   },
   "categories": [
     {
@@ -120,7 +120,7 @@
     {
       "name": "package-repositories",
       "display_name": "Package repositories",
-      "count": 3,
+      "count": 4,
       "url": "https://howtomgr.github.io/package-repositories/",
       "api_url": "https://howtomgr.github.io/api/v1/package-repositories.json"
     },
@@ -1251,6 +1251,7 @@
       "/api/v1/miscellaneous/prtg.json",
       "/api/v1/miscellaneous/psitransfer.json",
       "/api/v1/gaming/pufferpanel.json",
+      "/api/v1/package-repositories/pulp.json",
       "/api/v1/miscellaneous/pulsar.json",
       "/api/v1/configuration-management/puppet.json",
       "/api/v1/miscellaneous/pydio.json",
