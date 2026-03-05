@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 244
+    "total_guides": 245
   },
   "meta": {
-    "generated_at": "2026-03-05T06:40:22.125Z",
+    "generated_at": "2026-03-05T19:10:38.848Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -100,6 +100,51 @@
       "site": "https://howtomgr.github.io/miscellaneous/appwrite/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/appwrite.json",
       "github": "https://github.com/howtomgr/appwrite"
+    },
+    {
+      "name": "arangodb",
+      "title": "arangodb Installation Guide",
+      "description": "arangodb is a free and open-source multi-model NoSQL database. ArangoDB combines document, graph, and key-value data models with one query language, serving as an alternative to using multiple specialized databases",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/arangodb/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/arangodb.json",
+      "github": "https://github.com/howtomgr/arangodb"
     },
     {
       "name": "argocd",
