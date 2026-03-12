@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 238
+    "total_guides": 245
   },
   "meta": {
-    "generated_at": "2026-03-12T06:43:24.538Z",
+    "generated_at": "2026-03-12T18:42:27.009Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -1047,6 +1047,51 @@
       "site": "https://howtomgr.github.io/miscellaneous/chronograf/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/chronograf.json",
       "github": "https://github.com/howtomgr/chronograf"
+    },
+    {
+      "name": "clickhouse-server",
+      "title": "clickhouse Installation Guide",
+      "description": "clickhouse is a free and open-source column-oriented database for real-time analytics. ClickHouse provides blazing fast analytics on large datasets with SQL interface, serving as an open-source alternative to Amazon Redshift or Google BigQuery",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/clickhouse-server/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/clickhouse-server.json",
+      "github": "https://github.com/howtomgr/clickhouse-server"
     },
     {
       "name": "cloudflare-tunnel",
@@ -4539,6 +4584,141 @@
       "github": "https://github.com/howtomgr/lobsters"
     },
     {
+      "name": "logstash",
+      "title": "logstash Installation Guide",
+      "description": "logstash is a free and open-source data processing pipeline. Logstash provides server-side data processing pipeline",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/logstash/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/logstash.json",
+      "github": "https://github.com/howtomgr/logstash"
+    },
+    {
+      "name": "lxc",
+      "title": "lxc Installation Guide",
+      "description": "lxc is a free and open-source Linux container runtime. LXC provides OS-level virtualization to run multiple isolated Linux systems on a single host, predating Docker",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/lxc/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/lxc.json",
+      "github": "https://github.com/howtomgr/lxc"
+    },
+    {
+      "name": "lxd",
+      "title": "lxd Installation Guide",
+      "description": "lxd is a free and open-source next generation system container manager. LXD offers a user experience similar to virtual machines but using Linux containers, providing an alternative to traditional VMs",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/lxd/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/lxd.json",
+      "github": "https://github.com/howtomgr/lxd"
+    },
+    {
       "name": "lynis",
       "title": "lynis Installation Guide",
       "description": "lynis is a free and open-source security auditing tool. Lynis performs security auditing and hardening for Unix-like systems, providing compliance testing and system hardening suggestions",
@@ -7175,6 +7355,51 @@
       "github": "https://github.com/howtomgr/promtail"
     },
     {
+      "name": "prowlarr",
+      "title": "prowlarr Installation Guide",
+      "description": "prowlarr is a free and open-source indexer manager. Prowlarr manages indexers for the entire *arr suite, centralizing search configuration",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/prowlarr/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/prowlarr.json",
+      "github": "https://github.com/howtomgr/prowlarr"
+    },
+    {
       "name": "proxmox-ve",
       "title": "proxmox-ve Installation Guide",
       "description": "proxmox-ve is a free and open-source virtualization platform. Proxmox VE combines KVM and LXC for enterprise virtualization",
@@ -8255,6 +8480,51 @@
       "github": "https://github.com/howtomgr/seafile-server"
     },
     {
+      "name": "semaphore",
+      "title": "semaphore Installation Guide",
+      "description": "semaphore is a free and open-source modern UI for Ansible. Semaphore provides a web UI for Ansible with scheduling, notifications, and access control, serving as an open-source alternative to Ansible Tower/AWX",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/semaphore/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/semaphore.json",
+      "github": "https://github.com/howtomgr/semaphore"
+    },
+    {
       "name": "shynet",
       "title": "shynet Installation Guide",
       "description": "shynet is a free and open-source web analytics. Shynet provides modern, privacy-friendly, cookie-free web analytics",
@@ -8788,6 +9058,51 @@
       "site": "https://howtomgr.github.io/miscellaneous/supabase/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/supabase.json",
       "github": "https://github.com/howtomgr/supabase"
+    },
+    {
+      "name": "superset",
+      "title": "superset Installation Guide",
+      "description": "superset is a free and open-source data exploration. Superset provides modern data exploration and visualization platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/superset/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/superset.json",
+      "github": "https://github.com/howtomgr/superset"
     },
     {
       "name": "suricata",
