@@ -2,10 +2,10 @@
   "category": {
     "name": "e-commerce",
     "display_name": "E commerce",
-    "total_guides": 8
+    "total_guides": 7
   },
   "meta": {
-    "generated_at": "2026-03-11T18:42:57.019Z",
+    "generated_at": "2026-03-12T06:43:24.547Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -233,51 +233,6 @@
       "site": "https://howtomgr.github.io/e-commerce/prestashop/",
       "api": "https://howtomgr.github.io/api/v1/e-commerce/prestashop.json",
       "github": "https://github.com/howtomgr/prestashop"
-    },
-    {
-      "name": "saleor",
-      "title": "saleor Installation Guide",
-      "description": "saleor is a free and open-source e-commerce platform. Saleor provides high-performance e-commerce platform",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "e-commerce",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/e-commerce/saleor/",
-      "api": "https://howtomgr.github.io/api/v1/e-commerce/saleor.json",
-      "github": "https://github.com/howtomgr/saleor"
     },
     {
       "name": "sylius",

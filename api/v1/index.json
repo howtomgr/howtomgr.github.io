@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 583,
-    "total_categories": 102,
-    "last_updated": "2026-03-11T18:42:57.009Z"
+    "total_guides": 571,
+    "total_categories": 101,
+    "last_updated": "2026-03-12T06:43:24.536Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 245,
+      "count": 238,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -36,7 +36,7 @@
     {
       "name": "webmail",
       "display_name": "Webmail",
-      "count": 5,
+      "count": 4,
       "url": "https://howtomgr.github.io/webmail/",
       "api_url": "https://howtomgr.github.io/api/v1/webmail.json"
     },
@@ -162,14 +162,14 @@
     {
       "name": "e-commerce",
       "display_name": "E commerce",
-      "count": 8,
+      "count": 7,
       "url": "https://howtomgr.github.io/e-commerce/",
       "api_url": "https://howtomgr.github.io/api/v1/e-commerce.json"
     },
     {
       "name": "network-monitoring",
       "display_name": "Network monitoring",
-      "count": 7,
+      "count": 6,
       "url": "https://howtomgr.github.io/network-monitoring/",
       "api_url": "https://howtomgr.github.io/api/v1/network-monitoring.json"
     },
@@ -517,13 +517,6 @@
       "api_url": "https://howtomgr.github.io/api/v1/identity-management.json"
     },
     {
-      "name": "media-centers",
-      "display_name": "Media centers",
-      "count": 1,
-      "url": "https://howtomgr.github.io/media-centers/",
-      "api_url": "https://howtomgr.github.io/api/v1/media-centers.json"
-    },
-    {
       "name": "groupware",
       "display_name": "Groupware",
       "count": 3,
@@ -617,7 +610,7 @@
     {
       "name": "firewalls",
       "display_name": "Firewalls",
-      "count": 2,
+      "count": 1,
       "url": "https://howtomgr.github.io/firewalls/",
       "api_url": "https://howtomgr.github.io/api/v1/firewalls.json"
     },
@@ -802,7 +795,6 @@
       "/api/v1/orchestration.json",
       "/api/v1/sip-servers.json",
       "/api/v1/identity-management.json",
-      "/api/v1/media-centers.json",
       "/api/v1/groupware.json",
       "/api/v1/mailing-lists.json",
       "/api/v1/communication.json",
@@ -905,7 +897,6 @@
       "/api/v1/miscellaneous/chronograf.json",
       "/api/v1/container-security/clair.json",
       "/api/v1/antivirus/clamav.json",
-      "/api/v1/miscellaneous/clickhouse-server.json",
       "/api/v1/development-environments/cloud9.json",
       "/api/v1/miscellaneous/cloudflare-tunnel.json",
       "/api/v1/miscellaneous/cloudstack.json",
@@ -1076,7 +1067,6 @@
       "/api/v1/miscellaneous/kibana.json",
       "/api/v1/miscellaneous/kimchi.json",
       "/api/v1/dns-servers/knot.json",
-      "/api/v1/media-centers/kodi.json",
       "/api/v1/groupware/kolab.json",
       "/api/v1/education/kolibri.json",
       "/api/v1/miscellaneous/komga.json",
@@ -1099,10 +1089,7 @@
       "/api/v1/distributed-storage/lizardfs.json",
       "/api/v1/search-engines/lnx.json",
       "/api/v1/miscellaneous/lobsters.json",
-      "/api/v1/miscellaneous/logstash.json",
       "/api/v1/workflow-engines/luigi.json",
-      "/api/v1/miscellaneous/lxc.json",
-      "/api/v1/miscellaneous/lxd.json",
       "/api/v1/miscellaneous/lynis.json",
       "/api/v1/infrastructure-management/maas.json",
       "/api/v1/e-commerce/magento.json",
@@ -1160,7 +1147,6 @@
       "/api/v1/miscellaneous/nebula.json",
       "/api/v1/miscellaneous/netbird.json",
       "/api/v1/miscellaneous/netdata.json",
-      "/api/v1/network-monitoring/netflow.json",
       "/api/v1/network-monitoring/nethogs.json",
       "/api/v1/file-sharing/nextcloud.json",
       "/api/v1/artifact-repositories/nexus.json",
@@ -1217,7 +1203,6 @@
       "/api/v1/miscellaneous/payload.json",
       "/api/v1/miscellaneous/peertube.json",
       "/api/v1/static-site-generators/pelican.json",
-      "/api/v1/firewalls/pfsense.json",
       "/api/v1/database-management/pgadmin.json",
       "/api/v1/miscellaneous/phabricator.json",
       "/api/v1/miscellaneous/photoprism.json",
@@ -1246,7 +1231,6 @@
       "/api/v1/alerting/alertmanager.json",
       "/api/v1/miscellaneous/promtail.json",
       "/api/v1/xmpp-servers/prosody.json",
-      "/api/v1/miscellaneous/prowlarr.json",
       "/api/v1/miscellaneous/proxmox-ve.json",
       "/api/v1/miscellaneous/prtg.json",
       "/api/v1/miscellaneous/psitransfer.json",
@@ -1264,7 +1248,6 @@
       "/api/v1/search-engines/quickwit.json",
       "/api/v1/message-queues/rabbitmq.json",
       "/api/v1/miscellaneous/radarr.json",
-      "/api/v1/webmail/rainloop.json",
       "/api/v1/container-management/rancher.json",
       "/api/v1/operating-systems/raspbian.json",
       "/api/v1/data-science/ray.json",
@@ -1291,7 +1274,6 @@
       "/api/v1/miscellaneous/rustdesk_server.json",
       "/api/v1/miscellaneous/rutorrent.json",
       "/api/v1/miscellaneous/sabnzbd.json",
-      "/api/v1/e-commerce/saleor.json",
       "/api/v1/configuration-management/saltstack.json",
       "/api/v1/security-monitoring/samhain.json",
       "/api/v1/education/schooltool.json",
@@ -1299,7 +1281,6 @@
       "/api/v1/monitoring/scrutiny.json",
       "/api/v1/miscellaneous/seafile-server.json",
       "/api/v1/distributed-storage/seaweedfs.json",
-      "/api/v1/miscellaneous/semaphore.json",
       "/api/v1/mail-servers/sendmail.json",
       "/api/v1/surveillance/shinobi.json",
       "/api/v1/media-processing/shotcut.json",
@@ -1328,7 +1309,6 @@
       "/api/v1/blockchain/substrate.json",
       "/api/v1/business-applications/suitecrm.json",
       "/api/v1/miscellaneous/supabase.json",
-      "/api/v1/miscellaneous/superset.json",
       "/api/v1/miscellaneous/suricata.json",
       "/api/v1/databases/surrealdb.json",
       "/api/v1/e-commerce/sylius.json",
