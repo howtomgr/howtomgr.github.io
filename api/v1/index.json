@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 583,
+    "total_guides": 582,
     "total_categories": 102,
-    "last_updated": "2026-03-23T07:01:23.798Z"
+    "last_updated": "2026-03-23T18:44:51.728Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 245,
+      "count": 244,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -1252,7 +1252,6 @@
       "/api/v1/miscellaneous/psitransfer.json",
       "/api/v1/gaming/pufferpanel.json",
       "/api/v1/package-repositories/pulp.json",
-      "/api/v1/miscellaneous/pulsar.json",
       "/api/v1/configuration-management/puppet.json",
       "/api/v1/miscellaneous/pydio.json",
       "/api/v1/miscellaneous/pyload.json",
