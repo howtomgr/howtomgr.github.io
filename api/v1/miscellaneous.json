@@ -5,7 +5,7 @@
     "total_guides": 245
   },
   "meta": {
-    "generated_at": "2026-03-27T06:58:25.672Z",
+    "generated_at": "2026-03-27T18:44:36.931Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -6016,7 +6016,7 @@
       "difficulty_level": "intermediate",
       "estimated_setup_time": "15-30 minutes",
       "language": null,
-      "stars": 0,
+      "stars": 1,
       "maintenance_status": "active",
       "supported_os": [
         "rhel",
