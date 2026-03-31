@@ -7,9 +7,9 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 583,
+    "total_guides": 582,
     "total_categories": 102,
-    "last_updated": "2026-03-30T18:50:29.155Z"
+    "last_updated": "2026-03-31T18:54:27.834Z"
   },
   "categories": [
     {
@@ -113,7 +113,7 @@
     {
       "name": "message-queues",
       "display_name": "Message queues",
-      "count": 5,
+      "count": 4,
       "url": "https://howtomgr.github.io/message-queues/",
       "api_url": "https://howtomgr.github.io/api/v1/message-queues.json"
     },
@@ -1064,7 +1064,6 @@
       "/api/v1/miscellaneous/jupyter_hub.json",
       "/api/v1/orchestration/k3s.json",
       "/api/v1/iot-platforms/kaa.json",
-      "/api/v1/message-queues/kafka.json",
       "/api/v1/miscellaneous/kallithea.json",
       "/api/v1/sip-servers/kamailio.json",
       "/api/v1/remote-access/kasm.json",
