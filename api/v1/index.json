@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 583,
+    "total_guides": 582,
     "total_categories": 102,
-    "last_updated": "2026-04-04T18:32:24.839Z"
+    "last_updated": "2026-04-05T06:56:16.853Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 245,
+      "count": 244,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -1355,7 +1355,6 @@
       "/api/v1/miscellaneous/thirty_bees.json",
       "/api/v1/remote-access/tigervnc.json",
       "/api/v1/miscellaneous/tiki.json",
-      "/api/v1/miscellaneous/tildes.json",
       "/api/v1/miscellaneous/timescaledb.json",
       "/api/v1/infrastructure-management/tinkerbell.json",
       "/api/v1/reverse-proxies/traefik.json",
