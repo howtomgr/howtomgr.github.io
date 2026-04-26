@@ -9,7 +9,7 @@
   "meta": {
     "total_guides": 583,
     "total_categories": 102,
-    "last_updated": "2026-04-25T18:36:55.413Z"
+    "last_updated": "2026-04-26T05:17:20.392Z"
   },
   "categories": [
     {
@@ -559,13 +559,6 @@
       "api_url": "https://howtomgr.github.io/api/v1/caching.json"
     },
     {
-      "name": "mail",
-      "display_name": "Mail",
-      "count": 1,
-      "url": "https://howtomgr.github.io/mail/",
-      "api_url": "https://howtomgr.github.io/api/v1/mail.json"
-    },
-    {
       "name": "voice-chat",
       "display_name": "Voice chat",
       "count": 2,
@@ -599,6 +592,13 @@
       "count": 1,
       "url": "https://howtomgr.github.io/artificial-intelligence/",
       "api_url": "https://howtomgr.github.io/api/v1/artificial-intelligence.json"
+    },
+    {
+      "name": "mail",
+      "display_name": "Mail",
+      "count": 1,
+      "url": "https://howtomgr.github.io/mail/",
+      "api_url": "https://howtomgr.github.io/api/v1/mail.json"
     },
     {
       "name": "vulnerability-management",
@@ -808,12 +808,12 @@
       "/api/v1/communication.json",
       "/api/v1/team-chat.json",
       "/api/v1/caching.json",
-      "/api/v1/mail.json",
       "/api/v1/voice-chat.json",
       "/api/v1/file-sharing.json",
       "/api/v1/data-processing.json",
       "/api/v1/network-analysis.json",
       "/api/v1/artificial-intelligence.json",
+      "/api/v1/mail.json",
       "/api/v1/vulnerability-management.json",
       "/api/v1/vpn.json",
       "/api/v1/firewalls.json",
@@ -1128,7 +1128,6 @@
       "/api/v1/workflow-engines/metaflow.json",
       "/api/v1/static-site-generators/metalsmith.json",
       "/api/v1/miscellaneous/microk8s.json",
-      "/api/v1/mail/exchange.json",
       "/api/v1/miscellaneous/mssql.json",
       "/api/v1/miscellaneous/milvus.json",
       "/api/v1/miscellaneous/minecraft-bedrock.json",
@@ -1189,6 +1188,7 @@
       "/api/v1/ci-cd/onedev.json",
       "/api/v1/workflow-engines/oozie.json",
       "/api/v1/miscellaneous/open_edx.json",
+      "/api/v1/mail/exchange.json",
       "/api/v1/e-commerce/opencart.json",
       "/api/v1/vulnerability-management/opencve.json",
       "/api/v1/xmpp-servers/openfire.json",
