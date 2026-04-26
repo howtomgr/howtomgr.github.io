@@ -2,13 +2,63 @@
   "category": {
     "name": "communication",
     "display_name": "Communication",
-    "total_guides": 1
+    "total_guides": 2
   },
   "meta": {
-    "generated_at": "2026-04-26T05:17:20.410Z",
+    "generated_at": "2026-04-26T07:19:22.540Z",
     "api_version": "1.0"
   },
   "guides": [
+    {
+      "name": "element",
+      "title": "Element Matrix Client",
+      "description": "Element is a secure, decentralized messaging and collaboration client built on the Matrix protocol. Element provides end-to-end encryption, voice/video calls, file sharing, and team collaboration features. As a free and open-source alternative to proprietary communication platforms like Slack, Microsoft Teams, or Discord, Element offers users complete control over their data and communications while maintaining compatibility with the federated Matrix network.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "30-60 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "debian",
+        "arch",
+        "alpine",
+        "suse",
+        "macos",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "security-hardening",
+        "end-to-end-encryption",
+        "voice-video-calls",
+        "file-sharing",
+        "federation-support",
+        "self-hosting",
+        "web-deployment",
+        "desktop-application",
+        "mobile-support"
+      ],
+      "tags": [
+        "matrix",
+        "messaging",
+        "collaboration",
+        "encryption",
+        "federation",
+        "self-hosted",
+        "privacy",
+        "secure-communication",
+        "team-chat",
+        "voip",
+        "video-conferencing",
+        "decentralized",
+        "open-source",
+        "cross-platform"
+      ],
+      "site": "https://howtomgr.github.io/communication/element/",
+      "api": "https://howtomgr.github.io/api/v1/communication/element.json",
+      "github": "https://github.com/howtomgr/element"
+    },
     {
       "name": "mastodon",
       "title": "Mastodon Installation Guide",

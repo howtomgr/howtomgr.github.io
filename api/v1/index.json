@@ -7,9 +7,9 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 583,
+    "total_guides": 584,
     "total_categories": 102,
-    "last_updated": "2026-04-26T05:17:20.392Z"
+    "last_updated": "2026-04-26T07:19:22.525Z"
   },
   "categories": [
     {
@@ -328,6 +328,13 @@
       "api_url": "https://howtomgr.github.io/api/v1/search-engines.json"
     },
     {
+      "name": "communication",
+      "display_name": "Communication",
+      "count": 2,
+      "url": "https://howtomgr.github.io/communication/",
+      "api_url": "https://howtomgr.github.io/api/v1/communication.json"
+    },
+    {
       "name": "static-site-generators",
       "display_name": "Static site generators",
       "count": 10,
@@ -536,13 +543,6 @@
       "count": 4,
       "url": "https://howtomgr.github.io/mailing-lists/",
       "api_url": "https://howtomgr.github.io/api/v1/mailing-lists.json"
-    },
-    {
-      "name": "communication",
-      "display_name": "Communication",
-      "count": 1,
-      "url": "https://howtomgr.github.io/communication/",
-      "api_url": "https://howtomgr.github.io/api/v1/communication.json"
     },
     {
       "name": "team-chat",
@@ -775,6 +775,7 @@
       "/api/v1/data-science.json",
       "/api/v1/xmpp-servers.json",
       "/api/v1/search-engines.json",
+      "/api/v1/communication.json",
       "/api/v1/static-site-generators.json",
       "/api/v1/media-servers.json",
       "/api/v1/service-mesh.json",
@@ -805,7 +806,6 @@
       "/api/v1/media-centers.json",
       "/api/v1/groupware.json",
       "/api/v1/mailing-lists.json",
-      "/api/v1/communication.json",
       "/api/v1/team-chat.json",
       "/api/v1/caching.json",
       "/api/v1/voice-chat.json",
@@ -954,6 +954,7 @@
       "/api/v1/xmpp-servers/ejabberd.json",
       "/api/v1/search-engines/elasticsearch.json",
       "/api/v1/miscellaneous/elasticsearch_oss.json",
+      "/api/v1/communication/element.json",
       "/api/v1/miscellaneous/element-web.json",
       "/api/v1/static-site-generators/eleventy.json",
       "/api/v1/media-servers/emby.json",
