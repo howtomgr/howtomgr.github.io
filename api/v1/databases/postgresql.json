@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "1.0",
-    "generated_at": "2026-05-27T20:04:41.836Z",
+    "generated_at": "2026-05-28T09:48:18.356Z",
     "spec_version": "2.0"
   },
   "tool": {
@@ -72,7 +72,7 @@
       "word_count": 4294,
       "estimated_read_time": "22 min",
       "has_readme": true,
-      "last_built": "2026-05-27T19:59:17.238Z"
+      "last_built": "2026-05-28T09:43:48.235Z"
     }
   }
 }
