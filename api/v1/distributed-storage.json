@@ -2,10 +2,10 @@
   "category": {
     "name": "distributed-storage",
     "display_name": "Distributed storage",
-    "total_guides": 9
+    "total_guides": 8
   },
   "meta": {
-    "generated_at": "2026-07-02T08:45:35.298Z",
+    "generated_at": "2026-07-02T19:11:50.929Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -143,51 +143,6 @@
       "site": "https://howtomgr.github.io/distributed-storage/glusterfs/",
       "api": "https://howtomgr.github.io/api/v1/distributed-storage/glusterfs.json",
       "github": "https://github.com/howtomgr/glusterfs"
-    },
-    {
-      "name": "juicefs",
-      "title": "juicefs Installation Guide",
-      "description": "juicefs is a free and open-source POSIX file system. JuiceFS provides POSIX-compatible file system built on object storage",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "distributed-storage",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/distributed-storage/juicefs/",
-      "api": "https://howtomgr.github.io/api/v1/distributed-storage/juicefs.json",
-      "github": "https://github.com/howtomgr/juicefs"
     },
     {
       "name": "lizardfs",

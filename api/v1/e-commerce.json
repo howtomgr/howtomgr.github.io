@@ -2,58 +2,13 @@
   "category": {
     "name": "e-commerce",
     "display_name": "E commerce",
-    "total_guides": 8
+    "total_guides": 7
   },
   "meta": {
-    "generated_at": "2026-07-02T08:45:35.297Z",
+    "generated_at": "2026-07-02T19:11:50.941Z",
     "api_version": "1.0"
   },
   "guides": [
-    {
-      "name": "bagisto",
-      "title": "bagisto Installation Guide",
-      "description": "bagisto is a free and open-source Laravel e-commerce. Bagisto provides Laravel-based e-commerce platform",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "e-commerce",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/e-commerce/bagisto/",
-      "api": "https://howtomgr.github.io/api/v1/e-commerce/bagisto.json",
-      "github": "https://github.com/howtomgr/bagisto"
-    },
     {
       "name": "magento",
       "title": "magento Installation Guide",

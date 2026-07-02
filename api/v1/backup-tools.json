@@ -2,10 +2,10 @@
   "category": {
     "name": "backup-tools",
     "display_name": "Backup tools",
-    "total_guides": 4
+    "total_guides": 3
   },
   "meta": {
-    "generated_at": "2026-07-02T08:45:35.294Z",
+    "generated_at": "2026-07-02T19:11:50.927Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -53,51 +53,6 @@
       "site": "https://howtomgr.github.io/backup-tools/amanda/",
       "api": "https://howtomgr.github.io/api/v1/backup-tools/amanda.json",
       "github": "https://github.com/howtomgr/amanda"
-    },
-    {
-      "name": "bacula",
-      "title": "bacula Installation Guide",
-      "description": "bacula is a free and open-source backup system. Bacula provides enterprise-ready network backup solution",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "backup-tools",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/backup-tools/bacula/",
-      "api": "https://howtomgr.github.io/api/v1/backup-tools/bacula.json",
-      "github": "https://github.com/howtomgr/bacula"
     },
     {
       "name": "duplicati",

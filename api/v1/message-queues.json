@@ -2,10 +2,10 @@
   "category": {
     "name": "message-queues",
     "display_name": "Message queues",
-    "total_guides": 5
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2026-07-02T08:45:35.295Z",
+    "generated_at": "2026-07-02T19:11:50.928Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -63,51 +63,6 @@
       "site": "https://howtomgr.github.io/message-queues/apache-kafka/",
       "api": "https://howtomgr.github.io/api/v1/message-queues/apache-kafka.json",
       "github": "https://github.com/howtomgr/apache-kafka"
-    },
-    {
-      "name": "beanstalkd",
-      "title": "beanstalkd Installation Guide",
-      "description": "beanstalkd is a free and open-source work queue. Beanstalkd provides simple, fast work queue",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "message-queues",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/message-queues/beanstalkd/",
-      "api": "https://howtomgr.github.io/api/v1/message-queues/beanstalkd.json",
-      "github": "https://github.com/howtomgr/beanstalkd"
     },
     {
       "name": "kafka",

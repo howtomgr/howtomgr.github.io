@@ -2,69 +2,13 @@
   "category": {
     "name": "development-tools",
     "display_name": "Development tools",
-    "total_guides": 5
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2026-07-02T08:45:35.297Z",
+    "generated_at": "2026-07-02T19:11:50.930Z",
     "api_version": "1.0"
   },
   "guides": [
-    {
-      "name": "astro",
-      "title": "Astro Installation Guide",
-      "description": "Astro is a free and open-source all-in-one web framework for building fast, content-focused websites. It serves as a FOSS alternative to static site generators like Gatsby or Next.js, offering Islands architecture, zero JavaScript by default, and support for multiple UI frameworks including React, Vue, and Svelte in the same project.",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "10-20 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "fedora",
-        "macos",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "islands-architecture",
-        "zero-javascript-default",
-        "multi-framework",
-        "content-collections",
-        "image-optimization",
-        "markdown-mdx-support",
-        "partial-hydration",
-        "edge-deployment",
-        "view-transitions",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "static-site-generator",
-        "islands",
-        "partial-hydration",
-        "content-focused",
-        "multi-framework",
-        "performance",
-        "ssg",
-        "ssr",
-        "jamstack"
-      ],
-      "site": "https://howtomgr.github.io/development-tools/astro/",
-      "api": "https://howtomgr.github.io/api/v1/development-tools/astro.json",
-      "github": "https://github.com/howtomgr/astro"
-    },
     {
       "name": "bun",
       "title": "Bun Installation Guide",
