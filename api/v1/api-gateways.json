@@ -2,10 +2,10 @@
   "category": {
     "name": "api-gateways",
     "display_name": "Api gateways",
-    "total_guides": 8
+    "total_guides": 9
   },
   "meta": {
-    "generated_at": "2026-07-02T19:11:50.937Z",
+    "generated_at": "2026-07-03T08:49:42.427Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -143,6 +143,51 @@
       "site": "https://howtomgr.github.io/api-gateways/gravitee/",
       "api": "https://howtomgr.github.io/api/v1/api-gateways/gravitee.json",
       "github": "https://github.com/howtomgr/gravitee"
+    },
+    {
+      "name": "kong",
+      "title": "kong Installation Guide",
+      "description": "kong is a free and open-source API gateway. Kong provides cloud-native API gateway built on nginx",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/kong/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/kong.json",
+      "github": "https://github.com/howtomgr/kong"
     },
     {
       "name": "krakend",

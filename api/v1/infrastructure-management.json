@@ -2,10 +2,10 @@
   "category": {
     "name": "infrastructure-management",
     "display_name": "Infrastructure management",
-    "total_guides": 6
+    "total_guides": 7
   },
   "meta": {
-    "generated_at": "2026-07-02T19:11:50.932Z",
+    "generated_at": "2026-07-03T08:49:42.422Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -53,6 +53,51 @@
       "site": "https://howtomgr.github.io/infrastructure-management/cobbler/",
       "api": "https://howtomgr.github.io/api/v1/infrastructure-management/cobbler.json",
       "github": "https://github.com/howtomgr/cobbler"
+    },
+    {
+      "name": "collins",
+      "title": "collins Installation Guide",
+      "description": "collins is a free and open-source infrastructure management. Collins provides infrastructure asset management",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "infrastructure-management",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/infrastructure-management/collins/",
+      "api": "https://howtomgr.github.io/api/v1/infrastructure-management/collins.json",
+      "github": "https://github.com/howtomgr/collins"
     },
     {
       "name": "foreman",

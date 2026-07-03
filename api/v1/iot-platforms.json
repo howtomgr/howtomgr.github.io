@@ -2,10 +2,10 @@
   "category": {
     "name": "iot-platforms",
     "display_name": "Iot platforms",
-    "total_guides": 7
+    "total_guides": 8
   },
   "meta": {
-    "generated_at": "2026-07-02T19:11:50.931Z",
+    "generated_at": "2026-07-03T08:49:42.422Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -143,6 +143,51 @@
       "site": "https://howtomgr.github.io/iot-platforms/flespi/",
       "api": "https://howtomgr.github.io/api/v1/iot-platforms/flespi.json",
       "github": "https://github.com/howtomgr/flespi"
+    },
+    {
+      "name": "kaa",
+      "title": "kaa Installation Guide",
+      "description": "kaa is a free and open-source IoT platform. Kaa provides multi-purpose middleware for IoT",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "iot-platforms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/iot-platforms/kaa/",
+      "api": "https://howtomgr.github.io/api/v1/iot-platforms/kaa.json",
+      "github": "https://github.com/howtomgr/kaa"
     },
     {
       "name": "mainflux",

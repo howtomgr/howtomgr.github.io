@@ -2,13 +2,58 @@
   "category": {
     "name": "network-monitoring",
     "display_name": "Network monitoring",
-    "total_guides": 6
+    "total_guides": 7
   },
   "meta": {
-    "generated_at": "2026-07-02T19:11:50.933Z",
+    "generated_at": "2026-07-03T08:49:42.419Z",
     "api_version": "1.0"
   },
   "guides": [
+    {
+      "name": "bandwidthd",
+      "title": "bandwidthd Installation Guide",
+      "description": "bandwidthd is a free and open-source bandwidth monitoring. BandwidthD tracks bandwidth usage and provides graphs",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "network-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/network-monitoring/bandwidthd/",
+      "api": "https://howtomgr.github.io/api/v1/network-monitoring/bandwidthd.json",
+      "github": "https://github.com/howtomgr/bandwidthd"
+    },
     {
       "name": "darkstat",
       "title": "darkstat Installation Guide",

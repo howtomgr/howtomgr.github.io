@@ -2,10 +2,10 @@
   "category": {
     "name": "cms",
     "display_name": "Cms",
-    "total_guides": 4
+    "total_guides": 5
   },
   "meta": {
-    "generated_at": "2026-07-02T19:11:50.934Z",
+    "generated_at": "2026-07-03T08:49:42.424Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -143,6 +143,51 @@
       "site": "https://howtomgr.github.io/cms/grav/",
       "api": "https://howtomgr.github.io/api/v1/cms/grav.json",
       "github": "https://github.com/howtomgr/grav"
+    },
+    {
+      "name": "joomla",
+      "title": "joomla Installation Guide",
+      "description": "joomla is a free and open-source content management system. Joomla provides powerful CMS for building websites and applications",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "cms",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/cms/joomla/",
+      "api": "https://howtomgr.github.io/api/v1/cms/joomla.json",
+      "github": "https://github.com/howtomgr/joomla"
     },
     {
       "name": "wordpress",

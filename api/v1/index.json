@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 521,
-    "total_categories": 98,
-    "last_updated": "2026-07-02T19:11:50.920Z"
+    "total_guides": 584,
+    "total_categories": 102,
+    "last_updated": "2026-07-03T08:49:42.409Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 218,
+      "count": 245,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -43,7 +43,7 @@
     {
       "name": "ci-cd",
       "display_name": "Ci cd",
-      "count": 7,
+      "count": 11,
       "url": "https://howtomgr.github.io/ci-cd/",
       "api_url": "https://howtomgr.github.io/api/v1/ci-cd.json"
     },
@@ -78,7 +78,7 @@
     {
       "name": "backup-tools",
       "display_name": "Backup tools",
-      "count": 3,
+      "count": 4,
       "url": "https://howtomgr.github.io/backup-tools/",
       "api_url": "https://howtomgr.github.io/api/v1/backup-tools.json"
     },
@@ -92,14 +92,14 @@
     {
       "name": "container-security",
       "display_name": "Container security",
-      "count": 1,
+      "count": 2,
       "url": "https://howtomgr.github.io/container-security/",
       "api_url": "https://howtomgr.github.io/api/v1/container-security.json"
     },
     {
       "name": "configuration-management",
       "display_name": "Configuration management",
-      "count": 3,
+      "count": 4,
       "url": "https://howtomgr.github.io/configuration-management/",
       "api_url": "https://howtomgr.github.io/api/v1/configuration-management.json"
     },
@@ -113,7 +113,7 @@
     {
       "name": "message-queues",
       "display_name": "Message queues",
-      "count": 4,
+      "count": 5,
       "url": "https://howtomgr.github.io/message-queues/",
       "api_url": "https://howtomgr.github.io/api/v1/message-queues.json"
     },
@@ -127,9 +127,16 @@
     {
       "name": "media-processing",
       "display_name": "Media processing",
-      "count": 7,
+      "count": 8,
       "url": "https://howtomgr.github.io/media-processing/",
       "api_url": "https://howtomgr.github.io/api/v1/media-processing.json"
+    },
+    {
+      "name": "artifact-repositories",
+      "display_name": "Artifact repositories",
+      "count": 2,
+      "url": "https://howtomgr.github.io/artifact-repositories/",
+      "api_url": "https://howtomgr.github.io/api/v1/artifact-repositories.json"
     },
     {
       "name": "pbx-systems",
@@ -139,25 +146,60 @@
       "api_url": "https://howtomgr.github.io/api/v1/pbx-systems.json"
     },
     {
+      "name": "development-tools",
+      "display_name": "Development tools",
+      "count": 5,
+      "url": "https://howtomgr.github.io/development-tools/",
+      "api_url": "https://howtomgr.github.io/api/v1/development-tools.json"
+    },
+    {
+      "name": "authentication",
+      "display_name": "Authentication",
+      "count": 1,
+      "url": "https://howtomgr.github.io/authentication/",
+      "api_url": "https://howtomgr.github.io/api/v1/authentication.json"
+    },
+    {
+      "name": "e-commerce",
+      "display_name": "E commerce",
+      "count": 8,
+      "url": "https://howtomgr.github.io/e-commerce/",
+      "api_url": "https://howtomgr.github.io/api/v1/e-commerce.json"
+    },
+    {
+      "name": "network-monitoring",
+      "display_name": "Network monitoring",
+      "count": 7,
+      "url": "https://howtomgr.github.io/network-monitoring/",
+      "api_url": "https://howtomgr.github.io/api/v1/network-monitoring.json"
+    },
+    {
       "name": "distributed-storage",
       "display_name": "Distributed storage",
-      "count": 8,
+      "count": 9,
       "url": "https://howtomgr.github.io/distributed-storage/",
       "api_url": "https://howtomgr.github.io/api/v1/distributed-storage.json"
     },
     {
+      "name": "dns-servers",
+      "display_name": "Dns servers",
+      "count": 6,
+      "url": "https://howtomgr.github.io/dns-servers/",
+      "api_url": "https://howtomgr.github.io/api/v1/dns-servers.json"
+    },
+    {
       "name": "monitoring",
       "display_name": "Monitoring",
-      "count": 9,
+      "count": 10,
       "url": "https://howtomgr.github.io/monitoring/",
       "api_url": "https://howtomgr.github.io/api/v1/monitoring.json"
     },
     {
-      "name": "development-tools",
-      "display_name": "Development tools",
+      "name": "documentation",
+      "display_name": "Documentation",
       "count": 4,
-      "url": "https://howtomgr.github.io/development-tools/",
-      "api_url": "https://howtomgr.github.io/api/v1/development-tools.json"
+      "url": "https://howtomgr.github.io/documentation/",
+      "api_url": "https://howtomgr.github.io/api/v1/documentation.json"
     },
     {
       "name": "databases",
@@ -176,14 +218,21 @@
     {
       "name": "education",
       "display_name": "Education",
-      "count": 7,
+      "count": 8,
       "url": "https://howtomgr.github.io/education/",
       "api_url": "https://howtomgr.github.io/api/v1/education.json"
     },
     {
+      "name": "development-environments",
+      "display_name": "Development environments",
+      "count": 3,
+      "url": "https://howtomgr.github.io/development-environments/",
+      "api_url": "https://howtomgr.github.io/api/v1/development-environments.json"
+    },
+    {
       "name": "iot-platforms",
       "display_name": "Iot platforms",
-      "count": 7,
+      "count": 8,
       "url": "https://howtomgr.github.io/iot-platforms/",
       "api_url": "https://howtomgr.github.io/api/v1/iot-platforms.json"
     },
@@ -197,7 +246,7 @@
     {
       "name": "infrastructure-management",
       "display_name": "Infrastructure management",
-      "count": 6,
+      "count": 7,
       "url": "https://howtomgr.github.io/infrastructure-management/",
       "api_url": "https://howtomgr.github.io/api/v1/infrastructure-management.json"
     },
@@ -223,25 +272,11 @@
       "api_url": "https://howtomgr.github.io/api/v1/blockchain.json"
     },
     {
-      "name": "dns-servers",
-      "display_name": "Dns servers",
-      "count": 5,
-      "url": "https://howtomgr.github.io/dns-servers/",
-      "api_url": "https://howtomgr.github.io/api/v1/dns-servers.json"
-    },
-    {
       "name": "container-tools",
       "display_name": "Container tools",
       "count": 1,
       "url": "https://howtomgr.github.io/container-tools/",
       "api_url": "https://howtomgr.github.io/api/v1/container-tools.json"
-    },
-    {
-      "name": "network-monitoring",
-      "display_name": "Network monitoring",
-      "count": 6,
-      "url": "https://howtomgr.github.io/network-monitoring/",
-      "api_url": "https://howtomgr.github.io/api/v1/network-monitoring.json"
     },
     {
       "name": "matrix-servers",
@@ -258,13 +293,6 @@
       "api_url": "https://howtomgr.github.io/api/v1/headless-cms.json"
     },
     {
-      "name": "documentation",
-      "display_name": "Documentation",
-      "count": 3,
-      "url": "https://howtomgr.github.io/documentation/",
-      "api_url": "https://howtomgr.github.io/api/v1/documentation.json"
-    },
-    {
       "name": "mail-servers",
       "display_name": "Mail servers",
       "count": 7,
@@ -274,14 +302,14 @@
     {
       "name": "cms",
       "display_name": "Cms",
-      "count": 4,
+      "count": 5,
       "url": "https://howtomgr.github.io/cms/",
       "api_url": "https://howtomgr.github.io/api/v1/cms.json"
     },
     {
       "name": "data-science",
       "display_name": "Data science",
-      "count": 3,
+      "count": 5,
       "url": "https://howtomgr.github.io/data-science/",
       "api_url": "https://howtomgr.github.io/api/v1/data-science.json"
     },
@@ -316,14 +344,14 @@
     {
       "name": "media-servers",
       "display_name": "Media servers",
-      "count": 2,
+      "count": 3,
       "url": "https://howtomgr.github.io/media-servers/",
       "api_url": "https://howtomgr.github.io/api/v1/media-servers.json"
     },
     {
       "name": "service-mesh",
       "display_name": "Service mesh",
-      "count": 3,
+      "count": 4,
       "url": "https://howtomgr.github.io/service-mesh/",
       "api_url": "https://howtomgr.github.io/api/v1/service-mesh.json"
     },
@@ -351,7 +379,7 @@
     {
       "name": "api-gateways",
       "display_name": "Api gateways",
-      "count": 8,
+      "count": 9,
       "url": "https://howtomgr.github.io/api-gateways/",
       "api_url": "https://howtomgr.github.io/api/v1/api-gateways.json"
     },
@@ -468,6 +496,20 @@
       "api_url": "https://howtomgr.github.io/api/v1/communication-platforms.json"
     },
     {
+      "name": "video-conferencing",
+      "display_name": "Video conferencing",
+      "count": 1,
+      "url": "https://howtomgr.github.io/video-conferencing/",
+      "api_url": "https://howtomgr.github.io/api/v1/video-conferencing.json"
+    },
+    {
+      "name": "orchestration",
+      "display_name": "Orchestration",
+      "count": 3,
+      "url": "https://howtomgr.github.io/orchestration/",
+      "api_url": "https://howtomgr.github.io/api/v1/orchestration.json"
+    },
+    {
       "name": "sip-servers",
       "display_name": "Sip servers",
       "count": 2,
@@ -475,18 +517,32 @@
       "api_url": "https://howtomgr.github.io/api/v1/sip-servers.json"
     },
     {
+      "name": "identity-management",
+      "display_name": "Identity management",
+      "count": 1,
+      "url": "https://howtomgr.github.io/identity-management/",
+      "api_url": "https://howtomgr.github.io/api/v1/identity-management.json"
+    },
+    {
+      "name": "media-centers",
+      "display_name": "Media centers",
+      "count": 1,
+      "url": "https://howtomgr.github.io/media-centers/",
+      "api_url": "https://howtomgr.github.io/api/v1/media-centers.json"
+    },
+    {
+      "name": "groupware",
+      "display_name": "Groupware",
+      "count": 3,
+      "url": "https://howtomgr.github.io/groupware/",
+      "api_url": "https://howtomgr.github.io/api/v1/groupware.json"
+    },
+    {
       "name": "mailing-lists",
       "display_name": "Mailing lists",
       "count": 4,
       "url": "https://howtomgr.github.io/mailing-lists/",
       "api_url": "https://howtomgr.github.io/api/v1/mailing-lists.json"
-    },
-    {
-      "name": "e-commerce",
-      "display_name": "E commerce",
-      "count": 7,
-      "url": "https://howtomgr.github.io/e-commerce/",
-      "api_url": "https://howtomgr.github.io/api/v1/e-commerce.json"
     },
     {
       "name": "team-chat",
@@ -503,13 +559,6 @@
       "api_url": "https://howtomgr.github.io/api/v1/caching.json"
     },
     {
-      "name": "orchestration",
-      "display_name": "Orchestration",
-      "count": 1,
-      "url": "https://howtomgr.github.io/orchestration/",
-      "api_url": "https://howtomgr.github.io/api/v1/orchestration.json"
-    },
-    {
       "name": "voice-chat",
       "display_name": "Voice chat",
       "count": 2,
@@ -522,13 +571,6 @@
       "count": 2,
       "url": "https://howtomgr.github.io/file-sharing/",
       "api_url": "https://howtomgr.github.io/api/v1/file-sharing.json"
-    },
-    {
-      "name": "artifact-repositories",
-      "display_name": "Artifact repositories",
-      "count": 1,
-      "url": "https://howtomgr.github.io/artifact-repositories/",
-      "api_url": "https://howtomgr.github.io/api/v1/artifact-repositories.json"
     },
     {
       "name": "data-processing",
@@ -650,13 +692,6 @@
       "api_url": "https://howtomgr.github.io/api/v1/infrastructure-as-code.json"
     },
     {
-      "name": "development-environments",
-      "display_name": "Development environments",
-      "count": 1,
-      "url": "https://howtomgr.github.io/development-environments/",
-      "api_url": "https://howtomgr.github.io/api/v1/development-environments.json"
-    },
-    {
       "name": "storage-solutions",
       "display_name": "Storage solutions",
       "count": 1,
@@ -690,13 +725,6 @@
       "count": 1,
       "url": "https://howtomgr.github.io/mqtt-brokers/",
       "api_url": "https://howtomgr.github.io/api/v1/mqtt-brokers.json"
-    },
-    {
-      "name": "groupware",
-      "display_name": "Groupware",
-      "count": 1,
-      "url": "https://howtomgr.github.io/groupware/",
-      "api_url": "https://howtomgr.github.io/api/v1/groupware.json"
     }
   ],
   "endpoints": {
@@ -719,25 +747,29 @@
       "/api/v1/message-queues.json",
       "/api/v1/package-repositories.json",
       "/api/v1/media-processing.json",
+      "/api/v1/artifact-repositories.json",
       "/api/v1/pbx-systems.json",
-      "/api/v1/distributed-storage.json",
-      "/api/v1/monitoring.json",
       "/api/v1/development-tools.json",
+      "/api/v1/authentication.json",
+      "/api/v1/e-commerce.json",
+      "/api/v1/network-monitoring.json",
+      "/api/v1/distributed-storage.json",
+      "/api/v1/dns-servers.json",
+      "/api/v1/monitoring.json",
+      "/api/v1/documentation.json",
       "/api/v1/databases.json",
       "/api/v1/task-queues.json",
       "/api/v1/education.json",
+      "/api/v1/development-environments.json",
       "/api/v1/iot-platforms.json",
       "/api/v1/antivirus.json",
       "/api/v1/infrastructure-management.json",
       "/api/v1/service-discovery.json",
       "/api/v1/containerization.json",
       "/api/v1/blockchain.json",
-      "/api/v1/dns-servers.json",
       "/api/v1/container-tools.json",
-      "/api/v1/network-monitoring.json",
       "/api/v1/matrix-servers.json",
       "/api/v1/headless-cms.json",
-      "/api/v1/documentation.json",
       "/api/v1/mail-servers.json",
       "/api/v1/cms.json",
       "/api/v1/data-science.json",
@@ -767,15 +799,17 @@
       "/api/v1/mail-stacks.json",
       "/api/v1/dhcp-servers.json",
       "/api/v1/communication-platforms.json",
+      "/api/v1/video-conferencing.json",
+      "/api/v1/orchestration.json",
       "/api/v1/sip-servers.json",
+      "/api/v1/identity-management.json",
+      "/api/v1/media-centers.json",
+      "/api/v1/groupware.json",
       "/api/v1/mailing-lists.json",
-      "/api/v1/e-commerce.json",
       "/api/v1/team-chat.json",
       "/api/v1/caching.json",
-      "/api/v1/orchestration.json",
       "/api/v1/voice-chat.json",
       "/api/v1/file-sharing.json",
-      "/api/v1/artifact-repositories.json",
       "/api/v1/data-processing.json",
       "/api/v1/network-analysis.json",
       "/api/v1/artificial-intelligence.json",
@@ -793,13 +827,11 @@
       "/api/v1/reverse-proxies.json",
       "/api/v1/code-quality.json",
       "/api/v1/infrastructure-as-code.json",
-      "/api/v1/development-environments.json",
       "/api/v1/storage-solutions.json",
       "/api/v1/dns-resolvers.json",
       "/api/v1/network-management.json",
       "/api/v1/secrets-management.json",
-      "/api/v1/mqtt-brokers.json",
-      "/api/v1/groupware.json"
+      "/api/v1/mqtt-brokers.json"
     ],
     "tools": [
       "/api/v1/miscellaneous/ackee.json",
@@ -824,14 +856,37 @@
       "/api/v1/media-processing/ardour.json",
       "/api/v1/miscellaneous/argocd.json",
       "/api/v1/miscellaneous/aria2.json",
+      "/api/v1/miscellaneous/arkserver.json",
+      "/api/v1/artifact-repositories/artifactory.json",
       "/api/v1/pbx-systems/asterisk.json",
+      "/api/v1/development-tools/astro.json",
+      "/api/v1/media-processing/audacity.json",
+      "/api/v1/miscellaneous/auditbeat.json",
+      "/api/v1/authentication/authelia.json",
+      "/api/v1/miscellaneous/authentik.json",
       "/api/v1/workflow-engines/azkaban.json",
       "/api/v1/miscellaneous/backuppc.json",
+      "/api/v1/backup-tools/bacula.json",
+      "/api/v1/e-commerce/bagisto.json",
+      "/api/v1/network-monitoring/bandwidthd.json",
+      "/api/v1/miscellaneous/bareos.json",
       "/api/v1/miscellaneous/bazarr.json",
+      "/api/v1/message-queues/beanstalkd.json",
       "/api/v1/distributed-storage/beegfs.json",
+      "/api/v1/miscellaneous/beets.json",
+      "/api/v1/miscellaneous/bigbluebutton.json",
+      "/api/v1/dns-servers/bind.json",
+      "/api/v1/miscellaneous/bitcoin_core.json",
+      "/api/v1/miscellaneous/bitwarden.json",
+      "/api/v1/monitoring/blackbox-exporter.json",
       "/api/v1/monitoring/prometheus-blackbox-exporter.json",
       "/api/v1/media-processing/blender.json",
+      "/api/v1/documentation/bookstack.json",
+      "/api/v1/miscellaneous/borgbackup.json",
+      "/api/v1/ci-cd/buddy.json",
       "/api/v1/miscellaneous/buildah.json",
+      "/api/v1/ci-cd/buildbot.json",
+      "/api/v1/ci-cd/buildkite.json",
       "/api/v1/development-tools/bun.json",
       "/api/v1/miscellaneous/cacti.json",
       "/api/v1/web-servers/caddy.json",
@@ -841,15 +896,24 @@
       "/api/v1/databases/cassandra.json",
       "/api/v1/task-queues/celery.json",
       "/api/v1/distributed-storage/ceph.json",
+      "/api/v1/miscellaneous/certbot.json",
       "/api/v1/education/chamilo.json",
+      "/api/v1/development-environments/che.json",
       "/api/v1/miscellaneous/checkmk.json",
+      "/api/v1/configuration-management/chef.json",
       "/api/v1/iot-platforms/chirpstack.json",
       "/api/v1/miscellaneous/chronograf.json",
+      "/api/v1/container-security/clair.json",
       "/api/v1/antivirus/clamav.json",
+      "/api/v1/miscellaneous/clickhouse-server.json",
+      "/api/v1/development-environments/cloud9.json",
       "/api/v1/miscellaneous/cloudflare-tunnel.json",
+      "/api/v1/miscellaneous/cloudstack.json",
       "/api/v1/infrastructure-management/cobbler.json",
+      "/api/v1/miscellaneous/cockpit.json",
       "/api/v1/miscellaneous/cockpit-cms.json",
       "/api/v1/databases/cockroachdb.json",
+      "/api/v1/infrastructure-management/collins.json",
       "/api/v1/miscellaneous/concourse.json",
       "/api/v1/service-discovery/consul.json",
       "/api/v1/miscellaneous/consul_connect.json",
@@ -860,6 +924,7 @@
       "/api/v1/miscellaneous/countly.json",
       "/api/v1/container-tools/crane.json",
       "/api/v1/miscellaneous/cri-o.json",
+      "/api/v1/miscellaneous/crucible.json",
       "/api/v1/miscellaneous/csgo.json",
       "/api/v1/miscellaneous/cyrus_imap.json",
       "/api/v1/miscellaneous/dada_mail.json",
@@ -988,17 +1053,47 @@
       "/api/v1/communication-platforms/jami.json",
       "/api/v1/miscellaneous/jdownloader.json",
       "/api/v1/static-site-generators/jekyll.json",
+      "/api/v1/media-servers/jellyfin.json",
+      "/api/v1/ci-cd/jenkins.json",
+      "/api/v1/miscellaneous/jirafeau.json",
+      "/api/v1/video-conferencing/jitsi.json",
+      "/api/v1/miscellaneous/jitsi-meet.json",
+      "/api/v1/cms/joomla.json",
+      "/api/v1/miscellaneous/journalbeat.json",
+      "/api/v1/distributed-storage/juicefs.json",
+      "/api/v1/data-science/jupyter.json",
+      "/api/v1/miscellaneous/jupyter_hub.json",
+      "/api/v1/orchestration/k3s.json",
+      "/api/v1/iot-platforms/kaa.json",
       "/api/v1/message-queues/kafka.json",
+      "/api/v1/miscellaneous/kallithea.json",
       "/api/v1/sip-servers/kamailio.json",
       "/api/v1/remote-access/kasm.json",
       "/api/v1/media-processing/kdenlive.json",
       "/api/v1/miscellaneous/kea-dhcp4-server.json",
       "/api/v1/workflow-engines/kedro.json",
+      "/api/v1/identity-management/keycloak.json",
+      "/api/v1/miscellaneous/keystone.json",
+      "/api/v1/miscellaneous/kibana.json",
+      "/api/v1/miscellaneous/kimchi.json",
       "/api/v1/dns-servers/knot.json",
+      "/api/v1/media-centers/kodi.json",
+      "/api/v1/groupware/kolab.json",
+      "/api/v1/education/kolibri.json",
       "/api/v1/miscellaneous/komga.json",
+      "/api/v1/api-gateways/kong.json",
+      "/api/v1/groupware/kopano.json",
+      "/api/v1/miscellaneous/kopia.json",
+      "/api/v1/miscellaneous/kraken_ci.json",
       "/api/v1/api-gateways/krakend.json",
+      "/api/v1/data-science/kubeflow.json",
+      "/api/v1/orchestration/kubernetes.json",
+      "/api/v1/service-mesh/kuma.json",
       "/api/v1/ci-cd/laminar.json",
+      "/api/v1/miscellaneous/lemmy.json",
+      "/api/v1/miscellaneous/librenms.json",
       "/api/v1/miscellaneous/libvirt.json",
+      "/api/v1/miscellaneous/lidarr.json",
       "/api/v1/miscellaneous/lightning_network.json",
       "/api/v1/service-mesh/linkerd.json",
       "/api/v1/mailing-lists/listmonk.json",

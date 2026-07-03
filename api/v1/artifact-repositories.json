@@ -2,13 +2,58 @@
   "category": {
     "name": "artifact-repositories",
     "display_name": "Artifact repositories",
-    "total_guides": 1
+    "total_guides": 2
   },
   "meta": {
-    "generated_at": "2026-07-02T19:11:50.943Z",
+    "generated_at": "2026-07-03T08:49:42.418Z",
     "api_version": "1.0"
   },
   "guides": [
+    {
+      "name": "artifactory",
+      "title": "artifactory Installation Guide",
+      "description": "artifactory is a free and open-source universal repository manager. Artifactory provides universal repository management for all major package formats",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "artifact-repositories",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/artifact-repositories/artifactory/",
+      "api": "https://howtomgr.github.io/api/v1/artifact-repositories/artifactory.json",
+      "github": "https://github.com/howtomgr/artifactory"
+    },
     {
       "name": "nexus",
       "title": "nexus Installation Guide",

@@ -2,13 +2,59 @@
   "category": {
     "name": "dns-servers",
     "display_name": "Dns servers",
-    "total_guides": 5
+    "total_guides": 6
   },
   "meta": {
-    "generated_at": "2026-07-02T19:11:50.932Z",
+    "generated_at": "2026-07-03T08:49:42.420Z",
     "api_version": "1.0"
   },
   "guides": [
+    {
+      "name": "bind",
+      "title": "BIND Installation Guide",
+      "description": "BIND is a free and open-source DNS Server. Berkeley Internet Name Domain is the most widely used DNS server software",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "dns-servers",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/dns-servers/bind/",
+      "api": "https://howtomgr.github.io/api/v1/dns-servers/bind.json",
+      "github": "https://github.com/howtomgr/bind"
+    },
     {
       "name": "coredns",
       "title": "CoreDNS Installation Guide",

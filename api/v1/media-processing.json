@@ -2,10 +2,10 @@
   "category": {
     "name": "media-processing",
     "display_name": "Media processing",
-    "total_guides": 7
+    "total_guides": 8
   },
   "meta": {
-    "generated_at": "2026-07-02T19:11:50.928Z",
+    "generated_at": "2026-07-03T08:49:42.417Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -54,6 +54,52 @@
       "site": "https://howtomgr.github.io/media-processing/ardour/",
       "api": "https://howtomgr.github.io/api/v1/media-processing/ardour.json",
       "github": "https://github.com/howtomgr/ardour"
+    },
+    {
+      "name": "audacity",
+      "title": "audacity Installation Guide",
+      "description": "audacity is a free and open-source audio editor. Audacity provides multi-track audio editor",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "multimedia"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/audacity/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/audacity.json",
+      "github": "https://github.com/howtomgr/audacity"
     },
     {
       "name": "blender",

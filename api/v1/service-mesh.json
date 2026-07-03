@@ -2,10 +2,10 @@
   "category": {
     "name": "service-mesh",
     "display_name": "Service mesh",
-    "total_guides": 3
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2026-07-02T19:11:50.936Z",
+    "generated_at": "2026-07-03T08:49:42.426Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -98,6 +98,51 @@
       "site": "https://howtomgr.github.io/service-mesh/istio/",
       "api": "https://howtomgr.github.io/api/v1/service-mesh/istio.json",
       "github": "https://github.com/howtomgr/istio"
+    },
+    {
+      "name": "kuma",
+      "title": "kuma Installation Guide",
+      "description": "kuma is a free and open-source service mesh. Kuma provides universal service mesh for multi-zone deployments",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "service-mesh",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/service-mesh/kuma/",
+      "api": "https://howtomgr.github.io/api/v1/service-mesh/kuma.json",
+      "github": "https://github.com/howtomgr/kuma"
     },
     {
       "name": "linkerd",
