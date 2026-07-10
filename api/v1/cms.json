@@ -2,58 +2,13 @@
   "category": {
     "name": "cms",
     "display_name": "Cms",
-    "total_guides": 5
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2026-07-09T19:24:01.947Z",
+    "generated_at": "2026-07-10T09:07:44.045Z",
     "api_version": "1.0"
   },
   "guides": [
-    {
-      "name": "drupal",
-      "title": "drupal Installation Guide",
-      "description": "drupal is a free and open-source content management framework. Drupal provides flexible CMS framework for ambitious digital experiences",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "cms",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/cms/drupal/",
-      "api": "https://howtomgr.github.io/api/v1/cms/drupal.json",
-      "github": "https://github.com/howtomgr/drupal"
-    },
     {
       "name": "ghost",
       "title": "ghost Installation Guide",
