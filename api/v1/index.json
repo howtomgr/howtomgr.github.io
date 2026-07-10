@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 579,
-    "total_categories": 101,
-    "last_updated": "2026-07-10T09:07:44.025Z"
+    "total_guides": 583,
+    "total_categories": 102,
+    "last_updated": "2026-07-10T19:24:03.999Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 245,
+      "count": 244,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -225,7 +225,7 @@
     {
       "name": "development-environments",
       "display_name": "Development environments",
-      "count": 2,
+      "count": 3,
       "url": "https://howtomgr.github.io/development-environments/",
       "api_url": "https://howtomgr.github.io/api/v1/development-environments.json"
     },
@@ -300,6 +300,13 @@
       "api_url": "https://howtomgr.github.io/api/v1/mail-servers.json"
     },
     {
+      "name": "cms",
+      "display_name": "Cms",
+      "count": 5,
+      "url": "https://howtomgr.github.io/cms/",
+      "api_url": "https://howtomgr.github.io/api/v1/cms.json"
+    },
+    {
       "name": "data-science",
       "display_name": "Data science",
       "count": 5,
@@ -312,6 +319,13 @@
       "count": 3,
       "url": "https://howtomgr.github.io/xmpp-servers/",
       "api_url": "https://howtomgr.github.io/api/v1/xmpp-servers.json"
+    },
+    {
+      "name": "search-engines",
+      "display_name": "Search engines",
+      "count": 10,
+      "url": "https://howtomgr.github.io/search-engines/",
+      "api_url": "https://howtomgr.github.io/api/v1/search-engines.json"
     },
     {
       "name": "communication",
@@ -349,6 +363,13 @@
       "api_url": "https://howtomgr.github.io/api/v1/key-value-stores.json"
     },
     {
+      "name": "load-balancers",
+      "display_name": "Load balancers",
+      "count": 3,
+      "url": "https://howtomgr.github.io/load-balancers/",
+      "api_url": "https://howtomgr.github.io/api/v1/load-balancers.json"
+    },
+    {
       "name": "intrusion-prevention",
       "display_name": "Intrusion prevention",
       "count": 1,
@@ -370,25 +391,11 @@
       "api_url": "https://howtomgr.github.io/api/v1/object-storage.json"
     },
     {
-      "name": "cms",
-      "display_name": "Cms",
-      "count": 4,
-      "url": "https://howtomgr.github.io/cms/",
-      "api_url": "https://howtomgr.github.io/api/v1/cms.json"
-    },
-    {
       "name": "git-repositories",
       "display_name": "Git repositories",
       "count": 2,
       "url": "https://howtomgr.github.io/git-repositories/",
       "api_url": "https://howtomgr.github.io/api/v1/git-repositories.json"
-    },
-    {
-      "name": "load-balancers",
-      "display_name": "Load balancers",
-      "count": 2,
-      "url": "https://howtomgr.github.io/load-balancers/",
-      "api_url": "https://howtomgr.github.io/api/v1/load-balancers.json"
     },
     {
       "name": "visualization",
@@ -538,13 +545,6 @@
       "api_url": "https://howtomgr.github.io/api/v1/mailing-lists.json"
     },
     {
-      "name": "search-engines",
-      "display_name": "Search engines",
-      "count": 9,
-      "url": "https://howtomgr.github.io/search-engines/",
-      "api_url": "https://howtomgr.github.io/api/v1/search-engines.json"
-    },
-    {
       "name": "team-chat",
       "display_name": "Team chat",
       "count": 2,
@@ -620,6 +620,13 @@
       "count": 2,
       "url": "https://howtomgr.github.io/firewalls/",
       "api_url": "https://howtomgr.github.io/api/v1/firewalls.json"
+    },
+    {
+      "name": "iot-development",
+      "display_name": "Iot development",
+      "count": 1,
+      "url": "https://howtomgr.github.io/iot-development/",
+      "api_url": "https://howtomgr.github.io/api/v1/iot-development.json"
     },
     {
       "name": "container-management",
@@ -764,19 +771,20 @@
       "/api/v1/matrix-servers.json",
       "/api/v1/headless-cms.json",
       "/api/v1/mail-servers.json",
+      "/api/v1/cms.json",
       "/api/v1/data-science.json",
       "/api/v1/xmpp-servers.json",
+      "/api/v1/search-engines.json",
       "/api/v1/communication.json",
       "/api/v1/static-site-generators.json",
       "/api/v1/media-servers.json",
       "/api/v1/service-mesh.json",
       "/api/v1/key-value-stores.json",
+      "/api/v1/load-balancers.json",
       "/api/v1/intrusion-prevention.json",
       "/api/v1/api-gateways.json",
       "/api/v1/object-storage.json",
-      "/api/v1/cms.json",
       "/api/v1/git-repositories.json",
-      "/api/v1/load-balancers.json",
       "/api/v1/visualization.json",
       "/api/v1/logging.json",
       "/api/v1/tracing.json",
@@ -798,7 +806,6 @@
       "/api/v1/media-centers.json",
       "/api/v1/groupware.json",
       "/api/v1/mailing-lists.json",
-      "/api/v1/search-engines.json",
       "/api/v1/team-chat.json",
       "/api/v1/caching.json",
       "/api/v1/voice-chat.json",
@@ -810,6 +817,7 @@
       "/api/v1/vulnerability-management.json",
       "/api/v1/vpn.json",
       "/api/v1/firewalls.json",
+      "/api/v1/iot-development.json",
       "/api/v1/container-management.json",
       "/api/v1/alerting.json",
       "/api/v1/gaming.json",
@@ -898,6 +906,7 @@
       "/api/v1/container-security/clair.json",
       "/api/v1/antivirus/clamav.json",
       "/api/v1/miscellaneous/clickhouse-server.json",
+      "/api/v1/development-environments/cloud9.json",
       "/api/v1/miscellaneous/cloudflare-tunnel.json",
       "/api/v1/miscellaneous/cloudstack.json",
       "/api/v1/infrastructure-management/cobbler.json",
@@ -938,10 +947,12 @@
       "/api/v1/miscellaneous/domoticz.json",
       "/api/v1/mail-servers/dovecot.json",
       "/api/v1/ci-cd/drone.json",
+      "/api/v1/cms/drupal.json",
       "/api/v1/miscellaneous/duplicacy.json",
       "/api/v1/backup-tools/duplicati.json",
       "/api/v1/data-science/dvc.json",
       "/api/v1/xmpp-servers/ejabberd.json",
+      "/api/v1/search-engines/elasticsearch.json",
       "/api/v1/miscellaneous/elasticsearch_oss.json",
       "/api/v1/communication/element.json",
       "/api/v1/miscellaneous/element-web.json",
@@ -957,6 +968,7 @@
       "/api/v1/miscellaneous/eventstore.json",
       "/api/v1/mail-servers/exim.json",
       "/api/v1/miscellaneous/express_gateway.json",
+      "/api/v1/load-balancers/fabio.json",
       "/api/v1/miscellaneous/factorio.json",
       "/api/v1/intrusion-prevention/fail2ban.json",
       "/api/v1/task-queues/faktory.json",
@@ -1214,6 +1226,7 @@
       "/api/v1/mailing-lists/phplist.json",
       "/api/v1/database-management/phpmyadmin.json",
       "/api/v1/dns-filtering/pihole.json",
+      "/api/v1/iot-development/platformio.json",
       "/api/v1/miscellaneous/plausible.json",
       "/api/v1/media-servers/plex.json",
       "/api/v1/miscellaneous/podman.json",
@@ -1368,7 +1381,6 @@
       "/api/v1/miscellaneous/vector.json",
       "/api/v1/package-repositories/verdaccio.json",
       "/api/v1/mqtt-brokers/vernemq.json",
-      "/api/v1/miscellaneous/victoria-metrics.json",
       "/api/v1/miscellaneous/virtmanager.json",
       "/api/v1/development-tools/vite.json",
       "/api/v1/network-monitoring/vnstat.json",

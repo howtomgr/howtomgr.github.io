@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 245
+    "total_guides": 244
   },
   "meta": {
-    "generated_at": "2026-07-10T09:07:44.027Z",
+    "generated_at": "2026-07-10T19:24:04.114Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -10229,51 +10229,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/vector/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/vector.json",
       "github": "https://github.com/howtomgr/vector"
-    },
-    {
-      "name": "victoria-metrics",
-      "title": "victoria-metrics Installation Guide",
-      "description": "victoria-metrics is a free and open-source fast, cost-effective monitoring solution and time series database. VictoriaMetrics provides long-term storage for Prometheus with improved compression and performance, serving as an alternative to Prometheus, InfluxDB, or TimescaleDB",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/victoria-metrics/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/victoria-metrics.json",
-      "github": "https://github.com/howtomgr/victoria-metrics"
     },
     {
       "name": "virtmanager",

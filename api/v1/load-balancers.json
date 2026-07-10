@@ -2,13 +2,58 @@
   "category": {
     "name": "load-balancers",
     "display_name": "Load balancers",
-    "total_guides": 2
+    "total_guides": 3
   },
   "meta": {
-    "generated_at": "2026-07-10T09:07:44.045Z",
+    "generated_at": "2026-07-10T19:24:04.125Z",
     "api_version": "1.0"
   },
   "guides": [
+    {
+      "name": "fabio",
+      "title": "fabio Installation Guide",
+      "description": "fabio is a free and open-source load balancer. Fabio provides fast, zero-conf load balancing HTTP/S router",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "load-balancers",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/load-balancers/fabio/",
+      "api": "https://howtomgr.github.io/api/v1/load-balancers/fabio.json",
+      "github": "https://github.com/howtomgr/fabio"
+    },
     {
       "name": "gobetween",
       "title": "gobetween Installation Guide",
