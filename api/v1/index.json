@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 583,
+    "total_guides": 584,
     "total_categories": 102,
-    "last_updated": "2026-07-11T07:36:19.163Z"
+    "last_updated": "2026-07-11T18:49:12.850Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 244,
+      "count": 245,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -1394,6 +1394,7 @@
       "/api/v1/miscellaneous/wazuh-manager.json",
       "/api/v1/miscellaneous/wazuh_ossec.json",
       "/api/v1/virtualization/webvirt.json",
+      "/api/v1/miscellaneous/wiki-js.json",
       "/api/v1/static-site-generators/wintersmith.json",
       "/api/v1/vpn/wireguard.json",
       "/api/v1/network-analysis/wireshark.json",

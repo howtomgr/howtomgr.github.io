@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 244
+    "total_guides": 245
   },
   "meta": {
-    "generated_at": "2026-07-11T07:36:19.165Z",
+    "generated_at": "2026-07-11T18:49:12.851Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -10544,6 +10544,51 @@
       "site": "https://howtomgr.github.io/miscellaneous/wazuh_ossec/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/wazuh_ossec.json",
       "github": "https://github.com/howtomgr/wazuh_ossec"
+    },
+    {
+      "name": "wiki-js",
+      "title": "wiki-js Installation Guide",
+      "description": "wiki-js is a free and open-source modern wiki platform. Wiki.js provides modern, lightweight wiki with git synchronization",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/wiki-js/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/wiki-js.json",
+      "github": "https://github.com/howtomgr/wiki-js"
     },
     {
       "name": "woodpecker",
