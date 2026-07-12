@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 584,
+    "total_guides": 582,
     "total_categories": 102,
-    "last_updated": "2026-07-11T18:49:12.850Z"
+    "last_updated": "2026-07-12T08:06:51.290Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 245,
+      "count": 244,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -50,7 +50,7 @@
     {
       "name": "security-monitoring",
       "display_name": "Security monitoring",
-      "count": 4,
+      "count": 3,
       "url": "https://howtomgr.github.io/security-monitoring/",
       "api_url": "https://howtomgr.github.io/api/v1/security-monitoring.json"
     },
@@ -1207,8 +1207,6 @@
       "/api/v1/firewalls/opnsense.json",
       "/api/v1/distributed-storage/orangefs.json",
       "/api/v1/e-commerce/oscommerce.json",
-      "/api/v1/security-monitoring/osquery.json",
-      "/api/v1/miscellaneous/ossec-hids.json",
       "/api/v1/documentation/outline.json",
       "/api/v1/miscellaneous/overseerr.json",
       "/api/v1/miscellaneous/ovirt.json",

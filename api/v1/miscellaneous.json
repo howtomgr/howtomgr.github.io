@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 245
+    "total_guides": 244
   },
   "meta": {
-    "generated_at": "2026-07-11T18:49:12.851Z",
+    "generated_at": "2026-07-12T08:06:51.291Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -6594,51 +6594,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/openvas/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/openvas.json",
       "github": "https://github.com/howtomgr/openvas"
-    },
-    {
-      "name": "ossec-hids",
-      "title": "ossec Installation Guide",
-      "description": "ossec is a free and open-source host-based intrusion detection system. OSSEC provides log analysis, integrity checking, and rootkit detection, serving as an open-source alternative to commercial HIDS solutions",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/ossec-hids/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/ossec-hids.json",
-      "github": "https://github.com/howtomgr/ossec-hids"
     },
     {
       "name": "overseerr",
