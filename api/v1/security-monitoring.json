@@ -2,10 +2,10 @@
   "category": {
     "name": "security-monitoring",
     "display_name": "Security monitoring",
-    "total_guides": 3
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2026-07-12T08:06:51.295Z",
+    "generated_at": "2026-07-12T18:57:49.539Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -98,6 +98,51 @@
       "site": "https://howtomgr.github.io/security-monitoring/falco/",
       "api": "https://howtomgr.github.io/api/v1/security-monitoring/falco.json",
       "github": "https://github.com/howtomgr/falco"
+    },
+    {
+      "name": "osquery",
+      "title": "osquery Installation Guide",
+      "description": "osquery is a free and open-source SQL-based OS instrumentation. osquery exposes OS as relational database for monitoring",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "security-monitoring",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/security-monitoring/osquery/",
+      "api": "https://howtomgr.github.io/api/v1/security-monitoring/osquery.json",
+      "github": "https://github.com/howtomgr/osquery"
     },
     {
       "name": "samhain",
