@@ -2,56 +2,13 @@
   "category": {
     "name": "database-management",
     "display_name": "Database management",
-    "total_guides": 3
+    "total_guides": 2
   },
   "meta": {
-    "generated_at": "2026-07-12T18:57:49.539Z",
+    "generated_at": "2026-07-13T09:08:31.653Z",
     "api_version": "1.0"
   },
   "guides": [
-    {
-      "name": "adminer",
-      "title": "Adminer",
-      "description": "Adminer is a full-featured database management tool written in PHP",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "database",
-        "web-interface",
-        "php",
-        "mysql",
-        "postgresql"
-      ],
-      "site": "https://howtomgr.github.io/database-management/adminer/",
-      "api": "https://howtomgr.github.io/api/v1/database-management/adminer.json",
-      "github": "https://github.com/howtomgr/adminer"
-    },
     {
       "name": "pgadmin",
       "title": "Pgadmin",

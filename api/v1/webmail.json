@@ -2,10 +2,10 @@
   "category": {
     "name": "webmail",
     "display_name": "Webmail",
-    "total_guides": 5
+    "total_guides": 4
   },
   "meta": {
-    "generated_at": "2026-07-12T18:57:49.539Z",
+    "generated_at": "2026-07-13T09:08:31.631Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -102,53 +102,6 @@
       "site": "https://howtomgr.github.io/webmail/horde/",
       "api": "https://howtomgr.github.io/api/v1/webmail/horde.json",
       "github": "https://github.com/howtomgr/horde"
-    },
-    {
-      "name": "rainloop",
-      "title": "RainLoop Installation Guide",
-      "description": "RainLoop is a free and open-source Webmail. Simple, modern & fast web-based email client",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "webmail",
-        "containerization",
-        "orchestration",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection",
-        "communication"
-      ],
-      "site": "https://howtomgr.github.io/webmail/rainloop/",
-      "api": "https://howtomgr.github.io/api/v1/webmail/rainloop.json",
-      "github": "https://github.com/howtomgr/rainloop"
     },
     {
       "name": "roundcube",
