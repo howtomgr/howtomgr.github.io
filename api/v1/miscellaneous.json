@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 241
+    "total_guides": 245
   },
   "meta": {
-    "generated_at": "2026-07-13T09:08:31.628Z",
+    "generated_at": "2026-07-13T19:12:44.594Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -2474,6 +2474,51 @@
       "site": "https://howtomgr.github.io/miscellaneous/filebrowser/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/filebrowser.json",
       "github": "https://github.com/howtomgr/filebrowser"
+    },
+    {
+      "name": "firefly-iii",
+      "title": "firefly-iii Installation Guide",
+      "description": "firefly-iii is a free and open-source personal finance manager. Firefly III helps track expenses and manage personal finances",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/firefly-iii/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/firefly-iii.json",
+      "github": "https://github.com/howtomgr/firefly-iii"
     },
     {
       "name": "flame",
@@ -6731,6 +6776,49 @@
       "github": "https://github.com/howtomgr/packer"
     },
     {
+      "name": "paperless-ngx",
+      "title": "Paperless-ngx Installation Guide",
+      "description": "Paperless-ngx is a free and open-source document management system that transforms your physical documents into a searchable digital archive. It features OCR, automatic tagging, full-text search, and a modern web interface for managing your documents.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "alpine",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/paperless-ngx/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/paperless-ngx.json",
+      "github": "https://github.com/howtomgr/paperless-ngx"
+    },
+    {
       "name": "payload",
       "title": "payload Installation Guide",
       "description": "payload is a free and open-source code-first CMS. Payload provides code-first headless CMS for developers",
@@ -6815,6 +6903,51 @@
       "site": "https://howtomgr.github.io/miscellaneous/peertube/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/peertube.json",
       "github": "https://github.com/howtomgr/peertube"
+    },
+    {
+      "name": "phabricator",
+      "title": "phabricator Installation Guide",
+      "description": "phabricator is a free and open-source software development platform. Phabricator provides complete software development platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/phabricator/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/phabricator.json",
+      "github": "https://github.com/howtomgr/phabricator"
     },
     {
       "name": "photoprism",
@@ -9286,6 +9419,51 @@
       "site": "https://howtomgr.github.io/miscellaneous/tekton/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/tekton.json",
       "github": "https://github.com/howtomgr/tekton"
+    },
+    {
+      "name": "terraria",
+      "title": "terraria Installation Guide",
+      "description": "terraria is a free and open-source Terraria dedicated server. Dedicated server for Terraria 2D sandbox game",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/terraria/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/terraria.json",
+      "github": "https://github.com/howtomgr/terraria"
     },
     {
       "name": "tf2",

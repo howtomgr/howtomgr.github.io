@@ -2,10 +2,10 @@
   "category": {
     "name": "databases",
     "display_name": "Databases",
-    "total_guides": 8
+    "total_guides": 9
   },
   "meta": {
-    "generated_at": "2026-07-13T09:08:31.639Z",
+    "generated_at": "2026-07-13T19:12:44.604Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -143,6 +143,52 @@
       "site": "https://howtomgr.github.io/databases/mariadb/",
       "api": "https://howtomgr.github.io/api/v1/databases/mariadb.json",
       "github": "https://github.com/howtomgr/mariadb"
+    },
+    {
+      "name": "mongodb",
+      "title": "MongoDB Installation Guide",
+      "description": "MongoDB is a free and open-source document-oriented NoSQL database. Originally developed by 10gen (now MongoDB Inc.), MongoDB uses JSON-like documents with optional schemas instead of traditional table-based relational database structure. It serves as a FOSS alternative to commercial document databases like Amazon DocumentDB, Azure Cosmos DB, or Oracle NoSQL Database, offering enterprise-grade features including horizontal scaling, replica sets, and sharding without licensing costs, with features like ACID transactions, aggregation pipelines, and full-text search.",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "databases",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "communication"
+      ],
+      "site": "https://howtomgr.github.io/databases/mongodb/",
+      "api": "https://howtomgr.github.io/api/v1/databases/mongodb.json",
+      "github": "https://github.com/howtomgr/mongodb"
     },
     {
       "name": "mysql",
