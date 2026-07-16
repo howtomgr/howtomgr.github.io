@@ -2,10 +2,10 @@
   "category": {
     "name": "mail-servers",
     "display_name": "Mail servers",
-    "total_guides": 7
+    "total_guides": 6
   },
   "meta": {
-    "generated_at": "2026-07-16T07:58:42.144Z",
+    "generated_at": "2026-07-16T18:57:38.532Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -196,52 +196,6 @@
       "site": "https://howtomgr.github.io/mail-servers/opensmtpd/",
       "api": "https://howtomgr.github.io/api/v1/mail-servers/opensmtpd.json",
       "github": "https://github.com/howtomgr/opensmtpd"
-    },
-    {
-      "name": "postfix",
-      "title": "postfix Installation Guide",
-      "description": "postfix is a free and open-source mail transfer agent. Postfix provides fast, secure mail transfer agent as alternative to Sendmail",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "mail-servers",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection",
-        "communication"
-      ],
-      "site": "https://howtomgr.github.io/mail-servers/postfix/",
-      "api": "https://howtomgr.github.io/api/v1/mail-servers/postfix.json",
-      "github": "https://github.com/howtomgr/postfix"
     },
     {
       "name": "qmail",
