@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 244
+    "total_guides": 245
   },
   "meta": {
-    "generated_at": "2026-07-16T18:57:38.520Z",
+    "generated_at": "2026-07-17T07:53:20.219Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -7848,6 +7848,51 @@
       "site": "https://howtomgr.github.io/miscellaneous/rclone/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/rclone.json",
       "github": "https://github.com/howtomgr/rclone"
+    },
+    {
+      "name": "redash",
+      "title": "redash Installation Guide",
+      "description": "redash is a free and open-source data visualization. Redash connects to data sources for easy visualization and sharing",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "miscellaneous",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/miscellaneous/redash/",
+      "api": "https://howtomgr.github.io/api/v1/miscellaneous/redash.json",
+      "github": "https://github.com/howtomgr/redash"
     },
     {
       "name": "redis_stream",
