@@ -2,10 +2,10 @@
   "category": {
     "name": "container-management",
     "display_name": "Container management",
-    "total_guides": 2
+    "total_guides": 3
   },
   "meta": {
-    "generated_at": "2026-11-03T13:20:11.084Z",
+    "generated_at": "2026-11-03T22:45:40.760Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -54,6 +54,52 @@
       "site": "https://howtomgr.github.io/container-management/portainer/",
       "api": "https://howtomgr.github.io/api/v1/container-management/portainer.json",
       "github": "https://github.com/howtomgr/portainer"
+    },
+    {
+      "name": "rancher",
+      "title": "rancher Installation Guide",
+      "description": "rancher is a free and open-source multi-cluster Kubernetes management platform. Rancher simplifies Kubernetes cluster deployment and management across any infrastructure, serving as an open-source alternative to proprietary Kubernetes platforms",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "container-management",
+        "containerization",
+        "orchestration",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/container-management/rancher/",
+      "api": "https://howtomgr.github.io/api/v1/container-management/rancher.json",
+      "github": "https://github.com/howtomgr/rancher"
     },
     {
       "name": "yacht",

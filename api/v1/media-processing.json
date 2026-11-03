@@ -2,10 +2,10 @@
   "category": {
     "name": "media-processing",
     "display_name": "Media processing",
-    "total_guides": 7
+    "total_guides": 8
   },
   "meta": {
-    "generated_at": "2026-11-03T13:20:11.066Z",
+    "generated_at": "2026-11-03T22:45:40.741Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -190,6 +190,52 @@
       "site": "https://howtomgr.github.io/media-processing/ffmpeg/",
       "api": "https://howtomgr.github.io/api/v1/media-processing/ffmpeg.json",
       "github": "https://github.com/howtomgr/ffmpeg"
+    },
+    {
+      "name": "handbrake",
+      "title": "handbrake Installation Guide",
+      "description": "handbrake is a free and open-source video transcoder. HandBrake provides open source video transcoder",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "media-processing",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection",
+        "multimedia"
+      ],
+      "site": "https://howtomgr.github.io/media-processing/handbrake/",
+      "api": "https://howtomgr.github.io/api/v1/media-processing/handbrake.json",
+      "github": "https://github.com/howtomgr/handbrake"
     },
     {
       "name": "kdenlive",

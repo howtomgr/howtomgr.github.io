@@ -2,10 +2,10 @@
   "category": {
     "name": "api-gateways",
     "display_name": "Api gateways",
-    "total_guides": 8
+    "total_guides": 9
   },
   "meta": {
-    "generated_at": "2026-11-03T13:20:11.076Z",
+    "generated_at": "2026-11-03T22:45:40.751Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -278,6 +278,51 @@
       "site": "https://howtomgr.github.io/api-gateways/ocelot/",
       "api": "https://howtomgr.github.io/api/v1/api-gateways/ocelot.json",
       "github": "https://github.com/howtomgr/ocelot"
+    },
+    {
+      "name": "tyk",
+      "title": "tyk Installation Guide",
+      "description": "tyk is a free and open-source API gateway. Tyk provides open source API gateway and management platform",
+      "difficulty_level": "intermediate",
+      "estimated_setup_time": "15-30 minutes",
+      "language": null,
+      "stars": 0,
+      "maintenance_status": "active",
+      "supported_os": [
+        "rhel",
+        "centos",
+        "rocky",
+        "almalinux",
+        "debian",
+        "ubuntu",
+        "arch",
+        "alpine",
+        "opensuse",
+        "sles",
+        "macos",
+        "freebsd",
+        "windows"
+      ],
+      "features": [
+        "multi-os-support",
+        "comprehensive-documentation",
+        "security-hardening",
+        "performance-optimization",
+        "backup-restore-procedures",
+        "troubleshooting-guides"
+      ],
+      "tags": [
+        "api-gateways",
+        "containerization",
+        "observability",
+        "data-storage",
+        "networking",
+        "security",
+        "data-protection"
+      ],
+      "site": "https://howtomgr.github.io/api-gateways/tyk/",
+      "api": "https://howtomgr.github.io/api/v1/api-gateways/tyk.json",
+      "github": "https://github.com/howtomgr/tyk"
     },
     {
       "name": "wso2",
