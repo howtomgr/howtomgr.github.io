@@ -2,10 +2,10 @@
   "category": {
     "name": "education",
     "display_name": "Education",
-    "total_guides": 8
+    "total_guides": 7
   },
   "meta": {
-    "generated_at": "2026-11-03T00:13:21.298Z",
+    "generated_at": "2026-11-03T13:20:11.070Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -233,51 +233,6 @@
       "site": "https://howtomgr.github.io/education/kolibri/",
       "api": "https://howtomgr.github.io/api/v1/education/kolibri.json",
       "github": "https://github.com/howtomgr/kolibri"
-    },
-    {
-      "name": "mahara",
-      "title": "mahara Installation Guide",
-      "description": "mahara is a free and open-source ePortfolio system. Mahara provides learner-centered ePortfolio system",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "education",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/education/mahara/",
-      "api": "https://howtomgr.github.io/api/v1/education/mahara.json",
-      "github": "https://github.com/howtomgr/mahara"
     },
     {
       "name": "moodle",

@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 245
+    "total_guides": 235
   },
   "meta": {
-    "generated_at": "2026-11-03T00:13:21.288Z",
+    "generated_at": "2026-11-03T13:20:11.058Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -5079,43 +5079,6 @@
       "github": "https://github.com/howtomgr/microk8s"
     },
     {
-      "name": "mssql",
-      "title": "Microsoft SQL Server Installation Guide",
-      "description": "Enterprise-grade relational database management system for mission-critical applications. Full-featured database platform with advanced security, high availability, and comprehensive tooling for Linux environments.",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "orchestration",
-        "observability",
-        "data-storage",
-        "security",
-        "data-protection",
-        "communication"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/mssql/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/mssql.json",
-      "github": "https://github.com/howtomgr/mssql"
-    },
-    {
       "name": "milvus",
       "title": "milvus Installation Guide",
       "description": "milvus is a free and open-source vector database for AI applications. Milvus is designed to store, index, and search embedding vectors for AI applications, serving as an open-source alternative to Pinecone or Weaviate cloud",
@@ -6053,97 +6016,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/ntopng/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/ntopng.json",
       "github": "https://github.com/howtomgr/ntopng"
-    },
-    {
-      "name": "nzbget",
-      "title": "nzbget Installation Guide",
-      "description": "nzbget is a free and open-source Usenet downloader. NZBGet provides efficient Usenet downloading with low resource usage",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/nzbget/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/nzbget.json",
-      "github": "https://github.com/howtomgr/nzbget"
-    },
-    {
-      "name": "obs_studio",
-      "title": "obs-studio Installation Guide",
-      "description": "obs-studio is a free and open-source broadcasting software. OBS Studio provides video recording and streaming",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection",
-        "multimedia"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/obs_studio/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/obs_studio.json",
-      "github": "https://github.com/howtomgr/obs_studio"
     },
     {
       "name": "observium",
@@ -7715,51 +7587,6 @@
       "github": "https://github.com/howtomgr/qbittorrent"
     },
     {
-      "name": "questdb",
-      "title": "questdb Installation Guide",
-      "description": "questdb is a free and open-source high-performance time-series database. QuestDB offers SQL with time-series extensions and exceptional performance, serving as an alternative to InfluxDB or TimescaleDB for demanding workloads",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/questdb/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/questdb.json",
-      "github": "https://github.com/howtomgr/questdb"
-    },
-    {
       "name": "radarr",
       "title": "radarr Installation Guide",
       "description": "radarr is a free and open-source movie collection manager. Radarr automates movie downloading and organization, serving as the movie equivalent of Sonarr",
@@ -8118,51 +7945,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/rhodecode/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/rhodecode.json",
       "github": "https://github.com/howtomgr/rhodecode"
-    },
-    {
-      "name": "rstudio_server",
-      "title": "rstudio-server Installation Guide",
-      "description": "rstudio-server is a free and open-source R development server. RStudio Server provides web-based R development environment",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 1,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/rstudio_server/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/rstudio_server.json",
-      "github": "https://github.com/howtomgr/rstudio_server"
     },
     {
       "name": "rsyslog",
@@ -8613,51 +8395,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/skopeo/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/skopeo.json",
       "github": "https://github.com/howtomgr/skopeo"
-    },
-    {
-      "name": "smf",
-      "title": "smf Installation Guide",
-      "description": "smf is a free and open-source Simple Machines Forum. SMF provides powerful, custom-made forum software",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/smf/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/smf.json",
-      "github": "https://github.com/howtomgr/smf"
     },
     {
       "name": "smokeping",
@@ -9466,51 +9203,6 @@
       "github": "https://github.com/howtomgr/terraria"
     },
     {
-      "name": "tf2",
-      "title": "tf2 Installation Guide",
-      "description": "tf2 is a free and open-source Team Fortress 2 server. Team Fortress 2 dedicated server for multiplayer matches",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/tf2/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/tf2.json",
-      "github": "https://github.com/howtomgr/tf2"
-    },
-    {
       "name": "thanos",
       "title": "thanos Installation Guide",
       "description": "thanos is a free and open-source highly available Prometheus setup with long term storage. Thanos provides unlimited storage capacity for Prometheus metrics with global query view, serving as an open-source alternative to Cortex or commercial monitoring solutions",
@@ -9556,51 +9248,6 @@
       "github": "https://github.com/howtomgr/thanos"
     },
     {
-      "name": "thirty_bees",
-      "title": "thirty-bees Installation Guide",
-      "description": "thirty-bees is a free and open-source e-commerce platform. thirty bees provides e-commerce platform forked from PrestaShop",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/thirty_bees/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/thirty_bees.json",
-      "github": "https://github.com/howtomgr/thirty_bees"
-    },
-    {
       "name": "tiki",
       "title": "tiki Installation Guide",
       "description": "tiki is a free and open-source wiki groupware CMS. Tiki provides all-in-one wiki, CMS, and groupware solution",
@@ -9644,51 +9291,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/tiki/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/tiki.json",
       "github": "https://github.com/howtomgr/tiki"
-    },
-    {
-      "name": "tildes",
-      "title": "tildes Installation Guide",
-      "description": "tildes is a free and open-source open source community. Tildes provides open-source, non-profit community platform",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/tildes/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/tildes.json",
-      "github": "https://github.com/howtomgr/tildes"
     },
     {
       "name": "timescaledb",
@@ -10763,51 +10365,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/xwiki/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/xwiki.json",
       "github": "https://github.com/howtomgr/xwiki"
-    },
-    {
-      "name": "youtransfer",
-      "title": "youtransfer Installation Guide",
-      "description": "youtransfer is a free and open-source self-hosted file transfer. YouTransfer enables easy file sharing with a simple, self-hosted platform",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/youtransfer/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/youtransfer.json",
-      "github": "https://github.com/howtomgr/youtransfer"
     },
     {
       "name": "zabbix-server",

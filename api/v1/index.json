@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 584,
-    "total_categories": 102,
-    "last_updated": "2026-11-03T00:13:21.286Z"
+    "total_guides": 556,
+    "total_categories": 100,
+    "last_updated": "2026-11-03T13:20:11.057Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 245,
+      "count": 235,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -36,7 +36,7 @@
     {
       "name": "webmail",
       "display_name": "Webmail",
-      "count": 5,
+      "count": 4,
       "url": "https://howtomgr.github.io/webmail/",
       "api_url": "https://howtomgr.github.io/api/v1/webmail.json"
     },
@@ -50,7 +50,7 @@
     {
       "name": "security-monitoring",
       "display_name": "Security monitoring",
-      "count": 4,
+      "count": 3,
       "url": "https://howtomgr.github.io/security-monitoring/",
       "api_url": "https://howtomgr.github.io/api/v1/security-monitoring.json"
     },
@@ -127,7 +127,7 @@
     {
       "name": "media-processing",
       "display_name": "Media processing",
-      "count": 8,
+      "count": 7,
       "url": "https://howtomgr.github.io/media-processing/",
       "api_url": "https://howtomgr.github.io/api/v1/media-processing.json"
     },
@@ -162,7 +162,7 @@
     {
       "name": "e-commerce",
       "display_name": "E commerce",
-      "count": 8,
+      "count": 7,
       "url": "https://howtomgr.github.io/e-commerce/",
       "api_url": "https://howtomgr.github.io/api/v1/e-commerce.json"
     },
@@ -197,7 +197,7 @@
     {
       "name": "documentation",
       "display_name": "Documentation",
-      "count": 4,
+      "count": 3,
       "url": "https://howtomgr.github.io/documentation/",
       "api_url": "https://howtomgr.github.io/api/v1/documentation.json"
     },
@@ -218,7 +218,7 @@
     {
       "name": "education",
       "display_name": "Education",
-      "count": 8,
+      "count": 7,
       "url": "https://howtomgr.github.io/education/",
       "api_url": "https://howtomgr.github.io/api/v1/education.json"
     },
@@ -246,7 +246,7 @@
     {
       "name": "infrastructure-management",
       "display_name": "Infrastructure management",
-      "count": 7,
+      "count": 6,
       "url": "https://howtomgr.github.io/infrastructure-management/",
       "api_url": "https://howtomgr.github.io/api/v1/infrastructure-management.json"
     },
@@ -309,7 +309,7 @@
     {
       "name": "data-science",
       "display_name": "Data science",
-      "count": 5,
+      "count": 4,
       "url": "https://howtomgr.github.io/data-science/",
       "api_url": "https://howtomgr.github.io/api/v1/data-science.json"
     },
@@ -344,7 +344,7 @@
     {
       "name": "media-servers",
       "display_name": "Media servers",
-      "count": 3,
+      "count": 2,
       "url": "https://howtomgr.github.io/media-servers/",
       "api_url": "https://howtomgr.github.io/api/v1/media-servers.json"
     },
@@ -379,7 +379,7 @@
     {
       "name": "api-gateways",
       "display_name": "Api gateways",
-      "count": 9,
+      "count": 8,
       "url": "https://howtomgr.github.io/api-gateways/",
       "api_url": "https://howtomgr.github.io/api/v1/api-gateways.json"
     },
@@ -421,7 +421,7 @@
     {
       "name": "remote-access",
       "display_name": "Remote access",
-      "count": 9,
+      "count": 6,
       "url": "https://howtomgr.github.io/remote-access/",
       "api_url": "https://howtomgr.github.io/api/v1/remote-access.json"
     },
@@ -505,7 +505,7 @@
     {
       "name": "orchestration",
       "display_name": "Orchestration",
-      "count": 3,
+      "count": 2,
       "url": "https://howtomgr.github.io/orchestration/",
       "api_url": "https://howtomgr.github.io/api/v1/orchestration.json"
     },
@@ -594,13 +594,6 @@
       "api_url": "https://howtomgr.github.io/api/v1/artificial-intelligence.json"
     },
     {
-      "name": "mail",
-      "display_name": "Mail",
-      "count": 1,
-      "url": "https://howtomgr.github.io/mail/",
-      "api_url": "https://howtomgr.github.io/api/v1/mail.json"
-    },
-    {
       "name": "vulnerability-management",
       "display_name": "Vulnerability management",
       "count": 1,
@@ -631,7 +624,7 @@
     {
       "name": "container-management",
       "display_name": "Container management",
-      "count": 3,
+      "count": 2,
       "url": "https://howtomgr.github.io/container-management/",
       "api_url": "https://howtomgr.github.io/api/v1/container-management.json"
     },
@@ -650,16 +643,9 @@
       "api_url": "https://howtomgr.github.io/api/v1/gaming.json"
     },
     {
-      "name": "operating-systems",
-      "display_name": "Operating systems",
-      "count": 1,
-      "url": "https://howtomgr.github.io/operating-systems/",
-      "api_url": "https://howtomgr.github.io/api/v1/operating-systems.json"
-    },
-    {
       "name": "anti-spam",
       "display_name": "Anti spam",
-      "count": 2,
+      "count": 1,
       "url": "https://howtomgr.github.io/anti-spam/",
       "api_url": "https://howtomgr.github.io/api/v1/anti-spam.json"
     },
@@ -813,7 +799,6 @@
       "/api/v1/data-processing.json",
       "/api/v1/network-analysis.json",
       "/api/v1/artificial-intelligence.json",
-      "/api/v1/mail.json",
       "/api/v1/vulnerability-management.json",
       "/api/v1/vpn.json",
       "/api/v1/firewalls.json",
@@ -821,7 +806,6 @@
       "/api/v1/container-management.json",
       "/api/v1/alerting.json",
       "/api/v1/gaming.json",
-      "/api/v1/operating-systems.json",
       "/api/v1/anti-spam.json",
       "/api/v1/surveillance.json",
       "/api/v1/reverse-proxies.json",
@@ -909,7 +893,6 @@
       "/api/v1/development-environments/cloud9.json",
       "/api/v1/miscellaneous/cloudflare-tunnel.json",
       "/api/v1/miscellaneous/cloudstack.json",
-      "/api/v1/infrastructure-management/cobbler.json",
       "/api/v1/miscellaneous/cockpit.json",
       "/api/v1/miscellaneous/cockpit-cms.json",
       "/api/v1/databases/cockroachdb.json",
@@ -942,7 +925,6 @@
       "/api/v1/dns-servers/dnsmasq.json",
       "/api/v1/containerization/docker.json",
       "/api/v1/miscellaneous/docusaurus.json",
-      "/api/v1/documentation/dokuwiki.json",
       "/api/v1/business-applications/dolibarr.json",
       "/api/v1/miscellaneous/domoticz.json",
       "/api/v1/mail-servers/dovecot.json",
@@ -972,7 +954,6 @@
       "/api/v1/miscellaneous/factorio.json",
       "/api/v1/intrusion-prevention/fail2ban.json",
       "/api/v1/task-queues/faktory.json",
-      "/api/v1/security-monitoring/falco.json",
       "/api/v1/media-processing/ffmpeg.json",
       "/api/v1/miscellaneous/filebeat.json",
       "/api/v1/miscellaneous/filebrowser.json",
@@ -1023,7 +1004,6 @@
       "/api/v1/vulnerability-scanning/gvm.json",
       "/api/v1/miscellaneous/h5ai.json",
       "/api/v1/education/h5p.json",
-      "/api/v1/media-processing/handbrake.json",
       "/api/v1/load-balancers/haproxy.json",
       "/api/v1/mail-servers/haraka.json",
       "/api/v1/container-registries/harbor.json",
@@ -1107,7 +1087,6 @@
       "/api/v1/miscellaneous/lynis.json",
       "/api/v1/infrastructure-management/maas.json",
       "/api/v1/e-commerce/magento.json",
-      "/api/v1/education/mahara.json",
       "/api/v1/mail-stacks/mailcow.json",
       "/api/v1/mailing-lists/mailman.json",
       "/api/v1/miscellaneous/mailpile.json",
@@ -1129,12 +1108,10 @@
       "/api/v1/workflow-engines/metaflow.json",
       "/api/v1/static-site-generators/metalsmith.json",
       "/api/v1/miscellaneous/microk8s.json",
-      "/api/v1/miscellaneous/mssql.json",
       "/api/v1/miscellaneous/milvus.json",
       "/api/v1/miscellaneous/minecraft-bedrock.json",
       "/api/v1/miscellaneous/minecraft-server.json",
       "/api/v1/miscellaneous/minetest.json",
-      "/api/v1/orchestration/minikube.json",
       "/api/v1/object-storage/minio.json",
       "/api/v1/miscellaneous/misago.json",
       "/api/v1/documentation/mkdocs.json",
@@ -1173,13 +1150,10 @@
       "/api/v1/miscellaneous/node_red.json",
       "/api/v1/miscellaneous/nodejs.json",
       "/api/v1/miscellaneous/nodebb.json",
-      "/api/v1/remote-access/nomachine.json",
       "/api/v1/miscellaneous/nomad.json",
       "/api/v1/dns-servers/nsd.json",
       "/api/v1/message-queues/nsq.json",
       "/api/v1/miscellaneous/ntopng.json",
-      "/api/v1/miscellaneous/nzbget.json",
-      "/api/v1/miscellaneous/obs_studio.json",
       "/api/v1/miscellaneous/observium.json",
       "/api/v1/api-gateways/ocelot.json",
       "/api/v1/miscellaneous/ocserv.json",
@@ -1189,7 +1163,6 @@
       "/api/v1/ci-cd/onedev.json",
       "/api/v1/workflow-engines/oozie.json",
       "/api/v1/miscellaneous/open_edx.json",
-      "/api/v1/mail/exchange.json",
       "/api/v1/e-commerce/opencart.json",
       "/api/v1/vulnerability-management/opencve.json",
       "/api/v1/xmpp-servers/openfire.json",
@@ -1228,7 +1201,6 @@
       "/api/v1/dns-filtering/pihole.json",
       "/api/v1/iot-development/platformio.json",
       "/api/v1/miscellaneous/plausible.json",
-      "/api/v1/media-servers/plex.json",
       "/api/v1/miscellaneous/podman.json",
       "/api/v1/container-management/portainer.json",
       "/api/v1/container-registries/portus.json",
@@ -1261,14 +1233,10 @@
       "/api/v1/miscellaneous/qbittorrent.json",
       "/api/v1/mail-servers/qmail.json",
       "/api/v1/container-registries/quay.json",
-      "/api/v1/miscellaneous/questdb.json",
       "/api/v1/search-engines/quickwit.json",
       "/api/v1/message-queues/rabbitmq.json",
       "/api/v1/miscellaneous/radarr.json",
       "/api/v1/webmail/rainloop.json",
-      "/api/v1/container-management/rancher.json",
-      "/api/v1/operating-systems/raspbian.json",
-      "/api/v1/data-science/ray.json",
       "/api/v1/infrastructure-management/razor.json",
       "/api/v1/miscellaneous/rclone.json",
       "/api/v1/miscellaneous/redash.json",
@@ -1276,23 +1244,19 @@
       "/api/v1/databases/redis.json",
       "/api/v1/miscellaneous/redis_stream.json",
       "/api/v1/container-registries/docker-registry.json",
-      "/api/v1/remote-access/remmina.json",
       "/api/v1/miscellaneous/resilio-sync.json",
       "/api/v1/backup-tools/restic.json",
       "/api/v1/miscellaneous/rethinkdb.json",
       "/api/v1/miscellaneous/reviewboard.json",
       "/api/v1/miscellaneous/rhodecode.json",
       "/api/v1/team-chat/rocketchat.json",
-      "/api/v1/webmail/roundcube.json",
       "/api/v1/anti-spam/rspamd.json",
-      "/api/v1/miscellaneous/rstudio_server.json",
       "/api/v1/miscellaneous/rsyslog.json",
       "/api/v1/miscellaneous/rundeck.json",
       "/api/v1/miscellaneous/rust-server.json",
       "/api/v1/miscellaneous/rustdesk_server.json",
       "/api/v1/miscellaneous/rutorrent.json",
       "/api/v1/miscellaneous/sabnzbd.json",
-      "/api/v1/e-commerce/saleor.json",
       "/api/v1/configuration-management/saltstack.json",
       "/api/v1/security-monitoring/samhain.json",
       "/api/v1/education/schooltool.json",
@@ -1309,7 +1273,6 @@
       "/api/v1/task-queues/sidekiq.json",
       "/api/v1/reverse-proxies/skipper.json",
       "/api/v1/miscellaneous/skopeo.json",
-      "/api/v1/miscellaneous/smf.json",
       "/api/v1/miscellaneous/smokeping.json",
       "/api/v1/miscellaneous/softether-vpnserver.json",
       "/api/v1/miscellaneous/sogo.json",
@@ -1317,7 +1280,6 @@
       "/api/v1/code-quality/sonarqube.json",
       "/api/v1/miscellaneous/sonarr.json",
       "/api/v1/search-engines/sonic.json",
-      "/api/v1/anti-spam/spamassassin.json",
       "/api/v1/miscellaneous/sphinx.json",
       "/api/v1/miscellaneous/spinnaker.json",
       "/api/v1/webmail/squirrelmail.json",
@@ -1349,14 +1311,11 @@
       "/api/v1/workflow-engines/temporal.json",
       "/api/v1/infrastructure-as-code/terraform.json",
       "/api/v1/miscellaneous/terraria.json",
-      "/api/v1/miscellaneous/tf2.json",
       "/api/v1/miscellaneous/thanos.json",
       "/api/v1/development-environments/theia.json",
       "/api/v1/iot-platforms/thingsboard.json",
-      "/api/v1/miscellaneous/thirty_bees.json",
       "/api/v1/remote-access/tigervnc.json",
       "/api/v1/miscellaneous/tiki.json",
-      "/api/v1/miscellaneous/tildes.json",
       "/api/v1/miscellaneous/timescaledb.json",
       "/api/v1/infrastructure-management/tinkerbell.json",
       "/api/v1/reverse-proxies/traefik.json",
@@ -1364,7 +1323,6 @@
       "/api/v1/miscellaneous/tripwire.json",
       "/api/v1/storage-solutions/truenas-scale.json",
       "/api/v1/iot-platforms/ttn.json",
-      "/api/v1/api-gateways/tyk.json",
       "/api/v1/search-engines/typesense.json",
       "/api/v1/miscellaneous/ubooquity.json",
       "/api/v1/miscellaneous/umami.json",
@@ -1402,13 +1360,11 @@
       "/api/v1/miscellaneous/woodpecker.json",
       "/api/v1/cms/wordpress.json",
       "/api/v1/api-gateways/wso2.json",
-      "/api/v1/remote-access/x2go.json",
       "/api/v1/miscellaneous/xcp-ng.json",
       "/api/v1/miscellaneous/xen-orchestra.json",
       "/api/v1/remote-access/xrdp.json",
       "/api/v1/miscellaneous/xwiki.json",
       "/api/v1/container-management/yacht.json",
-      "/api/v1/miscellaneous/youtransfer.json",
       "/api/v1/monitoring/zabbix.json",
       "/api/v1/miscellaneous/zabbix-server.json",
       "/api/v1/miscellaneous/zen_cart.json",

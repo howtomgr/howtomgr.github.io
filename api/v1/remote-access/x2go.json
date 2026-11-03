@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "1.0",
-    "generated_at": "2026-11-03T00:13:21.432Z",
+    "generated_at": "2025-09-23T03:24:32.245Z",
     "spec_version": "2.0"
   },
   "tool": {
@@ -62,18 +62,18 @@
     "website_url": "https://howtomgr.github.io/remote-access/x2go",
     "github_url": "https://github.com/howtomgr/x2go",
     "github_stats": {
-      "stars": 1,
+      "stars": 0,
       "forks": 0,
       "language": null,
       "topics": [],
-      "last_updated": "2026-04-14T20:35:48Z",
+      "last_updated": "2025-09-16T18:03:46Z",
       "created": "2025-09-16T08:42:02Z"
     },
     "guide_info": {
       "word_count": 1267,
       "estimated_read_time": "7 min",
       "has_readme": true,
-      "last_built": "2026-11-03T00:07:48.687Z"
+      "last_built": "2025-09-23T03:24:10.310Z"
     }
   }
 }

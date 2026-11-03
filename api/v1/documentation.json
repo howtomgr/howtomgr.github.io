@@ -2,10 +2,10 @@
   "category": {
     "name": "documentation",
     "display_name": "Documentation",
-    "total_guides": 4
+    "total_guides": 3
   },
   "meta": {
-    "generated_at": "2026-11-03T00:13:21.297Z",
+    "generated_at": "2026-11-03T13:20:11.069Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -53,51 +53,6 @@
       "site": "https://howtomgr.github.io/documentation/bookstack/",
       "api": "https://howtomgr.github.io/api/v1/documentation/bookstack.json",
       "github": "https://github.com/howtomgr/bookstack"
-    },
-    {
-      "name": "dokuwiki",
-      "title": "dokuwiki Installation Guide",
-      "description": "dokuwiki is a free and open-source wiki without database. DokuWiki provides simple wiki that stores data in plain text files",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "documentation",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/documentation/dokuwiki/",
-      "api": "https://howtomgr.github.io/api/v1/documentation/dokuwiki.json",
-      "github": "https://github.com/howtomgr/dokuwiki"
     },
     {
       "name": "mkdocs",

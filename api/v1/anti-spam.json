@@ -2,10 +2,10 @@
   "category": {
     "name": "anti-spam",
     "display_name": "Anti spam",
-    "total_guides": 2
+    "total_guides": 1
   },
   "meta": {
-    "generated_at": "2026-11-03T00:13:21.311Z",
+    "generated_at": "2026-11-03T13:20:11.085Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -55,53 +55,6 @@
       "site": "https://howtomgr.github.io/anti-spam/rspamd/",
       "api": "https://howtomgr.github.io/api/v1/anti-spam/rspamd.json",
       "github": "https://github.com/howtomgr/rspamd"
-    },
-    {
-      "name": "spamassassin",
-      "title": "SpamAssassin Installation Guide",
-      "description": "SpamAssassin is a free and open-source Anti-Spam. An extensible email filter to identify spam",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "anti-spam",
-        "containerization",
-        "orchestration",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection",
-        "communication"
-      ],
-      "site": "https://howtomgr.github.io/anti-spam/spamassassin/",
-      "api": "https://howtomgr.github.io/api/v1/anti-spam/spamassassin.json",
-      "github": "https://github.com/howtomgr/spamassassin"
     }
   ]
 }
