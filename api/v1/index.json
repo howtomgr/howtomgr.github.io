@@ -7,15 +7,15 @@
     "documentation": "https://howtomgr.github.io/api/docs"
   },
   "meta": {
-    "total_guides": 584,
+    "total_guides": 583,
     "total_categories": 102,
-    "last_updated": "2026-11-07T21:14:59.802Z"
+    "last_updated": "2026-11-08T12:26:41.183Z"
   },
   "categories": [
     {
       "name": "miscellaneous",
       "display_name": "Miscellaneous",
-      "count": 245,
+      "count": 244,
       "url": "https://howtomgr.github.io/miscellaneous/",
       "api_url": "https://howtomgr.github.io/api/v1/miscellaneous.json"
     },
@@ -1289,7 +1289,6 @@
       "/api/v1/miscellaneous/rsyslog.json",
       "/api/v1/miscellaneous/rundeck.json",
       "/api/v1/miscellaneous/rust-server.json",
-      "/api/v1/miscellaneous/rustdesk_server.json",
       "/api/v1/miscellaneous/rutorrent.json",
       "/api/v1/miscellaneous/sabnzbd.json",
       "/api/v1/e-commerce/saleor.json",

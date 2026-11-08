@@ -2,10 +2,10 @@
   "category": {
     "name": "miscellaneous",
     "display_name": "Miscellaneous",
-    "total_guides": 245
+    "total_guides": 244
   },
   "meta": {
-    "generated_at": "2026-11-07T21:14:59.804Z",
+    "generated_at": "2026-11-08T12:26:41.197Z",
     "api_version": "1.0"
   },
   "guides": [
@@ -8298,51 +8298,6 @@
       "site": "https://howtomgr.github.io/miscellaneous/rust-server/",
       "api": "https://howtomgr.github.io/api/v1/miscellaneous/rust-server.json",
       "github": "https://github.com/howtomgr/rust-server"
-    },
-    {
-      "name": "rustdesk_server",
-      "title": "rustdesk-server Installation Guide",
-      "description": "rustdesk-server is a free and open-source remote desktop. RustDesk provides open source remote desktop infrastructure",
-      "difficulty_level": "intermediate",
-      "estimated_setup_time": "15-30 minutes",
-      "language": null,
-      "stars": 0,
-      "maintenance_status": "active",
-      "supported_os": [
-        "rhel",
-        "centos",
-        "rocky",
-        "almalinux",
-        "debian",
-        "ubuntu",
-        "arch",
-        "alpine",
-        "opensuse",
-        "sles",
-        "macos",
-        "freebsd",
-        "windows"
-      ],
-      "features": [
-        "multi-os-support",
-        "comprehensive-documentation",
-        "security-hardening",
-        "performance-optimization",
-        "backup-restore-procedures",
-        "troubleshooting-guides"
-      ],
-      "tags": [
-        "miscellaneous",
-        "containerization",
-        "observability",
-        "data-storage",
-        "networking",
-        "security",
-        "data-protection"
-      ],
-      "site": "https://howtomgr.github.io/miscellaneous/rustdesk_server/",
-      "api": "https://howtomgr.github.io/api/v1/miscellaneous/rustdesk_server.json",
-      "github": "https://github.com/howtomgr/rustdesk_server"
     },
     {
       "name": "rutorrent",
